@@ -24,7 +24,6 @@ export default function Industries() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -47,7 +46,6 @@ export default function Industries() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - PRIMARY PAGE: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -58,7 +56,6 @@ export default function Industries() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -69,7 +66,6 @@ export default function Industries() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/industries');
@@ -80,13 +76,11 @@ export default function Industries() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'Industries We Serve | SensEar Music Curation' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9d2f2d966_a_warm_and_inviting_restaurant_with_soft_lighting_and_a_vibrant_but_not_o-dalle.jpg' },
     { property: 'og:url', content: 'https://sensear.music/industries' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -100,13 +94,11 @@ export default function Industries() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Industries We Serve | SensEar Music Curation' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9d2f2d966_a_warm_and_inviting_restaurant_with_soft_lighting_and_a_vibrant_but_not_o-dalle.jpg' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -120,7 +112,6 @@ export default function Industries() {
       }
     });
 
-    // Add structured data
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -132,7 +123,6 @@ export default function Industries() {
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music",
       "https://www.linkedin.com/company/sensear"]
-
     },
     {
       "@context": "https://schema.org",
@@ -150,9 +140,7 @@ export default function Industries() {
         "name": "Industries",
         "item": "https://sensear.music/industries"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -164,7 +152,6 @@ export default function Industries() {
       document.head.appendChild(structuredDataScript);
     }
 
-    // Add scroll tracking for parallax effect
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -172,41 +159,53 @@ export default function Industries() {
 
   return (
     <div className="bg-[#faebe3] font-sans">
-      {/* Hero */}
-      <section
-        className="relative min-h-screen flex items-center justify-center text-white overflow-hidden pt-24 md:pt-0"
-        role="img"
-        aria-label="Modern business meeting space showcasing music curation for various industries">
-
-        {/* Background Image with Parallax */}
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}>
-          <div className="absolute inset-0 bg-black/40" />
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Industries section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Curated sonic experiences<br />
+              tailored to your industry
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                We craft industry‑specific soundscapes that put your visitors & employees in a perfectly tuned atmosphere.
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
-            Curated sonic experiences tailored to your industry
-          </h1>
-          <p className="text-xl text-white/80 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            We craft industry‑specific soundscapes that put your visitors & employees in a perfectly tuned atmosphere.
-          </p>
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Modern business meeting space showcasing music curation for various industries"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Industries", path: createPageUrl("Industries") }]
         } />
-      </div>
+      </div> */}
 
       {/* Industries Grid */}
       <section className="py-20 bg-[#faebe3]" aria-labelledby="industries-heading">
@@ -271,8 +270,8 @@ export default function Industries() {
                     <div className="relative aspect-[4/3] overflow-hidden">
                       <img
                       src={industry.image}
-                      srcSet={`${industry.image.replace('w=800', 'w=800')} 800w,
-                                ${industry.image.replace('w=800', 'w=1200')} 1200w`}
+                      srcSet={`${industry.image} 800w,
+                                ${industry.image} 1200w`}
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       alt={industry.alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />

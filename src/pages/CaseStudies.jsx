@@ -2,9 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Card } from "@/components/ui/card"; // CardContent is not directly used after redesign, but Card is.
+import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react"; // ArrowLeft is removed with the "Return to overview" button
+import { ArrowRight } from "lucide-react";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function CaseStudies() {
@@ -24,7 +24,6 @@ export default function CaseStudies() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -47,7 +46,6 @@ export default function CaseStudies() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - PRIMARY PAGE: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -58,7 +56,6 @@ export default function CaseStudies() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -69,7 +66,6 @@ export default function CaseStudies() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/case-studies');
@@ -80,14 +76,12 @@ export default function CaseStudies() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'Case Studies | SensEar Music Curation Success Stories' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1600&q=80' },
     { property: 'og:url', content: 'https://sensear.music/case-studies' },
     { property: 'og:type', content: 'website' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -101,13 +95,11 @@ export default function CaseStudies() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Case Studies | SensEar Music Curation Success Stories' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=1600&q=80' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -121,7 +113,6 @@ export default function CaseStudies() {
       }
     });
 
-    // Add structured data
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -133,7 +124,6 @@ export default function CaseStudies() {
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music",
       "https://www.linkedin.com/company/sensear"]
-
     },
     {
       "@context": "https://schema.org",
@@ -151,9 +141,7 @@ export default function CaseStudies() {
         "name": "Case Studies",
         "item": "https://sensear.music/case-studies"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -165,7 +153,6 @@ export default function CaseStudies() {
       document.head.appendChild(structuredDataScript);
     }
 
-    // Add scroll tracking for parallax effect
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -213,44 +200,55 @@ export default function CaseStudies() {
     alt: "Pelicanos Sifnos restaurant with curated Mediterranean music"
   }];
 
-
   return (
     <div className="bg-[#faebe3] font-sans">
-      {/* Hero */}
-      <section
-        className="relative min-h-screen flex items-center justify-center text-white text-center overflow-hidden pt-32 md:pt-0"
-        role="img"
-        aria-label="Professional music curation success stories and case study showcase">
-
-        {/* Background Image with Parallax */}
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: "url(https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/73ec5d36a_pxbee_2025-10-16_20-23-07.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}>
-          <div className="absolute inset-0 bg-black/40" />
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Case Studies section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Listen to our clients' brand stories<br />
+              unfold through sound
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Dive into the world of SensEar, where curated music redefined experiences, enhanced performance and turned moments into unforgettable customer journeys.
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <h1 className="text-5xl font-bold mb-4 animate-fade-in-up lg:text-6xl">
-            Listen to our clients' brand stories unfold through sound
-          </h1>
-          <p className="text-xl text-white/90 leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            Dive into the world of SensEar, where curated music redefined experiences, enhanced performance and turned moments into unforgettable customer journeys. Learn how our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-white">signature playlists</Link> and <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-white">sonic strategy services</Link> have transformed venues across Greece.
-          </p>
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/73ec5d36a_pxbee_2025-10-16_20-23-07.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/73ec5d36a_pxbee_2025-10-16_20-23-07.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/73ec5d36a_pxbee_2025-10-16_20-23-07.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Professional music curation success stories and case study showcase"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Case Studies", path: createPageUrl("CaseStudies") }]
         } />
-      </div>
+      </div> */}
 
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="case-studies-heading">
         <div className="max-w-7xl mx-auto px-6">
@@ -280,7 +278,6 @@ export default function CaseStudies() {
                           src={study.logo}
                           alt={`${study.title} logo`}
                           className="w-14 h-14 rounded-full object-cover" />
-
                         </div>
                       </div>
                     </div>
@@ -316,7 +313,6 @@ export default function CaseStudies() {
             )}
           </div>
 
-          {/* CTA Section */}
           <div className="mt-16">
             <div className="bg-black text-white p-12 rounded-xl" aria-labelledby="cta-heading">
               <div className="text-center">
@@ -335,5 +331,4 @@ export default function CaseStudies() {
         </div>
       </section>
     </div>);
-
 }

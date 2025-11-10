@@ -7,7 +7,7 @@ import { createPageUrl } from "@/utils";
 import { Lightbulb, Building2, SlidersHorizontal, Heart } from 'lucide-react';
 
 export default function AboutUs() {
-  const [scrollY, setScrollY] = useState(0); // Added scrollY state
+  const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     document.title = "About SensEar | Music Curation Experts Athens";
@@ -23,7 +23,6 @@ export default function AboutUs() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -46,7 +45,6 @@ export default function AboutUs() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - PRIMARY PAGE: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -57,7 +55,6 @@ export default function AboutUs() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -68,7 +65,6 @@ export default function AboutUs() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/about');
@@ -79,13 +75,11 @@ export default function AboutUs() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'About SensEar | Music Curation Experts Athens' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80' },
     { property: 'og:url', content: 'https://sensear.music/about' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -99,13 +93,11 @@ export default function AboutUs() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'About SensEar | Music Curation Experts Athens' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -119,7 +111,6 @@ export default function AboutUs() {
       }
     });
 
-    // Add structured data
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -138,7 +129,6 @@ export default function AboutUs() {
         "@type": "Person",
         "name": "George Fameliaris"
       }],
-
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Athens",
@@ -149,7 +139,6 @@ export default function AboutUs() {
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music",
       "https://www.linkedin.com/company/sensear"]
-
     },
     {
       "@context": "https://schema.org",
@@ -167,9 +156,7 @@ export default function AboutUs() {
         "name": "About",
         "item": "https://sensear.music/about"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -181,7 +168,6 @@ export default function AboutUs() {
       document.head.appendChild(structuredDataScript);
     }
 
-    // Add scroll tracking for parallax effect
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -209,39 +195,54 @@ export default function AboutUs() {
     icon: Heart
   }];
 
-
   return (
     <div className="bg-[#faebe3]">
-      <section
-        className="relative min-h-screen flex items-center justify-center text-white overflow-hidden pt-24 md:pt-0"
-        role="img"
-        aria-label="SensEar music curation team collaborating on sonic branding project">
-
-        {/* Background Image with Parallax */}
-        <div
-          className="absolute inset-0 z-0 bg-cover bg-center"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/361e48e4b_85051705_172264584193922_2910039908695408640_n.jpg')"
-          }}>
-          <div className="absolute inset-0 bg-black/40" />
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="About section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              About SensEar
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                At the core of SensEar is a shared belief: that music is not background—it is atmosphere, memory, and emotion.
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 animate-fade-in-up">About SensEar</h1>
-          <p className="text-xl max-w-3xl mx-auto text-white/80 animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
-            At the core of SensEar is a shared belief: that music is not background—it is atmosphere, memory, and emotion. Discover our <Link to={createPageUrl("Services")} className="underline hover:text-white">comprehensive music curation services</Link> and explore our <Link to={createPageUrl("CaseStudies")} className="underline hover:text-white">success stories</Link>.
-          </p>
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/361e48e4b_85051705_172264584193922_2910039908695408640_n.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/361e48e4b_85051705_172264584193922_2910039908695408640_n.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/361e48e4b_85051705_172264584193922_2910039908695408640_n.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="SensEar music curation team collaborating on sonic branding project"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "About", path: createPageUrl("AboutUs") }]
         } />
-      </div>
+      </div> */}
       
       {/* Timeline */}
       <section className="py-20 bg-white" aria-labelledby="timeline-heading">
@@ -364,7 +365,6 @@ export default function AboutUs() {
                     src={member.image}
                     alt={member.alt}
                     className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500" />
-
                   </div>
                   <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
                   <p className="text-peach-layer font-semibold mb-4 text-sm uppercase tracking-wider">{member.role}</p>

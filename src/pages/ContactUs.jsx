@@ -283,41 +283,52 @@ export default function ContactUs() {
 
   return (
     <div className="bg-[#faebe3]">
-      {/* Hero */}
-      <section
-        className="relative min-h-screen flex items-center justify-center text-white overflow-hidden"
-        role="img"
-        aria-label="Contact SensEar for music curation consultation">
-
-        {/* Parallax Background */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}
-        >
-          <div className="absolute inset-0 bg-black/40" />
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Contact section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Get in Touch
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                We are here to help you create the perfect soundscape for your business. Whether you need <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black">strategic sonic branding</Link>, <Link to={createPageUrl("signature-soundscapes")} className="underline hover:text-black">custom playlists</Link>, or <Link to={createPageUrl("audio-experience-upgrade")} className="underline hover:text-black">audio system optimization</Link>, one of our music experts will respond within 24 hours!
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
-            Get in Touch
-          </h1>
-          <p className="text-xl text-white/80 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            We are here to help you create the perfect soundscape for your business. Whether you need <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-white">strategic sonic branding</Link>, <Link to={createPageUrl("signature-soundscapes")} className="underline hover:text-white">custom playlists</Link>, or <Link to={createPageUrl("audio-experience-upgrade")} className="underline hover:text-white">audio system optimization</Link>, one of our music experts will respond within 24 hours!
-          </p>
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Contact SensEar for music curation consultation"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
           { label: "Contact", path: createPageUrl("ContactUs") }
         ]} />
-      </div>
+      </div> */}
 
       <section className="py-20 bg-[#faebe3]" aria-labelledby="contact-heading">
         <div className="max-w-6xl mx-auto px-6">
