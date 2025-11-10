@@ -211,8 +211,8 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image - 85% width */}
-          <div className="mt-12 rounded-3xl overflow-hidden shadow-2xl mx-auto" style={{ maxWidth: '85%' }}>
+          {/* Hero Image */}
+          <div className="mt-12 rounded-3xl overflow-hidden shadow-2xl mx-auto" >
             <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg"
               srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg 800w,
