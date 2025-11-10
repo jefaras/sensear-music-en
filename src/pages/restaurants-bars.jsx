@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -10,7 +9,6 @@ export default function RestaurantsBars() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    // SEO setup
     document.title = "Music for Restaurants & Bars | SensEar Curation";
 
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -177,22 +175,14 @@ export default function RestaurantsBars() {
       document.head.appendChild(structuredDataScript);
     }
 
-    // Scroll tracking for parallax
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const problems = [
-  { title: "Guests leave early, and do not return", description: "When the atmosphere does not connect, guests cut visits short and rarely come back. We create soundscapes that invite them to stay longer, return, and build habits around your space." },
-  { title: "Music feels generic or out of place", description: "Design, service, and concept are on point, but the music says something else. We translate your brand values into sound, so every track supports the identity you have worked to build." },
-  { title: "Atmosphere does not support revenue goals", description: "Music affects how guests move, order, and interact. We curate sound to guide the rhythm of your space—encouraging that extra drink, shared plate, or dessert at just the right moment." }];
-
   return (
     <div className="bg-[#faebe3]">
-      {/* Hero Section - Similar to Home but smaller heading */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Restaurants & Bars section">
-        {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
@@ -208,7 +198,6 @@ export default function RestaurantsBars() {
           </div>
         </div>
 
-        {/* Hero Image - Larger with parallax */}
         <div className="w-full px-6">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
@@ -246,17 +235,35 @@ export default function RestaurantsBars() {
             We understand <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">how brand-relevant music increases sales</Link> and <Link to={createPageUrl("music-influence-consumer-behavior")} className="underline hover:text-black font-semibold">how music influences customer behavior</Link>. We use our knowledge to help you increase your sales and loyalty.
           </p>
           <div className="grid md:grid-cols-2 gap-8" role="list">
-            {problems.map((p) =>
-            <article key={p.title} role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-                <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold mb-2">{p.title}</h3>
-                    <p className="text-sm sm:text-base text-black/70">{p.description}</p>
-                  </div>
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Guests leave early, and do not return</h3>
+                  <p className="text-sm sm:text-base text-black/70">When the atmosphere does not connect, guests cut visits short and rarely come back. We create soundscapes that invite them to stay longer, return, and build habits around your space.</p>
                 </div>
-              </article>
-            )}
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Music feels generic or out of place</h3>
+                  <p className="text-sm sm:text-base text-black/70">Design, service, and concept are on point, but the music says something else. We translate your brand values into sound, so every track supports the identity you have worked to build.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Atmosphere does not support revenue goals</h3>
+                  <p className="text-sm sm:text-base text-black/70">Music affects how guests move, order, and interact. We curate sound to guide the rhythm of your space—encouraging that extra drink, shared plate, or dessert at just the right moment.</p>
+                </div>
+              </div>
+            </article>
           </div>
           <div className="text-center mt-16">
             <p className="text-black/70 mb-6 px-4">
@@ -268,5 +275,6 @@ export default function RestaurantsBars() {
           </div>
         </div>
       </section>
-    </div>);
+    </div>
+  );
 }

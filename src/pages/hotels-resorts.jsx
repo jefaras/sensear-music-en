@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -9,7 +8,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 export default function HotelsResorts() {
   const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
+  useEffect() => {
     document.title = "Music Curation for Hotels & Resorts | SensEar";
 
     const metaDescription = document.querySelector('meta[name="description"]');
@@ -23,7 +22,6 @@ export default function HotelsResorts() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -46,7 +44,6 @@ export default function HotelsResorts() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - INDUSTRY PAGE: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -57,7 +54,6 @@ export default function HotelsResorts() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -68,7 +64,6 @@ export default function HotelsResorts() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/hotels-resorts');
@@ -79,14 +74,12 @@ export default function HotelsResorts() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
-      { property: 'og:title', content: 'Music Curation for Hotels & Resorts | SensEar' },
-      { property: 'og:description', content: description },
-      { property: 'og:image', content: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80' },
-      { property: 'og:url', content: 'https://sensear.music/hotels-resorts' },
-      { property: 'og:type', content: 'website' }
-    ];
+    { property: 'og:title', content: 'Music Curation for Hotels & Resorts | SensEar' },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80' },
+    { property: 'og:url', content: 'https://sensear.music/hotels-resorts' },
+    { property: 'og:type', content: 'website' }];
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -100,13 +93,11 @@ export default function HotelsResorts() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Music Curation for Hotels & Resorts | SensEar' },
-      { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80' }
-    ];
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Music Curation for Hotels & Resorts | SensEar' },
+    { name: 'twitter:description', content: description },
+    { name: 'twitter:image', content: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1600&q=80' }];
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -120,61 +111,57 @@ export default function HotelsResorts() {
       }
     });
 
-    // Add structured data
     const structuredData = [
-      {
-        "@context": "https://schema.org",
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SensEar",
+      "url": "https://sensear.music",
+      "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg",
+      "sameAs": [
+      "https://www.facebook.com/61575909304249/",
+      "https://www.instagram.com/sensear.music"]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Hotel & Resort Music Curation",
+      "description": "Hand-picked playlists that flow effortlessly from sunrise to sunset, crafted exclusively to elevate each hour of the day for hotels and resorts.",
+      "provider": {
         "@type": "Organization",
         "name": "SensEar",
-        "url": "https://sensear.music",
-        "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg",
-        "sameAs": [
-          "https://www.facebook.com/61575909304249/",
-          "https://www.instagram.com/sensear.music"
-        ]
+        "url": "https://sensear.music"
       },
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Hotel & Resort Music Curation",
-        "description": "Hand-picked playlists that flow effortlessly from sunrise to sunset, crafted exclusively to elevate each hour of the day for hotels and resorts.",
-        "provider": {
-          "@type": "Organization",
-          "name": "SensEar",
-          "url": "https://sensear.music"
-        },
-        "areaServed": "GR",
-        "serviceType": "Hospitality Music Curation",
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "Hotels and Resorts"
-        }
-      },
-      {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://sensear.music/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Industries",
-            "item": "https://sensear.music/industries"
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Hotels & Resorts",
-            "item": "https://sensear.music/hotels-resorts"
-          }
-        ]
+      "areaServed": "GR",
+      "serviceType": "Hospitality Music Curation",
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Hotels and Resorts"
       }
-    ];
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sensear.music/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Industries",
+        "item": "https://sensear.music/industries"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Hotels & Resorts",
+        "item": "https://sensear.music/hotels-resorts"
+      }]
+    }];
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -191,27 +178,16 @@ export default function HotelsResorts() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const problems = [
-    { title: "Inconsistent music quality across spaces and times of day", description: "No more akward transitions or mismatched moods. Our playlists evolve naturally with guest flow and energy levels." },
-    { title: "Generic or off-brand background music", description: "We craft soundscapes that reflect your identity, not someone else's. Subtle, but deeply felt." },
-    { title: "Low ambience or atmosphere ratings", description: "Music is the emotional layer guests remember. We help boost perception without visual overhauls." },
-    { title: "Staff manually changing music or using unlicensed tools", description: "We centralize control with legal, fully licensed music and automated scheduling. No stress, no guesswork." },
-    { title: "Acoustically \"dead\" or noisy areas", description: "Our sound curation accounts for layout, materials, and crowd dynamics, filling your space with clarity and warmth." },
-    { title: "Disconnect between brand tone and audio experience", description: "We align your sound with your story helping guests feel what you want them to feel." }
-  ];
-
   return (
     <div className="bg-[#faebe3]">
-      {/* Hero Section - Similar to Home but smaller heading */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hotels & Resorts section">
-        {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
               Curated music for enhanced<br />
               guest satisfaction
             </h1>
-
+            
             <div className="mb-8 max-w-4xl">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
                 Hand-picked playlists that flow effortlessly from sunrise to sunset,  crafted exclusively to elevate each hour of the day.
@@ -220,7 +196,6 @@ export default function HotelsResorts() {
           </div>
         </div>
 
-        {/* Hero Image - Larger with parallax */}
         <div className="w-full px-6">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
@@ -231,7 +206,7 @@ export default function HotelsResorts() {
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Luxury hotel resort lobby with curated music ambiance and elegant hospitality design"
                 className="absolute w-full h-full object-cover"
-                style={{
+                style={{ 
                   top: '-15%',
                   height: '130%',
                   transform: `translateY(${scrollY * 0.15}px)`,
@@ -258,17 +233,65 @@ export default function HotelsResorts() {
             Our musicologists build a private catalogue that adapts to guest journeys and spatial acoustics, raising ambience ratings, while reinforcing your brand positioning.
           </p>
           <div className="grid md:grid-cols-2 gap-8" role="list">
-            {problems.map((p) =>
-              <article key={p.title} role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-                <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{p.title}</h3>
-                    <p className="text-black/70">{p.description}</p>
-                  </div>
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Inconsistent music quality across spaces and times of day</h3>
+                  <p className="text-black/70">No more akward transitions or mismatched moods. Our playlists evolve naturally with guest flow and energy levels.</p>
                 </div>
-              </article>
-            )}
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Generic or off-brand background music</h3>
+                  <p className="text-black/70">We craft soundscapes that reflect your identity, not someone else's. Subtle, but deeply felt.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Low ambience or atmosphere ratings</h3>
+                  <p className="text-black/70">Music is the emotional layer guests remember. We help boost perception without visual overhauls.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Staff manually changing music or using unlicensed tools</h3>
+                  <p className="text-black/70">We centralize control with legal, fully licensed music and automated scheduling. No stress, no guesswork.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Acoustically "dead" or noisy areas</h3>
+                  <p className="text-black/70">Our sound curation accounts for layout, materials, and crowd dynamics, filling your space with clarity and warmth.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Disconnect between brand tone and audio experience</h3>
+                  <p className="text-black/70">We align your sound with your story helping guests feel what you want them to feel.</p>
+                </div>
+              </div>
+            </article>
           </div>
           <div className="text-center mt-16">
             <p className="text-black/70 mb-6">
