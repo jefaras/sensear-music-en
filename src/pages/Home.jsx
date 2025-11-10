@@ -234,8 +234,9 @@ export default function Home() {
       `}</style>
 
       {/* Hero Section - with silver foil background */}
-      <section className="relative pt-32 pb-20 px-6 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
-        <div className="max-w-7xl mx-auto">
+      <section className="relative pt-32 pb-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
+        {/* Text content - constrained by max-w-7xl */}
+        <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black mb-6 leading-[1.1]">
               Music Curation that Transforms Spaces into Experiences
@@ -266,20 +267,22 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
 
-          {/* Hero Image - MUCH BIGGER (1600px) with parallax and high-res image */}
-          <div className="relative w-full max-w-[1600px] mx-auto">
-            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative" style={{ height: '700px' }}>
+        {/* Hero Image - FULL WIDTH 1800px, breaks out of container, with working parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '56.25%' }}>
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 1600w,
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 2400w"
-                sizes="(max-width: 1600px) 100vw, 1600px"
+                sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Luxury hotel lounge interior with sophisticated ambiance showcasing music curation atmosphere"
-                className="w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
                 style={{ 
-                  transform: `translateY(${Math.min(scrollY * 0.15, 80)}px) scale(1.1)`,
-                  objectPosition: 'center center'
+                  transform: `translateY(${scrollY * 0.05}px)`,
+                  transformOrigin: 'center top'
                 }}
               />
             </div>
