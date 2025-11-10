@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -383,9 +384,11 @@ export default function Services() {
             <p className="text-black/70 mb-4 max-w-3xl mx-auto">
               Whether you're a <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotel</Link>, <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurant</Link>, or <Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">retail space</Link>, we have the expertise to elevate your atmosphere.
             </p>
-            <Link to={createPageUrl("Industries")} className="inline-flex items-center text-black font-semibold hover:gap-3 transition-all gap-2">
-              <span>See which venues we elevate</span>
-              <ArrowRight className="w-5 h-5" aria-hidden="true" />
+            <Link to={createPageUrl("Industries")}>
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group">
+                See which venues we elevate
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+              </Button>
             </Link>
           </div>
         </div>
