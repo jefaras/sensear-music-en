@@ -264,10 +264,7 @@ export default function WellnessCenters() {
       <section className="py-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="what-we-deliver-heading">
         <div className="max-w-4xl mx-auto px-6">
           <h2 id="what-we-deliver-heading" className="text-2xl sm:text-3xl font-bold text-black text-center mb-6">What we deliver</h2>
-          <p className="text-center text-black/70 mb-8 max-w-3xl mx-auto px-4">
-            SensEar curates dayparted sound that supports mindfulness in spas and steady motivation on the gym floor, without fatigue or distraction.
-          </p>
-          <p className="text-center text-black/70 mb-8 max-w-3xl mx-auto px-4">
+            <p className="text-center text-black/70 mb-8 max-w-3xl mx-auto px-4">
           Our playlists blend field recordings, slow-wave downtempo, and neo-classical pieces for treatment rooms; then shift to clean, lyric-light electronic, modern funk, and uplifting indie for cardio, strength, and studio classes.
           </p>
           <ul className="space-y-4 text-black/80 max-w-2xl mx-auto" role="list">
