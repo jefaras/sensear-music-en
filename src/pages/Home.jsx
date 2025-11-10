@@ -267,19 +267,19 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image - 20% bigger with parallax effect, properly contained */}
-          <div className="relative w-full" style={{ maxWidth: 'calc(100% + 200px)', marginLeft: '-100px', marginRight: '-100px' }}>
-            <div className="rounded-[2rem] overflow-hidden shadow-2xl" style={{ height: '600px' }}>
+          {/* Hero Image - MUCH BIGGER (1600px) with parallax and high-res image */}
+          <div className="relative w-full max-w-[1600px] mx-auto">
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative" style={{ height: '700px' }}>
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg 800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg 1600w"
-                sizes="100vw"
-                alt="Vibrant group of people enjoying music and atmosphere at an energetic restaurant event"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 1600w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 2400w"
+                sizes="(max-width: 1600px) 100vw, 1600px"
+                alt="Luxury hotel lounge interior with sophisticated ambiance showcasing music curation atmosphere"
                 className="w-full h-full object-cover"
                 style={{ 
-                  transform: `translateY(${Math.min(scrollY * 0.1, 60)}px)`,
-                  objectPosition: 'center'
+                  transform: `translateY(${Math.min(scrollY * 0.15, 80)}px) scale(1.1)`,
+                  objectPosition: 'center center'
                 }}
               />
             </div>
