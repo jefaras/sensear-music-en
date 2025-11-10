@@ -8,7 +8,7 @@ import Breadcrumbs from "../components/Breadcrumbs";
 export default function HotelsResorts() {
   const [scrollY, setScrollY] = useState(0);
 
-  useEffect() => {
+  useEffect(() => {
     document.title = "Music Curation for Hotels & Resorts | SensEar";
 
     const metaDescription = document.querySelector('meta[name="description"]');
