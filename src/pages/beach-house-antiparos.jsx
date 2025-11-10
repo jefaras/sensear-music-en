@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
@@ -8,6 +8,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function BeachHouseAntiparos() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Beach House Antiparos Case Study | SensEar Music Curation";
 
@@ -187,6 +189,10 @@ export default function BeachHouseAntiparos() {
       structuredDataScript.textContent = JSON.stringify(structuredData);
       document.head.appendChild(structuredDataScript);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const problems = [
@@ -207,25 +213,54 @@ export default function BeachHouseAntiparos() {
 
   return (
     <div className="bg-[#faebe3] min-h-screen">
-      <section
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center text-white pt-24 md:pt-0"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png')" }}
-        role="img"
-        aria-label="Beach House Antiparos beachfront venue with zoned music curation">
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up leading-tight">Designing a cohesive sonic experience for every zone of the beach house</h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>Matching the music to each area's identity to ensure a seamless and consistent experience throughout the day.</p>
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Beach House Antiparos Case Study section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Designing a cohesive sonic experience<br />
+              for every zone of the beach house
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Matching the music to each area's identity to ensure a seamless and consistent experience throughout the day.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Beach House Antiparos beachfront venue with zoned music curation"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Case Studies", path: createPageUrl("CaseStudies") },
         { label: "Beach House Antiparos", path: createPageUrl("beach-house-antiparos") }]
         } />
-      </div>
+      </div> */}
 
       {/* Main Content Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>

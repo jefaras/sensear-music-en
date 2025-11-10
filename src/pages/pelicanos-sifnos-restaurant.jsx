@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
@@ -8,6 +8,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function PelicanosSifnosRestaurant() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Pelicanos Restaurant Sifnos Case Study | SensEar Music Curation";
 
@@ -22,7 +24,6 @@ export default function PelicanosSifnosRestaurant() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -45,7 +46,6 @@ export default function PelicanosSifnosRestaurant() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - CASE STUDY: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -56,7 +56,6 @@ export default function PelicanosSifnosRestaurant() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -67,7 +66,6 @@ export default function PelicanosSifnosRestaurant() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/pelicanos-sifnos-restaurant');
@@ -78,14 +76,12 @@ export default function PelicanosSifnosRestaurant() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'Pelicanos Restaurant Sifnos Case Study | SensEar Music Curation' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png' },
     { property: 'og:url', content: 'https://sensear.music/pelicanos-sifnos-restaurant' },
     { property: 'og:type', content: 'article' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -99,13 +95,11 @@ export default function PelicanosSifnosRestaurant() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Pelicanos Restaurant Sifnos Case Study | SensEar Music Curation' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -119,7 +113,6 @@ export default function PelicanosSifnosRestaurant() {
       }
     });
 
-    // Add structured data
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -130,7 +123,6 @@ export default function PelicanosSifnosRestaurant() {
       "sameAs": [
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music"]
-
     },
     {
       "@context": "https://schema.org",
@@ -174,9 +166,7 @@ export default function PelicanosSifnosRestaurant() {
         "name": "Pelicanos Restaurant",
         "item": "https://sensear.music/pelicanos-sifnos-restaurant"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -187,45 +177,75 @@ export default function PelicanosSifnosRestaurant() {
       structuredDataScript.textContent = JSON.stringify(structuredData);
       document.head.appendChild(structuredDataScript);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const problems = [
   "They needed a dynamic music program that complemented their culinary creativity without sounding unfamiliar or too niche.",
   "The playlists had to support an all-day rhythm, while balancing music discovery with recognizable artists."];
 
-
   const solutions = [
   "Created a rotating playlist architecture with tasteful blends of older and contemporary Mediterranean-inspired tracks.",
   "Mapped energy shifts throughout the day to integrate music with the natural pace of service, guest flow and Aegean swell.",
   "Delivered a discovery-friendly listening experience that reflects the brand's layered, modern approach to food."];
 
-
   const results = [
   "A renewed atmosphere that mirrors the spirit of the menu and elevates the guest experience.",
   "A consistent sonic mood that reflects the brand's creativity, calm confidence, and attention to detail."];
 
-
   return (
     <div className="bg-[#faebe3]">
-      <section
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center text-white pt-24 md:pt-0"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png')" }}
-        role="img"
-        aria-label="Pelicanos Sifnos upscale restaurant with refined music curation">
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up leading-tight">Creating a sonic palette as refined as the menu of Pelicanos</h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>Curating music themes that reflect the balance between tradition, a restless culinary spirit, and innovation. Playlists were designed to complement exceptional service and the timeless Aegean atmosphere.</p>
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Pelicanos Restaurant Case Study section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Creating a sonic palette<br />
+              as refined as the menu of Pelicanos
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Curating music themes that reflect the balance between tradition, a restless culinary spirit, and innovation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Pelicanos Sifnos upscale restaurant with refined music curation"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Case Studies", path: createPageUrl("CaseStudies") },
         { label: "Pelicanos Restaurant", path: createPageUrl("pelicanos-sifnos-restaurant") }]
         } />
-      </div>
+      </div> */}
 
       {/* Main Content Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
