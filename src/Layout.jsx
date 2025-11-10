@@ -241,6 +241,11 @@ export default function Layout({ children }) {
           line-height: 1.25 !important;
         }
         
+        /* Universal rounded button styling */
+        button, .button, [role="button"] {
+          border-radius: 9999px !important;
+        }
+        
         @keyframes fadeInUp {
           from {
             opacity: 0;
@@ -332,44 +337,6 @@ export default function Layout({ children }) {
                 }
               </div>
             )}
-
-            {/* Language Selector - COMMENTED OUT */}
-            {/* <div
-              className="relative group"
-              onMouseEnter={() => setOpenDropdown('language')}
-              onMouseLeave={() => setOpenDropdown(null)}>
-
-              <button 
-                className="text-slate-50 py-2 text-sm font-medium tracking-wide transition-colors relative flex items-center gap-2 hover:opacity-80"
-                aria-label="Select language">
-                <Globe className="w-5 h-5" />
-                <ChevronDown className="w-4 h-4" />
-              </button>
-
-              {openDropdown === 'language' &&
-                <div className="absolute top-full right-0 pt-2 w-48 z-10">
-                  <div className="bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden">
-                    {languages.map((lang) =>
-                      <button
-                        key={lang.code}
-                        onClick={() => handleLanguageChange(lang.code)}
-                        className={`w-full flex items-center gap-3 px-6 py-3 text-sm transition-colors hover:bg-peach-layer ${
-                          selectedLanguage === lang.code ?
-                            "bg-peach-layer text-black font-medium" :
-                            "text-black"}`
-                        }>
-                        <img 
-                          src={lang.flag} 
-                          alt={`${lang.name} flag`}
-                          className="w-6 h-6 rounded-full object-cover"
-                        />
-                        <span>{lang.name}</span>
-                      </button>
-                    )}
-                  </div>
-                </div>
-              }
-            </div> */}
           </div>
 
           {/* Mobile Menu Button */}
@@ -418,36 +385,6 @@ export default function Layout({ children }) {
                   }
                 </div>
               )}
-              
-              {/* Mobile Language Selector - COMMENTED OUT */}
-              {/* <div className="border-t border-white/20 pt-4 mt-4">
-                <div className="text-white/90 text-sm font-medium mb-2 flex items-center gap-2">
-                  <Globe className="w-4 h-4" />
-                  Language
-                </div>
-                <div className="pl-4 space-y-2">
-                  {languages.map((lang) =>
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        handleLanguageChange(lang.code);
-                        setIsMenuOpen(false);
-                      }}
-                      className={`flex items-center gap-3 py-2 text-sm transition-colors ${
-                        selectedLanguage === lang.code ?
-                          "text-white font-medium" :
-                          "text-white/70"}`
-                      }>
-                      <img 
-                        src={lang.flag} 
-                        alt={`${lang.name} flag`}
-                        className="w-5 h-5 rounded-full object-cover"
-                      />
-                      <span>{lang.name}</span>
-                    </button>
-                  )}
-                </div>
-              </div> */}
             </div>
           </div>
         }
@@ -491,7 +428,7 @@ export default function Layout({ children }) {
                 <h3 className="text-sm font-semibold text-peach mb-3">Sonic Insights</h3>
                 <div className="flex gap-2">
                   <Input type="email" placeholder="Your email" className="bg-white/10 border-white/20 text-white placeholder:text-white/50 flex-1 text-sm h-9 max-w-[180px]" />
-                  <Button className="bg-slate-50 text-slate-950 px-3 py-2 text-xs font-semibold rounded-md inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 hover:bg-peach-layer">Subscribe</Button>
+                  <Button className="bg-slate-50 text-slate-950 px-3 py-2 text-xs font-semibold rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 hover:bg-peach-layer">Subscribe</Button>
                 </div>
               </div>
             </div>

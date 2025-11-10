@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -181,21 +182,22 @@ export default function Home() {
       {/* Hero Section - with silver foil background */}
       <section className="relative pt-32 pb-12 px-6" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
         <div className="max-w-7xl mx-auto">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-black mb-6 leading-tight">
+          <div className="w-full">
+            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black mb-6 leading-[1.1]">
               Music Curation that Transforms Spaces into Experiences
             </h1>
             
-            <div className="mb-8">
+            <div className="mb-8 max-w-5xl">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Every venue has a story. Let music tell yours. We craft bespoke playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections and loyal guests.
+                Every venue has a story. Let music tell yours.<br />
+                We craft bespoke playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections and loyal guests.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Link to={createPageUrl("ContactUs")}>
                 <Button 
-                  className="bg-red-500 hover:bg-red-600 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+                  className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
                   aria-label="Contact us for music curation consultation">
                   Contact us
                 </Button>
@@ -211,13 +213,13 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Hero Image */}
-          <div className="mt-12 rounded-3xl overflow-hidden shadow-2xl mx-auto" >
+          {/* Hero Image - Larger */}
+          <div className="mt-12 rounded-3xl overflow-hidden shadow-2xl">
             <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg"
               srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg 800w,
                       https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/82df3d965_Dogwood-Southern-Table-and-Bar-by-Square-Feet-Studio-Issue-18-Feature-The-Local-Project-Image-3-.jpg 1600w"
-              sizes="(max-width: 768px) 100vw, 85vw"
+              sizes="(max-width: 768px) 100vw, 1200px"
               alt="Vibrant group of people enjoying music and atmosphere at an energetic restaurant event"
               className="w-full h-auto object-cover"
             />
@@ -225,10 +227,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trusted By Section - with silver foil background */}
-      <section className="py-16" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="clients-heading">
+      {/* Trusted By Section - Black background */}
+      <section className="py-16 bg-black" aria-labelledby="clients-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="clients-heading" className="text-2xl md:text-3xl font-bold text-center mb-12 text-black">Now playing in venues across Greece</h2>
+          <h2 id="clients-heading" className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">Now playing in venues across Greece</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8 items-center justify-items-center" role="list">
             {[
             {
@@ -268,10 +270,9 @@ export default function Home() {
                   src={client.logo}
                   alt={`${client.name} logo - SensEar music curation client`}
                   className="max-w-full max-h-full object-contain" />
-
                 </div>
-                <p className="text-base sm:text-lg md:text-xl font-semibold text-black/80 tracking-widest uppercase">{client.name}</p>
-                <p className="text-xs sm:text-sm text-black/50 mt-1">{client.location}</p>
+                <p className="text-base sm:text-lg md:text-xl font-semibold text-white/90 tracking-widest uppercase">{client.name}</p>
+                <p className="text-xs sm:text-sm text-white/60 mt-1">{client.location}</p>
               </div>
             )}
           </div>
@@ -391,7 +392,7 @@ export default function Home() {
                     </ul>
                     <div className="mt-8 md:mt-12 text-center lg:text-left w-full">
                       <Link to={createPageUrl("Industries")} className="inline-block w-full sm:w-auto">
-                          <Button className="bg-black hover:bg-black/80 text-white px-6 md:px-8 h-14 text-sm sm:text-base md:text-lg group w-full sm:w-auto" aria-label="See how we can transform your venue">
+                          <Button className="bg-black hover:bg-black/80 text-white px-6 md:px-8 h-14 text-sm sm:text-base md:text-lg group w-full sm:w-auto rounded-full" aria-label="See how we can transform your venue">
                               See how we can transform your own venue
                               <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                           </Button>
@@ -524,7 +525,7 @@ export default function Home() {
 
           <div className="text-center">
             <Link to={createPageUrl("Blog")}>
-              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group" aria-label="View all blog articles">
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group rounded-full" aria-label="View all blog articles">
                 View all articles
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </Button>
