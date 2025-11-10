@@ -1,0 +1,338 @@
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '@/utils';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { Volume2, Settings, Wrench, CheckCircle, Lightbulb, Package, CheckSquare } from 'lucide-react';
+import Breadcrumbs from "../components/Breadcrumbs";
+
+export default function AudioUpgrades() {
+  useEffect(() => {
+    document.title = "Audio Upgrades | SensEar Sound Optimization";
+
+    // Find an existing meta description tag
+    let metaDescription = document.querySelector('meta[name="description"]');
+    const description = "Professional sound checks, acoustic optimization, and audio calibration. Guaranteed fixes for any venue sound issue. Book your assessment today.";
+
+    if (metaDescription) {
+      // If found, update its content
+      metaDescription.setAttribute('content', description);
+    } else {
+      // If not found, create a new one and append it to the head
+      metaDescription = document.createElement('meta');
+      metaDescription.name = 'description';
+      metaDescription.content = description;
+      document.head.appendChild(metaDescription);
+    }
+
+    // Add locale and language meta tags
+    const localeTag = document.querySelector('meta[property="og:locale"]');
+    if (localeTag) {
+      localeTag.setAttribute('content', 'en_US');
+    } else {
+      const meta = document.createElement('meta');
+      meta.setAttribute('property', 'og:locale');
+      meta.content = 'en_US';
+      document.head.appendChild(meta);
+    }
+
+    const languageTag = document.querySelector('meta[http-equiv="content-language"]');
+    if (languageTag) {
+      languageTag.setAttribute('content', 'en');
+    } else {
+      const meta = document.createElement('meta');
+      meta.setAttribute('http-equiv', 'content-language');
+      meta.content = 'en';
+      document.head.appendChild(meta);
+    }
+
+    document.documentElement.lang = 'en';
+
+    // Add robots meta tag - SERVICE PAGE: index, follow
+    let robotsMeta = document.querySelector('meta[name="robots"]');
+    if (robotsMeta) {
+      robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+    } else {
+      robotsMeta = document.createElement('meta');
+      robotsMeta.name = 'robots';
+      robotsMeta.content = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
+      document.head.appendChild(robotsMeta);
+    }
+
+    // Add googlebot specific tag
+    let googlebotMeta = document.querySelector('meta[name="googlebot"]');
+    if (googlebotMeta) {
+      googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
+    } else {
+      googlebotMeta = document.createElement('meta');
+      googlebotMeta.name = 'googlebot';
+      googlebotMeta.content = 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1';
+      document.head.appendChild(googlebotMeta);
+    }
+
+    // Add canonical link
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', 'https://sensear.music/audio-upgrades');
+    } else {
+      canonicalLink = document.createElement('link');
+      canonicalLink.rel = 'canonical';
+      canonicalLink.href = 'https://sensear.music/audio-upgrades';
+      document.head.appendChild(canonicalLink);
+    }
+
+    // Open Graph tags
+    const ogTags = [
+    { property: 'og:title', content: 'Audio Upgrades | SensEar Sound Optimization' },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1600&q=80' },
+    { property: 'og:url', content: 'https://sensear.music/audio-upgrades' }];
+
+
+    ogTags.forEach((tag) => {
+      let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
+      if (metaTag) {
+        metaTag.setAttribute('content', tag.content);
+      } else {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('property', tag.property);
+        metaTag.setAttribute('content', tag.content);
+        document.head.appendChild(metaTag);
+      }
+    });
+
+    // Twitter Card tags
+    const twitterTags = [
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Audio Upgrades | SensEar Sound Optimization' },
+    { name: 'twitter:description', content: description },
+    { name: 'twitter:image', content: 'https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1600&q=80' }];
+
+
+    twitterTags.forEach((tag) => {
+      let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
+      if (metaTag) {
+        metaTag.setAttribute('content', tag.content);
+      } else {
+        metaTag = document.createElement('meta');
+        metaTag.setAttribute('name', tag.name);
+        metaTag.setAttribute('content', tag.content);
+        document.head.appendChild(metaTag);
+      }
+    });
+
+    // Add structured data
+    const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "SensEar",
+      "url": "https://sensear.music",
+      "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b3/16dd574fc_se-profile-silver-profile-1.jpg",
+      "sameAs": [
+      "https://www.facebook.com/61575909304249/",
+      "https://www.instagram.com/sensear.music"]
+
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Audio Upgrades",
+      "description": "Professional on-site sound checks, optimization and audio calibration, with guaranteed fixes for any sound related issue.",
+      "provider": {
+        "@type": "Organization",
+        "name": "SensEar",
+        "url": "https://sensear.music"
+      },
+      "areaServed": "GR",
+      "serviceType": "Audio Optimization and Calibration"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sensear.music/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://sensear.music/services"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Audio Upgrades",
+        "item": "https://sensear.music/audio-upgrades"
+      }]
+
+    }];
+
+
+    let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
+    if (structuredDataScript) {
+      structuredDataScript.textContent = JSON.stringify(structuredData);
+    } else {
+      structuredDataScript = document.createElement('script');
+      structuredDataScript.type = 'application/ld+json';
+      structuredDataScript.textContent = JSON.stringify(structuredData);
+      document.head.appendChild(structuredDataScript);
+    }
+  }, []);
+
+  const whatWeDo = [
+  {
+    icon: Settings,
+    title: "On-site acoustic audits and layout assessments",
+    description: "We analyze your space's acoustics and current setup to identify issues and opportunities for improvement."
+  },
+  {
+    icon: Volume2,
+    title: "Hardware testing and zone performance",
+    description: "We test speakers, amplifiers, and coverage to ensure every zone delivers crystal-clear sound."
+  },
+  {
+    icon: Wrench,
+    title: "Redesigns for clarity and immersive flow",
+    description: "We create tailored solutions that enhance clarity, coverage, and create an immersive audio experience."
+  },
+  {
+    icon: Lightbulb,
+    title: "Tailored AV proposals based on your needs and aesthetics",
+    description: "We design custom audio-visual solutions that align with your venue's unique character and functional requirements."
+  },
+  {
+    icon: Package,
+    title: "Procurement and installation with trusted AV partners",
+    description: "We source premium equipment and coordinate professional installation through our network of certified partners."
+  },
+  {
+    icon: CheckSquare,
+    title: "Final tuning and walkthrough under real conditions",
+    description: "We calibrate your system during actual operations, ensuring optimal performance in live environment conditions."
+  }];
+
+
+  const problemsWeSolve = [
+  {
+    title: 'Sound that does not fit the room',
+    description: 'Harsh reflections, dead zones, or overpowering volumes often stem from mismatched layouts or poor calibration. We balance sound to fit your space—clean, even, and immersive.'
+  },
+  {
+    title: 'Guests struggling to hold a conversation',
+    description: 'If the music is too loud—or too uneven—guests leave faster. We design a sound environment that supports social flow without sacrificing presence or clarity.'
+  },
+  {
+    title: 'Equipment that underperforms or is overcomplicated',
+    description: 'Too often, venues are sold the wrong gear or setups they cannot manage. We simplify, optimize, and make sure your team can run the system without stress.'
+  },
+  {
+    title: 'No clear support or accountability',
+    description: 'You should not have to chase multiple suppliers for basic sound performance. We handle everything—from diagnosis to delivery—as your all-in-one partner.'
+  },
+  {
+    title: 'Spaces that look premium compromised by weak sound',
+    description: 'Great design deserves sound to match. We make sure your venue sounds as considered as it looks.'
+  }];
+
+
+  return (
+    <div className="bg-[#faebe3]">
+      <section
+        className="relative min-h-screen flex items-center justify-center bg-cover bg-center pt-24 md:pt-0"
+        style={{
+          backgroundImage: "url(https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg)"
+        }}
+        role="img"
+        aria-label="Professional audio equipment optimization and acoustic calibration for venues">
+
+        <div className="absolute inset-0 bg-black/40" />
+        
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up leading-tight">Audio Upgrades: <br /> Sound in perfect alignment with your space</h1>
+          <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed mb-8 animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>On-site acoustic checks, system tuning, and immersive AV design, tailored to your layout, energy flow, and aesthetic.</p>
+          <div className="animate-fade-in-up px-4" style={{ animationDelay: '0.4s' }}>
+            <Link to={createPageUrl("ContactUs")}>
+              <Button size="lg" className="bg-gray-50 text-black px-8 py-6 text-lg font-medium rounded-md inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 hover:bg-[#f0dfd5]" aria-label="Book an audio experience assessment">Book an Audio Experience Assessment</Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Breadcrumbs */}
+      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+        <Breadcrumbs items={[
+        { label: "Services", path: createPageUrl("Services") },
+        { label: "Audio Upgrades", path: createPageUrl("audio-upgrades") }]
+        } />
+      </div>
+
+      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b2/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="what-we-do-heading">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 id="what-we-do-heading" className="text-4xl font-bold text-center mb-6 animate-fade-in-up leading-[1.25]">What We Do</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
+            {whatWeDo.map((item, index) =>
+            <article key={index} role="listitem" className="animate-fade-in-up" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
+                <Card className="bg-white p-8 shadow-lg h-full">
+                  <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                    <item.icon className="w-8 h-8" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
+                  <p className="text-lg text-black/70">{item.description}</p>
+                </Card>
+              </article>
+            )}
+          </div>
+          <p className="text-center text-black/70 mt-12 max-w-3xl mx-auto">
+            Sound in perfect alignment with your space. Essential for <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurants & bars</Link>, <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotels</Link>, and <Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">retail spaces</Link>. Complements our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists</Link> perfectly.
+          </p>
+        </div>
+      </section>
+
+      <section className="py-24 bg-white" aria-labelledby="problems-heading">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 id="problems-heading" className="text-4xl font-bold text-center mb-6 animate-fade-in-up leading-[1.25]">Problems We Solve</h2>
+          <div className="grid md:grid-cols-2 gap-8" role="list">
+            {problemsWeSolve.map((problem, index) =>
+            <article key={problem.title} className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
+                <div className="flex items-start gap-4">
+                  <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                  <div>
+                    <h3 className="text-xl font-bold mb-2">{problem.title}</h3>
+                    <p className="text-black/70">{problem.description}</p>
+                  </div>
+                </div>
+              </article>
+            )}
+          </div>
+          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: `${0.4 + problemsWeSolve.length * 0.1}s` }}>
+            <p className="text-black/70">
+              Discover how proper audio setup supports <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">increased sales through music</Link>. Perfect for all <Link to={createPageUrl("Industries")} className="underline hover:text-black font-semibold">industries we serve</Link>. Available alongside our <Link to={createPageUrl("event-soundtracks")} className="underline hover:text-black font-semibold">event services</Link>.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-black text-white" aria-labelledby="cta-heading">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 id="cta-heading" className="text-4xl font-bold mb-6 leading-[1.25]">
+            Ready to Optimize Your Sound?
+          </h2>
+          <p className="text-xl text-white/80 mb-8">
+            Let's assess your space and create the perfect audio experience for your venue.
+          </p>
+          <Link to={createPageUrl("ContactUs")}>
+            <Button size="lg" className="bg-slate-50 text-black px-8 py-6 text-lg font-medium hover:bg-[#f0dfd5]" aria-label="Book an audio experience assessment consultation">
+              Book an Audio Experience Assessment
+            </Button>
+          </Link>
+        </div>
+      </section>
+    </div>);
+
+}
