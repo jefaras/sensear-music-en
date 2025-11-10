@@ -286,7 +286,7 @@ export default function Layout({ children }) {
 
                 <Link
                   to={item.path} 
-                  className={`py-2 text-sm font-bold tracking-wide transition-colors relative flex items-center gap-2 hover:underline decoration-1 underline-offset-4 ${
+                  className={`py-2 text-base font-bold tracking-wide transition-colors relative flex items-center gap-2 hover:underline decoration-1 underline-offset-4 ${
                     isScrolled ? 'text-slate-50' : 'text-black'
                   }`}>
 
@@ -303,7 +303,7 @@ export default function Layout({ children }) {
                           key={subItem.name}
                           to={subItem.path}
                           onClick={() => setOpenDropdown(null)}
-                          className={`block px-6 py-3 text-sm transition-colors hover:underline decoration-1 underline-offset-4 ${
+                          className={`block px-6 py-3 text-base transition-colors hover:underline decoration-1 underline-offset-4 ${
                             location.pathname === subItem.path ?
                               "bg-peach-layer text-black font-medium" :
                               "text-black hover:bg-peach-layer"}`
@@ -420,7 +420,7 @@ export default function Layout({ children }) {
               </Link>
               <div className="space-y-2">
                 {footerNavItems.services.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
                 ))}
               </div>
             </div>
@@ -432,9 +432,9 @@ export default function Layout({ children }) {
               </Link>
               <div className="space-y-2">
                 {footerNavItems.industries.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
                 ))}
-                <Link to={createPageUrl("PlaylistsDemos")} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">Playlists Demos</Link>
+                <Link to={createPageUrl("PlaylistsDemos")} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">Playlists Demos</Link>
               </div>
             </div>
 
@@ -445,7 +445,7 @@ export default function Layout({ children }) {
               </Link>
               <div className="space-y-2">
                 {footerNavItems.caseStudies.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
                 ))}
               </div>
             </div>
@@ -455,7 +455,7 @@ export default function Layout({ children }) {
               <h3 className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider">Company</h3>
               <div className="space-y-2">
                 {footerNavItems.company.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
                 ))}
               </div>
             </div>
