@@ -327,41 +327,52 @@ export default function Blog() {
 
   return (
     <div className="bg-[#faebe3]">
-      {/* Hero */}
-       <section
-        className="relative min-h-screen flex items-center justify-center text-white overflow-hidden pt-20 md:pt-0"
-        role="img"
-        aria-label="Music curation blog insights and industry research articles"
-      >
-        {/* Background Image with Parallax */}
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8270df064_pxbee_2025-10-14_21-33-37.jpg')",
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}>
-          <div className="absolute inset-0 bg-black/40" />
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Blog section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Our Music Curation Blog
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Insights, trends, and expertise from the world of luxury music curation.
+              </p>
+            </div>
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up leading-[1.25]">
-            Our Music Curation Blog
-          </h1>
-          <p className="text-xl text-white/80 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Insights, trends, and expertise from the world of luxury music curation. Learn how our <Link to={createPageUrl("Services")} className="underline hover:text-white">services</Link> and <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-white">strategic approach</Link> deliver measurable results. Explore real success stories in our <Link to={createPageUrl("CaseStudies")} className="underline hover:text-white">case studies</Link>.
-          </p>
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8270df064_pxbee_2025-10-14_21-33-37.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8270df064_pxbee_2025-10-14_21-33-37.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8270df064_pxbee_2025-10-14_21-33-37.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Music curation blog insights and industry research articles"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
           { label: "Blog", path: createPageUrl("Blog") }
         ]} />
-      </div>
+      </div> */}
 
       {/* Featured Post */}
       <section className="py-12 bg-[#faebe3]" aria-labelledby="featured-heading">
