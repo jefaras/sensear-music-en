@@ -23,57 +23,57 @@ export default function Layout({ children }) {
   }, []);
 
   const navItems = [
-  { name: "Home", path: createPageUrl("Home") },
-  {
-    name: "Services",
-    path: createPageUrl("Services"),
-    subItems: [
-    { name: "Signature Playlists", path: createPageUrl("signature-playlists") },
-    { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") }, // Updated from "Events Soundtrack"
-    { name: "Sonic Strategy", path: createPageUrl("sonic-strategy") },
-    { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") } // Updated from "Audio Experience Upgrade"
-    ]
-  },
-  {
-    name: "Industries",
-    path: createPageUrl("Industries"),
-    subItems: [
-    { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
-    { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
-    { name: "Retail Stores", path: createPageUrl("retail-stores") },
-    { name: "Wellness Centers", path: createPageUrl("wellness-centers") },
-    { name: "Events & Experiences", path: createPageUrl("events-experiences") },
-    { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") },
-    { name: "Playlists Demos", path: createPageUrl("PlaylistsDemos") }]
-
-  },
-  {
-    name: "Case Studies",
-    path: createPageUrl("CaseStudies"),
-    subItems: [
-    { name: "Blue Bamboo", path: createPageUrl("blue-bamboo") },
-    { name: "Klouvi", path: createPageUrl("klouvi-bar") },
-    { name: "Beach House", path: createPageUrl("beach-house-antiparos") },
-    { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }]
-
-  },
-  { name: "About", path: createPageUrl("AboutUs") },
-  { name: "Contact", path: createPageUrl("ContactUs") },
-  { name: "Blog", path: createPageUrl("Blog") }];
-
+    { name: "Home", path: createPageUrl("Home") },
+    {
+      name: "Services",
+      path: createPageUrl("Services"),
+      subItems: [
+        { name: "Signature Playlists", path: createPageUrl("signature-playlists") },
+        { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") }, // Updated from "Events Soundtrack"
+        { name: "Sonic Strategy", path: createPageUrl("sonic-strategy") },
+        { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") } // Updated from "Audio Experience Upgrade"
+      ]
+    },
+    {
+      name: "Industries",
+      path: createPageUrl("Industries"),
+      subItems: [
+        { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
+        { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
+        { name: "Retail Stores", path: createPageUrl("retail-stores") },
+        { name: "Wellness Centers", path: createPageUrl("wellness-centers") },
+        { name: "Events & Experiences", path: createPageUrl("events-experiences") },
+        { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") },
+        { name: "Playlists Demos", path: createPageUrl("PlaylistsDemos") }
+      ]
+    },
+    {
+      name: "Case Studies",
+      path: createPageUrl("CaseStudies"),
+      subItems: [
+        { name: "Blue Bamboo", path: createPageUrl("blue-bamboo") },
+        { name: "Klouvi", path: createPageUrl("klouvi-bar") },
+        { name: "Beach House", path: createPageUrl("beach-house-antiparos") },
+        { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }
+      ]
+    },
+    { name: "About", path: createPageUrl("AboutUs") },
+    { name: "Contact", path: createPageUrl("ContactUs") },
+    { name: "Blog", path: createPageUrl("Blog") }
+  ];
 
   const languages = [
-  {
-    code: 'EN',
-    name: 'English',
-    flag: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/0fe5b1241_flag-united-kingdom_1f1ec-1f1e7.png'
-  },
-  {
-    code: 'EL',
-    name: 'Ελληνικά',
-    flag: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6ab43f54e_flag-greece_1f1ec-1f1f7.png'
-  }];
-
+    { 
+      code: 'EN', 
+      name: 'English', 
+      flag: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/0fe5b1241_flag-united-kingdom_1f1ec-1f1e7.png' 
+    },
+    { 
+      code: 'EL', 
+      name: 'Ελληνικά', 
+      flag: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6ab43f54e_flag-greece_1f1ec-1f1f7.png' 
+    }
+  ];
 
   const handleLanguageChange = (languageCode) => {
     setSelectedLanguage(languageCode);
@@ -84,32 +84,32 @@ export default function Layout({ children }) {
 
   const footerNavItems = {
     services: [
-    { name: "Signature Playlists", path: createPageUrl("signature-playlists") },
-    { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") }, // Updated from "Events Soundtrack"
-    { name: "Sonic Strategy", path: createPageUrl("sonic-strategy") },
-    { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") } // Updated from "Audio Experience Upgrade"
+      { name: "Signature Playlists", path: createPageUrl("signature-playlists") },
+      { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") }, // Updated from "Events Soundtrack"
+      { name: "Sonic Strategy", path: createPageUrl("sonic-strategy") },
+      { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") } // Updated from "Audio Experience Upgrade"
     ],
     industries: [
-    { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
-    { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
-    { name: "Retail Stores", path: createPageUrl("retail-stores") },
-    { name: "Wellness Centers", path: createPageUrl("wellness-centers") },
-    { name: "Events & Experiences", path: createPageUrl("events-experiences") },
-    { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") }],
-
+      { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
+      { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
+      { name: "Retail Stores", path: createPageUrl("retail-stores") },
+      { name: "Wellness Centers", path: createPageUrl("wellness-centers") },
+      { name: "Events & Experiences", path: createPageUrl("events-experiences") },
+      { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") }
+    ],
     caseStudies: [
-    { name: "Blue Bamboo", path: createPageUrl("blue-bamboo") },
-    { name: "Klouvi", path: createPageUrl("klouvi-bar") },
-    { name: "Beach House", path: createPageUrl("beach-house-antiparos") },
-    { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }],
-
+      { name: "Blue Bamboo", path: createPageUrl("blue-bamboo") },
+      { name: "Klouvi", path: createPageUrl("klouvi-bar") },
+      { name: "Beach House", path: createPageUrl("beach-house-antiparos") },
+      { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }
+    ],
     company: [
-    { name: "About", path: createPageUrl("AboutUs") },
-    { name: "Contact", path: createPageUrl("ContactUs") },
-    { name: "Blog", path: createPageUrl("Blog") },
-    { name: "FAQ", path: createPageUrl("FAQ") },
-    { name: "Sitemap", path: createPageUrl("Sitemap") }]
-
+      { name: "About", path: createPageUrl("AboutUs") },
+      { name: "Contact", path: createPageUrl("ContactUs") },
+      { name: "Blog", path: createPageUrl("Blog") },
+      { name: "FAQ", path: createPageUrl("FAQ") },
+      { name: "Sitemap", path: createPageUrl("Sitemap") }
+    ]
   };
 
   // Function to generate social markup and JSON-LD schema
@@ -123,9 +123,9 @@ export default function Layout({ children }) {
       document.title = "Sonic Strategy | SensEar";
     } else if (location.pathname === createPageUrl("signature-playlists")) {
       document.title = "Signature Playlists | SensEar";
-    } else if (location.pathname === createPageUrl("event-soundtracks")) {// Renamed path
+    } else if (location.pathname === createPageUrl("event-soundtracks")) { // Renamed path
       document.title = "Event Soundtracks | SensEar"; // Updated title to match new name
-    } else if (location.pathname === createPageUrl("audio-upgrades")) {// Renamed path
+    } else if (location.pathname === createPageUrl("audio-upgrades")) { // Renamed path
       document.title = "Audio Upgrades | SensEar"; // Updated title to match new name
     } else if (location.pathname === createPageUrl("hotels-resorts")) {
       document.title = "Hotels & Resorts | SensEar";
@@ -135,9 +135,9 @@ export default function Layout({ children }) {
       document.title = "Retail Stores | SensEar";
     } else if (location.pathname === createPageUrl("wellness-centers")) {
       document.title = "Wellness Centers | SensEar";
-    } else if (location.pathname === createPageUrl("events-experiences")) {// Updated path and title
+    } else if (location.pathname === createPageUrl("events-experiences")) { // Updated path and title
       document.title = "Events & Experiences | SensEar"; // Updated title
-    } else if (location.pathname === createPageUrl("art-museums-fashion")) {// New path and title
+    } else if (location.pathname === createPageUrl("art-museums-fashion")) { // New path and title
       document.title = "Art, Museums & Fashion | SensEar"; // New title
     } else if (location.pathname === createPageUrl("PlaylistsDemos")) {
       document.title = "Playlists & Demos | SensEar"; // Added title for Playlists Demos
@@ -173,9 +173,9 @@ export default function Layout({ children }) {
         "addressCountry": "GR"
       },
       "sameAs": [
-      "https://www.facebook.com/61575909304249/",
-      "https://www.instagram.com/sensear.music"],
-
+        "https://www.facebook.com/61575909304249/",
+        "https://www.instagram.com/sensear.music"
+      ],
       "description": "SensEar specializes in sonic branding and curated music experiences for businesses in hospitality, retail, and wellness.",
       "openingHours": "Mo-Fr 09:00-17:00", // Example, adjust if specific hours exist
       "priceRange": "$$$" // Example, adjust if specific price range exists
@@ -194,8 +194,8 @@ export default function Layout({ children }) {
         <script type="application/ld+json">
           {JSON.stringify(localBusinessSchema)}
         </script>
-      </>);
-
+      </>
+    );
   };
 
   return (
@@ -272,38 +272,38 @@ export default function Layout({ children }) {
       {/* Navigation - Transparent initially, dark on scroll, always slim (py-2) */}
       <nav
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2 ${
-        isScrolled ?
-        'bg-black/90 backdrop-blur-md shadow-lg' :
-        'bg-transparent'}`
-        }>
+          isScrolled 
+            ? 'bg-black/90 backdrop-blur-md shadow-lg' 
+            : 'bg-transparent'
+        }`}>
 
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <Link to={createPageUrl("Home")} className="flex items-center gap-3 group">
             <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg" alt="SensEar Logo" className="w-12 h-12 rounded-full group-hover:scale-110 transition-transform" />
             <div>
               <h1 className={`text-2xl font-bold tracking-wide font-syne transition-colors duration-300 ${
-              isScrolled ? 'text-white' : 'text-black'}`
-              }>SENSEAR</h1>
-              <p className="text-black text-xs font-normal -mt-1 transition-colors duration-300">Soundtracking Unique Experiences
-
-              </p>
+                isScrolled ? 'text-white' : 'text-black'
+              }`}>SENSEAR</h1>
+              <p className={`text-xs -mt-1 font-syne font-bold transition-colors duration-300 ${
+                isScrolled ? 'text-white' : 'text-black'
+              }`}>Soundtracking Unique Experiences</p>
             </div>
           </Link>
 
           {/* Desktop Navigation - moved significantly more to the left with larger negative margin */}
           <div className="hidden lg:flex items-center gap-6" style={{ marginLeft: '-200px' }}>
             {navItems.map((item) =>
-            <div
-              key={item.name}
-              className="relative group"
-              onMouseEnter={() => item.subItems && setOpenDropdown(item.name)}
-              onMouseLeave={() => setOpenDropdown(null)}>
+              <div
+                key={item.name}
+                className="relative group"
+                onMouseEnter={() => item.subItems && setOpenDropdown(item.name)}
+                onMouseLeave={() => setOpenDropdown(null)}>
 
                 <Link
-                to={item.path}
-                className={`py-2 text-sm font-bold tracking-wide transition-colors relative flex items-center gap-2 hover:underline decoration-1 underline-offset-4 ${
-                isScrolled ? 'text-slate-50' : 'text-black'}`
-                }>
+                  to={item.path} 
+                  className={`py-2 text-sm font-bold tracking-wide transition-colors relative flex items-center gap-2 hover:underline decoration-1 underline-offset-4 ${
+                    isScrolled ? 'text-slate-50' : 'text-black'
+                  }`}>
 
                   {item.name}
                   {item.subItems && <ChevronDown className="w-4 h-4" />}
@@ -311,73 +311,73 @@ export default function Layout({ children }) {
 
                 {/* Dropdown Menu */}
                 {item.subItems && openDropdown === item.name &&
-              <div className="absolute top-full left-0 pt-2 w-64 z-10">
+                  <div className="absolute top-full left-0 pt-2 w-64 z-10">
                     <div className="bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden">
                       {item.subItems.map((subItem) =>
-                  <Link
-                    key={subItem.name}
-                    to={subItem.path}
-                    onClick={() => setOpenDropdown(null)}
-                    className={`block px-6 py-3 text-sm transition-colors hover:underline decoration-1 underline-offset-4 ${
-                    location.pathname === subItem.path ?
-                    "bg-peach-layer text-black font-medium" :
-                    "text-black hover:bg-peach-layer"}`
-                    }>
+                        <Link
+                          key={subItem.name}
+                          to={subItem.path}
+                          onClick={() => setOpenDropdown(null)}
+                          className={`block px-6 py-3 text-sm transition-colors hover:underline decoration-1 underline-offset-4 ${
+                            location.pathname === subItem.path ?
+                              "bg-peach-layer text-black font-medium" :
+                              "text-black hover:bg-peach-layer"}`
+                          }>
 
                           {subItem.name}
                         </Link>
-                  )}
+                      )}
                     </div>
                   </div>
-              }
+                }
               </div>
             )}
 
             {/* Language Selector - COMMENTED OUT */}
             {/* <div
-               className="relative group"
-               onMouseEnter={() => setOpenDropdown('language')}
-               onMouseLeave={() => setOpenDropdown(null)}>
-                <button 
-                 className="text-slate-50 py-2 text-sm font-medium tracking-wide transition-colors relative flex items-center gap-2 hover:opacity-80"
-                 aria-label="Select language">
-                 <Globe className="w-5 h-5" />
-                 <ChevronDown className="w-4 h-4" />
-               </button>
-                {openDropdown === 'language' &&
-                 <div className="absolute top-full right-0 pt-2 w-48 z-10">
-                   <div className="bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden">
-                     {languages.map((lang) =>
-                       <button
-                         key={lang.code}
-                         onClick={() => handleLanguageChange(lang.code)}
-                         className={`w-full flex items-center gap-3 px-6 py-3 text-sm transition-colors hover:bg-peach-layer ${
-                           selectedLanguage === lang.code ?
-                             "bg-peach-layer text-black font-medium" :
-                             "text-black"}`
-                         }>
-                         <img 
-                           src={lang.flag} 
-                           alt={`${lang.name} flag`}
-                           className="w-6 h-6 rounded-full object-cover"
-                         />
-                         <span>{lang.name}</span>
-                       </button>
-                     )}
-                   </div>
-                 </div>
-               }
-              </div> */
+              className="relative group"
+              onMouseEnter={() => setOpenDropdown('language')}
+              onMouseLeave={() => setOpenDropdown(null)}>
 
-            }
+              <button 
+                className="text-slate-50 py-2 text-sm font-medium tracking-wide transition-colors relative flex items-center gap-2 hover:opacity-80"
+                aria-label="Select language">
+                <Globe className="w-5 h-5" />
+                <ChevronDown className="w-4 h-4" />
+              </button>
+
+              {openDropdown === 'language' &&
+                <div className="absolute top-full right-0 pt-2 w-48 z-10">
+                  <div className="bg-white rounded-lg shadow-xl border border-gray-100 overflow-hidden">
+                    {languages.map((lang) =>
+                      <button
+                        key={lang.code}
+                        onClick={() => handleLanguageChange(lang.code)}
+                        className={`w-full flex items-center gap-3 px-6 py-3 text-sm transition-colors hover:bg-peach-layer ${
+                          selectedLanguage === lang.code ?
+                            "bg-peach-layer text-black font-medium" :
+                            "text-black"}`
+                        }>
+                        <img 
+                          src={lang.flag} 
+                          alt={`${lang.name} flag`}
+                          className="w-6 h-6 rounded-full object-cover"
+                        />
+                        <span>{lang.name}</span>
+                      </button>
+                    )}
+                  </div>
+                </div>
+              }
+            </div> */}
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className={`lg:hidden p-2 transition-colors duration-300 ${
-            isScrolled ? 'text-white' : 'text-black'}`
-            }>
+              isScrolled ? 'text-white' : 'text-black'
+            }`}>
 
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -385,68 +385,68 @@ export default function Layout({ children }) {
 
         {/* Mobile Menu */}
         {isMenuOpen &&
-        <div className="lg:hidden bg-black border-t border-peach/20 mt-4 max-h-[calc(100vh-100px)] overflow-y-auto">
+          <div className="lg:hidden bg-black border-t border-peach/20 mt-4 max-h-[calc(100vh-100px)] overflow-y-auto">
             <div className="px-6 py-4 space-y-2">
               {navItems.map((item) =>
-            <div key={item.name}>
+                <div key={item.name}>
                   <Link
-                to={item.path}
-                onClick={() => !item.subItems && setIsMenuOpen(false)}
-                className={`block text-base font-bold py-2 hover:underline decoration-1 underline-offset-4 ${
-                location.pathname === item.path ? "text-white underline" : "text-white/90"}`
-                }>
+                    to={item.path}
+                    onClick={() => !item.subItems && setIsMenuOpen(false)}
+                    className={`block text-base font-bold py-2 hover:underline decoration-1 underline-offset-4 ${
+                      location.pathname === item.path ? "text-white underline" : "text-white/90"}`
+                    }>
 
                     {item.name}
                   </Link>
                   {item.subItems &&
-              <div className="pl-4 space-y-1 mt-1">
+                    <div className="pl-4 space-y-1 mt-1">
                       {item.subItems.map((subItem) =>
-                <Link
-                  key={subItem.name}
-                  to={subItem.path}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block text-sm py-2 hover:underline decoration-1 underline-offset-4 ${
-                  location.pathname === subItem.path ?
-                  "text-white underline" :
-                  "text-white/70 hover:text-peach"}`
-                  }>
+                        <Link
+                          key={subItem.name}
+                          to={subItem.path}
+                          onClick={() => setIsMenuOpen(false)}
+                          className={`block text-sm py-2 hover:underline decoration-1 underline-offset-4 ${
+                            location.pathname === subItem.path ?
+                              "text-white underline" :
+                              "text-white/70 hover:text-peach"}`
+                          }>
 
                           {subItem.name}
                         </Link>
-                )}
+                      )}
                     </div>
-              }
+                  }
                 </div>
-            )}
+              )}
               
               {/* Mobile Language Selector - COMMENTED OUT */}
               {/* <div className="border-t border-white/20 pt-4 mt-4">
-               <div className="text-white/90 text-sm font-medium mb-2 flex items-center gap-2">
-                 <Globe className="w-4 h-4" />
-                 Language
-               </div>
-               <div className="pl-4 space-y-2">
-                 {languages.map((lang) =>
-                   <button
-                     key={lang.code}
-                     onClick={() => {
-                       handleLanguageChange(lang.code);
-                       setIsMenuOpen(false);
-                     }}
-                     className={`flex items-center gap-3 py-2 text-sm transition-colors ${
-                       selectedLanguage === lang.code ?
-                         "text-white font-medium" :
-                         "text-white/70"}`
-                     }>
-                     <img 
-                       src={lang.flag} 
-                       alt={`${lang.name} flag`}
-                       className="w-5 h-5 rounded-full object-cover"
-                     />
-                     <span>{lang.name}</span>
-                   </button>
-                 )}
-               </div>
+                <div className="text-white/90 text-sm font-medium mb-2 flex items-center gap-2">
+                  <Globe className="w-4 h-4" />
+                  Language
+                </div>
+                <div className="pl-4 space-y-2">
+                  {languages.map((lang) =>
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        handleLanguageChange(lang.code);
+                        setIsMenuOpen(false);
+                      }}
+                      className={`flex items-center gap-3 py-2 text-sm transition-colors ${
+                        selectedLanguage === lang.code ?
+                          "text-white font-medium" :
+                          "text-white/70"}`
+                      }>
+                      <img 
+                        src={lang.flag} 
+                        alt={`${lang.name} flag`}
+                        className="w-5 h-5 rounded-full object-cover"
+                      />
+                      <span>{lang.name}</span>
+                    </button>
+                  )}
+                </div>
               </div> */}
             </div>
           </div>
@@ -502,9 +502,9 @@ export default function Layout({ children }) {
                 Services
               </Link>
               <div className="space-y-2">
-                {footerNavItems.services.map((item) =>
-                <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
-                )}
+                {footerNavItems.services.map((item) => (
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                ))}
               </div>
             </div>
 
@@ -514,9 +514,9 @@ export default function Layout({ children }) {
                 Industries
               </Link>
               <div className="space-y-2">
-                {footerNavItems.industries.map((item) =>
-                <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
-                )}
+                {footerNavItems.industries.map((item) => (
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                ))}
                 <Link to={createPageUrl("PlaylistsDemos")} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">Playlists Demos</Link>
               </div>
             </div>
@@ -527,9 +527,9 @@ export default function Layout({ children }) {
                 Case Studies
               </Link>
               <div className="space-y-2">
-                {footerNavItems.caseStudies.map((item) =>
-                <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
-                )}
+                {footerNavItems.caseStudies.map((item) => (
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                ))}
               </div>
             </div>
 
@@ -537,9 +537,9 @@ export default function Layout({ children }) {
             <div>
               <h3 className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider">Company</h3>
               <div className="space-y-2">
-                {footerNavItems.company.map((item) =>
-                <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
-                )}
+                {footerNavItems.company.map((item) => (
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-sm hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                ))}
               </div>
             </div>
           </div>
@@ -556,10 +556,10 @@ export default function Layout({ children }) {
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         className="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-black/80 hover:bg-black text-white z-50 transition-opacity duration-300 border-2 border-white/30"
         size="icon"
-        aria-label="Back to top">
-
+        aria-label="Back to top"
+      >
         <ChevronUp className="w-6 h-6" />
       </Button>
-    </div>);
-
+    </div>
+  );
 }
