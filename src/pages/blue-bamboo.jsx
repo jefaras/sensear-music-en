@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
@@ -8,6 +8,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function BlueBamboo() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Blue Bamboo Mykonos Case Study | SensEar Music Curation";
 
@@ -22,7 +24,6 @@ export default function BlueBamboo() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -45,7 +46,6 @@ export default function BlueBamboo() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - CASE STUDY: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -56,7 +56,6 @@ export default function BlueBamboo() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -67,7 +66,6 @@ export default function BlueBamboo() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/blue-bamboo');
@@ -78,14 +76,12 @@ export default function BlueBamboo() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'Blue Bamboo Case Study | SensEar Music Curation' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png' },
     { property: 'og:url', content: 'https://sensear.music/blue-bamboo' },
     { property: 'og:type', content: 'article' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -99,13 +95,11 @@ export default function BlueBamboo() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Blue Bamboo Case Study | SensEar Music Curation' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -119,7 +113,6 @@ export default function BlueBamboo() {
       }
     });
 
-    // Add structured data
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -130,7 +123,6 @@ export default function BlueBamboo() {
       "sameAs": [
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music"]
-
     },
     {
       "@context": "https://schema.org",
@@ -174,9 +166,7 @@ export default function BlueBamboo() {
         "name": "Blue Bamboo",
         "item": "https://sensear.music/blue-bamboo"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -187,6 +177,10 @@ export default function BlueBamboo() {
       structuredDataScript.textContent = JSON.stringify(structuredData);
       document.head.appendChild(structuredDataScript);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const problems = [
@@ -194,40 +188,66 @@ export default function BlueBamboo() {
   "The music didn't align with the natural shifts in energy throughout the day, causing inconsistency in the atmosphere.",
   "Repetitive playlists were leaving staff disengaged and contributing to a flat, predictable mood in the space."];
 
-
   const solutions = [
   "Conducted an on-site sound check and optimized speaker positioning to reduce noise interference and improve conversational clarity.",
   "Designed a time-sensitive playlist architecture, with distinct energy shifts mapped to key service phases—from lunch flow to evening peak.",
   "Set up a monthly refresh cycle to keep sound aligned with seasonal menus, mood changes, and staff energy."];
-
 
   const results = [
   "A smoother, more intentional soundscape led to longer guest dwell times.",
   "Staff engagement improved, thanks to dynamic playlists that match the pace of service.",
   "The new atmosphere has sparked stronger word-of-mouth and exuberant reviews."];
 
-
   return (
     <div className="bg-[#faebe3]">
-      <section
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center text-white pt-24 md:pt-0"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png')" }}
-        role="img"
-        aria-label="Elegant Thai restaurant interior with ambient music and sophisticated atmosphere">
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up leading-tight">Fine-tuning and harmonizing a Thai dining experience.</h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>Discover how we enhanced the atmosphere at Blue Bamboo through expert music curation and soundproofing.</p>
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Blue Bamboo Case Study section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Fine-tuning and harmonizing<br />
+              a Thai dining experience
+            </h1>
+
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Discover how we enhanced the atmosphere at Blue Bamboo through expert music curation and soundproofing.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Elegant Thai restaurant interior with ambient music and sophisticated atmosphere"
+                className="absolute w-full h-full object-cover"
+                style={{
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Case Studies", path: createPageUrl("CaseStudies") },
         { label: "Blue Bamboo", path: createPageUrl("blue-bamboo") }]
         } />
-      </div>
+      </div> */}
 
       {/* Main Content Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -243,7 +263,7 @@ export default function BlueBamboo() {
           <p className="text-center text-black/70 mb-12 max-w-3xl mx-auto text-lg leading-relaxed">
             Blue Bamboo is a well-known Thai bar-restaurant in Athens, offering authentic flavors in a lively, modern setting. While its culinary identity was strong, its sonic identity needed refinement to balance energy and comfort.
           </p>
-          <div className="max-w-4xl mx-auto px-6 text-center">      
+          <div className="max-w-4xl mx-auto px-6 text-center">
                 <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
                   "Our goal was simple: to create an atmosphere where guests could relax, connect, and feel encouraged to stay longer, with music that evolved naturally throughout the day and kept our team energized." – Blue Bamboo Owner
                 </blockquote>
@@ -303,7 +323,7 @@ export default function BlueBamboo() {
                   <Award className="w-6 h-6" aria-hidden="true" />
                   What They Got
                 </h3>
-                
+
                 <ul className="space-y-4" role="list">
                   {results.map((item, index) =>
                   <li key={index} className="flex items-start gap-3">
@@ -315,7 +335,7 @@ export default function BlueBamboo() {
               </CardContent>
             </Card>
           </div>
-          <div className="max-w-4xl mx-auto px-6 text-center">      
+          <div className="max-w-4xl mx-auto px-6 text-center">
                 <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
                   "Now, the sound is seamless, the vibe is spot on, and the space finally feels complete." – Blue Bamboo Owner
                 </blockquote>
@@ -352,5 +372,4 @@ export default function BlueBamboo() {
         </Link>
       </nav>
     </div>);
-
 }

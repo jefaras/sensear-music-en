@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
@@ -7,6 +7,8 @@ import { CheckCircle } from 'lucide-react';
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function ArtMuseumsFashion() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Art, Museum & Fashion Music Curation | SensEar";
 
@@ -21,7 +23,6 @@ export default function ArtMuseumsFashion() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -44,7 +45,6 @@ export default function ArtMuseumsFashion() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - INDUSTRY PAGE: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -55,7 +55,6 @@ export default function ArtMuseumsFashion() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -66,7 +65,6 @@ export default function ArtMuseumsFashion() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/art-museums-fashion');
@@ -77,14 +75,12 @@ export default function ArtMuseumsFashion() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'Art, Museum & Fashion Music Curation | SensEar' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg' },
     { property: 'og:url', content: 'https://sensear.music/art-museums-fashion' },
     { property: 'og:type', content: 'website' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -98,13 +94,11 @@ export default function ArtMuseumsFashion() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Art, Museum & Fashion Music Curation | SensEar' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -118,7 +112,6 @@ export default function ArtMuseumsFashion() {
       }
     });
 
-    // Add structured data
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -129,7 +122,6 @@ export default function ArtMuseumsFashion() {
       "sameAs": [
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music"]
-
     },
     {
       "@context": "https://schema.org",
@@ -170,9 +162,7 @@ export default function ArtMuseumsFashion() {
         "name": "Art, Museums & Fashion",
         "item": "https://sensear.music/art-museums-fashion"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -183,6 +173,10 @@ export default function ArtMuseumsFashion() {
       structuredDataScript.textContent = JSON.stringify(structuredData);
       document.head.appendChild(structuredDataScript);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -217,25 +211,54 @@ export default function ArtMuseumsFashion() {
         }
       `}</style>
 
-      <section
-        className="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center text-white pt-24 md:pt-0"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg')" }}
-        role="img"
-        aria-label="Art museum and fashion exhibition with curated music atmosphere">
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4 animate-fade-in-up leading-tight">Curated sound for culture, curation, and couture</h1>
-          <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-white/80 px-4 animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>From gallery & museum collection openings to fashion show finales, SensEar builds a living soundtrack that feels intentional, human, and precisely on-brand.</p>
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Art, Museums & Fashion section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Curated sound for culture,<br />
+              curation, and couture
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                From gallery & museum collection openings to fashion show finales, SensEar builds a living soundtrack that feels intentional, human, and precisely on-brand.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Art museum and fashion exhibition with curated music atmosphere"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Industries", path: createPageUrl("Industries") },
         { label: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") }]
         } />
-      </div>
+      </div> */}
 
       {/* Who This Is For Section */}
       <section className="py-20 bg-black" aria-labelledby="who-this-is-for-heading">
@@ -338,5 +361,4 @@ export default function ArtMuseumsFashion() {
         </div>
       </section>
     </div>);
-
 }

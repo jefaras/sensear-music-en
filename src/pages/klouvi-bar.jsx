@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
@@ -8,6 +8,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function KlouviBar() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Klouvi Bar Athens Case Study | SensEar Music Curation";
 
@@ -22,7 +24,6 @@ export default function KlouviBar() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -45,7 +46,6 @@ export default function KlouviBar() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - CASE STUDY: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -56,7 +56,6 @@ export default function KlouviBar() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -67,7 +66,6 @@ export default function KlouviBar() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/klouvi-bar');
@@ -78,14 +76,12 @@ export default function KlouviBar() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'Klouvi Bar Athens Case Study | SensEar Music Curation' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/525fca5be_klouvi-photo-collage.png' },
     { property: 'og:url', content: 'https://sensear.music/klouvi-bar' },
     { property: 'og:type', content: 'article' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -99,13 +95,11 @@ export default function KlouviBar() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Klouvi Bar Athens Case Study | SensEar Music Curation' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/525fca5be_klouvi-photo-collage.png' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -119,7 +113,6 @@ export default function KlouviBar() {
       }
     });
 
-    // Add structured data
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -130,13 +123,12 @@ export default function KlouviBar() {
       "sameAs": [
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music"]
-
     },
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Klouvi Bar Case Study | SensEar Music Curation", // Updated headline
-      "description": "How SensEar elevated Klouvi Bar Athens with bespoke playlists, audio optimization, and immersive soundscapes.", // Updated description
+      "headline": "Klouvi Bar Case Study | SensEar Music Curation",
+      "description": "How SensEar elevated Klouvi Bar Athens with bespoke playlists, audio optimization, and immersive soundscapes.",
       "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/525fca5be_klouvi-photo-collage.png",
       "author": {
         "@type": "Organization",
@@ -150,7 +142,7 @@ export default function KlouviBar() {
           "url": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg"
         }
       },
-      "datePublished": "2025-01-15" // Added datePublished
+      "datePublished": "2025-01-15"
     },
     {
       "@context": "https://schema.org",
@@ -174,9 +166,7 @@ export default function KlouviBar() {
         "name": "Klouvi Bar",
         "item": "https://sensear.music/klouvi-bar"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -187,6 +177,10 @@ export default function KlouviBar() {
       structuredDataScript.textContent = JSON.stringify(structuredData);
       document.head.appendChild(structuredDataScript);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const problems = [
@@ -194,40 +188,66 @@ export default function KlouviBar() {
   "The bar needed a more distinct and recognizable musical identity.",
   "Reduce sound bleeding to outdoor areas and neighborhoods."];
 
-
   const solutions = [
   "Designed genre-specific playlists, transitioning organically from soulful afternoon beats to high-energy night sounds.",
   "Upgraded speakers to enhance the depth and richness of music playback.",
   "Implemented advanced soundproofing solutions and achieved acoustic containment through speaker placement."];
-
 
   const results = [
   "Increase in bar sales, attributed to improved ambiance.",
   "More guests staying for longer durations, boosting dwell time.",
   "Klouvi Bar is now recognized for its signature sonic identity."];
 
-
   return (
     <div className="bg-[#faebe3]">
-      <section
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center text-white pt-24 md:pt-0"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/525fca5be_klouvi-photo-collage.png')" }}
-        role="img"
-        aria-label="Sophisticated cocktail bar with curated music atmosphere and soundproofing">
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 animate-fade-in-up leading-tight">Bringing Klouvi bar's atmosphere to life through music</h1>
-          <p className="text-base sm:text-lg md:text-xl text-white/80 leading-relaxed animate-fade-in-up px-4" style={{ animationDelay: '0.2s' }}>How SensEar defined the bar's character through curated playlists & soundproofing</p>
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Klouvi Bar Case Study section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Bringing Klouvi bar's atmosphere<br />
+              to life through music
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                How SensEar defined the bar's character through curated playlists & soundproofing
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/525fca5be_klouvi-photo-collage.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/525fca5be_klouvi-photo-collage.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/525fca5be_klouvi-photo-collage.png 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Sophisticated cocktail bar with curated music atmosphere and soundproofing"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
       
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Case Studies", path: createPageUrl("CaseStudies") },
         { label: "Klouvi Bar", path: createPageUrl("klouvi-bar") }]
         } />
-      </div>
+      </div> */}
 
       {/* Main Content Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
@@ -345,5 +365,4 @@ export default function KlouviBar() {
         </Link>
       </nav>
     </div>);
-
 }

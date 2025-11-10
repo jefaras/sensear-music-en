@@ -1,5 +1,5 @@
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
@@ -7,6 +7,8 @@ import { CheckCircle } from 'lucide-react';
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function EventsExperiences() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Music for Events & Experiences Audio | SensEar Music Solutions";
 
@@ -21,7 +23,6 @@ export default function EventsExperiences() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -186,6 +187,10 @@ export default function EventsExperiences() {
       structuredDataScript.textContent = JSON.stringify(structuredData);
       document.head.appendChild(structuredDataScript);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const problems = [
@@ -196,28 +201,56 @@ export default function EventsExperiences() {
   { title: "One-Size-Fits-All Soundtracks", description: "Our curators craft dynamic, story-driven musical journeys tailored to your event's unique vibe." },
   { title: "Complex Setup & Technical Gaps", description: "From curation to flawless AV execution, we handle it all. Seamlessly and stress-free." }];
 
-
   return (
     <div className="bg-[#faebe3]">
-      <section
-        className="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center text-white pt-24 md:pt-0"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6ab396617_3e1b0b33902175e823a09d4a2f172133-.jpg')" }}
-        role="img"
-        aria-label="Large-scale event production with professional AV and music curation services">
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 px-4 animate-fade-in-up leading-tight">Your all-in-one music enabler for your event's needs.</h1>
-          <p className="text-base sm:text-lg md:text-xl max-w-3xl mx-auto text-white/80 px-4 animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>Bringing an event to perfection can be tough, so let our experienced team handle everything sound-related for you.</p>
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Events & Experiences section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              Your all-in-one music enabler<br />
+              for your event's needs
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Bringing an event to perfection can be tough, so let our experienced team handle everything sound-related for you.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6ab396617_3e1b0b33902175e823a09d4a2f172133-.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6ab396617_3e1b0b33902175e823a09d4a2f172133-.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6ab396617_3e1b0b33902175e823a09d4a2f172133-.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Large-scale event production with professional AV and music curation services"
+                className="absolute w-full h-full object-cover"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Industries", path: createPageUrl("Industries") },
         { label: "Music for Events & Experiences", path: createPageUrl("events-experiences") }]
         } />
-      </div>
+      </div> */}
 
       {/* Who is this service for */}
       <section className="py-20 bg-black" aria-labelledby="who-heading">
@@ -281,5 +314,4 @@ export default function EventsExperiences() {
         </div>
       </section>
     </div>);
-
 }
