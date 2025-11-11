@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
@@ -7,6 +7,8 @@ import { Music, ArrowRight } from "lucide-react";
 import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function PlaylistsDemos() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Playlist Demos | SensEar Music Curation Samples";
     
@@ -63,6 +65,10 @@ export default function PlaylistsDemos() {
       canonicalLink.href = 'https://sensear.music/playlists-demos';
       document.head.appendChild(canonicalLink);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const demos = [
@@ -94,29 +100,62 @@ export default function PlaylistsDemos() {
 
   return (
     <div className="bg-[#faebe3]">
-      {/* Hero */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center text-white pt-24 md:pt-0" 
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/600e50781_f62cd7127a69c8a8a667cf33da146404.jpg')" }}
-        role="img"
-        aria-label="Music curation playlist demos showcase">
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-6 animate-fade-in-up leading-[1.1]">
-            Hear our signature style
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed animate-fade-in-up px-4" style={{animationDelay: '0.2s'}}>
-            Discover how our curated playlist demos transform hospitality spaces. No algorithms, no fillers; just music made to fit.
-          </p>
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Playlist Demos section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
+              Hear our signature style
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Discover how our curated playlist demos transform hospitality spaces. No algorithms, no fillers; just music made to fit.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version - NO parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/600e50781_f62cd7127a69c8a8a667cf33da146404.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/600e50781_f62cd7127a69c8a8a667cf33da146404.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/600e50781_f62cd7127a69c8a8a667cf33da146404.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Music curation playlist demos showcase"
+                className="absolute w-full h-full object-cover md:hidden"
+              />
+              {/* Desktop version - WITH parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/600e50781_f62cd7127a69c8a8a667cf33da146404.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/600e50781_f62cd7127a69c8a8a667cf33da146404.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/600e50781_f62cd7127a69c8a8a667cf33da146404.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Music curation playlist demos showcase"
+                className="absolute w-full h-full object-cover hidden md:block"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
+      {/* Breadcrumbs - COMMENTED OUT */}
+      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
           { label: "Playlists Demos", path: createPageUrl("PlaylistsDemos") }
         ]} />
-      </div>
+      </div> */}
 
       {/* New Header Section */}
       <section className="py-12 bg-[#faebe3]">
