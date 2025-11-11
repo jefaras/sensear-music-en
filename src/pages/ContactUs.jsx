@@ -293,7 +293,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
   return (
     <div className="bg-[#faebe3]">
       {/* Hero Section - Similar to Home but smaller heading */}
-      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935043b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Contact section">
+      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Contact section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
@@ -303,8 +303,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
             
             <div className="mb-8 max-w-4xl">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                We are here to help you create the perfect soundscape for your business or event. 
-                Give us a call or send us an email, and one of our music experts will respond within 24 hours!
+                Need help creating the perfect soundscape for your business or event?
               </p>
             </div>
           </div>
@@ -344,6 +343,13 @@ This inquiry has been saved to the database and can be viewed in the admin panel
           </div>
         </div>
       </section>
+
+      {/* New paragraph beneath header image */}
+      <div className="max-w-7xl mx-auto px-6 -mt-8 mb-12">
+        <p className="text-lg sm:text-xl text-center text-black/80 leading-relaxed max-w-4xl mx-auto">
+          Give us a call or send us an email, and we will respond within 24 hours!
+        </p>
+      </div>
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
@@ -410,7 +416,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
             <div className="lg:col-span-2">
               <Card className="p-8 shadow-lg bg-white">
                 <h3 className="text-2xl font-bold text-black mb-6">
-                  Send Us an Inquiry
+                  Send us a message
                 </h3>
 
                 <form onSubmit={handleSubmit} className="space-y-6" aria-label="Contact inquiry form">
