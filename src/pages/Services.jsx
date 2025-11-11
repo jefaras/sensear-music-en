@@ -252,17 +252,6 @@ export default function Services() {
                 Advisory, on-site playlists & immersive experiences, designed to make your brand sound unique.
               </p>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link to={createPageUrl("PlaylistsDemos")}>
-                <Button 
-                  className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto group"
-                  aria-label="Preview Sample Playlists">
-                  Preview Sample Playlists
-                  <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
 

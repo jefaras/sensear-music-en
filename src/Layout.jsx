@@ -256,7 +256,7 @@ export default function Layout({ children }) {
 
       {/* Navigation - Transparent initially, dark on scroll, always slim (py-2) */}
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2 ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 py-2.5 ${
           isScrolled 
             ? 'bg-black/90 backdrop-blur-md shadow-lg' 
             : 'bg-transparent'
