@@ -1,11 +1,9 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function BrandMusicConvertsBrowsersBuyers() {
   const [scrollY, setScrollY] = useState(0);
@@ -269,14 +267,6 @@ export default function BrandMusicConvertsBrowsersBuyers() {
         </div>
       </section>
 
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-        <Breadcrumbs items={[
-          { label: "Blog", path: createPageUrl("Blog") },
-          { label: "How Brand-Fit Music Converts Browsers into Buyers", path: createPageUrl("brand-music-converts-browsers-buyers") }
-        ]} />
-      </div>
-
       <div className="max-w-4xl mx-auto px-6 py-16">
         <Card className="bg-white p-8 md:p-12 shadow-lg mb-12">
           <div className="prose prose-lg max-w-none">
@@ -335,7 +325,7 @@ export default function BrandMusicConvertsBrowsersBuyers() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">3.</span>
-                  <span><strong>Zonal Soundscapes</strong> - Different spaces, different intents: entrance, bar, dining, restrooms - each with a role in the journey).</span>
+                  <span><strong>Zonal Soundscapes</strong> - Different spaces, different intents: entrance, bar, dining, restrooms - each with a role in the journey.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">4.</span>
