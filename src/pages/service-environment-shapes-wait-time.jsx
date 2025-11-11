@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -189,16 +190,13 @@ export default function ServiceEnvironmentShapesWaitTime() {
   }, []);
 
   return (
-    <div className="bg-[#faebe3] min-h-screen">
-      <section 
-        className="relative pt-32 pb-20 overflow-hidden"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
-        aria-label="How your service environment shapes perceived wait time">
-
+    <div className="bg-[#faebe3]">
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Service Environment Shapes Wait Time section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
               How your service environment<br />
               shapes perceived wait time
             </h1>
@@ -207,18 +205,18 @@ export default function ServiceEnvironmentShapesWaitTime() {
               <div className="flex items-center gap-6 text-sm text-black/60 mb-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" aria-hidden="true" />
-                  <time dateTime="2025-01-15">January 15, 2025</time>
+                  <time dateTime="2025-03-15">March 15, 2025</time>
                 </div>
                 <div className="flex items-center gap-2">
                   <User className="w-4 h-4" aria-hidden="true" />
-                  <span>SensEar</span>
+                  <span>Research Team</span>
                 </div>
                 <div className="text-black/50">
-                  <span>6 min read</span>
+                  <span>7 min read</span>
                 </div>
               </div>
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                How atmospheric elements like music influence perceived wait times and customer satisfaction.
+                How music and environmental design can transform the waiting experience and improve satisfaction.
               </p>
             </div>
           </div>
@@ -234,7 +232,7 @@ export default function ServiceEnvironmentShapesWaitTime() {
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Service environment design with music reducing customer perceived waiting time"
+                alt="Service environment design using music to improve customer waiting experience"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
@@ -243,7 +241,7 @@ export default function ServiceEnvironmentShapesWaitTime() {
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Service environment design with music reducing customer perceived waiting time"
+                alt="Service environment design using music to improve customer waiting experience"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
                   top: '-15%',

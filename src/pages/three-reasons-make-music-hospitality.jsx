@@ -202,15 +202,12 @@ export default function ThreeReasonsMakeMusicHospitality() {
   return (
     <div className="bg-[#faebe3]">
       <article>
-        <section 
-          className="relative pt-32 pb-20 overflow-hidden"
-          style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
-          aria-label="Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy">
-
+        {/* Hero Section - Similar to Home but smaller heading */}
+        <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Three Reasons Make Music Hospitality section">
           {/* Text content */}
           <div className="max-w-7xl mx-auto px-6">
             <div className="w-full">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
                 Three Reasons to Make Music<br />
                 Part of Your Luxury Hospitality Strategy
               </h1>
@@ -226,11 +223,11 @@ export default function ThreeReasonsMakeMusicHospitality() {
                     <span>SensEar Team</span>
                   </div>
                   <div className="text-black/50">
-                    <span>5 min read</span>
+                    <span>8 min read</span>
                   </div>
                 </div>
                 <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                  Curated music is a practical way to shape how guests feel, what they remember, and how they spend.
+                  Why curated music is a practical way to shape how guests feel, what they remember, and how they spend.
                 </p>
               </div>
             </div>
@@ -242,20 +239,20 @@ export default function ThreeReasonsMakeMusicHospitality() {
               <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
                 {/* Mobile/Tablet version - NO parallax */}
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg"
-                  srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg 1800w,
-                          https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg 2400w"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg"
+                  srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg 1800w,
+                          https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg 2400w"
                   sizes="(max-width: 1800px) 100vw, 1800px"
-                  alt="Luxury hotel interior showcasing music's strategic role in hospitality marketing"
+                  alt="Luxury hotel interior showcasing music's role in hospitality marketing strategy"
                   className="absolute w-full h-full object-cover md:hidden"
                 />
                 {/* Desktop version - WITH parallax */}
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg"
-                  srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg 1800w,
-                          https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg 2400w"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg"
+                  srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg 1800w,
+                          https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg 2400w"
                   sizes="(max-width: 1800px) 100vw, 1800px"
-                  alt="Luxury hotel interior showcasing music's strategic role in hospitality marketing"
+                  alt="Luxury hotel interior showcasing music's role in hospitality marketing strategy"
                   className="absolute w-full h-full object-cover hidden md:block"
                   style={{ 
                     top: '-15%',

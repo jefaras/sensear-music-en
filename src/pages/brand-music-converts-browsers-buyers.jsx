@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -200,15 +201,16 @@ export default function BrandMusicConvertsBrowsersBuyers() {
 
   return (
     <div className="bg-[#faebe3]">
+      {/* Hero Section - Similar to Home but smaller heading */}
       <section 
-        className="relative pt-32 pb-20 overflow-hidden"
+        className="relative pt-24 pb-20 overflow-hidden"
         style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
-        aria-label="How Brand-Fit Music Converts Browsers into Buyers">
+        aria-label="Brand Music Converts Browsers Buyers section">
 
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
               How Brand-Fit Music<br />
               Converts Browsers into Buyers
             </h1>
@@ -224,11 +226,11 @@ export default function BrandMusicConvertsBrowsersBuyers() {
                   <span>Zoe Burnard</span>
                 </div>
                 <div className="text-black/50">
-                  <span>8 min read</span>
+                  <span>6 min read</span>
                 </div>
               </div>
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Evidence-based research on how brand-aligned music increases sales by 9.1%.
+                Evidence-based research showing how brand-aligned music increases sales by 9.1% in hospitality venues.
               </p>
             </div>
           </div>
@@ -244,7 +246,7 @@ export default function BrandMusicConvertsBrowsersBuyers() {
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Restaurant ambiance demonstrating how music influences customer behavior and sales"
+                alt="Restaurant ambiance demonstrating music's impact on customer sales and behavior"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
@@ -253,7 +255,7 @@ export default function BrandMusicConvertsBrowsersBuyers() {
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Restaurant ambiance demonstrating how music influences customer behavior and sales"
+                alt="Restaurant ambiance demonstrating music's impact on customer sales and behavior"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
                   top: '-15%',

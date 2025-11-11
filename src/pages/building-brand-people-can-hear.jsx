@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -199,15 +200,16 @@ export default function BuildingBrandPeopleCanHear() {
 
   return (
     <div className="bg-[#faebe3] min-h-screen">
+      {/* Hero Section - Similar to Home but smaller heading */}
       <section 
-        className="relative pt-32 pb-20 overflow-hidden"
+        className="relative pt-24 pb-20 overflow-hidden"
         style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
-        aria-label="Building a Brand People Can Hear">
+        aria-label="Building Brand People Can Hear section">
 
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
               Building a Brand<br />
               People Can Hear
             </h1>
@@ -216,7 +218,7 @@ export default function BuildingBrandPeopleCanHear() {
               <div className="flex items-center gap-6 text-sm text-black/60 mb-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" aria-hidden="true" />
-                  <time dateTime="2025-01-13">January 13, 2025</time>
+                  <time dateTime="2025-02-12">February 12, 2025</time>
                 </div>
                 <div className="flex items-center gap-2">
                   <User className="w-4 h-4" aria-hidden="true" />
@@ -227,7 +229,7 @@ export default function BuildingBrandPeopleCanHear() {
                 </div>
               </div>
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                The SensEar guide to sonic branding and creating memorable sound experiences.
+                Strategic guide to sonic branding and audio identity development through music and sound design.
               </p>
             </div>
           </div>
@@ -239,20 +241,20 @@ export default function BuildingBrandPeopleCanHear() {
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Mobile/Tablet version - NO parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1749ad78f_BuildingaBrandPeopleCanHear-TheSensEarGuidetoSonicBranding.png"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1749ad78f_BuildingaBrandPeopleCanHear-TheSensEarGuidetoSonicBranding.png 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1749ad78f_BuildingaBrandPeopleCanHear-TheSensEarGuidetoSonicBranding.png 2400w"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c9661c684_AI_Generated_Image_2025-10-17.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c9661c684_AI_Generated_Image_2025-10-17.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c9661c684_AI_Generated_Image_2025-10-17.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Brand building through strategic sonic identity and music curation"
+                alt="Sonic branding strategy building brand identity through music"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1749ad78f_BuildingaBrandPeopleCanHear-TheSensEarGuidetoSonicBranding.png"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1749ad78f_BuildingaBrandPeopleCanHear-TheSensEarGuidetoSonicBranding.png 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1749ad78f_BuildingaBrandPeopleCanHear-TheSensEarGuidetoSonicBranding.png 2400w"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c9661c684_AI_Generated_Image_2025-10-17.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c9661c684_AI_Generated_Image_2025-10-17.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c9661c684_AI_Generated_Image_2025-10-17.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Brand building through strategic sonic identity and music curation"
+                alt="Sonic branding strategy building brand identity through music"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
                   top: '-15%',

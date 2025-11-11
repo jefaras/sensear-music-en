@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -9,13 +10,16 @@ export default function BackgroundMusicShapesCustomerBehavior() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Sound Strategy That Sells: How Background Music Shapes Customer Behavior | SensEar Research";
+    // Updated based on the new content
+    const blogTitle = "Sound strategy that sells: how background music shapes behavior | SensEar Research";
+    document.title = blogTitle;
 
-    const description = "Discover how strategic background music influences customer behavior, dwell time, and purchasing decisions. Evidence-based insights for hospitality venues.";
+    const description = "Field research reveals how strategic background music increases sales and dwell time in retail and hospitality.";
     const pageUrl = 'https://sensear.music/background-music-shapes-customer-behavior';
     // Updated imageUrl
-    const imageUrl = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ed6032f75_SoundstrategythatsellsHowbackgroundmusicshapescustomerbehavior.png';
-    const blogPostingHeadline = "Sound Strategy That Sells: How Background Music Shapes Customer Behavior";
+    const imageUrl = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png';
+    const blogPostingHeadline = "Sound strategy that sells: how background music shapes behavior";
+    const publishedDate = "2025-03-08";
 
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
@@ -80,13 +84,13 @@ export default function BackgroundMusicShapesCustomerBehavior() {
     }
 
     const ogTags = [
-      { property: 'og:title', content: 'Sound Strategy That Sells: How Background Music Shapes Customer Behavior | SensEar Research' },
+      { property: 'og:title', content: blogTitle },
       { property: 'og:description', content: description },
       { property: 'og:image', content: imageUrl },
       { property: 'og:url', content: pageUrl },
       { property: 'og:type', content: 'article' },
-      { property: 'article:published_time', content: '2025-01-14T09:00:00Z' },
-      { property: 'article:author', content: 'SensEar Team' },
+      { property: 'article:published_time', content: `${publishedDate}T09:00:00Z` },
+      { property: 'article:author', content: 'SensEar Team' }, // Keep as SensEar Team or change to Research Team
       { property: 'article:section', content: 'Research' },
       { property: 'og:locale', content: 'en_US' }
     ];
@@ -107,7 +111,7 @@ export default function BackgroundMusicShapesCustomerBehavior() {
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:site', content: '@SensEarResearch' },
       { name: 'twitter:creator', content: '@SensEarResearch' },
-      { name: 'twitter:title', content: 'Sound Strategy That Sells: How Background Music Shapes Customer Behavior | SensEar Research' },
+      { name: 'twitter:title', content: blogTitle },
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: imageUrl },
       { name: 'twitter:url', content: pageUrl }
@@ -165,8 +169,8 @@ export default function BackgroundMusicShapesCustomerBehavior() {
             "url": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg"
           }
         },
-        "datePublished": "2025-01-14",
-        "dateModified": "2025-01-14",
+        "datePublished": publishedDate,
+        "dateModified": publishedDate,
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": pageUrl
@@ -215,35 +219,32 @@ export default function BackgroundMusicShapesCustomerBehavior() {
 
   return (
     <div className="bg-[#faebe3] min-h-screen">
-      <section 
-        className="relative pt-32 pb-20 overflow-hidden"
-        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
-        aria-label="Sound Strategy That Sells: How Background Music Shapes Customer Behavior">
-
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Background Music Shapes Customer Behavior section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
-              Sound Strategy That Sells:<br />
-              How Background Music Shapes Customer Behavior
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
+              Sound strategy that sells: how<br />
+              background music shapes behavior
             </h1>
             
             <div className="mb-8 max-w-4xl">
               <div className="flex items-center gap-6 text-sm text-black/60 mb-4">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" aria-hidden="true" />
-                  <time dateTime="2025-01-14">January 14, 2025</time>
+                  <time dateTime="2025-03-08">March 8, 2025</time>
                 </div>
                 <div className="flex items-center gap-2">
                   <User className="w-4 h-4" aria-hidden="true" />
-                  <span>SensEar Team</span>
+                  <span>Research Team</span>
                 </div>
                 <div className="text-black/50">
                   <span>8 min read</span>
                 </div>
               </div>
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Discover how strategic background music influences customer behavior, dwell time, and purchasing decisions.
+                Field research reveals how strategic background music increases sales and dwell time in retail and hospitality.
               </p>
             </div>
           </div>
@@ -255,20 +256,20 @@ export default function BackgroundMusicShapesCustomerBehavior() {
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Mobile/Tablet version - NO parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ed6032f75_SoundstrategythatsellsHowbackgroundmusicshapescustomerbehavior.png"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ed6032f75_SoundstrategythatsellsHowbackgroundmusicshapescustomerbehavior.png 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ed6032f75_SoundstrategythatsellsHowbackgroundmusicshapescustomerbehavior.png 2400w"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Retail environment showcasing strategic music's impact on customer behavior and sales"
+                alt="Retail environment showing background music influence on shopping behavior"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ed6032f75_SoundstrategythatsellsHowbackgroundmusicshapescustomerbehavior.png"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ed6032f75_SoundstrategythatsellsHowbackgroundmusicshapescustomerbehavior.png 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ed6032f75_SoundstrategythatsellsHowbackgroundmusicshapescustomerbehavior.png 2400w"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Retail environment showcasing strategic music's impact on customer behavior and sales"
+                alt="Retail environment showing background music influence on shopping behavior"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
                   top: '-15%',
