@@ -257,12 +257,12 @@ export default function Home() {
                   Contact us
                 </Button>
               </Link>
-              <Link to={createPageUrl("AboutUs")}>
+              <Link to={createPageUrl("Services")}>
                 <Button
                   variant="outline"
                   className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto"
-                  aria-label="Discover our music curation approach">
-                  Discover our approach
+                  aria-label="Discover our services">
+                  Discover our services
                 </Button>
               </Link>
             </div>
