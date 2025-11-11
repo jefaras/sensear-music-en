@@ -303,7 +303,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
             
             <div className="mb-8 max-w-4xl">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Want help with creating the perfect soundscape for your business or event? 
-              <br/>
+              <br />
               Give us a call or fill in the contact form and we will respond within 24 hours!
               </p>
             </div>
@@ -321,6 +321,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 2400w"
 
 
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Contact SensEar for music curation consultation"
                 className="absolute w-full h-full object-cover md:hidden" />
@@ -330,6 +331,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 2400w"
+
 
 
                 sizes="(max-width: 1800px) 100vw, 1800px"
@@ -349,10 +351,10 @@ This inquiry has been saved to the database and can be viewed in the admin panel
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-          <Breadcrumbs items={[
-            { label: "Contact", path: createPageUrl("ContactUs") }
-          ]} />
-         </div> */}
+           <Breadcrumbs items={[
+             { label: "Contact", path: createPageUrl("ContactUs") }
+           ]} />
+          </div> */}
 
       <section className="py-20 bg-[#faebe3]" aria-labelledby="contact-heading">
         <div className="max-w-6xl mx-auto px-6">
@@ -375,7 +377,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
                     <div>
                       <h4 className="font-semibold text-black mb-1">Phone</h4>
                       <p className="text-black/80"><a href="tel:+306976994212">+30 6976994212</a></p>
-                      <p className="text-sm text-black/60 mt-1">Mon-Fri, 9am-6pm EET</p>
+                      <p className="text-sm text-black/60 mt-1">Mon-Sat, 9am-9pm EET</p>
                     </div>
                   </div>
                 </Card>
