@@ -209,6 +209,32 @@ export default function Home() {
     logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png"
   }];
 
+  const blogPosts = [
+    {
+      title: "Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy",
+      description: <>Curated music is a practical way to shape how guests feel, what they remember, and how they spend. Learn how <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black">hotels and resorts</Link> benefit from strategic music curation.</>,
+      link: createPageUrl("three-reasons-make-music-hospitality"),
+      image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg",
+      alt: "Luxury hotel interior lobby showcasing ambient music design for hospitality",
+      linkText: "Read more"
+    },
+    {
+      title: "How Brand-Fit Music Converts Browsers into Buyers",
+      description: <>Evidence-based research showing how brand-aligned music increases sales by 9.1%. Perfect for <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black">restaurants and bars</Link> looking to enhance their atmosphere.</>,
+      link: createPageUrl("brand-music-converts-browsers-buyers"),
+      image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg",
+      alt: "Restaurant with ambient lighting demonstrating how music influences customer behavior and sales",
+      linkText: "Explore insights"
+    },
+    {
+      title: "What Exactly Does a Music Curator Do?",
+      description: <>Learn how the right music translates your visual language into an emotional experience. Explore our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black">signature playlists service</Link>.</>,
+      link: createPageUrl("what-exactly-does-music-curator-do"),
+      image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png",
+      alt: "Music curator at work selecting tracks for bespoke playlist curation service",
+      linkText: "Read article"
+    }
+  ];
 
   return (
     <div className="bg-[#faebe3]">
@@ -437,8 +463,8 @@ export default function Home() {
                 { title: "Empower Your Team", description: "Boost staff morale & productivity with energizing music." },
                 { title: "Total Control", description: "Take full control over your venue's music style & flow." },
                 { title: "Seamless Experience", description: "Ensure a smooth music experience across every area of your venue." }].
-                map((item) =>
-                <li key={item.title} className="flex items-start gap-3 w-full">
+                map((item, index) =>
+                <li key={index} className="flex items-start gap-3 w-full">
                                 <CheckCircle className="w-5 h-5 md:w-6 md:h-6 text-black mt-0.5 md:mt-1 flex-shrink-0" aria-hidden="true" />
                                 <div className="flex-1 min-w-0">
                                     <h3 className="font-bold text-sm sm:text-base md:text-lg text-black break-words">{item.title}</h3>
@@ -491,98 +517,32 @@ export default function Home() {
           </header>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12" role="list">
-            <article role="listitem">
-              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 group bg-white">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg"
-                    srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg 800w,
-                            https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg 1200w"
-
-
-
-
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    alt="Luxury hotel interior lobby showcasing ambient music design for hospitality"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                    Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy
-                  </h3>
-                  <p className="text-black/70 mb-4 leading-relaxed">
-                    Curated music is a practical way to shape how guests feel, what they remember, and how they spend. Learn how <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black">hotels and resorts</Link> benefit from strategic music curation.
-                  </p>
-                  <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="inline-flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform" aria-label="Read more about Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy">
-                    <span>Read more</span>
-                    <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                  </Link>
-                </div>
-              </Card>
-            </article>
-
-            <article role="listitem">
-              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 group bg-white">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg"
-                    srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 800w,
-                            https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 1200w"
-
-
-
-
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    alt="Restaurant with ambient lighting demonstrating how music influences customer behavior and sales"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                    How Brand-Fit Music Converts Browsers into Buyers
-                  </h3>
-                  <p className="text-black/70 mb-4 leading-relaxed">
-                    Evidence-based research showing how brand-aligned music increases sales by 9.1%. Perfect for <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black">restaurants and bars</Link> looking to enhance their atmosphere.
-                  </p>
-                  <Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="inline-flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform" aria-label="Explore insights on How Brand-Fit Music Converts Browsers into Buyers">
-                    <span>Explore insights</span>
-                    <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                  </Link>
-                </div>
-              </Card>
-            </article>
-
-            <article role="listitem">
-              <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 group bg-white">
-                <div className="relative aspect-[4/3] overflow-hidden">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png"
-                    srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png 800w,
-                            https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png 1200w"
-
-
-
-
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    alt="Music curator at work selecting tracks for bespoke playlist curation service"
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                    What Exactly Does a Music Curator Do?
-                  </h3>
-                  <p className="text-black/70 mb-4 leading-relaxed">
-                    Learn how the right music translates your visual language into an emotional experience. Explore our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black">signature playlists service</Link>.
-                  </p>
-                  <Link to={createPageUrl("what-exactly-does-music-curator-do")} className="inline-flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform" aria-label="Read article on What Exactly Does a Music Curator Do?">
-                    <span>Read article</span>
-                    <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                  </Link>
-                </div>
-              </Card>
-            </article>
+            {blogPosts.map((post, index) => (
+              <article key={index} role="listitem">
+                <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300 group bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src={post.image}
+                      srcSet={`${post.image} 800w, ${post.image} 1200w`}
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      alt={post.alt}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      {post.title}
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      {post.description}
+                    </p>
+                    <Link to={post.link} className="inline-flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform" aria-label={`Read more about ${post.title}`}>
+                      <span>{post.linkText}</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </Link>
+                  </div>
+                </Card>
+              </article>
+            ))}
           </div>
 
           <div className="text-center">
