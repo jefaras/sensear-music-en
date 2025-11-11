@@ -330,8 +330,8 @@ export default function SonicStrategy() {
             Let's create an ownable sound that sets your brand apart.
           </p>
           <Link to={createPageUrl("ContactUs")}>
-            <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold" aria-label="Book a sonic strategy consultation session">
-              Book a Sonic Strategy Session
+            <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold" aria-label="Build Your Sound Strategy">
+              Build Your Sound Strategy
             </Button>
           </Link>
         </div>

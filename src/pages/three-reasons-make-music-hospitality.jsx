@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -331,8 +332,8 @@ export default function ThreeReasonsMakeMusicHospitality() {
               Discover how SensEar can help you create a signature sound that defines your brand and delights your guests.
             </p>
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 group" aria-label="Schedule a consultation">
-                Schedule a Consultation
+              <Button size="lg" className="bg-black text-white hover:bg-black/80 group" aria-label="Start Your Sound Journey">
+                Start Your Sound Journey
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </Button>
             </Link>
@@ -342,7 +343,7 @@ export default function ThreeReasonsMakeMusicHospitality() {
             <Link to={createPageUrl("Blog")}>
               <Button variant="outline" className="bg-transparent border-black text-black hover:bg-black hover:text-white">
                 <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" />
-                Back to Blog
+                Back to Articles
               </Button>
             </Link>
           </nav>

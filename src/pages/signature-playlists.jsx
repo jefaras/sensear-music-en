@@ -372,8 +372,8 @@ export default function SignaturePlaylists() {
             Let us craft the perfect soundscape that reflects your brand and captivates your guests.
           </p>
           <Link to={createPageUrl("ContactUs")}>
-            <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold" aria-label="Book a listening session consultation">
-              Book a Listening Session
+            <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold" aria-label="Create Your Signature Sound">
+              Create Your Signature Sound
             </Button>
           </Link>
         </div>

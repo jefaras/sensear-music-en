@@ -356,8 +356,8 @@ export default function AudioUpgrades() {
             Let's assess your space and create the perfect audio experience for your venue.
           </p>
           <Link to={createPageUrl("ContactUs")}>
-            <Button size="lg" className="bg-slate-50 text-black px-8 py-6 text-lg font-medium hover:bg-[#f0dfd5]" aria-label="Book an audio experience assessment consultation">
-              Book an Audio Experience Assessment
+            <Button size="lg" className="bg-slate-50 text-black px-8 py-6 text-lg font-medium hover:bg-[#f0dfd5]" aria-label="Optimize Your Sound System">
+              Optimize Your Sound System
             </Button>
           </Link>
         </div>

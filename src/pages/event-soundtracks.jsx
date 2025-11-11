@@ -386,8 +386,8 @@ From custom playlists, live DJ sets to sound audits and setup, we ensure your ev
             Let our experienced team handle everything sound-related for your next event.
           </p>
           <Link to={createPageUrl("ContactUs")}>
-            <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold" aria-label="Schedule an event music consultation">
-              Schedule an Event Music Consultation
+            <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold" aria-label="Design Your Event Atmosphere">
+              Design Your Event Atmosphere
             </Button>
           </Link>
         </div>
