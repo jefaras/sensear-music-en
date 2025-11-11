@@ -353,13 +353,6 @@ This inquiry has been saved to the database and can be viewed in the admin panel
          ]} />
         </div> */}
         
-        {/* New paragraph beneath header image */}
-      <div className="max-w-7xl mx-auto px-6 -mt-8 mb-12">
-        <p className="text-lg sm:text-xl text-center text-black/80 leading-relaxed max-w-4xl mx-auto">
-          Give us a call or send us an email, and we will respond within 24 hours!
-        </p>
-      </div>
-
 
       <section className="py-20 bg-[#faebe3]" aria-labelledby="contact-heading">
         <div className="max-w-6xl mx-auto px-6">
