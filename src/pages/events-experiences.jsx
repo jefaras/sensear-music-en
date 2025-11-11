@@ -294,8 +294,8 @@ export default function EventsExperiences() {
         </div>
       </section>
 
-      <section className="py-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="problems-heading">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-24 bg-white" aria-labelledby="problems-heading">
+        <div className="max-w-6xl mx-auto px-6">
           <h2 id="problems-heading" className="text-2xl sm:text-3xl font-bold text-black text-center mb-6">Problems We Solve</h2>
           <p className="text-center text-black/70 mb-10 max-w-3xl mx-auto px-4">
             Our expert technicians ensure your event's sound is crystal clear, hand-picking the perfect equipment and carefully managing every audio detail from start to finish.
@@ -314,11 +314,11 @@ export default function EventsExperiences() {
             )}
           </div>
           <div className="text-center mt-16">
-            <p className="text-black/70 mb-6 px-4">
-              See our <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">full service portfolio</Link> or explore <Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">client success stories</Link>.
+            <p className="text-black/70 mb-6">
+              Explore other <Link to={createPageUrl("Industries")} className="underline hover:text-black font-semibold">industries we serve</Link>, discover all our <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">services</Link>, or learn about <Link to={createPageUrl("what-exactly-does-music-curator-do")} className="underline hover:text-black font-semibold">what music curators do</Link>.
             </p>
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 w-full sm:w-auto px-6 sm:px-8 py-6 text-base sm:text-lg whitespace-normal" aria-label="Schedule an event sound consultation">Schedule an Event Sound Consultation</Button>
+              <Button size="lg" className="bg-black text-white hover:bg-black/80" aria-label="Plan Your Perfect Soundtrack">Plan Your Perfect Soundtrack</Button>
             </Link>
           </div>
         </div>

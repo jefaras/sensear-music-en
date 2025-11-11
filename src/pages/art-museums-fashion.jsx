@@ -304,8 +304,8 @@ export default function ArtMuseumsFashion() {
       </section>
 
       {/* Problems We Solve Section */}
-      <section className="py-20 animated-gradient" aria-labelledby="problems-heading">
-        <div className="max-w-4xl mx-auto px-6">
+      <section className="py-24 animated-gradient" aria-labelledby="problems-heading">
+        <div className="max-w-6xl mx-auto px-6">
           <h2 id="problems-heading" className="text-2xl sm:text-3xl font-bold text-black text-center mb-6">Problems we solve</h2>
           
           <div className="grid md:grid-cols-2 gap-8 mt-12" role="list">
@@ -361,11 +361,11 @@ export default function ArtMuseumsFashion() {
           </div>
 
           <div className="text-center mt-16">
-            <p className="text-black/70 mb-6 px-4">
-              See solutions for other <Link to={createPageUrl("Industries")} className="underline hover:text-black font-semibold">industries we serve</Link> or view our <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">complete services</Link>.
+            <p className="text-black/70 mb-6">
+              Explore other <Link to={createPageUrl("Industries")} className="underline hover:text-black font-semibold">industries we serve</Link>, discover our <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">full services</Link>, or <Link to={createPageUrl("ContactUs")} className="underline hover:text-black font-semibold">get in touch</Link> to discuss your next exhibition or show.
             </p>
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 w-full sm:w-auto px-6 sm:px-8 py-6 text-base sm:text-lg whitespace-normal" aria-label="Talk to a music curator">Talk to a Music Curator</Button>
+              <Button size="lg" className="bg-black text-white hover:bg-black/80" aria-label="Curate Your Gallery Sound">Curate Your Gallery Sound</Button>
             </Link>
           </div>
         </div>

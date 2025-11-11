@@ -329,7 +329,7 @@ export default function Industries() {
           </p>
           <Link to={createPageUrl("PlaylistsDemos")}>
             <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-4 text-lg group">
-              Listen to Playlist Demos
+              Listen to Sample Playlists
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>
