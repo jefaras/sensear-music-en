@@ -344,7 +344,8 @@ This inquiry has been saved to the database and can be viewed in the admin panel
         </div>
       </section>
 
-      
+      {/* Thin black line separator */}
+      <div className="border-t border-black"></div>
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
@@ -356,6 +357,16 @@ This inquiry has been saved to the database and can be viewed in the admin panel
 
       <section className="py-20 bg-[#faebe3]" aria-labelledby="contact-heading">
         <div className="max-w-6xl mx-auto px-6">
+          {/* New heading and text above the contact form */}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+              Give us a call or email us
+            </h2>
+            <p className="text-lg text-black/70">
+              We will respond to your message within 24 hours!
+            </p>
+          </div>
+
           <h2 id="contact-heading" className="sr-only">Contact Information and Inquiry Form</h2>
           <div className="grid lg:grid-cols-3 gap-12">
             {/* Contact Info */}
