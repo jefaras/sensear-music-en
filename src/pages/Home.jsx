@@ -253,16 +253,16 @@ export default function Home() {
               <Link to={createPageUrl("ContactUs")}>
                 <Button
                   className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
-                  aria-label="Contact us for music curation consultation">
-                  Contact us
+                  aria-label="Discover Your Sound">
+                  Discover Your Sound
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")}>
                 <Button
                   variant="outline"
                   className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto"
-                  aria-label="Discover our services">
-                  Discover our services
+                  aria-label="See How It Works">
+                  See How It Works
                 </Button>
               </Link>
             </div>
@@ -449,8 +449,8 @@ export default function Home() {
                     </ul>
                     <div className="mt-8 md:mt-12 text-center lg:text-left w-full">
                       <Link to={createPageUrl("Industries")} className="inline-block w-full sm:w-auto">
-                          <Button className="bg-black hover:bg-black/80 text-white px-6 md:px-8 h-14 text-sm sm:text-base md:text-lg group w-full sm:w-auto rounded-full" aria-label="See how we can transform your venue">
-                              See how we can transform your own venue
+                          <Button className="bg-black hover:bg-black/80 text-white px-6 md:px-8 h-14 text-sm sm:text-base md:text-lg group w-full sm:w-auto rounded-full" aria-label="Explore Solutions for Your Venue">
+                              Explore Solutions for Your Venue
                               <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                           </Button>
                       </Link>

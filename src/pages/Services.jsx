@@ -254,11 +254,11 @@ export default function Services() {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
-              <Link to={createPageUrl("ContactUs")}>
+              <Link to={createPageUrl("PlaylistsDemos")}>
                 <Button 
                   className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto group"
-                  aria-label="Get a free listening session consultation">
-                  Book a Listening Session
+                  aria-label="Preview Sample Playlists">
+                  Preview Sample Playlists
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                 </Button>
               </Link>
@@ -320,7 +320,7 @@ export default function Services() {
               title: "Signature Playlists",
               description: "Bespoke, brand-exclusive playlists sourced from rare archives for venues that refuse to sound generic.",
               link: createPageUrl("signature-playlists"),
-              cta: "Discover Signature Playlists",
+              cta: "Create Your Signature Sound",
               image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg",
               alt: "Bespoke music curation and playlist creation for unique venue atmosphere"
             },
@@ -329,7 +329,7 @@ export default function Services() {
               title: "Event Soundtracks",
               description: "Artfully selected, custom-curated soundtracks and seamless AV production that elevate events into immersive, unforgettable moments.",
               link: createPageUrl("event-soundtracks"),
-              cta: "Schedule Your Event Consultation",
+              cta: "Design Your Event Atmosphere",
               image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg",
               alt: "Professional event production with immersive music curation and AV setup"
             },
@@ -338,16 +338,16 @@ export default function Services() {
               title: "Sonic Strategy",
               description: "Ultra-specialized music consultancy & sound branding guidelines that forge an inimitable sonic identity.",
               link: createPageUrl("sonic-strategy"),
-              cta: "Explore Sonic Strategy",
+              cta: "Build Your Sound Strategy",
               image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg",
               alt: "Strategic sonic branding consultation and music curation planning session"
             },
             {
               icon: SlidersHorizontal,
               title: "Audio Upgrades",
-              description: "Professional on-site sound checks, optimization and audio calibration, with guaranteed fixes for any sound related issue.",
+              description: "Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.",
               link: createPageUrl("audio-upgrades"),
-              cta: "Book Your Sound Check",
+              cta: "Optimize Your Sound System",
               image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg",
               alt: "Professional audio equipment optimization and acoustic calibration for venues"
             }].
@@ -396,7 +396,7 @@ export default function Services() {
             </p>
             <Link to={createPageUrl("Industries")}>
               <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group">
-                See which venues we elevate
+                See Success Stories
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </Button>
             </Link>
