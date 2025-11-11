@@ -305,17 +305,65 @@ export default function AudioUpgrades() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 id="what-we-do-heading" className="text-4xl font-bold text-center mb-6 animate-fade-in-up leading-[1.25]">What We Do</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
-            {whatWeDo.map((item, index) =>
-            <article key={index} role="listitem" className="animate-fade-in-up" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
-                <Card className="bg-white p-8 shadow-lg h-full">
-                  <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                    <item.icon className="w-8 h-8" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-lg text-black/70">{item.description}</p>
-                </Card>
-              </article>
-            )}
+            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
+              <Card className="bg-white p-8 shadow-lg h-full">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Settings className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">On-site acoustic audits and layout assessments</h3>
+                <p className="text-lg text-black/70">We analyze your space's acoustics and current setup to identify issues and opportunities for improvement.</p>
+              </Card>
+            </article>
+
+            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
+              <Card className="bg-white p-8 shadow-lg h-full">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Volume2 className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Hardware testing and zone performance</h3>
+                <p className="text-lg text-black/70">We test speakers, amplifiers, and coverage to ensure every zone delivers crystal-clear sound.</p>
+              </Card>
+            </article>
+
+            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
+              <Card className="bg-white p-8 shadow-lg h-full">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Wrench className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Redesigns for clarity and immersive flow</h3>
+                <p className="text-lg text-black/70">We create tailored solutions that enhance clarity, coverage, and create an immersive audio experience.</p>
+              </Card>
+            </article>
+
+            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.7s' }>
+              <Card className="bg-white p-8 shadow-lg h-full">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Lightbulb className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Tailored AV proposals based on your needs and aesthetics</h3>
+                <p className="text-lg text-black/70">We design custom audio-visual solutions that align with your venue's unique character and functional requirements.</p>
+              </Card>
+            </article>
+
+            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
+              <Card className="bg-white p-8 shadow-lg h-full">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Package className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Procurement and installation with trusted AV partners</h3>
+                <p className="text-lg text-black/70">We source premium equipment and coordinate professional installation through our network of certified partners.</p>
+              </Card>
+            </article>
+
+            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
+              <Card className="bg-white p-8 shadow-lg h-full">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <CheckSquare className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Final tuning and walkthrough under real conditions</h3>
+                <p className="text-lg text-black/70">We calibrate your system during actual operations, ensuring optimal performance in live environment conditions.</p>
+              </Card>
+            </article>
           </div>
           <p className="text-center text-black/70 mt-12 max-w-3xl mx-auto">
             Sound in perfect alignment with your space. Essential for <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurants & bars</Link>, <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotels</Link>, and <Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">retail spaces</Link>. Complements our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists</Link> perfectly.
@@ -327,19 +375,57 @@ export default function AudioUpgrades() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 id="problems-heading" className="text-4xl font-bold text-center mb-6 animate-fade-in-up leading-[1.25]">Problems We Solve</h2>
           <div className="grid md:grid-cols-2 gap-8" role="list">
-            {problemsWeSolve.map((problem, index) =>
-            <article key={problem.title} className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: `${0.4 + index * 0.1}s` }}>
-                <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{problem.title}</h3>
-                    <p className="text-black/70">{problem.description}</p>
-                  </div>
+            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.4s' }}>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Sound that does not fit the room</h3>
+                  <p className="text-black/70">Harsh reflections, dead zones, or overpowering volumes often stem from mismatched layouts or poor calibration. We balance sound to fit your space—clean, even, and immersive.</p>
                 </div>
-              </article>
-            )}
+              </div>
+            </article>
+
+            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.5s' }}>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Guests struggling to hold a conversation</h3>
+                  <p className="text-black/70">If the music is too loud—or too uneven—guests leave faster. We design a sound environment that supports social flow without sacrificing presence or clarity.</p>
+                </div>
+              </div>
+            </article>
+
+            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.6s' }}>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Equipment that underperforms or is overcomplicated</h3>
+                  <p className="text-black/70">Too often, venues are sold the wrong gear or setups they cannot manage. We simplify, optimize, and make sure your team can run the system without stress.</p>
+                </div>
+              </div>
+            </article>
+
+            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.7s' }}>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">No clear support or accountability</h3>
+                  <p className="text-black/70">You should not have to chase multiple suppliers for basic sound performance. We handle everything—from diagnosis to delivery—as your all-in-one partner.</p>
+                </div>
+              </div>
+            </article>
+
+            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.8s' }}>
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Spaces that look premium compromised by weak sound</h3>
+                  <p className="text-black/70">Great design deserves sound to match. We make sure your venue sounds as considered as it looks.</p>
+                </div>
+              </div>
+            </article>
           </div>
-          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: `${0.4 + problemsWeSolve.length * 0.1}s` }}>
+          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
             <p className="text-black/70">
               Discover how proper audio setup supports <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">increased sales through music</Link>. Perfect for all <Link to={createPageUrl("Industries")} className="underline hover:text-black font-semibold">industries we serve</Link>. Available alongside our <Link to={createPageUrl("event-soundtracks")} className="underline hover:text-black font-semibold">event services</Link>.
             </p>
