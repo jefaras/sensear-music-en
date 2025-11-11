@@ -18,7 +18,7 @@ export default function ContactUs() {
 
   useEffect(() => {
     document.title = "Contact SensEar | Music Curation Consultation";
-    
+
     const description = "Get in touch with SensEar for bespoke music curation services. Schedule your free consultation to transform your venue's atmosphere.";
     const pageUrl = 'https://sensear.music/contact';
     const imageUrl = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg'; // Updated hero image
@@ -91,14 +91,14 @@ export default function ContactUs() {
 
     // Open Graph tags
     const ogTags = [
-      { property: 'og:title', content: 'Contact SensEar | Music Curation Consultation' },
-      { property: 'og:description', content: description },
-      { property: 'og:image', content: imageUrl },
-      { property: 'og:url', content: pageUrl },
-      { property: 'og:type', content: 'website' }
-    ];
+    { property: 'og:title', content: 'Contact SensEar | Music Curation Consultation' },
+    { property: 'og:description', content: description },
+    { property: 'og:image', content: imageUrl },
+    { property: 'og:url', content: pageUrl },
+    { property: 'og:type', content: 'website' }];
 
-    ogTags.forEach(tag => {
+
+    ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
       if (metaTag) {
         metaTag.setAttribute('content', tag.content);
@@ -112,13 +112,13 @@ export default function ContactUs() {
 
     // Twitter Card tags
     const twitterTags = [
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Contact SensEar | Music Curation Consultation' },
-      { name: 'twitter:description', content: description },
-      { name: 'twitter:image', content: imageUrl }
-    ];
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:title', content: 'Contact SensEar | Music Curation Consultation' },
+    { name: 'twitter:description', content: description },
+    { name: 'twitter:image', content: imageUrl }];
 
-    twitterTags.forEach(tag => {
+
+    twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
       if (metaTag) {
         metaTag.setAttribute('content', tag.content);
@@ -132,58 +132,58 @@ export default function ContactUs() {
 
     // Add structured data
     const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "SensEar",
+      "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg", // Updated hero image URL
+      "url": "https://sensear.music",
+      "telephone": "+30-6976994212",
+      "email": "hello@sensear.music",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Athens",
+        "addressLocality": "Athens",
+        "addressCountry": "GR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 37.9838,
+        "longitude": 23.7275
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+      "https://www.facebook.com/61575909304249/",
+      "https://www.instagram.com/sensear.music",
+      "https://www.linkedin.com/company/sensear"],
+
+      "priceRange": "$$$",
+      "description": "Contact SensEar for bespoke music curation, sonic branding, and audio solutions for luxury hospitality venues."
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
       {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "SensEar",
-        "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg", // Updated hero image URL
-        "url": "https://sensear.music",
-        "telephone": "+30-6976994212",
-        "email": "hello@sensear.music",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Athens",
-          "addressLocality": "Athens",
-          "addressCountry": "GR"
-        },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": 37.9838,
-          "longitude": 23.7275
-        },
-        "openingHoursSpecification": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          "opens": "09:00",
-          "closes": "18:00"
-        },
-        "sameAs": [
-          "https://www.facebook.com/61575909304249/",
-          "https://www.instagram.com/sensear.music",
-          "https://www.linkedin.com/company/sensear"
-        ],
-        "priceRange": "$$$",
-        "description": "Contact SensEar for bespoke music curation, sonic branding, and audio solutions for luxury hospitality venues."
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sensear.music/"
       },
       {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://sensear.music/"
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Contact",
-            "item": "https://sensear.music/contact"
-          }
-        ]
-      }
-    ];
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Contact",
+        "item": "https://sensear.music/contact"
+      }]
+
+    }];
+
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -229,7 +229,7 @@ export default function ContactUs() {
         budget_range: "",
         message: ""
       });
-      
+
       setTimeout(() => setIsSuccess(false), 5000);
     } catch (error) {
       console.error("Error submitting inquiry:", error);
@@ -253,13 +253,13 @@ export default function ContactUs() {
           </p>
           <Button
             onClick={() => setIsSuccess(false)}
-            className="bg-black hover:bg-black/80 text-white"
-          >
+            className="bg-black hover:bg-black/80 text-white">
+            
             Ask Another Question
           </Button>
         </div>
-      </div>
-    );
+      </div>);
+
   }
 
   return (
@@ -290,25 +290,27 @@ export default function ContactUs() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 2400w"
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Contact SensEar for music curation consultation"
-                className="absolute w-full h-full object-cover md:hidden"
-              />
+                className="absolute w-full h-full object-cover md:hidden" />
+              
               {/* Desktop version - WITH parallax */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 2400w"
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Contact SensEar for music curation consultation"
                 className="absolute w-full h-full object-cover hidden md:block"
-                style={{ 
+                style={{
                   top: '-15%',
                   height: '130%',
                   transform: `translateY(${scrollY * 0.15}px)`,
                   transformOrigin: 'center top'
-                }}
-              />
+                }} />
+              
             </div>
           </div>
         </div>
@@ -321,10 +323,10 @@ export default function ContactUs() {
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-        <Breadcrumbs items={[
-          { label: "Contact", path: createPageUrl("ContactUs") }
-        ]} />
-      </div> */}
+         <Breadcrumbs items={[
+           { label: "Contact", path: createPageUrl("ContactUs") }
+         ]} />
+        </div> */}
 
       <section className="py-20 bg-[#faebe3]" aria-labelledby="contact-heading">
         <div className="max-w-6xl mx-auto px-6">
@@ -391,8 +393,8 @@ export default function ContactUs() {
                   <p className="text-white text-xl sm:text-2xl font-bold mb-2">
                     Form functionality coming soon.
                   </p>
-                  <p className="text-white text-lg sm:text-xl">
-                    Please use our email or phone nr directly.
+                  <p className="text-white text-lg sm:text-xl">Please use our email or phone number directly.
+
                   </p>
                 </div>
               </div>
@@ -411,11 +413,11 @@ export default function ContactUs() {
                       <Input
                         required
                         value={formData.name}
-                        onChange={(e) => setFormData({...formData, name: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         placeholder="Your full name"
                         className="border-black/20 focus:bg-white"
-                        style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)'}}
-                      />
+                        style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }} />
+                      
                     </div>
                     <div>
                       <label className="block text-sm font-medium text-black mb-2">
@@ -425,11 +427,11 @@ export default function ContactUs() {
                         required
                         type="email"
                         value={formData.email}
-                        onChange={(e) => setFormData({...formData, email: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         placeholder="your@email.com"
                         className="border-black/20 focus:bg-white"
-                        style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)'}}
-                      />
+                        style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }} />
+                      
                     </div>
                   </div>
 
@@ -439,11 +441,11 @@ export default function ContactUs() {
                     </label>
                     <Input
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       placeholder="+30..."
                       className="border-black/20 focus:bg-white"
-                      style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)'}}
-                    />
+                      style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }} />
+                    
                   </div>
 
                   <div className="grid md:grid-cols-2 gap-6">
@@ -454,9 +456,9 @@ export default function ContactUs() {
                       <Select
                         required
                         value={formData.venue_type}
-                        onValueChange={(value) => setFormData({...formData, venue_type: value})}
-                      >
-                        <SelectTrigger className="border-black/20 focus:bg-white" style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)'}}>
+                        onValueChange={(value) => setFormData({ ...formData, venue_type: value })}>
+                        
+                        <SelectTrigger className="border-black/20 focus:bg-white" style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }}>
                           <SelectValue placeholder="Select venue type" />
                         </SelectTrigger>
                         <SelectContent>
@@ -479,9 +481,9 @@ export default function ContactUs() {
                       <Select
                         required
                         value={formData.service_interest}
-                        onValueChange={(value) => setFormData({...formData, service_interest: value})}
-                      >
-                        <SelectTrigger className="border-black/20 focus:bg-white" style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)'}}>
+                        onValueChange={(value) => setFormData({ ...formData, service_interest: value })}>
+                        
+                        <SelectTrigger className="border-black/20 focus:bg-white" style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }}>
                           <SelectValue placeholder="Select service" />
                         </SelectTrigger>
                         <SelectContent>
@@ -500,11 +502,11 @@ export default function ContactUs() {
                     </label>
                     <Input
                       value={formData.budget_range}
-                      onChange={(e) => setFormData({...formData, budget_range: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, budget_range: e.target.value })}
                       placeholder="e.g., €5,000 - €10,000"
                       className="border-black/20 focus:bg-white"
-                      style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)'}}
-                    />
+                      style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }} />
+                    
                   </div>
 
                   <div>
@@ -514,20 +516,20 @@ export default function ContactUs() {
                     <Textarea
                       required
                       value={formData.message}
-                      onChange={(e) => setFormData({...formData, message: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       placeholder="Tell us about your project..."
                       rows={6}
                       className="border-black/20 focus:bg-white"
-                      style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)'}}
-                    />
+                      style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }} />
+                    
                   </div>
 
                   <Button
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full bg-black hover:bg-black/80 text-white font-semibold py-6 text-lg"
-                    aria-label={isSubmitting ? "Sending your message" : "Send message"}
-                  >
+                    aria-label={isSubmitting ? "Sending your message" : "Send message"}>
+                    
                     {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
@@ -592,6 +594,6 @@ export default function ContactUs() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
