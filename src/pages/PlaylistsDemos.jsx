@@ -1,4 +1,3 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -103,7 +102,7 @@ export default function PlaylistsDemos() {
         aria-label="Music curation playlist demos showcase">
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold mb-6 animate-fade-in-up leading-[1.1]">
             Hear our signature style
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-white/80 leading-relaxed animate-fade-in-up px-4" style={{animationDelay: '0.2s'}}>
