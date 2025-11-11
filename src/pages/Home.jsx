@@ -260,11 +260,11 @@ export default function Home() {
       `}</style>
 
       {/* Hero Section - with silver foil background */}
-      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
+      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
         {/* Text content - constrained by max-w-7xl */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-black mb-6 leading-[1.1]">Music Curation that transforms Spaces into Experiences
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-black mb-6 leading-[1.1]">Music Curation that transforms Spaces into Experiences
 
             </h1>
             
@@ -278,7 +278,7 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link to={createPageUrl("ContactUs")}>
                 <Button
-                  className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto"
+                  className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14"
                   aria-label="Discover Your Sound">
                   Discover Your Sound
                 </Button>
@@ -286,9 +286,9 @@ export default function Home() {
               <Link to={createPageUrl("Services")}>
                 <Button
                   variant="outline"
-                  className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto"
-                  aria-label="See How It Works">
-                  See How It Works
+                  className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto h-14"
+                  aria-label="Explore our services">
+                  Explore our services
                 </Button>
               </Link>
             </div>
