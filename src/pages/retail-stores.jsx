@@ -186,9 +186,9 @@ export default function RetailStores() {
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Retail Stores section">
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
-              Attract, engage &amp; elevate<br />
-              the atmosphere of your retail store
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">Attract, engage & elevate
+the atmosphere of your retail store
+
             </h1>
             
             <div className="mb-8 max-w-4xl">
@@ -207,25 +207,27 @@ export default function RetailStores() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1e2c7c1d3_ignan-travel-thesquare-5-2048x1328-1-.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1e2c7c1d3_ignan-travel-thesquare-5-2048x1328-1-.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1e2c7c1d3_ignan-travel-thesquare-5-2048x1328-1-.jpg 2400w"
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Modern retail store with strategic music curation influencing shopping behavior"
-                className="absolute w-full h-full object-cover md:hidden"
-              />
+                className="absolute w-full h-full object-cover md:hidden" />
+
               {/* Desktop version - WITH parallax */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1e2c7c1d3_ignan-travel-thesquare-5-2048x1328-1-.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1e2c7c1d3_ignan-travel-thesquare-5-2048x1328-1-.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1e2c7c1d3_ignan-travel-thesquare-5-2048x1328-1-.jpg 2400w"
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Modern retail store with strategic music curation influencing shopping behavior"
                 className="absolute w-full h-full object-cover hidden md:block"
-                style={{ 
+                style={{
                   top: '-15%',
                   height: '130%',
                   transform: `translateY(${scrollY * 0.15}px)`,
                   transformOrigin: 'center top'
-                }}
-              />
+                }} />
+
             </div>
           </div>
         </div>
@@ -233,11 +235,11 @@ export default function RetailStores() {
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-        <Breadcrumbs items={[
-        { label: "Industries", path: createPageUrl("Industries") },
-        { label: "Retail Stores", path: createPageUrl("retail-stores") }]
-        } />
-      </div> */}
+         <Breadcrumbs items={[
+         { label: "Industries", path: createPageUrl("Industries") },
+         { label: "Retail Stores", path: createPageUrl("retail-stores") }]
+         } />
+        </div> */}
 
       <section className="py-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="problems-heading">
         <div className="max-w-4xl mx-auto px-6">
@@ -286,6 +288,6 @@ export default function RetailStores() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
