@@ -274,7 +274,7 @@ export default function ContactUs() {
             onClick={() => setIsSuccess(false)}
             className="bg-black hover:bg-black/80 text-white"
           >
-            Send Another Inquiry
+            Ask Another Question
           </Button>
         </div>
       </div>
@@ -540,9 +540,9 @@ export default function ContactUs() {
                     type="submit"
                     disabled={isSubmitting}
                     className="w-full bg-black hover:bg-black/80 text-white font-semibold py-6 text-lg"
-                    aria-label={isSubmitting ? "Sending your inquiry" : "Send inquiry"}
+                    aria-label={isSubmitting ? "Sending your message" : "Send message"}
                   >
-                    {isSubmitting ? "Sending..." : "Send Inquiry"}
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </Card>
@@ -572,7 +572,7 @@ export default function ContactUs() {
           <div className="text-center mt-12">
             <Link to={createPageUrl("FAQ")}>
               <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group">
-                Read all the FAQ's
+                Browse FAQs First
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
               </Button>
             </Link>
