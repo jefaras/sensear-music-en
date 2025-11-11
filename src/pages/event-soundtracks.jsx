@@ -187,37 +187,6 @@ export default function EventSoundtracks() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const whatWeDo = [
-    {
-      icon: Music,
-      title: "Curated soundtracks that adapt to your timeline",
-      description: "Custom music that flows with your event's mood, audience, and timeline."
-    },
-    {
-      icon: Disc,
-      title: "DJ programming or seamless transitions",
-      description: "Professional DJ services or programmed transitions across zones and phases."
-    },
-    {
-      icon: Headphones,
-      title: "Full AV support from sound checks to delivery",
-      description: "Complete audio-visual support from initial setup to on-the-night execution."
-    },
-    {
-      icon: Settings,
-      title: "Audio system diagnosis and upgrade proposals",
-      description: "Professional assessment and recommendations for better audio performance."
-    }
-  ];
-
-  const problemsWeSolve = [
-    { title: "Music that feels like it was not part of the plan", description: "Even well-designed events often miss the mark with music. We treat sound as part of the experience design; shaping atmosphere, pacing, and emotional tone." },
-    { title: "Mismatch between music and the event's purpose", description: "Whether it is a product launch, press event, or private celebration, ready-made playlists cannot express your concept. We build music narratives that capture the event's essence." },
-    { title: "Poor audio performance in the space", description: "Echoes, uneven coverage, or underpowered speakers kill immersion. We audit and upgrade your system so that the sound delivers and not distracts." },
-    { title: "Too many vendors, unclear accountability", description: "Music and AV are often split across providers, creating confusion. We handle both, from curation to equipment setup, with one clear point of contact, saving  you time, effort and money." },
-    { title: "Last-minute tweaks are a struggle", description: "Events are fluid, but most providers are not. Our curator hotline and on-call support make it easy to adapt, even hours before doors open." }
-  ];
-
   return (
     <div className="bg-[#faebe3]">
       {/* Hero Section - Similar to Home but smaller heading */}
@@ -276,17 +245,45 @@ export default function EventSoundtracks() {
 From custom playlists, live DJ sets to sound audits and setup, we ensure your event sounds as good as it looks.
           </p>
           <div className="grid md:grid-cols-2 gap-8" role="list">
-            {whatWeDo.map((item, index) => (
-              <article key={index} role="listitem">
-                <Card className="bg-white p-8 shadow-lg">
-                  <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                    <item.icon className="w-8 h-8" />
-                  </div>
-                  <h3 className="text-2xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-lg text-black/70">{item.description}</p>
-                </Card>
-              </article>
-            ))}
+            <article role="listitem">
+              <Card className="bg-white p-8 shadow-lg">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Music className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Curated soundtracks that adapt to your timeline</h3>
+                <p className="text-lg text-black/70">Custom music that flows with your event's mood, audience, and timeline.</p>
+              </Card>
+            </article>
+
+            <article role="listitem">
+              <Card className="bg-white p-8 shadow-lg">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Disc className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">DJ programming or seamless transitions</h3>
+                <p className="text-lg text-black/70">Professional DJ services or programmed transitions across zones and phases.</p>
+              </Card>
+            </article>
+
+            <article role="listitem">
+              <Card className="bg-white p-8 shadow-lg">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Headphones className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Full AV support from sound checks to delivery</h3>
+                <p className="text-lg text-black/70">Complete audio-visual support from initial setup to on-the-night execution.</p>
+              </Card>
+            </article>
+
+            <article role="listitem">
+              <Card className="bg-white p-8 shadow-lg">
+                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                  <Settings className="w-8 h-8" />
+                </div>
+                <h3 className="text-2xl font-bold mb-4">Audio system diagnosis and upgrade proposals</h3>
+                <p className="text-lg text-black/70">Professional assessment and recommendations for better audio performance.</p>
+              </Card>
+            </article>
           </div>
           <p className="text-center text-black/70 mt-12 max-w-3xl mx-auto">
             Our event music services build on our <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black font-semibold">strategic sonic approach</Link>. Learn about <Link to={createPageUrl("service-environment-shapes-wait-time")} className="underline hover:text-black font-semibold">how environment affects guest perception</Link>.
@@ -356,17 +353,55 @@ From custom playlists, live DJ sets to sound audits and setup, we ensure your ev
         <div className="max-w-5xl mx-auto px-6">
           <h2 id="problems-heading" className="text-4xl font-bold text-center mb-6 leading-[1.25]">Problems We Solve</h2>
           <div className="grid md:grid-cols-2 gap-8" role="list">
-            {problemsWeSolve.map((problem) => (
-              <article key={problem.title} className="p-6 bg-gray-50 rounded-lg" role="listitem">
-                <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">{problem.title}</h3>
-                    <p className="text-black/70">{problem.description}</p>
-                  </div>
+            <article role="listitem" className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Music that feels like it was not part of the plan</h3>
+                  <p className="text-black/70">Even well-designed events often miss the mark with music. We treat sound as part of the experience design; shaping atmosphere, pacing, and emotional tone.</p>
                 </div>
-              </article>
-            ))}
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Mismatch between music and the event's purpose</h3>
+                  <p className="text-black/70">Whether it is a product launch, press event, or private celebration, ready-made playlists cannot express your concept. We build music narratives that capture the event's essence.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Poor audio performance in the space</h3>
+                  <p className="text-black/70">Echoes, uneven coverage, or underpowered speakers kill immersion. We audit and upgrade your system so that the sound delivers and not distracts.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Too many vendors, unclear accountability</h3>
+                  <p className="text-black/70">Music and AV are often split across providers, creating confusion. We handle both, from curation to equipment setup, with one clear point of contact, saving  you time, effort and money.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-gray-50 rounded-lg">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-xl font-bold mb-2">Last-minute tweaks are a struggle</h3>
+                  <p className="text-black/70">Events are fluid, but most providers are not. Our curator hotline and on-call support make it easy to adapt, even hours before doors open.</p>
+                </div>
+              </div>
+            </article>
           </div>
           <div className="text-center mt-12">
             <p className="text-black/70">
