@@ -307,6 +307,7 @@ We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create at
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 2400w"
 
 
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Luxury hotel lounge interior with sophisticated ambiance showcasing music curation atmosphere"
                 className="absolute w-full h-full object-cover"
@@ -424,7 +425,7 @@ We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create at
                       alt={service.alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
+                      <div className="absolute inset-0" aria-hidden="true" />
                       
                       <div className="absolute top-4 left-4">
                         <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center" aria-hidden="true">
@@ -490,6 +491,8 @@ We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create at
                   srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e7baf90ef_car-1.png 800w,
                                   https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e7baf90ef_car-1.png 1200w,
                                   https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e7baf90ef_car-1.png 1600w"
+
+
 
 
 
