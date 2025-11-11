@@ -302,14 +302,11 @@ We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create at
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Image: Larger (130% scale) so it has room to move */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e4d7d2f3e_6588-16_13by51.png 2400w"
-
-
-
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Luxury hotel lounge interior with sophisticated ambiance showcasing music curation atmosphere"
+                alt="Luxury rooftop bar with stunning sunset views and ambient music atmosphere"
                 className="absolute w-full h-full object-cover"
                 style={{
                   top: '-15%',
