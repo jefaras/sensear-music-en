@@ -1,11 +1,9 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function BackgroundMusicShapesCustomerBehavior() {
   const [scrollY, setScrollY] = useState(0);
@@ -283,13 +281,6 @@ export default function BackgroundMusicShapesCustomerBehavior() {
           </div>
         </div>
       </section>
-
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-        <Breadcrumbs items={[
-          { label: "Blog", path: createPageUrl("Blog") },
-          { label: "Sound Strategy That Sells: How Background Music Shapes Customer Behavior", path: createPageUrl("background-music-shapes-customer-behavior") }
-        ]} />
-      </div>
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <Card className="bg-white p-8 md:p-12 shadow-lg mb-12">

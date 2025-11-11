@@ -1,10 +1,8 @@
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Card } from "@/components/ui/card";
-import Breadcrumbs from "../components/Breadcrumbs";
-import { Home, Briefcase, Building2, FileText, Users, Mail, BookOpen, HelpCircle } from "lucide-react";
+import { Home, Briefcase, Building2, FileText, BookOpen } from "lucide-react";
 
 export default function Sitemap() {
   useEffect(() => {
@@ -113,37 +111,31 @@ export default function Sitemap() {
       pages: [
         { name: "All Case Studies", path: createPageUrl("CaseStudies") },
         { name: "Blue Bamboo", path: createPageUrl("blue-bamboo") },
-        { name: "Klouvi", path: createPageUrl("klouvi-bar") }, // Updated name
+        { name: "Klouvi", path: createPageUrl("klouvi-bar") },
         { name: "Beach House", path: createPageUrl("beach-house-antiparos") },
-        { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") } // Updated name
+        { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }
       ]
     },
     {
       title: "Blog Posts",
       icon: BookOpen,
       pages: [
+        { name: "All Blog Articles", path: createPageUrl("Blog") },
         { name: "How Top Hospitality Brands Design Their Sound", path: createPageUrl("how-top-hospitality-brands-design-sound") },
-        { name: "Three Reasons Music Matters in Hospitality", path: createPageUrl("three-reasons-music-hospitality") },
-        { name: "How Brand Music Increases Sales", path: createPageUrl("brand-music-increase-sales") },
-        { name: "What Does a Music Curator Do?", path: createPageUrl("what-music-curator-does") },
-        { name: "Analyze and Optimize Music Curation", path: createPageUrl("analyze-optimize-music-curation") },
-        { name: "Building Your Brand Through Sound", path: createPageUrl("building-managing-brand") },
-        { name: "Music Influence on Consumer Behavior", path: createPageUrl("music-influence-consumer-behavior") },
-        { name: "Waiting Time Perception & Music", path: createPageUrl("service-environment-waiting-time") }
+        { name: "Three Reasons Music Matters in Hospitality", path: createPageUrl("three-reasons-make-music-hospitality") },
+        { name: "How Brand Music Increases Sales", path: createPageUrl("brand-music-converts-browsers-buyers") },
+        { name: "What Does a Music Curator Do?", path: createPageUrl("what-exactly-does-music-curator-do") },
+        { name: "Analyze and Optimize Music Curation", path: createPageUrl("music-curation-cycle-venues") },
+        { name: "Building Your Brand Through Sound", path: createPageUrl("building-brand-people-can-hear") },
+        { name: "Music Influence on Consumer Behavior", path: createPageUrl("background-music-shapes-customer-behavior") },
+        { name: "Waiting Time Perception & Music", path: createPageUrl("service-environment-shapes-wait-time") }
       ]
     }
   ];
 
   return (
     <div className="bg-[#faebe3] min-h-screen pb-24">
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-        <Breadcrumbs items={[
-          { label: "Sitemap", path: createPageUrl("Sitemap") }
-        ]} />
-      </div>
-
-      <div className="max-w-7xl mx-auto px-6 pt-16">
+      <div className="max-w-7xl mx-auto px-6 pt-24">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-black mb-4">Sitemap</h1>
           <p className="text-xl text-black/70 max-w-3xl mx-auto">

@@ -4,7 +4,6 @@ import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Calendar, User } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function ServiceEnvironmentShapesWaitTime() {
   const [scrollY, setScrollY] = useState(0);
@@ -228,14 +227,6 @@ export default function ServiceEnvironmentShapesWaitTime() {
           </div>
         </div>
       </section>
-
-      {/* Breadcrumbs */}
-      <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-        <Breadcrumbs items={[
-          { label: "Blog", path: createPageUrl("Blog") },
-          { label: "How Service Environments Shape Perceived Waiting Time", path: createPageUrl("service-environment-shapes-wait-time") }
-        ]} />
-      </div>
 
       <div className="max-w-4xl mx-auto px-6 py-16">
         <Card className="bg-white p-8 md:p-12 shadow-lg mb-12">
