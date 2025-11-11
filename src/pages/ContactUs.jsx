@@ -314,11 +314,6 @@ export default function ContactUs() {
             </div>
           </div>
         </div>
-        <div className="mb-8 max-w-4xl">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                We are here to help you create the perfect soundscape for your business. Whether you need <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black">strategic sonic branding</Link>, <Link to={createPageUrl("signature-soundscapes")} className="underline hover:text-black">custom playlists</Link>, or <Link to={createPageUrl("audio-experience-upgrade")} className="underline hover:text-black">audio system optimization</Link>, one of our music experts will respond within 24 hours!
-              </p>
-            </div>
       </section>
 
       {/* Breadcrumbs - COMMENTED OUT */}
