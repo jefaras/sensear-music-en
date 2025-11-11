@@ -237,7 +237,7 @@ export default function Industries() {
                       alt="Luxury hotel lobby with elegant music atmosphere and sound design"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-red-50 text-black opacity-80 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
@@ -275,7 +275,7 @@ export default function Industries() {
                       alt="Upscale restaurant interior with curated background music ambiance"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-red-50 text-black opacity-80 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
@@ -313,7 +313,7 @@ export default function Industries() {
                       alt="Modern retail store showcasing music curation for enhanced shopping experience"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-red-50 text-black opacity-80 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
@@ -351,7 +351,7 @@ export default function Industries() {
                       alt="Serene wellness center spa with therapeutic ambient music soundscape"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-red-50 text-black opacity-80 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
@@ -389,7 +389,7 @@ export default function Industries() {
                       alt="Professional event venue with immersive audio and music production setup"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-red-50 text-black opacity-80 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
@@ -427,7 +427,7 @@ export default function Industries() {
                       alt="Art museum and fashion exhibition with curated music atmosphere"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-red-50 text-black opacity-80 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">

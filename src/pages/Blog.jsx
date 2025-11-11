@@ -451,7 +451,7 @@ export default function Blog() {
                       alt={posts[1].alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0" />
                   </div>
                   <div className="p-6">
                     <Badge className="mb-3 bg-black/5 text-black border-black/10">
@@ -494,7 +494,7 @@ export default function Blog() {
                       alt={posts[2].alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0" />
                   </div>
                   <div className="p-6">
                     <Badge className="mb-3 bg-black/5 text-black border-black/10">
@@ -537,7 +537,7 @@ export default function Blog() {
                       alt={posts[3].alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0" />
                   </div>
                   <div className="p-6">
                     <Badge className="mb-3 bg-black/5 text-black border-black/10">
@@ -580,7 +580,7 @@ export default function Blog() {
                       alt={posts[4].alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0" />
                   </div>
                   <div className="p-6">
                     <Badge className="mb-3 bg-black/5 text-black border-black/10">
@@ -623,7 +623,7 @@ export default function Blog() {
                       alt={posts[5].alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0" />
                   </div>
                   <div className="p-6">
                     <Badge className="mb-3 bg-black/5 text-black border-black/10">
@@ -666,7 +666,7 @@ export default function Blog() {
                       alt={posts[6].alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0" />
                   </div>
                   <div className="p-6">
                     <Badge className="mb-3 bg-black/5 text-black border-black/10">
@@ -709,7 +709,7 @@ export default function Blog() {
                       alt={posts[7].alt}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute inset-0" />
                   </div>
                   <div className="p-6">
                     <Badge className="mb-3 bg-black/5 text-black border-black/10">

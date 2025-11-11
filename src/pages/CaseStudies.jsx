@@ -238,7 +238,7 @@ export default function CaseStudies() {
                       alt="Blue Bamboo Thai restaurant with curated music atmosphere"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg" aria-hidden="true">
@@ -289,7 +289,7 @@ export default function CaseStudies() {
                       alt="Klouvi Bar Athens with signature music curation"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg" aria-hidden="true">
@@ -340,7 +340,7 @@ export default function CaseStudies() {
                       alt="Beach House Antiparos with multi-zone music curation"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg" aria-hidden="true">
@@ -391,7 +391,7 @@ export default function CaseStudies() {
                       alt="Pelicanos Sifnos restaurant with curated Mediterranean music"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" aria-hidden="true" />
+                    <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
                       <div className="bg-white rounded-full w-16 h-16 flex items-center justify-center shadow-lg" aria-hidden="true">
