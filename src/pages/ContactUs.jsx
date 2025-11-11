@@ -218,7 +218,34 @@ export default function ContactUs() {
     setIsSubmitting(true);
 
     try {
+      // Save to database
       await base44.entities.Inquiry.create(formData);
+      
+      // Send email notification
+      const emailBody = `
+New Contact Form Submission from SensEar Website
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone || 'Not provided'}
+Venue Type: ${formData.venue_type}
+Service Interest: ${formData.service_interest}
+Budget Range: ${formData.budget_range || 'Not provided'}
+
+Message:
+${formData.message}
+
+---
+This inquiry has been saved to the database and can be viewed in the admin panel.
+      `;
+
+      await base44.integrations.Core.SendEmail({
+        to: "sensearmusic@gmail.com, jefaraz@gmail.com",
+        subject: `New Contact Form Submission from ${formData.name}`,
+        body: emailBody,
+        from_name: "SensEar Website"
+      });
+
       setIsSuccess(true);
       setFormData({
         name: "",
@@ -233,6 +260,7 @@ export default function ContactUs() {
       setTimeout(() => setIsSuccess(false), 5000);
     } catch (error) {
       console.error("Error submitting inquiry:", error);
+      alert("There was an error submitting your inquiry. Please try again or contact us directly at hello@sensear.music");
     }
 
     setIsSubmitting(false);
@@ -265,7 +293,7 @@ export default function ContactUs() {
   return (
     <div className="bg-[#faebe3]">
       {/* Hero Section - Similar to Home but smaller heading */}
-      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Contact section">
+      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935043b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Contact section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
@@ -274,9 +302,9 @@ export default function ContactUs() {
             </h1>
             
             <div className="mb-8 max-w-4xl">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">We are here to help you create the perfect soundscape for your business or event. Give us a call or send us an email, and we will respond within 24 hours!
-
-
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                We are here to help you create the perfect soundscape for your business or event. 
+                Give us a call or send us an email, and one of our music experts will respond within 24 hours!
               </p>
             </div>
           </div>
@@ -292,7 +320,6 @@ export default function ContactUs() {
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 2400w"
 
-
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Contact SensEar for music curation consultation"
                 className="absolute w-full h-full object-cover md:hidden" />
@@ -302,7 +329,6 @@ export default function ContactUs() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg 2400w"
-
 
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Contact SensEar for music curation consultation"
@@ -321,10 +347,10 @@ export default function ContactUs() {
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-          <Breadcrumbs items={[
-            { label: "Contact", path: createPageUrl("ContactUs") }
-          ]} />
-         </div> */}
+         <Breadcrumbs items={[
+           { label: "Contact", path: createPageUrl("ContactUs") }
+         ]} />
+        </div> */}
 
       <section className="py-20 bg-[#faebe3]" aria-labelledby="contact-heading">
         <div className="max-w-6xl mx-auto px-6">
@@ -381,19 +407,7 @@ export default function ContactUs() {
             </aside>
 
             {/* Contact Form */}
-            <div className="lg:col-span-2 relative">
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-black/60 rounded-lg z-10 flex items-center justify-center p-6">
-                <div className="text-center">
-                  <p className="text-white text-xl sm:text-2xl font-bold mb-2">
-                    Form functionality coming soon.
-                  </p>
-                  <p className="text-white text-lg sm:text-xl">Please use our email or phone number directly.
-
-                  </p>
-                </div>
-              </div>
-
+            <div className="lg:col-span-2">
               <Card className="p-8 shadow-lg bg-white">
                 <h3 className="text-2xl font-bold text-black mb-6">
                   Send Us an Inquiry
