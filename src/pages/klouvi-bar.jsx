@@ -346,13 +346,26 @@ export default function KlouviBar() {
       </section>
         
       {/* CTA Section */}
-      <section className="py-20 bg-black text-white" aria-labelledby="cta-heading">
+      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="cta-heading">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 id="cta-heading" className="text-3xl sm:text-4xl font-bold mb-6">Ready to elevate your bar's ambiance?</h2>
-          <p className="text-lg sm:text-xl text-white/80 mb-8 px-4">See how we help <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-white font-semibold">restaurants & bars</Link> or explore <Link to={createPageUrl("Industries")} className="underline hover:text-white font-semibold">other industries</Link>.</p>
-          <Link to={createPageUrl("ContactUs")}>
-            <Button size="lg" className="bg-zinc-50 text-black px-6 py-6 text-sm font-medium leading-tight rounded-md inline-flex items-center justify-center gap-2 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-11 hover:bg-[#f0dfd5] w-full sm:w-auto sm:px-8 sm:text-base md:text-lg whitespace-normal" aria-label="Schedule a bar sound consultation">Schedule a Bar Sound Consultation</Button>
-          </Link>
+          <h2 id="cta-heading" className="text-4xl font-bold text-black mb-6 leading-[1.25]">
+            Define Your Sonic Identity
+          </h2>
+          <p className="text-xl text-black/70 mb-8">
+            Create a signature sound for your bar just like Klouvi. Explore our <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">bar solutions</Link> or read more <Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link>.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link to={createPageUrl("ContactUs")}>
+              <Button size="lg" className="bg-black hover:bg-black/80 text-white" aria-label="Get Similar Results">
+                Get Similar Results
+              </Button>
+            </Link>
+            <Link to={createPageUrl("CaseStudies")}>
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white" aria-label="See More Success Stories">
+                See More Success Stories
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 
