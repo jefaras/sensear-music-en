@@ -91,7 +91,7 @@ export default function SonicStrategy() {
       } else {
         metaTag = document.createElement('meta');
         metaTag.setAttribute('property', tag.property);
-        metaTag.setAttribute('content', tag.content);
+        metaTag.content = tag.content;
         document.head.appendChild(metaTag);
       }
     });
@@ -110,7 +110,7 @@ export default function SonicStrategy() {
       } else {
         metaTag = document.createElement('meta');
         metaTag.setAttribute('name', tag.name);
-        metaTag.setAttribute('content', tag.content);
+        metaTag.content = tag.content;
         document.head.appendChild(metaTag);
       }
     });
