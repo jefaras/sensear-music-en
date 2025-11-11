@@ -193,14 +193,6 @@ export default function EventsExperiences() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const problems = [
-  { title: "Disjointed or Generic Event Soundtracks", description: "We craft custom, multi-chapter musical narratives tailored to your event's theme and flow." },
-  { title: "Technical Sound Issues", description: "Our expert engineers ensure flawless playback with optimized arrays and precision time alignment. No dead zones, no surprises." },
-  { title: "Handling Multiple Vendors", description: "We are your unique point of contact for music curation and AV production, from corporate galas to private gatherings." },
-  { title: "Low Guest Engagement & Reactions", description: "We keep your audience immersed with music that evolves naturally with every phase of your event, making it memorable." },
-  { title: "One-Size-Fits-All Soundtracks", description: "Our curators craft dynamic, story-driven musical journeys tailored to your event's unique vibe." },
-  { title: "Complex Setup & Technical Gaps", description: "From curation to flawless AV execution, we handle it all. Seamlessly and stress-free." }];
-
   return (
     <div className="bg-[#faebe3]">
       {/* Hero Section - Similar to Home but smaller heading */}
@@ -301,17 +293,65 @@ export default function EventsExperiences() {
             Our expert technicians ensure your event's sound is crystal clear, hand-picking the perfect equipment and carefully managing every audio detail from start to finish.
           </p>
           <div className="grid md:grid-cols-2 gap-8" role="list">
-            {problems.map((p) =>
-            <article key={p.title} role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-                <div className="flex items-start gap-4">
-                  <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                  <div>
-                    <h3 className="text-lg sm:text-xl font-bold mb-2">{p.title}</h3>
-                    <p className="text-sm sm:text-base text-black/70">{p.description}</p>
-                  </div>
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Disjointed or Generic Event Soundtracks</h3>
+                  <p className="text-sm sm:text-base text-black/70">We craft custom, multi-chapter musical narratives tailored to your event's theme and flow.</p>
                 </div>
-              </article>
-            )}
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Technical Sound Issues</h3>
+                  <p className="text-sm sm:text-base text-black/70">Our expert engineers ensure flawless playback with optimized arrays and precision time alignment. No dead zones, no surprises.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Handling Multiple Vendors</h3>
+                  <p className="text-sm sm:text-base text-black/70">We are your unique point of contact for music curation and AV production, from corporate galas to private gatherings.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Low Guest Engagement & Reactions</h3>
+                  <p className="text-sm sm:text-base text-black/70">We keep your audience immersed with music that evolves naturally with every phase of your event, making it memorable.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">One-Size-Fits-All Soundtracks</h3>
+                  <p className="text-sm sm:text-base text-black/70">Our curators craft dynamic, story-driven musical journeys tailored to your event's unique vibe.</p>
+                </div>
+              </div>
+            </article>
+
+            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
+              <div className="flex items-start gap-4">
+                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold mb-2">Complex Setup & Technical Gaps</h3>
+                  <p className="text-sm sm:text-base text-black/70">From curation to flawless AV execution, we handle it all. Seamlessly and stress-free.</p>
+                </div>
+              </div>
+            </article>
           </div>
           <div className="text-center mt-16">
             <p className="text-black/70 mb-6">

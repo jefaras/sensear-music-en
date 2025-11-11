@@ -183,6 +183,7 @@ export default function KlouviBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Note: These arrays are kept for context, but the JSX now uses hardcoded list items as per the outline.
   const problems = [
   "Music transitions from day to night were inconsistent, impacting guest experience.",
   "The bar needed a more distinct and recognizable musical identity.",
@@ -280,12 +281,18 @@ export default function KlouviBar() {
                 </h3>
 
                 <ul className="space-y-4" role="list">
-                  {problems.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Music transitions from day to night were inconsistent, impacting guest experience.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">The bar needed a more distinct and recognizable musical identity.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Reduce sound bleeding to outdoor areas and neighborhoods.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -303,12 +310,18 @@ export default function KlouviBar() {
                   How We Responded
                 </h3>
                 <ul className="space-y-4" role="list">
-                  {solutions.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Designed genre-specific playlists, transitioning organically from soulful afternoon beats to high-energy night sounds.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Upgraded speakers to enhance the depth and richness of music playback.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Implemented advanced soundproofing solutions and achieved acoustic containment through speaker placement.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -327,12 +340,18 @@ export default function KlouviBar() {
                 </h3>
 
                 <ul className="space-y-4" role="list">
-                  {results.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Increase in bar sales, attributed to improved ambiance.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">More guests staying for longer durations, boosting dwell time.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Klouvi Bar is now recognized for its signature sonic identity.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
