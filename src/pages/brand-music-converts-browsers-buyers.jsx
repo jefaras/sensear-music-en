@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -202,38 +203,67 @@ export default function BrandMusicConvertsBrowsersBuyers() {
   return (
     <div className="bg-[#faebe3]">
       <section 
-        className="relative min-h-screen flex items-center justify-center text-white pt-20 md:pt-0 overflow-hidden"
-        role="img"
-        aria-label="Restaurant ambiance demonstrating how music influences customer behavior and sales">
+        className="relative pt-32 pb-20 overflow-hidden"
+        style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}
+        aria-label="How Brand-Fit Music Converts Browsers into Buyers">
 
-        {/* Parallax Background */}
-        <div 
-          className="absolute inset-0 z-0"
-          style={{
-            transform: `translateY(${scrollY * 0.5}px)`,
-            backgroundImage: "url(https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg)",
-            backgroundSize: "cover",
-            backgroundPosition: "center"
-          }}
-        >
-          <div className="absolute inset-0 bg-black/40" />
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+              How Brand-Fit Music<br />
+              Converts Browsers into Buyers
+            </h1>
+            
+            <div className="mb-8 max-w-4xl">
+              <div className="flex items-center gap-6 text-sm text-black/60 mb-4">
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-4 h-4" aria-hidden="true" />
+                  <time dateTime="2021-01-20">January 20, 2021</time>
+                </div>
+                <div className="flex items-center gap-2">
+                  <User className="w-4 h-4" aria-hidden="true" />
+                  <span>Zoe Burnard</span>
+                </div>
+                <div className="text-black/50">
+                  <span>8 min read</span>
+                </div>
+              </div>
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Evidence-based research on how brand-aligned music increases sales by 9.1%.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            How Brand-Fit Music Converts Browsers into Buyers
-          </h1>
-          <div className="flex items-center justify-center gap-6 text-sm text-white/80">
-            <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4" aria-hidden="true" />
-              <time dateTime="2021-01-20">January 20, 2021</time>
-            </div>
-            <div className="flex items-center gap-2">
-              <User className="w-4 h-4" aria-hidden="true" />
-              <span>Zoe Burnard</span>
-            </div>
-            <div className="text-white/60">
-              <span>8 min read</span>
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version - NO parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Restaurant ambiance demonstrating how music influences customer behavior and sales"
+                className="absolute w-full h-full object-cover md:hidden"
+              />
+              {/* Desktop version - WITH parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Restaurant ambiance demonstrating how music influences customer behavior and sales"
+                className="absolute w-full h-full object-cover hidden md:block"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
             </div>
           </div>
         </div>
@@ -305,7 +335,7 @@ export default function BrandMusicConvertsBrowsersBuyers() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">3.</span>
-                  <span><strong>Zonal Soundscapes</strong> - Different spaces, different intents: entrance, bar, dining, restrooms - each with a role in the journey.</span>
+                  <span><strong>Zonal Soundscapes</strong> - Different spaces, different intents: entrance, bar, dining, restrooms - each with a role in the journey).</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">4.</span>
