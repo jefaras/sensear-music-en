@@ -264,14 +264,14 @@ export default function Home() {
         {/* Text content - constrained by max-w-7xl */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-black mb-6 leading-[1.1]">Music Curation that transforms Spaces into Experiences
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-black mb-6 leading-[1.1]">Music Curation that turns Spaces into Experiences
 
             </h1>
             
             <div className="mb-8 max-w-5xl">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Every venue has a story. Let music tell yours.
-We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests. Not just background music.
-
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Every venue has a story. Let music tell yours. 
+We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests. 
+Not just background music.
               </p>
             </div>
             
@@ -305,6 +305,8 @@ We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create at
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png 2400w"
+
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Luxury rooftop bar with stunning sunset views and ambient music atmosphere"
                 className="absolute w-full h-full object-cover"
@@ -488,6 +490,10 @@ We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create at
                   srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e7baf90ef_car-1.png 800w,
                                   https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e7baf90ef_car-1.png 1200w,
                                   https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e7baf90ef_car-1.png 1600w"
+
+
+
+
 
 
 
