@@ -389,37 +389,34 @@ export default function Blog() {
         <div className="max-w-7xl mx-auto px-6">
           <Badge className="mb-4 bg-peach text-black border border-black/20">Featured</Badge>
           <article>
-            <Link to={posts[0].link} className="block" aria-label={`Read full article: ${posts[0].title}`}>
+            <Link to={createPageUrl("how-top-hospitality-brands-design-sound")} className="block" aria-label="Read full article: How Top Hospitality Brands Design Their Sound On Purpose">
               <Card className="overflow-hidden hover:shadow-2xl transition-shadow bg-white group cursor-pointer">
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
                     <img
-                      src={posts[0].image}
-                      srcSet={`${posts[0].image} 800w,
-                              ${posts[0].image.replace('w=800', 'w=1200')} 1200w`}
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                      alt={posts[0].alt}
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/067aa2432_AI_Generated_Image_2025-10-21.png"
+                      alt="Luxury hospitality interior showcasing strategic sound design and music curation"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
                   <div className="p-8 lg:p-12 flex flex-col justify-center">
                     <Badge className="w-fit mb-4 bg-black/5 text-black border-black/10">
-                      {posts[0].category}
+                      Insights
                     </Badge>
                     <h2 id="featured-heading" className="text-3xl lg:text-4xl font-bold text-black mb-4 leading-[1.25]">
-                      {posts[0].title}
+                      How Top Hospitality Brands Design Their Sound On Purpose
                     </h2>
                     <p className="text-black/70 text-lg mb-6 leading-relaxed">
-                      {posts[0].excerpt}
+                      Learn how luxury hotels like W Hotels, Soho House, and The Standard use strategic music curation as part of their brand identity.
                     </p>
                     <div className="flex items-center gap-6 text-sm text-black/60 mb-6" aria-label="Article metadata">
                       <div className="flex items-center gap-2">
                         <Calendar className="w-4 h-4" aria-hidden="true" />
-                        <time dateTime={posts[0].date}>{posts[0].displayDate}</time>
+                        <time dateTime="2025-01-20">January 20, 2025</time>
                       </div>
                       <div className="flex items-center gap-2">
                         <User className="w-4 h-4" aria-hidden="true" />
-                        <span>{posts[0].author}</span>
+                        <span>SensEar Team</span>
                       </div>
                     </div>
                     <div className="inline-flex items-center gap-2 text-black font-semibold group-hover:translate-x-2 transition-transform">
@@ -439,49 +436,292 @@ export default function Blog() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 id="recent-articles-heading" className="text-3xl font-bold text-black mb-8 leading-[1.25]">Recent Articles</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
-            {posts.slice(1).map((post, index) => (
-              <article role="listitem" key={post.link}>
-                <Link to={post.link} className="block" aria-label={`Read more about: ${post.title}`}>
-                  <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <img
-                        src={post.image}
-                        srcSet={`${post.image} 800w, ${post.image.replace('w=800', 'w=1200')} 1200w`}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        alt={post.alt}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                      />
-                      <div className="absolute inset-0" />
-                    </div>
-                    <div className="p-6">
-                      <Badge className="mb-3 bg-black/5 text-black border-black/10">
-                        {post.category}
-                      </Badge>
-                      <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                        {post.title}
-                      </h3>
-                      <p className="text-black/70 mb-4 leading-relaxed">
-                        {post.excerpt}
-                      </p>
-                      <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
-                        <div className="flex items-center gap-1">
-                          <Calendar className="w-3 h-3" aria-hidden="true" />
-                          <time dateTime={post.date}>{post.displayDate}</time>
-                        </div>
-                        <div className="flex items-center gap-1">
-                          <User className="w-3 h-3" aria-hidden="true" />
-                          <span>{post.author}</span>
-                        </div>
+            {/* Article 1 */}
+            <article role="listitem">
+              <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="block" aria-label="Read more about: Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg"
+                      alt="Luxury hotel interior showcasing music's role in hospitality marketing strategy"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 bg-black/5 text-black border-black/10">
+                      Insights
+                    </Badge>
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      Curated music is a practical way to shape how guests feel, what they remember, and how they spend.
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" aria-hidden="true" />
+                        <time dateTime="2025-01-15">January 15, 2025</time>
                       </div>
-                      <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                        <span>Read More</span>
-                        <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <div className="flex items-center gap-1">
+                        <User className="w-3 h-3" aria-hidden="true" />
+                        <span>SensEar Team</span>
                       </div>
                     </div>
-                  </Card>
-                </Link>
-              </article>
-            ))}
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read More</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+
+            {/* Article 2 */}
+            <article role="listitem">
+              <Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="block" aria-label="Read more about: How Brand-Fit Music Converts Browsers into Buyers">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg"
+                      alt="Restaurant ambiance demonstrating music's impact on customer sales and behavior"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 bg-black/5 text-black border-black/10">
+                      Research
+                    </Badge>
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      How Brand-Fit Music Converts Browsers into Buyers
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      Evidence-based research showing how brand-aligned music increases sales by 9.1% in hospitality venues.
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" aria-hidden="true" />
+                        <time dateTime="2021-01-20">January 20, 2021</time>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <User className="w-3 h-3" aria-hidden="true" />
+                        <span>Zoe Burnard</span>
+                      </div>
+                    </div>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read More</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+
+            {/* Article 3 */}
+            <article role="listitem">
+              <Link to={createPageUrl("what-exactly-does-music-curator-do")} className="block" aria-label="Read more about: What Exactly Does a Music Curator Do?">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png"
+                      alt="Professional music curator selecting tracks for bespoke venue playlists"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 bg-black/5 text-black border-black/10">
+                      Education
+                    </Badge>
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      What Exactly Does a Music Curator Do?
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      Learn how professional music curators architect brand soundtracks through strategic curation and data-driven sonic branding.
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" aria-hidden="true" />
+                        <time dateTime="2025-01-10">January 10, 2025</time>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <User className="w-3 h-3" aria-hidden="true" />
+                        <span>SensEar Team</span>
+                      </div>
+                    </div>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read More</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+
+            {/* Article 4 */}
+            <article role="listitem">
+              <Link to={createPageUrl("music-curation-cycle-venues")} className="block" aria-label="Read more about: The Music Curation Cycle for Venues">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0fc2b036_43b114fc2a27cb08c8b377305973c588_X-Design.png"
+                      alt="Music analytics and optimization process for venue soundscapes"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 bg-black/5 text-black border-black/10">
+                      Strategy
+                    </Badge>
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      The Music Curation Cycle for Venues: Analyze, Optimize & Evolve Your Sonic Identity
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      Learn how continuous music curation optimization enhances venue atmosphere through data-driven refinement and expert human curation.
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" aria-hidden="true" />
+                        <time dateTime="2025-01-15">January 15, 2025</time>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <User className="w-3 h-3" aria-hidden="true" />
+                        <span>SensEar Team</span>
+                      </div>
+                    </div>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read More</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+
+            {/* Article 5 */}
+            <article role="listitem">
+              <Link to={createPageUrl("building-brand-people-can-hear")} className="block" aria-label="Read more about: Building a Brand People Can Hear">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c9661c684_AI_Generated_Image_2025-10-17.png"
+                      alt="Sonic branding strategy building brand identity through music"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 bg-black/5 text-black border-black/10">
+                      Branding
+                    </Badge>
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      Building a Brand People Can Hear
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      Strategic guide to sonic branding and audio identity development. Create memorable brand experiences through music and sound design.
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" aria-hidden="true" />
+                        <time dateTime="2025-02-12">February 12, 2025</time>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <User className="w-3 h-3" aria-hidden="true" />
+                        <span>SensEar Team</span>
+                      </div>
+                    </div>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read More</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+
+            {/* Article 6 */}
+            <article role="listitem">
+              <Link to={createPageUrl("background-music-shapes-customer-behavior")} className="block" aria-label="Read more about: Sound strategy that sells">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e9f53224a_ladies.png"
+                      alt="Retail environment showing background music influence on shopping behavior"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 bg-black/5 text-black border-black/10">
+                      Research
+                    </Badge>
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      Sound strategy that sells: how background music shapes customer behavior
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      Field research reveals how strategic background music increases sales and dwell time in retail and hospitality environments.
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" aria-hidden="true" />
+                        <time dateTime="2025-03-08">March 8, 2025</time>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <User className="w-3 h-3" aria-hidden="true" />
+                        <span>Research Team</span>
+                      </div>
+                    </div>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read More</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+
+            {/* Article 7 */}
+            <article role="listitem">
+              <Link to={createPageUrl("service-environment-shapes-wait-time")} className="block" aria-label="Read more about: How your service environment shapes perceived wait time">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg"
+                      alt="Service environment design using music to improve customer waiting experience"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
+                  </div>
+                  <div className="p-6">
+                    <Badge className="mb-3 bg-black/5 text-black border-black/10">
+                      Research
+                    </Badge>
+                    <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      How your service environment shapes perceived wait time
+                    </h3>
+                    <p className="text-black/70 mb-4 leading-relaxed">
+                      How music and environmental design can transform the waiting experience and improve customer satisfaction.
+                    </p>
+                    <div className="flex items-center gap-4 text-xs text-black/60 mb-4" aria-label="Article metadata">
+                      <div className="flex items-center gap-1">
+                        <Calendar className="w-3 h-3" aria-hidden="true" />
+                        <time dateTime="2025-03-15">March 15, 2025</time>
+                      </div>
+                      <div className="flex items-center gap-1">
+                        <User className="w-3 h-3" aria-hidden="true" />
+                        <span>Research Team</span>
+                      </div>
+                    </div>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read More</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
           </div>
         </div>
       </section>

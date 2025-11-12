@@ -183,18 +183,6 @@ export default function PelicanosSifnosRestaurant() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const problems = [
-  "They needed a dynamic music program that complemented their culinary creativity without sounding unfamiliar or too niche.",
-  "The playlists had to support an all-day rhythm, while balancing music discovery with recognizable artists."];
-
-  const solutions = [
-  "Created a rotating playlist architecture with tasteful blends of older and contemporary Mediterranean-inspired tracks.",
-  "Mapped energy shifts throughout the day to integrate music with the natural pace of service, guest flow and Aegean swell.",
-  "Delivered a discovery-friendly listening experience that reflects the brand's layered, modern approach to food."];
-
-  const results = [
-  "A renewed atmosphere that mirrors the spirit of the menu and elevates the guest experience.",
-  "A consistent sonic mood that reflects the brand's creativity, calm confidence, and attention to detail."];
 
   return (
     <div className="bg-[#faebe3]">
@@ -278,12 +266,14 @@ export default function PelicanosSifnosRestaurant() {
                 </h3>
 
                 <ul className="space-y-4" role="list">
-                  {problems.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">They needed a dynamic music program that complemented their culinary creativity without sounding unfamiliar or too niche.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">The playlists had to support an all-day rhythm, while balancing music discovery with recognizable artists.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -301,12 +291,18 @@ export default function PelicanosSifnosRestaurant() {
                   How We Responded
                 </h3>
                 <ul className="space-y-4" role="list">
-                  {solutions.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Created a rotating playlist architecture with tasteful blends of older and contemporary Mediterranean-inspired tracks.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Mapped energy shifts throughout the day to integrate music with the natural pace of service, guest flow and Aegean swell.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Delivered a discovery-friendly listening experience that reflects the brand's layered, modern approach to food.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -325,12 +321,14 @@ export default function PelicanosSifnosRestaurant() {
                 </h3>
 
                 <ul className="space-y-4" role="list">
-                  {results.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">A renewed atmosphere that mirrors the spirit of the menu and elevates the guest experience.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">A consistent sonic mood that reflects the brand's creativity, calm confidence, and attention to detail.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -342,7 +340,7 @@ export default function PelicanosSifnosRestaurant() {
           </div>
           <div className="mt-12 p-6 bg-gray-50 rounded-lg max-w-4xl mx-auto">
             <p className="text-black/80 text-center">
-              This project demonstrates our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists service</Link> at its finest. Understand <Link to={createPageUrl("music-influence-consumer-behavior")} className="underline hover:text-black font-semibold">how music influences customer behavior</Link> and <Link to={createPageUrl("analyze-optimize-music-curation")} className="underline hover:text-black font-semibold">our optimization process</Link>.
+              <span>This project demonstrates our </span><Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists service</Link><span> at its finest. Understand </span><Link to={createPageUrl("music-influence-consumer-behavior")} className="underline hover:text-black font-semibold">how music influences customer behavior</Link><span> and </span><Link to={createPageUrl("analyze-optimize-music-curation")} className="underline hover:text-black font-semibold">our optimization process</Link><span>.</span>
             </p>
           </div>
         </div>
@@ -355,7 +353,7 @@ export default function PelicanosSifnosRestaurant() {
             Let Your Restaurant's Atmosphere Sing
           </h2>
           <p className="text-xl text-black/70 mb-8">
-            Discover how music curation can transform your restaurant. Explore our <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurant solutions</Link> or read more <Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link>.
+            <span>Discover how music curation can transform your restaurant. Explore our </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurant solutions</Link><span> or read more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span>.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("ContactUs")}>

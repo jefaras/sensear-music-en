@@ -183,21 +183,6 @@ export default function BlueBamboo() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const problems = [
-  "Background noise was making it difficult for guests to have conversations, leading to a less enjoyable dining experience.",
-  "The music didn't align with the natural shifts in energy throughout the day, causing inconsistency in the atmosphere.",
-  "Repetitive playlists were leaving staff disengaged and contributing to a flat, predictable mood in the space."];
-
-  const solutions = [
-  "Conducted an on-site sound check and optimized speaker positioning to reduce noise interference and improve conversational clarity.",
-  "Designed a time-sensitive playlist architecture, with distinct energy shifts mapped to key service phases—from lunch flow to evening peak.",
-  "Set up a monthly refresh cycle to keep sound aligned with seasonal menus, mood changes, and staff energy."];
-
-  const results = [
-  "A smoother, more intentional soundscape led to longer guest dwell times.",
-  "Staff engagement improved, thanks to dynamic playlists that match the pace of service.",
-  "The new atmosphere has sparked stronger word-of-mouth and exuberant reviews."];
-
   return (
     <div className="bg-[#faebe3]">
       {/* Hero Section - Similar to Home but smaller heading */}
@@ -278,12 +263,18 @@ export default function BlueBamboo() {
                   Why They Called Us
                 </h3>
                 <ul className="space-y-4" role="list">
-                  {problems.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Background noise was making it difficult for guests to have conversations, leading to a less enjoyable dining experience.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">The music didn't align with the natural shifts in energy throughout the day, causing inconsistency in the atmosphere.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Repetitive playlists were leaving staff disengaged and contributing to a flat, predictable mood in the space.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -301,12 +292,18 @@ export default function BlueBamboo() {
                   How We Responded
                 </h3>
                 <ul className="space-y-4" role="list">
-                  {solutions.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Conducted an on-site sound check and optimized speaker positioning to reduce noise interference and improve conversational clarity.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Designed a time-sensitive playlist architecture, with distinct energy shifts mapped to key service phases—from lunch flow to evening peak.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Set up a monthly refresh cycle to keep sound aligned with seasonal menus, mood changes, and staff energy.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -325,12 +322,18 @@ export default function BlueBamboo() {
                 </h3>
 
                 <ul className="space-y-4" role="list">
-                  {results.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">A smoother, more intentional soundscape led to longer guest dwell times.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Staff engagement improved, thanks to dynamic playlists that match the pace of service.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">The new atmosphere has sparked stronger word-of-mouth and exuberant reviews.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -342,7 +345,7 @@ export default function BlueBamboo() {
           </div>
           <div className="mt-12 p-6 bg-gray-50 rounded-lg max-w-4xl mx-auto">
             <p className="text-black/80 text-center">
-              Blue Bamboo's transformation showcases our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists service</Link> combined with <Link to={createPageUrl("audio-upgrades")} className="underline hover:text-black font-semibold">professional audio upgrades</Link>. Read more about <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">how music increases sales</Link> in hospitality.
+              <span>Blue Bamboo's transformation showcases our </span><Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists service</Link><span> combined with </span><Link to={createPageUrl("audio-upgrades")} className="underline hover:text-black font-semibold">professional audio upgrades</Link><span>. Read more about </span><Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">how music increases sales</Link><span> in hospitality.</span>
             </p>
           </div>
         </div>
@@ -355,7 +358,7 @@ export default function BlueBamboo() {
             Ready to Transform Your Space?
           </h2>
           <p className="text-xl text-black/70 mb-8">
-            See how strategic music curation can elevate your venue just like we did for Blue Bamboo. Read more <Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link> or <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">explore our services</Link>.
+            <span>See how strategic music curation can elevate your venue just like we did for Blue Bamboo. Read more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span> or </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">explore our services</Link><span>.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("ContactUs")}>

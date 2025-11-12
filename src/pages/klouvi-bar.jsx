@@ -371,7 +371,7 @@ export default function KlouviBar() {
             Define Your Sonic Identity
           </h2>
           <p className="text-xl text-black/70 mb-8">
-            Create a signature sound for your bar just like Klouvi. Explore our <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">bar solutions</Link> or read more <Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link>.
+            <span>Create a signature sound for your bar just like Klouvi. Explore our </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">bar solutions</Link><span> or read more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span>.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("ContactUs")}>
