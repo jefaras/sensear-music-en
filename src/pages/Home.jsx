@@ -1,11 +1,10 @@
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Music, Sparkles, SlidersHorizontal, BarChart } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge"; // Added Badge import
+import { Badge } from "@/components/ui/badge";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -24,7 +23,6 @@ export default function Home() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     let localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -45,10 +43,8 @@ export default function Home() {
       document.head.appendChild(meta);
     }
 
-    // Set HTML lang attribute
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - PRIMARY PAGE: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -59,7 +55,6 @@ export default function Home() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -70,7 +65,6 @@ export default function Home() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/');
@@ -81,14 +75,13 @@ export default function Home() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
-    { property: 'og:title', content: 'SensEar - Bespoke Music Curation & Sonic Branding' },
-    { property: 'og:description', content: description },
-    { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg' },
-    { property: 'og:url', content: 'https://sensear.music/' },
-    { property: 'og:type', content: 'website' }];
-
+      { property: 'og:title', content: 'SensEar - Bespoke Music Curation & Sonic Branding' },
+      { property: 'og:description', content: description },
+      { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg' },
+      { property: 'og:url', content: 'https://sensear.music/' },
+      { property: 'og:type', content: 'website' }
+    ];
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -102,13 +95,12 @@ export default function Home() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'SensEar - Bespoke Music Curation & Sonic Branding' },
-    { name: 'twitter:description', content: description },
-    { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg' }];
-
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'SensEar - Bespoke Music Curation & Sonic Branding' },
+      { name: 'twitter:description', content: description },
+      { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg' }
+    ];
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -122,46 +114,45 @@ export default function Home() {
       }
     });
 
-    // Add structured data
     const structuredData = [
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "SensEar",
-      "alternateName": "SensEar Music Curation",
-      "url": "https://sensear.music",
-      "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg",
-      "description": "Bespoke music curation and sonic branding for hotels, restaurants, and events.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Athens",
-        "addressCountry": "GR"
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+30-6976994212",
-        "email": "hello@sensear.music",
-        "contactType": "Customer Service"
-      },
-      "sameAs": [
-      "https://www.facebook.com/61575909304249/",
-      "https://www.instagram.com/sensear.music",
-      "https://www.linkedin.com/company/sensear"]
-
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://sensear.music/"
-      }]
-
-    }];
-
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "SensEar",
+        "alternateName": "SensEar Music Curation",
+        "url": "https://sensear.music",
+        "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg",
+        "description": "Bespoke music curation and sonic branding for hotels, restaurants, and events.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Athens",
+          "addressCountry": "GR"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+30-6976994212",
+          "email": "hello@sensear.music",
+          "contactType": "Customer Service"
+        },
+        "sameAs": [
+          "https://www.facebook.com/61575909304249/",
+          "https://www.instagram.com/sensear.music",
+          "https://www.linkedin.com/company/sensear"
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://sensear.music/"
+          }
+        ]
+      }
+    ];
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -177,41 +168,6 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const clients = [
-  {
-    name: "Klouvi Bar",
-    location: "Athens",
-    logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg"
-  },
-  {
-    name: "Blue Bamboo",
-    location: "Athens-Serifos",
-    logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg"
-  },
-  {
-    name: "The Rooster",
-    location: "Antiparos",
-    logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg"
-  },
-  {
-    name: "Beach House",
-    location: "Antiparos",
-    logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg"
-  },
-  {
-    name: "Pelicanos",
-    location: "Sifnos",
-    logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg"
-  },
-  {
-    name: "Yam",
-    location: "Antiparos",
-    logo: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png"
-  }];
-
-  // Removed blogPosts array as it's no longer used due to static blog cards in the outline.
-
 
   return (
     <div className="bg-[#faebe3]">
@@ -236,35 +192,30 @@ export default function Home() {
         }
       `}</style>
 
-      {/* Hero Section - with silver foil background */}
+      {/* Hero Section */}
       <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
-        {/* Text content - constrained by max-w-7xl */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-black mb-6 leading-[1.1]">Music Curation that turns Spaces into Experiences
-
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-black mb-6 leading-[1.1]">
+              Music Curation that turns Spaces into Experiences
             </h1>
             
             <div className="mb-8 max-w-5xl">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Every venue has a story. Let music tell yours. <br/>
-We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests.<br/> 
-Not just background music.
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Every venue has a story. Let music tell yours. <br/>
+                We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests.<br/> 
+                Not just background music.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <Link to={createPageUrl("ContactUs")}>
-                <Button
-                  className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14"
-                  aria-label="Discover Your Sound">
+                <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
                   Discover Your Sound
                 </Button>
               </Link>
               <Link to={createPageUrl("Services")}>
-                <Button
-                  variant="outline"
-                  className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto h-14"
-                  aria-label="Explore our services">
+                <Button variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto h-14" aria-label="Explore our services">
                   Explore our services
                 </Button>
               </Link>
@@ -272,18 +223,13 @@ Not just background music.
           </div>
         </div>
 
-        {/* Hero Image - FULL WIDTH 1800px with WORKING parallax */}
         <div className="w-full px-6">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
-            {/* Container: Shorter (40% height) to create parallax window */}
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
-              {/* Image: Larger (130% scale) so it has room to move */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2be61da07_upscalemedia-transformed_ADOBE.png 2400w"
-
-
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Luxury rooftop bar with stunning sunset views and ambient music atmosphere"
                 className="absolute w-full h-full object-cover"
@@ -292,25 +238,23 @@ Not just background music.
                   height: '130%',
                   transform: `translateY(${scrollY * 0.15}px)`,
                   transformOrigin: 'center top'
-                }} />
-
+                }}
+              />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Trusted By Section - Black background with infinite scroll */}
+      {/* Trusted By Section */}
       <section className="py-20 bg-black overflow-hidden" aria-labelledby="clients-heading">
         <div className="max-w-7xl mx-auto px-6">
           <h2 id="clients-heading" className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">Now playing in venues across Greece</h2>
           
-          {/* Infinite scrolling logo container */}
           <div className="relative">
             <div className="flex gap-12 animate-scroll">
-              {/* First set of logos */}
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Klouvi Bar</p>
                 <p className="text-sm text-white/60 mt-1">Athens</p>
@@ -318,7 +262,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Blue Bamboo</p>
                 <p className="text-sm text-white/60 mt-1">Athens-Serifos</p>
@@ -326,7 +270,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
                 <p className="text-sm text-white/60 mt-1">Antiparos</p>
@@ -334,7 +278,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Beach House</p>
                 <p className="text-sm text-white/60 mt-1">Antiparos</p>
@@ -342,7 +286,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Pelicanos</p>
                 <p className="text-sm text-white/60 mt-1">Sifnos</p>
@@ -350,16 +294,15 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Yam</p>
                 <p className="text-sm text-white/60 mt-1">Antiparos</p>
               </div>
               
-              {/* Duplicate set for seamless loop */}
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Klouvi Bar</p>
                 <p className="text-sm text-white/60 mt-1">Athens</p>
@@ -367,7 +310,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Blue Bamboo</p>
                 <p className="text-sm text-white/60 mt-1">Athens-Serifos</p>
@@ -375,7 +318,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
                 <p className="text-sm text-white/60 mt-1">Antiparos</p>
@@ -383,7 +326,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Beach House</p>
                 <p className="text-sm text-white/60 mt-1">Antiparos</p>
@@ -391,7 +334,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Pelicanos</p>
                 <p className="text-sm text-white/60 mt-1">Sifnos</p>
@@ -399,7 +342,7 @@ Not just background music.
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo - SensEar music curation client" className="max-w-full max-h-full object-contain" />
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Yam</p>
                 <p className="text-sm text-white/60 mt-1">Antiparos</p>
@@ -420,20 +363,18 @@ Not just background music.
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8" role="list">
-            {/* Service 1: Signature Playlists */}
             <article role="listitem">
               <Link to={createPageUrl("signature-playlists")} aria-label="Learn more about Signature Playlists">
                 <div className="group rounded-2xl bg-white/80 backdrop-blur-sm hover:bg-white hover:shadow-2xl transition-all duration-300 h-full flex flex-col overflow-hidden">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg 800w, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      alt="Bespoke music curation and playlist creation for unique venue atmosphere"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0" aria-hidden="true" />
+                      alt="Bespoke music curation and playlist creation"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
                     <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center" aria-hidden="true">
+                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center">
                         <Music className="w-6 h-6" />
                       </div>
                     </div>
@@ -443,27 +384,25 @@ Not just background music.
                     <p className="text-black/70 mb-4 flex-grow text-sm">Bespoke, brand-exclusive playlists sourced from rare archives for venues that refuse to sound generic.</p>
                     <div className="flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform">
                       <span>Learn More</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
                 </div>
               </Link>
             </article>
 
-            {/* Service 2: Music for Events */}
             <article role="listitem">
               <Link to={createPageUrl("event-soundtracks")} aria-label="Learn more about Music for Events">
                 <div className="group rounded-2xl bg-white/80 backdrop-blur-sm hover:bg-white hover:shadow-2xl transition-all duration-300 h-full flex flex-col overflow-hidden">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 800w, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      alt="Professional event production with immersive music curation and AV setup"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0" aria-hidden="true" />
+                      alt="Professional event production with music curation"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
                     <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center" aria-hidden="true">
+                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center">
                         <Sparkles className="w-6 h-6" />
                       </div>
                     </div>
@@ -473,27 +412,25 @@ Not just background music.
                     <p className="text-black/70 mb-4 flex-grow text-sm">Artfully selected and curated soundtracks & live DJ sets that elevate events into engaging, unforgettable moments.</p>
                     <div className="flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform">
                       <span>Learn More</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
                 </div>
               </Link>
             </article>
 
-            {/* Service 3: Sonic Strategy */}
             <article role="listitem">
               <Link to={createPageUrl("sonic-strategy")} aria-label="Learn more about Sonic Strategy">
                 <div className="group rounded-2xl bg-white/80 backdrop-blur-sm hover:bg-white hover:shadow-2xl transition-all duration-300 h-full flex flex-col overflow-hidden">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 800w, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      alt="Strategic sonic branding consultation and music curation planning session"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0" aria-hidden="true" />
+                      alt="Strategic sonic branding consultation"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
                     <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center" aria-hidden="true">
+                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center">
                         <BarChart className="w-6 h-6" />
                       </div>
                     </div>
@@ -503,27 +440,25 @@ Not just background music.
                     <p className="text-black/70 mb-4 flex-grow text-sm">Ultra-specialized music consultancy & sound branding guidelines that forge an inimitable sonic identity.</p>
                     <div className="flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform">
                       <span>Learn More</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
                 </div>
               </Link>
             </article>
 
-            {/* Service 4: Audio Upgrades */}
             <article role="listitem">
               <Link to={createPageUrl("audio-upgrades")} aria-label="Learn more about Audio Upgrades">
                 <div className="group rounded-2xl bg-white/80 backdrop-blur-sm hover:bg-white hover:shadow-2xl transition-all duration-300 h-full flex flex-col overflow-hidden">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 800w, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
-                      alt="Professional audio equipment optimization and acoustic calibration for venues"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                    <div className="absolute inset-0" aria-hidden="true" />
+                      alt="Professional audio equipment optimization"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0" />
                     <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center" aria-hidden="true">
+                      <div className="bg-red-50 text-black opacity-80 rounded-full w-12 h-12 flex items-center justify-center">
                         <SlidersHorizontal className="w-6 h-6" />
                       </div>
                     </div>
@@ -533,7 +468,7 @@ Not just background music.
                     <p className="text-black/70 mb-4 flex-grow text-sm">Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.</p>
                     <div className="flex items-center text-black font-semibold group-hover:translate-x-2 transition-transform">
                       <span>Learn More</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
                 </div>
@@ -543,7 +478,7 @@ Not just background music.
         </div>
       </section>
 
-      {/* How We Help You Succeed Section */}
+      {/* How We Help You Succeed Section - WITH SILVER FOIL BACKGROUND */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="benefits-heading">
         <div className="max-w-5xl mx-auto px-6">
           <h2 id="benefits-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25] text-black">
@@ -551,7 +486,7 @@ Not just background music.
           </h2>
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8" role="list">
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
                 <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
@@ -563,7 +498,7 @@ Not just background music.
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
                 <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
@@ -575,7 +510,7 @@ Not just background music.
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
                 <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
@@ -587,7 +522,7 @@ Not just background music.
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
                 <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
@@ -599,7 +534,7 @@ Not just background music.
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
                 <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
@@ -633,12 +568,12 @@ Not just background music.
 
           <div className="grid md:grid-cols-3 gap-8" role="list">
             <article role="listitem">
-              <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="block" aria-label="Read article: Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy">
+              <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="block">
                 <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg"
-                      alt="Luxury hotel interior showcasing music's role in hospitality marketing strategy"
+                      alt="Luxury hotel interior"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
@@ -652,7 +587,7 @@ Not just background music.
                     </p>
                     <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
                       <span>Read More</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
                 </Card>
@@ -660,12 +595,12 @@ Not just background music.
             </article>
 
             <article role="listitem">
-              <Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="block" aria-label="Read article: How Brand-Fit Music Converts Browsers into Buyers">
+              <Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="block">
                 <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg"
-                      alt="Restaurant ambiance demonstrating music's impact on customer sales and behavior"
+                      alt="Restaurant ambiance"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
@@ -679,7 +614,7 @@ Not just background music.
                     </p>
                     <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
                       <span>Read More</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
                 </Card>
@@ -687,12 +622,12 @@ Not just background music.
             </article>
 
             <article role="listitem">
-              <Link to={createPageUrl("what-exactly-does-music-curator-do")} className="block" aria-label="Read article: What Exactly Does a Music Curator Do?">
+              <Link to={createPageUrl("what-exactly-does-music-curator-do")} className="block">
                 <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png"
-                      alt="Professional music curator selecting tracks for bespoke venue playlists"
+                      alt="Professional music curator"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
                   </div>
@@ -706,7 +641,7 @@ Not just background music.
                     </p>
                     <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
                       <span>Read More</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      <ArrowRight className="ml-2 w-4 h-4" />
                     </div>
                   </div>
                 </Card>
@@ -718,12 +653,12 @@ Not just background music.
             <Link to={createPageUrl("Blog")}>
               <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group">
                 Read All Articles
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
           </div>
         </div>
       </section>
-    </div>);
-
+    </div>
+  );
 }
