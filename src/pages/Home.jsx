@@ -190,18 +190,49 @@ export default function Home() {
         .animate-scroll:hover {
           animation-play-state: paused;
         }
+        
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-3 {
+          animation: slideUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
       `}</style>
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-[4rem] font-bold text-black mb-6 leading-[1.1]">
+            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
               Music Curation<br />
               for Unique Experiences
             </h1>
             
-            <div className="mb-8 max-w-5xl">
+            <div className="mb-8 max-w-5xl slide-up-2">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
                 Every venue has a story. Let music tell yours. <br />
                 We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests.<br /> 
@@ -209,7 +240,7 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 mb-12">
+            <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
               {/* Discover Your Sound button - COMMENTED OUT */}
               {/* <Link to={createPageUrl("ContactUs")}>
                 <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
@@ -225,7 +256,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full px-6">
+        <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               <img
