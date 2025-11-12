@@ -487,7 +487,7 @@ Not just background music.
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 800w, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-918e11a1de34.jpg 1200w"
+                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 800w, https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 1200w"
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                       alt="Strategic sonic branding consultation and music curation planning session"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -544,67 +544,67 @@ Not just background music.
       </section>
 
       {/* How We Help You Succeed Section */}
-      <section className="py-24 bg-black text-white" aria-labelledby="benefits-heading">
+      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="benefits-heading">
         <div className="max-w-5xl mx-auto px-6">
-          <h2 id="benefits-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25]">
+          <h2 id="benefits-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25] text-black">
             How We Help You Succeed
           </h2>
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8" role="list">
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <CheckCircle className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+                <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Enhanced Guest Experience & Loyalty</h3>
-                <p className="text-white/70 leading-relaxed">
-                  <span>Curated music is a practical way to shape how guests feel, what they remember, and how they spend. Learn </span><Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-white font-semibold">how hotels and resorts benefit</Link><span> from strategic music curation.</span>
+                <h3 className="text-xl font-bold mb-2 text-black">Enhanced Guest Experience & Loyalty</h3>
+                <p className="text-black/70 leading-relaxed">
+                  <span>Curated music is a practical way to shape how guests feel, what they remember, and how they spend. Learn </span><Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-black font-semibold">how hotels and resorts benefit</Link><span> from strategic music curation.</span>
                 </p>
               </div>
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <CheckCircle className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+                <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Elevate Your Brand</h3>
-                <p className="text-white/70 leading-relaxed">
+                <h3 className="text-xl font-bold mb-2 text-black">Elevate Your Brand</h3>
+                <p className="text-black/70 leading-relaxed">
                   Strengthen perception and loyalty with a memorable atmosphere.
                 </p>
               </div>
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <CheckCircle className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+                <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Empower Your Team</h3>
-                <p className="text-white/70 leading-relaxed">
+                <h3 className="text-xl font-bold mb-2 text-black">Empower Your Team</h3>
+                <p className="text-black/70 leading-relaxed">
                   Boost staff morale & productivity with energizing music.
                 </p>
               </div>
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <CheckCircle className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+                <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Total Control</h3>
-                <p className="text-white/70 leading-relaxed">
+                <h3 className="text-xl font-bold mb-2 text-black">Total Control</h3>
+                <p className="text-black/70 leading-relaxed">
                   Take full control over your venue's music style & flow.
                 </p>
               </div>
             </article>
 
             <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <CheckCircle className="w-5 h-5 text-white" />
+              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
+                <CheckCircle className="w-5 h-5 text-black" />
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-2">Seamless Experience</h3>
-                <p className="text-white/70 leading-relaxed">
+                <h3 className="text-xl font-bold mb-2 text-black">Seamless Experience</h3>
+                <p className="text-black/70 leading-relaxed">
                   Ensure a smooth music experience across every area of your venue.
                 </p>
               </div>
@@ -613,7 +613,7 @@ Not just background music.
 
           <div className="text-center mt-16">
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-zinc-50 text-black px-8 py-6 text-lg font-medium hover:bg-[#f0dfd5]" aria-label="Schedule your free consultation">
+              <Button size="lg" className="bg-black text-white px-8 py-6 text-lg font-medium hover:bg-black/80" aria-label="Schedule your free consultation">
                 Schedule Your Free Consultation
               </Button>
             </Link>
