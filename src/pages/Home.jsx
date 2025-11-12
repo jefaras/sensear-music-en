@@ -269,8 +269,8 @@ export default function Home() {
             </h1>
             
             <div className="mb-8 max-w-5xl">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Every venue has a story. Let music tell yours. 
-We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests. 
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Every venue has a story. Let music tell yours. <br/>
+We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests.<br/> 
 Not just background music.
               </p>
             </div>
