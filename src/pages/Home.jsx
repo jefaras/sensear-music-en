@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -478,72 +479,85 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How We Help You Succeed Section - WITH SILVER FOIL BACKGROUND */}
+      {/* How We Help You Succeed Section - WITH IMAGE ON RIGHT */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="benefits-heading">
-        <div className="max-w-5xl mx-auto px-6">
+        <div className="max-w-7xl mx-auto px-6">
           <h2 id="benefits-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25] text-black">
             How We Help You Succeed
           </h2>
-          <div className="grid md:grid-cols-2 gap-x-12 gap-y-8" role="list">
-            <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <CheckCircle className="w-5 h-5 text-black" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-black">Enhanced Guest Experience & Loyalty</h3>
-                <p className="text-black/70 leading-relaxed">
-                  <span>Curated music is a practical way to shape how guests feel, what they remember, and how they spend. Learn </span><Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-black font-semibold">how hotels and resorts benefit</Link><span> from strategic music curation.</span>
-                </p>
-              </div>
-            </article>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Benefits List */}
+            <div className="grid md:grid-cols-1 gap-8" role="list">
+              <article role="listitem" className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-black">Enhanced Guest Experience & Loyalty</h3>
+                  <p className="text-black/70 leading-relaxed">
+                    <span>Curated music is a practical way to shape how guests feel, what they remember, and how they spend. Learn </span><Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-black font-semibold">how hotels and resorts benefit</Link><span> from strategic music curation.</span>
+                  </p>
+                </div>
+              </article>
 
-            <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <CheckCircle className="w-5 h-5 text-black" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-black">Elevate Your Brand</h3>
-                <p className="text-black/70 leading-relaxed">
-                  Strengthen perception and loyalty with a memorable atmosphere.
-                </p>
-              </div>
-            </article>
+              <article role="listitem" className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-black">Elevate Your Brand</h3>
+                  <p className="text-black/70 leading-relaxed">
+                    Strengthen perception and loyalty with a memorable atmosphere.
+                  </p>
+                </div>
+              </article>
 
-            <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <CheckCircle className="w-5 h-5 text-black" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-black">Empower Your Team</h3>
-                <p className="text-black/70 leading-relaxed">
-                  Boost staff morale & productivity with energizing music.
-                </p>
-              </div>
-            </article>
+              <article role="listitem" className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-black">Empower Your Team</h3>
+                  <p className="text-black/70 leading-relaxed">
+                    Boost staff morale & productivity with energizing music.
+                  </p>
+                </div>
+              </article>
 
-            <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <CheckCircle className="w-5 h-5 text-black" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-black">Total Control</h3>
-                <p className="text-black/70 leading-relaxed">
-                  Take full control over your venue's music style & flow.
-                </p>
-              </div>
-            </article>
+              <article role="listitem" className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-black">Total Control</h3>
+                  <p className="text-black/70 leading-relaxed">
+                    Take full control over your venue's music style & flow.
+                  </p>
+                </div>
+              </article>
 
-            <article role="listitem" className="flex items-start gap-4">
-              <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
-                <CheckCircle className="w-5 h-5 text-black" />
-              </div>
-              <div>
-                <h3 className="text-xl font-bold mb-2 text-black">Seamless Experience</h3>
-                <p className="text-black/70 leading-relaxed">
-                  Ensure a smooth music experience across every area of your venue.
-                </p>
-              </div>
-            </article>
+              <article role="listitem" className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center flex-shrink-0 mt-1">
+                  <CheckCircle className="w-5 h-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="text-xl font-bold mb-2 text-black">Seamless Experience</h3>
+                  <p className="text-black/70 leading-relaxed">
+                    Ensure a smooth music experience across every area of your venue.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            {/* Right: Car Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/03aebeb4e_car-1.png"
+                alt="SensEar branded car with logo stickers"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
           </div>
 
           <div className="text-center mt-16">
@@ -556,8 +570,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Blog Highlights Section */}
-      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="blog-heading">
+      {/* Blog Highlights Section - WHITE BACKGROUND */}
+      <section className="py-24 bg-white" aria-labelledby="blog-heading">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 id="blog-heading" className="text-4xl font-bold text-black mb-4 leading-[1.25]">The Curation Journal</h2>
