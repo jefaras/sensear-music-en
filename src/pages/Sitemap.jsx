@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Card } from "@/components/ui/card";
 import { Home, Briefcase, Building2, FileText, BookOpen } from "lucide-react";
 
 export default function Sitemap() {
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     document.title = "Sitemap | SensEar";
     
@@ -63,6 +65,10 @@ export default function Sitemap() {
       canonicalLink.href = 'https://sensear.music/sitemap';
       document.head.appendChild(canonicalLink);
     }
+
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const sitemapSections = [
@@ -134,46 +140,125 @@ export default function Sitemap() {
   ];
 
   return (
-    <div className="bg-[#faebe3] min-h-screen pb-24">
-      <div className="max-w-7xl mx-auto px-6 pt-24">
-        <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-black mb-4">Sitemap</h1>
-          <p className="text-xl text-black/70 max-w-3xl mx-auto">
-            Explore all pages and resources on SensEar.Music website. Find everything from our <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">music curation services</Link> to <Link to={createPageUrl("Blog")} className="underline hover:text-black font-semibold">industry insights</Link>.
-          </p>
+    <div className="bg-[#faebe3]">
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-3 {
+          animation: slideUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
+      `}</style>
+
+      {/* Hero Section - Similar to Home but smaller heading */}
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Sitemap section">
+        {/* Text content */}
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="w-full">
+            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+              Sitemap
+            </h1>
+            
+            <div className="mb-8 max-w-4xl slide-up-2">
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                Explore all pages and resources on SensEar.Music website. Find everything from our <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">music curation services</Link> to <Link to={createPageUrl("Blog")} className="underline hover:text-black font-semibold">industry insights</Link>.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {sitemapSections.map((section, index) => (
-            <Card key={index} className="p-8 bg-white shadow-lg">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center">
-                  <section.icon className="w-6 h-6 text-black" />
+        {/* Hero Image - Larger with parallax */}
+        <div className="w-full px-6 slide-up-4">
+          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version - NO parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/adc5c3e54_dcff3c9fa7fade1ad1dfe051c913ca7f.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/adc5c3e54_dcff3c9fa7fade1ad1dfe051c913ca7f.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/adc5c3e54_dcff3c9fa7fade1ad1dfe051c913ca7f.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Complete website navigation and sitemap overview"
+                className="absolute w-full h-full object-cover md:hidden"
+              />
+              {/* Desktop version - WITH parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/adc5c3e54_dcff3c9fa7fade1ad1dfe051c913ca7f.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/adc5c3e54_dcff3c9fa7fade1ad1dfe051c913ca7f.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/adc5c3e54_dcff3c9fa7fade1ad1dfe051c913ca7f.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Complete website navigation and sitemap overview"
+                className="absolute w-full h-full object-cover hidden md:block"
+                style={{ 
+                  top: '-15%',
+                  height: '130%',
+                  transform: `translateY(${scrollY * 0.15}px)`,
+                  transformOrigin: 'center top'
+                }}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Sitemap Content */}
+      <section className="py-20 bg-[#faebe3]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8">
+            {sitemapSections.map((section, index) => (
+              <Card key={index} className="p-8 bg-white shadow-lg">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center">
+                    <section.icon className="w-6 h-6 text-black" />
+                  </div>
+                  <h2 className="text-2xl font-bold text-black">{section.title}</h2>
                 </div>
-                <h2 className="text-2xl font-bold text-black">{section.title}</h2>
-              </div>
-              <ul className="space-y-3">
-                {section.pages.map((page, pageIndex) => (
-                  <li key={pageIndex}>
-                    <Link 
-                      to={page.path}
-                      className="text-black/70 hover:text-black hover:translate-x-2 transition-all inline-block"
-                    >
-                      → {page.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </Card>
-          ))}
-        </div>
+                <ul className="space-y-3">
+                  {section.pages.map((page, pageIndex) => (
+                    <li key={pageIndex}>
+                      <Link 
+                        to={page.path}
+                        className="text-black/70 hover:text-black hover:translate-x-2 transition-all inline-block"
+                      >
+                        → {page.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </Card>
+            ))}
+          </div>
 
-        <div className="mt-12 text-center">
-          <p className="text-black/70 mb-6">
-            Can't find what you are looking for? <Link to={createPageUrl("ContactUs")} className="underline hover:text-black font-semibold">Contact us</Link> or check our <Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold">FAQ page</Link>.
-          </p>
+          <div className="mt-12 text-center">
+            <p className="text-black/70 mb-6">
+              Can't find what you are looking for? <Link to={createPageUrl("ContactUs")} className="underline hover:text-black font-semibold">Contact us</Link> or check our <Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold">FAQ page</Link>.
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

@@ -28,9 +28,9 @@ export default function Layout({ children }) {
       path: createPageUrl("Services"),
       subItems: [
         { name: "Signature Playlists", path: createPageUrl("signature-playlists") },
-        { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") }, // Updated from "Events Soundtrack"
+        { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") },
         { name: "Sonic Strategy", path: createPageUrl("sonic-strategy") },
-        { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") } // Updated from "Audio Experience Upgrade"
+        { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") }
       ]
     },
     {
@@ -55,18 +55,15 @@ export default function Layout({ children }) {
         { name: "Beach House", path: createPageUrl("beach-house-antiparos") },
         { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }
       ]
-    },
-    { name: "About", path: createPageUrl("AboutUs") },
-    { name: "Contact", path: createPageUrl("ContactUs") },
-    { name: "Blog", path: createPageUrl("Blog") }
+    }
   ];
 
   const footerNavItems = {
     services: [
       { name: "Signature Playlists", path: createPageUrl("signature-playlists") },
-      { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") }, // Updated from "Events Soundtrack"
+      { name: "Event Soundtracks", path: createPageUrl("event-soundtracks") },
       { name: "Sonic Strategy", path: createPageUrl("sonic-strategy") },
-      { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") } // Updated from "Audio Experience Upgrade"
+      { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") }
     ],
     industries: [
       { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
@@ -102,10 +99,10 @@ export default function Layout({ children }) {
       document.title = "Sonic Strategy | SensEar";
     } else if (location.pathname === createPageUrl("signature-playlists")) {
       document.title = "Signature Playlists | SensEar";
-    } else if (location.pathname === createPageUrl("event-soundtracks")) { // Renamed path
-      document.title = "Event Soundtracks | SensEar"; // Updated title to match new name
-    } else if (location.pathname === createPageUrl("audio-upgrades")) { // Renamed path
-      document.title = "Audio Upgrades | SensEar"; // Updated title to match new name
+    } else if (location.pathname === createPageUrl("event-soundtracks")) {
+      document.title = "Event Soundtracks | SensEar";
+    } else if (location.pathname === createPageUrl("audio-upgrades")) {
+      document.title = "Audio Upgrades | SensEar";
     } else if (location.pathname === createPageUrl("hotels-resorts")) {
       document.title = "Hotels & Resorts | SensEar";
     } else if (location.pathname === createPageUrl("restaurants-bars")) {
@@ -114,12 +111,12 @@ export default function Layout({ children }) {
       document.title = "Retail Stores | SensEar";
     } else if (location.pathname === createPageUrl("wellness-centers")) {
       document.title = "Wellness Centers | SensEar";
-    } else if (location.pathname === createPageUrl("events-experiences")) { // Updated path and title
-      document.title = "Events & Experiences | SensEar"; // Updated title
-    } else if (location.pathname === createPageUrl("art-museums-fashion")) { // New path and title
-      document.title = "Art, Museums & Fashion | SensEar"; // New title
+    } else if (location.pathname === createPageUrl("events-experiences")) {
+      document.title = "Events & Experiences | SensEar";
+    } else if (location.pathname === createPageUrl("art-museums-fashion")) {
+      document.title = "Art, Museums & Fashion | SensEar";
     } else if (location.pathname === createPageUrl("PlaylistsDemos")) {
-      document.title = "Playlists & Demos | SensEar"; // Added title for Playlists Demos
+      document.title = "Playlists & Demos | SensEar";
     } else if (location.pathname === createPageUrl("blue-bamboo")) {
       document.title = "Blue Bamboo Case Study | SensEar";
     } else if (location.pathname === createPageUrl("klouvi-bar")) {
@@ -143,7 +140,7 @@ export default function Layout({ children }) {
       "@type": "LocalBusiness",
       "name": "SensEar",
       "image": imageUrl,
-      "url": "https://www.sensear.music", // Assuming this is the main domain
+      "url": "https://www.sensear.music",
       "telephone": "+306976994212",
       "email": "hello@sensear.music",
       "address": {
@@ -156,8 +153,8 @@ export default function Layout({ children }) {
         "https://www.instagram.com/sensear.music"
       ],
       "description": "SensEar specializes in sonic branding and curated music experiences for businesses in hospitality, retail, and wellness.",
-      "openingHours": "Mo-Fr 09:00-17:00", // Example, adjust if specific hours exist
-      "priceRange": "$$$" // Example, adjust if specific price range exists
+      "openingHours": "Mo-Fr 09:00-17:00",
+      "priceRange": "$$$"
     };
 
     return (
@@ -311,6 +308,17 @@ export default function Layout({ children }) {
                 }
               </div>
             )}
+            
+            {/* Contact Button - Ghost style */}
+            <Link to={createPageUrl("ContactUs")}>
+              <Button 
+                variant="ghost" 
+                className={`font-bold transition-colors ${
+                  isScrolled ? 'text-white hover:text-white/80' : 'text-black hover:text-black/80'
+                }`}>
+                Contact
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -359,6 +367,16 @@ export default function Layout({ children }) {
                   }
                 </div>
               )}
+              
+              {/* Contact in Mobile Menu */}
+              <Link
+                to={createPageUrl("ContactUs")}
+                onClick={() => setIsMenuOpen(false)}
+                className={`block text-base font-bold py-2 hover:underline decoration-1 underline-offset-4 ${
+                  location.pathname === createPageUrl("ContactUs") ? "text-white underline" : "text-white/90"}`
+                }>
+                Contact
+              </Link>
             </div>
           </div>
         }
