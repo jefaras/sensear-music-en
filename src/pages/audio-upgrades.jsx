@@ -269,8 +269,8 @@ export default function AudioUpgrades() {
                 <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
                   <Package className="w-8 h-8" />
                 </div>
-                <h3 className="text-lg text-black/70">We source premium equipment & coordinate professional installation via our certified partners network.</h3>
-                <p className="text-lg text-black/70">We source premium equipment and coordinate professional installation through our network of certified partners.</p>
+                <h3 className="text-lg text-black/70">Procurement and installation with trusted AV partners</h3>
+                <p className="text-lg text-black/70">We source premium equipment and coordinate professional installation via our certified partners network.</p>
               </Card>
             </article>
             
