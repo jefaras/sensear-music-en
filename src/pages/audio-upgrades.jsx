@@ -217,7 +217,7 @@ export default function AudioUpgrades() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">Audio Upgrades:
-<br/>Sound in perfect match with your space
+              <br />Sound in perfect match with your space
 
             </h1>
             
@@ -241,6 +241,8 @@ export default function AudioUpgrades() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 2400w"
+
+
 
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Professional audio equipment optimization and acoustic calibration for venues"
@@ -267,7 +269,7 @@ export default function AudioUpgrades() {
                 <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
                   <Package className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Procurement and installation with trusted AV partners</h3>
+                <h3 className="text-lg text-black/70">We source premium equipment & coordinate professional installation via our certified partners network.</h3>
                 <p className="text-lg text-black/70">We source premium equipment and coordinate professional installation through our network of certified partners.</p>
               </Card>
             </article>
@@ -277,7 +279,7 @@ export default function AudioUpgrades() {
                 <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
                   <Lightbulb className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Tailored AV proposals based on your needs and aesthetics</h3>
+                <h3 className="text-2xl font-bold mb-4">AV proposals tailored for your needs & aesthetics</h3>
                 <p className="text-lg text-black/70">We design custom audio-visual solutions that align with your venue's unique character and functional requirements.</p>
               </Card>
             </article>
