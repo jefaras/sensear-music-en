@@ -430,92 +430,96 @@ export default function Services() {
           </div>
 
           {/* Second row: Sonic Strategy and Audio Upgrades - SMALLER & CENTERED */}
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8 items-stretch" role="list">
-              {/* Service 3: Sonic Strategy */}
-              <article role="listitem">
-                <Link to={createPageUrl("sonic-strategy")} aria-label="Build Your Sound Strategy">
-                  <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <img
-                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
-                        srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 800w,
-                                https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 1200w"
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch" role="list">
+            {/* Empty spacer - only visible on desktop */}
+            <div className="hidden lg:block"></div>
+            
+            {/* Service 3: Sonic Strategy */}
+            <article role="listitem">
+              <Link to={createPageUrl("sonic-strategy")} aria-label="Build Your Sound Strategy">
+                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
+                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 800w,
+                              https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 1200w"
 
 
 
 
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        alt="Strategic sonic branding consultation and music curation planning session"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      alt="Strategic sonic branding consultation and music curation planning session"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                      <div className="absolute inset-0" aria-hidden="true" />
-                      
-                      <div className="absolute top-4 left-4">
-                        <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                          <BarChart className="w-8 h-8" />
-                        </div>
+                    <div className="absolute inset-0" aria-hidden="true" />
+                    
+                    <div className="absolute top-4 left-4">
+                      <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                        <BarChart className="w-8 h-8" />
                       </div>
                     </div>
+                  </div>
 
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                        Sonic Strategy
-                      </h3>
-                      <p className="text-black/70 mb-4">
-                        Ultra-specialized music consultancy & sound branding guidelines that forge an inimitable sonic identity.
-                      </p>
-                      <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                        <span>Build Your Sound Strategy</span>
-                        <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      Sonic Strategy
+                    </h3>
+                    <p className="text-black/70 mb-4">
+                      Ultra-specialized music consultancy & sound branding guidelines that forge an inimitable sonic identity.
+                    </p>
+                    <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Build Your Sound Strategy</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+
+            {/* Service 4: Audio Upgrades */}
+            <article role="listitem">
+              <Link to={createPageUrl("audio-upgrades")} aria-label="Optimize Your Sound System">
+                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
+                  <div className="relative aspect-[4/3] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
+                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 800w,
+                              https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1200w"
+
+
+
+
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      alt="Professional audio equipment optimization and acoustic calibration for venues"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+
+                    <div className="absolute inset-0" aria-hidden="true" />
+                    
+                    <div className="absolute top-4 left-4">
+                      <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                        <SlidersHorizontal className="w-8 h-8" />
                       </div>
                     </div>
-                  </Card>
-                </Link>
-              </article>
+                  </div>
 
-              {/* Service 4: Audio Upgrades */}
-              <article role="listitem">
-                <Link to={createPageUrl("audio-upgrades")} aria-label="Optimize Your Sound System">
-                  <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                    <div className="relative aspect-[4/3] overflow-hidden">
-                      <img
-                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
-                        srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 800w,
-                                https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1200w"
-
-
-
-
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        alt="Professional audio equipment optimization and acoustic calibration for venues"
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
-                      <div className="absolute inset-0" aria-hidden="true" />
-                      
-                      <div className="absolute top-4 left-4">
-                        <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                          <SlidersHorizontal className="w-8 h-8" />
-                        </div>
-                      </div>
+                  <div className="p-6">
+                    <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                      Audio Upgrades
+                    </h3>
+                    <p className="text-black/70 mb-4">
+                      Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.
+                    </p>
+                    <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Optimize Your Sound System</span>
+                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
                     </div>
-
-                    <div className="p-6">
-                      <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                        Audio Upgrades
-                      </h3>
-                      <p className="text-black/70 mb-4">
-                        Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.
-                      </p>
-                      <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                        <span>Optimize Your Sound System</span>
-                        <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                      </div>
-                    </div>
-                  </Card>
-                </Link>
-              </article>
-            </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
+            
+            {/* Empty spacer - only visible on desktop */}
+            <div className="hidden lg:block"></div>
           </div>
 
           <div className="text-center mt-12">
