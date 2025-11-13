@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -473,99 +472,83 @@ export default function Home() {
             </article>
           </div>
 
-          {/* Second Row: Sonic Strategy & Audio Upgrades - SMALLER (4-column width) & CENTERED */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch" role="list">
-            {/* Empty spacer for centering on desktop */}
-            <div className="hidden lg:block"></div>
-            
-            <article role="listitem">
-              <Link to={createPageUrl("sonic-strategy")} aria-label="Build Your Sound Strategy">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 800w,
-                              https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      alt="Strategic sonic branding consultation"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+          {/* Second Row: Sonic Strategy & Audio Upgrades - EVEN SMALLER (4-card size) & CENTERED */}
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-stretch" role="list">
+              <article role="listitem">
+                <Link to={createPageUrl("sonic-strategy")} aria-label="Build Your Sound Strategy">
+                  <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img
+                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
+                        srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 800w,
+                                https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        alt="Strategic sonic branding consultation"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
 
-                    <div className="absolute inset-0" aria-hidden="true" />
-                    
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                        <BarChart className="w-8 h-8" />
+                      <div className="absolute inset-0" aria-hidden="true" />
+                      
+                      <div className="absolute top-4 left-4">
+                        <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                          <BarChart className="w-8 h-8" />
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      Sonic Strategy
-                    </h3>
-                    <p className="text-black/70 mb-4">
-                      Ultra-specialized music consultancy & sound branding guidelines that forge an inimitable sonic identity.
-                    </p>
-                    <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                      <span>Build Your Sound Strategy</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                    </div>
-                  </div>
-                </Card>
-              </Link>
-            </article>
-
-            <article role="listitem">
-              <Link to={createPageUrl("audio-upgrades")} aria-label="Optimize Your Sound System">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 800w,
-                              https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      alt="Professional audio equipment optimization"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
-                    <div className="absolute inset-0" aria-hidden="true" />
-                    
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                        <SlidersHorizontal className="w-8 h-8" />
+                    <div className="p-6">
+                      <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                        Sonic Strategy
+                      </h3>
+                      <p className="text-black/70 mb-4">
+                        Ultra-specialized music consultancy & sound branding guidelines that forge an inimitable sonic identity.
+                      </p>
+                      <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                        <span>Build Your Sound Strategy</span>
+                        <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
                       </div>
                     </div>
-                  </div>
+                  </Card>
+                </Link>
+              </article>
 
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      Audio Upgrades
-                    </h3>
-                    <p className="text-black/70 mb-4">
-                      Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.
-                    </p>
-                    <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                      <span>Optimize Your Sound System</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+              <article role="listitem">
+                <Link to={createPageUrl("audio-upgrades")} aria-label="Optimize Your Sound System">
+                  <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
+                    <div className="relative aspect-[4/3] overflow-hidden">
+                      <img
+                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
+                        srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 800w,
+                                https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1200w"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        alt="Professional audio equipment optimization"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+
+                      <div className="absolute inset-0" aria-hidden="true" />
+                      
+                      <div className="absolute top-4 left-4">
+                        <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
+                          <SlidersHorizontal className="w-8 h-8" />
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </Card>
-              </Link>
-            </article>
 
-            {/* Empty spacer for centering on desktop */}
-            <div className="hidden lg:block"></div>
-          </div>
-
-          <div className="text-center mt-12">
-            <p className="text-black/70 mb-4 max-w-3xl mx-auto">
-              <span>Whether you're a </span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotel</Link><span>, </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurant</Link><span>, or </span><Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">retail space</Link><span>, we have the expertise to elevate your atmosphere.</span>
-            </p>
-            <Link to={createPageUrl("Industries")}>
-              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group">
-                See Success Stories
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-              </Button>
-            </Link>
+                    <div className="p-6">
+                      <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
+                        Audio Upgrades
+                      </h3>
+                      <p className="text-black/70 mb-4">
+                        Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.
+                      </p>
+                      <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                        <span>Optimize Your Sound System</span>
+                        <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                      </div>
+                    </div>
+                  </Card>
+                </Link>
+              </article>
+            </div>
           </div>
         </div>
       </section>
