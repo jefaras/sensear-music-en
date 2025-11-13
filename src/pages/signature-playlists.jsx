@@ -304,6 +304,7 @@ Curated to shape your venue's mood & energy
 
 
 
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Bespoke music curation and playlist creation for unique venue atmosphere"
                 className="absolute w-full h-full object-cover md:hidden" />
@@ -313,6 +314,7 @@ Curated to shape your venue's mood & energy
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg 2400w"
+
 
 
 
@@ -336,11 +338,11 @@ Curated to shape your venue's mood & energy
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-              <Breadcrumbs items={[
-              { label: "Services", path: createPageUrl("Services") },
-              { label: "Signature Playlists", path: createPageUrl("signature-playlists") }]
-              } />
-             </div> */}
+               <Breadcrumbs items={[
+               { label: "Services", path: createPageUrl("Services") },
+               { label: "Signature Playlists", path: createPageUrl("signature-playlists") }]
+               } />
+              </div> */}
 
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="what-we-do-heading">
         <div className="max-w-5xl mx-auto px-6">
@@ -362,7 +364,7 @@ Curated to shape your venue's mood & energy
                   <Gem className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">Rare finds, perfectly fit for your venue</h3>
-                <p className="text-black/70">Hand-picked tracks from rare vinyl collections & arranged to follow your venue's flow and branding.</p>
+                <p className="text-black/70">Hand-picked tracks from rare vinyl collections, arranged to follow your venue's flow & style.</p>
               </Card>
             </article>
 
