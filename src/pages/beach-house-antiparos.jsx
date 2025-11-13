@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -11,10 +10,10 @@ export default function BeachHouseAntiparos() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Beach House Antiparos Case Study | SensEar Music Curation";
+    document.title = "Beach House Antiparos Case Study | SensEar Music";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "How SensEar created an all-day Mediterranean soundscape at Beach House Antiparos blending relaxation with upbeat evening energy.";
+    const description = "How SensEar created a multi-zone soundscape for Beach House Antiparos with curated playlists for beach, dining, and retail areas.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
@@ -24,7 +23,6 @@ export default function BeachHouseAntiparos() {
       document.head.appendChild(meta);
     }
 
-    // Add locale and language meta tags
     const localeTag = document.querySelector('meta[property="og:locale"]');
     if (localeTag) {
       localeTag.setAttribute('content', 'en_US');
@@ -47,7 +45,6 @@ export default function BeachHouseAntiparos() {
 
     document.documentElement.lang = 'en';
 
-    // Add robots meta tag - CASE STUDY: index, follow
     let robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
       robotsMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -58,7 +55,6 @@ export default function BeachHouseAntiparos() {
       document.head.appendChild(robotsMeta);
     }
 
-    // Add googlebot specific tag
     let googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
       googlebotMeta.setAttribute('content', 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1');
@@ -69,7 +65,6 @@ export default function BeachHouseAntiparos() {
       document.head.appendChild(googlebotMeta);
     }
 
-    // Add canonical link
     let canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
       canonicalLink.setAttribute('href', 'https://sensear.music/beach-house-antiparos');
@@ -80,14 +75,12 @@ export default function BeachHouseAntiparos() {
       document.head.appendChild(canonicalLink);
     }
 
-    // Open Graph tags
     const ogTags = [
     { property: 'og:title', content: 'Beach House Antiparos Case Study | SensEar Music' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png' },
     { property: 'og:url', content: 'https://sensear.music/beach-house-antiparos' },
     { property: 'og:type', content: 'article' }];
-
 
     ogTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[property="${tag.property}"]`);
@@ -101,13 +94,11 @@ export default function BeachHouseAntiparos() {
       }
     });
 
-    // Twitter Card tags
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Beach House Antiparos Case Study | SensEar Music' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png' }];
-
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -121,7 +112,6 @@ export default function BeachHouseAntiparos() {
       }
     });
 
-    // Update structured data to include BreadcrumbList and updated Article details
     const structuredData = [
     {
       "@context": "https://schema.org",
@@ -132,13 +122,13 @@ export default function BeachHouseAntiparos() {
       "sameAs": [
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music"]
-
     },
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Beach House Antiparos Case Study | SensEar Music Curation",
-      "description": "How SensEar created an immersive coastal ambiance for Beach House Antiparos with tailored music curation.",
+      "headline": "Beach House Antiparos Case Study | Multi-Zone Soundscape",
+      "description": description,
+      "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png",
       "author": {
         "@type": "Organization",
         "name": "SensEar"
@@ -151,8 +141,7 @@ export default function BeachHouseAntiparos() {
           "url": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg"
         }
       },
-      "datePublished": "2025-01-15",
-      "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png"
+      "datePublished": "2025-01-15"
     },
     {
       "@context": "https://schema.org",
@@ -176,9 +165,7 @@ export default function BeachHouseAntiparos() {
         "name": "Beach House Antiparos",
         "item": "https://sensear.music/beach-house-antiparos"
       }]
-
     }];
-
 
     let structuredDataScript = document.querySelector('script[type="application/ld+json"]');
     if (structuredDataScript) {
@@ -196,52 +183,94 @@ export default function BeachHouseAntiparos() {
   }, []);
 
   const problems = [
-  "They needed a unified sound that resonated equally well across all spaces, from the beach lounge to the boutique.",
-  "The brand was seeking a refined sonic identity that embodied its values of exclusivity, warmth, and laid-back luxury."];
-
+  "Guests moved through multiple zones (beach, dining, retail), each requiring a unique soundscape.",
+  "Generic playlists felt disconnected from the venue's luxury positioning and island identity.",
+  "Audio quality varied across spaces, with no central control or cohesion."];
 
   const solutions = [
-  "We delivered a set of unified time-based playlists, finely tuned to complement the different energies within the venue.",
-  "We distilled the brand's personality into a carefully balanced musical narrative that elevates the guest experience."];
-
+  "Designed distinct playlists for each zone—chillout beach vibes, elevated dining soundtracks, and boutique retail music.",
+  "Established seamless transitions as guests moved from one area to another, maintaining a unified brand feel.",
+  "Optimized the entire audio system for clarity and balance, with centralized control for consistency."];
 
   const results = [
-  "A noticeable lift in both guest and staff satisfaction, thanks to a more inviting atmosphere.",
-  "Enhanced shopping experience that converted into higher retail sales.",
-  "A refined, consistent sonic identity that brought the brand to life across every space."];
-
+  "Enhanced guest satisfaction scores, with specific praise for the 'perfect soundtrack.'",
+  "Extended dwell time in each zone, contributing to increased food, beverage, and retail revenue.",
+  "Beach House is now known for its immersive, multi-sensory guest experience."];
 
   return (
-    <div className="bg-[#faebe3] min-h-screen">
+    <div className="bg-[#faebe3]">
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-3 {
+          animation: slideUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
+      `}</style>
+
       {/* Hero Section - Similar to Home but smaller heading */}
-      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Beach House Antiparos Case Study section">
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Beach House Antiparos Case Study section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
-              Designing a cohesive sonic experience<br />
-              for every zone of the beach house
+            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+              Multi-zone soundscapes for<br />
+              Beach House Antiparos
             </h1>
             
-            <div className="mb-8 max-w-4xl">
+            <div className="mb-8 max-w-4xl slide-up-2">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Matching the music to each area's identity to ensure a seamless and consistent experience throughout the day.
+                How SensEar crafted a cohesive audio journey across beach, dining, and retail spaces
               </p>
             </div>
           </div>
         </div>
 
         {/* Hero Image - Larger with parallax */}
-        <div className="w-full px-6">
+        <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version - NO parallax */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Beach House Antiparos beachfront venue with zoned music curation"
-                className="absolute w-full h-full object-cover"
+                alt="Beach House Antiparos with multi-zone music curation"
+                className="absolute w-full h-full object-cover md:hidden"
+              />
+              {/* Desktop version - WITH parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5c25bc1cf_photo-collagepng.png 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Beach House Antiparos with multi-zone music curation"
+                className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
                   top: '-15%',
                   height: '130%',
@@ -265,20 +294,21 @@ export default function BeachHouseAntiparos() {
       {/* Main Content Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          {/* Meet Beach House Antiparos */}
-          <div className="flex flex-col items-center gap-4 mb-6">
+          {/* Meet Beach House */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-6 justify-center">
             <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg"
-              alt="Beach House Antiparos logo"
+              alt="Beach House logo"
               className="w-20 h-20 rounded-lg object-cover border-2 border-black/10" />
-            <h2 className="text-4xl font-bold">Meet Beach House Antiparos</h2>
+
+            <h2 className="text-3xl sm:text-4xl font-bold">Meet Beach House</h2>
           </div>
           <p className="text-center text-black/70 mb-12 max-w-3xl mx-auto text-lg leading-relaxed">
-            Beach House Antiparos is a premium beachfront destination combining dining, relaxation, and a boutique shopping experience. The venue needed a continuous audio experience across all spaces.
+            Beach House is a luxury beachfront destination in Antiparos that fuses laid-back island charm with high-end hospitality. From sunrise yoga to sunset cocktails, it's a full-spectrum experience. But its diverse spaces needed a unified sonic identity.
           </p>
-          <div className="max-w-4xl mx-auto px-6 text-center">
-              <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
-                  "We wanted our guests to feel like they'd discovered something special—a soundtrack that felt hand-selected, layered, and harmonious with the sea breeze and sunset views." – Beach House Antiparos Team
+		      <div className="max-w-4xl mx-auto px-6 text-center">      
+                <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
+                  "We needed music that would connect each part of our guest journey—beach, dining, boutique—while respecting the distinct character of each space." – Beach House Owner
                 </blockquote>
           </div>
           {/* Three Process Cards with Arrows */}
@@ -286,18 +316,24 @@ export default function BeachHouseAntiparos() {
             {/* Card 1: Why They Called Us */}
             <Card className="flex-1 bg-white shadow-lg">
               <CardContent className="p-8">
-                <h3 id="challenge-heading" className="text-2xl font-bold mb-4 flex items-center gap-2">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
                   <MessageSquare className="w-6 h-6" aria-hidden="true" />
                   Why They Called Us
                 </h3>
-                
+
                 <ul className="space-y-4" role="list">
-                  {problems.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Guests moved through multiple zones (beach, dining, retail), each requiring a unique soundscape.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Generic playlists felt disconnected from the venue's luxury positioning and island identity.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Audio quality varied across spaces, with no central control or cohesion.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -310,17 +346,23 @@ export default function BeachHouseAntiparos() {
             {/* Card 2: How We Responded */}
             <Card className="flex-1 bg-white shadow-lg">
               <CardContent className="p-8">
-                <h3 id="solution-heading" className="text-2xl font-bold mb-4 flex items-center gap-2">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
                   <Lightbulb className="w-6 h-6" aria-hidden="true" />
                   How We Responded
                 </h3>
                 <ul className="space-y-4" role="list">
-                  {solutions.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Designed distinct playlists for each zone—chillout beach vibes, elevated dining soundtracks, and boutique retail music.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Established seamless transitions as guests moved from one area to another, maintaining a unified brand feel.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Optimized the entire audio system for clarity and balance, with centralized control for consistency.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -333,38 +375,44 @@ export default function BeachHouseAntiparos() {
             {/* Card 3: What They Got */}
             <Card className="flex-1 bg-white shadow-lg">
               <CardContent className="p-8">
-                <h3 id="results-heading" className="text-2xl font-bold mb-4 flex items-center gap-2">
+                <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
                   <Award className="w-6 h-6" aria-hidden="true" />
                   What They Got
                 </h3>
-                
+
                 <ul className="space-y-4" role="list">
-                  {results.map((item, index) =>
-                  <li key={index} className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                      <p className="text-black/80">{item}</p>
-                    </li>
-                  )}
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Enhanced guest satisfaction scores, with specific praise for the 'perfect soundtrack.'</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Extended dwell time in each zone, contributing to increased food, beverage, and retail revenue.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Beach House is now known for its immersive, multi-sensory guest experience.</p>
+                  </li>
                 </ul>
               </CardContent>
             </Card>
           </div>
-          <div className="max-w-4xl mx-auto px-6 text-center">
-              <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
-                  "The sound now flows as naturally as the waves—adding warmth, depth, and an unforgettable feeling that lingers long after the visit." – Beach House Antiparos Team
+          		<div className="max-w-4xl mx-auto px-6 text-center">
+                <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
+                  "SensEar gave us something we didn't know we needed—a soundtrack that flows as naturally as the sea breeze through our property." – Beach House Owner
                 </blockquote>
+              </div>
           </div>
-        </div>
       </section>
-
+        
       {/* CTA Section */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="cta-heading">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 id="cta-heading" className="text-4xl font-bold text-black mb-6 leading-[1.25]">
-            Ready to Elevate Your Guest Experience?
+            Create Your Multi-Zone Experience
           </h2>
           <p className="text-xl text-black/70 mb-8">
-            <span>Let us create a tailored sonic experience for your property. Explore our </span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotel & resort solutions</Link><span> or view more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span>.</span>
+            <span>Transform your property like Beach House. Explore our </span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hospitality solutions</Link><span> or view more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span>.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("ContactUs")}>
@@ -390,5 +438,4 @@ export default function BeachHouseAntiparos() {
         </Link>
       </nav>
     </div>);
-
 }

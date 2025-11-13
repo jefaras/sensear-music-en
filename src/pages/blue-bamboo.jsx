@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -11,10 +10,10 @@ export default function BlueBamboo() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Blue Bamboo Mykonos Case Study | SensEar Music Curation";
+    document.title = "Blue Bamboo Case Study | SensEar Music Curation";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "How SensEar crafted an elevated beach club atmosphere at Blue Bamboo through custom music curation and sonic branding.";
+    const description = "How SensEar transformed Blue Bamboo Thai restaurant in Athens with curated playlists and optimized audio. A sonic branding success story.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
@@ -128,7 +127,8 @@ export default function BlueBamboo() {
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "Blue Bamboo Case Study | SensEar Music Curation",
-      "description": "How SensEar transformed Blue Bamboo Athens with curated music, optimized audio, and strategic sonic branding.",
+      "description": description,
+      "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png",
       "author": {
         "@type": "Organization",
         "name": "SensEar"
@@ -141,8 +141,7 @@ export default function BlueBamboo() {
           "url": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg"
         }
       },
-      "datePublished": "2025-01-15",
-      "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1600&q=80"
+      "datePublished": "2025-01-15"
     },
     {
       "@context": "https://schema.org",
@@ -183,38 +182,97 @@ export default function BlueBamboo() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Note: These arrays are kept for context, but the JSX now uses hardcoded list items as per the outline.
+  const problems = [
+  "The music didn't have a narrative—it felt disjointed and generic.",
+  "Inconsistent audio quality and no sound control across the venue.",
+  "Limited music budget and concerns over licensing compliance."];
+
+  const solutions = [
+  "Created signature playlists tailored to Thai-fusion concept, flowing seamlessly from day to night.",
+  "Optimized audio system for clarity and balance, adding zone control for different areas.",
+  "Established licensing compliance and provided cost-effective music solution within the budget."];
+
+  const results = [
+  "Customer dwell time increased by 30%, leading to higher sales.",
+  "The ambiance and atmosphere is now recognized as a core brand element.",
+  "Staff and guests alike report a sense of place and identity through the music."];
+
   return (
     <div className="bg-[#faebe3]">
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-3 {
+          animation: slideUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
+      `}</style>
+
       {/* Hero Section - Similar to Home but smaller heading */}
-      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Blue Bamboo Case Study section">
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Blue Bamboo Case Study section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
-              Fine-tuning and harmonizing<br />
-              a Thai dining experience
+            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+              Building Blue Bamboo's music DNA<br />
+              for a timeless Thai fusion atmosphere
             </h1>
-
-            <div className="mb-8 max-w-4xl">
+            
+            <div className="mb-8 max-w-4xl slide-up-2">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Discover how we enhanced the atmosphere at Blue Bamboo through expert music curation and soundproofing.
+                How SensEar crafted an all-day soundtrack that balances Thai heritage with contemporary Athens energy
               </p>
             </div>
           </div>
         </div>
 
         {/* Hero Image - Larger with parallax */}
-        <div className="w-full px-6">
+        <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version - NO parallax */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Elegant Thai restaurant interior with ambient music and sophisticated atmosphere"
-                className="absolute w-full h-full object-cover"
-                style={{
+                alt="Blue Bamboo Thai restaurant with curated music atmosphere"
+                className="absolute w-full h-full object-cover md:hidden"
+              />
+              {/* Desktop version - WITH parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdff56d5e_blue_bamboo_collage.png 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Blue Bamboo Thai restaurant with curated music atmosphere"
+                className="absolute w-full h-full object-cover hidden md:block"
+                style={{ 
                   top: '-15%',
                   height: '130%',
                   transform: `translateY(${scrollY * 0.15}px)`,
@@ -238,19 +296,20 @@ export default function BlueBamboo() {
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
           {/* Meet Blue Bamboo */}
-          <div className="flex items-center gap-4 mb-6 justify-center">
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-6 justify-center">
             <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg"
               alt="Blue Bamboo logo"
               className="w-20 h-20 rounded-lg object-cover border-2 border-black/10" />
-            <h2 className="text-4xl font-bold">Meet Blue Bamboo</h2>
+
+            <h2 className="text-3xl sm:text-4xl font-bold">Meet Blue Bamboo</h2>
           </div>
           <p className="text-center text-black/70 mb-12 max-w-3xl mx-auto text-lg leading-relaxed">
-            Blue Bamboo is a well-known Thai bar-restaurant in Athens, offering authentic flavors in a lively, modern setting. While its culinary identity was strong, its sonic identity needed refinement to balance energy and comfort.
+            Blue Bamboo blends modern Thai cuisine with an Athens edge. Its chic design and vibrant flavors draw a stylish crowd, yet the music struggled to keep pace with the brand's energy.
           </p>
-          <div className="max-w-4xl mx-auto px-6 text-center">
+		      <div className="max-w-4xl mx-auto px-6 text-center">      
                 <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
-                  "Our goal was simple: to create an atmosphere where guests could relax, connect, and feel encouraged to stay longer, with music that evolved naturally throughout the day and kept our team energized." – Blue Bamboo Owner
+                  "We wanted a seamless musical journey that evolves as naturally as the meal—calm afternoons that build into electric evenings, all cohesively tied to our brand essence." – Blue Bamboo Owner
                 </blockquote>
           </div>
           {/* Three Process Cards with Arrows */}
@@ -262,18 +321,19 @@ export default function BlueBamboo() {
                   <MessageSquare className="w-6 h-6" aria-hidden="true" />
                   Why They Called Us
                 </h3>
+
                 <ul className="space-y-4" role="list">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Background noise was making it difficult for guests to have conversations, leading to a less enjoyable dining experience.</p>
+                    <p className="text-black/80">The music didn't have a narrative—it felt disjointed and generic.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">The music didn't align with the natural shifts in energy throughout the day, causing inconsistency in the atmosphere.</p>
+                    <p className="text-black/80">Inconsistent audio quality and no sound control across the venue.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Repetitive playlists were leaving staff disengaged and contributing to a flat, predictable mood in the space.</p>
+                    <p className="text-black/80">Limited music budget and concerns over licensing compliance.</p>
                   </li>
                 </ul>
               </CardContent>
@@ -294,15 +354,15 @@ export default function BlueBamboo() {
                 <ul className="space-y-4" role="list">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Conducted an on-site sound check and optimized speaker positioning to reduce noise interference and improve conversational clarity.</p>
+                    <p className="text-black/80">Created signature playlists tailored to Thai-fusion concept, flowing seamlessly from day to night.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Designed a time-sensitive playlist architecture, with distinct energy shifts mapped to key service phases—from lunch flow to evening peak.</p>
+                    <p className="text-black/80">Optimized audio system for clarity and balance, adding zone control for different areas.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Set up a monthly refresh cycle to keep sound aligned with seasonal menus, mood changes, and staff energy.</p>
+                    <p className="text-black/80">Established licensing compliance and provided cost-effective music solution within the budget.</p>
                   </li>
                 </ul>
               </CardContent>
@@ -324,41 +384,36 @@ export default function BlueBamboo() {
                 <ul className="space-y-4" role="list">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">A smoother, more intentional soundscape led to longer guest dwell times.</p>
+                    <p className="text-black/80">Customer dwell time increased by 30%, leading to higher sales.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Staff engagement improved, thanks to dynamic playlists that match the pace of service.</p>
+                    <p className="text-black/80">The ambiance and atmosphere is now recognized as a core brand element.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">The new atmosphere has sparked stronger word-of-mouth and exuberant reviews.</p>
+                    <p className="text-black/80">Staff and guests alike report a sense of place and identity through the music.</p>
                   </li>
                 </ul>
               </CardContent>
             </Card>
           </div>
-          <div className="max-w-4xl mx-auto px-6 text-center">
+          		<div className="max-w-4xl mx-auto px-6 text-center">
                 <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
-                  "Now, the sound is seamless, the vibe is spot on, and the space finally feels complete." – Blue Bamboo Owner
+                  "The music makes our space feel alive—it's become such a big part of the Blue Bamboo experience that guests actually ask us about it." – Blue Bamboo Owner
                 </blockquote>
+              </div>
           </div>
-          <div className="mt-12 p-6 bg-gray-50 rounded-lg max-w-4xl mx-auto">
-            <p className="text-black/80 text-center">
-              <span>Blue Bamboo's transformation showcases our </span><Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists service</Link><span> combined with </span><Link to={createPageUrl("audio-upgrades")} className="underline hover:text-black font-semibold">professional audio upgrades</Link><span>. Read more about </span><Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">how music increases sales</Link><span> in hospitality.</span>
-            </p>
-          </div>
-        </div>
       </section>
-
+        
       {/* CTA Section */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="cta-heading">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 id="cta-heading" className="text-4xl font-bold text-black mb-6 leading-[1.25]">
-            Ready to Transform Your Space?
+            Build Your Restaurant's Sonic Identity
           </h2>
           <p className="text-xl text-black/70 mb-8">
-            <span>See how strategic music curation can elevate your venue just like we did for Blue Bamboo. Read more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span> or </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">explore our services</Link><span>.</span>
+            <span>Create a signature atmosphere like Blue Bamboo. Explore our </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurant solutions</Link><span> or view more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span>.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("ContactUs")}>
@@ -377,7 +432,7 @@ export default function BlueBamboo() {
 
       <nav className="text-center py-8 bg-[#faebe3]" aria-label="Case studies navigation">
         <Link to={createPageUrl("CaseStudies")}>
-          <Button variant="outline" className="bg-transparent text-black mt-2 mb-5 px-4 py-2 text-sm font-medium rounded-md inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 border h-10 border-black hover:bg-black hover:text-white">
+          <Button variant="outline" className="bg-transparent border-black text-black hover:bg-black hover:text-white">
             <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" />
             Return to Case Studies Overview
           </Button>

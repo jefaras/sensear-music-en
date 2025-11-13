@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -11,10 +10,10 @@ export default function PelicanosSifnosRestaurant() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Pelicanos Restaurant Sifnos Case Study | SensEar Music Curation";
+    document.title = "Pelicanos Sifnos Case Study | SensEar Music Curation";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "How SensEar crafted an authentic Greek dining experience at Pelicanos through carefully curated music and atmosphere.";
+    const description = "How SensEar created the perfect Mediterranean soundtrack for Pelicanos restaurant in Sifnos with island-inspired playlists and acoustic optimization.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
@@ -77,7 +76,7 @@ export default function PelicanosSifnosRestaurant() {
     }
 
     const ogTags = [
-    { property: 'og:title', content: 'Pelicanos Restaurant Sifnos Case Study | SensEar Music Curation' },
+    { property: 'og:title', content: 'Pelicanos Sifnos Case Study | SensEar Music Curation' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png' },
     { property: 'og:url', content: 'https://sensear.music/pelicanos-sifnos-restaurant' },
@@ -97,7 +96,7 @@ export default function PelicanosSifnosRestaurant() {
 
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Pelicanos Restaurant Sifnos Case Study | SensEar Music Curation' },
+    { name: 'twitter:title', content: 'Pelicanos Sifnos Case Study | SensEar Music Curation' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png' }];
 
@@ -127,8 +126,9 @@ export default function PelicanosSifnosRestaurant() {
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Pelicanos Restaurant Sifnos Case Study | SensEar Music Curation",
-      "description": "How SensEar crafted an authentic Greek dining experience at Pelicanos through carefully curated music and atmosphere.",
+      "headline": "Pelicanos Sifnos Restaurant Case Study | Mediterranean Soundscape",
+      "description": description,
+      "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png",
       "author": {
         "@type": "Organization",
         "name": "SensEar"
@@ -141,8 +141,7 @@ export default function PelicanosSifnosRestaurant() {
           "url": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg"
         }
       },
-      "datePublished": "2025-01-15",
-      "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png"
+      "datePublished": "2025-01-15"
     },
     {
       "@context": "https://schema.org",
@@ -163,7 +162,7 @@ export default function PelicanosSifnosRestaurant() {
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Pelicanos Restaurant",
+        "name": "Pelicanos Sifnos",
         "item": "https://sensear.music/pelicanos-sifnos-restaurant"
       }]
     }];
@@ -183,38 +182,95 @@ export default function PelicanosSifnosRestaurant() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const problems = [
+  "The restaurant's reimagined menu needed a signature sound to match its modern Mediterranean identity.",
+  "Music was either too quiet or too energetic, failing to support the dining experience.",
+  "Limited access to curated, island-inspired playlists that felt authentic yet fresh."];
+
+  const solutions = [
+  "Created bespoke playlists blending sunny lounge grooves, spirited dining beats, and breezy melodies that evolve with the island's mood.",
+  "Optimized audio levels for clarity and comfort, ensuring music enhances conversation without overpowering it.",
+  "Sourced rare Mediterranean tracks and hidden gems from our extensive archive."];
+
+  const results = [
+  "Guests settled into longer, more memorable meals, boosting average check size.",
+  "Word-of-mouth buzz about the restaurant's captivating atmosphere increased.",
+  "Pelicanos is now celebrated for its modern yet timeless sonic identity."];
 
   return (
     <div className="bg-[#faebe3]">
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-3 {
+          animation: slideUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
+      `}</style>
+
       {/* Hero Section - Similar to Home but smaller heading */}
-      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Pelicanos Restaurant Case Study section">
+      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Pelicanos Sifnos Case Study section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
-              Creating a sonic palette<br />
-              as refined as the menu of Pelicanos
+            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+              Island vibes meet modern dining<br />
+              at Pelicanos, Sifnos
             </h1>
             
-            <div className="mb-8 max-w-4xl">
+            <div className="mb-8 max-w-4xl slide-up-2">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Curating music themes that reflect the balance between tradition, a restless culinary spirit, and innovation.
+                How SensEar designed a Mediterranean soundtrack that balances timeless charm with contemporary flair
               </p>
             </div>
           </div>
         </div>
 
         {/* Hero Image - Larger with parallax */}
-        <div className="w-full px-6">
+        <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version - NO parallax */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Pelicanos Sifnos upscale restaurant with refined music curation"
-                className="absolute w-full h-full object-cover"
+                alt="Pelicanos Sifnos restaurant with curated Mediterranean music"
+                className="absolute w-full h-full object-cover md:hidden"
+              />
+              {/* Desktop version - WITH parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1665d6381_pelicanos-photo-collage.png 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Pelicanos Sifnos restaurant with curated Mediterranean music"
+                className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
                   top: '-15%',
                   height: '130%',
@@ -231,28 +287,28 @@ export default function PelicanosSifnosRestaurant() {
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
         <Breadcrumbs items={[
         { label: "Case Studies", path: createPageUrl("CaseStudies") },
-        { label: "Pelicanos Restaurant", path: createPageUrl("pelicanos-sifnos-restaurant") }]
+        { label: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }]
         } />
       </div> */}
 
       {/* Main Content Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          {/* Meet Pelicanos Sifnos */}
-          <div className="flex flex-col items-center gap-4 mb-6">
+          {/* Meet Pelicanos */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-6 justify-center">
             <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg"
-              alt="Pelicanos Restaurant logo"
+              alt="Pelicanos logo"
               className="w-20 h-20 rounded-lg object-cover border-2 border-black/10" />
 
-            <h2 className="text-3xl sm:text-4xl font-bold">Meet Pelicanos Sifnos</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold">Meet Pelicanos</h2>
           </div>
           <p className="text-center text-black/70 mb-12 max-w-3xl mx-auto text-lg leading-relaxed">
-            Set on Faros beach in Sifnos, Pelicanos blends the soul of the Aegean with a restless, modern kitchen. The result is refined yet unfussy plates served alongside signature cocktails and dining experiences that value depth, detail, and memorable moments.
+            Pelicanos is a modern Mediterranean restaurant set against the stunning backdrop of Sifnos. With a fresh menu relaunch, the team wanted music that honored the island's heritage while embracing contemporary flair.
           </p>
 		      <div className="max-w-4xl mx-auto px-6 text-center">      
                 <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
-                  "We wanted music that felt fresh and exploratory, like the menu, without losing touch with the familiar sounds our guests love. The goal was to support the guest journey with evolving playlists that invite curiosity and connection." – Pelicanos Sifnos Team
+                  "We wanted our guests to feel like they'd stepped into an authentic island experience—modern yet rooted, energetic yet relaxed, with a soundtrack that captured Sifnos itself." – Pelicanos Owner
                 </blockquote>
           </div>
           {/* Three Process Cards with Arrows */}
@@ -268,11 +324,15 @@ export default function PelicanosSifnosRestaurant() {
                 <ul className="space-y-4" role="list">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">They needed a dynamic music program that complemented their culinary creativity without sounding unfamiliar or too niche.</p>
+                    <p className="text-black/80">The restaurant's reimagined menu needed a signature sound to match its modern Mediterranean identity.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">The playlists had to support an all-day rhythm, while balancing music discovery with recognizable artists.</p>
+                    <p className="text-black/80">Music was either too quiet or too energetic, failing to support the dining experience.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Limited access to curated, island-inspired playlists that felt authentic yet fresh.</p>
                   </li>
                 </ul>
               </CardContent>
@@ -293,15 +353,15 @@ export default function PelicanosSifnosRestaurant() {
                 <ul className="space-y-4" role="list">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Created a rotating playlist architecture with tasteful blends of older and contemporary Mediterranean-inspired tracks.</p>
+                    <p className="text-black/80">Created bespoke playlists blending sunny lounge grooves, spirited dining beats, and breezy melodies that evolve with the island's mood.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Mapped energy shifts throughout the day to integrate music with the natural pace of service, guest flow and Aegean swell.</p>
+                    <p className="text-black/80">Optimized audio levels for clarity and comfort, ensuring music enhances conversation without overpowering it.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">Delivered a discovery-friendly listening experience that reflects the brand's layered, modern approach to food.</p>
+                    <p className="text-black/80">Sourced rare Mediterranean tracks and hidden gems from our extensive archive.</p>
                   </li>
                 </ul>
               </CardContent>
@@ -323,37 +383,36 @@ export default function PelicanosSifnosRestaurant() {
                 <ul className="space-y-4" role="list">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">A renewed atmosphere that mirrors the spirit of the menu and elevates the guest experience.</p>
+                    <p className="text-black/80">Guests settled into longer, more memorable meals, boosting average check size.</p>
                   </li>
                   <li className="flex items-start gap-3">
                     <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                    <p className="text-black/80">A consistent sonic mood that reflects the brand's creativity, calm confidence, and attention to detail.</p>
+                    <p className="text-black/80">Word-of-mouth buzz about the restaurant's captivating atmosphere increased.</p>
+                  </li>
+                  <li className="flex items-start gap-3">
+                    <CheckCircle className="w-5 h-5 text-black mt-1 flex-shrink-0" aria-hidden="true" />
+                    <p className="text-black/80">Pelicanos is now celebrated for its modern yet timeless sonic identity.</p>
                   </li>
                 </ul>
               </CardContent>
             </Card>
           </div>
-          <div className="max-w-4xl mx-auto px-6 text-center">      
+          		<div className="max-w-4xl mx-auto px-6 text-center">
                 <blockquote className="border-l-4 border-black pl-6 italic text-black/80 my-6">
-                  "The atmosphere now reflects our vision and the detail we put into everything, from ingredients to hospitality and service. Guests feel more immersed now, and the music completes the experience." – Pelicanos Sifnos Team
+                  "The music SensEar selected feels like it belongs to Sifnos—sunny, soulful, and effortlessly elegant. It's become as much a part of the Pelicanos identity as our signature dishes." – Pelicanos Owner
                 </blockquote>
+              </div>
           </div>
-          <div className="mt-12 p-6 bg-gray-50 rounded-lg max-w-4xl mx-auto">
-            <p className="text-black/80 text-center">
-              <span>This project demonstrates our </span><Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists service</Link><span> at its finest. Understand </span><Link to={createPageUrl("music-influence-consumer-behavior")} className="underline hover:text-black font-semibold">how music influences customer behavior</Link><span> and </span><Link to={createPageUrl("analyze-optimize-music-curation")} className="underline hover:text-black font-semibold">our optimization process</Link><span>.</span>
-            </p>
-          </div>
-        </div>
       </section>
         
       {/* CTA Section */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="cta-heading">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 id="cta-heading" className="text-4xl font-bold text-black mb-6 leading-[1.25]">
-            Let Your Restaurant's Atmosphere Sing
+            Craft Your Restaurant's Signature Sound
           </h2>
           <p className="text-xl text-black/70 mb-8">
-            <span>Discover how music curation can transform your restaurant. Explore our </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurant solutions</Link><span> or read more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span>.</span>
+            <span>Create an unforgettable dining atmosphere like Pelicanos. Explore our </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurant solutions</Link><span> or view more </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">success stories</Link><span>.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to={createPageUrl("ContactUs")}>
@@ -379,5 +438,4 @@ export default function PelicanosSifnosRestaurant() {
         </Link>
       </nav>
     </div>);
-
 }
