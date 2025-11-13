@@ -260,6 +260,8 @@ export default function AudioUpgrades() {
         <div className="max-w-5xl mx-auto px-6">
           <h2 id="what-we-do-heading" className="text-4xl font-bold text-center mb-6 animate-fade-in-up leading-[1.25]">What We Do</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
+            
+         {/* Things we don't do yet --->    
             <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
               <Card className="bg-white p-8 shadow-lg h-full">
                 <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
@@ -289,6 +291,7 @@ export default function AudioUpgrades() {
                 <p className="text-lg text-black/70">We create tailored solutions that enhance clarity, coverage, and create an immersive audio experience.</p>
               </Card>
             </article>
+          End of things we don't do yet --->  */}
 
             <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
               <Card className="bg-white p-8 shadow-lg h-full">
