@@ -309,12 +309,14 @@ export default function Layout({ children }) {
               </div>
             )}
             
-            {/* Contact Button - Ghost style */}
+            {/* Contact Button - Outline style with underline on hover */}
             <Link to={createPageUrl("ContactUs")}>
               <Button 
-                variant="ghost" 
-                className={`font-bold transition-colors ${
-                  isScrolled ? 'text-white hover:text-white/80' : 'text-black hover:text-black/80'
+                variant="outline" 
+                className={`font-bold transition-colors hover:underline decoration-1 underline-offset-4 ${
+                  isScrolled 
+                    ? 'border-white text-white hover:text-white' 
+                    : 'border-black text-black hover:text-black'
                 }`}>
                 Contact
               </Button>
