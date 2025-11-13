@@ -244,6 +244,8 @@ export default function AudioUpgrades() {
 
 
 
+
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Professional audio equipment optimization and acoustic calibration for venues"
                 className="absolute w-full h-full object-cover"
@@ -280,7 +282,7 @@ export default function AudioUpgrades() {
                   <Lightbulb className="w-8 h-8" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">AV proposals tailored for your needs & aesthetics</h3>
-                <p className="text-lg text-black/70">We design custom audio-visual solutions that align with your venue's unique character and functional requirements.</p>
+                <p className="text-lg text-black/70">We design custom audio-visual solutions that fit your venue's unique character & functional requirements.</p>
               </Card>
             </article>
 
@@ -290,7 +292,7 @@ export default function AudioUpgrades() {
                 <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
                   <CheckSquare className="w-8 h-8" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4">Final tuning and walkthrough under real conditions</h3>
+                <h3 className="text-lg text-black/70">We calibrate your systems, ensuring optimal performance in live environment conditions.</h3>
                 <p className="text-lg text-black/70">We calibrate your system during actual operations, ensuring optimal performance in live environment conditions.</p>
               </Card>
             </article>
