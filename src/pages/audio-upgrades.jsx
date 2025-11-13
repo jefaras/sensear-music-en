@@ -353,7 +353,7 @@ export default function AudioUpgrades() {
           </div>
           <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
             <p className="text-black/70">
-              Discover how proper audio setup supports <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">increased sales through music</Link>. Perfect for all <Link to={createPageUrl("Industries")} className="underline hover:text-black font-semibold">industries we serve</Link>. Available alongside our <Link to={createPageUrl("event-soundtracks")} className="underline hover:text-black font-semibold">event services</Link>.
+              Discover how proper audio setup supports <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">increased sales through music</Link>.
             </p>
           </div>
         </div>
