@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
@@ -359,21 +360,25 @@ export default function AudioUpgrades() {
         </div>
       </section>
 
-      <section className="py-20 bg-black text-white" aria-labelledby="cta-heading">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 id="cta-heading" className="text-4xl font-bold mb-6 leading-[1.25]">
-            Ready to Optimize Your Sound?
-          </h2>
-          <p className="text-xl text-white/80 mb-8">
-            Let's assess your space and create the perfect audio experience for your venue.
-          </p>
-          <Link to={createPageUrl("ContactUs")}>
-            <Button size="lg" className="bg-slate-50 text-black px-8 py-6 text-lg font-medium hover:bg-[#f0dfd5]" aria-label="Optimize Your Sound System">
-              Optimize Your Sound System
-            </Button>
-          </Link>
+      <div style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className="py-20">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="bg-black text-white p-12 rounded-xl" aria-labelledby="cta-heading">
+            <div className="text-center">
+              <h2 id="cta-heading" className="text-4xl font-bold mb-6 leading-[1.25]">
+                Ready to Optimize Your Sound?
+              </h2>
+              <p className="text-xl text-white/80 mb-8">
+                Let's assess your space and create the perfect audio experience for your venue.
+              </p>
+              <Link to={createPageUrl("ContactUs")}>
+                <Button size="lg" className="bg-slate-50 text-black px-8 py-6 text-lg font-medium hover:bg-[#f0dfd5]" aria-label="Optimize Your Sound System">
+                  Optimize Your Sound System
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
     </div>);
 
 }
