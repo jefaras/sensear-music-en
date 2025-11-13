@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -19,16 +18,49 @@ export default function FAQ() {
 
   return (
     <div className="bg-[#faebe3]">
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-3 {
+          animation: slideUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
+      `}</style>
+
       {/* Hero Section - New Format */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Frequently Asked Questions">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1]">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-[1.1] slide-up-1">
               Frequently Asked Questions
             </h1>
             
-            <div className="mb-8 max-w-4xl">
+            <div className="mb-8 max-w-4xl slide-up-2">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
                 Your questions about music curation, licensing, and our services, answered. Find the information you need to make an informed decision.
               </p>
@@ -37,7 +69,7 @@ export default function FAQ() {
         </div>
 
         {/* Hero Image - Larger with parallax */}
-        <div className="w-full px-6">
+        <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Mobile/Tablet version - NO parallax */}
