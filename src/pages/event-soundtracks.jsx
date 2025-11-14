@@ -345,41 +345,6 @@ From custom playlists, live DJ sets to sound audits and setup, we ensure your ev
           </div>
         </div>
       </section>
-
-      {/* Venue Sound Audits & AV Support Section */}
-      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="audits-heading">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 id="audits-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25]">Venue Sound Audits & AV Support</h2>
-          <div className="max-w-3xl mx-auto">
-            <ul className="space-y-6" role="list">
-              <li className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <p className="text-lg text-black/70">Walkthrough and acoustic diagnosis of your space.</p>
-              </li>
-              <li className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <p className="text-lg text-black/70">Equipment performance check (speakers, amps, zones, clarity).</p>
-              </li>
-              <li className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <p className="text-lg text-black/70">Detailed report with practical upgrade suggestions.</p>
-              </li>
-              <li className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <p className="text-lg text-black/70">Tailored gear proposals that match your use case and style.</p>
-              </li>
-              <li className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <p className="text-lg text-black/70">Procurement and installation support with trusted partners.</p>
-              </li>
-              <li className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <p className="text-lg text-black/70">Final tuning and soundcheck under real event conditions.</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
       
       <section className="py-24 bg-white" aria-labelledby="problems-heading">
         <div className="max-w-5xl mx-auto px-6">
