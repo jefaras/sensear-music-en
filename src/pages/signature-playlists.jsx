@@ -382,53 +382,6 @@ export default function SignaturePlaylists() {
         </div>
       </section>
 
-       <section className="py-24 bg-white" aria-labelledby="features-heading">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 id="features-heading" className="text-4xl font-bold text-center mb-6 leading-[1.25]">Key Features & Benefits</h2>
-          <ul className="grid md:grid-cols-2 gap-x-8 gap-y-4">
-            <li className="flex items-start gap-3">
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <Check className="w-4 h-4 text-peach" />
-              </div>
-              <p className="text-lg text-black/80">No algorithm repetition, hand-selected library only</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <Check className="w-4 h-4 text-peach" />
-              </div>
-              <p className="text-lg text-black/80">Fresh rotations and updates each month</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <Check className="w-4 h-4 text-peach" />
-              </div>
-              <p className="text-lg text-black/80">Adaptive scheduling by zone and time of day</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <Check className="w-4 h-4 text-peach" />
-              </div>
-              <p className="text-lg text-black/80">Global rights clearance</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <Check className="w-4 h-4 text-peach" />
-              </div>
-              <p className="text-lg text-black/80">Cloud dashboard for multi-site control</p>
-            </li>
-            <li className="flex items-start gap-3">
-              <div className="w-6 h-6 bg-black rounded-full flex items-center justify-center flex-shrink-0 mt-1" aria-hidden="true">
-                <Check className="w-4 h-4 text-peach" />
-              </div>
-              <p className="text-lg text-black/80">Curator hotline for fast feedback and playlist tweaks</p>
-            </li>
-          </ul>
-          <p className="text-center text-black/70 mt-12 max-w-3xl mx-auto">
-            <span>Learn how our continuous </span><Link to={createPageUrl("music-curation-cycle-venues")} className="underline hover:text-black font-semibold">analyze and optimize approach</Link><span> ensures your soundscapes evolve with your venue.</span>
-          </p>
-        </div>
-      </section>
-
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="problems-heading">
         <div className="max-w-5xl mx-auto px-6">
           <h2 id="problems-heading" className="text-4xl font-bold text-center mb-6 leading-[1.25]">Problems We Solve</h2>
