@@ -248,6 +248,7 @@ export default function AudioUpgrades() {
 
 
 
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Professional audio equipment optimization and acoustic calibration for venues"
                 className="absolute w-full h-full object-cover"
@@ -371,8 +372,8 @@ export default function AudioUpgrades() {
         <div className="max-w-4xl mx-auto px-6">
           <div className="bg-black text-white p-12 rounded-xl" aria-labelledby="cta-heading">
             <div className="text-center">
-              <h2 id="cta-heading" className="text-4xl font-bold mb-6 leading-[1.25]">
-                Ready to Optimize Your Sound?
+              <h2 id="cta-heading" className="text-4xl font-bold mb-6 leading-[1.25]">Optimize Your Sound
+
               </h2>
               <p className="text-xl text-white/80 mb-8">
                 Let's assess your space and create the perfect audio experience for your venue.
