@@ -377,7 +377,7 @@ export default function SignaturePlaylists() {
             </article>
           </div>
           <p className="text-center text-black/70 mt-12 max-w-3xl mx-auto">
-            <span>Our playlists work best when paired with our </span><Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black font-semibold">sonic strategy service</Link><span>. See real results in our </span><Link to={createPageUrl("pelicanos-sifnos-restaurant")} className="underline hover:text-black font-semibold">Pelicanos case study</Link><span> and understand </span><Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="underline hover:text-black font-semibold">how brand-fit music converts browsers into buyers</Link><span>. Perfect for </span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotels</Link><span>, </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurants</Link><span>, and </span><Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">retail spaces</Link><span>.</span>
+            <span>Perfect for </span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotels</Link><span>, </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurants</Link><span>, and </span><Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">retail spaces</Link><span>.</span>
           </p>
         </div>
       </section>
