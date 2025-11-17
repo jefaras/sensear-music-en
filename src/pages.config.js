@@ -9,7 +9,6 @@ import sonicStrategy from './pages/sonic-strategy';
 import hotelsResorts from './pages/hotels-resorts';
 import restaurantsBars from './pages/restaurants-bars';
 import retailStores from './pages/retail-stores';
-import wellnessCenters from './pages/wellness-centers';
 import pelicanosSifnosRestaurant from './pages/pelicanos-sifnos-restaurant';
 import blueBamboo from './pages/blue-bamboo';
 import klouviBar from './pages/klouvi-bar';
@@ -30,7 +29,8 @@ import signaturePlaylists from './pages/signature-playlists';
 import audioUpgrades from './pages/audio-upgrades';
 import eventSoundtracks from './pages/event-soundtracks';
 import artMuseumsFashion from './pages/art-museums-fashion';
-import Layout from './Layout.jsx';
+import wellnessGyms from './pages/wellness-gyms';
+import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
@@ -45,7 +45,6 @@ export const PAGES = {
     "hotels-resorts": hotelsResorts,
     "restaurants-bars": restaurantsBars,
     "retail-stores": retailStores,
-    "wellness-centers": wellnessCenters,
     "pelicanos-sifnos-restaurant": pelicanosSifnosRestaurant,
     "blue-bamboo": blueBamboo,
     "klouvi-bar": klouviBar,
@@ -66,10 +65,11 @@ export const PAGES = {
     "audio-upgrades": audioUpgrades,
     "event-soundtracks": eventSoundtracks,
     "art-museums-fashion": artMuseumsFashion,
+    "wellness-gyms": wellnessGyms,
 }
 
 export const pagesConfig = {
     mainPage: "Home",
     Pages: PAGES,
-    Layout: Layout,
+    Layout: __Layout,
 };

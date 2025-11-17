@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -105,7 +106,7 @@ export default function Sitemap() {
         { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
         { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
         { name: "Retail Stores", path: createPageUrl("retail-stores") },
-        { name: "Wellness Centers", path: createPageUrl("wellness-centers") },
+        { name: "Wellness & Gyms", path: createPageUrl("wellness-gyms") },
         { name: "Events & Experiences", path: createPageUrl("events-experiences") },
         { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") },
         { name: "Playlists Demos", path: createPageUrl("PlaylistsDemos") }

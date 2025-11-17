@@ -41,7 +41,7 @@ export default function Layout({ children }) {
         { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
         { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
         { name: "Retail Stores", path: createPageUrl("retail-stores") },
-        { name: "Wellness Centers", path: createPageUrl("wellness-centers") },
+        { name: "Wellness & Gyms", path: createPageUrl("wellness-gyms") },
         { name: "Events & Experiences", path: createPageUrl("events-experiences") },
         { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") },
         { name: "Playlists Demos", path: createPageUrl("PlaylistsDemos") }
@@ -70,7 +70,7 @@ export default function Layout({ children }) {
       { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
       { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
       { name: "Retail Stores", path: createPageUrl("retail-stores") },
-      { name: "Wellness Centers", path: createPageUrl("wellness-centers") },
+      { name: "Wellness & Gyms", path: createPageUrl("wellness-gyms") },
       { name: "Events & Experiences", path: createPageUrl("events-experiences") },
       { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") }
     ],
@@ -110,8 +110,8 @@ export default function Layout({ children }) {
       document.title = "Restaurants & Bars | SensEar";
     } else if (location.pathname === createPageUrl("retail-stores")) {
       document.title = "Retail Stores | SensEar";
-    } else if (location.pathname === createPageUrl("wellness-centers")) {
-      document.title = "Wellness Centers | SensEar";
+    } else if (location.pathname === createPageUrl("wellness-gyms")) { // Changed from wellness-centers
+      document.title = "Wellness & Gyms | SensEar"; // Changed from Wellness Centers
     } else if (location.pathname === createPageUrl("events-experiences")) {
       document.title = "Events & Experiences | SensEar";
     } else if (location.pathname === createPageUrl("art-museums-fashion")) {

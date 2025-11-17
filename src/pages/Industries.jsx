@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -370,9 +371,9 @@ export default function Industries() {
               </Link>
             </article>
 
-            {/* Industry 4: Wellness Centers */}
+            {/* Industry 4: Wellness & Gyms */}
             <article role="listitem">
-              <Link to={createPageUrl("wellness-centers")} aria-label="Learn more about Wellness Centers music curation services">
+              <Link to={createPageUrl("wellness-gyms")} aria-label="Learn more about Wellness & Gyms music curation services">
                 <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
@@ -382,7 +383,7 @@ export default function Industries() {
                       sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       alt="Serene wellness center spa with therapeutic ambient music soundscape"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
+      
                     <div className="absolute inset-0" aria-hidden="true" />
                     
                     <div className="absolute top-4 left-4">
@@ -391,10 +392,10 @@ export default function Industries() {
                       </div>
                     </div>
                   </div>
-
+      
                   <div className="p-6">
                     <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      Wellness Centers
+                      Wellness & Gyms
                     </h3>
                     <p className="text-black/70 mb-4">
                       Surround your guests with harmonies designed to melt away tension and guide them in revitalizing peace, enhancing the impact of each session.
