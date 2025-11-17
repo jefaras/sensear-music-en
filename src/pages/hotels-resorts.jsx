@@ -266,12 +266,13 @@ export default function HotelsResorts() {
       {/* Who is hotel music for */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Who is hotel music for</h2>
+          
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Who is hotel music for</h2>
               <p className="text-xl text-black/80 mb-6">Hotels and resorts that want music to work as part of the guest experience:</p>
-              <ul className="space-y-4 text-lg text-black/70">
+              <ul className="space-y-6 text-lg text-black/70">
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
                   <span><strong>Boutique hotels</strong> that live on word of mouth and atmosphere</span>
@@ -300,7 +301,7 @@ export default function HotelsResorts() {
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/38fbe55aa_3ee69fa2c5ac47509c6d1d927c51b21c.jpg"
                 alt="Luxury hotel terrace with elegant atmosphere"
-                className="w-3/4 h-auto rounded-2xl shadow-lg ml-auto"
+                className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>
           </div>
@@ -334,22 +335,27 @@ export default function HotelsResorts() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">The morning to midnight challenge</h3>
-                <p className="text-lg text-black/70">Breakfast, check in & sunset drinks need different energy. One playlist that works at 9:00 feels wrong by lunch or cocktail hour and guests feel the mismatch.</p>
+                <p className="text-lg text-black/70">Breakfast, sunset and dinner need different energy. The playlist of 9:00 feels wrong by lunch or cocktail hour & guests feel the mismatch.</p>
               </div>
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">The multi zone confusion</h3>
-                <p className="text-lg text-black/70">The hotel doesn't feel like one continuous experience.</p>
+                <p className="text-lg text-black/70">Lobby, restaurant, bar, spa & pool often run their own playlists with no shared logic. The hotel doesn't feel like one continuous experience.</p>
               </div>
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">The brand disconnect</h3>
-                <p className="text-lg text-black/70">You invest in interiors & service, but generic background music tells a different story.</p>
+                <p className="text-lg text-black/70">You invest in interiors & service, but generic background music tells a different story. Guests feel "any hotel" instead of your hotel.</p>
               </div>
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">The manual playlist headache</h3>
-                <p className="text-lg text-black/70">Songs repeat, volume jumps & no one is really accountable.</p>
+                <p className="text-lg text-black/70">Teams keep changing tracks from streaming apps that are not licensed for public spaces. Songs repeat, volume jumps & no one is really accountable.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Acoustically dead or noisy areas</h3>
+                <p className="text-lg text-black/70">Some corners feel flat, others harsh. Layout, materials & crowd noise create pockets where music either disappears or gets tiring.</p>
               </div>
             </div>
           </div>
@@ -426,12 +432,17 @@ export default function HotelsResorts() {
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3">More time spent in your spaces</h3>
-                <p className="text-lg text-white/80">Guests settle in the foyer, bar & restaurant because the atmosphere always feels right, leading to higher F&B revenue & secondary spend.</p>
+                <p className="text-lg text-white/80">Guests settle into the lobby, bar & restaurant because the atmosphere feels right at every moment, which supports F&B revenue & secondary spend.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">Consistent brand experience across zones & locations</h3>
+                <p className="text-lg text-white/80">Lobby, spa, pool & bar all tell the same story as your interiors & service standards, from one property to the next.</p>
               </div>
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3">Less operational friction & legal peace of mind</h3>
-                <p className="text-lg text-white/80">Staff no longer juggle playlists or worry about volume, and you rely on properly licensed music instead of consumer apps.</p>
+                <p className="text-lg text-white/80">Staff no longer juggle playlists or volume, & you rely on properly licensed music instead of consumer apps.</p>
               </div>
             </div>
           </div>
@@ -439,7 +450,7 @@ export default function HotelsResorts() {
       </section>
 
       {/* Social Proof */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-[#faebe3]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
             <strong>Beach House Antiparos</strong> used <strong>SensEar</strong> to give its beach, dining and retail areas their own sound while keeping one coherent story. Multi zone music now adapts to each moment, creating stays guests keep talking about.
