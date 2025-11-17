@@ -266,31 +266,46 @@ export default function HotelsResorts() {
 
       {/* Who is hotel music for */}
       <section className="py-20 bg-[#faebe3]">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-8">Who is hotel music for</h2>
-          <p className="text-xl text-black/80 mb-6">Hotels and resorts that want music to work as part of the guest experience:</p>
-          <ul className="space-y-4 text-lg text-black/70">
-            <li className="flex items-start gap-3">
-              <span className="text-black font-bold">•</span>
-              <span>Boutique hotels that live on word of mouth and atmosphere</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-black font-bold">•</span>
-              <span>Luxury resorts that need coherent sound from lobby to pool, spa and suites</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-black font-bold">•</span>
-              <span>Business hotels that switch from focused daytime to social evenings</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-black font-bold">•</span>
-              <span>Branded groups that want a consistent audio identity across locations</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-black font-bold">•</span>
-              <span>Properties that host weddings, retreats or conferences and need special soundscapes</span>
-            </li>
-          </ul>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Who is hotel music for</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Content */}
+            <div>
+              <p className="text-xl text-black/80 mb-6">Hotels and resorts that want music to work as part of the guest experience:</p>
+              <ul className="space-y-4 text-lg text-black/70">
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Boutique hotels that live on word of mouth and atmosphere</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Luxury resorts that need coherent sound from lobby to pool, spa and suites</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Business hotels that switch from focused daytime to social evenings</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Branded groups that want a consistent audio identity across locations</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Properties that host weddings, retreats or conferences and need special soundscapes</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/38fbe55aa_3ee69fa2c5ac47509c6d1d927c51b21c.jpg"
+                alt="Luxury hotel terrace with elegant atmosphere"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -304,32 +319,45 @@ export default function HotelsResorts() {
 
       {/* Industry Specific Challenges */}
       <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12">Industry specific challenges</h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">The morning to midnight challenge</h3>
-              <p className="text-lg text-black/70">Breakfast, check in, sunset drinks and late nights all need different energy. One static playlist that works at 7:00 feels wrong by lunchtime or cocktail hour. Guests feel the mismatch even if they cannot name it.</p>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Industry specific challenges</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d8d6391d9_3830d5bbb709e891ec72b2509c0455db.jpg"
+                alt="Modern hotel bar interior with ambient lighting"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">The multi zone confusion</h3>
-              <p className="text-lg text-black/70">Lobby, restaurant, bar, spa and pool often run their own playlists with no shared logic. The hotel starts to feel like several brands stitched together, not one continuous experience.</p>
-            </div>
+            {/* Right: Content */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The morning to midnight challenge</h3>
+                <p className="text-lg text-black/70">Breakfast, check in, sunset drinks and late nights all need different energy. One static playlist that works at 7:00 feels wrong by lunchtime or cocktail hour. Guests feel the mismatch even if they cannot name it.</p>
+              </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">The brand disconnect</h3>
-              <p className="text-lg text-black/70">You invest in interiors and service, but generic background music or staff phones on shuffle tell a different story. Guests feel "any hotel" instead of your hotel.</p>
-            </div>
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The multi zone confusion</h3>
+                <p className="text-lg text-black/70">Lobby, restaurant, bar, spa and pool often run their own playlists with no shared logic. The hotel starts to feel like several brands stitched together, not one continuous experience.</p>
+              </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">The manual playlist headache</h3>
-              <p className="text-lg text-black/70">Staff keep changing tracks from consumer apps that are not licensed for public spaces. Songs repeat, volume jumps, and no one is really accountable for the result.</p>
-            </div>
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The brand disconnect</h3>
+                <p className="text-lg text-black/70">You invest in interiors and service, but generic background music or staff phones on shuffle tell a different story. Guests feel "any hotel" instead of your hotel.</p>
+              </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">Acoustically dead or noisy areas</h3>
-              <p className="text-lg text-black/70">Some corners feel flat and dull, others are harsh and tiring. Layout, materials and crowd noise create pockets where the music either disappears or becomes tiring.</p>
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The manual playlist headache</h3>
+                <p className="text-lg text-black/70">Staff keep changing tracks from consumer apps that are not licensed for public spaces. Songs repeat, volume jumps, and no one is really accountable for the result.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Acoustically dead or noisy areas</h3>
+                <p className="text-lg text-black/70">Some corners feel flat and dull, others are harsh and tiring. Layout, materials and crowd noise create pockets where the music either disappears or becomes tiring.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -337,37 +365,50 @@ export default function HotelsResorts() {
 
       {/* How SensEar Solves This */}
       <section className="py-20 bg-[#faebe3]">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-12">How SensEar solves this</h2>
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">24 hour journey mapping</h3>
-              <p className="text-lg text-black/70">We design music journeys that follow the natural rhythm of your property. Morning sets welcome gently, daytime supports flow, and evening playlists add warmth and intimacy without feeling repetitive.</p>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">How SensEar solves this</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Content */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">24 hour journey mapping</h3>
+                <p className="text-lg text-black/70">We design music journeys that follow the natural rhythm of your property. Morning sets welcome gently, daytime supports flow, and evening playlists add warmth and intimacy without feeling repetitive.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Zone specific curation with one identity</h3>
+                <p className="text-lg text-black/70">Our curators build distinct soundscapes for lobby, bar, restaurant, spa and pool, all tied together by a shared sonic identity. Guests feel smooth changes in mood as they move through your spaces, not jarring jumps.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Signature playlists that fit your brand</h3>
+                <p className="text-lg text-black/70">We translate your brand values into sound and build private, hotel only playlists instead of generic mixes. Your lobby and lounge music sound as custom as your interiors.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Central control instead of staff DJing</h3>
+                <p className="text-lg text-black/70">Scheduling, updates and volume rules are managed centrally, across one or several locations. Staff are freed from playlist duty and your music stays compliant with commercial licensing.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Sound tuned to your spaces</h3>
+                <p className="text-lg text-black/70">We take acoustics into account when we design playlists and system settings, so the lobby feels warm rather than echoey and quiet corners stay intimate rather than silent.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Strategy for groups and new openings</h3>
+                <p className="text-lg text-black/70">For hotel brands and resort groups, we develop a clear sonic strategy that defines how your properties should sound, then roll it out across locations and new openings with local nuances built in.</p>
+              </div>
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">Zone specific curation with one identity</h3>
-              <p className="text-lg text-black/70">Our curators build distinct soundscapes for lobby, bar, restaurant, spa and pool, all tied together by a shared sonic identity. Guests feel smooth changes in mood as they move through your spaces, not jarring jumps.</p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">Signature playlists that fit your brand</h3>
-              <p className="text-lg text-black/70">We translate your brand values into sound and build private, hotel only playlists instead of generic mixes. Your lobby and lounge music sound as custom as your interiors.</p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">Central control instead of staff DJing</h3>
-              <p className="text-lg text-black/70">Scheduling, updates and volume rules are managed centrally, across one or several locations. Staff are freed from playlist duty and your music stays compliant with commercial licensing.</p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">Sound tuned to your spaces</h3>
-              <p className="text-lg text-black/70">We take acoustics into account when we design playlists and system settings, so the lobby feels warm rather than echoey and quiet corners stay intimate rather than silent.</p>
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-bold text-black mb-3">Strategy for groups and new openings</h3>
-              <p className="text-lg text-black/70">For hotel brands and resort groups, we develop a clear sonic strategy that defines how your properties should sound, then roll it out across locations and new openings with local nuances built in.</p>
+            {/* Right: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0dd5f695_13e97d3def8d47a1efe25c37e0f29eb2.jpg"
+                alt="Luxury hotel pool terrace overlooking the ocean"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -375,27 +416,40 @@ export default function HotelsResorts() {
 
       {/* Key Benefits */}
       <section className="py-20 bg-black">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">Key benefits</h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-3">Higher guest satisfaction</h3>
-              <p className="text-lg text-white/80">Music becomes one of the reasons guests describe your hotel as relaxing, lively or atmospheric, supporting higher ambience and overall satisfaction scores.</p>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Key benefits</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/95c488ed9_silver-ear-ear-ring.jpg"
+                alt="Silver ear sculpture representing listening and sonic branding"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-3">More time spent in your spaces</h3>
-              <p className="text-lg text-white/80">Guests settle into the lobby, bar and restaurant because the atmosphere feels right at every moment, which supports F&B revenue and secondary spend. Field research shows brand aligned music can increase sales in hospitality venues by around 9.1%.</p>
-            </div>
+            {/* Right: Content */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">Higher guest satisfaction</h3>
+                <p className="text-lg text-white/80">Music becomes one of the reasons guests describe your hotel as relaxing, lively or atmospheric, supporting higher ambience and overall satisfaction scores.</p>
+              </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-3">Consistent brand experience across zones and locations</h3>
-              <p className="text-lg text-white/80">Lobby, spa, pool and bar all tell the same story as your interiors and service standards, from one property to the next.</p>
-            </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">More time spent in your spaces</h3>
+                <p className="text-lg text-white/80">Guests settle into the lobby, bar and restaurant because the atmosphere feels right at every moment, which supports F&B revenue and secondary spend. Field research shows brand aligned music can increase sales in hospitality venues by around 9.1%.</p>
+              </div>
 
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-3">Less operational hassle and legal peace of mind</h3>
-              <p className="text-lg text-white/80">Staff no longer juggle playlists or worry about volume, and you rely on properly licensed music instead of consumer apps.</p>
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">Consistent brand experience across zones and locations</h3>
+                <p className="text-lg text-white/80">Lobby, spa, pool and bar all tell the same story as your interiors and service standards, from one property to the next.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">Less operational hassle and legal peace of mind</h3>
+                <p className="text-lg text-white/80">Staff no longer juggle playlists or worry about volume, and you rely on properly licensed music instead of consumer apps.</p>
+              </div>
             </div>
           </div>
         </div>
