@@ -448,20 +448,20 @@ export default function HotelsResorts() {
       <section className="py-16 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
+            {/* Left: Text */}
+            <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
+                <strong>Beach House Antiparos</strong> used <strong>SensEar</strong> to give its beach, dining and retail areas their own sound while keeping one coherent story. Multi zone music now adapts to each moment, creating stays guests keep talking about.
+              </p>
+            </div>
+
+            {/* Right: Image */}
             <div className="hidden lg:block">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/4bc198c23_BHA1.png"
                 alt="Beach House Antiparos resort terrace"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
-            </div>
-
-            {/* Right: Text */}
-            <div>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                <strong>Beach House Antiparos</strong> used <strong>SensEar</strong> to give its beach, dining and retail areas their own sound while keeping one coherent story. Multi zone music now adapts to each moment, creating stays guests keep talking about.
-              </p>
             </div>
           </div>
 
