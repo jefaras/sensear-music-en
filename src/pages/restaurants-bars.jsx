@@ -233,6 +233,7 @@ export default function RestaurantsBars() {
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5eefecd97_Rebis-Restaurant-Desenzano-del-Garda-Italia-3-1--.jpg 2400w"
 
 
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Stylish restaurant and bar interior with curated music atmosphere for dining experiences"
                 className="absolute w-full h-full object-cover md:hidden" />
@@ -241,6 +242,7 @@ export default function RestaurantsBars() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5eefecd97_Rebis-Restaurant-Desenzano-del-Garda-Italia-3-1--.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5eefecd97_Rebis-Restaurant-Desenzano-del-Garda-Italia-3-1--.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5eefecd97_Rebis-Restaurant-Desenzano-del-Garda-Italia-3-1--.jpg 2400w"
+
 
 
                 sizes="(max-width: 1800px) 100vw, 1800px"
@@ -310,11 +312,11 @@ export default function RestaurantsBars() {
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-          <Breadcrumbs items={[
-          { label: "Industries", path: createPageUrl("Industries") },
-          { label: "Restaurants & Bars", path: createPageUrl("restaurants-bars") }]
-          } />
-         </div> */}
+           <Breadcrumbs items={[
+           { label: "Industries", path: createPageUrl("Industries") },
+           { label: "Restaurants & Bars", path: createPageUrl("restaurants-bars") }]
+           } />
+          </div> */}
 
       {/* Industry Specific Challenges */}
       <section className="py-20 bg-white">
@@ -377,7 +379,7 @@ export default function RestaurantsBars() {
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Brand exact restaurant & bar playlists</h3>
-                <p className="text-lg text-black/70">We translate your concept into sound, from laid back bistro to high energy cocktail bar, so every track supports the experience you want to be known for.</p>
+                <p className="text-lg text-black/70">We translate your concept into sound, from laid back bistro to high energy cocktail bar, supporting the experience you want to be known for.</p>
               </div>
 
               <div>
