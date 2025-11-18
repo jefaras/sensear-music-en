@@ -357,28 +357,23 @@ export default function WellnessGyms() {
             {/* Right: Content */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The anxiety amplifier</h3>
-                <p className="text-lg text-black/70">Generic spa playlists loop endlessly or feel synthetic. Instead of calming the nervous system, they distract clients right when they should relax.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">The anxious mind</h3>
+                <p className="text-lg text-black/70">Generic spa playlists loop endlessly or sound fake. Instead of calming the nervous system, they distract clients right when they should relax.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The treatment disruption</h3>
+                <h3 className="text-2xl font-bold text-black mb-3">The broken treatment flow</h3>
                 <p className="text-lg text-black/70">Sudden transitions or off mood tracks break the flow of a massage, facial or ritual. Moments that should feel deep & immersive become shallow or forgettable.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The flat energy class</h3>
+                <h3 className="text-2xl font-bold text-black mb-3">The flat class energy</h3>
                 <p className="text-lg text-black/70">Gym classes run on autopilot with the same workout playlist all day. Energy doesn't rise when it should, cool downs feel rushed & members don't feel a clear journey.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The noise fatigue</h3>
-                <p className="text-lg text-black/70">Harsh highs, clashing speakers & crowd noise create constant pressure on the ears. Gym members cut sessions short or avoid peak times because the room feels tiring.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The brand split</h3>
-                <p className="text-lg text-black/70">Spa, studio & gym floor often sound like different brands. One space is calm, another chaotic, another silent. The overall experience doesn't feel intentional or on brand.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">The noise fatigue & brand split</h3>
+                <p className="text-lg text-black/70">Harsh speakers & crowd noise create constant stress on the ears. Spa, treatment rooms & gym floor sound like different brands instead of one unified getaway.</p>
               </div>
             </div>
           </div>
@@ -405,22 +400,12 @@ export default function WellnessGyms() {
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Time of day & schedule curation</h3>
-                <p className="text-lg text-black/70">Music follows treatment schedules, classes & client flow, so all times and days get the right energy, not one-size-fits-all sets.</p>
+                <p className="text-lg text-black/70">Music follows treatment schedules, classes & member flow, so all times and days get the right energy, not one-size-fits-all sets.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Acoustic comfort & level smoothing</h3>
-                <p className="text-lg text-black/70">We adjust genres & tempo to reduce listener fatigue. Smoothing music levels helps gym members stay longer without feeling drained.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Zoned experiences with brand consistency</h3>
-                <p className="text-lg text-black/70">Reception, treatment rooms, cardio, strength & studios can get their own sound that fits your brand ID, in all locations & spaces.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Scheduling & licensing peace of mind</h3>
-                <p className="text-lg text-black/70">You get easy setup, scheduling & legal music licensed for business. Your team isn't juggling devices and you are covered for commercial use.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Acoustic comfort & zoned consistency</h3>
+                <p className="text-lg text-black/70">We tune genre, tempo & levels to remove disruption & fatigue and give all spaces their own sound. Central curation & legal licensing keep everything easy to run.</p>
               </div>
             </div>
 
@@ -445,7 +430,7 @@ export default function WellnessGyms() {
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/73968dd68_3e2368a546ee51b9eb0a87ab52327121_cropped.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16b4501cf_80735099_10156462996866216_6190029784664244224_n_cropped.jpg"
                 alt="Relaxing wellness center pool"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
