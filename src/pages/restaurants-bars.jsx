@@ -381,17 +381,12 @@ export default function RestaurantsBars() {
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Brand exact restaurant & bar playlists</h3>
-                <p className="text-lg text-black/70">We translate your concept into sound, from laid back bistro to high energy cocktail bar, supporting the experience you want to be known for.</p>
+                <p className="text-lg text-black/70">We translate your concept into sound, supporting the experience you want to be known for.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Fresh rotations that keep teams engaged</h3>
-                <p className="text-lg text-black/70">Regular updates keep your music fresh for regulars & staff, avoiding the fatigue that comes with the same playlist every night.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Better sound, not just better songs</h3>
-                <p className="text-lg text-black/70">For venues with echo, dead zones or harsh highs, we pair music curation with audio upgrades so every seat hears a balanced mix.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Fresh rotations & better sound</h3>
+                <p className="text-lg text-black/70">Regular updates keep music fresh for regulars & staff, while audio upgrades offer a well balanced mix.</p>
               </div>
             </div>
 
@@ -431,11 +426,11 @@ export default function RestaurantsBars() {
 
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3">More time, more spend per table</h3>
-                <p className="text-lg text-white/80">Guests stay for another drink or dessert, increasing bar revenue. Research shows brand-fit music boosts hospitality sales.</p>
+                <p className="text-lg text-white/80">Guests stay for another drink or dessert, increasing bar revenue. Research shows brand-fit music boosts F&B sales.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-white mb-3">A dining atmosphere that matches your concept</h3>
+                <h3 className="text-2xl font-bold text-white mb-3">A dining atmosphere that fit your concept</h3>
                 <p className="text-lg text-white/80">Music, lighting & service finally tell the same story, which makes it easier to justify pricing & build regulars.</p>
               </div>
 
