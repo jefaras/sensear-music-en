@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -208,6 +207,10 @@ export default function Layout({ children }) {
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 700;
         }
+
+        .font-jakarta {
+          font-family: 'Plus Jakarta Sans', sans-serif;
+        }
         
         /* Enforce consistent line-height for H1 and H2 */
         h1 {
@@ -278,7 +281,7 @@ export default function Layout({ children }) {
 
                 <Link
                   to={item.path} 
-                  className={`py-2 text-base font-bold tracking-wide transition-colors relative flex items-center gap-2 hover:underline decoration-1 underline-offset-4 ${
+                  className={`py-2 text-base font-bold tracking-wide transition-colors relative flex items-center gap-2 hover:underline decoration-1 underline-offset-4 font-jakarta ${
                     isScrolled ? 'text-slate-50' : 'text-black'
                   }`}>
 
@@ -295,7 +298,7 @@ export default function Layout({ children }) {
                           key={subItem.name}
                           to={subItem.path}
                           onClick={() => setOpenDropdown(null)}
-                          className={`block px-6 py-3 text-base transition-colors hover:underline decoration-1 underline-offset-4 ${
+                          className={`block px-6 py-3 text-base transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta ${
                             location.pathname === subItem.path ?
                               "bg-peach-layer text-black font-medium" :
                               "text-black hover:bg-peach-layer"}`
@@ -314,7 +317,7 @@ export default function Layout({ children }) {
             <Link to={createPageUrl("ContactUs")}>
               <Button 
                 variant="outline" 
-                className={`font-bold bg-transparent hover:bg-transparent transition-colors hover:underline decoration-1 underline-offset-4 ${
+                className={`font-bold bg-transparent hover:bg-transparent transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta ${
                   isScrolled 
                     ? 'border-white text-white hover:border-white hover:text-white' 
                     : 'border-black text-black hover:border-black hover:text-black'
@@ -344,7 +347,7 @@ export default function Layout({ children }) {
                   <Link
                     to={item.path}
                     onClick={() => !item.subItems && setIsMenuOpen(false)}
-                    className={`block text-base font-bold py-2 hover:underline decoration-1 underline-offset-4 ${
+                    className={`block text-base font-bold py-2 hover:underline decoration-1 underline-offset-4 font-jakarta ${
                       location.pathname === item.path ? "text-white underline" : "text-white/90"}`
                     }>
 
@@ -357,7 +360,7 @@ export default function Layout({ children }) {
                           key={subItem.name}
                           to={subItem.path}
                           onClick={() => setIsMenuOpen(false)}
-                          className={`block text-sm py-2 hover:underline decoration-1 underline-offset-4 ${
+                          className={`block text-sm py-2 hover:underline decoration-1 underline-offset-4 font-jakarta ${
                             location.pathname === subItem.path ?
                               "text-white underline" :
                               "text-white/70 hover:text-peach"}`
@@ -375,7 +378,7 @@ export default function Layout({ children }) {
               <Link
                 to={createPageUrl("ContactUs")}
                 onClick={() => setIsMenuOpen(false)}
-                className={`block text-base font-bold py-2 hover:underline decoration-1 underline-offset-4 ${
+                className={`block text-base font-bold py-2 hover:underline decoration-1 underline-offset-4 font-jakarta ${
                   location.pathname === createPageUrl("ContactUs") ? "text-white underline" : "text-white/90"}`
                 }>
                 Contact
@@ -411,16 +414,16 @@ export default function Layout({ children }) {
               </div>
               <div className="space-y-2 mb-6">
                 <div>
-                  <a href="mailto:hello@sensear.music" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4">hello@sensear.music</a>
+                  <a href="mailto:hello@sensear.music" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">hello@sensear.music</a>
                 </div>
                 <div>
-                  <a href="tel:+306976994212" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4">+30 6976994212</a>
+                  <a href="tel:+306976994212" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">+30 6976994212</a>
                 </div>
               </div>
 
               {/* Sonic Insights */}
               <div>
-                <h3 className="text-sm font-semibold text-peach mb-3">Sonic Insights</h3>
+                <h3 className="text-sm font-semibold text-peach mb-3 font-jakarta">Sonic Insights</h3>
                 <div className="flex gap-2">
                   <Input type="email" placeholder="Your email" className="bg-white/10 border-white/20 text-white placeholder:text-white/50 flex-1 text-sm h-9 max-w-[180px]" />
                   <Button className="bg-slate-50 text-slate-950 px-3 py-2 text-xs font-semibold rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 hover:bg-peach-layer">Subscribe</Button>
@@ -430,47 +433,47 @@ export default function Layout({ children }) {
 
             {/* Services */}
             <div>
-              <Link to={createPageUrl("Services")} className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider hover:underline decoration-1 underline-offset-4 inline-block">
+              <Link to={createPageUrl("Services")} className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider hover:underline decoration-1 underline-offset-4 inline-block font-jakarta">
                 Services
               </Link>
               <div className="space-y-2">
                 {footerNavItems.services.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">{item.name}</Link>
                 ))}
               </div>
             </div>
 
             {/* Industries */}
             <div>
-              <Link to={createPageUrl("Industries")} className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider hover:underline decoration-1 underline-offset-4 inline-block">
+              <Link to={createPageUrl("Industries")} className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider hover:underline decoration-1 underline-offset-4 inline-block font-jakarta">
                 Industries
               </Link>
               <div className="space-y-2">
                 {footerNavItems.industries.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">{item.name}</Link>
                 ))}
-                <Link to={createPageUrl("PlaylistsDemos")} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">Playlists Demos</Link>
+                <Link to={createPageUrl("PlaylistsDemos")} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">Playlists Demos</Link>
               </div>
             </div>
 
             {/* Case Studies */}
             <div>
-              <Link to={createPageUrl("CaseStudies")} className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider hover:underline decoration-1 underline-offset-4 inline-block">
+              <Link to={createPageUrl("CaseStudies")} className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider hover:underline decoration-1 underline-offset-4 inline-block font-jakarta">
                 Case Studies
               </Link>
               <div className="space-y-2">
                 {footerNavItems.caseStudies.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">{item.name}</Link>
                 ))}
               </div>
             </div>
 
             {/* Company */}
             <div>
-              <h3 className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider">Company</h3>
+              <h3 className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider font-jakarta">Company</h3>
               <div className="space-y-2">
                 {footerNavItems.company.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">{item.name}</Link>
                 ))}
               </div>
             </div>
