@@ -268,7 +268,7 @@ export default function RestaurantsBars() {
       {/* Who this is for */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Who this is for</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Who this is for</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
@@ -317,7 +317,7 @@ export default function RestaurantsBars() {
       {/* Industry Specific Challenges */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Industry specific challenges</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Industry specific challenges</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
@@ -358,7 +358,7 @@ export default function RestaurantsBars() {
       {/* How SensEar Solves This */}
       <section className="py-20 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">How SensEar solves this</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How SensEar solves this</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
@@ -404,7 +404,7 @@ export default function RestaurantsBars() {
       {/* Key Benefits */}
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Key benefits</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-white text-right">Key benefits</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
@@ -445,7 +445,7 @@ export default function RestaurantsBars() {
       {/* Social Proof with Image */}
       <section className="py-16 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
@@ -455,22 +455,23 @@ export default function RestaurantsBars() {
               />
             </div>
 
-            {/* Right: Text and CTA */}
+            {/* Right: Text */}
             <div>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-8">
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
                 Venues like <strong>Blue Bamboo</strong> & <strong>Klouvi Bar</strong> use <strong>SensEar</strong> to turn their music into part of the dining ritual. Playlists now follow service flow & guest mood, helping them turn first time visitors into regulars.
               </p>
-              
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <h3 className="text-2xl font-bold text-black mb-4">Hear this industry in action</h3>
-                <p className="text-lg text-black/70 mb-6">Listen to a curated demo playlist for restaurants & bars</p>
-                <Link to={createPageUrl("PlaylistsDemos")}>
-                  <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white w-full">
-                    Explore Demo Playlists
-                  </Button>
-                </Link>
-              </div>
             </div>
+          </div>
+
+          {/* Hear this industry in action - Centered below */}
+          <div className="max-w-2xl mx-auto mt-16 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Hear this industry in action</h3>
+            <p className="text-lg md:text-xl text-black/70 mb-6">Listen to a curated demo playlist for restaurants & bars</p>
+            <Link to={createPageUrl("PlaylistsDemos")}>
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8">
+                Explore Demo Playlists
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
