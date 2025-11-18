@@ -266,7 +266,7 @@ export default function HotelsResorts() {
       {/* Who is hotel music for */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Who is hotel music for</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Who is hotel music for</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
@@ -319,7 +319,7 @@ export default function HotelsResorts() {
       {/* Industry Specific Challenges */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Industry specific challenges</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Industry specific challenges</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
@@ -365,7 +365,7 @@ export default function HotelsResorts() {
       {/* How SensEar Solves This */}
       <section className="py-20 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">How SensEar solves this</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How SensEar solves this</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
@@ -411,7 +411,7 @@ export default function HotelsResorts() {
       {/* Key Benefits */}
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Key benefits</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-white text-right">Key benefits</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
@@ -449,19 +449,30 @@ export default function HotelsResorts() {
         </div>
       </section>
 
-      {/* Social Proof */}
+      {/* Social Proof with Image */}
       <section className="py-16 bg-[#faebe3]">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-            <strong>Beach House Antiparos</strong> used <strong>SensEar</strong> to give its beach, dining and retail areas their own sound while keeping one coherent story. Multi zone music now adapts to each moment, creating stays guests keep talking about.
-          </p>
-        </div>
-      </section>
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/4bc198c23_BHA1.png"
+                alt="Beach House Antiparos resort terrace"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
 
-      {/* Hear this industry in action */}
-      <section className="py-20 bg-[#faebe3]">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Hear this industry in action</h2>
+            {/* Right: Text */}
+            <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
+                <strong>Beach House Antiparos</strong> used <strong>SensEar</strong> to give its beach, dining and retail areas their own sound while keeping one coherent story. Multi zone music now adapts to each moment, creating stays guests keep talking about.
+              </p>
+            </div>
+          </div>
+
+          {/* Hear this industry in action - Centered below */}
+          <div className="max-w-2xl mx-auto mt-16 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Hear this industry in action</h3>
           <p className="text-xl text-black/70 mb-8">Listen to a curated demo playlist for hotels and resorts</p>
           <Link to={createPageUrl("PlaylistsDemos")}>
             <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white">
