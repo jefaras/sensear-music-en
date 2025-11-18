@@ -505,26 +505,3 @@ export default function HotelsResorts() {
     </div>
   );
 }
-
-      {/* Final CTA */}
-      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Transform your hotel's atmosphere with better music</h2>
-          <p className="text-xl text-black/80 mb-8">
-            We review your current music setup, map your guest journey & propose a tailored sound approach for you.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg">
-                Book a music consultation
-              </Button>
-            </Link>
-          </div>
-          <p className="text-black/70 mt-8">
-            Explore how our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">Signature Playlists</Link> and <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black font-semibold">Sonic Strategy</Link> work for hotels & resorts.
-          </p>
-        </div>
-      </section>
-    </div>
-  );
-}
