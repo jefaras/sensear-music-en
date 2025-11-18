@@ -233,13 +233,13 @@ export default function EventsExperiences() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Your all-in-one music enabler<br />
-              for your event's needs
+              Music for events & experiences<br />
+              that guests feel & remember
             </h1>
             
             <div className="mb-8 max-w-4xl slide-up-2">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Bringing an event to perfection can be tough, so let our experienced team handle everything sound-related for you.
+                At events, sound is the glue between moments. SensEar designs custom event soundtracks, conference music & wedding playlists so every phase feels intentional, from doors open to last track.
               </p>
             </div>
           </div>
@@ -286,113 +286,234 @@ export default function EventsExperiences() {
         } />
       </div> */}
 
-      {/* Who is this service for */}
+      {/* Who is this for */}
       <section className="py-20 bg-black" aria-labelledby="who-heading">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 id="who-heading" className="text-3xl font-bold text-center mb-6 text-white">Who is this service for</h2>
+          <h2 id="who-heading" className="text-3xl font-bold text-center mb-6 text-white leading-[1.25]">Who this is for</h2>
           <p className="text-center text-white/70 mb-8 max-w-3xl mx-auto">
-            Our music curation & A.V. services are perfect for brands and spaces that want to transform sound into experience.
+            Events & experiences where sound should feel as designed as everything else:
           </p>
           <ul className="space-y-4 max-w-3xl mx-auto" role="list">
             <li className="flex items-start gap-3">
               <CheckCircle className="w-6 h-6 text-white mt-0.5 flex-shrink-0" aria-hidden="true" />
-              <span className="text-white/70">Hotels, resorts, and restaurants that host live events or ambient experiences.</span>
+              <span className="text-white/70">Hotels, resorts & restaurants that host live events or ambient experiences</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-6 h-6 text-white mt-0.5 flex-shrink-0" aria-hidden="true" />
-              <span className="text-white/70">Event organizers and creative agencies designing immersive activations.</span>
+              <span className="text-white/70">Event organisers & creative agencies designing immersive activations</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-6 h-6 text-white mt-0.5 flex-shrink-0" aria-hidden="true" />
-              <span className="text-white/70">Private chefs, curators, and professionals offering personalized or ceremonial dining.</span>
+              <span className="text-white/70">Private chefs, curators & professionals offering personalised or ceremonial dining</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-6 h-6 text-white mt-0.5 flex-shrink-0" aria-hidden="true" />
-              <span className="text-white/70">Cultural venues, fashion shows, galleries and concept spaces seeking a sonic identity.</span>
+              <span className="text-white/70">Cultural venues, fashion shows, galleries & concept spaces seeking a sonic identity</span>
             </li>
             <li className="flex items-start gap-3">
               <CheckCircle className="w-6 h-6 text-white mt-0.5 flex-shrink-0" aria-hidden="true" />
-              <span className="text-white/70">Individuals or brands who understand that the sound defines the experience.</span>
+              <span className="text-white/70">Brands or individuals who know sound defines the experience</span>
             </li>
           </ul>
         </div>
       </section>
 
-      <section className="py-24 bg-white" aria-labelledby="problems-heading">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 id="problems-heading" className="text-2xl sm:text-3xl font-bold text-black text-center mb-6">Problems We Solve</h2>
-          <p className="text-center text-black/70 mb-10 max-w-3xl mx-auto px-4">
-            Our expert technicians ensure your event's sound is crystal clear, hand-picking the perfect equipment and carefully managing every audio detail from start to finish.
-          </p>
-          <div className="grid md:grid-cols-2 gap-8" role="list">
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Disjointed or Generic Event Soundtracks</h3>
-                  <p className="text-sm sm:text-base text-black/70">We craft custom, multi-chapter musical narratives tailored to your event's theme and flow.</p>
-                </div>
-              </div>
+      {/* Industry-specific challenges */}
+      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="challenges-heading">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 id="challenges-heading" className="text-4xl font-bold text-center mb-6 leading-[1.25]">Industry-specific challenges</h2>
+          
+          <div className="grid md:grid-cols-2 gap-12 mb-16">
+            <div>
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/72affbd7e_a4f32fd29f6b2f75dae0c99d5942d2c8.jpg" 
+                alt="Event atmosphere challenge" 
+                className="w-full h-auto rounded-2xl shadow-lg mb-6"
+              />
+              <h3 className="text-2xl font-bold mb-3">The copy-paste playlist problem</h3>
+              <p className="text-black/70 leading-relaxed">
+                Generic playlists make your event feel like any other night. The soundtrack never quite fits the concept, the crowd or the moment you're trying to create.
+              </p>
+            </div>
+
+            <div>
+              <img 
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/604e3a452_2eb02f6aa00cbdc92f835b115166f9fb.jpg" 
+                alt="Event technical challenge" 
+                className="w-full h-auto rounded-2xl shadow-lg mb-6"
+              />
+              <h3 className="text-2xl font-bold mb-3">The soundcheck anxiety</h3>
+              <p className="text-black/70 leading-relaxed">
+                You worry about volume jumps, feedback, dead zones or tracks cutting out right when things get emotional. Instead of being present, you're listening for problems.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-xl font-bold mb-3">The vendor tangle</h3>
+              <p className="text-black/70 leading-relaxed">
+                DJ, AV, venue & live acts all manage a piece of the puzzle. You spend time chasing updates & solving clashes instead of shaping the experience.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">The flat in-between moments</h3>
+              <p className="text-black/70 leading-relaxed">
+                Energy dips between talks, courses or segments. Guests scroll their phones instead of feeling carried through the story you planned.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold mb-3">The one-size-fits-all soundtrack</h3>
+              <p className="text-black/70 leading-relaxed">
+                Pre-made playlists don't respect pacing, timing or key moments. The same mood runs through welcome drinks, main stage & closing, so nothing really lands.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How SensEar solves this */}
+      <section className="py-24 bg-white" aria-labelledby="solutions-heading">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 id="solutions-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25]">How SensEar solves this</h2>
+          
+          <div className="space-y-12">
+            <article>
+              <h3 className="text-2xl font-bold mb-3">Run-of-show sound design</h3>
+              <p className="text-black/70 leading-relaxed">
+                We design custom, multi-chapter soundtracks mapped to your run-of-show, from arrival & welcome to peak moments & final track. Each segment gets its own arc, whether it's conference music, a launch, or a wedding dinner.
+              </p>
             </article>
 
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Technical Sound Issues</h3>
-                  <p className="text-sm sm:text-base text-black/70">Our expert engineers ensure flawless playback with optimized arrays and precision time alignment. No dead zones, no surprises.</p>
-                </div>
-              </div>
+            <article>
+              <h3 className="text-2xl font-bold mb-3">Story-driven event soundtracks</h3>
+              <p className="text-black/70 leading-relaxed">
+                Our curators craft dynamic, story-driven musical journeys that fit your theme, brand & guests. Music evolves as the night progresses so people feel guided, not just entertained.
+              </p>
             </article>
 
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Handling Multiple Vendors</h3>
-                  <p className="text-sm sm:text-base text-black/70">We are your unique point of contact for music curation and AV production, from corporate galas to private gatherings.</p>
-                </div>
-              </div>
+            <article>
+              <h3 className="text-2xl font-bold mb-3">Technical reliability & AV supervision</h3>
+              <p className="text-black/70 leading-relaxed">
+                Our engineers hand-pick equipment, tune levels & manage playback with optimised arrays & time alignment, so there are no dead zones, sudden jumps or surprises. What guests hear stays clear, even & present.
+              </p>
             </article>
 
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Low Guest Engagement & Reactions</h3>
-                  <p className="text-sm sm:text-base text-black/70">We keep your audience immersed with music that evolves naturally with every phase of your event, making it memorable.</p>
-                </div>
-              </div>
+            <article>
+              <h3 className="text-2xl font-bold mb-3">One point of contact for sound & AV</h3>
+              <p className="text-black/70 leading-relaxed">
+                We coordinate music curation & AV production, working directly with your venue, DJ, bands & producers. You talk to one team that understands both creative vision & technical detail.
+              </p>
             </article>
 
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">One-Size-Fits-All Soundtracks</h3>
-                  <p className="text-sm sm:text-base text-black/70">Our curators craft dynamic, story-driven musical journeys tailored to your event's unique vibe.</p>
-                </div>
-              </div>
-            </article>
-
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Complex Setup & Technical Gaps</h3>
-                  <p className="text-sm sm:text-base text-black/70">From curation to flawless AV execution, we handle it all. Seamlessly and stress-free.</p>
-                </div>
-              </div>
+            <article>
+              <h3 className="text-2xl font-bold mb-3">Pre, during & post-event support</h3>
+              <p className="text-black/70 leading-relaxed">
+                From advance planning & soundchecks to live supervision & final fade-out, we stay with you. We prepare backups & contingency plans so last-minute changes or extra speeches stay smooth.
+              </p>
             </article>
           </div>
-          <div className="text-center mt-16">
-            <p className="text-black/70 mb-6">
-              <span>Explore other </span><Link to={createPageUrl("Industries")} className="underline hover:text-black font-semibold">industries we serve</Link><span>, discover all our </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">services</Link><span>, or learn about </span><Link to={createPageUrl("what-exactly-does-music-curator-do")} className="underline hover:text-black font-semibold">what music curators do</Link><span>.</span>
-            </p>
+        </div>
+      </section>
+
+      {/* Key benefits */}
+      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="benefits-heading">
+        <div className="max-w-5xl mx-auto px-6">
+          <h2 id="benefits-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25]">Key benefits</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            <article className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold mb-3">Events that feel like experiences, not schedules</h3>
+              <p className="text-black/70 leading-relaxed">
+                Guests feel guided from welcome to finale, with music that frames each moment instead of just filling silence.
+              </p>
+            </article>
+
+            <article className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold mb-3">Stronger engagement & reactions</h3>
+              <p className="text-black/70 leading-relaxed">
+                Carefully timed shifts in energy help people listen, connect, share & remember, making your event more photogenic, "postable" & talk-worthy.
+              </p>
+            </article>
+
+            <article className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold mb-3">Less stress for organisers & hosts</h3>
+              <p className="text-black/70 leading-relaxed">
+                You have one partner for music & AV, clear decisions & fewer moving parts to manage on the day.
+              </p>
+            </article>
+
+            <article className="bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold mb-3">A repeatable sonic blueprint</h3>
+              <p className="text-black/70 leading-relaxed">
+                Once we design what works, you can adapt the same sonic framework for future editions, cities or client events.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      {/* Social proof */}
+      <section className="py-24 bg-white" aria-labelledby="social-proof-heading">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 id="social-proof-heading" className="text-4xl font-bold text-center mb-12 leading-[1.25]">Social proof</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Text */}
+            <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
+                Brands, venues & creators trust SensEar to make sound a core part of their experiences. From intimate island dinners to city launches, our event soundtracks have turned carefully planned gatherings into nights guests still talk about long after they end.
+              </p>
+            </div>
+
+            {/* Right: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f202eaf0e_410494315_375848528274698_8398961206007741661_ncropped.jpg"
+                alt="SensEar event experience social proof"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Hear this industry in action */}
+      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="demo-heading">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 id="demo-heading" className="text-4xl font-bold mb-6 leading-[1.25]">Hear this industry in action</h2>
+          <p className="text-xl text-black/70 mb-8">
+            Listen to a curated demo playlist for events & experiences
+          </p>
+          <Link to={createPageUrl("PlaylistsDemos")}>
+            <Button size="lg" className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold" aria-label="Explore demo playlists">
+              Explore Demo Playlists
+            </Button>
+          </Link>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-24 bg-black text-white" aria-labelledby="cta-heading">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 id="cta-heading" className="text-4xl font-bold text-white mb-6 leading-[1.25]">
+            Ready to plan the sound for your next event or experience?
+          </h2>
+          <p className="text-xl text-white/70 mb-8">
+            We review your concept, venue & run-of-show, then propose a tailored event soundtrack & AV approach that keeps guests immersed from first arrival to final goodbye.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80" aria-label="Plan Your Perfect Soundtrack">Plan Your Perfect Soundtrack</Button>
+              <Button size="lg" className="bg-white text-black hover:bg-white/90 px-8 py-6 text-lg font-semibold" aria-label="Book a music consultation">
+                Book a Music Consultation
+              </Button>
             </Link>
           </div>
+          <p className="text-white/60 mt-8">
+            <span>Explore how our </span><Link to={createPageUrl("event-soundtracks")} className="underline hover:text-white font-semibold">Event Soundtracks</Link><span> & </span><Link to={createPageUrl("signature-playlists")} className="underline hover:text-white font-semibold">Signature Playlists</Link><span> support events & experiences</span>
+          </p>
         </div>
       </section>
     </div>);
