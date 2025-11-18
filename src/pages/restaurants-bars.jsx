@@ -219,15 +219,8 @@ export default function RestaurantsBars() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Tailored sound for memorable<br />
-              dining & drinking experiences
+              Music for restaurants & bars that keeps guests ordering & returning
             </h1>
-            
-            <div className="mb-8 max-w-4xl slide-up-2">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Create the perfect atmosphere with our expertly curated playlists that keep customers engaged and coming back.
-              </p>
-            </div>
           </div>
         </div>
 
@@ -263,6 +256,56 @@ export default function RestaurantsBars() {
         </div>
       </section>
 
+      {/* Intro Section - Black Background */}
+      <section className="bg-black py-16">
+        <div className="max-w-5xl mx-auto px-6">
+          <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+            The right restaurant playlist shapes dining atmosphere more than decor or lighting. <strong>SensEar</strong> designs soundscapes that match your menu, service flow & bar energy so every visit feels like the place to stay, not just stop by.
+          </p>
+        </div>
+      </section>
+
+      {/* Who this is for */}
+      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Who this is for</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Content */}
+            <div>
+              <p className="text-xl text-black/80 mb-6">Restaurants & bars that want music to work like part of the service:</p>
+              <ul className="space-y-6 text-lg text-black/70">
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span><strong>Casual & fine dining venues</strong> that live on repeat guests</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span><strong>Cocktail & wine bars</strong> that need the right vibe from aperitivo to last order</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span><strong>Hotel restaurants</strong> that must balance hotel guests, locals & events</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span><strong>Multi venue groups</strong> that want a consistent audio identity across locations</span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Right: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/faa6772fc_c6c8247c6975e5b8b28964566c4e798d.jpg"
+                alt="Vibrant restaurant bar interior with atmospheric lighting"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
          <Breadcrumbs items={[
@@ -271,51 +314,184 @@ export default function RestaurantsBars() {
          } />
         </div> */}
 
-      <section className="py-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="problems-heading">
-        <div className="max-w-4xl mx-auto px-6">
-          <h2 id="problems-heading" className="text-2xl sm:text-3xl font-bold text-center text-black mb-6">Problems We Solve</h2>
-          <p className="text-center text-black/70 mb-10 max-w-3xl mx-auto px-4">
-            We understand <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">how brand-relevant music increases sales</Link> and <Link to={createPageUrl("music-influence-consumer-behavior")} className="underline hover:text-black font-semibold">how music influences customer behavior</Link>. We use our knowledge to help you increase your sales and loyalty.
-          </p>
-          <div className="grid md:grid-cols-2 gap-8" role="list">
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Guests leave early, and do not return</h3>
-                  <p className="text-sm sm:text-base text-black/70">When the atmosphere does not connect, guests cut visits short and rarely come back. We create soundscapes that invite them to stay longer, return, and build habits around your space.</p>
-                </div>
-              </div>
-            </article>
+      {/* Industry Specific Challenges */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">Industry specific challenges</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/dbf1c8542_c383f86fd572aa6ee623a8fd6ab443df.jpg"
+                alt="Elegant dining scene with guests enjoying atmosphere"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
 
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Music feels generic or out of place</h3>
-                  <p className="text-sm sm:text-base text-black/70">Design, service, and concept are on point, but the music says something else. We translate your brand values into sound, so every track supports the identity you have worked to build.</p>
-                </div>
+            {/* Right: Content */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The empty Tuesday problem</h3>
+                <p className="text-lg text-black/70">Some nights feel flat no matter how good the food is. Without the right music, quieter services never build energy or spend.</p>
               </div>
-            </article>
 
-            <article role="listitem" className="p-6 bg-white rounded-lg shadow-md">
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-lg sm:text-xl font-bold mb-2">Atmosphere does not support revenue goals</h3>
-                  <p className="text-sm sm:text-base text-black/70">Music affects how guests move, order, and interact. We curate music to guide the rhythm of your space, encouraging that extra drink, shared plate, or dessert at just the right moment.</p>
-                </div>
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The rush hour chaos</h3>
+                <p className="text-lg text-black/70">When you are packed, the wrong bar music adds stress. Too loud or too fast, conversations strain & your carefully planned experience falls apart.</p>
               </div>
-            </article>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The identity crisis</h3>
+                <p className="text-lg text-black/70">Design, service & concept are on point, but the music says something else. Your Mediterranean bistro sounds like a gym playlist, not your story.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">The revenue plateau</h3>
+                <p className="text-lg text-black/70">Tables turn too quickly at peak times, or sit without ordering during quiet periods. Music is not guiding pace, ordering or the bar check.</p>
+              </div>
+            </div>
           </div>
-          <div className="text-center mt-16">
-            <p className="text-black/70 mb-6 px-4">
-                See success stories from venues like <Link to={createPageUrl("blue-bamboo")} className="underline hover:text-black font-semibold">Blue Bamboo</Link> and <Link to={createPageUrl("klouvi-bar")} className="underline hover:text-black font-semibold">Klouvi Bar</Link>, or explore <Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">our full services</Link>. Learn <Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="underline hover:text-black font-semibold">how brand-fit music converts browsers into buyers</Link> and <Link to={createPageUrl("background-music-shapes-customer-behavior")} className="underline hover:text-black font-semibold">how background music shapes customer behavior</Link>.
-            </p>
+        </div>
+      </section>
+
+      {/* How SensEar Solves This */}
+      <section className="py-20 bg-[#faebe3]">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-black">How SensEar solves this</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Content */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Playlists built around service flow</h3>
+                <p className="text-lg text-black/70">We design music journeys for prep, doors, peak service & close, with energy that follows covers instead of fighting them.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Tempo & volume tuned to your space</h3>
+                <p className="text-lg text-black/70">We calibrate tempo, genre & volume so guests can talk easily, staff can move fast & the room keeps a steady, inviting pulse.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Brand exact restaurant & bar playlists</h3>
+                <p className="text-lg text-black/70">We translate your concept into sound, from laid back bistro to high energy cocktail bar, so every track supports the experience you want to be known for.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Fresh rotations that keep teams engaged</h3>
+                <p className="text-lg text-black/70">Regular updates keep your music fresh for regulars & staff, avoiding the fatigue that comes with the same playlist every night.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Better sound, not just better songs</h3>
+                <p className="text-lg text-black/70">For venues with echo, dead zones or harsh highs, we pair music curation with audio upgrades so every seat hears a balanced mix.</p>
+              </div>
+            </div>
+
+            {/* Right: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bf81c0608_f73e72546f5644a803c4dd204f0d7de1.jpg"
+                alt="Vibrant bar scene with guests dancing and enjoying music"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Key Benefits */}
+      <section className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Key benefits</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/45c5bf8ee_0518d03f51766be5a36a8fa5df900697.jpg"
+                alt="Cocktail glass with ice representing bar atmosphere"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+
+            {/* Right: Content */}
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">Fuller atmosphere on slow nights</h3>
+                <p className="text-lg text-white/80">Curated bar music creates a sense of buzz even at half capacity, so Tuesdays feel more like a night out than a stopover.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">More time, more spend per table</h3>
+                <p className="text-lg text-white/80">Guests feel comfortable staying for one more glass or dessert, which supports average check size & bar revenue. Researches on brand fit music shows sales uplifts in hospitality venues.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">A dining atmosphere that matches your concept</h3>
+                <p className="text-lg text-white/80">Music, lighting & service finally tell the same story, which makes it easier to justify pricing & build regulars.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-white mb-3">Less staff friction around music</h3>
+                <p className="text-lg text-white/80">Teams are not scrambling for tracks mid service. You set clear rules, we supply the sound, everyone focuses on guests.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof with Image */}
+      <section className="py-16 bg-[#faebe3]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/61ccf4422_8bedfebb1d2032b34b8d32d3b59c21ad.jpg"
+                alt="Elegant dinner party with atmospheric lighting and decor"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+
+            {/* Right: Text and CTA */}
+            <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-8">
+                Venues like <strong>Blue Bamboo</strong> & <strong>Klouvi Bar</strong> use <strong>SensEar</strong> to turn their music into part of the dining ritual. Playlists now follow service flow & guest mood, helping them turn first time visitors into regulars.
+              </p>
+              
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-bold text-black mb-4">Hear this industry in action</h3>
+                <p className="text-lg text-black/70 mb-6">Listen to a curated demo playlist for restaurants & bars</p>
+                <Link to={createPageUrl("PlaylistsDemos")}>
+                  <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white w-full">
+                    Explore Demo Playlists
+                  </Button>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ready to tune your restaurant or bar for better nights?</h2>
+          <p className="text-xl text-black/80 mb-8">
+            We review your current music setup, service patterns & concept, then propose a tailored sound approach for your venue or group.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 w-full sm:w-auto px-6 sm:px-8 py-6 text-base sm:text-lg whitespace-normal" aria-label="Create Your Venue's Vibe">Create Your Venue's Vibe</Button>
+              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg">
+                Book a music consultation
+              </Button>
             </Link>
           </div>
+          <p className="text-black/70 mt-8">
+            Explore how our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">Signature Playlists</Link> and <Link to={createPageUrl("audio-upgrades")} className="underline hover:text-black font-semibold">Audio Upgrades</Link> work for restaurants & bars.
+          </p>
         </div>
       </section>
     </div>);
