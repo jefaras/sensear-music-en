@@ -361,8 +361,8 @@ export default function SignaturePlaylists() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Evolving rotations that keep your vibe alive</h3>
-                <p className="text-lg text-black/70">Monthly rotations keep the sound fresh for regulars and staff, while staying recognisably "you".</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Regular rotations that keep your vibe fresh</h3>
+                <p className="text-lg text-black/70">Ongoing updates so regulars & teams do not hear the same set on loop, while your core sound stays recognisable.</p>
               </div>
 
               <div>
