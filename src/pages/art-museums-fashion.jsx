@@ -305,19 +305,19 @@ export default function ArtMuseumsFashion() {
               <ul className="space-y-6 text-lg text-black/70">
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span>Art galleries, museums, cultural foundations and exhibition spaces</span>
+                  <span><strong>Art galleries, museums</strong>, cultural foundations and exhibition spaces</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span>Fashion houses, designers, showrooms, pop ups and runways</span>
+                  <span><strong>Fashion houses</strong>, designers, showrooms, pop ups and runways</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span>Concept stores and editorial retail spaces with rotating installations</span>
+                  <span><strong>Concept stores</strong> and editorial retail spaces with rotating installations</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span>Promotional events, limited releases and previews for media or buyers</span>
+                  <span><strong>Promotional events</strong>, limited releases and previews for media or buyers</span>
                 </li>
               </ul>
             </div>
