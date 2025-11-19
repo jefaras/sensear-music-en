@@ -428,23 +428,23 @@ export default function SignaturePlaylists() {
             {/* Right: Content */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Inconsistent, generic playlists</h3>
-                <p className="text-lg text-black/70">Template playlists from streaming services feel flat or off brand. We tailor music to your identity, layout & rhythm so every track belongs.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Generic playlists become a signature sound</h3>
+                <p className="text-lg text-black/70">Instead of template mixes that could belong anywhere, you get music that matches your identity, layout & audience.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Music that ignores guest flow</h3>
-                <p className="text-lg text-black/70">What works at 10:00 in the morning rarely works at 22:00. We sequence playlists to shift naturally with traffic, energy & time of day.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Music follows your guest flow</h3>
+                <p className="text-lg text-black/70">Energy & mood shift with occasion, traffic & time of day, so it all feels natural, instead of random.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Repetition that wears on guests and teams</h3>
-                <p className="text-lg text-black/70">Hearing the same songs on loop creates fatigue. We refresh sets regularly, drawing from our private archive and your team's feedback.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">No repetitions, full control</h3>
+                <p className="text-lg text-black/70">Regular rotations based on your feedback keep guests & teams happy, while you decide which moods play in each space.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">No control or licensing peace of mind</h3>
-                <p className="text-lg text-black/70">Ad hoc choices from YouTube or consumer apps risk both your brand and compliance. We provide properly cleared music for business use and a clear structure for who controls it.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Compliant by design</h3>
+                <p className="text-lg text-black/70">Our music is cleared for business use and compliant with local rules, so your sound stays on brand & aligned with the law.</p>
               </div>
             </div>
           </div>
