@@ -410,10 +410,10 @@ export default function SignaturePlaylists() {
         </div>
       </section>
 
-      {/* Problems we solve */}
+      {/* Why this helps */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Problems we solve</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Why this helps</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
