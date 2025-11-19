@@ -272,7 +272,7 @@ export default function SignaturePlaylists() {
             {/* Left: Content */}
             <div className="mt-[160px]">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                We design fresh, engaging playlists that reflect your brand, guide the energy in your spaces & keep guests and teams tuned in. Music stops being background and becomes part of the experience.
+                We design fresh, engaging <strong>Music Playlists</strong> that reflect your brand, guide the energy in your spaces & keep guests and teams tuned in. Music <em>stops being background</em> and becomes part of the experience.
               </p>
             </div>
             
