@@ -366,8 +366,8 @@ export default function SignaturePlaylists() {
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Central control with curator support</h3>
-                <p className="text-lg text-black/70">You get a simple way to manage what plays where, plus a curator hotline when you want tweaks or support.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Simple control & curator support</h3>
+                <p className="text-lg text-black/70">Clear rules for what plays where, central management & email/phone access to your curator when you want changes.</p>
               </div>
             </div>
           </div>
