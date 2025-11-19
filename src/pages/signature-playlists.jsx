@@ -298,23 +298,23 @@ export default function SignaturePlaylists() {
               <ul className="space-y-6 text-lg text-black/70">
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Hotels & resorts</strong> that need a smooth journey from morning to late night</span>
+                  <span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">Hotels & resorts</Link> that need a smooth journey from morning to late night</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Restaurants & bars</strong> that live on repeat guests & bar spend</span>
+                  <span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">Restaurants & bars</Link> that live on repeat guests & bar spend</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Retail stores</strong> that want a soundtrack that fits their visual story</span>
+                  <span><Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">Retail stores</Link> that want a soundtrack that fits their visual story</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Wellness spaces & gyms</strong> where sound supports treatment or training</span>
+                  <span><Link to={createPageUrl("wellness-gyms")} className="underline hover:text-black font-semibold">Wellness spaces & gyms</Link> where sound supports treatment or training</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Galleries, museums & fashion spaces</strong> that need intentional, curated sound</span>
+                  <span><Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold">Galleries, museums & fashion spaces</Link> that need intentional, curated sound</span>
                 </li>
               </ul>
             </div>
@@ -377,14 +377,14 @@ export default function SignaturePlaylists() {
       {/* Problems we solve */}
       <section className="py-20 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Problems we solve</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How it works</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Inconsistent, generic playlists</h3>
-                <p className="text-lg text-black/70">Template playlists from streaming services feel flat or off brand. We tailor music to your identity, layout & rhythm so every track belongs.</p>
+                <p className="text-lg text-black/70">We learn your brand, spaces, guest journeys & service flow.</p>
               </div>
 
               <div>
@@ -418,7 +418,7 @@ export default function SignaturePlaylists() {
       {/* How it works */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">How it works</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Why this helps</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
