@@ -503,8 +503,11 @@ that lifts guest satisfaction and repeat visits
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text */}
             <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-6">
+                <strong>Beach House Antiparos</strong> used <strong>SensEar</strong> to give its beach, dining and retail areas their own sound while keeping one coherent story.
+              </p>
               <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                <strong>Beach House Antiparos</strong> used <strong>SensEar</strong> to give its beach, dining and retail areas their own sound while keeping one coherent story. Multi zone music now adapts to each moment, creating stays guests keep talking about.
+                Multi zone music now adapts to each moment, creating stays guests keep talking about.
               </p>
             </div>
 
