@@ -453,7 +453,6 @@ export default function Layout({ children }) {
                 {footerNavItems.industries.map((item) => (
                   <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">{item.name}</Link>
                 ))}
-                <Link to={createPageUrl("PlaylistsDemos")} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">Playlists Demos</Link>
               </div>
             </div>
 
@@ -466,6 +465,7 @@ export default function Layout({ children }) {
                 {footerNavItems.caseStudies.map((item) => (
                   <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">{item.name}</Link>
                 ))}
+                <Link to={createPageUrl("PlaylistsDemos")} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">Playlists Demos</Link>
               </div>
             </div>
 

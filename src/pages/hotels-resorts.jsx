@@ -181,6 +181,34 @@ export default function HotelsResorts() {
   return (
     <div className="bg-[#faebe3]">
       <style>{`
+        @keyframes gradient-shift {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
+        
+        .animated-gradient {
+          background: linear-gradient(
+            135deg,
+            #f5d4c1 0%,
+            #e8c3b0 15%,
+            #d4c4b0 30%,
+            #c0c0c0 45%,
+            #d3d3d3 60%,
+            #f0d5d0 75%,
+            #e8c3b0 90%,
+            #f5d4c1 100%
+          );
+          background-size: 400% 400%;
+          animation: gradient-shift 10s ease infinite;
+        }
+        
         @keyframes slideUp {
           from {
             opacity: 0;
@@ -368,7 +396,7 @@ export default function HotelsResorts() {
       </section>
 
       {/* How SensEar Solves This */}
-      <section className="py-20 bg-[#faebe3]">
+      <section className="py-20 animated-gradient">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How SensEar solves this</h2>
           

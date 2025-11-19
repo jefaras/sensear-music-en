@@ -381,7 +381,7 @@ export default function WellnessGyms() {
       </section>
 
       {/* How SensEar solves this */}
-      <section className="py-20 bg-[#faebe3]">
+      <section className="py-20 animated-gradient">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How SensEar solves this</h2>
           
