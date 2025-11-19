@@ -495,8 +495,11 @@ export default function RestaurantsBars() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text */}
             <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-6">
+                Venues like <strong>Blue Bamboo</strong> & <strong>Klouvi Bar</strong> use <strong>SensEar</strong> to turn their music into part of the dining ritual.
+              </p>
               <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                Venues like <strong>Blue Bamboo</strong> & <strong>Klouvi Bar</strong> use <strong>SensEar</strong> to turn their music into part of the dining ritual. Playlists now follow service flow & guest mood, helping them turn first time visitors into regulars.
+                Playlists now follow service flow & guest mood, helping them turn first time visitors into regulars.
               </p>
             </div>
 
