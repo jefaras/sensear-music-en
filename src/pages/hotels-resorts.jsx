@@ -244,8 +244,8 @@ export default function HotelsResorts() {
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hotels & Resorts section">
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Music for hotels & resorts<br />that lifts guest satisfaction & repeat visits
+            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">Music for hotels & resorts
+that lifts guest satisfaction and repeat visits
             </h1>
           </div>
         </div>
@@ -263,6 +263,7 @@ export default function HotelsResorts() {
 
 
 
+
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Luxury hotel resort lobby with curated music ambiance and elegant hospitality design"
                 className="absolute w-full h-full object-cover md:hidden" />
@@ -272,6 +273,7 @@ export default function HotelsResorts() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7f101b74a_46aadcb58bc4729ca5f1d47abf84a70a-_X-Design1.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7f101b74a_46aadcb58bc4729ca5f1d47abf84a70a-_X-Design1.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7f101b74a_46aadcb58bc4729ca5f1d47abf84a70a-_X-Design1.png 2400w"
+
 
 
 
@@ -349,11 +351,11 @@ export default function HotelsResorts() {
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-             <Breadcrumbs items={[
-             { label: "Industries", path: createPageUrl("Industries") },
-             { label: "Hotels & Resorts", path: createPageUrl("hotels-resorts") }]
-             } />
-            </div> */}
+              <Breadcrumbs items={[
+              { label: "Industries", path: createPageUrl("Industries") },
+              { label: "Hotels & Resorts", path: createPageUrl("hotels-resorts") }]
+              } />
+             </div> */}
 
       {/* Industry Specific Challenges */}
       <section className="py-20 bg-white">
