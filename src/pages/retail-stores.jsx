@@ -494,8 +494,11 @@ export default function RetailStores() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text */}
             <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-6">
+                Fashion & lifestyle retailers work with <strong>SensEar</strong> to make music part of the shopping ritual.
+              </p>
               <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                Fashion & lifestyle retailers work with <strong>SensEar</strong> to make music part of the shopping ritual. Their stores now feel more intentional, guests stay to explore collections & the brand story is heard as clearly as it is seen.
+                Their stores now feel more intentional, guests stay to explore collections & the brand story is heard as clearly as it is seen.
               </p>
             </div>
 
