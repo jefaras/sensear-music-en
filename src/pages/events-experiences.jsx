@@ -490,8 +490,11 @@ export default function EventsExperiences() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text */}
             <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-6">
+                Brands, venues & creators trust <strong>SensEar</strong> to make sound a core part of their experiences.
+              </p>
               <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                Brands, venues & creators trust <strong>SensEar</strong> to make sound a core part of their experiences. From intimate island dinners to city launches, our event soundtracks have turned carefully planned gatherings into nights guests still talk about long after they end.
+                From intimate island dinners to city launches, our event soundtracks have turned carefully planned gatherings into nights guests still talk about long after they end.
               </p>
             </div>
 
