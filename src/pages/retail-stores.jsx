@@ -328,11 +328,13 @@ export default function RetailStores() {
 
             {/* Right: Image */}
             <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1eae8a545_9ce5db84dcf12ffe5ccf1513e7eabca6.jpg"
-                alt="Fashion model in stylish retail setting"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
+              <div className="w-[85%] mx-auto">
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1eae8a545_9ce5db84dcf12ffe5ccf1513e7eabca6.jpg"
+                  alt="Fashion model in stylish retail setting"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </div>
             </div>
           </div>
         </div>
