@@ -295,11 +295,26 @@ that lifts guest satisfaction and repeat visits
       </section>
 
       {/* Intro Section - Black Background */}
-      <section className="bg-black py-16">
-        <div className="max-w-5xl mx-auto px-6">
-          <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-            Your hotel's sound is often the first thing guests feel. Curated hotel music impacts guests' feelings, memories, and spending. <strong>SensEar</strong> designs soundscapes for every space & hour, so music becomes a quiet source of reviews, revenue and reputation.
-          </p>
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            {/* Right: Titles - appears first on mobile, second on desktop */}
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                What is it
+              </h2>
+            </div>
+            
+            {/* Left: Content - appears second on mobile, first on desktop */}
+            <div className="lg:order-1 lg:mt-[116px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                Your hotel's sound is often the first thing guests feel. Curated hotel music impacts guests' feelings, memories, and spending.
+              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                <strong>SensEar</strong> designs soundscapes for every space & hour, so music becomes a quiet source of reviews, revenue and reputation.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
