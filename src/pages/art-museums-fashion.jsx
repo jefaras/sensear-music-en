@@ -285,11 +285,26 @@ export default function ArtMuseumsFashion() {
       </section>
 
       {/* Intro Section - Black Background */}
-      <section className="bg-black py-16">
-        <div className="max-w-5xl mx-auto px-6">
-          <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-            From quiet galleries to runway finales, your soundtrack should feel precise, human and unobtrusive. <strong>SensEar</strong> designs gallery music, museum atmosphere and exhibition sound that respects the work while guiding visitors through each moment.
-          </p>
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            {/* Right: Titles - appears first on mobile, second on desktop */}
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                What is it
+              </h2>
+            </div>
+            
+            {/* Left: Content - appears second on mobile, first on desktop */}
+            <div className="lg:order-1 lg:mt-[116px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                From quiet galleries to runway finales, your soundtrack should feel precise, human and unobtrusive.
+              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                <strong>SensEar</strong> designs gallery music, museum atmosphere and exhibition sound that respects the work while guiding visitors through each moment.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -462,10 +477,24 @@ export default function ArtMuseumsFashion() {
       {/* Social Proof */}
       <section className="py-16 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed text-center">
-              Research on background music shows that strategic, brand fit sound increases dwell time and sales in hospitality and retail environments, and improves how people rate their overall experience.
-            </p>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Social proof</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+            {/* Left: Text */}
+            <div>
+              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
+                Research on background music shows that strategic, brand fit sound increases dwell time and sales in hospitality and retail environments, and improves how people rate their overall experience.
+              </p>
+            </div>
+
+            {/* Right: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/a0ed978a5_XCKV5J6XENPUBNYUI7O3SLPLP4xropped.jpg"
+                alt="Museum gallery space with visitors exploring curated art exhibitions"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
           </div>
 
           {/* Hear this industry in action - Centered below */}
