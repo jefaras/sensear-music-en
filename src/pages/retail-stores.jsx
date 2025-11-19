@@ -285,11 +285,26 @@ export default function RetailStores() {
       </section>
 
       {/* Intro Section - Black Background */}
-      <section className="bg-black py-16">
-        <div className="max-w-5xl mx-auto px-6">
-          <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-            Every track in your store shapes how long people browse, what they notice & whether they buy. <strong>SensEar</strong> designs store music that supports your retail atmosphere & turns it into part of the shopping experience, not background noise.
-          </p>
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            {/* Right: Titles - appears first on mobile, second on desktop */}
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                What is it
+              </h2>
+            </div>
+            
+            {/* Left: Content - appears second on mobile, first on desktop */}
+            <div className="lg:order-1 lg:mt-[116px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                Every track in your store shapes how long people browse, what they notice & whether they buy.
+              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                <strong>SensEar</strong> designs store music that supports your retail atmosphere & turns it into part of the shopping experience, not background noise.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -474,6 +489,8 @@ export default function RetailStores() {
       {/* Social Proof with Image */}
       <section className="py-16 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Social proof</h2>
+          
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Text */}
             <div>
