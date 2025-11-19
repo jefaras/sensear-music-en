@@ -278,9 +278,6 @@ export default function SignaturePlaylists() {
             
             {/* Right: Titles */}
             <div className="lg:min-w-[280px]">
-              <h2 className="text-[0.75rem] tracking-widest text-white/60 mb-2 uppercase">
-                Signature playlists
-              </h2>
               <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight">
                 What is it
               </h2>
