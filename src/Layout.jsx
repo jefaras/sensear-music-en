@@ -42,8 +42,7 @@ export default function Layout({ children }) {
         { name: "Retail Stores", path: createPageUrl("retail-stores") },
         { name: "Wellness & Gyms", path: createPageUrl("wellness-gyms") },
         { name: "Events & Experiences", path: createPageUrl("events-experiences") },
-        { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") },
-        { name: "Playlists Demos", path: createPageUrl("PlaylistsDemos") }
+        { name: "Art, Museums & Fashion", path: createPageUrl("art-museums-fashion") }
       ]
     },
     {
@@ -53,9 +52,11 @@ export default function Layout({ children }) {
         { name: "Blue Bamboo", path: createPageUrl("blue-bamboo") },
         { name: "Klouvi", path: createPageUrl("klouvi-bar") },
         { name: "Beach House", path: createPageUrl("beach-house-antiparos") },
-        { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") }
+        { name: "Pelicanos", path: createPageUrl("pelicanos-sifnos-restaurant") },
+        { name: "Playlists Demos", path: createPageUrl("PlaylistsDemos") }
       ]
-    }
+    },
+    { name: "About", path: createPageUrl("AboutUs") }
   ];
 
   const footerNavItems = {
