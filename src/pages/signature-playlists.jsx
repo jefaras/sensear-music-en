@@ -342,8 +342,8 @@ export default function SignaturePlaylists() {
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc49da4e8_ed448e1a555b86a5905eaa678fccc8d8.jpg"
-                alt="Music mixing equipment and sound control"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/afb08a148_fe959a9eda0e3059a0b19f803958ba85.jpg"
+                alt="Mindful music curation experience"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>
@@ -468,8 +468,8 @@ export default function SignaturePlaylists() {
             <div className="hidden lg:block">
               <div className="w-[76.5%] mx-auto">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/afb08a148_fe959a9eda0e3059a0b19f803958ba85.jpg"
-                  alt="Mindful music curation experience"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc49da4e8_ed448e1a555b86a5905eaa678fccc8d8.jpg"
+                  alt="Music mixing equipment and sound control"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
               </div>
