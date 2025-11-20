@@ -337,43 +337,36 @@ export default function Home() {
             </article>
           </div>
 
-          {/* Second Row: Music for Events */}
-          <div className="grid md:grid-cols-2 gap-8 mb-8 items-stretch" role="list">
-            <article role="listitem">
-              <Link to={createPageUrl("event-soundtracks")} aria-label="Design Your Event Atmosphere">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 800w,
-                              https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      alt="Professional event production with music curation"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+          {/* Second Row: Music for Events - FULL WIDTH */}
+          <div className="mb-8" role="list" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <article role="listitem" className="p-8 rounded-lg">
+              <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+                {/* Left: Text Content */}
+                <div className="lg:order-1">
+                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
+                    Music for Events
+                  </h3>
 
-                    <div className="absolute inset-0" aria-hidden="true" />
-                    
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                        <Sparkles className="w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      Music for Events
-                    </h3>
-                    <p className="text-black/70 mb-4">
+                  <div className="lg:mt-[280px]">
+                    <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
                       Artfully selected and curated soundtracks & live DJ sets that elevate events into engaging, unforgettable moments.
                     </p>
-                    <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                      <span>Design Your Event Atmosphere</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                    </div>
+                    <Link to={createPageUrl("event-soundtracks")} className="inline-flex items-center text-black font-medium text-xl group">
+                      <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Design Your Event Atmosphere</span>
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                    </Link>
                   </div>
-                </Card>
-              </Link>
+                </div>
+
+                {/* Right: Image */}
+                <div className="lg:order-2 hidden lg:block lg:mt-[140px]">
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
+                    alt="Professional event production with music curation"
+                    className="w-full h-auto rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
             </article>
           </div>
 
