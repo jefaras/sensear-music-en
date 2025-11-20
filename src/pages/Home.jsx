@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -384,15 +385,29 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Intro Section */}
+      <section className="bg-white py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8 lg:mb-0">
+                How we create your sonic ID
+              </h2>
+            </div>
+            
+            <div className="lg:order-1 lg:mt-[116px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed">
+                <span>We provide all the music solutions that will elevate your space or event & leave a lasting impression. Explore our </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">full range of music curation services</Link><span>.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section className="py-24 bg-white" aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 id="services-heading" className="text-4xl font-bold text-black mb-4 leading-[1.25]">How We Create Your Sonic Identity</h2>
-            <p className="text-xl text-black/70 max-w-3xl mx-auto">
-              <span>We provide all the music solutions that will elevate your space or event & leave a lasting impression. Explore our </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">full range of music curation services</Link><span>.</span>
-            </p>
-          </div>
+          <h2 id="services-heading" className="sr-only">Our Services</h2>
 
           {/* First Row: Signature Playlists & Music for Events - LARGER */}
           <div className="grid md:grid-cols-2 gap-8 mb-8 items-stretch" role="list">
@@ -599,6 +614,7 @@ export default function Home() {
                   <p className="text-black/70 leading-relaxed">
                     Boost staff morale & productivity with energizing music.
                   </p>
+                </p>
                 </div>
               </article>
 
@@ -750,6 +766,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>);
-
+    </div>
+  );
 }
