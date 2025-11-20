@@ -296,7 +296,7 @@ export default function SonicStrategy() {
             <div className="hidden lg:block">
               <div className="w-[85%] mx-auto">
                 <img
-                  src="PLACEHOLDER_IMAGE_1"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2021e7ea_skycropped.png"
                   alt="Brand sonic identity development"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
@@ -314,7 +314,7 @@ export default function SonicStrategy() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="hidden lg:block">
               <img
-                src="PLACEHOLDER_IMAGE_2"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f9388e2c1_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
                 alt="Sonic DNA workshop and brand audio strategy"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -370,7 +370,7 @@ export default function SonicStrategy() {
 
             <div className="hidden lg:block">
               <img
-                src="PLACEHOLDER_IMAGE_3"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/deb3db30e_image00006b-CROPPED1.jpg"
                 alt="Sonic strategy implementation process"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -387,7 +387,7 @@ export default function SonicStrategy() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="hidden lg:block">
               <img
-                src="PLACEHOLDER_IMAGE_4"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7c6f67623_d6be48cfcce95f702a6c4b34c0e7cc47CROPPED-pxbee-minitools-enhance-2025112017940.jpg"
                 alt="Brand audio identity benefits"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -436,7 +436,7 @@ export default function SonicStrategy() {
             <div className="hidden lg:block">
               <div className="w-[85%] mx-auto">
                 <img
-                  src="PLACEHOLDER_IMAGE_5"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2f1aa2923_00a27c3bd633abfcfe751c91ef9d3f08sonic.jpg"
                   alt="Multi-location brand sonic consistency"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
