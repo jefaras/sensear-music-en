@@ -75,7 +75,7 @@ export default function EventSoundtracks() {
     const ogTags = [
     { property: 'og:title', content: 'Event Soundtracks & Live DJ Sets | SensEar' },
     { property: 'og:description', content: description },
-    { property: 'og:image', content: 'PLACEHOLDER_IMAGE_URL' },
+    { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg' },
     { property: 'og:url', content: 'https://sensear.music/event-soundtracks' }];
 
     ogTags.forEach((tag) => {
@@ -94,7 +94,7 @@ export default function EventSoundtracks() {
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Event Soundtracks & Live DJ Sets | SensEar' },
     { name: 'twitter:description', content: description },
-    { name: 'twitter:image', content: 'PLACEHOLDER_IMAGE_URL' }];
+    { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg' }];
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -222,13 +222,19 @@ export default function EventSoundtracks() {
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Mobile/Tablet version - NO parallax */}
               <img
-                src="PLACEHOLDER_HERO_IMAGE_URL"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Custom event soundtracks and live DJ programming"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
               <img
-                src="PLACEHOLDER_HERO_IMAGE_URL"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Custom event soundtracks and live DJ programming"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
