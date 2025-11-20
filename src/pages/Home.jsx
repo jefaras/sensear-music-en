@@ -337,14 +337,14 @@ export default function Home() {
             </article>
           </div>
 
-          {/* Second Row: Music for Events - FULL WIDTH */}
+          {/* Second Row: Event Soundtracks - FULL WIDTH */}
           <div className="mb-8" role="list" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <article role="listitem" className="p-8 rounded-lg">
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                 {/* Left: Text Content */}
                 <div className="lg:order-1">
                   <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
-                    Music for Events
+                    Event Soundtracks
                   </h3>
 
                   <div className="lg:mt-[280px]">
@@ -361,7 +361,7 @@ export default function Home() {
                 {/* Right: Image */}
                 <div className="lg:order-2 hidden lg:block lg:mt-[140px]">
                   <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d4a085ed9_EventSoundtracks-upsc2-cropped.jpg"
                     alt="Professional event production with music curation"
                     className="w-full h-auto rounded-2xl shadow-lg"
                   />
