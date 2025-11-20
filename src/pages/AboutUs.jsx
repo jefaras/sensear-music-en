@@ -285,7 +285,7 @@ export default function AboutUs() {
                   </div>
 
                   {/* Desktop layout - left aligned badge with content */}
-                  <div className="hidden md:flex md:gap-8 md:items-start">
+                  <div className="hidden md:flex md:gap-8">
                     {/* Left side - Year badge */}
                     <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
@@ -317,7 +317,7 @@ export default function AboutUs() {
                   </div>
 
                   {/* Desktop layout - left aligned badge with content */}
-                  <div className="hidden md:flex md:gap-8 md:items-start">
+                  <div className="hidden md:flex md:gap-8">
                     {/* Left side - Year badge */}
                     <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
@@ -349,7 +349,7 @@ export default function AboutUs() {
                   </div>
 
                   {/* Desktop layout - left aligned badge with content */}
-                  <div className="hidden md:flex md:gap-8 md:items-start">
+                  <div className="hidden md:flex md:gap-8">
                     {/* Left side - Year badge */}
                     <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
@@ -381,7 +381,7 @@ export default function AboutUs() {
                   </div>
 
                   {/* Desktop layout - left aligned badge with content */}
-                  <div className="hidden md:flex md:gap-8 md:items-start">
+                  <div className="hidden md:flex md:gap-8">
                     {/* Left side - Year badge */}
                     <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
@@ -413,7 +413,7 @@ export default function AboutUs() {
                   </div>
 
                   {/* Desktop layout - left aligned badge with content */}
-                  <div className="hidden md:flex md:gap-8 md:items-start">
+                  <div className="hidden md:flex md:gap-8">
                     {/* Left side - Year badge */}
                     <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
