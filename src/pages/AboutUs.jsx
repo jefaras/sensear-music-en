@@ -215,12 +215,6 @@ export default function AboutUs() {
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
               About SensEar
             </h1>
-            
-            <div className="mb-8 max-w-4xl slide-up-2">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                At the core of SensEar is a shared belief: that music is not background—it is atmosphere, memory, and emotion.
-              </p>
-            </div>
           </div>
         </div>
 
@@ -248,17 +242,31 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Breadcrumbs - COMMENTED OUT */}
-      {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-         <Breadcrumbs items={[
-         { label: "About", path: createPageUrl("AboutUs") }]
-         } />
-        </div> */}
-      
+      {/* Intro Section - Black Background */}
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            {/* Right: Titles - appears first on mobile, second on desktop */}
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                Who we are
+              </h2>
+            </div>
+            
+            {/* Left: Content - appears second on mobile, first on desktop */}
+            <div className="lg:order-1 lg:mt-[116px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                At the core of SensEar is a shared belief: that music is not background, but atmosphere, memory, and emotion.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Timeline */}
       <section className="py-20 bg-white" aria-labelledby="timeline-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="timeline-heading" className="text-4xl font-bold text-center text-black mb-16">Our Journey</h2>
+          <h2 id="timeline-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-right text-black mb-16">Our Journey</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Left: Timeline content */}
@@ -453,7 +461,7 @@ export default function AboutUs() {
       {/* Vision Section */}
       <section className="py-24 bg-black text-white" aria-labelledby="vision-heading">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 id="vision-heading" className="text-4xl font-bold text-center mb-4 animate-fade-in-up text-peach">Our Vision</h2>
+          <h2 id="vision-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-4 animate-fade-in-up text-peach">Our Vision</h2>
           <p className="text-2xl text-center max-w-4xl mx-auto text-white/90 animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
             <span className="">To become the leading music partner for eclectic hospitality brands & events seeking to express identity, elevate atmosphere & create lasting guest connections. Learn more about our </span><Link to={createPageUrl("sonic-strategy")} className="underline hover:text-peach font-semibold">sonic strategy service</Link><span>.</span>
           </p>
@@ -527,7 +535,7 @@ export default function AboutUs() {
 
       <section className="bg-[#faebe3] text-black py-24" aria-labelledby="differentiators-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="differentiators-heading" className="text-4xl font-bold text-center mb-12 animate-fade-in-up">What Sets Us Apart</h2>
+          <h2 id="differentiators-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-right mb-12 animate-fade-in-up">What Sets Us Apart</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
