@@ -405,50 +405,39 @@ export default function Home() {
             </article>
           </div>
 
-          {/* Fourth Row: Audio Upgrades - EVEN SMALLER (4-card size) & CENTERED */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch" role="list">
-            {/* Empty spacer - only visible on desktop */}
-            <div className="hidden lg:block"></div>
-
-            <article role="listitem">
-              <Link to={createPageUrl("audio-upgrades")} aria-label="Optimize Your Sound System">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                  <div className="relative aspect-[4/3] overflow-hidden">
+          {/* Fourth Row: Audio Upgrades - FULL WIDTH */}
+          <div className="mb-8" role="list">
+            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
+                {/* Left: Image - 30% smaller */}
+                <div className="lg:order-1 hidden lg:block lg:mt-[140px]">
+                  <div className="w-[70%] mx-auto">
                     <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 800w,
-                                https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped.jpg"
                       alt="Professional audio equipment optimization"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
-                    <div className="absolute inset-0" aria-hidden="true" />
-                    
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                        <SlidersHorizontal className="w-8 h-8" />
-                      </div>
-                    </div>
+                      className="w-full h-auto rounded-2xl shadow-lg"
+                    />
                   </div>
+                </div>
 
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      Audio Upgrades
-                    </h3>
-                    <p className="text-black/70 mb-4">
+                {/* Right: Text Content */}
+                <div className="lg:order-2">
+                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
+                    Audio Upgrades
+                  </h3>
+
+                  <div className="lg:mt-[280px]">
+                    <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
                       Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.
                     </p>
-                    <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                      <span>Optimize Your Sound System</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                    </div>
+                    <Link to={createPageUrl("audio-upgrades")} className="inline-flex items-center text-black font-medium text-xl group">
+                      <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Optimize Your Sound System</span>
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                    </Link>
                   </div>
-                </Card>
-              </Link>
+                </div>
+              </div>
             </article>
-            
-            {/* Empty spacer - only visible on desktop */}
-            <div className="hidden lg:block"></div>
           </div>
         </div>
       </section>
