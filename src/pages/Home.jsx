@@ -277,113 +277,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trusted By Section */}
-      <section className="py-20 bg-black overflow-hidden" aria-labelledby="clients-heading">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 id="clients-heading" className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">Now playing in venues across Greece</h2>
-          
-          <div className="relative">
-            <div className="flex gap-12 animate-scroll">
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Klouvi Bar</p>
-                <p className="text-sm text-white/60 mt-1">Athens</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Blue Bamboo</p>
-                <p className="text-sm text-white/60 mt-1">Athens-Serifos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Beach House</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Pelicanos</p>
-                <p className="text-sm text-white/60 mt-1">Sifnos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Yam</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Klouvi Bar</p>
-                <p className="text-sm text-white/60 mt-1">Athens</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Blue Bamboo</p>
-                <p className="text-sm text-white/60 mt-1">Athens-Serifos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Beach House</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Pelicanos</p>
-                <p className="text-sm text-white/60 mt-1">Sifnos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Yam</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Intro Section */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-6">
@@ -657,6 +550,113 @@ export default function Home() {
                 See How We Helped Others
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Trusted By Section */}
+      <section className="py-20 bg-black overflow-hidden" aria-labelledby="clients-heading">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 id="clients-heading" className="text-2xl md:text-3xl font-bold text-center mb-12 text-white">Now playing in venues across Greece</h2>
+          
+          <div className="relative">
+            <div className="flex gap-12 animate-scroll">
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Klouvi Bar</p>
+                <p className="text-sm text-white/60 mt-1">Athens</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Blue Bamboo</p>
+                <p className="text-sm text-white/60 mt-1">Athens-Serifos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
+                <p className="text-sm text-white/60 mt-1">Antiparos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Beach House</p>
+                <p className="text-sm text-white/60 mt-1">Antiparos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Pelicanos</p>
+                <p className="text-sm text-white/60 mt-1">Sifnos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Yam</p>
+                <p className="text-sm text-white/60 mt-1">Antiparos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8c4f5bc6_Klouvi-Bar_final.jpg" alt="Klouvi Bar logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Klouvi Bar</p>
+                <p className="text-sm text-white/60 mt-1">Athens</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/17f736607_Blue-Bamboo_final.jpg" alt="Blue Bamboo logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Blue Bamboo</p>
+                <p className="text-sm text-white/60 mt-1">Athens-Serifos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
+                <p className="text-sm text-white/60 mt-1">Antiparos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Beach House</p>
+                <p className="text-sm text-white/60 mt-1">Antiparos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc48e3d65_Pelicanos_final.jpg" alt="Pelicanos logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Pelicanos</p>
+                <p className="text-sm text-white/60 mt-1">Sifnos</p>
+              </div>
+              
+              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
+                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/65422bc1d_fav.png" alt="Yam logo" className="max-w-full max-h-full object-contain" />
+                </div>
+                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Yam</p>
+                <p className="text-sm text-white/60 mt-1">Antiparos</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
