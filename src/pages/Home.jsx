@@ -306,41 +306,24 @@ export default function Home() {
 
           {/* First Row: Signature Playlists & Music for Events - LARGER */}
           <div className="grid md:grid-cols-2 gap-8 mb-8 items-stretch" role="list">
-            <article role="listitem">
-              <Link to={createPageUrl("signature-playlists")} aria-label="Create Your Signature Sound">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg"
-                      srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg 800w,
-                              https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg 1200w"
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      alt="Bespoke music curation and playlist creation"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-
-                    <div className="absolute inset-0" aria-hidden="true" />
-                    
-                    <div className="absolute top-4 left-4">
-                      <div className="bg-red-50 text-black opacity-75 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                        <Music className="w-8 h-8" />
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      Signature Playlists
-                    </h3>
-                    <p className="text-black/70 mb-4">
-                      Bespoke, brand-exclusive playlists sourced from rare archives for venues that refuse to sound generic.
-                    </p>
-                    <div className="flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
-                      <span>Create Your Sound Identity</span>
-                      <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
-                    </div>
-                  </div>
-                </Card>
-              </Link>
+            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg">
+              <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+                <div className="lg:order-2 lg:min-w-[280px]">
+                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8 lg:mb-0">
+                    Signature Playlists
+                  </h3>
+                </div>
+                
+                <div className="lg:order-1 lg:mt-[116px]">
+                  <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
+                    Bespoke, brand-exclusive playlists sourced from rare archives for venues that refuse to sound generic.
+                  </p>
+                  <Link to={createPageUrl("signature-playlists")} className="inline-flex items-center text-black font-medium hover:underline text-xl">
+                    <span>Create Your Sound Identity</span>
+                    <ArrowRight className="ml-2 w-4 h-4" aria-hidden="true" />
+                  </Link>
+                </div>
+              </div>
             </article>
 
             <article role="listitem">
