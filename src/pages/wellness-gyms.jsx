@@ -498,7 +498,7 @@ export default function WellnessGyms() {
             {/* Right: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b8677ee00_7a44bbf63d1976a0dc90393822b39a06cropped.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3ccc7081_24ff3eb97d703e018840f54d6030eb58.jpg"
                 alt="Luxury wellness pool interior"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
