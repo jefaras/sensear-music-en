@@ -266,39 +266,37 @@ export default function AboutUs() {
           {/* Timeline container with flex centering - using inline style to ensure it applies */}
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div className="w-full max-w-4xl relative" role="list">
-              {/* Vertical connecting line - centered on desktop */}
-              <div className="hidden md:block absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-0.5 bg-black/20" aria-hidden="true" />
-              {/* Vertical connecting line - left side on mobile */}
-              <div className="md:hidden absolute left-[39px] top-0 bottom-0 w-0.5 bg-black/20" aria-hidden="true" />
+              {/* Vertical connecting line - left side */}
+              <div className="absolute left-[39px] md:left-[47px] top-0 bottom-0 w-0.5 bg-black/20" aria-hidden="true" />
               
               <div className="space-y-12" style={{ width: '100%' }}>
                 {/* 2010 Timeline Item */}
                 <article className="relative" role="listitem">
                   {/* Mobile layout */}
                   <div className="md:hidden flex gap-6">
-                    <div className="flex-shrink-0 w-20 flex justify-center">
+                    <div className="flex-shrink-0 w-20">
                       <div className="w-20 h-20 bg-black text-white font-bold rounded-full flex items-center justify-center text-base shadow-lg relative z-10">
                         2010
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">George and Katerina meet while curating the soundtrack for an upscale wedding party. Their shared passion for unearthing hidden-gem grooves sparks a lasting creative partnership.</p>
+                      <p className="text-base text-black/80 leading-relaxed">George + Katerina meet while curating the soundtrack for an upscale wedding party. Their common passion for unearthing hidden-gem grooves ignites a lasting creative partnership.</p>
                     </div>
                   </div>
 
-                  {/* Desktop layout - centered line with badge and content on sides */}
-                  <div className="hidden md:grid md:grid-cols-2 md:gap-8 md:items-start">
+                  {/* Desktop layout - left aligned badge with content */}
+                  <div className="hidden md:flex md:gap-8 md:items-start">
                     {/* Left side - Year badge */}
-                    <div className="flex justify-end pr-8">
+                    <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
                         2010
                       </div>
                     </div>
                     
                     {/* Right side - Content */}
-                    <div className="pl-8">
+                    <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">George and Katerina meet while curating the soundtrack for an upscale wedding party. Their shared passion for unearthing hidden-gem grooves sparks a lasting creative partnership.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">George + Katerina meet while curating the soundtrack for an upscale wedding party. Their common passion for unearthing hidden-gem grooves ignites a lasting creative partnership.</p>
                       </div>
                     </div>
                   </div>
@@ -308,29 +306,29 @@ export default function AboutUs() {
                 <article className="relative" role="listitem">
                   {/* Mobile layout */}
                   <div className="md:hidden flex gap-6">
-                    <div className="flex-shrink-0 w-20 flex justify-center">
+                    <div className="flex-shrink-0 w-20">
                       <div className="w-20 h-20 bg-black text-white font-bold rounded-full flex items-center justify-center text-base shadow-lg relative z-10">
                         2011
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">Under the moniker Midnight City, George & Katerina begin organizing and DJing exclusive parties. Specializing in dance-floor discoveries from the '70s, '80s and '90s, they cultivate a fiercely loyal crowd of groove aficionados.</p>
+                      <p className="text-base text-black/80 leading-relaxed">Under the title Midnight City, they begin hosting and DJing exclusive parties. Specializing in cross-gebre dance-floor discoveries from the '70s, '80s to present day, they cultivate a loyal crowd of groove lovers.</p>
                     </div>
                   </div>
 
-                  {/* Desktop layout - centered line with badge and content on sides */}
-                  <div className="hidden md:grid md:grid-cols-2 md:gap-8 md:items-start">
+                  {/* Desktop layout - left aligned badge with content */}
+                  <div className="hidden md:flex md:gap-8 md:items-start">
                     {/* Left side - Year badge */}
-                    <div className="flex justify-end pr-8">
+                    <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
                         2011
                       </div>
                     </div>
                     
                     {/* Right side - Content */}
-                    <div className="pl-8">
+                    <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">Under the moniker Midnight City, George & Katerina begin organizing and DJing exclusive parties. Specializing in dance-floor discoveries from the '70s, '80s and '90s, they cultivate a fiercely loyal crowd of groove aficionados.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">Under the title Midnight City, they begin hosting and DJing exclusive parties. Specializing in cross-gebre dance-floor discoveries from the '70s, '80s to present day, they cultivate a loyal crowd of groove lovers.</p>
                       </div>
                     </div>
                   </div>
@@ -340,29 +338,29 @@ export default function AboutUs() {
                 <article className="relative" role="listitem">
                   {/* Mobile layout */}
                   <div className="md:hidden flex gap-6">
-                    <div className="flex-shrink-0 w-20 flex justify-center">
+                    <div className="flex-shrink-0 w-20">
                       <div className="w-20 h-20 bg-black text-white font-bold rounded-full flex items-center justify-center text-base shadow-lg relative z-10">
                         2018
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">Yannis attends one of Midnight City's signature events. Captivated by the vibe and deep-track selections, he becomes an instant—and devoted—fan.</p>
+                      <p className="text-base text-black/80 leading-relaxed">Yannis attends one of M.C.'s signature events. Captivated by the vibe and deep-track selections, he becomes an instant and devoted fan.</p>
                     </div>
                   </div>
 
-                  {/* Desktop layout - centered line with badge and content on sides */}
-                  <div className="hidden md:grid md:grid-cols-2 md:gap-8 md:items-start">
+                  {/* Desktop layout - left aligned badge with content */}
+                  <div className="hidden md:flex md:gap-8 md:items-start">
                     {/* Left side - Year badge */}
-                    <div className="flex justify-end pr-8">
+                    <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
                         2018
                       </div>
                     </div>
                     
                     {/* Right side - Content */}
-                    <div className="pl-8">
+                    <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">Yannis attends one of Midnight City's signature events. Captivated by the vibe and deep-track selections, he becomes an instant—and devoted—fan.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">Yannis attends one of M.C.'s signature events. Captivated by the vibe and deep-track selections, he becomes an instant and devoted fan.</p>
                       </div>
                     </div>
                   </div>
@@ -372,29 +370,29 @@ export default function AboutUs() {
                 <article className="relative" role="listitem">
                   {/* Mobile layout */}
                   <div className="md:hidden flex gap-6">
-                    <div className="flex-shrink-0 w-20 flex justify-center">
+                    <div className="flex-shrink-0 w-20">
                       <div className="w-20 h-20 bg-black text-white font-bold rounded-full flex items-center justify-center text-base shadow-lg relative z-10">
                         2023
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">As Yannis begins a BA in Hospitality Management, he and George explore their shared vision of founding a company to provide premium music-curation services for upscale venues and events.</p>
+                      <p className="text-base text-black/80 leading-relaxed">As Yannis begins a MA in Hospitality Management, he and George discuss their shared vision of providing transformative music curation + DJ sets for upscale venues & events.</p>
                     </div>
                   </div>
 
-                  {/* Desktop layout - centered line with badge and content on sides */}
-                  <div className="hidden md:grid md:grid-cols-2 md:gap-8 md:items-start">
+                  {/* Desktop layout - left aligned badge with content */}
+                  <div className="hidden md:flex md:gap-8 md:items-start">
                     {/* Left side - Year badge */}
-                    <div className="flex justify-end pr-8">
+                    <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
                         2023
                       </div>
                     </div>
                     
                     {/* Right side - Content */}
-                    <div className="pl-8">
+                    <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">As Yannis begins a BA in Hospitality Management, he and George explore their shared vision of founding a company to provide premium music-curation services for upscale venues and events.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">As Yannis begins a MA in Hospitality Management, he and George discuss their shared vision of providing transformative music curation + DJ sets for upscale venues & events.</p>
                       </div>
                     </div>
                   </div>
@@ -404,29 +402,29 @@ export default function AboutUs() {
                 <article className="relative" role="listitem">
                   {/* Mobile layout */}
                   <div className="md:hidden flex gap-6">
-                    <div className="flex-shrink-0 w-20 flex justify-center">
+                    <div className="flex-shrink-0 w-20">
                       <div className="w-20 h-20 bg-black text-white font-bold rounded-full flex items-center justify-center text-base shadow-lg relative z-10">
                         2025
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">After nearly two years of planning and brand development, Sensear officially launches. With Katerina crafting the visual identity and George & Yannis leading the curation, the company's first clients rave about their seamless, elevated approach to soundtrack design—solidifying Sensear's reputation from day one.</p>
+                      <p className="text-base text-black/80 leading-relaxed">After nearly 2 years of planning & brand development, Sensear launches. SenEar's first clients rave about their smooth, elevated approach to soundtrack design, establishing their reputation from day 1.</p>
                     </div>
                   </div>
 
-                  {/* Desktop layout - centered line with badge and content on sides */}
-                  <div className="hidden md:grid md:grid-cols-2 md:gap-8 md:items-start">
+                  {/* Desktop layout - left aligned badge with content */}
+                  <div className="hidden md:flex md:gap-8 md:items-start">
                     {/* Left side - Year badge */}
-                    <div className="flex justify-end pr-8">
+                    <div className="flex-shrink-0">
                       <div className="w-24 h-24 bg-black text-white font-bold rounded-full flex items-center justify-center text-xl shadow-lg relative z-10">
                         2025
                       </div>
                     </div>
                     
                     {/* Right side - Content */}
-                    <div className="pl-8">
+                    <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">After nearly two years of planning and brand development, Sensear officially launches. With Katerina crafting the visual identity and George & Yannis leading the curation, the company's first clients rave about their seamless, elevated approach to soundtrack design—solidifying Sensear's reputation from day one.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">After nearly 2 years of planning & brand development, Sensear launches. SenEar's first clients rave about their smooth, elevated approach to soundtrack design, establishing their reputation from day 1.</p>
                       </div>
                     </div>
                   </div>
