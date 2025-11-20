@@ -75,7 +75,7 @@ export default function SonicStrategy() {
     const ogTags = [
     { property: 'og:title', content: 'Sonic Strategy & Audio Branding | SensEar' },
     { property: 'og:description', content: description },
-    { property: 'og:image', content: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1600&q=80' },
+    { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg' },
     { property: 'og:url', content: 'https://sensear.music/sonic-strategy' }];
 
     ogTags.forEach((tag) => {
@@ -94,7 +94,7 @@ export default function SonicStrategy() {
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Sonic Strategy & Audio Branding | SensEar' },
     { name: 'twitter:description', content: description },
-    { name: 'twitter:image', content: 'https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1600&q=80' }];
+    { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg' }];
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -222,13 +222,13 @@ export default function SonicStrategy() {
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Mobile/Tablet version - NO parallax */}
               <img
-                src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1600&q=80"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
                 alt="Sonic strategy and audio branding for brands"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
               <img
-                src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1600&q=80"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
                 alt="Sonic strategy and audio branding for brands"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
