@@ -302,7 +302,7 @@ export default function AudioUpgrades() {
             <div className="hidden lg:block">
               <div className="w-[85%] mx-auto">
                 <img
-                  src="PLACEHOLDER_IMAGE_1"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fb6a2cfcc_0acfe1722c9ef9946388029ddb720290CROPPED.jpg"
                   alt="Venue audio optimization and acoustic assessment"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
@@ -320,7 +320,7 @@ export default function AudioUpgrades() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="hidden lg:block">
               <img
-                src="PLACEHOLDER_IMAGE_2"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8aea621ce_e65177c598c0c9820abde209555dc0d0cropped2-pxbee-minitools-enhance-20251120175811.jpg"
                 alt="On-site acoustic checks and system diagnosis"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -376,7 +376,7 @@ export default function AudioUpgrades() {
 
             <div className="hidden lg:block">
               <img
-                src="PLACEHOLDER_IMAGE_3"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b00d7c94c_aiease_1763654314701.jpg"
                 alt="Audio system implementation and tuning process"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -393,7 +393,7 @@ export default function AudioUpgrades() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="hidden lg:block">
               <img
-                src="PLACEHOLDER_IMAGE_4"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/031d5116e_upscalemedia-transformed.jpg"
                 alt="Benefits of professional audio optimization"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -442,7 +442,7 @@ export default function AudioUpgrades() {
             <div className="hidden lg:block">
               <div className="w-[85%] mx-auto">
                 <img
-                  src="PLACEHOLDER_IMAGE_5"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/49aacab5d_16crop.png"
                   alt="Professional venue audio systems in action"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
