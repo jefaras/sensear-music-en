@@ -217,8 +217,8 @@ export default function AboutUs() {
             </h1>
             
             <div className="mb-8 max-w-4xl slide-up-2">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                At the core of SensEar is a shared belief: that music is not background—it is atmosphere, memory, and emotion.
+              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">At the core of SensEar is a shared belief: that music is not background. It is atmosphere, memory, and emotion.
+
               </p>
             </div>
           </div>
@@ -232,6 +232,7 @@ export default function AboutUs() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/361e48e4b_85051705_172264584193922_2910039908695408640_n.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/361e48e4b_85051705_172264584193922_2910039908695408640_n.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/361e48e4b_85051705_172264584193922_2910039908695408640_n.jpg 2400w"
+
 
 
 
@@ -255,10 +256,10 @@ export default function AboutUs() {
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
-              <Breadcrumbs items={[
-              { label: "About", path: createPageUrl("AboutUs") }]
-              } />
-             </div> */}
+               <Breadcrumbs items={[
+               { label: "About", path: createPageUrl("AboutUs") }]
+               } />
+              </div> */}
       
       {/* Timeline */}
       <section className="py-20 bg-white" aria-labelledby="timeline-heading">
