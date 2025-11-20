@@ -278,18 +278,18 @@ export default function Home() {
       </section>
 
       {/* Intro Section */}
-      <section className="bg-white py-20">
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
             <div className="lg:order-2 lg:min-w-[280px]">
-              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8 lg:mb-0">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
                 How we create your sonic ID
               </h2>
             </div>
             
             <div className="lg:order-1 lg:mt-[116px]">
-              <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed">
-                <span>We provide all the music solutions that will elevate your space or event & leave a lasting impression. Explore our </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">full range of music curation services</Link><span>.</span>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                <span>We provide all the music solutions that will elevate your space or event & leave a lasting impression. Explore our </span><Link to={createPageUrl("Services")} className="underline hover:text-white font-semibold">full range of music curation services</Link><span>.</span>
               </p>
             </div>
           </div>
