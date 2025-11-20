@@ -340,9 +340,18 @@ export default function Home() {
           {/* Second Row: Event Soundtracks - FULL WIDTH */}
           <div className="mb-8" role="list">
             <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
-                {/* Left: Text Content */}
-                <div className="lg:order-1">
+              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
+                {/* Left: Image */}
+                <div className="lg:order-1 hidden lg:block lg:mt-[140px]">
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d4a085ed9_EventSoundtracks-upsc2-cropped.jpg"
+                    alt="Professional event production with music curation"
+                    className="w-full h-auto rounded-2xl shadow-lg"
+                  />
+                </div>
+
+                {/* Right: Text Content */}
+                <div className="lg:order-2">
                   <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
                     Event Soundtracks
                   </h3>
@@ -356,15 +365,6 @@ export default function Home() {
                       <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                     </Link>
                   </div>
-                </div>
-
-                {/* Right: Image */}
-                <div className="lg:order-2 hidden lg:block lg:mt-[140px]">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d4a085ed9_EventSoundtracks-upsc2-cropped.jpg"
-                    alt="Professional event production with music curation"
-                    className="w-full h-auto rounded-2xl shadow-lg"
-                  />
                 </div>
               </div>
             </article>
