@@ -287,7 +287,7 @@ export default function Home() {
               </h2>
             </div>
             
-            <div className="lg:order-1 lg:mt-[116px]">
+            <div className="lg:order-1 lg:mt-[160px]">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 We provide all the music solutions that will elevate your space or event & leave a lasting impression.
               </p>
