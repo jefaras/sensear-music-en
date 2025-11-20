@@ -1,11 +1,7 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
-import { Volume2, Settings, Wrench, CheckCircle, Lightbulb, Package, CheckSquare } from 'lucide-react';
-import Breadcrumbs from "../components/Breadcrumbs";
 
 export default function AudioUpgrades() {
   const [scrollY, setScrollY] = useState(0);
@@ -13,16 +9,15 @@ export default function AudioUpgrades() {
   useEffect(() => {
     document.title = "Audio Upgrades | SensEar Sound Optimization";
 
-    let metaDescription = document.querySelector('meta[name="description"]');
+    const metaDescription = document.querySelector('meta[name="description"]');
     const description = "Professional sound checks, acoustic optimization, and audio calibration. Guaranteed fixes for any venue sound issue. Book your assessment today.";
-
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
-      metaDescription = document.createElement('meta');
-      metaDescription.name = 'description';
-      metaDescription.content = description;
-      document.head.appendChild(metaDescription);
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = description;
+      document.head.appendChild(meta);
     }
 
     const localeTag = document.querySelector('meta[property="og:locale"]');
@@ -119,7 +114,7 @@ export default function AudioUpgrades() {
       "@type": "Organization",
       "name": "SensEar",
       "url": "https://sensear.music",
-      "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b3/16dd574fc_se-profile-silver-profile-1.jpg",
+      "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg",
       "sameAs": [
       "https://www.facebook.com/61575909304249/",
       "https://www.instagram.com/sensear.music"]
@@ -211,182 +206,271 @@ export default function AudioUpgrades() {
         }
       `}</style>
 
-      {/* Hero Section - Similar to Home but smaller heading */}
+      {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Audio Upgrades section">
-        {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
-            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">Audio Upgrades:
-              <br />Sound perfectly fit to your space
-
+            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+              Audio upgrades that make your venue sound as good as it looks
             </h1>
-            
-            <div className="mb-8 max-w-4xl slide-up-2">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                On-site acoustic checks, system tuning, and immersive AV design, tailored to your layout, energy flow, and aesthetic.
-              </p>
-            </div>
-            <div className="slide-up-3">
-              <Link to={createPageUrl("ContactUs")}>
-                <Button size="lg" className="bg-black text-white px-8 py-6 text-lg font-medium rounded-md inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 hover:bg-black/80" aria-label="Book an audio experience assessment">Book an Audio Experience Assessment</Button>
-              </Link>
-            </div>
           </div>
         </div>
 
-        <div className="w-full px-6 mt-12 md:mt-24 slide-up-4">
+        {/* Hero Image - NO parallax on mobile, WITH parallax on desktop */}
+        <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version - NO parallax */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 2400w"
-
-
-
-
-
-
-
-
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Professional audio equipment optimization and acoustic calibration for venues"
-                className="absolute w-full h-full object-cover"
-                style={{
+                className="absolute w-full h-full object-cover md:hidden"
+              />
+              {/* Desktop version - WITH parallax */}
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 2400w"
+                sizes="(max-width: 1800px) 100vw, 1800px"
+                alt="Professional audio equipment optimization and acoustic calibration for venues"
+                className="absolute w-full h-full object-cover hidden md:block"
+                style={{ 
                   top: '-15%',
                   height: '130%',
                   transform: `translateY(${scrollY * 0.15}px)`,
                   transformOrigin: 'center top'
-                }} />
-
+                }}
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b2/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="what-we-do-heading">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 id="what-we-do-heading" className="text-4xl font-bold text-center mb-6 animate-fade-in-up leading-[1.25]">What We Do</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
-
-            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-              <Card className="bg-white p-8 shadow-lg h-full">
-                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                  <Package className="w-8 h-8" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Procurement and installation with trusted AV partners</h3>
-                <p className="text-lg text-black/70">We source premium equipment and coordinate professional installation via our certified partners network.</p>
-              </Card>
-            </article>
+      {/* Intro Section - Black Background */}
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                What is it
+              </h2>
+            </div>
             
-            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
-              <Card className="bg-white p-8 shadow-lg h-full">
-                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                  <Lightbulb className="w-8 h-8" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">AV proposals tailored for your needs & aesthetics</h3>
-                <p className="text-lg text-black/70">We design custom audio-visual solutions that fit your venue's unique character & functional requirements.</p>
-              </Card>
-            </article>
-
-
-            <article role="listitem" className="animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
-              <Card className="bg-white p-8 shadow-lg h-full">
-                <div className="bg-black/5 text-black mb-6 rounded-full w-16 h-16 flex items-center justify-center" aria-hidden="true">
-                  <CheckSquare className="w-8 h-8" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4">Tuning and walkthrough under real conditions</h3>
-                <p className="text-lg text-black/70">We calibrate your system, ensuring optimal performance in live environment conditions.</p>
-              </Card>
-            </article>
+            <div className="lg:order-1 lg:mt-[116px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                When sound is harsh, uneven or too loud, guests feel it before they notice your design.
+              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                We audit, redesign and tune your system so every seat hears a clear, comfortable mix that fits your venue.
+              </p>
+            </div>
           </div>
-          <p className="text-center text-black/70 mt-12 max-w-3xl mx-auto">
-            <span>Essential for </span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">restaurants & bars</Link><span>, </span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">hotels</Link><span>, and </span><Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">retail spaces</Link><span>. Complements our </span><Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">signature playlists</Link><span> perfectly.</span>
+        </div>
+      </section>
+
+      {/* Who this is for */}
+      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Who this is for</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-xl text-black/80 mb-6">Audio Upgrades are ideal for venues where design is strong but sound feels off:</p>
+              <ul className="space-y-6 text-lg text-black/70">
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Restaurants & bars where guests struggle to talk over the music</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Hotels & resorts with lobbies, pools or dining areas that sound empty or too loud</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Retail stores with dead corners and overpowering spots near speakers</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-black font-bold">•</span>
+                  <span>Venues that invested in interiors but feel the sound is lowering the overall experience</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="hidden lg:block">
+              <div className="w-[85%] mx-auto">
+                <img
+                  src="PLACEHOLDER_IMAGE_1"
+                  alt="Venue audio optimization and acoustic assessment"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What you get */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">What you get</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="hidden lg:block">
+              <img
+                src="PLACEHOLDER_IMAGE_2"
+                alt="On-site acoustic checks and system diagnosis"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">On site acoustic checks & system diagnosis</h3>
+                <p className="text-lg text-black/70">We walk the space, listen from key seats and test your current setup to find reflections, dead zones and level issues.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">AV proposals tailored to your space & style</h3>
+                <p className="text-lg text-black/70">You receive a clear plan for speakers, zones and control that fits your layout, budget and aesthetic.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Procurement & installation with trusted partners</h3>
+                <p className="text-lg text-black/70">We coordinate equipment sourcing and installation through our vetted AV network so you do not have to manage multiple suppliers.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Tuning, walkthrough & delivery under real conditions</h3>
+                <p className="text-lg text-black/70">We calibrate the system in live conditions and show your team how to run it day to day with confidence.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How it works */}
+      <section className="py-20 bg-[#faebe3]">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How it works</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Assess your current sound</h3>
+                <p className="text-lg text-black/70">We visit your venue, map the layout and experience how the system performs across zones and typical service periods.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Design the right setup</h3>
+                <p className="text-lg text-black/70">Based on your needs we propose speaker placement, zoning and control options that fix issues without adding unnecessary complexity.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Implement, tune and train</h3>
+                <p className="text-lg text-black/70">We oversee installation, fine tune levels under real use and train your team so good sound becomes the standard, not the exception.</p>
+              </div>
+            </div>
+
+            <div className="hidden lg:block">
+              <img
+                src="PLACEHOLDER_IMAGE_3"
+                alt="Audio system implementation and tuning process"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why this helps */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Why this helps</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="hidden lg:block">
+              <img
+                src="PLACEHOLDER_IMAGE_4"
+                alt="Benefits of professional audio optimization"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Rooms feel comfortable to talk in</h3>
+                <p className="text-lg text-black/70">Music supports conversation instead of competing with it, so guests stay longer and enjoy the atmosphere.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Even coverage without dead corners</h3>
+                <p className="text-lg text-black/70">Sound feels present but not intrusive in every seat, from bar stools to back tables and side lounges.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Simple systems your team can run</h3>
+                <p className="text-lg text-black/70">You avoid overbuilt, confusing setups and get controls that staff can use quickly and reliably in service.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Design and sound finally match</h3>
+                <p className="text-lg text-black/70">Your venue both looks and sounds at the same level, which supports perceived quality, pricing and guest reviews.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Proof in practice */}
+      <section className="py-20 bg-[#faebe3]">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How others use it</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <p className="text-xl text-black/80 leading-relaxed mb-4">
+                Places like <Link to={createPageUrl("blue-bamboo")} className="underline hover:text-black font-semibold">Blue Bamboo</Link> & <Link to={createPageUrl("beach-house-antiparos")} className="underline hover:text-black font-semibold">Beach House Antiparos</Link> combine Audio Upgrades with <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">Signature Playlists</Link> so every zone sounds intentional, from beach and pool to bar and dining.
+              </p>
+              <p className="text-xl text-black/80 leading-relaxed">
+                Clear, even sound helps guests settle in, move naturally through the space and remember how the place felt rather than how loud it was.
+              </p>
+            </div>
+
+            <div className="hidden lg:block">
+              <div className="w-[85%] mx-auto">
+                <img
+                  src="PLACEHOLDER_IMAGE_5"
+                  alt="Professional venue audio systems in action"
+                  className="w-full h-auto rounded-2xl shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ready to upgrade your venue's sound?</h2>
+          <p className="text-xl text-black/70 mb-8">
+            Let us audit your space and design a system that matches your design quality.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to={createPageUrl("ContactUs")}>
+              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg">
+                Book your audio assessment
+              </Button>
+            </Link>
+          </div>
+          <p className="text-black/70 mt-8">
+            Pair with our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">Signature Playlists</Link> & <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black font-semibold">Sonic Strategy</Link> for complete audio branding.
           </p>
         </div>
       </section>
-
-      <section className="py-24 bg-white" aria-labelledby="problems-heading">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 id="problems-heading" className="text-4xl font-bold text-center mb-6 animate-fade-in-up leading-[1.25]">Problems We Solve</h2>
-          <div className="grid md:grid-cols-2 gap-8" role="list">
-            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.4s' }}>
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Sound that does not fit the room</h3>
-                  <p className="text-black/70">Harsh reflections, dead zones, or overpowering volumes often stem from mismatched layouts or poor calibration. We balance sound to fit your space—clean, even, and immersive.</p>
-                </div>
-              </div>
-            </article>
-
-            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.5s' }}>
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Guests struggling to hold a conversation</h3>
-                  <p className="text-black/70">If the music is too loud—or too uneven—guests leave faster. We design a sound environment that supports social flow without sacrificing presence or clarity.</p>
-                </div>
-              </div>
-            </article>
-
-            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.6s' }}>
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Equipment that underperforms or is overcomplicated</h3>
-                  <p className="text-black/70">Too often, venues are sold the wrong gear or setups they cannot manage. We simplify, optimize, and make sure your team can run the system without stress.</p>
-                </div>
-              </div>
-            </article>
-
-            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.7s' }}>
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">No clear support or accountability</h3>
-                  <p className="text-black/70">You should not have to chase multiple suppliers for basic sound performance. We handle everything—from diagnosis to delivery—as your all-in-one partner.</p>
-                </div>
-              </div>
-            </article>
-
-            <article className="p-6 bg-gray-50 rounded-lg animate-fade-in-up" role="listitem" style={{ animationDelay: '0.8s' }}>
-              <div className="flex items-start gap-4">
-                <CheckCircle className="w-6 h-6 text-black mt-1 flex-shrink-0" aria-hidden="true" />
-                <div>
-                  <h3 className="text-xl font-bold mb-2">Spaces that look premium compromised by weak sound</h3>
-                  <p className="text-black/70">Great design deserves sound to match. We make sure your venue sounds as considered as it looks.</p>
-                </div>
-              </div>
-            </article>
-          </div>
-          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.9s' }}>
-            <p className="text-black/70">
-              Discover how proper audio setup supports <Link to={createPageUrl("brand-music-increase-sales")} className="underline hover:text-black font-semibold">increased sales through music</Link>.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <div style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} className="py-20">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="bg-black text-white p-12 rounded-xl" aria-labelledby="cta-heading">
-            <div className="text-center">
-              <h2 id="cta-heading" className="text-4xl font-bold mb-6 leading-[1.25]">Optimize Your Sound
-
-              </h2>
-              <p className="text-xl text-white/80 mb-8">
-                Let's assess your space and create the perfect audio experience for your venue.
-              </p>
-              <Link to={createPageUrl("ContactUs")}>
-                <Button size="lg" className="bg-slate-50 text-black px-8 py-6 text-lg font-medium hover:bg-[#f0dfd5]" aria-label="Optimize Your Sound System">
-                  Optimize Your Sound System
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>);
-
+    </div>
+  );
 }
