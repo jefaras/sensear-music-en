@@ -509,7 +509,7 @@ export default function AboutUs() {
                   <p className="text-xl font-semibold text-black/70 mb-8">Co-Founder, Brand Strategy, Client Service</p>
                   
                   <div className="lg:mt-[140px]">
-                    <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
+                    <p className="text-xl md:text-2xl text-black leading-relaxed mb-6">
                       From his early DJ sets to his studies in Hospitality Management, JEF has always been guided by music's magnetic pull.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-4">
@@ -554,7 +554,7 @@ export default function AboutUs() {
                   <p className="text-xl font-semibold text-black/70 mb-8">Co-Founder, Chief Music Curator</p>
                   
                   <div className="lg:mt-[140px]">
-                    <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
+                    <p className="text-xl md:text-2xl text-black leading-relaxed mb-6">
                       G’s lifelong passion for music deepened with a Media & Communications Ba and a Popular Music in Film MA, from Goldsmiths, University of London.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-4">
@@ -581,7 +581,7 @@ export default function AboutUs() {
                   <p className="text-xl font-semibold text-black/70 mb-8">Contributing Associate, DJ, Music Curator</p>
                   
                   <div className="lg:mt-[140px]">
-                    <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
+                    <p className="text-xl md:text-2xl text-black leading-relaxed mb-6">
                       Katerina combines visual design & sound narrative with a refined artistic sensibility.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-4">
