@@ -508,19 +508,36 @@ export default function Services() {
       </section>
 
       {/* How services work together - Peach Background */}
-      <section className="py-20 bg-[#faebe3]">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-8">How services work together</h2>
-          <div className="text-xl md:text-2xl text-black/80 leading-relaxed space-y-6">
-            <p>
-              Many clients define their everyday sound first with <Link to={createPageUrl("signature-playlists")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Signature Playlists</Link>, then add <Link to={createPageUrl("sonic-strategy")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Sonic Strategy</Link> as they grow.
-            </p>
-            <p>
-              <Link to={createPageUrl("event-soundtracks")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Event Soundtracks</Link> covers their key moments, while <Link to={createPageUrl("audio-upgrades")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Audio Upgrades</Link> ensures that systems in each venue can deliver the music with clarity and comfort.
-            </p>
-            <p>
-              Over time this gives you a consistent, long term approach to music for business instead of a series of one-off tweaks.
-            </p>
+      <section className="py-24 bg-[#faebe3]">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-16 text-center">How services work together</h2>
+          
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <Card className="p-8 bg-white border-none shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col justify-center">
+              <div className="h-12 w-12 bg-black/5 rounded-full flex items-center justify-center mb-6">
+                <span className="text-2xl font-bold text-black">1</span>
+              </div>
+              <p className="text-xl text-black/80 leading-relaxed">
+                Many clients define their everyday sound first with <Link to={createPageUrl("signature-playlists")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Signature Playlists</Link>, then add <Link to={createPageUrl("sonic-strategy")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Sonic Strategy</Link> as they grow.
+              </p>
+            </Card>
+
+            <Card className="p-8 bg-white border-none shadow-lg hover:shadow-xl transition-shadow h-full flex flex-col justify-center">
+              <div className="h-12 w-12 bg-black/5 rounded-full flex items-center justify-center mb-6">
+                <span className="text-2xl font-bold text-black">2</span>
+              </div>
+              <p className="text-xl text-black/80 leading-relaxed">
+                <Link to={createPageUrl("event-soundtracks")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Event Soundtracks</Link> covers their key moments, while <Link to={createPageUrl("audio-upgrades")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Audio Upgrades</Link> ensures that systems in each venue can deliver the music with clarity and comfort.
+              </p>
+            </Card>
+          </div>
+
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="inline-block p-8 bg-black text-white rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
+              <p className="text-xl md:text-2xl leading-relaxed font-medium">
+                Over time this gives you a consistent, long term approach to music for business instead of a series of one-off tweaks.
+              </p>
+            </div>
           </div>
         </div>
       </section>
