@@ -534,7 +534,7 @@ export default function AboutUs() {
                   
                   <div className="lg:mt-[140px]">
                     <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
-                      G's lifelong passion for music deepened through a popular music in films Master at Media & communications of Goldsmiths University of London.
+                      G’s lifelong passion for music deepened with a Media & Communications Ba and a Popular Music in Film MA, from Goldsmiths, University of London.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-4">
                       Back in Athens, he made his mark as a curator and DJ on radio, parties & venues, including as co-founder of the acclaimed M.C.
