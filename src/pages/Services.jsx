@@ -603,8 +603,30 @@ export default function Services() {
               </Link>
             </article>
           </div>
-        </div>
-      </section>
-    </div>
-  );
+          </div>
+          </section>
+
+          {/* Final CTA */}
+          <section className="py-20" style={{ backgroundImage: "linear-gradient(to bottom, #faebe3 0%, rgba(250, 235, 227, 0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+          <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Still not sure where to start?</h2>
+          <p className="text-xl text-black/70 mb-8">
+            We can help you choose the right service for your venue.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link to={createPageUrl("ContactUs")}>
+              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg">
+                Book a music consultation
+              </Button>
+            </Link>
+            <Link to={createPageUrl("Industries")}>
+              <Button variant="outline" size="lg" className="border-black text-black hover:bg-black/5 px-8 py-6 text-lg bg-transparent">
+                Explore the industries we design music for
+              </Button>
+            </Link>
+          </div>
+          </div>
+          </section>
+          </div>
+          );
 }
