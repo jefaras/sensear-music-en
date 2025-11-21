@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
@@ -334,13 +333,32 @@ export default function Services() {
             } />
            </div> */}
 
+      {/* Intro Section - Black */}
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                Our Music<br />Curation Services
+              </h2>
+            </div>
+            
+            <div className="lg:order-1 lg:mt-[200px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                From strategic sonic branding consultancy to immersive music event experiences, we offer comprehensive solutions.
+              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                <span>Read our </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-white font-semibold">case studies</Link><span> to see how we've transformed venues across Greece.</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Grid - with animated gradient */}
       <section className="py-20 animated-gradient" aria-labelledby="services-list-heading">
         <div className="max-w-7xl mx-auto px-6">
-            <h2 id="services-list-heading" className="text-4xl font-bold text-black mb-6 text-center">Our Music Curation Services</h2>
-            <p className="text-center text-black/70 mb-12 max-w-3xl mx-auto text-lg">
-              <span>From strategic </span><Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black font-semibold">sonic branding consultancy</Link><span> to </span><Link to={createPageUrl("event-soundtracks")} className="underline hover:text-black font-semibold">immersive music event experiences</Link><span>, we offer comprehensive solutions. Read our </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">case studies</Link><span> to see how we've transformed venues across Greece.</span>
-            </p>
+          <h2 id="services-list-heading" className="sr-only">Our Services List</h2>
           
           {/* First row: Signature Playlists and Event Soundtracks - LARGER */}
           <div className="grid md:grid-cols-2 gap-8 items-stretch mb-8" role="list">
