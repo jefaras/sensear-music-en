@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { BarChart, Music, Sparkles, SlidersHorizontal, ArrowRight } from "lucide-react";
-import Breadcrumbs from "../components/Breadcrumbs";
+import { ArrowRight, Music, Sparkles, BarChart, SlidersHorizontal } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 
 export default function Services() {
   const [scrollY, setScrollY] = useState(0);
@@ -207,30 +207,39 @@ export default function Services() {
   return (
     <div className="bg-[#faebe3]">
       <style>{`
-        @keyframes gradient-shift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        
-        .animated-gradient {
-          background: linear-gradient(135deg, #f5d4c1 0%, #e8c3b0 15%, #d4c4b0 30%, #c0c0c0 45%, #d3d3d3 60%, #f0d5d0 75%, #e8c3b0 90%, #f5d4c1 100%);
-          background-size: 400% 400%;
-          animation: gradient-shift 7s ease infinite;
-        }
-        
         @keyframes slideUp {
-          from { opacity: 0; transform: translateY(40px); }
-          to { opacity: 1; transform: translateY(0); }
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
         }
         
-        .slide-up-1 { animation: slideUp 0.8s ease-out forwards; opacity: 0; }
-        .slide-up-2 { animation: slideUp 0.8s ease-out 0.2s forwards; opacity: 0; }
-        .slide-up-3 { animation: slideUp 0.8s ease-out 0.4s forwards; opacity: 0; }
-        .slide-up-4 { animation: slideUp 0.8s ease-out 0.6s forwards; opacity: 0; }
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-3 {
+          animation: slideUp 0.8s ease-out 0.4s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
       `}</style>
 
-      {/* Hero Section */}
+      {/* Hero Section - Matches Home Page Visuals */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Services section">
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
@@ -238,40 +247,29 @@ export default function Services() {
               Which music service<br />
               do you need?
             </h1>
-            
-            <div className="mb-8 max-w-4xl slide-up-2">
-              <h2 className="text-2xl font-bold text-black mb-4">How our music services work for your venue</h2>
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed mb-6">
-                SensEar offers 4 connected & customised music services for hospitality business.
-              </p>
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed mb-6">
-                We do so much more than fill silence with music. We transform your atmosphere & support your goals.
-              </p>
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Start with the one that matches where you are today, then add the others as your spaces & needs evolve.
-              </p>
-            </div>
           </div>
         </div>
 
-        {/* Hero Image with parallax */}
+        {/* Hero Image with parallax - Same container style as Home */}
         <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
+              {/* Mobile/Tablet version */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Professional music equipment and sound system setup for venue curation"
+                alt="Professional music equipment and sound system setup"
                 className="absolute w-full h-full object-cover md:hidden" />
 
+              {/* Desktop version - WITH parallax */}
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Professional music equipment and sound system setup for venue curation"
+                alt="Professional music equipment and sound system setup"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{
                   top: '-15%',
@@ -284,195 +282,229 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Is this for you? Section */}
-      <section className="py-20 bg-white" aria-labelledby="services-list-heading">
+      {/* Intro Section - Black Background like Home */}
+      <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 id="services-list-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Is this for you?</h2>
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                How our music<br />services work
+              </h2>
+            </div>
+            
+            <div className="lg:order-1 lg:mt-[100px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                SensEar offers 4 connected & customised music services for hospitality business.
+              </p>
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed mb-6">
+                We do so much more than fill silence with music. We transform your atmosphere & support your goals.
+              </p>
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
+                Start with the one that matches where you are today, then add the others as your spaces & needs evolve.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Guide Section ("Is this for you?") - Matches Home Page Layout */}
+      <section className="py-24 bg-white" aria-labelledby="services-heading">
+        <div className="mx-auto px-6" style={{ maxWidth: '1800px' }}>
+          <div className="text-center mb-16 max-w-4xl mx-auto">
+            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Is this for you?</h2>
             <p className="text-xl text-black/70">Use this guide to see which service fits you.</p>
           </div>
-          
-          {/* First row: Signature Playlists and Event Soundtracks */}
-          <div className="grid md:grid-cols-2 gap-8 items-stretch mb-8" role="list">
-            {/* Service 1: Signature Playlists */}
-            <article role="listitem">
-              <Link to={createPageUrl("signature-playlists")} aria-label="Signature Playlists">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-[#faebe3]">
-                  <div className="relative aspect-[16/9] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg"
-                      alt="Signature Playlists"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  </div>
 
-                  <div className="p-8">
-                    <h3 className="text-3xl font-bold text-black mb-4 group-hover:underline decoration-2 underline-offset-4">
-                      Signature Playlists
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <span className="font-bold text-black text-lg block mb-1">Best for:</span>
-                        <p className="text-black/80 text-lg">Venues that want daily, branded background music.</p>
-                      </div>
-                      <div>
-                        <span className="font-bold text-black text-lg block mb-1">You get:</span>
-                        <p className="text-black/80 text-lg">Curated playlists per space and time of day, central control & regular updates.</p>
-                      </div>
+          {/* Signature Playlists - Full Width Style (like Home) */}
+          <div className="mb-8" role="list">
+            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+                <div className="lg:order-1">
+                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
+                    Signature Playlists
+                  </h3>
+                  
+                  <div className="lg:mt-[100px]">
+                    <div className="mb-8">
+                      <span className="font-bold text-black text-xl block mb-2">Best for:</span>
+                      <p className="text-2xl md:text-3xl text-black leading-relaxed">Venues that want daily, branded background music.</p>
                     </div>
-                  </div>
-                </Card>
-              </Link>
-            </article>
-
-            {/* Service 2: Event Soundtracks */}
-            <article role="listitem">
-              <Link to={createPageUrl("event-soundtracks")} aria-label="Event Soundtracks">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-[#faebe3]">
-                  <div className="relative aspect-[16/9] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
-                      alt="Event Soundtracks"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  </div>
-
-                  <div className="p-8">
-                    <h3 className="text-3xl font-bold text-black mb-4 group-hover:underline decoration-2 underline-offset-4">
-                      Event Soundtracks
-                    </h3>
-                    <div className="space-y-4">
-                      <div>
-                        <span className="font-bold text-black text-lg block mb-1">Best for:</span>
-                        <p className="text-black/80 text-lg">One-off events (launches, conferences, weddings, shows, etc).</p>
-                      </div>
-                      <div>
-                        <span className="font-bold text-black text-lg block mb-1">You get:</span>
-                        <p className="text-black/80 text-lg">Complete soundtrack/live DJ set synced to all key moments (optional AV support).</p>
-                      </div>
+                    <div className="mb-8">
+                      <span className="font-bold text-black text-xl block mb-2">You get:</span>
+                      <p className="text-xl md:text-2xl text-black/80 leading-relaxed">Curated playlists per space and time of day, central control & regular updates.</p>
                     </div>
+                    <Link to={createPageUrl("signature-playlists")} className="inline-flex items-center text-black font-medium text-xl group">
+                      <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Explore Signature Playlists</span>
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                    </Link>
                   </div>
-                </Card>
-              </Link>
+                </div>
+
+                <div className="lg:order-2 hidden lg:block lg:mt-[60px]">
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b78efe258_f62cd7127a69c8a8a667cf33da146404.jpg"
+                    alt="Bespoke music curation"
+                    className="w-full h-auto rounded-2xl shadow-lg"
+                  />
+                </div>
+              </div>
             </article>
           </div>
 
-          {/* Second row: Sonic Strategy and Audio Upgrades - Smaller fonts */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch" role="list">
-            {/* Spacer */}
-            <div className="hidden lg:block"></div>
+          {/* Event Soundtracks - Full Width Style (like Home) */}
+          <div className="mb-8" role="list">
+            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
+                <div className="lg:order-1 hidden lg:block lg:mt-[60px]">
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da88aa63f_a2d13703910b4b40ce6d714893df9b18ccbb75b2-962x647.jpg"
+                    alt="Event soundtracks and production"
+                    className="w-full h-auto rounded-2xl shadow-lg"
+                  />
+                </div>
 
-            {/* Service 3: Sonic Strategy */}
-            <article role="listitem">
-              <Link to={createPageUrl("sonic-strategy")} aria-label="Sonic Strategy">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white border border-black/10">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
-                      alt="Sonic Strategy"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  </div>
+                <div className="lg:order-2">
+                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
+                    Event Soundtracks
+                  </h3>
 
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-black mb-3 group-hover:underline decoration-2 underline-offset-4">
-                      Sonic Strategy
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div>
-                        <span className="font-bold text-black block mb-1">Best for:</span>
-                        <p className="text-black/70">Multi-location or channel brands that want a clear sonic identity.</p>
-                      </div>
-                      <div>
-                        <span className="font-bold text-black block mb-1">You get:</span>
-                        <p className="text-black/70">Practical sonic guidelines for venues, content and rolling out a consistent sound.</p>
-                      </div>
+                  <div className="lg:mt-[100px]">
+                    <div className="mb-8">
+                      <span className="font-bold text-black text-xl block mb-2">Best for:</span>
+                      <p className="text-2xl md:text-3xl text-black leading-relaxed">One-off events (launches, conferences, weddings, shows, etc).</p>
                     </div>
+                    <div className="mb-8">
+                      <span className="font-bold text-black text-xl block mb-2">You get:</span>
+                      <p className="text-xl md:text-2xl text-black/80 leading-relaxed">Complete soundtrack/live DJ set synced to all key moments (optional AV support).</p>
+                    </div>
+                    <Link to={createPageUrl("event-soundtracks")} className="inline-flex items-center text-black font-medium text-xl group">
+                      <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Explore Event Soundtracks</span>
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                    </Link>
                   </div>
-                </Card>
-              </Link>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          {/* Sonic Strategy & Audio Upgrades - Split Row (like Home) */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-8" role="list">
+            {/* Sonic Strategy */}
+            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg h-full flex flex-col justify-between">
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-6">
+                  Sonic Strategy
+                </h3>
+                <div className="mb-6">
+                  <span className="font-bold text-black block mb-1">Best for:</span>
+                  <p className="text-xl text-black leading-relaxed">Multi-location or channel brands that want a clear sonic identity.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold text-black block mb-1">You get:</span>
+                  <p className="text-lg text-black/80">Practical sonic guidelines for venues, content and rolling out a consistent sound.</p>
+                </div>
+              </div>
+              
+              <div className="mt-6">
+                <Link to={createPageUrl("sonic-strategy")} className="inline-flex items-center text-black font-medium text-lg group mb-6">
+                  <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Explore Sonic Strategy</span>
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                </Link>
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f0c12332d_b2e33cdc-8475-49fe-9456-918e11a1de34.jpg"
+                  alt="Sonic strategy consultation"
+                  className="w-full h-auto rounded-xl shadow-md"
+                />
+              </div>
             </article>
 
-            {/* Service 4: Audio Upgrades */}
-            <article role="listitem">
-              <Link to={createPageUrl("audio-upgrades")} aria-label="Audio Upgrades">
-                <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 h-full bg-white border border-black/10">
-                  <div className="relative aspect-[4/3] overflow-hidden">
-                    <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
-                      alt="Audio Upgrades"
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-                  </div>
+            {/* Audio Upgrades */}
+            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg h-full flex flex-col justify-between">
+              <div>
+                <h3 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-6">
+                  Audio Upgrades
+                </h3>
+                <div className="mb-6">
+                  <span className="font-bold text-black block mb-1">Best for:</span>
+                  <p className="text-xl text-black leading-relaxed">Venues with harsh or weak sound, even if playlists are right.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold text-black block mb-1">You get:</span>
+                  <p className="text-lg text-black/80">On-site sound audit and an upgrade plan with trusted partners, for a balanced mix.</p>
+                </div>
+              </div>
 
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-black mb-3 group-hover:underline decoration-2 underline-offset-4">
-                      Audio Upgrades
-                    </h3>
-                    <div className="space-y-3 text-sm">
-                      <div>
-                        <span className="font-bold text-black block mb-1">Best for:</span>
-                        <p className="text-black/70">Venues with harsh or weak sound, even if playlists are right.</p>
-                      </div>
-                      <div>
-                        <span className="font-bold text-black block mb-1">You get:</span>
-                        <p className="text-black/70">On-site sound audit and an upgrade plan with trusted partners, for a balanced mix.</p>
-                      </div>
-                    </div>
-                  </div>
-                </Card>
-              </Link>
+              <div className="mt-6">
+                <Link to={createPageUrl("audio-upgrades")} className="inline-flex items-center text-black font-medium text-lg group mb-6">
+                  <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Explore Audio Upgrades</span>
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+                </Link>
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
+                  alt="Audio equipment optimization"
+                  className="w-full h-auto rounded-xl shadow-md"
+                />
+              </div>
             </article>
-
-            {/* Spacer */}
-            <div className="hidden lg:block"></div>
           </div>
         </div>
       </section>
 
-      {/* If this is you, start here */}
+      {/* If this is you, start here - Black Section (High Contrast) */}
       <section className="py-20 bg-black text-white">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-center">If this is you, start here</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-center text-white">If this is you, start here</h2>
           
-          <div className="space-y-8 text-lg md:text-xl">
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-2xl hover:bg-white/5 transition-colors">
-              <span className="text-center md:text-left">Your venue's music feels generic or off brand</span>
-              <Link to={createPageUrl("signature-playlists")} className="flex items-center gap-2 text-peach font-bold hover:underline underline-offset-4 whitespace-nowrap">
-                Signature Playlists <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
+          <div className="space-y-6">
+            <Link to={createPageUrl("signature-playlists")} className="block group">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-xl hover:bg-white/10 transition-colors">
+                <span className="text-lg md:text-xl text-center md:text-left">Your venue's music feels generic or off brand</span>
+                <div className="flex items-center gap-2 text-peach font-bold group-hover:translate-x-1 transition-transform whitespace-nowrap">
+                  Signature Playlists <ArrowRight className="w-5 h-5" />
+                </div>
+              </div>
+            </Link>
 
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-2xl hover:bg-white/5 transition-colors">
-              <span className="text-center md:text-left">Planning a launch, show, conference or special dinner</span>
-              <Link to={createPageUrl("event-soundtracks")} className="flex items-center gap-2 text-peach font-bold hover:underline underline-offset-4 whitespace-nowrap">
-                Event Soundtracks <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
+            <Link to={createPageUrl("event-soundtracks")} className="block group">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-xl hover:bg-white/10 transition-colors">
+                <span className="text-lg md:text-xl text-center md:text-left">Planning a launch, show, conference or special dinner</span>
+                <div className="flex items-center gap-2 text-peach font-bold group-hover:translate-x-1 transition-transform whitespace-nowrap">
+                  Event Soundtracks <ArrowRight className="w-5 h-5" />
+                </div>
+              </div>
+            </Link>
 
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-2xl hover:bg-white/5 transition-colors">
-              <span className="text-center md:text-left">Rebranding, expanding or want one clear sound across locations and channels</span>
-              <Link to={createPageUrl("sonic-strategy")} className="flex items-center gap-2 text-peach font-bold hover:underline underline-offset-4 whitespace-nowrap">
-                Sonic Strategy <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
+            <Link to={createPageUrl("sonic-strategy")} className="block group">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-xl hover:bg-white/10 transition-colors">
+                <span className="text-lg md:text-xl text-center md:text-left">Rebranding, expanding or want one clear sound across locations and channels</span>
+                <div className="flex items-center gap-2 text-peach font-bold group-hover:translate-x-1 transition-transform whitespace-nowrap">
+                  Sonic Strategy <ArrowRight className="w-5 h-5" />
+                </div>
+              </div>
+            </Link>
 
-            <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-2xl hover:bg-white/5 transition-colors">
-              <span className="text-center md:text-left">Guests or staff complain about loudness, echo or "cannot hear each other"</span>
-              <Link to={createPageUrl("audio-upgrades")} className="flex items-center gap-2 text-peach font-bold hover:underline underline-offset-4 whitespace-nowrap">
-                Audio Upgrades <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
+            <Link to={createPageUrl("audio-upgrades")} className="block group">
+              <div className="flex flex-col md:flex-row justify-between items-center gap-4 p-6 border border-white/20 rounded-xl hover:bg-white/10 transition-colors">
+                <span className="text-lg md:text-xl text-center md:text-left">Guests or staff complain about loudness, echo or "cannot hear each other"</span>
+                <div className="flex items-center gap-2 text-peach font-bold group-hover:translate-x-1 transition-transform whitespace-nowrap">
+                  Audio Upgrades <ArrowRight className="w-5 h-5" />
+                </div>
+              </div>
+            </Link>
           </div>
         </div>
       </section>
 
-      {/* How services work together */}
-      <section className="py-20 animated-gradient">
+      {/* How services work together - Peach Background */}
+      <section className="py-20 bg-[#faebe3]">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-8">How services work together</h2>
           <div className="text-xl md:text-2xl text-black/80 leading-relaxed space-y-6">
             <p>
-              Many clients define their everyday sound first with <Link to={createPageUrl("signature-playlists")} className="underline font-bold hover:text-black">Signature Playlists</Link>, then add <Link to={createPageUrl("sonic-strategy")} className="underline font-bold hover:text-black">Sonic Strategy</Link> as they grow.
+              Many clients define their everyday sound first with <Link to={createPageUrl("signature-playlists")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Signature Playlists</Link>, then add <Link to={createPageUrl("sonic-strategy")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Sonic Strategy</Link> as they grow.
             </p>
             <p>
-              <Link to={createPageUrl("event-soundtracks")} className="underline font-bold hover:text-black">Event Soundtracks</Link> covers their key moments, while <Link to={createPageUrl("audio-upgrades")} className="underline font-bold hover:text-black">Audio Upgrades</Link> ensures that systems in each venue can deliver the music with clarity and comfort.
+              <Link to={createPageUrl("event-soundtracks")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Event Soundtracks</Link> covers their key moments, while <Link to={createPageUrl("audio-upgrades")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Audio Upgrades</Link> ensures that systems in each venue can deliver the music with clarity and comfort.
             </p>
             <p>
               Over time this gives you a consistent, long term approach to music for business instead of a series of one-off tweaks.
@@ -481,34 +513,66 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Further reading */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-8">Further reading</h2>
-          <p className="text-xl text-black/70 mb-12">If you want to explore the thinking behind this approach, you can read:</p>
+      {/* Further reading - White Background with Cards like Home/Blog */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-8">Further reading</h2>
+            <p className="text-xl text-black/70 mb-12">If you want to explore the thinking behind this approach, you can read:</p>
+          </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <Link to={createPageUrl("how-top-hospitality-brands-design-sound")} className="block group">
-              <Card className="p-8 h-full hover:shadow-xl transition-shadow border-black/10 flex flex-col justify-center items-center text-center">
-                <h3 className="text-xl font-bold text-black mb-4 group-hover:underline decoration-2 underline-offset-4">
-                  How Top Hospitality Brands Design Their Sound On Purpose
-                </h3>
-                <p className="text-black/70">
-                  On designing music as part of the guest journey.
-                </p>
-              </Card>
-            </Link>
+            <article>
+              <Link to={createPageUrl("how-top-hospitality-brands-design-sound")} className="block">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white h-full">
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9619c7d50_e56c8a322bf8043723ba7e215cf5e636.jpg"
+                      alt="Hospitality sound design"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  </div>
+                  <div className="p-8">
+                    <Badge className="mb-4 bg-black/5 text-black border-black/10">Insights</Badge>
+                    <h3 className="text-2xl font-bold text-black mb-4 group-hover:text-black/80 transition-colors">
+                      How Top Hospitality Brands Design Their Sound On Purpose
+                    </h3>
+                    <p className="text-black/70 mb-6 leading-relaxed text-lg">
+                      On designing music as part of the guest journey.
+                    </p>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read Article</span>
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
 
-            <Link to={createPageUrl("music-curation-cycle-venues")} className="block group">
-              <Card className="p-8 h-full hover:shadow-xl transition-shadow border-black/10 flex flex-col justify-center items-center text-center">
-                <h3 className="text-xl font-bold text-black mb-4 group-hover:underline decoration-2 underline-offset-4">
-                  The Music Curation Cycle for Venues: Analyze, Optimize & Evolve Your Sonic Identity
-                </h3>
-                <p className="text-black/70">
-                  On keeping your sonic identity aligned with changing needs.
-                </p>
-              </Card>
-            </Link>
+            <article>
+              <Link to={createPageUrl("music-curation-cycle-venues")} className="block">
+                <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white h-full">
+                  <div className="relative aspect-[16/9] overflow-hidden">
+                    <img
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg"
+                      alt="Music curation cycle"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  </div>
+                  <div className="p-8">
+                    <Badge className="mb-4 bg-black/5 text-black border-black/10">Strategy</Badge>
+                    <h3 className="text-2xl font-bold text-black mb-4 group-hover:text-black/80 transition-colors">
+                      The Music Curation Cycle for Venues: Analyze, Optimize & Evolve Your Sonic Identity
+                    </h3>
+                    <p className="text-black/70 mb-6 leading-relaxed text-lg">
+                      On keeping your sonic identity aligned with changing needs.
+                    </p>
+                    <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
+                      <span>Read Article</span>
+                      <ArrowRight className="ml-2 w-4 h-4" />
+                    </div>
+                  </div>
+                </Card>
+              </Link>
+            </article>
           </div>
         </div>
       </section>
