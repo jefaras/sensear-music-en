@@ -462,12 +462,26 @@ export default function AboutUs() {
       </section>
       
       {/* Vision Section */}
-      <section className="py-24 bg-black text-white" aria-labelledby="vision-heading">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 id="vision-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-4 animate-fade-in-up text-peach">Our Vision</h2>
-          <p className="text-2xl text-center max-w-4xl mx-auto text-white/90 animate-fade-in-up leading-relaxed" style={{ animationDelay: '0.2s' }}>
-            <span className="">To become the leading music partner for eclectic hospitality brands & events seeking to express identity, elevate atmosphere & create lasting guest connections. Learn more about our </span><Link to={createPageUrl("sonic-strategy")} className="underline hover:text-peach font-semibold">sonic strategy service</Link><span>.</span>
-          </p>
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            {/* Right: Titles - appears first on mobile, second on desktop */}
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                Our Vision
+              </h2>
+            </div>
+            
+            {/* Left: Content - appears second on mobile, first on desktop */}
+            <div className="lg:order-1 lg:mt-[116px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                To become the leading music partner for eclectic hospitality brands & events seeking to express identity, elevate atmosphere & create lasting guest connections.
+              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                <span>Learn more about our </span><Link to={createPageUrl("sonic-strategy")} className="underline hover:text-peach font-semibold">sonic strategy service</Link><span>.</span>
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
