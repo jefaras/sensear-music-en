@@ -306,7 +306,7 @@ export default function Home() {
 
           {/* First Row: Signature Playlists - FULL WIDTH */}
           <div className="mb-8" role="list">
-            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg">
+            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                 {/* Left: Text Content */}
                 <div className="lg:order-1">
@@ -372,7 +372,7 @@ export default function Home() {
 
           {/* Third Row: Sonic Strategy - FULL WIDTH */}
           <div className="mb-8" role="list">
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg">
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                 {/* Left: Text Content */}
                 <div className="lg:order-1">
@@ -407,7 +407,7 @@ export default function Home() {
 
           {/* Fourth Row: Audio Upgrades - FULL WIDTH */}
           <div className="mb-8" role="list">
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg">
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
                 {/* Left: Image - 30% smaller */}
                 <div className="lg:order-1 hidden lg:block lg:mt-[140px]">
