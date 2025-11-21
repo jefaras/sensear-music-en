@@ -291,7 +291,7 @@ export default function AboutUs() {
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">George + Katerina meet while curating the soundtrack for an upscale wedding party. Their common passion for unearthing hidden-gem grooves ignites a lasting creative partnership.</p>
+                      <p className="text-base text-black/80 leading-relaxed"><strong>George + Katerina</strong> meet while curating the soundtrack for an upscale wedding party. Their common passion for <strong>unearthing hidden-gem grooves</strong> ignites a lasting creative partnership.</p>
                     </div>
                   </div>
 
@@ -307,7 +307,7 @@ export default function AboutUs() {
                     {/* Right side - Content */}
                     <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">George + Katerina meet while curating the soundtrack for an upscale wedding party. Their common passion for unearthing hidden-gem grooves ignites a lasting creative partnership.</p>
+                        <p className="text-lg text-black/80 leading-relaxed"><strong>George + Katerina</strong> meet while curating the soundtrack for an upscale wedding party. Their common passion for <strong>unearthing hidden-gem grooves</strong> ignites a lasting creative partnership.</p>
                       </div>
                     </div>
                   </div>
@@ -323,7 +323,7 @@ export default function AboutUs() {
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">Under the title Midnight City, they begin hosting and DJing exclusive parties. Specializing in cross-genre dancefloor discoveries from the '70s, '80s to present day, they cultivate a loyal crowd of groove lovers.</p>
+                      <p className="text-base text-black/80 leading-relaxed">Under the title <strong>Midnight City</strong>, they begin hosting and DJing <strong>exclusive parties</strong>. Specializing in cross-genre dancefloor discoveries from the '70s, '80s to present day, they cultivate a loyal crowd of groove lovers.</p>
                     </div>
                   </div>
 
@@ -339,7 +339,7 @@ export default function AboutUs() {
                     {/* Right side - Content */}
                     <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">Under the title Midnight City, they begin hosting and DJing exclusive parties. Specializing in cross-genre dancefloor discoveries from the '70s, '80s to present day, they cultivate a loyal crowd of groove lovers.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">Under the title <strong>Midnight City</strong>, they begin hosting and DJing <strong>exclusive parties</strong>. Specializing in cross-genre dancefloor discoveries from the '70s, '80s to present day, they cultivate a loyal crowd of groove lovers.</p>
                       </div>
                     </div>
                   </div>
@@ -355,7 +355,7 @@ export default function AboutUs() {
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">JEF attends one of M.C.'s signature events. Captivated by the vibe and deep-track selections, he becomes an instant and devoted fan.</p>
+                      <p className="text-base text-black/80 leading-relaxed">JEF attends one of M.C.'s signature events. Captivated by the vibe and deep-track selections, he becomes an instant and <strong>devoted fan</strong>.</p>
                     </div>
                   </div>
 
@@ -371,7 +371,7 @@ export default function AboutUs() {
                     {/* Right side - Content */}
                     <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">JEF attends one of M.C.'s signature events. Captivated by the vibe and deep-track selections, he becomes an instant and devoted fan.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">JEF attends one of M.C.'s signature events. Captivated by the vibe and deep-track selections, he becomes an instant and <strong>devoted fan</strong>.</p>
                       </div>
                     </div>
                   </div>
@@ -387,7 +387,7 @@ export default function AboutUs() {
                       </div>
                     </div>
                     <div className="flex-grow min-w-0 bg-peach/30 rounded-xl p-6 backdrop-blur-sm">
-                      <p className="text-base text-black/80 leading-relaxed">As JEF begins a MA in Hospitality Management, he and George discuss their shared vision of providing transformative music curation + DJ sets for upscale venues & events.</p>
+                      <p className="text-base text-black/80 leading-relaxed">As JEF begins a MA in Hospitality Management, he and George discuss their shared vision of providing <strong>transformative music curation</strong> + DJ sets for <strong>upscale venues & events</strong>.</p>
                     </div>
                   </div>
 
@@ -403,7 +403,7 @@ export default function AboutUs() {
                     {/* Right side - Content */}
                     <div className="flex-grow">
                       <div className="bg-peach/30 rounded-xl p-8 backdrop-blur-sm hover:bg-peach/50 transition-colors">
-                        <p className="text-lg text-black/80 leading-relaxed">As JEF begins a MA in Hospitality Management, he and George discuss their shared vision of providing transformative music curation + DJ sets for upscale venues & events.</p>
+                        <p className="text-lg text-black/80 leading-relaxed">As JEF begins a MA in Hospitality Management, he and George discuss their shared vision of providing <strong>transformative music curation</strong> + DJ sets for <strong>upscale venues & events</strong>.</p>
                       </div>
                     </div>
                   </div>
@@ -455,9 +455,15 @@ export default function AboutUs() {
             </div>
           </div>
           
-          <p className="text-center mt-12 text-lg text-black/80 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            Want to hear our vision? Explore our <Link to={createPageUrl("signature-soundscapes")} className="underline hover:text-black font-semibold">signature soundscapes demos</Link>.
-          </p>
+          <div className="max-w-2xl mx-auto mt-16 text-center animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
+            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Want to hear our vision?</h3>
+            <p className="text-lg md:text-xl text-black/70 mb-6">Listen to our signature soundscapes demos.</p>
+            <Link to={createPageUrl("signature-soundscapes")}>
+              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8">
+                Explore Sample Playlists
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
       
