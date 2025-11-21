@@ -371,7 +371,7 @@ export default function Services() {
                   <div className="lg:mt-[100px]">
                     <div className="mb-8">
                       <span className="font-bold text-black text-xl block mb-2">Best for:</span>
-                      <p className="text-2xl md:text-3xl text-black leading-relaxed">One-off events (launches, conferences, weddings, shows, etc).</p>
+                      <p className="text-2xl md:text-3xl text-black leading-relaxed">One off events such as launches, conferences, weddings and shows.</p>
                     </div>
                     <div className="mb-8">
                       <span className="font-bold text-black text-xl block mb-2">You get:</span>
