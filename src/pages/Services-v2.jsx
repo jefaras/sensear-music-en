@@ -153,8 +153,9 @@ export default function ServicesV2() {
                   <p className="text-black/80">Your current music feels disconnected from your brand</p>
                 </div>
                 <div className="mt-8">
-                  <Link to={createPageUrl("signature-playlists")} className="inline-flex items-center text-black font-bold hover:underline decoration-2 underline-offset-4">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  <Link to={createPageUrl("signature-playlists")} className="inline-flex items-center text-black font-bold group">
+                    <span className="hover:underline decoration-2 underline-offset-4">Learn more</span>
+                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
               </div>
@@ -173,8 +174,9 @@ export default function ServicesV2() {
                   <p className="text-black/80">You're scaling or need consistency across locations</p>
                 </div>
                 <div className="mt-8">
-                  <Link to={createPageUrl("sonic-strategy")} className="inline-flex items-center text-black font-bold hover:underline decoration-2 underline-offset-4">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  <Link to={createPageUrl("sonic-strategy")} className="inline-flex items-center text-black font-bold group">
+                    <span className="hover:underline decoration-2 underline-offset-4">Learn more</span>
+                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
               </div>
@@ -211,8 +213,9 @@ export default function ServicesV2() {
                   <p className="text-black/80">The stakes are high and the playlist can't fail</p>
                 </div>
                 <div className="mt-8">
-                  <Link to={createPageUrl("event-soundtracks")} className="inline-flex items-center text-black font-bold hover:underline decoration-2 underline-offset-4">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  <Link to={createPageUrl("event-soundtracks")} className="inline-flex items-center text-black font-bold group">
+                    <span className="hover:underline decoration-2 underline-offset-4">Learn more</span>
+                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
               </div>
@@ -231,8 +234,9 @@ export default function ServicesV2() {
                   <p className="text-black/80">People complain it's "too loud" and "too quiet" in the same space</p>
                 </div>
                 <div className="mt-8">
-                  <Link to={createPageUrl("audio-upgrades")} className="inline-flex items-center text-black font-bold hover:underline decoration-2 underline-offset-4">
-                    Learn more <ArrowRight className="ml-2 w-4 h-4" />
+                  <Link to={createPageUrl("audio-upgrades")} className="inline-flex items-center text-black font-bold group">
+                    <span className="hover:underline decoration-2 underline-offset-4">Learn more</span>
+                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
               </div>
@@ -347,15 +351,16 @@ export default function ServicesV2() {
           
           <div className="flex flex-col items-center gap-6">
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-10 py-7 text-xl rounded-full">
+              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-10 py-7 text-xl rounded-full transition-transform hover:scale-105">
                 Book a listening session
               </Button>
             </Link>
             
             <div className="space-y-2">
               <p className="text-black/60 text-sm font-medium uppercase tracking-wide">We will analyze your current sound and show you what's possible.</p>
-              <Link to={createPageUrl("Services")} className="inline-flex items-center text-black font-bold hover:underline decoration-2 underline-offset-4 text-lg">
-                Compare services in detail <ArrowRight className="ml-2 w-4 h-4" />
+              <Link to={createPageUrl("Services")} className="inline-flex items-center text-black font-bold text-lg group">
+                <span className="hover:underline decoration-2 underline-offset-4">Compare services in detail</span>
+                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
           </div>
