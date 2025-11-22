@@ -512,70 +512,68 @@ export default function Services() {
         <div className="max-w-6xl mx-auto px-6">
           <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-16 text-center">How services work together</h2>
           
-          <div className="relative py-8 md:py-12">
-            {/* Top Section: Sonic - Signature - Event */}
-            <div className="flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-6">
+          <div className="relative max-w-6xl mx-auto py-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-20 gap-y-16 justify-items-center items-center">
 
-              {/* Signature Playlists - Center (Order 1 on Mobile, 2 on Desktop) */}
-              <div className="order-1 lg:order-2 flex flex-col items-center gap-4">
-                  <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-white shadow-xl hover:shadow-2xl transition-all z-10 flex flex-col items-center justify-center p-8 lg:p-12 text-center border-4 border-black/5">
-                      <p className="text-lg lg:text-2xl font-medium text-black leading-relaxed">
-                        Many clients define their everyday sound first with <Link to={createPageUrl("signature-playlists")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Signature Playlists</Link>.
-                      </p>
-                  </div>
-                  {/* Mobile Arrow Down to Sonic */}
-                  <div className="lg:hidden text-black/20">
-                      <ArrowDown className="w-8 h-8" />
-                  </div>
-              </div>
+                {/* 1. Signature Playlists (Top Left) */}
+                <div className="relative flex flex-col items-center order-1">
+                    <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-white shadow-xl hover:shadow-2xl transition-all z-10 flex flex-col items-center justify-center p-8 lg:p-12 text-center border-4 border-black/5">
+                        <p className="text-lg lg:text-2xl font-medium text-black leading-relaxed">
+                            Many clients define their everyday sound first with <Link to={createPageUrl("signature-playlists")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Signature Playlists</Link>.
+                        </p>
+                    </div>
+                    {/* Mobile Arrow Down */}
+                    <div className="lg:hidden text-black/20 mt-4">
+                        <ArrowDown className="w-8 h-8" />
+                    </div>
 
-              {/* Sonic Strategy - Left (Order 2 on Mobile, 1 on Desktop) */}
-              <div className="order-2 lg:order-1 flex flex-col lg:flex-row items-center gap-4">
-                 <div className="w-64 h-64 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center p-8 text-center">
-                    <p className="text-lg text-black/80 leading-relaxed">
-                      Then add <Link to={createPageUrl("sonic-strategy")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Sonic Strategy</Link> to establish their brand sound.
-                    </p>
-                 </div>
-                 {/* Desktop Arrow to Center */}
-                 <div className="hidden lg:block text-black/20">
-                   <ArrowLeftRight className="w-8 h-8" />
-                 </div>
-                 {/* Mobile Arrow Down to Event */}
-                 <div className="lg:hidden text-black/20">
-                      <ArrowDown className="w-8 h-8" />
-                 </div>
-              </div>
-
-              {/* Event Soundtracks - Right (Order 3 on Mobile, 3 on Desktop) */}
-              <div className="order-3 lg:order-3 flex flex-col lg:flex-row items-center gap-4">
-                 {/* Desktop Arrow from Center */}
-                 <div className="hidden lg:block text-black/20">
-                   <ArrowLeftRight className="w-8 h-8" />
-                 </div>
-
-                 <div className="w-64 h-64 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center p-8 text-center">
-                    <p className="text-lg text-black/80 leading-relaxed">
-                      <Link to={createPageUrl("event-soundtracks")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Event Soundtracks</Link> covers their key moments.
-                    </p>
-                 </div>
-                 {/* Mobile Arrow Down to Audio */}
-                 <div className="lg:hidden text-black/20">
-                      <ArrowDown className="w-8 h-8" />
-                 </div>
-              </div>
-            </div>
-
-            {/* Bottom Section: Audio Upgrades */}
-            <div className="flex flex-col items-center justify-center gap-4 lg:mt-4">
-                {/* Desktop Arrow Vertical from Center */}
-                <div className="hidden lg:block text-black/20">
-                   <ArrowUpDown className="w-8 h-8" />
+                    {/* Desktop Arrow Right (to SS) */}
+                    <div className="hidden lg:block absolute -right-[4.5rem] top-1/2 -translate-y-1/2 text-black/20 z-0">
+                         <ArrowRight className="w-10 h-10" />
+                    </div>
+                    {/* Desktop Arrow Down (to ES) */}
+                     <div className="hidden lg:block absolute bottom-[-4.5rem] left-1/2 -translate-x-1/2 text-black/20 z-0">
+                         <ArrowDown className="w-10 h-10" />
+                    </div>
                 </div>
 
-                <div className="w-64 h-64 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center p-8 text-center">
-                   <p className="text-lg text-black/80 leading-relaxed">
-                     While <Link to={createPageUrl("audio-upgrades")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Audio Upgrades</Link> ensures that music is delivered with clarity & comfort.
-                   </p>
+                {/* 2. Sonic Strategy (Top Right) */}
+                <div className="relative flex flex-col items-center order-2">
+                     <div className="w-64 h-64 lg:w-72 lg:h-72 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center p-8 text-center">
+                        <p className="text-lg text-black/80 leading-relaxed">
+                            Then add <Link to={createPageUrl("sonic-strategy")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Sonic Strategy</Link> to establish their brand sound.
+                        </p>
+                    </div>
+                    {/* Mobile Arrow Down */}
+                    <div className="lg:hidden text-black/20 mt-4">
+                        <ArrowDown className="w-8 h-8" />
+                    </div>
+                </div>
+
+                {/* 3. Event Soundtracks (Bottom Left) */}
+                <div className="relative flex flex-col items-center order-3">
+                     <div className="w-64 h-64 lg:w-72 lg:h-72 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center p-8 text-center">
+                        <p className="text-lg text-black/80 leading-relaxed">
+                            <Link to={createPageUrl("event-soundtracks")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Event Soundtracks</Link> covers their key moments.
+                        </p>
+                    </div>
+                     {/* Mobile Arrow Down */}
+                    <div className="lg:hidden text-black/20 mt-4">
+                        <ArrowDown className="w-8 h-8" />
+                    </div>
+                     {/* Desktop Arrow Right (to AU) */}
+                    <div className="hidden lg:block absolute -right-[4.5rem] top-1/2 -translate-y-1/2 text-black/20 z-0">
+                         <ArrowRight className="w-10 h-10" />
+                    </div>
+                </div>
+
+                {/* 4. Audio Upgrades (Bottom Right - Small) */}
+                <div className="relative flex flex-col items-center order-4">
+                     <div className="w-56 h-56 rounded-full bg-white shadow-lg hover:shadow-xl transition-shadow flex flex-col items-center justify-center p-6 text-center">
+                        <p className="text-base text-black/80 leading-relaxed">
+                            While <Link to={createPageUrl("audio-upgrades")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Audio Upgrades</Link> ensures that music is delivered with clarity & comfort.
+                        </p>
+                    </div>
                 </div>
             </div>
           </div>
