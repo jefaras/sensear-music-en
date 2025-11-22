@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ArrowDown, ArrowLeftRight, ArrowUpDown, Music, Sparkles, BarChart, SlidersHorizontal } from "lucide-react";
+import { ArrowRight, ArrowDown, ArrowLeft, ArrowLeftRight, ArrowUpDown, Music, Sparkles, BarChart, SlidersHorizontal } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 export default function Services() {
