@@ -228,30 +228,9 @@ export default function HomeTest() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Music Curation<br />
-              for Unique Experiences
+              Soundtracking<br />
+              Unique Experiences
             </h1>
-            
-            <div className="mb-8 max-w-5xl slide-up-2">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Every venue has a story. Let music tell yours. <br />
-                We craft bespoke Playlists for Hotels, Restaurants, Bars & Events that create atmosphere, emotional connections & loyal guests.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
-              {/* Discover Your Sound button - COMMENTED OUT */}
-              {/* <Link to={createPageUrl("ContactUs")}>
-                <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
-                  Discover Your Sound
-                </Button>
-              </Link> */}
-              <Link to={createPageUrl("Services")}>
-                <Button variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto h-14" aria-label="Explore our services">
-                  Explore our services
-                </Button>
-              </Link>
-            </div>
           </div>
         </div>
 
