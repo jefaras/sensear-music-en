@@ -61,17 +61,7 @@ export default function ServicesV2() {
               How music<br />becomes strategy
             </h1>
             
-            <div className="mb-12 max-w-4xl slide-up-2">
-              <h2 className="text-2xl md:text-3xl font-bold text-black mb-6">
-                Music is already shaping your business
-              </h2>
-              <p className="text-xl text-black/80 leading-relaxed mb-6">
-                Every venue has a soundtrack, whether you designed it or not. Random playlists, staff preferences, or silence all tell a story about your brand. We make sure it's the right story.
-              </p>
-              <p className="text-xl text-black/80 leading-relaxed">
-                We shape sound for venues across hospitality, retail, and culture. Not background music. Strategic atmosphere that influences how people feel, how long they stay, and whether they return.
-              </p>
-            </div>
+
           </div>
         </div>
 
@@ -93,6 +83,28 @@ export default function ServicesV2() {
                   transform: `translateY(${scrollY * 0.15}px)`,
                   transformOrigin: 'center top'
                 }} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro Section - Black Background */}
+      <section className="bg-black py-20">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
+            <div className="lg:order-2 lg:min-w-[280px]">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+                Music is already shaping<br />your business
+              </h2>
+            </div>
+            
+            <div className="lg:order-1 lg:mt-[200px]">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                Every venue has a soundtrack, whether you designed it or not. Random playlists, staff preferences, or silence all tell a story about your brand. We make sure it's the right story.
+              </p>
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
+                We shape sound for venues across hospitality, retail, and culture. Not background music. Strategic atmosphere that influences how people feel, how long they stay, and whether they return.
+              </p>
             </div>
           </div>
         </div>
