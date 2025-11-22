@@ -111,7 +111,19 @@ export default function ServicesV2() {
       </section>
 
       {/* Our Services Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24" style={{
+        backgroundImage: `linear-gradient(to bottom, 
+          #ffffff 0%, 
+          #ffffff 20%, 
+          rgba(255,255,255,0) 40%, 
+          rgba(255,255,255,0) 55%,
+          #FFF7F2 80%, 
+          #ffffff 100%
+        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Our Services</h2>
