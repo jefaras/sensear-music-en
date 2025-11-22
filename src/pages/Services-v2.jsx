@@ -94,7 +94,7 @@ export default function ServicesV2() {
           <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
             <div className="lg:order-2 lg:min-w-[280px]">
               <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
-                Music is already shaping<br />your business
+                Music is already<br />shaping<br />your business
               </h2>
             </div>
             
