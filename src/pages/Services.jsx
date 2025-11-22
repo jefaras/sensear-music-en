@@ -535,7 +535,7 @@ export default function Services() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block p-8 bg-black text-white rounded-2xl shadow-xl transform hover:scale-105 transition-transform duration-300">
               <p className="text-xl md:text-2xl leading-relaxed font-medium">
-                Over time this gives you a consistent, long term approach to music for business instead of a series of one-off tweaks.
+                Over time this gives them a consistent, long term approach to music for business instead of a series of one-off tweaks.
               </p>
             </div>
           </div>
