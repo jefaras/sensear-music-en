@@ -254,7 +254,7 @@ export default function Industries() {
       <section className="py-20 bg-[#faebe3]" aria-labelledby="industries-heading">
         <div className="max-w-7xl mx-auto px-6">
           <h2 id="industries-heading" className="text-4xl md:text-5xl font-bold text-black mb-6 text-center">
-            Strategic Sound for Hospitality, Retail & Wellness
+            Strategic Sound<br /> for Hospitality, Retail, Wellness & Culture.
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8" role="list">
             {/* Industry 1: Hotels & Resorts */}
