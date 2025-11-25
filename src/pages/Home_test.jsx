@@ -226,7 +226,7 @@ export default function HomeTest() {
       {/* Hero Section */}
       <section className="relative pt-28 pb-12" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
         <div className="max-w-[1800px] mx-auto px-6">
-          <div className="relative h-[75vh] min-h-[600px] w-full">
+          <div className="relative h-[75vh] min-h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl">
              <img
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png"
               srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png 1800w,
