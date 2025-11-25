@@ -485,6 +485,15 @@ export default function Layout({ children }) {
             </p>
           </div>
         </div>
+        
+        {/* Large Brand Name at the bottom - Only on Home Page */}
+        {(location.pathname === createPageUrl("Home") || location.pathname.includes("Home_test") || location.pathname === "/") && (
+          <div className="w-full overflow-hidden leading-none pb-2 select-none">
+             <h1 className="text-[13.5vw] font-bold text-white text-center font-syne tracking-tight leading-[0.85]">
+              SENSEAR
+            </h1>
+          </div>
+        )}
       </footer>
 
       {/* Back to Top Button */}
