@@ -242,10 +242,10 @@ We craft sophisticated music curation for places and events that refuse to sound
             <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
               {/* Discover Your Sound button - COMMENTED OUT */}
               {/* <Link to={createPageUrl("ContactUs")}>
-                  <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
-                    Discover Your Sound
-                  </Button>
-                 </Link> */}
+                   <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
+                     Discover Your Sound
+                   </Button>
+                  </Link> */}
               <Link to={createPageUrl("Services")}>
                 <Button variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto h-14" aria-label="Explore our services">
                   Explore our services
@@ -262,6 +262,7 @@ We craft sophisticated music curation for places and events that refuse to sound
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png 2400w"
+
 
 
                 sizes="(max-width: 1800px) 100vw, 1800px"
@@ -290,8 +291,8 @@ We craft sophisticated music curation for places and events that refuse to sound
             </div>
             
             <div className="lg:order-1 lg:mt-[200px]">
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We provide all the music solutions that will elevate your space or event & leave a lasting impression.
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">At the core of SensEar is a shared belief: that music is not background; it is atmosphere, memory and emotion.
+
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
                 <span>Explore our </span><Link to={createPageUrl("Services")} className="underline hover:text-white font-semibold">full range of music curation services</Link><span>.</span>
