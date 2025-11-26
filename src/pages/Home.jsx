@@ -663,7 +663,7 @@ export default function Home() {
                       How Brand-Fit Music Converts Browsers into Buyers
                     </h3>
                     <p className="text-black/70 mb-4 leading-relaxed">
-                      Evidence-based research showing how brand-aligned music increases sales by 9.1% in hospitality venues.
+                      Evidence-based research shows how brand-aligned music boosts revenues in hospitality venues.
                     </p>
                     <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
                       <span>Read More</span>
