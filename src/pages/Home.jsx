@@ -303,179 +303,151 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Four Ways We Transform Venues */}
       <section className="py-24 bg-white" aria-labelledby="services-heading">
         <div className="mx-auto px-6" style={{ maxWidth: '1800px' }}>
-          <h2 id="services-heading" className="sr-only">Our Services</h2>
-
-          {/* First Row: Signature Playlists - FULL WIDTH */}
-          <div className="mb-8" role="list">
             <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
-                {/* Left: Text Content */}
-                <div className="lg:order-1">
-                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
-                    Signature Playlists
-                  </h3>
-                  
-                  <div className="lg:mt-[280px]">
-                    <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
-                      Bespoke, brand-exclusive playlists sourced from rare archives for venues that refuse to sound generic.
-                    </p>
-                    <Link to={createPageUrl("signature-playlists")} className="inline-flex items-center text-black font-medium text-xl group">
-                      <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Create Your Sound Identity</span>
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                    </Link>
-                  </div>
+                <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+                    {/* Left: Text Content */}
+                    <div className="lg:order-1">
+                        <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-12">
+                            Four Ways We Transform Venues
+                        </h2>
+                        
+                        <div className="space-y-8 mb-12">
+                            {/* Service 1 */}
+                            <div>
+                                <Link to={createPageUrl("signature-playlists")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                    Signature Playlists <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </Link>
+                                <p className="text-xl text-black/70 leading-relaxed">
+                                    Your daily soundtrack, from morning energy to evening atmosphere
+                                </p>
+                            </div>
+                            {/* Service 2 */}
+                            <div>
+                                <Link to={createPageUrl("event-soundtracks")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                    Event Soundtracks <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </Link>
+                                <p className="text-xl text-black/70 leading-relaxed">
+                                    Choreographed music for launches, conferences and celebrations
+                                </p>
+                            </div>
+                            {/* Service 3 */}
+                            <div>
+                                <Link to={createPageUrl("sonic-strategy")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                    Sonic Strategy <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </Link>
+                                <p className="text-xl text-black/70 leading-relaxed">
+                                    Your audio DNA, unified across all locations
+                                </p>
+                            </div>
+                            {/* Service 4 */}
+                            <div>
+                                <Link to={createPageUrl("audio-upgrades")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                    Audio Upgrades <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </Link>
+                                <p className="text-xl text-black/70 leading-relaxed">
+                                    Acoustic refinement for crystal-clear sound
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <Link to={createPageUrl("Services")}>
+                            <Button variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300" aria-label="Explore all services">
+                                Explore all services
+                            </Button>
+                        </Link>
+                    </div>
+                    
+                    {/* Right: Image */}
+                    <div className="lg:order-2 hidden lg:block lg:mt-[140px]">
+                      <img
+                        src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ee4f6e2db_SIGNATUREcropped.jpg"
+                        alt="SensEar Services"
+                        className="w-full h-auto rounded-2xl shadow-lg" />
+                    </div>
                 </div>
-
-                {/* Right: Image */}
-                <div className="lg:order-2 hidden lg:block lg:mt-[140px]">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ee4f6e2db_SIGNATUREcropped.jpg"
-                    alt="Bespoke music curation and playlist creation"
-                    className="w-full h-auto rounded-2xl shadow-lg" />
-
-                </div>
-              </div>
             </article>
-          </div>
-
-          {/* Second Row: Event Soundtracks - FULL WIDTH */}
-          <div className="mb-8" role="list">
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
-                {/* Left: Image */}
-                <div className="lg:order-1 hidden lg:block lg:mt-[140px]">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d4a085ed9_EventSoundtracks-upsc2-cropped.jpg"
-                    alt="Professional event production with music curation"
-                    className="w-full h-auto rounded-2xl shadow-lg" />
-
-                </div>
-
-                {/* Right: Text Content */}
-                <div className="lg:order-2">
-                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-8">
-                    Event Soundtracks
-                  </h3>
-
-                  <div className="lg:mt-[280px]">
-                    <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
-                      Artfully selected and curated soundtracks & live DJ sets that elevate events into engaging, unforgettable moments.
-                    </p>
-                    <Link to={createPageUrl("event-soundtracks")} className="inline-flex items-center text-black font-medium text-xl group">
-                      <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Design Your Event Atmosphere</span>
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          {/* Third Row: Sonic Strategy & Audio Upgrades - Split Row */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-8" role="list">
-            {/* Sonic Strategy */}
-            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg h-full">
-              <h3 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-6">
-                Sonic Strategy
-              </h3>
-              
-              <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div className="flex flex-col justify-between">
-                  <p className="text-xl md:text-2xl text-black leading-relaxed mb-6">
-                    Ultra-specialized music consultancy & sound branding guidelines that forge an inimitable sonic identity.
-                  </p>
-                  <Link to={createPageUrl("sonic-strategy")} className="inline-flex items-center text-black font-medium text-lg group">
-                    <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Build Your Sound Strategy</span>
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                  </Link>
-                </div>
-
-                <div className="w-full">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
-                    alt="Strategic sonic branding consultation"
-                    className="w-full h-auto rounded-xl shadow-md" />
-
-                </div>
-              </div>
-            </article>
-
-            {/* Audio Upgrades */}
-            <article role="listitem" className="bg-[#faebe3] p-8 rounded-lg h-full">
-              <h3 className="text-3xl md:text-4xl font-bold text-black leading-tight mb-6">
-                Audio Upgrades
-              </h3>
-
-              <div className="grid md:grid-cols-2 gap-6 items-center">
-                <div className="flex flex-col justify-between">
-                  <p className="text-xl md:text-2xl text-black leading-relaxed mb-6">
-                    Professional on-site sound checks, optimization and audio calibration, that fix any sound related issue.
-                  </p>
-                  <Link to={createPageUrl("audio-upgrades")} className="inline-flex items-center text-black font-medium text-lg group">
-                    <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Optimize Your Sound System</span>
-                    <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                  </Link>
-                </div>
-
-                <div className="w-full">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
-                    alt="Professional audio equipment optimization"
-                    className="w-full h-auto rounded-xl shadow-md" />
-
-                </div>
-              </div>
-            </article>
-          </div>
         </div>
       </section>
 
-      {/* How We Help You Succeed Section - WITH IMAGE ON RIGHT */}
-      <section className="py-24" style={{ backgroundImage: "linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="benefits-heading">
+      {/* Your World, Our Expertise */}
+      <section className="py-24 bg-[#faebe3]">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12 leading-tight">
+                Your World, Our Expertise
+            </h2>
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
+                <Link to={createPageUrl("hotels-resorts")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Hotels & Resorts</Link>
+                <Link to={createPageUrl("restaurants-bars")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Restaurants & Bars</Link>
+                <Link to={createPageUrl("retail-stores")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Retail</Link>
+                <Link to={createPageUrl("wellness-gyms")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Wellness</Link>
+                <Link to={createPageUrl("events-experiences")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Events</Link>
+                <Link to={createPageUrl("art-museums-fashion")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Culture</Link>
+            </div>
+            
+            <p className="text-2xl text-black/80 leading-relaxed max-w-4xl mx-auto mb-12">
+                Each space has its unique rhythm and opportunities. Based in Athens, we understand Mediterranean hospitality and the complex art of atmosphere.
+            </p>
+            
+            <Link to={createPageUrl("Industries")}>
+                <Button className="bg-black text-white px-8 py-6 text-lg font-semibold rounded-full hover:bg-black/80">
+                    Find your industry <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+            </Link>
+        </div>
+      </section>
+
+      {/* How We Enhance Your Venue */}
+      <section className="py-24" style={{ backgroundImage: "linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="enhance-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="benefits-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-12 leading-tight text-black">
-            How We Help You Succeed
+          <h2 id="enhance-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-12 leading-tight text-black">
+            How We Enhance Your Venue
           </h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Benefits List */}
-            <div className="space-y-8" role="list">
-              <article role="listitem">
-                <h3 className="text-2xl font-bold text-black mb-3">Delight Your Guests</h3>
-                <p className="text-lg text-black/70">
-                  Increase satisfaction and encourage longer & repeat visits.
-                </p>
+            <div className="space-y-10" role="list">
+              <article role="listitem" className="flex gap-4">
+                <div className="mt-1 text-2xl">🎵</div>
+                <div>
+                    <h3 className="text-2xl font-bold text-black mb-2">Create destinations worth discovering</h3>
+                    <p className="text-lg text-black/70 leading-relaxed">
+                    Transform every corner into an experience that invites exploration and engagement.
+                    </p>
+                </div>
               </article>
 
-              <article role="listitem">
-                <h3 className="text-2xl font-bold text-black mb-3">Elevate Your Brand</h3>
-                <p className="text-lg text-black/70">
-                  Strengthen perception and loyalty with a memorable atmosphere.
-                </p>
+              <article role="listitem" className="flex gap-4">
+                <div className="mt-1 text-2xl">🎵</div>
+                <div>
+                    <h3 className="text-2xl font-bold text-black mb-2">Encourage meaningful connections</h3>
+                    <p className="text-lg text-black/70 leading-relaxed">
+                    The right atmosphere naturally extends visits and deepens guest relationships.
+                    </p>
+                </div>
               </article>
 
-              <article role="listitem">
-                <h3 className="text-2xl font-bold text-black mb-3">Empower Your Team</h3>
-                <p className="text-lg text-black/70">
-                  Boost staff morale & productivity with energizing music.
-                </p>
+              <article role="listitem" className="flex gap-4">
+                <div className="mt-1 text-2xl">🎵</div>
+                <div>
+                    <h3 className="text-2xl font-bold text-black mb-2">Unite and energize your team</h3>
+                    <p className="text-lg text-black/70 leading-relaxed">
+                    You have total control: We manage the music that boosts staff morale and lets them focus only on service excellence.
+                    </p>
+                </div>
               </article>
 
-              <article role="listitem">
-                <h3 className="text-2xl font-bold text-black mb-3">Total Control</h3>
-                <p className="text-lg text-black/70">
-                  Take full control over your venue's music style & flow.
-                </p>
-              </article>
-
-              <article role="listitem">
-                <h3 className="text-2xl font-bold text-black mb-3">Seamless Experience</h3>
-                <p className="text-lg text-black/70">
-                  Ensure a smooth music experience across every area of your venue.
-                </p>
+              <article role="listitem" className="flex gap-4">
+                <div className="mt-1 text-2xl">🎵</div>
+                <div>
+                    <h3 className="text-2xl font-bold text-black mb-2">Strengthen your brand</h3>
+                    <p className="text-lg text-black/70 leading-relaxed">
+                    Strategic sound creates the memorable experiences that build recognition and loyalty.
+                    </p>
+                </div>
               </article>
             </div>
 
@@ -483,18 +455,9 @@ export default function Home() {
             <div className="hidden lg:block">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/03aebeb4e_car-1.png"
-                alt="SensEar branded car with logo stickers"
+                alt="SensEar branded car"
                 className="w-full h-auto rounded-2xl shadow-lg" />
-
             </div>
-          </div>
-
-          <div className="text-center mt-16">
-            <Link to={createPageUrl("CaseStudies")}>
-              <Button size="lg" className="bg-black text-white px-8 py-6 text-lg font-medium hover:bg-black/80" aria-label="See how we helped others">
-                See How We Helped Others
-              </Button>
-            </Link>
           </div>
         </div>
       </section>
