@@ -318,14 +318,14 @@ export default function Home27_11() {
 
       {/* Four Ways We Transform Venues */}
       <section className="py-24" style={{
-        backgroundImage: \`linear-gradient(to bottom, 
+        backgroundImage: `linear-gradient(to bottom, 
           #ffffff 0%, 
           #ffffff 25%, 
           rgba(255,255,255,0) 45%, 
           rgba(255,255,255,0) 55%,
           #FFF7F2 75%, 
           #ffffff 100%
-        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')\`,
+        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -402,14 +402,14 @@ export default function Home27_11() {
 
       {/* Your World, Our Expertise */}
       <section className="py-24" style={{
-        backgroundImage: \`linear-gradient(to bottom, 
+        backgroundImage: `linear-gradient(to bottom, 
           #ffffff 0%, 
           #ffffff 25%, 
           rgba(255,255,255,0) 45%, 
           rgba(255,255,255,0) 55%,
           #FFF7F2 75%, 
           #ffffff 100%
-        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')\`,
+        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -497,14 +497,14 @@ export default function Home27_11() {
 
       {/* How We Enhance Your Venue */}
       <section className="py-24" style={{
-        backgroundImage: \`linear-gradient(to bottom, 
+        backgroundImage: `linear-gradient(to bottom, 
           #ffffff 0%, 
           #ffffff 25%, 
           rgba(255,255,255,0) 45%, 
           rgba(255,255,255,0) 55%,
           #FFF7F2 75%, 
           #ffffff 100%
-        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')\`,
+        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
