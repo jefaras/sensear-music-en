@@ -6,6 +6,19 @@ import { ArrowRight, CheckCircle, Music, Sparkles, SlidersHorizontal, BarChart }
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
+const AnimatedButton = ({ children, className = "", ...props }) => (
+  <Button
+    variant="outline"
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    {...props}
+  >
+    <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
+      {children}
+    </span>
+    <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+  </Button>
+);
+
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
 
@@ -247,9 +260,9 @@ export default function Home() {
                     </Button>
                    </Link> */}
               <Link to={createPageUrl("Services")}>
-                <Button variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300 w-full sm:w-auto h-14" aria-label="Explore our services">
+                <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Explore our services">
                   Explore our services
-                </Button>
+                </AnimatedButton>
               </Link>
             </div>
           </div>
@@ -354,9 +367,9 @@ export default function Home() {
                         </div>
                         
                         <Link to={createPageUrl("Services")}>
-                            <Button variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-300" aria-label="Explore all services">
+                            <AnimatedButton aria-label="Explore all services">
                                 Explore all services
-                            </Button>
+                            </AnimatedButton>
                         </Link>
                     </div>
                     
@@ -405,9 +418,9 @@ export default function Home() {
                     </p>
                     
                     <Link to={createPageUrl("Industries")}>
-                        <Button className="bg-black text-white px-8 py-6 text-lg font-semibold rounded-full hover:bg-black/80">
-                            Find your industry <ArrowRight className="ml-2 w-5 h-5" />
-                        </Button>
+                        <AnimatedButton>
+                            Find your industry
+                        </AnimatedButton>
                     </Link>
                 </div>
             </div>
@@ -681,10 +694,9 @@ export default function Home() {
 
           <div className="text-center mt-12">
             <Link to={createPageUrl("Blog")}>
-              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group">
+              <AnimatedButton>
                 Read All Articles
-                <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              </AnimatedButton>
             </Link>
           </div>
         </div>
