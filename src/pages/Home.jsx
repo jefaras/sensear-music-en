@@ -350,19 +350,19 @@ export default function Home() {
                             </div>
                             {/* Service 3 */}
                             <div>
-                                <Link to={createPageUrl("sonic-strategy")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                <Link to={createPageUrl("sonic-strategy")} className="text-xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
                                     Sonic Strategy <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
-                                <p className="text-xl text-black/70 leading-relaxed">
+                                <p className="text-lg text-black/70 leading-relaxed">
                                     Your audio DNA, unified across all locations and communication channels
                                 </p>
                             </div>
                             {/* Service 4 */}
                             <div>
-                                <Link to={createPageUrl("audio-upgrades")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                <Link to={createPageUrl("audio-upgrades")} className="text-xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
                                     Audio Upgrades <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
-                                <p className="text-xl text-black/70 leading-relaxed">
+                                <p className="text-lg text-black/70 leading-relaxed">
                                     Acoustic refinement and support for crystal-clear, memorable sound
                                 </p>
                             </div>
