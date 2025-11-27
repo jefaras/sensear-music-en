@@ -297,21 +297,17 @@ export default function Home() {
       {/* Intro Section */}
       <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
-            <div className="lg:order-2 lg:min-w-[280px]">
-              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+          <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
                 Who we are
               </h2>
-            </div>
             
-            <div className="lg:order-1 lg:mt-[150px]">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 We are a team of Athens-based <strong>music strategists</strong> who transform venues through sound that is <strong>intentional</strong>, <strong>immersive</strong> and <strong>memorable</strong>.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
                 Our <u>core belief</u> is that <em>music does more than fill silence</em>; it shapes <strong>atmosphere</strong>, influences <strong>behaviour</strong> and builds lasting <strong>connections</strong> with guests.
               </p>
-            </div>
           </div>
         </div>
       </section>
@@ -319,10 +315,10 @@ export default function Home() {
       {/* Four Ways We Transform Venues */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-6">
-            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-6 text-left">
+            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-6 text-center">
                 Four ways we transform venues
             </h2>
-            <p className="text-xl text-black/70 mb-12 leading-relaxed italic">
+            <p className="text-xl text-black/70 mb-12 leading-relaxed italic text-center max-w-3xl mx-auto">
                 Our strategic services shape behaviour, create atmosphere and build loyalty through sound.
             </p>
             <article role="listitem">
@@ -390,10 +386,10 @@ export default function Home() {
       {/* Your World, Our Expertise */}
       <section className="py-24 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6 leading-tight text-right">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6 leading-tight text-center">
                 Your world, our expertise
             </h2>
-            <p className="text-xl text-black/70 mb-12 leading-relaxed text-right ml-auto italic">
+            <p className="text-xl text-black/70 mb-12 leading-relaxed text-center mx-auto italic max-w-3xl">
                 We understand how rhythm, energy, and atmosphere shape the Greek hospitality experience.
             </p>
             <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
@@ -472,10 +468,10 @@ export default function Home() {
       {/* How We Enhance Your Venue */}
       <section className="py-24" style={{ backgroundImage: "linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="enhance-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="enhance-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-6 leading-tight text-black">
+          <h2 id="enhance-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-6 leading-tight text-black">
             How we redefine your venue
           </h2>
-          <p className="text-xl text-black/70 mb-12 leading-relaxed italic">
+          <p className="text-xl text-black/70 mb-12 leading-relaxed italic text-center max-w-3xl mx-auto">
             Strategic sound design that works as intentionally as every other aspect of your business.
           </p>
           
