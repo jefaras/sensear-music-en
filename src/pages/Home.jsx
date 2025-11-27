@@ -354,7 +354,7 @@ export default function Home() {
                                     Sonic Strategy <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-xl text-black/70 leading-relaxed">
-                                    Your audio DNA, unified across all locations
+                                    Your audio DNA, unified across all locations and communication channels
                                 </p>
                             </div>
                             {/* Service 4 */}
@@ -363,7 +363,7 @@ export default function Home() {
                                     Audio Upgrades <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-xl text-black/70 leading-relaxed">
-                                    Acoustic refinement for crystal-clear sound
+                                    Acoustic refinement and support for crystal-clear, memorable sound
                                 </p>
                             </div>
                         </div>
