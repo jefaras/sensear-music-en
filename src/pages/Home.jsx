@@ -319,9 +319,12 @@ export default function Home() {
       {/* Four Ways We Transform Venues */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-6">
-            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-12 text-left">
+            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-6 text-left">
                 Four ways we transform venues
             </h2>
+            <p className="text-xl text-black/70 mb-12 leading-relaxed max-w-3xl">
+                Our strategic services shape behaviour, create atmosphere and build loyalty through sound.
+            </p>
             <article role="listitem">
                 <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                     {/* Left: Text Content */}
@@ -387,9 +390,12 @@ export default function Home() {
       {/* Your World, Our Expertise */}
       <section className="py-24 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12 leading-tight text-right">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6 leading-tight text-right">
                 Your world, our expertise
             </h2>
+            <p className="text-xl text-black/70 mb-12 leading-relaxed text-right ml-auto max-w-2xl">
+                We understand how rhythm, energy, and atmosphere shape the Greek hospitality experience.
+            </p>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left: Image */}
                 <div className="hidden lg:block">
@@ -466,9 +472,12 @@ export default function Home() {
       {/* How We Enhance Your Venue */}
       <section className="py-24" style={{ backgroundImage: "linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="enhance-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="enhance-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-12 leading-tight text-black">
-            How we transform your venue
+          <h2 id="enhance-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-6 leading-tight text-black">
+            How we redefine your venue
           </h2>
+          <p className="text-xl text-black/70 mb-12 leading-relaxed max-w-3xl">
+            Strategic sound design that works as intentionally as every other aspect of your business.
+          </p>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Benefits List */}
