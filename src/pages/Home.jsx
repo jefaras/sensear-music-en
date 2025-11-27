@@ -322,7 +322,7 @@ export default function Home() {
             <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-6 text-left">
                 Four ways we transform venues
             </h2>
-            <p className="text-xl text-black/70 mb-12 leading-relaxed max-w-3xl">
+            <p className="text-xl text-black/70 mb-12 leading-relaxed max-w-3xl italic">
                 Our strategic services shape behaviour, create atmosphere and build loyalty through sound.
             </p>
             <article role="listitem">
@@ -393,7 +393,7 @@ export default function Home() {
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6 leading-tight text-right">
                 Your world, our expertise
             </h2>
-            <p className="text-xl text-black/70 mb-12 leading-relaxed text-right ml-auto max-w-2xl">
+            <p className="text-xl text-black/70 mb-12 leading-relaxed text-right ml-auto max-w-2xl italic">
                 We understand how rhythm, energy, and atmosphere shape the Greek hospitality experience.
             </p>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -475,7 +475,7 @@ export default function Home() {
           <h2 id="enhance-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-left mb-6 leading-tight text-black">
             How we redefine your venue
           </h2>
-          <p className="text-xl text-black/70 mb-12 leading-relaxed max-w-3xl">
+          <p className="text-xl text-black/70 mb-12 leading-relaxed max-w-3xl italic">
             Strategic sound design that works as intentionally as every other aspect of your business.
           </p>
           
