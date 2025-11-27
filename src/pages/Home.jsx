@@ -387,7 +387,7 @@ export default function Home() {
       {/* Your World, Our Expertise */}
       <section className="py-24 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12 leading-tight text-left">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12 leading-tight text-right">
                 Your world, our expertise
             </h2>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
