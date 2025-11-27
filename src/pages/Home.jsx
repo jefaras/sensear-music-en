@@ -270,7 +270,7 @@ export default function Home() {
 
         <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
-            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3] pb-[100%] md:pb-[40%]">
+            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3] pb-[75%] md:pb-[40%]">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png 1800w,
@@ -378,7 +378,7 @@ export default function Home() {
                       <img
                         src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ee4f6e2db_SIGNATUREcropped.jpg"
                         alt="SensEar Services"
-                        className="w-full h-[300px] md:h-auto object-cover rounded-2xl shadow-lg" />
+                        className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover rounded-2xl shadow-lg" />
                     </div>
                 </div>
             </article>
@@ -400,7 +400,7 @@ export default function Home() {
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5a170449c_lwnxeqhxcfez5hw0yraf-OK.jpg"
                       alt="Sonic expertise in hospitality and retail"
-                      className="w-full h-[300px] md:h-auto object-cover rounded-2xl shadow-lg"
+                      className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover rounded-2xl shadow-lg"
                     />
                 </div>
 
@@ -534,7 +534,7 @@ export default function Home() {
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6e62c430c_03aebeb4e_car-1OK.png"
                 alt="SensEar branded car"
-                className="w-full h-[300px] md:h-auto object-cover rounded-2xl shadow-lg" />
+                className="w-full aspect-[4/3] md:aspect-auto md:h-auto object-cover rounded-2xl shadow-lg" />
             </div>
           </div>
         </div>
