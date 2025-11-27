@@ -481,46 +481,54 @@ export default function Home() {
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Benefits List */}
-            <div className="space-y-10" role="list">
-              <article role="listitem" className="flex gap-4">
-                <div className="mt-1 text-2xl">🎵</div>
-                <div>
-                    <h3 className="text-2xl font-bold text-black mb-2">Create destinations worth discovering</h3>
-                    <p className="text-lg text-black/70 leading-relaxed">
-                    Transform every corner into an experience that invites exploration and engagement.
-                    </p>
-                </div>
-              </article>
+            <div>
+                <div className="space-y-10 mb-12" role="list">
+                  <article role="listitem" className="flex gap-4">
+                    <div className="mt-1 text-2xl">🎵</div>
+                    <div>
+                        <h3 className="text-2xl font-bold text-black mb-2">Create destinations worth discovering</h3>
+                        <p className="text-lg text-black/70 leading-relaxed">
+                        Transform every corner into an experience that invites exploration and engagement.
+                        </p>
+                    </div>
+                  </article>
 
-              <article role="listitem" className="flex gap-4">
-                <div className="mt-1 text-2xl">🎵</div>
-                <div>
-                    <h3 className="text-2xl font-bold text-black mb-2">Encourage meaningful connections</h3>
-                    <p className="text-lg text-black/70 leading-relaxed">
-                    The right atmosphere naturally extends visits and deepens guest relationships.
-                    </p>
-                </div>
-              </article>
+                  <article role="listitem" className="flex gap-4">
+                    <div className="mt-1 text-2xl">🎵</div>
+                    <div>
+                        <h3 className="text-2xl font-bold text-black mb-2">Encourage meaningful connections</h3>
+                        <p className="text-lg text-black/70 leading-relaxed">
+                        The right atmosphere naturally extends visits and deepens guest relationships.
+                        </p>
+                    </div>
+                  </article>
 
-              <article role="listitem" className="flex gap-4">
-                <div className="mt-1 text-2xl">🎵</div>
-                <div>
-                    <h3 className="text-2xl font-bold text-black mb-2">Unite and energize your team</h3>
-                    <p className="text-lg text-black/70 leading-relaxed">
-                    You have total control: We manage the music that boosts staff morale and lets them focus only on service excellence.
-                    </p>
-                </div>
-              </article>
+                  <article role="listitem" className="flex gap-4">
+                    <div className="mt-1 text-2xl">🎵</div>
+                    <div>
+                        <h3 className="text-2xl font-bold text-black mb-2">Unite and energize your team</h3>
+                        <p className="text-lg text-black/70 leading-relaxed">
+                        You have total control: We manage the music that boosts staff morale and lets them focus only on service excellence.
+                        </p>
+                    </div>
+                  </article>
 
-              <article role="listitem" className="flex gap-4">
-                <div className="mt-1 text-2xl">🎵</div>
-                <div>
-                    <h3 className="text-2xl font-bold text-black mb-2">Strengthen your brand</h3>
-                    <p className="text-lg text-black/70 leading-relaxed">
-                    Strategic sound creates the memorable experiences that build recognition and loyalty.
-                    </p>
+                  <article role="listitem" className="flex gap-4">
+                    <div className="mt-1 text-2xl">🎵</div>
+                    <div>
+                        <h3 className="text-2xl font-bold text-black mb-2">Strengthen your brand</h3>
+                        <p className="text-lg text-black/70 leading-relaxed">
+                        Strategic sound creates the memorable experiences that build recognition and loyalty.
+                        </p>
+                    </div>
+                  </article>
                 </div>
-              </article>
+
+                <Link to={createPageUrl("CaseStudies")}>
+                    <AnimatedButton>
+                        View Case Studies
+                    </AnimatedButton>
+                </Link>
             </div>
 
             {/* Right: Car Image */}
