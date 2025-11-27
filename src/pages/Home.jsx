@@ -401,19 +401,62 @@ export default function Home() {
                 </div>
 
                 {/* Right: Content */}
-                <div>
-                    <div className="flex flex-wrap gap-4 mb-12">
-                        <Link to={createPageUrl("hotels-resorts")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Hotels & Resorts</Link>
-                        <Link to={createPageUrl("restaurants-bars")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Restaurants & Bars</Link>
-                        <Link to={createPageUrl("retail-stores")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Retail</Link>
-                        <Link to={createPageUrl("wellness-gyms")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Wellness</Link>
-                        <Link to={createPageUrl("events-experiences")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Events</Link>
-                        <Link to={createPageUrl("art-museums-fashion")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Culture</Link>
+                <div className="flex flex-col items-end text-right">
+                    <div className="space-y-8 mb-12 w-full">
+                        <div>
+                            <Link to={createPageUrl("hotels-resorts")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                Hotels & Resorts <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </Link>
+                            <p className="text-xl text-black/70 leading-relaxed">
+                                Music that shapes the complete guest journey: from breakfast to midnight cocktails, across lobby, pool, spa & rooms.
+                            </p>
+                        </div>
+
+                        <div>
+                            <Link to={createPageUrl("restaurants-bars")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                Restaurants & Bars <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </Link>
+                            <p className="text-xl text-black/70 leading-relaxed">
+                                Sound that flows with your service rhythm: from quiet openings to peak hours, encouraging conversation & extended visits.
+                            </p>
+                        </div>
+
+                        <div>
+                            <Link to={createPageUrl("retail-stores")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                Retail Stores <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </Link>
+                            <p className="text-xl text-black/70 leading-relaxed">
+                                Playlists that turn quick visits into deeper browsing and expand your brand story through the shopping process.
+                            </p>
+                        </div>
+
+                        <div>
+                            <Link to={createPageUrl("wellness-gyms")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                Wellness & Gyms <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </Link>
+                            <p className="text-xl text-black/70 leading-relaxed">
+                                Soundscapes that support every session: helping minds quiet, focus sharpen or energy rise, calibrated to each space & moment.
+                            </p>
+                        </div>
+
+                        <div>
+                            <Link to={createPageUrl("events-experiences")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                Events & Experiences <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </Link>
+                            <p className="text-xl text-black/70 leading-relaxed">
+                                Time-based music that frames arrivals, presentations & finales; ensuring every transition flows naturally.
+                            </p>
+                        </div>
+
+                        <div>
+                            <Link to={createPageUrl("art-museums-fashion")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
+                                Art, Museums & Fashion <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                            </Link>
+                            <p className="text-xl text-black/70 leading-relaxed">
+                                Smooth, precise sound that respects both art & architecture: from reflective galleries to dynamic runways & performance spaces.
+                            </p>
+                        </div>
                     </div>
-                    
-                    <p className="text-2xl text-black/80 leading-relaxed mb-12">
-                        Each space has its unique rhythm and opportunities. Based in Athens, we understand Mediterranean hospitality and the complex art of atmosphere.
-                    </p>
                     
                     <Link to={createPageUrl("Industries")}>
                         <AnimatedButton>
