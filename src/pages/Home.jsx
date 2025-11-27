@@ -293,10 +293,10 @@ export default function Home() {
             
             <div className="lg:order-1 lg:mt-[150px]">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We are <strong>music strategists</strong> who transform venues through sound that is <strong>intentional</strong>, <strong>immersive</strong> and <strong>memorable</strong>.
+                We are a creative team of music lovers who elevate spaces through music that is intentional, immersive and unforgettable.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Based in Athens, our <span className="underline">core belief</span> is that <em>music does more than fill silence</em>; it shapes atmosphere, influences <strong>behavior</strong> and builds lasting <strong>connections</strong> with guests.
+                At the core of SensEar is a shared belief: music is not background; it is atmosphere, memory and emotion.
               </p>
             </div>
           </div>
