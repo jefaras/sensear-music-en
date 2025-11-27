@@ -317,16 +317,15 @@ export default function Home() {
       </section>
 
       {/* Four Ways We Transform Venues */}
-      <section className="py-24 bg-white" aria-labelledby="services-heading">
-        <div className="mx-auto px-6" style={{ maxWidth: '1800px' }}>
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="services-heading">
+        <div className="max-w-7xl mx-auto px-6">
+            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-12 text-left">
+                Four ways we transform venues
+            </h2>
+            <article role="listitem">
                 <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                     {/* Left: Text Content */}
                     <div className="lg:order-1">
-                        <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-12">
-                            Four ways we transform venues
-                        </h2>
-                        
                         <div className="space-y-8 mb-12">
                             {/* Service 1 */}
                             <div>
@@ -374,7 +373,7 @@ export default function Home() {
                     </div>
                     
                     {/* Right: Image */}
-                    <div className="lg:order-2 hidden lg:block lg:mt-[140px]">
+                    <div className="lg:order-2 hidden lg:block">
                       <img
                         src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ee4f6e2db_SIGNATUREcropped.jpg"
                         alt="SensEar Services"
@@ -388,6 +387,9 @@ export default function Home() {
       {/* Your World, Our Expertise */}
       <section className="py-24 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12 leading-tight text-left">
+                Your world, our expertise
+            </h2>
             <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left: Image */}
                 <div className="hidden lg:block">
@@ -400,10 +402,6 @@ export default function Home() {
 
                 {/* Right: Content */}
                 <div>
-                    <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12 leading-tight">
-                        Your world, our expertise
-                    </h2>
-                    
                     <div className="flex flex-wrap gap-4 mb-12">
                         <Link to={createPageUrl("hotels-resorts")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Hotels & Resorts</Link>
                         <Link to={createPageUrl("restaurants-bars")} className="px-6 py-3 bg-white rounded-full text-black font-semibold hover:bg-black hover:text-white transition-all shadow-sm">Restaurants & Bars</Link>
