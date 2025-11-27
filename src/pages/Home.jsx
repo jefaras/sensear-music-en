@@ -326,7 +326,7 @@ export default function Home() {
                 Our strategic services shape behaviour, create atmosphere and build loyalty through sound.
             </p>
             <article role="listitem">
-                <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+                <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
                     {/* Left: Text Content */}
                     <div className="lg:order-1">
                         <div className="space-y-8 mb-12">
@@ -396,7 +396,7 @@ export default function Home() {
             <p className="text-xl text-black/70 mb-12 leading-relaxed text-right ml-auto italic">
                 We understand how rhythm, energy, and atmosphere shape the Greek hospitality experience.
             </p>
-            <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
+            <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
                 {/* Left: Image */}
                 <div className="lg:order-1 hidden lg:block">
                     <img
@@ -479,7 +479,7 @@ export default function Home() {
             Strategic sound design that works as intentionally as every other aspect of your business.
           </p>
           
-          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+          <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
             {/* Left: Benefits List */}
             <div className="lg:order-1">
                 <div className="space-y-10 mb-12" role="list">
