@@ -385,9 +385,7 @@ export default function Services() {
                       <span className="font-bold text-black text-base block mb-1">Perfect when:</span>
                       <p className="text-base md:text-lg text-black/60 leading-relaxed">Your atmosphere deserves the same attention as your interior design.</p>
                     </div>
-                    <div className="mb-8 bg-white/50 p-6 rounded-xl border border-black/5">
-                        <p className="text-lg text-black/80 italic">"Beach House Antiparos uses this to seamlessly transition from energetic poolside mornings to relaxed lobby evenings: guests now ask for our playlists daily."</p>
-                    </div>
+
 
                     <Link to={createPageUrl("signature-playlists")}>
                       <AnimatedButton className="w-full sm:w-auto">
@@ -439,9 +437,7 @@ export default function Services() {
                       <span className="font-bold text-black text-base block mb-1">Perfect when:</span>
                       <p className="text-base md:text-lg text-black/60 leading-relaxed">Every transition matters and timing is everything.</p>
                     </div>
-                    <div className="mb-8 bg-white/50 p-6 rounded-xl border border-black/5">
-                        <p className="text-lg text-black/80 italic">"Neva Bergman commissioned us for her exhibition opening at Levantis restaurant's gallery: she praised how the soundscape matched her work's emotions and kept visitors engaged longer."</p>
-                    </div>
+
 
                     <Link to={createPageUrl("event-soundtracks")}>
                       <AnimatedButton className="w-full sm:w-auto">
@@ -488,9 +484,7 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5">
-                  <p className="text-base text-black/80 italic">"Pelicanos developed its own sonic identity to stand out from its sister restaurant "Cantina". Now it serves its unique mix of fresh discoveries, hidden gems & elegant all-time classics."</p>
-              </div>
+
 
               <Link to={createPageUrl("sonic-strategy")}>
                 <AnimatedButtonSmall className="w-full sm:w-auto">
@@ -530,9 +524,7 @@ export default function Services() {
                 </div>
               </div>
 
-              <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5">
-                  <p className="text-base text-black/80 italic">"Klouvi bar in Athens asked us to improve their acoustic clarity: strategic soundproofing and speaker optimization created the warm, intimate atmosphere they wanted."</p>
-              </div>
+
 
               <Link to={createPageUrl("audio-upgrades")}>
                 <AnimatedButtonSmall className="w-full sm:w-auto">
