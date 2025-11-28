@@ -330,8 +330,8 @@ export default function Home() {
                         <div className="space-y-8 mb-12">
                             {/* Service 1 */}
                             <div>
-                                <Link to={createPageUrl("signature-playlists")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                    Signature Playlists <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                <Link to={createPageUrl("signature-playlists")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                    <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Signature Playlists</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-xl text-black/70 leading-relaxed">
                                     Your daily soundtrack, from morning energy to evening atmosphere
@@ -339,8 +339,8 @@ export default function Home() {
                             </div>
                             {/* Service 2 */}
                             <div>
-                                <Link to={createPageUrl("event-soundtracks")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                    Event Soundtracks <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                <Link to={createPageUrl("event-soundtracks")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                    <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Event Soundtracks</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-xl text-black/70 leading-relaxed">
                                     Choreographed music for launches, conferences and celebrations
@@ -348,8 +348,8 @@ export default function Home() {
                             </div>
                             {/* Service 3 */}
                             <div>
-                                <Link to={createPageUrl("sonic-strategy")} className="text-xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                    Sonic Strategy <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                <Link to={createPageUrl("sonic-strategy")} className="text-xl font-bold text-black block mb-2 group w-fit">
+                                    <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Sonic Strategy</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-lg text-black/70 leading-relaxed">
                                     Your audio DNA, unified across all locations and communication channels
@@ -357,8 +357,8 @@ export default function Home() {
                             </div>
                             {/* Service 4 */}
                             <div>
-                                <Link to={createPageUrl("audio-upgrades")} className="text-xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                    Audio Upgrades <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                <Link to={createPageUrl("audio-upgrades")} className="text-xl font-bold text-black block mb-2 group w-fit">
+                                    <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Audio Upgrades</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-lg text-black/70 leading-relaxed">
                                     Acoustic refinement and support for crystal-clear, memorable sound
@@ -408,49 +408,49 @@ export default function Home() {
                 <div className="md:order-2">
                     <div className="space-y-8 mb-12">
                         <div>
-                            <Link to={createPageUrl("hotels-resorts")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                Hotels & Resorts <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </Link>
+                            <Link to={createPageUrl("hotels-resorts")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                                                <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Hotels & Resorts</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                                            </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
                                 Music for every time of day and area of your hotel.
                             </p>
                         </div>
                         <div>
-                            <Link to={createPageUrl("restaurants-bars")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                Restaurants & Bars <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </Link>
+                            <Link to={createPageUrl("restaurants-bars")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                                                <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Restaurants & Bars</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                                            </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
                                 Sound that matches your service flow and keeps guests longer.
                             </p>
                         </div>
                         <div>
-                            <Link to={createPageUrl("retail-stores")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                Retail Stores <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </Link>
+                            <Link to={createPageUrl("retail-stores")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                                                <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Retail Stores</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                                            </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
                                 Playlists that inspire browsing and strengthen brand identity.
                             </p>
                         </div>
                         <div>
-                            <Link to={createPageUrl("wellness-gyms")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                Wellness & Gyms <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </Link>
+                            <Link to={createPageUrl("wellness-gyms")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                                                <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Wellness & Gyms</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                                            </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
                                 Soundscapes calibrated for relaxation, focus, or motivation.
                             </p>
                         </div>
                         <div>
-                            <Link to={createPageUrl("events-experiences")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                Events & Experiences <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </Link>
+                            <Link to={createPageUrl("events-experiences")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                                                <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Events & Experiences</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                                            </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
                                 Impactful, time-based music with natural transition flows.
                             </p>
                         </div>
                         <div>
-                            <Link to={createPageUrl("art-museums-fashion")} className="text-2xl font-bold text-black hover:text-black/70 transition-colors block mb-2 group">
-                                Art, Museums & Fashion <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
-                            </Link>
+                            <Link to={createPageUrl("art-museums-fashion")} className="text-2xl font-bold text-black block mb-2 group w-fit">
+                                                                <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Art, Museums & Fashion</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                                            </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
                                 Smooth, precise sound for galleries, runways, and exhibitions.
                             </p>
