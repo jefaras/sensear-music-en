@@ -365,11 +365,11 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="lg:order-2 hidden lg:block lg:mt-[60px]">
+                <div className="lg:order-2 block mt-8 lg:mt-[60px]">
                   <img
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/013a4722f_cyprpn9zest1wg173m2j.jpg"
                     alt="Bespoke music curation"
-                    className="w-full h-auto rounded-2xl shadow-lg"
+                    className="w-full aspect-[4/3] lg:aspect-auto lg:h-auto object-cover rounded-2xl shadow-lg"
                   />
                 </div>
               </div>
@@ -380,11 +380,11 @@ export default function Services() {
           <div className="mb-8" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
-                <div className="lg:order-1 hidden lg:block lg:mt-[60px]">
+                <div className="lg:order-1 block mt-8 lg:mt-[60px] order-last lg:order-none">
                   <img
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d4a085ed9_EventSoundtracks-upsc2-cropped.jpg"
                     alt="Event soundtracks and production"
-                    className="w-full h-auto rounded-2xl shadow-lg"
+                    className="w-full aspect-[4/3] lg:aspect-auto lg:h-auto object-cover rounded-2xl shadow-lg"
                   />
                 </div>
 
@@ -455,11 +455,11 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="lg:order-2 hidden lg:block lg:mt-[60px]">
+                <div className="lg:order-2 block mt-8 lg:mt-[60px]">
                   <img
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
                     alt="Strategic sonic branding consultation"
-                    className="w-full h-auto rounded-2xl shadow-lg"
+                    className="w-full aspect-[4/3] lg:aspect-auto lg:h-auto object-cover rounded-2xl shadow-lg"
                   />
                 </div>
               </div>
@@ -470,11 +470,11 @@ export default function Services() {
           <div className="mb-8" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
-                <div className="lg:order-1 hidden lg:block lg:mt-[60px]">
+                <div className="lg:order-1 block mt-8 lg:mt-[60px] order-last lg:order-none">
                   <img
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
                     alt="Professional audio equipment optimization"
-                    className="w-full h-auto rounded-2xl shadow-lg"
+                    className="w-full aspect-[4/3] lg:aspect-auto lg:h-auto object-cover rounded-2xl shadow-lg"
                   />
                 </div>
 
