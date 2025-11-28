@@ -482,41 +482,28 @@ export default function Home() {
             <div className="md:order-1">
                 <div className="space-y-10 mb-12" role="list">
                   <article role="listitem" className="flex gap-4">
-    
                     <div>
-                        <h3 className="text-2xl font-bold text-black mb-2">Create destinations worth discovering</h3>
+                        <h3 className="text-2xl font-bold text-black mb-2">Strengthen Your Brand</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        Turn every corner into an experience that invites exploration and engagement.
+                        Improve perception and loyalty with a memorable atmosphere.
                         </p>
                     </div>
                   </article>
 
                   <article role="listitem" className="flex gap-4">
-    
                     <div>
-                        <h3 className="text-2xl font-bold text-black mb-2">Encourage meaningful connections</h3>
+                        <h3 className="text-2xl font-bold text-black mb-2">Total Control</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        The right atmosphere naturally extends visits and deepens guest relationships.
+                        Take full control over your venue's music style & flow.
                         </p>
                     </div>
                   </article>
 
                   <article role="listitem" className="flex gap-4">
-    
                     <div>
-                        <h3 className="text-2xl font-bold text-black mb-2">Unite and energize your team</h3>
+                        <h3 className="text-2xl font-bold text-black mb-2">Consistent Experience</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        You have total control: We manage the music that boosts staff morale and lets them focus only on service excellence.
-                        </p>
-                    </div>
-                  </article>
-
-                  <article role="listitem" className="flex gap-4">
-    
-                    <div>
-                        <h3 className="text-2xl font-bold text-black mb-2">Strengthen your brand</h3>
-                        <p className="text-lg text-black/70 leading-relaxed">
-                        Strategic sound creates the memorable experiences that build recognition and loyalty.
+                        Ensure a smooth music experience across locations & marketing channels.
                         </p>
                     </div>
                   </article>
