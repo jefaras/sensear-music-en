@@ -365,14 +365,14 @@ export default function Services() {
           {/* Signature Playlists */}
           <div className="mb-24" role="list">
             <article role="listitem">
-              <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
+              <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
                 <div className="lg:order-1">
                   <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-2">
                     Signature Playlists
                   </h3>
                   <p className="text-xl font-medium text-black/60 mb-8">Your daily soundtrack</p>
-                  
-                  <div className="lg:mt-[100px]">
+
+                  <div>
                     <div className="mb-6">
                       <span className="font-bold text-black text-xl block mb-1">Ideal for:</span>
                       <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Venues ready to move beyond generic background music.</p>
@@ -395,7 +395,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="lg:order-2 block mt-8 lg:mt-[60px]">
+                <div className="lg:order-2 block mt-8">
                   <img
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/013a4722f_cyprpn9zest1wg173m2j.jpg"
                     alt="Bespoke music curation"
@@ -409,8 +409,8 @@ export default function Services() {
           {/* Event Soundtracks */}
           <div className="mb-24" role="list">
             <article role="listitem">
-              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
-                <div className="lg:order-1 block mt-8 lg:mt-[60px] order-last lg:order-none">
+              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
+                <div className="lg:order-1 block mt-8 order-last lg:order-none">
                   <img
                     src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d4a085ed9_EventSoundtracks-upsc2-cropped.jpg"
                     alt="Event soundtracks and production"
@@ -424,7 +424,7 @@ export default function Services() {
                   </h3>
                   <p className="text-xl font-medium text-black/60 mb-8">Choreographed experiences</p>
 
-                  <div className="lg:mt-[100px]">
+                  <div>
                     <div className="mb-6">
                       <span className="font-bold text-black text-xl block mb-1">Ideal for:</span>
                       <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Conferences, launches, weddings, and special occasions.</p>
@@ -478,7 +478,7 @@ export default function Services() {
                     </div>
                     <div className="mb-4">
                       <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
-                      <p className="text-sm text-black/60 leading-relaxed">Every location should feel part of the same story.</p>
+                      <p className="text-sm text-black/60 leading-relaxed">Every location & channel should feel part of the same story.</p>
                     </div>
                   </div>
                 </div>
@@ -514,7 +514,7 @@ export default function Services() {
                     </div>
                     <div className="mb-4">
                       <span className="font-bold text-black text-base block mb-1">You receive:</span>
-                      <p className="text-base text-black/60 leading-relaxed">Acoustic assessment, equipment recommendations, installation partnerships.</p>
+                      <p className="text-base text-black/60 leading-relaxed">Acoustic & equipment recommendations, installation partnerships.</p>
                     </div>
                     <div className="mb-4">
                       <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
