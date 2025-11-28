@@ -342,7 +342,7 @@ export default function Services() {
       </section>
 
       {/* Choose your starting point - With bg from Services-v2 */}
-      <section className="py-24" aria-labelledby="services-heading" style={{
+      <section className="pt-24 pb-12" aria-labelledby="services-heading" style={{
         backgroundImage: `linear-gradient(to bottom, 
           #ffffff 0%, 
           #ffffff 25%, 
@@ -455,7 +455,7 @@ export default function Services() {
           </div>
 
           {/* Combined Section: Sonic Strategy & Audio Upgrades */}
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 mb-24 items-start">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-start">
 
             {/* Sonic Strategy */}
             <div className="flex flex-col h-full">
@@ -544,27 +544,7 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Creating your sound strategy */}
-      <section className="py-24 animated-gradient">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-16 text-center">Creating your sound strategy</h2>
 
-          <div className="max-w-4xl mx-auto text-left">
-            <p className="text-xl text-black/80 leading-relaxed mb-6">
-              Most venues begin their journey with <Link to={createPageUrl("signature-playlists")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Signature Playlists</Link>, establishing a foundation of intentional daily music. As businesses grow, <Link to={createPageUrl("sonic-strategy")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Sonic Strategy</Link> ensures consistency across new locations.
-            </p>
-            <p className="text-xl text-black/80 leading-relaxed mb-12">
-              <Link to={createPageUrl("event-soundtracks")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Event Soundtracks</Link> transform special occasions, while <Link to={createPageUrl("audio-upgrades")} className="underline font-bold hover:text-black decoration-2 underline-offset-4">Audio Upgrades</Link> optimize the listening experience.
-            </p>
-
-            <div>
-              <p className="text-xl leading-relaxed font-bold text-black">
-                The result: A comprehensive approach to venue atmosphere that evolves with your business.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA - Let's explore your possibilities */}
       <section className="py-20 bg-white">
