@@ -343,12 +343,12 @@ export default function Services() {
                       <p className="text-xl md:text-2xl text-black leading-relaxed">Venues ready to move beyond generic background music</p>
                     </div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">You receive:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Curated playlists that evolve throughout the day, monthly updates, and remote management</p>
+                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
+                      <p className="text-lg md:text-xl text-black leading-relaxed">Curated playlists that evolve throughout the day, monthly updates, and remote management</p>
                     </div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Perfect when:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Your atmosphere deserves the same attention as your interior design</p>
+                      <span className="font-bold text-black text-base block mb-1">Perfect when:</span>
+                      <p className="text-base md:text-lg text-black leading-relaxed">Your atmosphere deserves the same attention as your interior design</p>
                     </div>
                     <div className="mb-8 bg-white/50 p-6 rounded-xl border border-black/5">
                         <p className="text-lg text-black/80 italic">"Beach House Antiparos uses this to seamlessly transition from energetic poolside mornings to relaxed lobby evenings: guests now ask for our playlists daily."</p>
@@ -397,12 +397,12 @@ export default function Services() {
                       <p className="text-xl md:text-2xl text-black leading-relaxed">Conferences, launches, weddings, and special occasions</p>
                     </div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">You receive:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Time-mapped music for every moment, professional coordination, on-site support</p>
+                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
+                      <p className="text-lg md:text-xl text-black leading-relaxed">Time-mapped music for every moment, professional coordination, on-site support</p>
                     </div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Perfect when:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Every transition matters and timing is everything</p>
+                      <span className="font-bold text-black text-base block mb-1">Perfect when:</span>
+                      <p className="text-base md:text-lg text-black leading-relaxed">Every transition matters and timing is everything</p>
                     </div>
                     <div className="mb-8 bg-white/50 p-6 rounded-xl border border-black/5">
                         <p className="text-lg text-black/80 italic">"Neva Bergman commissioned us for her exhibition opening at Levantis restaurant's gallery: she praised how the soundscape matched her work's emotions and kept visitors engaged longer."</p>
@@ -441,12 +441,12 @@ export default function Services() {
                       <p className="text-lg text-black leading-relaxed">Brands expanding across multiple locations or channels</p>
                     </div>
                     <div className="mb-4">
-                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
-                      <p className="text-lg text-black leading-relaxed">Guidelines for consistent sound, roadmap, brand audio toolkit</p>
+                      <span className="font-bold text-black text-base block mb-1">You receive:</span>
+                      <p className="text-base text-black leading-relaxed">Guidelines for consistent sound, roadmap, brand audio toolkit</p>
                     </div>
                     <div className="mb-4">
-                      <span className="font-bold text-black text-lg block mb-1">Perfect when:</span>
-                      <p className="text-lg text-black leading-relaxed">Every location should feel part of the same story</p>
+                      <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
+                      <p className="text-sm text-black leading-relaxed">Every location should feel part of the same story</p>
                     </div>
                     <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5 flex-grow">
                         <p className="text-base text-black/80 italic">"Pelicanos developed its own sonic identity to stand out from its sister restaurant "Cantina". Now it serves its unique mix of fresh discoveries, hidden gems & elegant all-time classics."</p>
@@ -480,12 +480,12 @@ export default function Services() {
                       <p className="text-lg text-black leading-relaxed">Venues where sound quality needs refinement</p>
                     </div>
                     <div className="mb-4">
-                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
-                      <p className="text-lg text-black leading-relaxed">Acoustic assessment, equipment recommendations, installation partnerships</p>
+                      <span className="font-bold text-black text-base block mb-1">You receive:</span>
+                      <p className="text-base text-black leading-relaxed">Acoustic assessment, equipment recommendations, installation partnerships</p>
                     </div>
                     <div className="mb-4">
-                      <span className="font-bold text-black text-lg block mb-1">Perfect when:</span>
-                      <p className="text-lg text-black leading-relaxed">Great music deserves great presentation</p>
+                      <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
+                      <p className="text-sm text-black leading-relaxed">Great music deserves great presentation</p>
                     </div>
                     <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5 flex-grow">
                         <p className="text-base text-black/80 italic">"Klouvi bar in Athens asked us to improve their acoustic clarity: strategic soundproofing and speaker optimization created the warm, intimate atmosphere they wanted."</p>
