@@ -445,13 +445,13 @@ export default function Services() {
           <div className="grid md:grid-cols-2 gap-8 lg:gap-16 mb-24 items-start">
 
             {/* Sonic Strategy */}
-            <div className="flex flex-col h-full">
+            <div className="grid xl:grid-cols-2 gap-6 h-full">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
                 alt="Strategic sonic branding consultation"
-                className="w-1/2 aspect-[4/3] object-cover rounded-2xl shadow-lg mb-8"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg mb-6 xl:mb-0"
               />
-              <div className="flex-1 flex flex-col">
+              <div className="flex flex-col h-full">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Sonic Strategy
                   </h3>
@@ -484,13 +484,13 @@ export default function Services() {
             </div>
 
             {/* Audio Upgrades */}
-            <div className="flex flex-col h-full">
+            <div className="grid xl:grid-cols-2 gap-6 h-full">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
                 alt="Professional audio equipment optimization"
-                className="w-1/2 aspect-[4/3] object-cover rounded-2xl shadow-lg mb-8"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg mb-6 xl:mb-0"
               />
-              <div className="flex-1 flex flex-col">
+              <div className="flex flex-col h-full">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Audio Upgrades
                   </h3>
