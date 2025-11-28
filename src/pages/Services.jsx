@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 const AnimatedButton = ({ children, className = "", ...props }) => (
   <Button
     variant="outline"
-    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden h-auto ${className}`}
     {...props}
   >
     <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
@@ -22,7 +22,7 @@ const AnimatedButton = ({ children, className = "", ...props }) => (
 const AnimatedButtonSmall = ({ children, className = "", ...props }) => (
   <Button
     variant="outline"
-    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-7 py-3.5 text-sm font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-6 py-3.5 text-sm font-semibold rounded-full transition-all duration-300 overflow-hidden h-auto ${className}`}
     {...props}
   >
     <span className="transition-transform duration-300 group-hover:-translate-x-2 inline-block">
@@ -555,12 +555,12 @@ export default function Services() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Discover your sound strategy">
+              <AnimatedButton className="w-full sm:w-auto" aria-label="Discover your sound strategy">
                 Discover your sound strategy
               </AnimatedButton>
             </Link>
             <Link to={createPageUrl("Industries")}>
-              <AnimatedButton className="w-full sm:w-auto h-14">
+              <AnimatedButton className="w-full sm:w-auto">
                 See Industries we serve
               </AnimatedButton>
             </Link>
