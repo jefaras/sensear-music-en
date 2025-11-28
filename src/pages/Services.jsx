@@ -333,7 +333,7 @@ export default function Services() {
 
           {/* Signature Playlists */}
           <div className="mb-8" role="list">
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <article role="listitem">
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                 <div className="lg:order-1">
                   <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-2">
@@ -378,7 +378,7 @@ export default function Services() {
 
           {/* Event Soundtracks */}
           <div className="mb-8" role="list">
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <article role="listitem">
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
                 <div className="lg:order-1 hidden lg:block lg:mt-[60px]">
                   <img
@@ -423,7 +423,7 @@ export default function Services() {
 
           {/* Sonic Strategy */}
           <div className="mb-8" role="list">
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <article role="listitem">
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                 <div className="lg:order-1">
                   <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-2">
@@ -468,7 +468,7 @@ export default function Services() {
 
           {/* Audio Upgrades */}
           <div className="mb-8" role="list">
-            <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <article role="listitem">
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
                 <div className="lg:order-1 hidden lg:block lg:mt-[60px]">
                   <img
