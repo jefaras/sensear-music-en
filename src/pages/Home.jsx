@@ -26,7 +26,7 @@ export default function Home() {
     document.title = "SensEar - Bespoke Music Curation & Sonic Branding";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "Bespoke music curation and sonic branding for hotels, restaurants, and events. Elevate your atmosphere with custom playlists. Book your free consultation.";
+    const description = "Bespoke music curation and sonic branding for hotels, restaurants and events. Elevate your atmosphere with custom playlists. Book your free consultation.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
@@ -135,7 +135,7 @@ export default function Home() {
       "alternateName": "SensEar Music Curation",
       "url": "https://sensear.music",
       "logo": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16dd574fc_se-profile-silver-profile-1.jpg",
-      "description": "Bespoke music curation and sonic branding for hotels, restaurants, and events.",
+      "description": "Bespoke music curation and sonic branding for hotels, restaurants and events.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Athens",
@@ -334,7 +334,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Signature Playlists</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-xl text-black/70 leading-relaxed">
-                                    Your daily soundtrack, from morning energy to evening atmosphere
+                                    Your daily soundtrack, from morning energy to evening atmosphere.
                                 </p>
                             </div>
                             {/* Service 2 */}
@@ -343,7 +343,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Event Soundtracks</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-xl text-black/70 leading-relaxed">
-                                    Choreographed music for launches, conferences and celebrations
+                                    Choreographed music for launches, conferences and celebrations.
                                 </p>
                             </div>
                             {/* Service 3 */}
@@ -352,7 +352,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Sonic Strategy</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-lg text-black/70 leading-relaxed">
-                                    Your audio DNA, unified across all locations and communication channels
+                                    Your audio DNA, unified across all locations and communication channels.
                                 </p>
                             </div>
                             {/* Service 4 */}
@@ -361,7 +361,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Audio Upgrades</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-lg text-black/70 leading-relaxed">
-                                    Acoustic refinement and support for crystal-clear, memorable sound
+                                    Acoustic refinement and support for crystal-clear, memorable sound.
                                 </p>
                             </div>
                         </div>
@@ -436,7 +436,7 @@ export default function Home() {
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Wellness & Gyms</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
-                                Soundscapes calibrated for relaxation, focus, or motivation.
+                                Soundscapes calibrated for relaxation, focus or motivation.
                             </p>
                         </div>
                         <div>
@@ -452,7 +452,7 @@ export default function Home() {
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Art, Museums & Fashion</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
                             <p className="text-xl text-black/70 leading-relaxed">
-                                Smooth, precise sound for galleries, runways, and exhibitions.
+                                Smooth, precise sound for galleries, runways and exhibitions.
                             </p>
                         </div>
                     </div>
@@ -656,7 +656,7 @@ export default function Home() {
           <div className="text-center mb-12">
             <h2 id="blog-heading" className="text-[2rem] md:text-[2.8rem] lg:text-[3.45rem] font-bold text-black mb-12 leading-tight">The curation journal</h2>
             <p className="text-xl text-black/70 max-w-5xl mx-auto">
-              Read how music shapes perception, emotion, and brand identity through sound.
+              Read how music shapes perception, emotion and brand identity through sound.
             </p>
           </div>
 
@@ -677,7 +677,7 @@ export default function Home() {
                       Three reasons music matters in hospitality
                     </h3>
                     <p className="text-black/70 mb-4 leading-relaxed">
-                      Curated music is a practical way to shape how guests feel, what they remember, and how they spend.
+                      Curated music is a practical way to shape how guests feel, what they remember and how they spend.
                     </p>
                     <div className="inline-flex items-center text-black font-medium group-hover:translate-x-2 transition-transform">
                       <span>Read More</span>
