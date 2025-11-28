@@ -419,96 +419,86 @@ export default function Services() {
             </article>
           </div>
 
-          {/* Sonic Strategy */}
-          <div className="mb-24" role="list">
-            <article role="listitem">
-              <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
-                <div className="lg:order-1">
-                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-2">
+          {/* Combined Section: Sonic Strategy & Audio Upgrades */}
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 mb-24 items-start">
+
+            {/* Sonic Strategy */}
+            <div className="flex flex-col h-full">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
+                alt="Strategic sonic branding consultation"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg mb-8"
+              />
+              <div className="flex-1 flex flex-col">
+                  <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Sonic Strategy
                   </h3>
-                  <p className="text-xl font-medium text-black/60 mb-8">Your audio DNA</p>
-                  
-                  <div className="lg:mt-[100px]">
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Ideal for:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Brands expanding across multiple locations or channels</p>
+                  <p className="text-lg font-medium text-black/60 mb-6">Your audio DNA</p>
+
+                  <div className="flex-1 flex flex-col">
+                    <div className="mb-4">
+                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
+                      <p className="text-lg text-black leading-relaxed">Brands expanding across multiple locations or channels</p>
                     </div>
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">You receive:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Comprehensive guidelines for consistent sound, implementation roadmap, brand audio toolkit</p>
+                    <div className="mb-4">
+                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
+                      <p className="text-lg text-black leading-relaxed">Guidelines for consistent sound, roadmap, brand audio toolkit</p>
                     </div>
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Perfect when:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Every location should feel part of the same story</p>
+                    <div className="mb-4">
+                      <span className="font-bold text-black text-lg block mb-1">Perfect when:</span>
+                      <p className="text-lg text-black leading-relaxed">Every location should feel part of the same story</p>
                     </div>
-                    <div className="mb-8 bg-white/50 p-6 rounded-xl border border-black/5">
-                        <p className="text-lg text-black/80 italic">"Pelicanos developed its own sonic identity to stand out from its sister restaurant "Cantina". Now it serves its unique mix of fresh discoveries, hidden gems & elegant all-time classics."</p>
+                    <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5 flex-grow">
+                        <p className="text-base text-black/80 italic">"Pelicanos developed its own sonic identity to stand out from its sister restaurant "Cantina". Now it serves its unique mix of fresh discoveries, hidden gems & elegant all-time classics."</p>
                     </div>
 
-                    <Link to={createPageUrl("sonic-strategy")}>
-                      <AnimatedButton className="w-full sm:w-auto">
+                    <Link to={createPageUrl("sonic-strategy")} className="mt-auto">
+                      <AnimatedButton className="w-full">
                         Explore Sonic Strategy
                       </AnimatedButton>
                     </Link>
                   </div>
-                </div>
-
-                <div className="lg:order-2 block mt-8 lg:mt-[60px]">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
-                    alt="Strategic sonic branding consultation"
-                    className="w-full aspect-[4/3] lg:aspect-auto lg:h-auto object-cover rounded-2xl shadow-lg"
-                  />
-                </div>
               </div>
-            </article>
-          </div>
+            </div>
 
-          {/* Audio Upgrades */}
-          <div className="mb-24" role="list">
-            <article role="listitem">
-              <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
-                <div className="lg:order-1 block mt-8 lg:mt-[60px] order-last lg:order-none">
-                  <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
-                    alt="Professional audio equipment optimization"
-                    className="w-full aspect-[4/3] lg:aspect-auto lg:h-auto object-cover rounded-2xl shadow-lg"
-                  />
-                </div>
-
-                <div className="lg:order-2">
-                  <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-2">
+            {/* Audio Upgrades */}
+            <div className="flex flex-col h-full">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
+                alt="Professional audio equipment optimization"
+                className="w-full aspect-[4/3] object-cover rounded-2xl shadow-lg mb-8"
+              />
+              <div className="flex-1 flex flex-col">
+                  <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Audio Upgrades
                   </h3>
-                  <p className="text-xl font-medium text-black/60 mb-8">Acoustic excellence</p>
+                  <p className="text-lg font-medium text-black/60 mb-6">Acoustic excellence</p>
 
-                  <div className="lg:mt-[100px]">
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Ideal for:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Venues where sound quality needs refinement</p>
+                  <div className="flex-1 flex flex-col">
+                    <div className="mb-4">
+                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
+                      <p className="text-lg text-black leading-relaxed">Venues where sound quality needs refinement</p>
                     </div>
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">You receive:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Professional acoustic assessment, equipment recommendations, installation partnerships</p>
+                    <div className="mb-4">
+                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
+                      <p className="text-lg text-black leading-relaxed">Acoustic assessment, equipment recommendations, installation partnerships</p>
                     </div>
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Perfect when:</span>
-                      <p className="text-xl md:text-2xl text-black leading-relaxed">Great music deserves great presentation</p>
+                    <div className="mb-4">
+                      <span className="font-bold text-black text-lg block mb-1">Perfect when:</span>
+                      <p className="text-lg text-black leading-relaxed">Great music deserves great presentation</p>
                     </div>
-                    <div className="mb-8 bg-white/50 p-6 rounded-xl border border-black/5">
-                        <p className="text-lg text-black/80 italic">"Klouvi bar in Athens asked us to improve their acoustic clarity: strategic soundproofing and speaker optimization created the warm, intimate atmosphere they wanted."</p>
+                    <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5 flex-grow">
+                        <p className="text-base text-black/80 italic">"Klouvi bar in Athens asked us to improve their acoustic clarity: strategic soundproofing and speaker optimization created the warm, intimate atmosphere they wanted."</p>
                     </div>
 
-                    <Link to={createPageUrl("audio-upgrades")}>
-                      <AnimatedButton className="w-full sm:w-auto">
+                    <Link to={createPageUrl("audio-upgrades")} className="mt-auto">
+                      <AnimatedButton className="w-full">
                         Explore audio upgrades
                       </AnimatedButton>
                     </Link>
                   </div>
-                </div>
               </div>
-            </article>
+            </div>
           </div>
         </div>
       </section>
