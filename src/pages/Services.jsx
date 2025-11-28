@@ -446,11 +446,22 @@ export default function Services() {
 
             {/* Sonic Strategy */}
             <div className="flex flex-col xl:flex-row gap-6 h-full">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
-                alt="Strategic sonic branding consultation"
-                className="w-full xl:w-[354px] xl:h-[472px] object-cover rounded-2xl shadow-lg flex-shrink-0"
-              />
+              <div className="flex flex-col gap-6 w-full xl:w-[354px] flex-shrink-0">
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
+                  alt="Strategic sonic branding consultation"
+                  className="w-full xl:w-[354px] xl:h-[472px] object-cover rounded-2xl shadow-lg"
+                />
+                <div className="bg-white/50 p-5 rounded-xl border border-black/5">
+                    <p className="text-base text-black/80 italic">"Pelicanos developed its own sonic identity to stand out from its sister restaurant "Cantina". Now it serves its unique mix of fresh discoveries, hidden gems & elegant all-time classics."</p>
+                </div>
+                <Link to={createPageUrl("sonic-strategy")}>
+                  <AnimatedButton className="w-full px-6 py-3.5 text-sm">
+                    Explore Sonic Strategy
+                  </AnimatedButton>
+                </Link>
+              </div>
+
               <div className="flex-1 flex flex-col">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Sonic Strategy
@@ -470,26 +481,28 @@ export default function Services() {
                       <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
                       <p className="text-sm text-black leading-relaxed">Every location should feel part of the same story</p>
                     </div>
-                    <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5 flex-grow">
-                        <p className="text-base text-black/80 italic">"Pelicanos developed its own sonic identity to stand out from its sister restaurant "Cantina". Now it serves its unique mix of fresh discoveries, hidden gems & elegant all-time classics."</p>
-                    </div>
-
-                    <Link to={createPageUrl("sonic-strategy")} className="mt-auto">
-                      <AnimatedButton className="w-full sm:w-auto">
-                        Explore Sonic Strategy
-                      </AnimatedButton>
-                    </Link>
                   </div>
               </div>
             </div>
 
             {/* Audio Upgrades */}
             <div className="flex flex-col xl:flex-row gap-6 h-full">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
-                alt="Professional audio equipment optimization"
-                className="w-full xl:w-[354px] xl:h-[472px] object-cover rounded-2xl shadow-lg flex-shrink-0"
-              />
+              <div className="flex flex-col gap-6 w-full xl:w-[354px] flex-shrink-0">
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
+                  alt="Professional audio equipment optimization"
+                  className="w-full xl:w-[354px] xl:h-[472px] object-cover rounded-2xl shadow-lg"
+                />
+                <div className="bg-white/50 p-5 rounded-xl border border-black/5">
+                    <p className="text-base text-black/80 italic">"Klouvi bar in Athens asked us to improve their acoustic clarity: strategic soundproofing and speaker optimization created the warm, intimate atmosphere they wanted."</p>
+                </div>
+                <Link to={createPageUrl("audio-upgrades")}>
+                  <AnimatedButton className="w-full px-6 py-3.5 text-sm">
+                    Explore audio upgrades
+                  </AnimatedButton>
+                </Link>
+              </div>
+
               <div className="flex-1 flex flex-col">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Audio Upgrades
@@ -509,15 +522,6 @@ export default function Services() {
                       <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
                       <p className="text-sm text-black leading-relaxed">Great music deserves great presentation</p>
                     </div>
-                    <div className="mb-6 bg-white/50 p-5 rounded-xl border border-black/5 flex-grow">
-                        <p className="text-base text-black/80 italic">"Klouvi bar in Athens asked us to improve their acoustic clarity: strategic soundproofing and speaker optimization created the warm, intimate atmosphere they wanted."</p>
-                    </div>
-
-                    <Link to={createPageUrl("audio-upgrades")} className="mt-auto">
-                      <AnimatedButton className="w-full sm:w-auto">
-                        Explore audio upgrades
-                      </AnimatedButton>
-                    </Link>
                   </div>
               </div>
             </div>
