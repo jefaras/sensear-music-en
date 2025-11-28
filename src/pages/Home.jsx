@@ -304,10 +304,10 @@ export default function Home() {
             
               <div className="w-full text-left">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                  We are a team of Athens-based <strong>music strategists</strong> who transform venues through sound that is <strong>intentional</strong>, <strong>immersive</strong> and <strong>memorable</strong>.
+                  We are a team of Athens-based <strong>music strategists</strong> who design soundscapes for venues through sound that is <strong>intentional</strong>, <strong>immersive</strong> and <strong>memorable</strong>.
                 </p>
-                <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                  Our <u>core belief</u> is that <em>music does more than fill silence</em>; it shapes <strong>atmosphere</strong>, influences <strong>behaviour</strong> and builds lasting <strong>connections</strong> with guests.
+                <p className="text-[31.875px] text-white/80 leading-relaxed">
+                  Our core belief is that music shapes <strong>atmosphere</strong>, influences <strong>behaviour</strong> and builds lasting <strong>connections</strong> with guests.
                 </p>
               </div>
           </div>
@@ -333,7 +333,7 @@ export default function Home() {
                                 <Link to={createPageUrl("signature-playlists")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Signature Playlists</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
-                                <p className="text-xl text-black/70 leading-relaxed">
+                                <p className="text-[19.125px] text-black/70 leading-relaxed">
                                     Your daily soundtrack, from morning energy to evening atmosphere.
                                 </p>
                             </div>
@@ -342,7 +342,7 @@ export default function Home() {
                                 <Link to={createPageUrl("event-soundtracks")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Event Soundtracks</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
-                                <p className="text-xl text-black/70 leading-relaxed">
+                                <p className="text-[19.125px] text-black/70 leading-relaxed">
                                     Choreographed music for launches, conferences and celebrations.
                                 </p>
                             </div>
@@ -411,7 +411,7 @@ export default function Home() {
                             <Link to={createPageUrl("hotels-resorts")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Hotels & Resorts</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
-                            <p className="text-xl text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Music for every time of day and area of your hotel.
                             </p>
                         </div>
@@ -419,7 +419,7 @@ export default function Home() {
                             <Link to={createPageUrl("restaurants-bars")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Restaurants & Bars</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
-                            <p className="text-xl text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Sound that matches your service flow and keeps guests longer.
                             </p>
                         </div>
@@ -427,7 +427,7 @@ export default function Home() {
                             <Link to={createPageUrl("retail-stores")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Retail Stores</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
-                            <p className="text-xl text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Playlists that inspire browsing and strengthen brand identity.
                             </p>
                         </div>
@@ -435,7 +435,7 @@ export default function Home() {
                             <Link to={createPageUrl("wellness-gyms")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Wellness & Gyms</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
-                            <p className="text-xl text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Soundscapes calibrated for relaxation, focus or motivation.
                             </p>
                         </div>
@@ -443,7 +443,7 @@ export default function Home() {
                             <Link to={createPageUrl("events-experiences")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Events & Experiences</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
-                            <p className="text-xl text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Impactful, time-based music with natural transition flows.
                             </p>
                         </div>
@@ -451,7 +451,7 @@ export default function Home() {
                             <Link to={createPageUrl("art-museums-fashion")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Art, Museums & Fashion</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                                             </Link>
-                            <p className="text-xl text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Smooth, precise sound for galleries, runways and exhibitions.
                             </p>
                         </div>
@@ -486,7 +486,7 @@ export default function Home() {
                     <div>
                         <h3 className="text-2xl font-bold text-black mb-2">Create destinations worth discovering</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        Transform every corner into an experience that invites exploration and engagement.
+                        Turn every corner into an experience that invites exploration and engagement.
                         </p>
                     </div>
                   </article>
