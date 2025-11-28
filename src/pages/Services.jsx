@@ -328,7 +328,7 @@ export default function Services() {
           </div>
 
           {/* Signature Playlists */}
-          <div className="mb-8" role="list">
+          <div className="mb-24" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                 <div className="lg:order-1">
@@ -374,7 +374,7 @@ export default function Services() {
           </div>
 
           {/* Event Soundtracks */}
-          <div className="mb-8" role="list">
+          <div className="mb-24" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
                 <div className="lg:order-1 block mt-8 lg:mt-[60px] order-last lg:order-none">
@@ -420,7 +420,7 @@ export default function Services() {
           </div>
 
           {/* Sonic Strategy */}
-          <div className="mb-8" role="list">
+          <div className="mb-24" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-start">
                 <div className="lg:order-1">
@@ -466,7 +466,7 @@ export default function Services() {
           </div>
 
           {/* Audio Upgrades */}
-          <div className="mb-8" role="list">
+          <div className="mb-24" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-start">
                 <div className="lg:order-1 block mt-8 lg:mt-[60px] order-last lg:order-none">
