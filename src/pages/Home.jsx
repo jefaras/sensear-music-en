@@ -338,7 +338,7 @@ export default function Home() {
                                 </p>
                             </div>
                             {/* Service 2 */}
-                            <div className="mb-6">
+                            <div className="mb-8">
                                 <Link to={createPageUrl("event-soundtracks")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Event Soundtracks</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
@@ -423,7 +423,7 @@ export default function Home() {
                                 Match your service flow, keep guests longer.
                             </p>
                         </div>
-                        <div className="mb-6">
+                        <div className="mb-8">
                             <Link to={createPageUrl("events-experiences")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Events & Experiences</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
