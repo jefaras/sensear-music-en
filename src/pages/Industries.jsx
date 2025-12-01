@@ -86,21 +86,19 @@ export default function Industries() {
       {/* Intro Section - Black Background */}
       <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
-            <div className="lg:order-2 lg:min-w-[280px]">
-              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
+          <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+              <h2 className="text-[2rem] md:text-[2.8rem] lg:text-[3.45rem] font-bold text-white leading-tight mb-12">
                 The right energy<br />for every moment
               </h2>
-            </div>
             
-            <div className="lg:order-1 lg:mt-[200px]">
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                A hotel lobby at sunrise needs different energy than a cocktail bar at midnight. A boutique wants shoppers to discover. A spa needs minds to quiet. A gallery requires respect for the art.
-              </p>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
-                We design music across hospitality, retail, wellness & culture. Different worlds, shared truth: the right sound transforms spaces from functional to unforgettable.
-              </p>
-            </div>
+              <div className="w-full text-left">
+                <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                  A hotel lobby at sunrise needs different energy than a cocktail bar at midnight. A boutique wants shoppers to discover. A spa needs minds to quiet. A gallery requires respect for the art.
+                </p>
+                <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
+                  We design music across hospitality, retail, wellness & culture. Different worlds, shared truth: the right sound transforms spaces from functional to unforgettable.
+                </p>
+              </div>
           </div>
         </div>
       </section>
