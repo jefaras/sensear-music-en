@@ -103,7 +103,7 @@ export default function Industries() {
         </div>
       </section>
 
-      {/* Your World, Our Expertise Section */}
+      {/* Your Industry, Our Expertise Section */}
       <section className="py-24" style={{
         backgroundImage: `linear-gradient(to bottom, 
           #ffffff 0%, 
@@ -120,7 +120,8 @@ export default function Industries() {
       }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 max-w-4xl mx-auto">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Your world, our expertise</h2>
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Your industry, our expertise</h2>
+            <p className="text-xl text-black/80 font-medium">Strategic sound designed for the specific needs of your world.</p>
           </div>
 
           <div className="space-y-20">
@@ -137,13 +138,15 @@ export default function Industries() {
               </div>
               <div className="order-1 lg:order-2">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Hotels & Resorts</h3>
-                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Every hour has its soundtrack</h4>
+                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Soundtracks for every hour & space</h4>
                 <p className="text-lg text-black/80 leading-relaxed mb-8">
-                  Morning coffee needs optimism. Afternoon arrivals need energy. Evening bars need sophistication. Late-night lobbies need discretion. We orchestrate the full day, so your music works as hard as your staff.
+                  Music that shapes the complete guest journey: from morning coffee to midnight cocktails, across lobby, pool, spa and rooms.
+                  <br/><br/>
+                  <strong>The result:</strong> Guests mention your atmosphere in reviews and ask about your playlists at reception.
                 </p>
                 <div className="mt-8">
                   <Link to={createPageUrl("hotels-resorts")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore Hotels & Resorts</span>
+                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Create your signature atmosphere</span>
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
@@ -156,11 +159,11 @@ export default function Industries() {
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Restaurants & Bars</h3>
                 <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">The invisible maître d'</h4>
                 <p className="text-lg text-black/80 leading-relaxed mb-8">
-                  Music that reads the room. Gentle lunch service. Building dinner energy. Late-night intimacy. We help you nail the timing—because the difference between two drinks and four often comes down to tempo.
+                  Sound that flows with your rhythms, encouraging conversation and longer visits.
                 </p>
                 <div className="mt-8">
                   <Link to={createPageUrl("restaurants-bars")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore Restaurants & Bars</span>
+                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Upgrade your dining atmosphere</span>
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
@@ -176,59 +179,7 @@ export default function Industries() {
               </div>
             </div>
 
-            {/* Retail Stores */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-2 lg:order-1">
-                <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/4ee147bf6_6fd38d8f206dc0b7749c169007cee524.jpg" 
-                    alt="Retail Stores" 
-                    className="w-full h-auto rounded-xl shadow-lg"
-                  />
-                </div>
-              </div>
-              <div className="order-1 lg:order-2">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Retail Stores</h3>
-                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Shopping as experience, not task</h4>
-                <p className="text-lg text-black/80 leading-relaxed mb-8">
-                  Transform quick errands into exploration. We create playlists that guide movement, inspire discovery, and make checkout feel too soon. Because browsers who enjoy the journey become buyers who return.
-                </p>
-                <div className="mt-8">
-                  <Link to={createPageUrl("retail-stores")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore Retail Stores</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Wellness & Gyms */}
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div className="order-1">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Wellness & Gyms</h3>
-                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Sound that supports the practice</h4>
-                <p className="text-lg text-black/80 leading-relaxed mb-8">
-                  Yoga needs space between notes. Spin needs relentless drive. Spas need to lower heart rates. Gyms need to raise them. We match music to intention, helping bodies and minds do what they came to do.
-                </p>
-                <div className="mt-8">
-                  <Link to={createPageUrl("wellness-gyms")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore Wellness & Gyms</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </Link>
-                </div>
-              </div>
-              <div className="order-2">
-                <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/3b2d2e497_Shade-by-Starpool-Design-Cristiano-Mino-.jpg" 
-                    alt="Wellness & Gyms" 
-                    className="w-full h-auto rounded-xl shadow-lg"
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Events & Experiences */}
+            {/* Events & Experiences - Moved up */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden">
@@ -241,13 +192,71 @@ export default function Industries() {
               </div>
               <div className="order-1 lg:order-2">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Events & Experiences</h3>
-                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">No room for playlist roulette</h4>
+                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Choreographed precision for unforgettable moments</h4>
                 <p className="text-lg text-black/80 leading-relaxed mb-8">
-                  When 200 people are watching, you can't hit shuffle and hope. We design time-aware soundtracks and live DJ sets that nail arrivals, build through dinner, peak at the right moment and land the finale.
+                  Precisely timed music that frames every phase, so your event sounds as good as it looks.
+                  <br/><br/>
+                  <strong>The result:</strong> Smooth transitions that guests don't notice but organizers appreciate
                 </p>
                 <div className="mt-8">
                   <Link to={createPageUrl("events-experiences")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore Events & Experiences</span>
+                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Perfect your next event</span>
+                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Retail Stores */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-1">
+                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Retail Stores</h3>
+                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Soundscapes that inspire discovery</h4>
+                <p className="text-lg text-black/80 leading-relaxed mb-8">
+                  Music that guides customer journeys and helps your space tell its story through sound.
+                  <br/><br/>
+                  <strong>The result:</strong> Customers explore the entire store instead of just what they came for.
+                </p>
+                <div className="mt-8">
+                  <Link to={createPageUrl("retail-stores")} className="inline-flex items-center text-black font-bold group">
+                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Transform your retail experience</span>
+                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+              <div className="order-2">
+                <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden">
+                  <img 
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/4ee147bf6_6fd38d8f206dc0b7749c169007cee524.jpg" 
+                    alt="Retail Stores" 
+                    className="w-full h-auto rounded-xl shadow-lg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Wellness Centers - previously Wellness & Gyms */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden">
+                  <img 
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/3b2d2e497_Shade-by-Starpool-Design-Cristiano-Mino-.jpg" 
+                    alt="Wellness Centers" 
+                    className="w-full h-auto rounded-xl shadow-lg"
+                  />
+                </div>
+              </div>
+              <div className="order-1 lg:order-2">
+                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Wellness Centers</h3>
+                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Every practice deserves its perfect soundtrack</h4>
+                <p className="text-lg text-black/80 leading-relaxed mb-8">
+                  We calibrate music to support each activity, so each space has its optimal atmosphere.
+                  <br/><br/>
+                  <strong>The result:</strong> Members choose your studio specifically for the atmosphere you create.
+                </p>
+                <div className="mt-8">
+                  <Link to={createPageUrl("wellness-gyms")} className="inline-flex items-center text-black font-bold group">
+                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Optimize your wellness space</span>
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
@@ -258,13 +267,15 @@ export default function Industries() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-1">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Art, Museums & Fashion</h3>
-                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Presence without intrusion</h4>
+                <h4 className="text-xl font-semibold text-black/60 mb-6 uppercase tracking-wide">Subtle atmospheres that deepen appreciation</h4>
                 <p className="text-lg text-black/80 leading-relaxed mb-8">
-                  The art is the star. Music just helps people see it better. We create subtle soundscapes that extend viewing time, deepen contemplation, and respect both the work and the silence around it.
+                  We create soundscapes that support without overwhelming and enrich the cultural experience.
+                  <br/><br/>
+                  <strong>The result:</strong> Visitors slow down, absorb more and share their experience afterwards
                 </p>
                 <div className="mt-8">
                   <Link to={createPageUrl("art-museums-fashion")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore Art, Museums & Fashion</span>
+                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Frame your exhibitions</span>
                     <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>
@@ -283,138 +294,90 @@ export default function Industries() {
         </div>
       </section>
 
-      {/* What connects these spaces */}
+      {/* What connects these worlds */}
       <section className="py-20 bg-black text-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-16 text-center">What connects these spaces</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-16 text-center">What connects these worlds</h2>
           
           <div className="max-w-4xl mx-auto">
             <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white/90">
-              Different industries. Same human behaviors.
+              Universal truths about sound, adapted for your specific industry.
             </h3>
             <p className="text-xl text-white/80 text-center mb-12">
-              Whether someone's checking into a hotel or checking out art, certain patterns hold:
+              What every venue needs:
             </p>
             
             <div className="grid md:grid-cols-1 gap-6 bg-white/5 p-8 rounded-2xl border border-white/10">
               {[
-                "Morning energy differs from evening energy - We adjust accordingly",
-                "Crowds change the acoustic reality - We plan for empty and full",
-                "Brands have signatures beyond visuals - We make them audible",
-                "Staff shouldn't DJ while working - We remove that burden",
-                "Every business has a rhythm - We help you find and keep it"
-              ].map((item, i) => {
-                const [bold, normal] = item.split(" - ");
-                return (
-                  <div key={i} className="flex items-start gap-4">
-                    <div className="mt-1 w-6 h-6 rounded-full bg-peach/20 flex items-center justify-center flex-shrink-0">
-                      <Check className="w-3.5 h-3.5 text-peach" />
-                    </div>
-                    <p className="text-lg md:text-xl text-white/90">
-                      <span className="font-bold text-peach">{bold}</span>
-                      <span className="text-white/60"> - {normal}</span>
-                    </p>
+                "Atmosphere that evolves naturally throughout the day",
+                "Consistency that reinforces brand identity across all touchpoints",
+                "Professional management that frees staff to focus on service",
+                "Intentional design rather than accidental playlists",
+                "Measurable impact on guest experience and business metrics"
+              ].map((item, i) => (
+                <div key={i} className="flex items-start gap-4">
+                  <div className="mt-1 w-6 h-6 rounded-full bg-peach/20 flex items-center justify-center flex-shrink-0">
+                    <Check className="w-3.5 h-3.5 text-peach" />
                   </div>
-                );
-              })}
+                  <p className="text-lg md:text-xl text-white/90">
+                    {item}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* How our services map to your world */}
+      {/* How our services deliver */}
       <section className="py-24 bg-[#faebe3]">
         <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">How our services map to your world</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">How our services deliver:</h2>
           
           <div className="grid md:grid-cols-2 gap-8 mb-12 text-left">
             <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <p className="text-xl leading-relaxed">
-                Most venues start with <Link to={createPageUrl("signature-playlists")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Signature Playlists</Link> — your everyday foundation.
+                <Link to={createPageUrl("signature-playlists")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Signature Playlists</Link> establish your daily atmosphere
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <p className="text-xl leading-relaxed">
-                Growing brands add <Link to={createPageUrl("sonic-strategy")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Sonic Strategy</Link> — when consistency matters.
+                <Link to={createPageUrl("sonic-strategy")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Sonic Strategy</Link> unifies your brand's sound
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <p className="text-xl leading-relaxed">
-                Special moments need <Link to={createPageUrl("event-soundtracks")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Event Soundtracks</Link> — when failure isn't an option.
+                <Link to={createPageUrl("event-soundtracks")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Event Soundtracks</Link> choreograph special moments
               </p>
             </div>
             <div className="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition-shadow">
               <p className="text-xl leading-relaxed">
-                Technical problems require <Link to={createPageUrl("audio-upgrades")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Audio Upgrades</Link> — when the speakers fight the strategy.
+                <Link to={createPageUrl("audio-upgrades")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70">Audio Upgrades</Link> optimize acoustic quality
               </p>
             </div>
           </div>
-          
-          <p className="text-2xl font-medium text-black/80 max-w-3xl mx-auto">
-            Some venues need one service. Some need all four. We'll help you decide.
-          </p>
         </div>
       </section>
 
-      {/* The SensEar difference */}
+      {/* Discover Your Sound Potential */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            <div>
-              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-8">The SensEar difference</h2>
-              <div className="space-y-8">
-                <div className="flex gap-4">
-                  <div className="w-1 h-full bg-black/10 rounded-full min-h-[100px]"></div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">We're not a playlist factory.</h3>
-                    <p className="text-lg text-black/70 leading-relaxed">Every venue gets human curation, monthly evolution, and direct access to your curator.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-1 h-full bg-black/10 rounded-full min-h-[100px]"></div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">We are not just technical.</h3>
-                    <p className="text-lg text-black/70 leading-relaxed">We understand service, flow, and the Tuesday 3pm slowdown.</p>
-                  </div>
-                </div>
-                <div className="flex gap-4">
-                  <div className="w-1 h-full bg-black/10 rounded-full min-h-[100px]"></div>
-                  <div>
-                    <h3 className="text-xl font-bold mb-2">We are not generic.</h3>
-                    <p className="text-lg text-black/70 leading-relaxed">Based in Athens, we understand Mediterranean hospitality; the long lunch, the late dinner, the importance of atmosphere in everyday life.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="bg-[#faebe3] p-10 rounded-3xl relative">
-              <h3 className="text-3xl font-bold mb-6">Where does your venue fit?</h3>
-              <p className="text-xl text-black/80 leading-relaxed mb-6">
-                Every space has its category, but some venues blur the lines. Boutique hotels with serious restaurants. Galleries with event spaces. Wellness centers with retail.
-              </p>
-              <p className="text-xl text-black font-bold leading-relaxed">
-                We work with hybrids all the time. The strategy adapts to your reality.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 bg-[#faebe3]">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Let's discuss your specific space and goals</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Discover Your Sound Potential</h2>
+          <p className="text-xl text-black/70 mb-8 max-w-3xl mx-auto">
+            Every venue has untapped atmospheric potential. Let's explore how strategic sound can transform your specific space and objectives.
+          </p>
           
-          <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link to={createPageUrl("ContactUs")}>
               <Button size="lg" className="bg-black text-white hover:bg-black/80 px-10 py-7 text-xl rounded-full transition-transform hover:scale-105">
-                Book a listening session
+                Discover Your Sound Strategy
               </Button>
             </Link>
             
-            <div className="space-y-2">
-              <p className="text-black/60 text-sm font-medium uppercase tracking-wide">See exactly what we provide</p>
+            <div className="flex items-center">
+              <span className="text-black/60 mr-2">Or</span>
               <Link to={createPageUrl("Services")} className="inline-flex items-center text-black font-bold text-lg group">
-                <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore our services</span>
+                <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">explore our services</span>
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
