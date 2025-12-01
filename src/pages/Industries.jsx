@@ -93,7 +93,7 @@ export default function Industries() {
             
               <div className="w-full text-left">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                  A <strong>hotel lobby</strong> at sunrise needs <em>different energy</em> than a cocktail bar at midnight. A <strong>boutique</strong> wants shoppers to discover. A <strong>spa</strong> needs minds to quiet. A <strong>gallery</strong> requires respect for the art.
+                  A <strong>hotel lobby</strong> at sunrise needs <em>different energy</em> than a <span className="text-black bg-white px-1">cocktail bar</span> at midnight. A <strong>boutique</strong> wants shoppers to <em>discover</em>. A <strong>spa</strong> needs <em>minds to quiet</em>. A <strong>gallery</strong> requires <em>respect</em> for the art.
                 </p>
                 <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                   We design music across <strong>hospitality</strong>, <strong>retail</strong>, <strong>wellness</strong> & <strong>culture</strong>. <em>Different worlds, shared truth:</em> the <strong>right sound transforms spaces</strong> from functional to <strong>unforgettable</strong>.
