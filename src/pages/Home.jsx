@@ -327,9 +327,9 @@ export default function Home() {
                 <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-center">
                     {/* Left: Text Content */}
                     <div className="md:order-1">
-                        <div className="space-y-8 mb-12">
+                        <div className="flex flex-col mb-12">
                             {/* Service 1 */}
-                            <div>
+                            <div className="mb-8">
                                 <Link to={createPageUrl("signature-playlists")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Signature Playlists</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
@@ -338,7 +338,7 @@ export default function Home() {
                                 </p>
                             </div>
                             {/* Service 2 */}
-                            <div>
+                            <div className="mb-6">
                                 <Link to={createPageUrl("event-soundtracks")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Event Soundtracks</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
@@ -347,8 +347,8 @@ export default function Home() {
                                 </p>
                             </div>
                             {/* Service 3 */}
-                            <div>
-                                <Link to={createPageUrl("sonic-strategy")} className="text-xl font-bold text-black block mb-2 group w-fit">
+                            <div className="mb-4">
+                                <Link to={createPageUrl("sonic-strategy")} className="text-xl font-bold text-black block mb-1 group w-fit">
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Sonic Strategy</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-lg text-black/70 leading-relaxed">
@@ -357,7 +357,7 @@ export default function Home() {
                             </div>
                             {/* Service 4 */}
                             <div>
-                                <Link to={createPageUrl("audio-upgrades")} className="text-xl font-bold text-black block mb-2 group w-fit">
+                                <Link to={createPageUrl("audio-upgrades")} className="text-xl font-bold text-black block mb-1 group w-fit">
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Audio Upgrades</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-lg text-black/70 leading-relaxed">
@@ -406,8 +406,8 @@ export default function Home() {
 
                 {/* Right: Content */}
                 <div className="md:order-2">
-                    <div className="space-y-8 mb-12">
-                        <div>
+                    <div className="flex flex-col mb-12">
+                        <div className="mb-8">
                             <Link to={createPageUrl("hotels-resorts")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Hotels & Resorts</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
@@ -415,7 +415,7 @@ export default function Home() {
                                 Music for every time of day and area.
                             </p>
                         </div>
-                        <div>
+                        <div className="mb-8">
                             <Link to={createPageUrl("restaurants-bars")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Restaurants & Bars</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
@@ -423,7 +423,7 @@ export default function Home() {
                                 Match your service flow, keep guests longer.
                             </p>
                         </div>
-                        <div>
+                        <div className="mb-6">
                             <Link to={createPageUrl("events-experiences")} className="text-2xl font-bold text-black block mb-2 group w-fit">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Events & Experiences</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
@@ -432,16 +432,16 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div>
-                            <Link to={createPageUrl("retail-stores")} className="text-xl font-bold text-black block mb-2 group w-fit">
+                        <div className="mb-4">
+                            <Link to={createPageUrl("retail-stores")} className="text-xl font-bold text-black block mb-1 group w-fit">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Retail Stores</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
                             <p className="text-lg text-black/70 leading-relaxed">
                                 Promote browsing and brand identity.
                             </p>
                         </div>
-                        <div>
-                            <Link to={createPageUrl("wellness-gyms")} className="text-xl font-bold text-black block mb-2 group w-fit">
+                        <div className="mb-4">
+                            <Link to={createPageUrl("wellness-gyms")} className="text-xl font-bold text-black block mb-1 group w-fit">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Wellness & Gyms</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
                             <p className="text-lg text-black/70 leading-relaxed">
@@ -449,7 +449,7 @@ export default function Home() {
                             </p>
                         </div>
                         <div>
-                            <Link to={createPageUrl("art-museums-fashion")} className="text-xl font-bold text-black block mb-2 group w-fit">
+                            <Link to={createPageUrl("art-museums-fashion")} className="text-xl font-bold text-black block mb-1 group w-fit">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Art, Museums & Fashion</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
                             <p className="text-lg text-black/70 leading-relaxed">
