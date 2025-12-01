@@ -422,7 +422,7 @@ export default function Services() {
                   <h3 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-2">
                     Event Soundtracks
                   </h3>
-                  <p className="text-xl font-medium text-black/60 mb-8">Choreographed experiences</p>
+                  <p className="text-xl font-medium text-black/60 mb-8">Music for moments that matter</p>
 
                   <div>
                     <div className="mb-6">
