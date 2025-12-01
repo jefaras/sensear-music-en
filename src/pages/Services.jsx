@@ -423,7 +423,7 @@ export default function Services() {
 
                   <div>
                     <div className="mb-6">
-                      <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Time-mapped music for every moment, professional coordination, on-site support.</p>
+                      <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Precisely planned music for every moment, AV direction & support.</p>
                     </div>
                     <div className="mb-6">
                       <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
