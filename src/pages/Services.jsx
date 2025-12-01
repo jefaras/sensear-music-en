@@ -375,12 +375,11 @@ export default function Services() {
 
                   <div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Ideal for:</span>
-                      <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Venues ready to move beyond generic background music.</p>
+                      <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Curated playlists that evolve throughout the day, monthly updates and remote management.</p>
                     </div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
-                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">Curated playlists that evolve throughout the day, monthly updates and remote management.</p>
+                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
+                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">Venues ready to move beyond generic background music.</p>
                     </div>
 
 
@@ -424,12 +423,11 @@ export default function Services() {
 
                   <div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-xl block mb-1">Ideal for:</span>
-                      <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Conferences, launches, weddings and special occasions.</p>
+                      <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Time-mapped music for every moment, professional coordination, on-site support.</p>
                     </div>
                     <div className="mb-6">
-                      <span className="font-bold text-black text-lg block mb-1">You receive:</span>
-                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">Time-mapped music for every moment, professional coordination, on-site support.</p>
+                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
+                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">Conferences, launches, weddings and special occasions.</p>
                     </div>
 
 
@@ -464,12 +462,11 @@ export default function Services() {
 
                   <div className="flex-1 flex flex-col">
                     <div className="mb-4">
-                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
-                      <p className="text-lg text-black/60 leading-relaxed">Brands with multiple locations or marketing channels.</p>
+                      <p className="text-lg text-black/60 leading-relaxed">Guidelines & roadmap for consistent sound.</p>
                     </div>
                     <div className="mb-4">
-                      <span className="font-bold text-black text-base block mb-1">You receive:</span>
-                      <p className="text-base text-black/60 leading-relaxed">Guidelines & roadmap for consistent sound.</p>
+                      <span className="font-bold text-black text-base block mb-1">Ideal for:</span>
+                      <p className="text-base text-black/60 leading-relaxed">Brands with multiple locations or marketing channels.</p>
                     </div>
 
                     
@@ -501,12 +498,11 @@ export default function Services() {
 
                   <div className="flex-1 flex flex-col">
                     <div className="mb-4">
-                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
-                      <p className="text-lg text-black/60 leading-relaxed">Venues where sound quality needs refinement.</p>
+                      <p className="text-lg text-black/60 leading-relaxed">Acoustic and equipment guidance & installation.</p>
                     </div>
                     <div className="mb-4">
-                      <span className="font-bold text-black text-base block mb-1">You receive:</span>
-                      <p className="text-base text-black/60 leading-relaxed">Acoustic and equipment guidance & installation.</p>
+                      <span className="font-bold text-black text-base block mb-1">Ideal for:</span>
+                      <p className="text-base text-black/60 leading-relaxed">Venues where sound quality needs refinement.</p>
                     </div>
 
 
