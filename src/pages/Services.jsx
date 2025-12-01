@@ -382,10 +382,7 @@ export default function Services() {
                       <span className="font-bold text-black text-lg block mb-1">You receive:</span>
                       <p className="text-lg md:text-xl text-black/60 leading-relaxed">Curated playlists that evolve throughout the day, monthly updates, and remote management.</p>
                     </div>
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-base block mb-1">Perfect when:</span>
-                      <p className="text-base md:text-lg text-black/60 leading-relaxed">Your atmosphere deserves the same attention as your interior design.</p>
-                    </div>
+
 
 
                     <Link to={createPageUrl("signature-playlists")}>
@@ -434,10 +431,7 @@ export default function Services() {
                       <span className="font-bold text-black text-lg block mb-1">You receive:</span>
                       <p className="text-lg md:text-xl text-black/60 leading-relaxed">Time-mapped music for every moment, professional coordination, on-site support.</p>
                     </div>
-                    <div className="mb-6">
-                      <span className="font-bold text-black text-base block mb-1">Perfect when:</span>
-                      <p className="text-base md:text-lg text-black/60 leading-relaxed">Every transition matters and timing is everything.</p>
-                    </div>
+
 
 
                     <Link to={createPageUrl("event-soundtracks")}>
@@ -477,10 +471,7 @@ export default function Services() {
                       <span className="font-bold text-black text-base block mb-1">You receive:</span>
                       <p className="text-base text-black/60 leading-relaxed">Guidelines & roadmap for consistent sound.</p>
                     </div>
-                    <div className="mb-4">
-                      <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
-                      <p className="text-sm text-black/60 leading-relaxed">Every location & channel should feel part of the same story.</p>
-                    </div>
+
                     
                     <div className="mt-6">
                         <Link to={createPageUrl("sonic-strategy")}>
@@ -517,10 +508,7 @@ export default function Services() {
                       <span className="font-bold text-black text-base block mb-1">You receive:</span>
                       <p className="text-base text-black/60 leading-relaxed">Acoustic and equipment guidance & installation.</p>
                     </div>
-                    <div className="mb-4">
-                      <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
-                      <p className="text-sm text-black/60 leading-relaxed">Great music deserves great presentation.</p>
-                    </div>
+
 
                     <div className="mt-6">
                         <Link to={createPageUrl("audio-upgrades")}>
