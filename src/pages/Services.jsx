@@ -452,7 +452,7 @@ export default function Services() {
 
             {/* Sonic Strategy */}
             <div className="flex flex-col h-full">
-              <div className="flex flex-col xl:flex-row gap-6 mb-6">
+              <div className="flex flex-col xl:flex-row gap-6 mb-6 xl:items-center">
                 <img
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
                   alt="Strategic sonic branding consultation"
@@ -488,7 +488,7 @@ export default function Services() {
 
             {/* Audio Upgrades */}
             <div className="flex flex-col h-full">
-              <div className="flex flex-col xl:flex-row gap-6 mb-6">
+              <div className="flex flex-col xl:flex-row gap-6 mb-6 xl:items-center">
                 <img
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
                   alt="Professional audio equipment optimization"
