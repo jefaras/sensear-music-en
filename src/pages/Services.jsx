@@ -514,7 +514,7 @@ export default function Services() {
                     </div>
                     <div className="mb-4">
                       <span className="font-bold text-black text-base block mb-1">You receive:</span>
-                      <p className="text-base text-black/60 leading-relaxed">Acoustic and equipment recommendations & installation.</p>
+                      <p className="text-base text-black/60 leading-relaxed">Acoustic and equipment guidance & installation.</p>
                     </div>
                     <div className="mb-4">
                       <span className="font-bold text-black text-sm block mb-1">Perfect when:</span>
