@@ -4,6 +4,19 @@ import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 
+const AnimatedButton = ({ children, className = "", ...props }) => (
+  <Button
+    variant="outline"
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    {...props}
+  >
+    <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
+      {children}
+    </span>
+    <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+  </Button>
+);
+
 export default function Industries() {
   const [scrollY, setScrollY] = useState(0);
 
@@ -139,15 +152,20 @@ export default function Industries() {
               <div className="order-1 lg:order-2">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Hotels & Resorts</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Soundtracks for every hour & space</p>
-                <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-8">
-                  Music that shapes the complete guest journey: from morning coffee to midnight cocktails, across lobby, pool, spa and rooms.
-                  <br/><br/>
-                  <strong>The result:</strong> Guests mention your atmosphere in reviews and ask about your playlists at reception.
-                </p>
+                
+                <div className="mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Music that shapes the complete guest journey: from morning coffee to midnight cocktails, across lobby, pool, spa and rooms.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold text-black text-lg block mb-1">The result:</span>
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Guests mention your atmosphere in reviews and ask about your playlists at reception.</p>
+                </div>
+
                 <div className="mt-8">
-                  <Link to={createPageUrl("hotels-resorts")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Create your signature atmosphere</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <Link to={createPageUrl("hotels-resorts")}>
+                    <AnimatedButton className="w-full sm:w-auto">
+                      Create your signature atmosphere
+                    </AnimatedButton>
                   </Link>
                 </div>
               </div>
@@ -158,13 +176,16 @@ export default function Industries() {
               <div className="order-1">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Restaurants & Bars</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">The invisible maître d'</p>
-                <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-8">
-                  Sound that flows with your rhythms, encouraging conversation and longer visits.
-                </p>
+                
+                <div className="mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Sound that flows with your rhythms, encouraging conversation and longer visits.</p>
+                </div>
+
                 <div className="mt-8">
-                  <Link to={createPageUrl("restaurants-bars")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Upgrade your dining atmosphere</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <Link to={createPageUrl("restaurants-bars")}>
+                    <AnimatedButton className="w-full sm:w-auto">
+                      Upgrade your dining atmosphere
+                    </AnimatedButton>
                   </Link>
                 </div>
               </div>
@@ -193,15 +214,20 @@ export default function Industries() {
               <div className="order-1 lg:order-2">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Events & Experiences</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Choreographed precision for unforgettable moments</p>
-                <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-8">
-                  Precisely timed music that frames every phase, so your event sounds as good as it looks.
-                  <br/><br/>
-                  <strong>The result:</strong> Smooth transitions that guests don't notice but organizers appreciate
-                </p>
+                
+                <div className="mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Precisely timed music that frames every phase, so your event sounds as good as it looks.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold text-black text-lg block mb-1">The result:</span>
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Smooth transitions that guests don't notice but organizers appreciate</p>
+                </div>
+
                 <div className="mt-8">
-                  <Link to={createPageUrl("events-experiences")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Perfect your next event</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <Link to={createPageUrl("events-experiences")}>
+                    <AnimatedButton className="w-full sm:w-auto">
+                      Perfect your next event
+                    </AnimatedButton>
                   </Link>
                 </div>
               </div>
@@ -212,15 +238,20 @@ export default function Industries() {
               <div className="order-1">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Retail Stores</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Soundscapes that inspire discovery</p>
-                <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-8">
-                  Music that guides customer journeys and helps your space tell its story through sound.
-                  <br/><br/>
-                  <strong>The result:</strong> Customers explore the entire store instead of just what they came for.
-                </p>
+                
+                <div className="mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed">Music that guides customer journeys and helps your space tell its story through sound.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold text-black text-lg block mb-1">The result:</span>
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Customers explore the entire store instead of just what they came for.</p>
+                </div>
+
                 <div className="mt-8">
-                  <Link to={createPageUrl("retail-stores")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Transform your retail experience</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <Link to={createPageUrl("retail-stores")}>
+                    <AnimatedButton className="w-full sm:w-auto">
+                      Transform your retail experience
+                    </AnimatedButton>
                   </Link>
                 </div>
               </div>
@@ -249,15 +280,20 @@ export default function Industries() {
               <div className="order-1 lg:order-2">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Wellness Centers</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Every practice deserves its perfect soundtrack</p>
-                <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-8">
-                  We calibrate music to support each activity, so each space has its optimal atmosphere.
-                  <br/><br/>
-                  <strong>The result:</strong> Members choose your studio specifically for the atmosphere you create.
-                </p>
+                
+                <div className="mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed">We calibrate music to support each activity, so each space has its optimal atmosphere.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold text-black text-lg block mb-1">The result:</span>
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Members choose your studio specifically for the atmosphere you create.</p>
+                </div>
+
                 <div className="mt-8">
-                  <Link to={createPageUrl("wellness-gyms")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Optimize your wellness space</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <Link to={createPageUrl("wellness-gyms")}>
+                    <AnimatedButton className="w-full sm:w-auto">
+                      Optimize your wellness space
+                    </AnimatedButton>
                   </Link>
                 </div>
               </div>
@@ -268,15 +304,20 @@ export default function Industries() {
               <div className="order-1">
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Art, Museums & Fashion</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Subtle atmospheres that deepen appreciation</p>
-                <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-8">
-                  We create soundscapes that support without overwhelming and enrich the cultural experience.
-                  <br/><br/>
-                  <strong>The result:</strong> Visitors slow down, absorb more and share their experience afterwards
-                </p>
+                
+                <div className="mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed">We create soundscapes that support without overwhelming and enrich the cultural experience.</p>
+                </div>
+                <div className="mb-6">
+                  <span className="font-bold text-black text-lg block mb-1">The result:</span>
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Visitors slow down, absorb more and share their experience afterwards</p>
+                </div>
+
                 <div className="mt-8">
-                  <Link to={createPageUrl("art-museums-fashion")} className="inline-flex items-center text-black font-bold group">
-                    <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Frame your exhibitions</span>
-                    <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <Link to={createPageUrl("art-museums-fashion")}>
+                    <AnimatedButton className="w-full sm:w-auto">
+                      Frame your exhibitions
+                    </AnimatedButton>
                   </Link>
                 </div>
               </div>
