@@ -4,25 +4,25 @@ import { createPageUrl } from "@/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 
-const AnimatedButton = ({ children, className = "", ...props }) => (
-  <Button
-    variant="outline"
-    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
-    {...props}
-  >
+const AnimatedButton = ({ children, className = "", ...props }) =>
+<Button
+  variant="outline"
+  className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+  {...props}>
+
     <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
       {children}
     </span>
     <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
-  </Button>
-);
+  </Button>;
+
 
 export default function Industries() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
     document.title = "Industries | SensEar";
-    
+
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -142,11 +142,11 @@ export default function Industries() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0dd5f695_13e97d3def8d47a1efe25c37e0f29eb2.jpg" 
-                    alt="Hotels & Resorts" 
-                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg"
-                  />
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0dd5f695_13e97d3def8d47a1efe25c37e0f29eb2.jpg"
+                    alt="Hotels & Resorts"
+                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg" />
+
                 </div>
               </div>
               <div className="order-1 lg:order-2">
@@ -195,11 +195,11 @@ export default function Industries() {
               </div>
               <div className="order-2">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/faa6772fc_c6c8247c6975e5b8b28964566c4e798d.jpg" 
-                    alt="Restaurants & Bars" 
-                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg"
-                  />
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/faa6772fc_c6c8247c6975e5b8b28964566c4e798d.jpg"
+                    alt="Restaurants & Bars"
+                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg" />
+
                 </div>
               </div>
             </div>
@@ -208,11 +208,11 @@ export default function Industries() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/efeae9e53_56bb71da7fa44cbf6f001204format-webpwidth-1440_wWzsf3qJ3dJMkxWN-.jpg" 
-                    alt="Events & Experiences" 
-                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg"
-                  />
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/efeae9e53_56bb71da7fa44cbf6f001204format-webpwidth-1440_wWzsf3qJ3dJMkxWN-.jpg"
+                    alt="Events & Experiences"
+                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg" />
+
                 </div>
               </div>
               <div className="order-1 lg:order-2">
@@ -261,11 +261,11 @@ export default function Industries() {
               </div>
               <div className="order-2">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/4ee147bf6_6fd38d8f206dc0b7749c169007cee524.jpg" 
-                    alt="Retail Stores" 
-                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg"
-                  />
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/4ee147bf6_6fd38d8f206dc0b7749c169007cee524.jpg"
+                    alt="Retail Stores"
+                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg" />
+
                 </div>
               </div>
             </div>
@@ -274,11 +274,11 @@ export default function Industries() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/3b2d2e497_Shade-by-Starpool-Design-Cristiano-Mino-.jpg" 
-                    alt="Wellness Centers" 
-                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg"
-                  />
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/3b2d2e497_Shade-by-Starpool-Design-Cristiano-Mino-.jpg"
+                    alt="Wellness Centers"
+                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg" />
+
                 </div>
               </div>
               <div className="order-1 lg:order-2">
@@ -327,11 +327,11 @@ export default function Industries() {
               </div>
               <div className="order-2">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
-                  <img 
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ec55631fd_204f0aeb3f27e1d66d7e764876f0fa4a.jpg" 
-                    alt="Art, Museums & Fashion" 
-                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg"
-                  />
+                  <img
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ec55631fd_204f0aeb3f27e1d66d7e764876f0fa4a.jpg"
+                    alt="Art, Museums & Fashion"
+                    className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg" />
+
                 </div>
               </div>
             </div>
@@ -389,13 +389,13 @@ export default function Industries() {
             <div className="flex items-center">
               <span className="text-black/60 mr-2">Or</span>
               <Link to={createPageUrl("Services")} className="inline-flex items-center text-black font-bold text-lg group">
-                <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">explore our services</span>
+                <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore our services</span>
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
