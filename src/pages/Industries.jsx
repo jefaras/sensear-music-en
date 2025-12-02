@@ -340,7 +340,20 @@ export default function Industries() {
       </section>
 
       {/* What connects these worlds */}
-      <section className="py-24 bg-white">
+      <section className="py-24" style={{
+        backgroundImage: `linear-gradient(to bottom, 
+          #ffffff 0%, 
+          #ffffff 25%, 
+          rgba(255,255,255,0) 45%, 
+          rgba(255,255,255,0) 55%,
+          #FFF7F2 75%, 
+          #ffffff 100%
+        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">What connects these worlds</h2>
@@ -383,7 +396,20 @@ export default function Industries() {
       </section>
 
       {/* Discover Your Sound Potential */}
-      <section className="py-20 bg-white">
+      <section className="py-20" style={{
+        backgroundImage: `linear-gradient(to bottom, 
+          #ffffff 0%, 
+          #ffffff 25%, 
+          rgba(255,255,255,0) 45%, 
+          rgba(255,255,255,0) 55%,
+          #FFF7F2 75%, 
+          #ffffff 100%
+        ), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundAttachment: 'fixed'
+      }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Discover Your Sound Potential</h2>
           <p className="text-xl text-black/70 mb-8 max-w-3xl mx-auto">
