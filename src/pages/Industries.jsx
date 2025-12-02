@@ -401,10 +401,10 @@ export default function Industries() {
                   "Knowing if your music actually works for your business"
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="mt-1 w-5 h-5 rounded-full bg-black/5 flex items-center justify-center flex-shrink-0">
+                    <div className="mt-1.5 w-5 h-5 rounded-full bg-black/5 flex items-center justify-center flex-shrink-0">
                       <Check className="w-3 h-3 text-black" />
                     </div>
-                    <p className="text-lg text-black/70">{item}</p>
+                    <p className="text-xl md:text-2xl text-black/70 leading-relaxed">{item}</p>
                   </div>
                 ))}
               </div>
