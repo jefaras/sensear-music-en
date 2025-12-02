@@ -396,7 +396,7 @@ export default function Home() {
             <p className="text-xl text-black/70 mb-12 leading-relaxed text-center mx-auto max-w-5xl">
                 We understand how rhythm, energy & atmosphere shape the Greek hospitality experience.
             </p>
-            <div className="grid md:grid-cols-[1.2fr_1fr] gap-12 items-center">
+            <div className="grid md:grid-cols-[1.2fr_1fr] gap-20 items-center">
                 {/* Left: Image */}
                 <div className="order-last md:order-1 block">
                     <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
@@ -409,7 +409,7 @@ export default function Home() {
                 </div>
 
                 {/* Right: Content */}
-                <div className="md:order-2">
+                <div className="md:order-2 md:pl-12">
                     <div className="flex flex-col mb-12">
                         <div className="mb-8">
                             <Link to={createPageUrl("hotels-resorts")} className="text-2xl font-bold text-black block mb-2 group w-fit">
