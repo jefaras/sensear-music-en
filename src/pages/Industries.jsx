@@ -154,9 +154,9 @@ export default function Industries() {
         backgroundAttachment: 'fixed'
       }}>
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16 max-w-4xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Your industry, our expertise</h2>
-            <p className="text-xl text-black/60 font-medium">Strategic sound designed for the specific needs of your world.</p>
+            <p className="text-xl text-black/60 font-medium mb-12">Strategic sound designed for the specific needs of your world.</p>
           </div>
 
           <div className="space-y-20">
@@ -377,9 +377,9 @@ export default function Industries() {
         backgroundAttachment: 'fixed'
       }}>
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16 max-w-4xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">What connects these worlds</h2>
-            <p className="text-xl text-black/60 font-medium">Six industries, shared opportunities to transform through music.</p>
+            <p className="text-xl text-black/60 font-medium mb-12">Six industries, shared opportunities to transform through music.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">

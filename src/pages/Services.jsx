@@ -358,9 +358,9 @@ export default function Services() {
         backgroundAttachment: 'fixed'
       }}>
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16 max-w-4xl mx-auto">
+          <div className="text-center max-w-4xl mx-auto">
             <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Choose your starting point</h2>
-            <p className="text-xl text-black/60">Use this guide to see which music service fits you.</p>
+            <p className="text-xl text-black/60 mb-12">Use this guide to see which music service fits you.</p>
           </div>
 
           {/* Signature Playlists */}
