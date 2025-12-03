@@ -293,9 +293,9 @@ export default function CaseStudies() {
       {/* Final CTA - Your Transformation Starts Here */}
       <section className="py-20 animated-gradient">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Your Transformation Starts Here</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Your venue's sound journey starts here</h2>
           <p className="text-xl text-black/70 mb-8 max-w-3xl mx-auto">
-            These venues took control of their soundtrack. Your turn.
+            Let's explore how music can work specifically for your space and goals.
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
