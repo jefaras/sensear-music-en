@@ -10,7 +10,7 @@ const AnimatedButton = ({ children, className = "", ...props }) => (
     className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
     {...props}
   >
-    <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
+    <span className="transition-transform duration-300 group-hover:-translate-x-3 flex items-center">
       {children}
     </span>
     <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
@@ -164,11 +164,11 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Yam, Antiparos</h3>
                 
                 <div className="mb-8">
-                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
-                    An iconic Antiparos venue since the late '90s, Yam sits on a beautiful scenery and an easy-going vibe. The girls in charge asked us to complement this special setting with music that evolves from lazy lunch to late night hangouts.
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed mb-6">
+                    An iconic Antiparos venue since the late '90s, Yam sits on a beautiful scenery and an easy-going vibe.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
-                    We created a fine music experience for their after-dinner drinks and cocktails that captures the island's magic.
+                    The girls in charge asked us to complement this special setting with music that evolves from lazy lunch to late night hangouts. We created a fine music experience for their after-dinner drinks and cocktails that captures the island's magic.
                   </p>
                 </div>
 
@@ -190,7 +190,7 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Pelicanos, Sifnos</h3>
                 
                 <div className="mb-8">
-                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed mb-6">
                     Fine dining has taken off on Sifnos, an island known for its culinary tradition. Pelicanos is a sophisticated all-day restaurant in the fishing village of Faros, that needed music to match its ambition.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
@@ -232,7 +232,7 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Beach House, Antiparos</h3>
                 
                 <div className="mb-8">
-                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed mb-6">
                     Beach House features traditional island style, the high-end restaurant CoocooVaya and a bar hovering above the sea, all with endless Aegean views.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
@@ -258,7 +258,7 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Levantis, Paros</h3>
                 
                 <div className="mb-8">
-                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed mb-6">
                     Neva Bergman assigned us to create atmospheric support for her "Quiet Testimony" exhibition opening at Levantis restaurant's gallery space in Paros.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
