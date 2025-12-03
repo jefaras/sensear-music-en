@@ -145,8 +145,8 @@ export default function CaseStudies() {
       }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20 max-w-4xl mx-auto">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Four venues, four journeys</h2>
-            <p className="text-xl text-black/80 font-medium">Each with its own character, needs and musical solution.</p>
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Four venues, four journeys</h2>
+            <p className="text-xl text-black/60 font-medium">Each with its own character, needs and musical solution.</p>
           </div>
 
           <div className="space-y-24">
@@ -293,8 +293,8 @@ export default function CaseStudies() {
       {/* Final CTA - Your Transformation Starts Here */}
       <section className="py-20 animated-gradient">
         <div className="w-full mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Your venue's sound journey starts here</h2>
-          <p className="text-xl text-black/70 mb-8 mx-auto">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Your venue's sound journey starts here</h2>
+          <p className="text-xl text-black/60 mb-12 mx-auto">
             Let's explore how music can work specifically for your space and goals.
           </p>
           

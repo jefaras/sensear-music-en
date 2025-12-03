@@ -359,8 +359,8 @@ export default function Services() {
       }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 max-w-4xl mx-auto">
-            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Choose your starting point</h2>
-            <p className="text-xl text-black/70">Use this guide to see which music service fits you.</p>
+            <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Choose your starting point</h2>
+            <p className="text-xl text-black/60">Use this guide to see which music service fits you.</p>
           </div>
 
           {/* Signature Playlists */}
@@ -570,8 +570,8 @@ export default function Services() {
       {/* Final CTA - Let's explore your possibilities */}
       <section className="py-20 animated-gradient">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Let's explore your possibilities</h2>
-          <p className="text-xl text-black/70 mb-12">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Let's explore your possibilities</h2>
+          <p className="text-xl text-black/60 mb-12">
             Which service aligns with your vision? We will assess your current atmosphere and recommend the ideal starting point.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">

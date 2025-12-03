@@ -155,8 +155,8 @@ export default function Industries() {
       }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 max-w-4xl mx-auto">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Your industry, our expertise</h2>
-            <p className="text-xl text-black/80 font-medium">Strategic sound designed for the specific needs of your world.</p>
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Your industry, our expertise</h2>
+            <p className="text-xl text-black/60 font-medium">Strategic sound designed for the specific needs of your world.</p>
           </div>
 
           <div className="space-y-20">
@@ -378,8 +378,8 @@ export default function Industries() {
       }}>
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16 max-w-4xl mx-auto">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">What connects these worlds</h2>
-            <p className="text-xl text-black/80 font-medium">Six industries, shared opportunities to transform through music.</p>
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">What connects these worlds</h2>
+            <p className="text-xl text-black/60 font-medium">Six industries, shared opportunities to transform through music.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -420,8 +420,8 @@ export default function Industries() {
       {/* Discover Your Sound Potential */}
       <section className="py-20 animated-gradient">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">Discover Your Sound Potential</h2>
-          <p className="text-xl text-black/70 mb-8 max-w-3xl mx-auto">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Discover Your Sound Potential</h2>
+          <p className="text-xl text-black/60 mb-12 max-w-3xl mx-auto">
             Every venue has untapped atmospheric potential. Let's explore how strategic sound can transform your specific space and objectives.
           </p>
           
