@@ -175,7 +175,7 @@ export default function CaseStudies() {
                 <div className="space-y-6">
                   <a href="#yam-sample">
                     <AnimatedButton className="w-full sm:w-auto">
-                      Listen to Yam's playlist
+                      <Music className="w-5 h-5 mr-2 inline-block" /> Listen to Yam's playlist
                     </AnimatedButton>
                   </a>
                 </div>
@@ -199,7 +199,7 @@ export default function CaseStudies() {
                 <div className="space-y-6">
                   <a href="#pelicanos-sample">
                     <AnimatedButton className="w-full sm:w-auto">
-                      Listen to Pelicanos atmosphere
+                      <Music className="w-5 h-5 mr-2 inline-block" /> Listen to Pelicanos atmosphere
                     </AnimatedButton>
                   </a>
                 </div>
@@ -239,7 +239,7 @@ export default function CaseStudies() {
                 <div className="space-y-6">
                   <a href="#beach-house-sample">
                     <AnimatedButton className="w-full sm:w-auto">
-                      Listen to Beach House playlist
+                      <Music className="w-5 h-5 mr-2 inline-block" /> Listen to Beach House playlist
                     </AnimatedButton>
                   </a>
                 </div>
@@ -263,7 +263,7 @@ export default function CaseStudies() {
                 <div className="space-y-6">
                   <a href="#levantis-sample">
                     <AnimatedButton className="w-full sm:w-auto">
-                      Listen to Levantis ambience
+                      <Music className="w-5 h-5 mr-2 inline-block" /> Listen to Levantis ambience
                     </AnimatedButton>
                   </a>
                 </div>
@@ -297,8 +297,8 @@ export default function CaseStudies() {
               </AnimatedButton>
             </Link>
             
-            <div className="flex items-center">
-              <span className="text-black/60 mr-2">or</span>
+            <div className="flex items-center gap-6">
+              <span className="text-black/60">or</span>
               <Link to={createPageUrl("Services")} className="inline-flex items-center text-black font-bold text-lg group">
                 <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore our services</span>
                 <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
