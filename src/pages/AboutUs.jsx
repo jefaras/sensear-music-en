@@ -611,11 +611,28 @@ export default function AboutUs() {
           </div>
 
           <p className="text-center mt-12 text-2xl md:text-3xl lg:text-4xl max-w-5xl mx-auto text-black leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            Together, they form SensEar's creative core, a team committed to uplifting spaces through music that is always selective, immersive & unforgettable.
+            Together, they form SensEar's creative core,<br />
+            a team committed to uplifting spaces through music<br />
+            that is always selective, immersive & unforgettable.
           </p>
-          <p className="text-center mt-4 text-lg max-w-3xl mx-auto text-black/80 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            <span>See how we work with clients in our </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">case studies</Link><span>, or </span><Link to={createPageUrl("ContactUs")} className="underline hover:text-black font-semibold">get in touch</Link><span> to discuss your project.</span>
-          </p>
+          
+          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
+            <p className="text-lg max-w-3xl mx-auto text-black/80 mb-8">
+              See how we work with clients or contact us to discuss your project.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+              <Link to={createPageUrl("CaseStudies")}>
+                <AnimatedButton className="w-full sm:w-auto">
+                  Read case studies
+                </AnimatedButton>
+              </Link>
+              <Link to={createPageUrl("ContactUs")}>
+                <AnimatedButton className="w-full sm:w-auto">
+                  Get in touch
+                </AnimatedButton>
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -643,8 +660,8 @@ export default function AboutUs() {
                   <Lightbulb className="w-6 h-6 text-black" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3 text-black">From Brand Vision to Sonic Expression</h3>
-                  <p className="text-black/70">We translate business and emotional intent into music that feels natural, human, and completely on-brand.</p>
+                  <h3 className="text-2xl font-bold mb-3 text-black">Branding music</h3>
+                  <p className="text-black/70">We translate your vision into music that feels natural and completely on-brand.</p>
                 </div>
               </div>
             </article>
@@ -656,8 +673,8 @@ export default function AboutUs() {
                   <Building2 className="w-6 h-6 text-black" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3 text-black">Built for Hospitality</h3>
-                  <p className="text-black/70">We design audio for the full guest journey; fine-tuned for restaurants, bars, spas, upscale hotels and retail that care about detail.</p>
+                  <h3 className="text-2xl font-bold mb-3 text-black">Covering all sectors</h3>
+                  <p className="text-black/70">Music designed to complete guest journeys in all spaces that value atmosphere.</p>
                 </div>
               </div>
             </article>
@@ -669,8 +686,8 @@ export default function AboutUs() {
                   <SlidersHorizontal className="w-6 h-6 text-black" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3 text-black">Modular, Scalable, Personalized</h3>
-                  <p className="text-black/70">Our strategy is never one-size-for-all. We adapt to your existing operating style, team, and rollout needs across several locations, matching our approach to your pace.</p>
+                  <h3 className="text-2xl font-bold mb-3 text-black">Personalizing services</h3>
+                  <p className="text-black/70">Our approach adapts to your style, team & needs across multiple locations.</p>
                 </div>
               </div>
             </article>
@@ -682,8 +699,8 @@ export default function AboutUs() {
                   <Heart className="w-6 h-6 text-black" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold mb-3 text-black">We deeply Love Music</h3>
-                  <p className="text-black/70">We are curators, DJs and listeners who craft our services with taste, purpose, and passion, harnessing music's power to shift moods, shape spaces, and connect people.</p>
+                  <h3 className="text-2xl font-bold mb-3 text-black">Using music's unique powers</h3>
+                  <p className="text-black/70">We understand how music shifts moods, shapes spaces and connects people.</p>
                 </div>
               </div>
             </article>
