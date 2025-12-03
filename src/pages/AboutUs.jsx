@@ -475,7 +475,7 @@ export default function AboutUs() {
             {/* Right: Titles - appears first on mobile, second on desktop */}
             <div className="lg:order-2 lg:min-w-[280px]">
               <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
-                Our Vision
+                Our vision
               </h2>
             </div>
             
@@ -495,7 +495,7 @@ export default function AboutUs() {
       {/* Team Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="team-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="team-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-16 animate-fade-in-up">Meet the Team</h2>
+          <h2 id="team-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-16 animate-fade-in-up">Meet the team</h2>
 
           {/* John E. Farazoumis */}
           <div className="mb-8" role="list">
@@ -513,10 +513,10 @@ export default function AboutUs() {
                       From his early DJ sets to his studies in Hospitality Management, JEF has always been guided by music's magnetic pull.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-4">
-                      He is a co-founder of a successful digital agency, gaining 25 years of experience in web services & understanding client needs.
+                      He is a co-founder of a successful digital agency, with 25 years of experience in web services & understanding client needs.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed">
-                      At SensEar, he shapes the brand's strategic direction and bridges the gap between creative vision and client experience across the hospitality sector.
+                      At SensEar, he shapes the brand's strategic direction & connects creative vision with client experience.
                     </p>
                   </div>
                 </div>
@@ -555,13 +555,13 @@ export default function AboutUs() {
                   
                   <div className="lg:mt-[140px]">
                     <p className="text-xl md:text-2xl text-black leading-relaxed mb-6">
-                      G’s lifelong passion for music deepened with a Media & Communications Ba and a Popular Music in Film MA, from Goldsmiths, University of London.
+                      G’s lifelong passion for music deepened with a Media & Communications BA and an MA in Popular Music in Film.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-4">
-                      Back in Athens, he made his mark as a curator and DJ on radio, parties & venues, including as co-founder of the acclaimed M.C.
+                      He established himself in Athens as a DJ & music curator on radio, parties & venues residencies.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed">
-                      At SensEar, he crafts each venue's musical identity with precision, rhythm, and a sense of atmosphere that defines the brand's signature sound.
+                      At SensEar, he crafts each venue's musical identity with precision, rhythm and atmospheres that defines the brand's signature sound.
                     </p>
                   </div>
                 </div>
@@ -582,13 +582,13 @@ export default function AboutUs() {
                   
                   <div className="lg:mt-[140px]">
                     <p className="text-xl md:text-2xl text-black leading-relaxed mb-6">
-                      Katerina combines visual design & sound narrative with a refined artistic sensibility.
+                      Kat combines visual design & sound narrative with a refined artistic sensibility.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed mb-4">
                       A veteran multimedia art director, she helps curate soundscapes for films, exhibitions & private events.
                     </p>
                     <p className="text-xl md:text-2xl text-black/70 leading-relaxed">
-                      Known for her instinctive selections and taste for rare grooves, she brings depth, texture, and a touch of the unexpected to SensEar's playlists.
+                      Known for her instinctive selections & taste for rare grooves, she brings depth, texture and a touch of the unexpected to SensEar.
                     </p>
                   </div>
                 </div>
@@ -606,7 +606,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-center mt-12 text-2xl md:text-3xl lg:text-4xl max-w-5xl mx-auto text-black leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            Together, John, George, and Katerina form SensEar's creative core, a team committed to elevating spaces through music that is always intentional, immersive, and unforgettable.
+            Together, they form SensEar's creative core, a team committed to uplifting spaces through music that is always selective, immersive & unforgettable.
           </p>
           <p className="text-center mt-4 text-lg max-w-3xl mx-auto text-black/80 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
             <span>See how we work with clients in our </span><Link to={createPageUrl("CaseStudies")} className="underline hover:text-black font-semibold">case studies</Link><span>, or </span><Link to={createPageUrl("ContactUs")} className="underline hover:text-black font-semibold">get in touch</Link><span> to discuss your project.</span>
@@ -616,7 +616,7 @@ export default function AboutUs() {
 
       <section className="bg-[#faebe3] text-black py-24" aria-labelledby="differentiators-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="differentiators-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-right mb-12 animate-fade-in-up">What Sets Us Apart</h2>
+          <h2 id="differentiators-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-right mb-12 animate-fade-in-up">What sets us apart</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
