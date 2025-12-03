@@ -219,6 +219,28 @@ export default function AboutUs() {
           animation: slideUp 0.8s ease-out 0.6s forwards;
           opacity: 0;
         }
+
+        @keyframes gradient-shift {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+
+        .animated-gradient {
+          background: linear-gradient(
+            135deg,
+            #f5d4c1 0%,
+            #e8c3b0 15%,
+            #d4c4b0 30%,
+            #c0c0c0 45%,
+            #d3d3d3 60%,
+            #f0d5d0 75%,
+            #e8c3b0 90%,
+            #f5d4c1 100%
+          );
+          background-size: 400% 400%;
+          animation: gradient-shift 10s ease infinite;
+        }
       `}</style>
 
       {/* Hero Section - Similar to Home but smaller heading */}
@@ -279,7 +301,8 @@ export default function AboutUs() {
       {/* Timeline */}
       <section className="py-20 bg-white" aria-labelledby="timeline-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="timeline-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center text-black mb-16">Our journey</h2>
+          <h2 id="timeline-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center text-black mb-12">Our journey</h2>
+          <p className="text-xl text-black/60 font-medium text-center mb-16">From DJ collective & digital services to strategic sound design</p>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             {/* Left: Timeline content */}
@@ -490,7 +513,8 @@ export default function AboutUs() {
       {/* Team Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="team-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="team-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-16 animate-fade-in-up">Meet the team</h2>
+          <h2 id="team-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-12 animate-fade-in-up">Meet the team</h2>
+          <p className="text-xl text-black/60 font-medium text-center mb-16 animate-fade-in-up">Music obsessed, hospitality minded</p>
 
           {/* John E. Farazoumis */}
           <div className="mb-8" role="list">
@@ -629,6 +653,7 @@ export default function AboutUs() {
       <section className="bg-[#faebe3] text-black py-24" aria-labelledby="differentiators-heading">
         <div className="max-w-7xl mx-auto px-6">
           <h2 id="differentiators-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-12 animate-fade-in-up">What sets us apart</h2>
+          <p className="text-xl text-black/60 font-medium text-center mb-12 animate-fade-in-up">Four principles that guide everything we do</p>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Image */}
@@ -698,22 +723,27 @@ export default function AboutUs() {
             </div>
           </div>
           
-          <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            <p className="text-lg max-w-3xl mx-auto text-black/80 mb-8">
-              Explore further our unique approach through playlists curation or discover what we do for your sector.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link to={createPageUrl("signature-playlists")}>
-                <AnimatedButton className="w-full sm:w-auto">
-                  Signature playlists
-                </AnimatedButton>
-              </Link>
-              <Link to={createPageUrl("Industries")}>
-                <AnimatedButton className="w-full sm:w-auto">
-                  Industries we serve
-                </AnimatedButton>
-              </Link>
-            </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 animated-gradient">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">Discover your sound path</h2>
+          <p className="text-xl text-black/60 mb-12 max-w-3xl mx-auto">
+            Explore further our unique approach through playlists curation or discover what we do for your sector.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+            <Link to={createPageUrl("signature-playlists")}>
+              <AnimatedButton className="w-full sm:w-auto">
+                Signature playlists
+              </AnimatedButton>
+            </Link>
+            <Link to={createPageUrl("Industries")}>
+              <AnimatedButton className="w-full sm:w-auto">
+                Industries we serve
+              </AnimatedButton>
+            </Link>
           </div>
         </div>
       </section>
