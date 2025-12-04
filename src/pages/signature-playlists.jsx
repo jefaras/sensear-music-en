@@ -389,45 +389,30 @@ export default function SignaturePlaylists() {
         </div>
       </section>
 
-      {/* Why this helps */}
+      {/* Licensed for business use */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Why this helps</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16c07c365_cc313a1e26a1dd887202657b5dabf32c.jpg"
-                alt="Vinyl records collection for curated playlists"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-            </div>
+      <div className="max-w-7xl mx-auto px-6">
+        <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Licensed for business use</h2>
 
-            {/* Right: Content */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Generic playlists become a signature sound</h3>
-                <p className="text-lg text-black/70">Instead of template mixes that could belong anywhere, you get music that matches your identity, layout & audience.</p>
-              </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left: Image */}
+          <div className="hidden lg:block">
+            <img
+              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16c07c365_cc313a1e26a1dd887202657b5dabf32c.jpg"
+              alt="Vinyl records collection for curated playlists"
+              className="w-full h-auto rounded-2xl shadow-lg"
+            />
+          </div>
 
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Music follows your guest flow</h3>
-                <p className="text-lg text-black/70">Energy & mood shift with occasion, traffic & time of day, so it all feels natural, instead of random.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">No repetitions, full control</h3>
-                <p className="text-lg text-black/70">Regular rotations based on your feedback keep guests & teams happy, while you decide which moods play in each space.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Compliant by design</h3>
-                <p className="text-lg text-black/70">Our music is cleared for business use and compliant with local rules, so your sound stays on brand & aligned with the law.</p>
-              </div>
+          {/* Right: Content */}
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-bold text-black mb-3">On-brand, but also legal playlists</h3>
+              <p className="text-lg text-black/70">Consumer platforms like Spotify or YouTube are not licensed for commercial environments, which is why we provide music cleared for professional use.</p>
             </div>
           </div>
         </div>
+      </div>
       </section>
 
       {/* Final CTA */}
@@ -435,7 +420,7 @@ export default function SignaturePlaylists() {
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Let us craft your signature sound</h2>
           <p className="text-xl text-black/70 mb-8">
-            A perfect soundscape that reflects your brand and captivates your guests.
+            Need a perfect soundscape that reflects your brand and captivates your guests?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to={createPageUrl("ContactUs")}>
