@@ -1,10 +1,23 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { createPageUrl } from "@/utils";
-import { Menu, X, ChevronDown, Facebook, Instagram, ChevronUp } from "lucide-react";
+import { Menu, X, ChevronDown, Facebook, Instagram, ChevronUp, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import ScrollToTop from "./components/ScrollToTop";
+
+const FooterButton = ({ children, className = "", ...props }) => (
+  <Button
+    variant="outline"
+    className={`group relative bg-transparent border-2 border-white text-white hover:bg-white hover:text-black px-4 py-2 text-xs font-semibold rounded-full transition-all duration-300 overflow-hidden h-9 ${className}`}
+    {...props}
+  >
+    <span className="transition-transform duration-300 group-hover:-translate-x-2 inline-block">
+      {children}
+    </span>
+    <ArrowRight className="absolute right-2 w-3 h-3 opacity-0 translate-x-3 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+  </Button>
+);
 
 export default function Layout({ children }) {
   const location = useLocation();
@@ -402,10 +415,10 @@ export default function Layout({ children }) {
 
               {/* Sonic Insights */}
               <div>
-                <h3 className="text-sm font-semibold text-peach mb-3 font-jakarta">Sonic Insights</h3>
+                <h3 className="text-sm font-semibold text-peach mb-3 font-jakarta">Strategic sound, delivered monthly</h3>
                 <div className="flex gap-2">
                   <Input type="email" placeholder="Your email" className="bg-white/10 border-white/20 text-white placeholder:text-white/50 flex-1 text-sm h-9 max-w-[180px]" />
-                  <Button className="bg-slate-50 text-slate-950 px-3 py-2 text-xs font-semibold rounded-full inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 h-9 hover:bg-peach-layer">Subscribe</Button>
+                  <FooterButton>Stay informed</FooterButton>
                 </div>
               </div>
             </div>
