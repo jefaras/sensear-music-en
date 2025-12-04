@@ -11,6 +11,19 @@ import { Link } from "react-router-dom";
 import { createPageUrl } from "@/utils";
 import Breadcrumbs from "../components/Breadcrumbs";
 
+const AnimatedButton = ({ children, className = "", ...props }) => (
+  <Button
+    variant="outline"
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    {...props}
+  >
+    <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
+      {children}
+    </span>
+    <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+  </Button>
+);
+
 
 export default function ContactUs() {
   const [scrollY, setScrollY] = useState(0);
@@ -205,7 +218,6 @@ export default function ContactUs() {
     phone: "",
     venue_type: "",
     service_interest: "",
-    budget_range: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -228,7 +240,6 @@ Email: ${formData.email}
 Phone: ${formData.phone || 'Not provided'}
 Venue Type: ${formData.venue_type}
 Service Interest: ${formData.service_interest}
-Budget Range: ${formData.budget_range || 'Not provided'}
 
 Message:
 ${formData.message}
@@ -251,7 +262,6 @@ This inquiry has been saved to the database and can be viewed in the admin panel
         phone: "",
         venue_type: "",
         service_interest: "",
-        budget_range: "",
         message: ""
       });
 
@@ -389,11 +399,11 @@ This inquiry has been saved to the database and can be viewed in the admin panel
       <section className="py-20 bg-[#faebe3]" aria-labelledby="contact-heading">
         <div className="max-w-6xl mx-auto px-6">
           {/* New heading and text above the contact form */}
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+          <div className="text-center mb-12 max-w-4xl mx-auto">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">
               Give us a call or email us
             </h2>
-            <p className="text-lg text-black/70">
+            <p className="text-xl text-black/60 font-medium mb-12">
               We will respond to your message within 24 hours!
             </p>
           </div>
@@ -540,26 +550,13 @@ This inquiry has been saved to the database and can be viewed in the admin panel
                           <SelectValue placeholder="Select service" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="music_curation">Music Curation</SelectItem>
-                          <SelectItem value="audio_visual">Audio-Visual Upgrades</SelectItem>
-                          <SelectItem value="event_service">Event Services</SelectItem>
-                          <SelectItem value="full_package">Full Package</SelectItem>
+                          <SelectItem value="playlists_creation">Playlists creation</SelectItem>
+                          <SelectItem value="music_event">Music for event</SelectItem>
+                          <SelectItem value="sound_strategy">Sound strategy</SelectItem>
+                          <SelectItem value="av_upgrade">AV upgrade</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
-                  </div>
-
-                  <div>
-                    <label className="block text-sm font-medium text-black mb-2">
-                      Estimated Budget Range
-                    </label>
-                    <Input
-                      value={formData.budget_range}
-                      onChange={(e) => setFormData({ ...formData, budget_range: e.target.value })}
-                      placeholder="e.g., €5,000 - €10,000"
-                      className="border-black/20 focus:bg-white"
-                      style={{ backgroundColor: 'rgba(240, 223, 213, 0.5)' }} />
-                    
                   </div>
 
                   <div>
@@ -577,14 +574,14 @@ This inquiry has been saved to the database and can be viewed in the admin panel
                     
                   </div>
 
-                  <Button
+                  <AnimatedButton
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-black hover:bg-black/80 text-white font-semibold py-6 text-lg"
+                    className="w-full"
                     aria-label={isSubmitting ? "Sending your message" : "Send message"}>
                     
                     {isSubmitting ? "Sending..." : "Send Message"}
-                  </Button>
+                  </AnimatedButton>
                 </form>
               </Card>
             </div>
@@ -594,12 +591,14 @@ This inquiry has been saved to the database and can be viewed in the admin panel
 
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="faq-heading">
         <div className="max-w-4xl mx-auto px-6">
-          <h2 id="faq-heading" className="text-3xl md:text-4xl font-bold text-center text-black mb-6">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-center text-black/70 mb-12">
-            <span>Find answers to common questions about our </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">music curation services</Link><span>. For more detailed information, visit our </span><Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold">complete FAQ page</Link><span>.</span>
-          </p>
+          <div className="text-center mb-12">
+            <h2 id="faq-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center text-black mb-12">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-black/60 font-medium text-center mb-12">
+              <span>Find answers to common questions about our </span><Link to={createPageUrl("Services")} className="underline hover:text-black font-semibold">music curation services</Link><span>. For more detailed information, visit our </span><Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold">complete FAQ page</Link><span>.</span>
+            </p>
+          </div>
           <Accordion type="single" collapsible className="w-full space-y-4">
             <AccordionItem value="item-0" className="bg-white/80 border-b-0 rounded-lg shadow-sm px-6">
               <AccordionTrigger className="text-lg font-semibold text-left hover:no-underline">
@@ -639,10 +638,9 @@ This inquiry has been saved to the database and can be viewed in the admin panel
           </Accordion>
           <div className="text-center mt-12">
             <Link to={createPageUrl("FAQ")}>
-              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white group">
+              <AnimatedButton>
                 Browse FAQs First
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-              </Button>
+              </AnimatedButton>
             </Link>
           </div>
         </div>
