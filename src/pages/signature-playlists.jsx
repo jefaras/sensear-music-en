@@ -351,27 +351,26 @@ export default function SignaturePlaylists() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
-              <p className="text-xl text-black/80 mb-6">Signature Playlists are ideal for venues that want music to work like part of the service:</p>
-              <ul className="space-y-6 text-lg text-black/70">
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold">Hotels & resorts</Link> that need smooth shifts from morning to late night</span>
+              <ul className="space-y-8 text-lg text-black/70">
+                <li className="block">
+                  <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold text-xl block mb-1">Hotels & Resorts</Link>
+                  <span>that need smooth shifts throughout the day</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold">Restaurants & bars</Link> that live on repeat guests & bar spend</span>
+                <li className="block">
+                  <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold text-xl block mb-1">Restaurants & Bars</Link>
+                  <span>where atmosphere is a core part of the experience.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold">Retail stores</Link> that want a soundtrack that fits their visual story</span>
+                <li className="block">
+                  <Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold text-xl block mb-1">Retail stores</Link>
+                  <span>that want a soundtrack to fit their visual story</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><Link to={createPageUrl("wellness-gyms")} className="underline hover:text-black font-semibold">Wellness spaces & gyms</Link> where sound supports treatment or training</span>
+                <li className="block">
+                  <Link to={createPageUrl("wellness-gyms")} className="underline hover:text-black font-semibold text-xl block mb-1">Wellness spaces</Link>
+                  <span>to support treatments or training sessions</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold">Galleries, museums & fashion spaces</Link> that need curated, unobtrusive sound</span>
+                <li className="block">
+                  <Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold text-xl block mb-1">Art & Culture spaces</Link>
+                  <span>that need engaging but unobtrusive sound</span>
                 </li>
               </ul>
             </div>
