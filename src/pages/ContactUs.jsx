@@ -383,10 +383,9 @@ This inquiry has been saved to the database and can be viewed in the admin panel
             </div>
           </div>
         </div>
+        {/* Gradient fade out */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent to-[#faebe3] z-10"></div>
       </section>
-
-      {/* Thin black line separator */}
-      <div className="border-t border-black"></div>
 
       {/* Breadcrumbs - COMMENTED OUT */}
       {/* <div className="max-w-7xl mx-auto px-6 py-4 bg-[#faebe3]">
