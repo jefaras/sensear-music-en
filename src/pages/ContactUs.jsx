@@ -342,11 +342,7 @@ This inquiry has been saved to the database and can be viewed in the admin panel
               Get in Touch
             </h1>
             
-            <div className="mb-8 max-w-4xl slide-up-2">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                Need help creating the perfect soundscape for your business or event?
-              </p>
-            </div>
+
           </div>
         </div>
 
@@ -399,68 +395,19 @@ This inquiry has been saved to the database and can be viewed in the admin panel
         <div className="max-w-6xl mx-auto px-6">
           {/* New heading and text above the contact form */}
           <div className="text-center mb-12 max-w-4xl mx-auto">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">
-              Give us a call or email us
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">
+              Need help creating the perfect soundscape for your business or event?
             </h2>
             <p className="text-xl text-black/60 font-medium mb-12">
-              We will respond to your message within 24 hours!
+              Contact SensEar for music curation consultation
             </p>
           </div>
 
           <h2 id="contact-heading" className="sr-only">Contact Information and Inquiry Form</h2>
-          <div className="grid lg:grid-cols-3 gap-12">
-            {/* Contact Info */}
-            <aside className="lg:col-span-1 space-y-8">
-              <div>
-                <h3 className="text-3xl font-bold text-black mb-6">
-                  Contact Information
-                </h3>
-              </div>
-
-              <address className="space-y-6 not-italic">
-                <Card className="p-6 border-none" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                      <Phone className="w-5 h-5 text-black" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-black mb-1">Phone</h4>
-                      <p className="text-black/80"><a href="tel:+306976994212">+30 6976994212</a></p>
-                      <p className="text-sm text-black/60 mt-1">Mon-Fri, 9am-6pm EET</p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card className="p-6 border-none" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                      <Mail className="w-5 h-5 text-black" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-black mb-1">Email</h4>
-                      <p className="text-black/80"><a href="mailto:hello@sensear.music">hello@sensear.music</a></p>
-                      <p className="text-sm text-black/60 mt-1">24-hour response time</p>
-                    </div>
-                  </div>
-                </Card>
-
-                <Card className="p-6 border-none" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-black/5 rounded-full flex items-center justify-center flex-shrink-0" aria-hidden="true">
-                      <MapPin className="w-5 h-5 text-black" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-black mb-1">Location</h4>
-                      <p className="text-black/80">Athens, Greece</p>
-                      <p className="text-sm text-black/60 mt-1">Serving all Greek islands</p>
-                    </div>
-                  </div>
-                </Card>
-              </address>
-            </aside>
-
+          
+          <div className="space-y-20">
             {/* Contact Form */}
-            <div className="lg:col-span-2">
+            <div className="max-w-3xl mx-auto">
               <Card className="p-8 shadow-lg bg-white">
                 <h3 className="text-2xl font-bold text-black mb-6">
                   Send us a message
