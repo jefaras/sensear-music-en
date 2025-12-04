@@ -222,13 +222,13 @@ export default function SignaturePlaylists() {
         }
       `}</style>
 
-      {/* Hero Section - Similar to Home but smaller heading */}
+      {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Signature Playlists section">
         {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Signature playlists<br />that define your venue's atmosphere
+              Signature playlists:<br />curated to add a unique character to your space
             </h1>
           </div>
         </div>
@@ -290,10 +290,51 @@ export default function SignaturePlaylists() {
         </div>
       </section>
 
-      {/* Who this is for */}
+      {/* What we do */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">What we do</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/afb08a148_fe959a9eda0e3059a0b19f803958ba85.jpg"
+                alt="Mindful music curation experience"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+
+            {/* Right: Content */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Curated playlists that amplify your brand</h3>
+                <p className="text-lg text-black/70">We design venue specific playlists that encourage longer & repeat stays, higher spend and more memorable visits.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Rare finds selected for your venue</h3>
+                <p className="text-lg text-black/70">Hand picked tracks from deeper catalogues, arranged to follow your venue's flow, concept & guest profile.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Regular rotations that keep your vibe fresh</h3>
+                <p className="text-lg text-black/70">Ongoing updates so regulars & teams do not hear the same set on loop, while your core sound stays recognisable.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Simple control & curator support</h3>
+                <p className="text-lg text-black/70">Clear rules for what plays where, central management & email/phone access to your curator when you want changes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Perfect for */}
       <section className="py-20" style={{ backgroundImage: "linear-gradient(to top, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Who this is for</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Perfect for</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
@@ -331,47 +372,6 @@ export default function SignaturePlaylists() {
                   alt="Luxury hotel room with curated music atmosphere"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What you get */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">What you get</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/afb08a148_fe959a9eda0e3059a0b19f803958ba85.jpg"
-                alt="Mindful music curation experience"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-            </div>
-
-            {/* Right: Content */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Curated playlists that amplify your brand</h3>
-                <p className="text-lg text-black/70">We design venue specific playlists that encourage longer & repeat stays, higher spend and more memorable visits.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Rare finds selected for your venue</h3>
-                <p className="text-lg text-black/70">Hand picked tracks from deeper catalogues, arranged to follow your venue's flow, concept & guest profile.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Regular rotations that keep your vibe fresh</h3>
-                <p className="text-lg text-black/70">Ongoing updates so regulars & teams do not hear the same set on loop, while your core sound stays recognisable.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Simple control & curator support</h3>
-                <p className="text-lg text-black/70">Clear rules for what plays where, central management & email/phone access to your curator when you want changes.</p>
               </div>
             </div>
           </div>
