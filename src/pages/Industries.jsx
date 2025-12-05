@@ -172,7 +172,7 @@ export default function Industries() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Hotels & Resorts</h3>
+                <h3 className="text-4xl md:text-[48px] font-bold text-black mb-4">Hotels & Resorts</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Soundtracks for every hour & space</p>
                 
                 <div className="mb-6">
@@ -196,7 +196,7 @@ export default function Industries() {
             {/* Restaurants & Bars */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-1">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Restaurants & Bars</h3>
+                <h3 className="text-4xl md:text-[48px] font-bold text-black mb-4">Restaurants & Bars</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">The invisible maître d'</p>
                 
                 <div className="mb-6">
@@ -238,7 +238,7 @@ export default function Industries() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Events & Experiences</h3>
+                <h3 className="text-4xl md:text-[48px] font-bold text-black mb-4">Events & Experiences</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Choreographed precision for unforgettable moments</p>
                 
                 <div className="mb-6">
@@ -262,7 +262,7 @@ export default function Industries() {
             {/* Retail Stores */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-1">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Retail Stores</h3>
+                <h3 className="text-4xl md:text-[48px] font-bold text-black mb-4">Retail Stores</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Soundscapes that inspire discovery</p>
                 
                 <div className="mb-6">
@@ -304,7 +304,7 @@ export default function Industries() {
                 </div>
               </div>
               <div className="order-1 lg:order-2">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Wellness Centers</h3>
+                <h3 className="text-4xl md:text-[48px] font-bold text-black mb-4">Wellness Centers</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Every practice deserves its perfect soundtrack</p>
                 
                 <div className="mb-6">
@@ -328,7 +328,7 @@ export default function Industries() {
             {/* Art, Museums & Fashion */}
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="order-1">
-                <h3 className="text-4xl md:text-5xl font-bold text-black mb-4">Art, Museums & Fashion</h3>
+                <h3 className="text-4xl md:text-[48px] font-bold text-black mb-4">Art, Museums & Fashion</h3>
                 <p className="text-xl font-medium text-black/60 mb-8">Subtle atmospheres that deepen appreciation</p>
                 
                 <div className="mb-6">
