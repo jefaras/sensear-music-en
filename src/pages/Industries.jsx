@@ -123,14 +123,15 @@ export default function Industries() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
               <h2 className="text-[2rem] md:text-[2.8rem] lg:text-[3.45rem] font-bold text-white leading-tight mb-12">
-                The right energy<br />for each occasion</h2>
+                The right energy<br />for every moment
+              </h2>
             
               <div className="w-full text-left">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                  A <strong>hotel lobby</strong> needs <span className="text-black bg-white px-1 italic">different energy</span> than a <strong>cocktail bar</strong>. A <strong>restaurant</strong> demands rhythm that <span className="text-black bg-white px-1 italic">matches</span> service flow. A <strong>gallery</strong> requires <span className="text-black bg-white px-1 italic">respect</span> for the art.
+                  A <strong>hotel lobby</strong> needs <span className="text-black bg-white px-1 italic">different energy</span> than a <strong>cocktail bar</strong>. A <strong>restaurant</strong> <em>demands</em> <span className="text-black bg-white px-1 italic">rhythm that matches service flow</span>. A <strong>gallery</strong> requires <span className="text-black bg-white px-1 italic">respect</span> for the art.
                 </p>
                 <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
-                  We design musical environments across <strong>hospitality</strong>, <strong>retail</strong>, <strong>wellness</strong> & <strong>culture</strong>, that <strong>transform</strong> spaces from functional to <strong>unforgettable</strong>.
+                  We design music across <strong>hospitality</strong>, <strong>retail</strong>, <strong>wellness</strong> & <strong>culture</strong>. <em>Different worlds, shared truth:</em> the <strong>right sound transforms spaces</strong> from functional to <strong>unforgettable</strong>.
                 </p>
               </div>
           </div>
