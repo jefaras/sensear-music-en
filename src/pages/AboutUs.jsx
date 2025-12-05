@@ -617,9 +617,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-center mt-12 text-2xl md:text-3xl lg:text-4xl max-w-5xl mx-auto text-black leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            Together, they form SensEar's creative core,<br />
-            a team committed to uplifting spaces through music<br />
-            that is always selective, immersive & unforgettable.
+            Together, we form SensEar, a team committed to uplifting spaces through compelling, memorable music.
           </p>
           
           <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
