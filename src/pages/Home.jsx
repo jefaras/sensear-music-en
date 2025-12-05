@@ -6,18 +6,18 @@ import { ArrowRight, CheckCircle, Music, Sparkles, SlidersHorizontal, BarChart }
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
-const AnimatedButton = ({ children, className = "", ...props }) => (
-  <Button
-    variant="outline"
-    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
-    {...props}
-  >
+const AnimatedButton = ({ children, className = "", ...props }) =>
+<Button
+  variant="outline"
+  className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+  {...props}>
+  
     <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
       {children}
     </span>
     <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
-  </Button>
-);
+  </Button>;
+
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -247,7 +247,7 @@ export default function Home() {
             
             <div className="mb-8 max-w-5xl slide-up-2">
               <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Every venue has a story. Let music tell yours.
-<br />We craft sophisticated music curation for places and events that refuse to sound generic.
+                <br />We craft sophisticated music curation for places and events that refuse to sound generic.
 
               </p>
             </div>
@@ -255,10 +255,10 @@ export default function Home() {
             <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
               {/* Discover Your Sound button - COMMENTED OUT */}
               {/* <Link to={createPageUrl("ContactUs")}>
-                    <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
-                      Discover Your Sound
-                    </Button>
-                   </Link> */}
+                      <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
+                        Discover Your Sound
+                      </Button>
+                     </Link> */}
               <Link to={createPageUrl("Services")}>
                 <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Explore our services">
                   Explore our services
@@ -275,6 +275,8 @@ export default function Home() {
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png"
                 srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png 1800w,
                         https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a8ab619d_home_page_header_img1.png 2400w"
+
+
 
 
 
@@ -377,9 +379,9 @@ export default function Home() {
                     <div className="md:order-2 block">
                       <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
                         <img
-                          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ee4f6e2db_SIGNATUREcropped.jpg"
-                          alt="SensEar Services"
-                          className="w-full h-auto object-cover rounded-xl shadow-lg" />
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ee4f6e2db_SIGNATUREcropped.jpg"
+                    alt="SensEar Services"
+                    className="w-full h-auto object-cover rounded-xl shadow-lg" />
                       </div>
                     </div>
                 </div>
@@ -401,10 +403,10 @@ export default function Home() {
                 <div className="order-last md:order-1 block">
                     <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
                         <img
-                          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5a170449c_lwnxeqhxcfez5hw0yraf-OK.jpg"
-                          alt="Sonic expertise in hospitality and retail"
-                          className="w-full h-auto object-cover rounded-xl shadow-lg"
-                        />
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/5a170449c_lwnxeqhxcfez5hw0yraf-OK.jpg"
+                  alt="Sonic expertise in hospitality and retail"
+                  className="w-full h-auto object-cover rounded-xl shadow-lg" />
+                
                     </div>
                 </div>
 
@@ -488,7 +490,7 @@ export default function Home() {
                 <div className="space-y-10 mb-12" role="list">
                   <article role="listitem" className="flex gap-4">
                     <div>
-                        <h3 className="text-[31.5px] font-bold text-black mb-2">Strengthen Your Brand</h3>
+                        <h3 className="text-[31.5px] font-bold text-black mb-2">Brand elevation</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
                         Improve perception and loyalty with a memorable atmosphere.
                         </p>
@@ -506,7 +508,7 @@ export default function Home() {
 
                   <article role="listitem" className="flex gap-4">
                     <div>
-                        <h3 className="text-[31.5px] font-bold text-black mb-2">Consistent Experience</h3>
+                        <h3 className="text-lg text-black/70 leading-relaxed">Ensure a smooth music journey across locations & marketing channels.</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
                         Ensure a smooth music experience across locations & marketing channels.
                         </p>
@@ -746,6 +748,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>);
+
 }
