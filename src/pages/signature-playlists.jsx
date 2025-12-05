@@ -377,13 +377,11 @@ export default function SignaturePlaylists() {
 
             {/* Right: Image */}
             <div className="hidden lg:block">
-              <div className="w-[85%] mx-auto">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/87dbd6b8d_ngirwbclf1ak7t0bbzyv.jpg"
-                  alt="Luxury hotel room with curated music atmosphere"
-                  className="w-full h-auto rounded-2xl shadow-lg"
-                />
-              </div>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/87dbd6b8d_ngirwbclf1ak7t0bbzyv.jpg"
+                alt="Luxury hotel room with curated music atmosphere"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </div>
           </div>
         </div>
