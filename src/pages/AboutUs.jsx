@@ -471,7 +471,7 @@ export default function AboutUs() {
             {/* Right: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16685b806_pexels-monstera-1408089.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/92f0d2705_16685b806_pexels-monstera-1408089.jpg"
                 alt="SensEar music curation journey"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -535,7 +535,7 @@ export default function AboutUs() {
                 {/* Right: Image */}
                 <div className="lg:order-2 hidden lg:block">
                   <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b24ebd26f_JEF_square_bw.png"
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/98a0a7252_b24ebd26f_JEF_square_bw.png"
                     alt="John E. Farazoumis - SensEar Co-Founder and Brand Strategy Director"
                     className="w-full h-auto rounded-2xl shadow-lg"
                   />
@@ -551,7 +551,7 @@ export default function AboutUs() {
                 {/* Left: Image */}
                 <div className="lg:order-1 hidden lg:block">
                   <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/398e0cca3_84887785_172252324195148_2160204890159185920_n.jpg"
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9e1d5056f_398e0cca3_84887785_172252324195148_2160204890159185920_n1.jpg"
                     alt="George Fameliaris - SensEar Co-Founder and Chief Music Curator"
                     className="w-full h-auto rounded-2xl shadow-lg"
                   />
@@ -607,7 +607,7 @@ export default function AboutUs() {
                 {/* Right: Image */}
                 <div className="lg:order-2 hidden lg:block">
                   <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/73ba1e2e2_86455570_172252364195144_3083930653335486464_n.jpg"
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/a4ebc438b_73ba1e2e2_86455570_172252364195144_3083930653335486464_n1.jpg"
                     alt="Katerina Karali - SensEar Art Director and Music Curator"
                     className="w-full h-auto rounded-2xl shadow-lg"
                   />
@@ -649,7 +649,7 @@ export default function AboutUs() {
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f12d13b47_IMG_20250722_165530.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/df442a3bc_f12d13b47_IMG_20250722_165530.jpg"
                 alt="SensEar unique approach"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
