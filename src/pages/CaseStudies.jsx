@@ -116,7 +116,7 @@ export default function CaseStudies() {
                 From vision to sound & beyond
               </h2>
             
-              <div className="w-full text-left">
+              <div className="w-full text-center">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                   All venues start with a <span className="text-black bg-white px-1">vision</span>; an <span className="text-black bg-white px-1">atmosphere</span> they imagined, a <span className="text-black bg-white px-1">feeling</span> they wanted guests to have.
                 </p>
