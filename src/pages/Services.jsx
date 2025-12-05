@@ -531,7 +531,7 @@ export default function Services() {
       <section className="py-24 bg-[#faebe3]">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">How our services deliver:</h2>
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-12">How our services deliver</h2>
             <p className="text-xl text-black/60 font-medium mb-12">Working alone or together to meet your specific needs</p>
           </div>
 
@@ -546,23 +546,23 @@ export default function Services() {
              <div className="order-1 lg:order-2">
                 <div className="space-y-8">
                     <div className="mb-6">
-                        <p className="text-xl md:text-2xl text-black/60 leading-relaxed">
-                             <Link to={createPageUrl("signature-playlists")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Signature Playlists</Link> establish your daily atmosphere
+                        <p className="text-[21.5px] text-black/60 leading-relaxed">
+                             <Link to={createPageUrl("signature-playlists")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Signature Playlists</Link> establish your daily atmosphere.
                         </p>
                     </div>
                     <div className="mb-6">
-                        <p className="text-xl md:text-2xl text-black/60 leading-relaxed">
-                             <Link to={createPageUrl("sonic-strategy")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Sonic Strategy</Link> unifies your brand's sound
+                        <p className="text-[21.5px] text-black/60 leading-relaxed">
+                             <Link to={createPageUrl("sonic-strategy")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Sonic Strategy</Link> unifies your brand's sound.
                         </p>
                     </div>
                     <div className="mb-6">
-                        <p className="text-xl md:text-2xl text-black/60 leading-relaxed">
-                             <Link to={createPageUrl("event-soundtracks")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Event Soundtracks</Link> choreograph special moments
+                        <p className="text-[21.5px] text-black/60 leading-relaxed">
+                             <Link to={createPageUrl("event-soundtracks")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Event Soundtracks</Link> choreograph special moments.
                         </p>
                     </div>
                     <div className="mb-6">
-                        <p className="text-xl md:text-2xl text-black/60 leading-relaxed">
-                             <Link to={createPageUrl("audio-upgrades")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Audio Upgrades</Link> optimize acoustic quality
+                        <p className="text-[21.5px] text-black/60 leading-relaxed">
+                             <Link to={createPageUrl("audio-upgrades")} className="font-bold underline decoration-2 underline-offset-4 hover:text-black/70 text-black">Audio Upgrades</Link> optimize acoustic quality.
                         </p>
                     </div>
                 </div>
