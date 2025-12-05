@@ -330,7 +330,7 @@ export default function Services() {
                 shaping your business
               </h2>
             
-              <div className="w-full text-left">
+              <div className="w-full text-center">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                   Every venue <strong>has a soundtrack</strong>, whether you designed it or not. SensEar ensures it tells <span className="text-black bg-white px-1">the right story</span>.
                 </p>
