@@ -386,7 +386,7 @@ export default function Industries() {
             <div className="order-2 lg:order-1">
               <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/a6bc0a060_car-2.png"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c66f2842d_a6bc0a060_car-21.png"
                   alt="Connected worlds"
                   className="w-full h-auto object-cover rounded-xl shadow-lg" />
               </div>
