@@ -306,7 +306,7 @@ export default function SignaturePlaylists() {
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/afb08a148_fe959a9eda0e3059a0b19f803958ba85.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/da61f346a_afb08a148_fe959a9eda0e3059a0b19f803958ba8511.jpg"
                 alt="Mindful music curation experience"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -379,7 +379,7 @@ export default function SignaturePlaylists() {
             <div className="hidden lg:block">
               <div className="w-[85%] mx-auto">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9b1baab05_00-Vondom-Milos-Lovia-Mykonos-1cropped.jpg"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/87dbd6b8d_ngirwbclf1ak7t0bbzyv.jpg"
                   alt="Luxury hotel room with curated music atmosphere"
                   className="w-full h-auto rounded-2xl shadow-lg"
                 />
