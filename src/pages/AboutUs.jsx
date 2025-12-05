@@ -517,16 +517,16 @@ export default function AboutUs() {
                   <h3 className="text-[2.7rem] md:text-[48px] font-bold text-black leading-tight mb-2">
                     John E. Farazoumis
                   </h3>
-                  <p className="text-xl font-semibold text-black/70 mb-6">Co-Founder, Brand Strategy, Client Service</p>
+                  <p className="text-xl font-semibold text-black/70 mb-10">Co-Founder, Brand Strategy, Client Service</p>
                   
                   <div>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-4">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
                       From his early DJ sets to his studies in Hospitality Management, JEF has always been guided by music's magnetic pull.
                     </p>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-4">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
                       He is a co-founder of a successful digital agency, with 25 years of experience in web services & understanding client needs.
                     </p>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed">
                       At SensEar, he shapes the brand's strategic direction & connects creative vision with client experience.
                     </p>
                   </div>
@@ -562,16 +562,16 @@ export default function AboutUs() {
                   <h3 className="text-[2.7rem] md:text-[48px] font-bold text-black leading-tight mb-2">
                     George Fameliaris
                   </h3>
-                  <p className="text-xl font-semibold text-black/70 mb-6">Co-Founder, Chief Music Curator</p>
+                  <p className="text-xl font-semibold text-black/70 mb-10">Co-Founder, Chief Music Curator</p>
                   
                   <div>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-4">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
                       G’s lifelong passion for music deepened with a Media & Communications BA and an MA in Popular Music in Film.
                     </p>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-4">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
                       He established himself in Athens as a DJ & music curator on radio, parties & venues residencies.
                     </p>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed">
                       At SensEar, he crafts each venue's musical identity with precision, rhythm and atmospheres that defines the brand's signature sound.
                     </p>
                   </div>
@@ -589,16 +589,16 @@ export default function AboutUs() {
                   <h3 className="text-[2.7rem] md:text-[48px] font-bold text-black leading-tight mb-2">
                     Katerina Karali
                   </h3>
-                  <p className="text-xl font-semibold text-black/70 mb-6">Contributing Associate, DJ, Music Curator</p>
+                  <p className="text-xl font-semibold text-black/70 mb-10">Contributing Associate, DJ, Music Curator</p>
                   
                   <div>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-4">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
                       Kat combines visual design & sound narrative with a refined artistic sensibility.
                     </p>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed mb-4">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
                       A veteran multimedia art director, she helps curate soundscapes for films, exhibitions & private events.
                     </p>
-                    <p className="text-lg md:text-xl text-black/70 leading-relaxed">
+                    <p className="text-[19.125px] text-black/70 leading-relaxed">
                       Known for her instinctive selections & taste for rare grooves, she brings depth, texture and a touch of the unexpected to SensEar.
                     </p>
                   </div>
