@@ -2,6 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+
+const AnimatedButton = ({ children, className = "", ...props }) => (
+  <Button
+    variant="outline"
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    {...props}
+  >
+    <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
+      {children}
+    </span>
+    <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+  </Button>
+);
 
 export default function SonicStrategy() {
   const [scrollY, setScrollY] = useState(0);
@@ -190,16 +204,6 @@ export default function SonicStrategy() {
           opacity: 0;
         }
         
-        .slide-up-2 {
-          animation: slideUp 0.8s ease-out 0.2s forwards;
-          opacity: 0;
-        }
-        
-        .slide-up-3 {
-          animation: slideUp 0.8s ease-out 0.4s forwards;
-          opacity: 0;
-        }
-        
         .slide-up-4 {
           animation: slideUp 0.8s ease-out 0.6s forwards;
           opacity: 0;
@@ -211,7 +215,7 @@ export default function SonicStrategy() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Sonic strategy that defines<br />how your brand should sound
+              Sonic Strategy:<br />Define how your brand sounds
             </h1>
           </div>
         </div>
@@ -222,13 +226,13 @@ export default function SonicStrategy() {
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Mobile/Tablet version - NO parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fcdcdd9c8_2025-04-09T10_59_47524Z-chess3.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c57c5795e_Empire_Song-.png"
                 alt="Sonic strategy and audio branding for brands"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fcdcdd9c8_2025-04-09T10_59_47524Z-chess3.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/c57c5795e_Empire_Song-.png"
                 alt="Sonic strategy and audio branding for brands"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{ 
@@ -246,72 +250,31 @@ export default function SonicStrategy() {
       {/* Intro Section - Black Background */}
       <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
-            <div className="lg:order-2 lg:min-w-[280px]">
-              <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
-                What is it
-              </h2>
-            </div>
+          <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
+              Sonic action plan<br />for consistent brand identity
+            </h2>
             
-            <div className="lg:order-1 lg:mt-[116px]">
+            <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                Sonic Strategy is your sound blueprint for how your brand should feel and be remembered through music.
+                We translate your brand vision into a clear audio blueprint that works across spaces, locations and touchpoints.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                We translate your brand vision into a clear, practical audio identity you can roll out across spaces, channels and locations.
+                Music stops being random choices and becomes strategic brand expression.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who this is for */}
-      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Who this is for</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-xl text-black/80 mb-6">Sonic Strategy is ideal when you want your sound to feel as considered as your design and service:</p>
-              <ul className="space-y-6 text-lg text-black/70">
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Hotels and resort groups that need one recognisable sound across properties</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Restaurant, bar and retail brands that are growing, rebranding or opening new sites</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Wellness, cultural and fashion spaces that want a defined sonic personality</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Teams with a strong brand vision but no in house sound expertise or time to shape it in music</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="hidden lg:block">
-              <div className="w-[85%] mx-auto">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2f1aa2923_00a27c3bd633abfcfe751c91ef9d3f08sonic.jpg"
-                  alt="Brand sonic identity development"
-                  className="w-full h-auto rounded-2xl shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What you get */}
+      {/* What we do */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">What you get</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-4 text-black text-center">What we do</h2>
+          <p className="text-xl text-black/60 font-medium text-center mb-12">Brand audio strategy and implementation</p>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image - kept from previous "What you get" */}
             <div className="hidden lg:block">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/deb3db30e_image00006b-CROPPED1.jpg"
@@ -320,54 +283,83 @@ export default function SonicStrategy() {
               />
             </div>
 
+            {/* Right: Content */}
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Sonic DNA workshop</h3>
-                <p className="text-lg text-black/70">A guided session with your team where we explore brand values, guest profiles and emotional targets, using mood boards and reference tracks to outline your sonic personality.</p>
+                <p className="text-lg text-black/70">Guided session exploring brand values, guest profiles, and emotional targets through mood boards and reference tracks.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Space and journey sound map</h3>
-                <p className="text-lg text-black/70">A plan for how each space and daypart should sound, including how music supports arrivals, service flow and key guest touchpoints.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Space and journey map</h3>
+                <p className="text-lg text-black/70">Clear plan for how each space and time of day should sound, supporting arrivals, service flow, and key touchpoints.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Sonic rebranding roadmap</h3>
-                <p className="text-lg text-black/70">A clear path to shift from your current sound to the new one, aligned with your brand calendar and marketing goals, whether you are launching or reinventing a venue.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Guidelines for teams</h3>
+                <p className="text-lg text-black/70">Concise sonic framework that keeps music choices on brand across internal teams, agencies, and partners.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Guidelines for teams and partners</h3>
-                <p className="text-lg text-black/70">Concise sonic guidelines that make it easy for internal teams, agencies and curators to keep music choices on brand over time.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Implementation roadmap</h3>
+                <p className="text-lg text-black/70">Practical path from current sound to new identity, aligned with your brand calendar and rollout timeline.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="py-20 bg-[#faebe3]">
+      {/* Perfect for */}
+      <section className="py-20" style={{ backgroundImage: "linear-gradient(to top, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How it works</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">Perfect for</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Listen and map</h3>
-                <p className="text-lg text-black/70">We meet your team, review your brand, spaces and plans, then map where sound matters most in your guest and customer journeys.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Design and test</h3>
-                <p className="text-lg text-black/70">We develop your sonic concept, mood boards and audio demos so you can hear how the strategy feels in real scenarios before you commit.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Document and support</h3>
-                <p className="text-lg text-black/70">We deliver your sonic strategy, guidelines and roadmap, then support implementation through playlists, events or audio upgrades when needed.</p>
-              </div>
+            {/* Left: Content */}
+            <div>
+              <ul className="space-y-8 text-lg text-black/70">
+                <li className="block">
+                  <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold text-2xl block mb-1">Hotel & Resort Groups</Link>
+                  <span>needing one recognizable sound across properties.</span>
+                </li>
+                <li className="block">
+                  <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1">Restaurant, Bar & Retail Brands</Link>
+                  <span>growing, rebranding, or opening new locations.</span>
+                </li>
+                <li className="block">
+                  <Link to={createPageUrl("wellness-gyms")} className="underline hover:text-black font-semibold text-2xl block mb-1">Wellness & Cultural Spaces</Link>
+                  <span>wanting a defined sonic personality.</span>
+                </li>
+                <li className="block">
+                  <Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold text-2xl block mb-1">Fashion & Lifestyle Brands</Link>
+                  <span>with strong visual identity but undefined sound.</span>
+                </li>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Teams</span>
+                  <span>with brand vision but no in-house audio expertise.</span>
+                </li>
+              </ul>
             </div>
 
+            {/* Right: Image - kept from previous "Who this is for" */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2f1aa2923_00a27c3bd633abfcfe751c91ef9d3f08sonic.jpg"
+                alt="Brand sonic identity development"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Strategically defined identity */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">Strategically defined identity</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image - kept from previous "How it works" */}
             <div className="hidden lg:block">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7c6f67623_d6be48cfcce95f702a6c4b34c0e7cc47CROPPED-pxbee-minitools-enhance-2025112017940.jpg"
@@ -375,71 +367,12 @@ export default function SonicStrategy() {
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Why this helps */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Why this helps</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f9388e2c1_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
-                alt="Brand audio identity benefits"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-            </div>
-
+            {/* Right: Content */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Flat or forgettable atmosphere gains depth</h3>
-                <p className="text-lg text-black/70">Spaces that felt visually strong but sonically weak get a sound layer that adds emotion, texture and memory.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Locations sound coherent without losing character</h3>
-                <p className="text-lg text-black/70">Multi site brands stop sounding random from one venue to the next. You get a shared backbone with room for local details where it matters.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Music starts to reflect who you are</h3>
-                <p className="text-lg text-black/70">Generic playlists and ad based radio give way to a sonic language that speaks your brand clearly at every touchpoint.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Teams have structure instead of improvising</h3>
-                <p className="text-lg text-black/70">Instead of many hands on the playlist, you have a simple framework that guides choices, briefs partners and keeps decisions aligned.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Proof in practice */}
-      <section className="py-20 bg-[#faebe3]">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How others use it</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-6">
-                Hotel groups, restaurant brands, retailers and cultural spaces use Sonic Strategy as the master plan behind their playlists, events and audio upgrades.
-              </p>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                It helps them keep new openings, campaigns and everyday service sounding like one story, no matter where guests meet the brand.
-              </p>
-            </div>
-
-            <div className="hidden lg:block">
-              <div className="w-[85%] mx-auto">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2021e7ea_skycropped.png"
-                  alt="Multi-location brand sonic consistency"
-                  className="w-full h-auto rounded-2xl shadow-lg"
-                />
+                <h3 className="text-2xl font-bold text-black mb-3">Coherent, but also flexible</h3>
+                <p className="text-lg text-black/70">Your brand sounds recognizable at all locations & media while respecting what makes each space unique.</p>
               </div>
             </div>
           </div>
@@ -447,17 +380,17 @@ export default function SonicStrategy() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <section className="py-20" style={{ backgroundImage: "linear-gradient(to bottom, #faebe3 0%, rgba(250, 235, 227, 0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ready to define your brand's sonic identity?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Let us define your brand's sonic identity</h2>
           <p className="text-xl text-black/70 mb-8">
-            Let us translate your brand vision into a clear, practical audio strategy.
+            Require a sound strategy as considered as your design?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg">
+              <AnimatedButton className="w-full sm:w-auto">
                 Start your sonic strategy
-              </Button>
+              </AnimatedButton>
             </Link>
           </div>
           <p className="text-black/70 mt-8">
