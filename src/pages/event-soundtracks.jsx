@@ -2,6 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+
+const AnimatedButton = ({ children, className = "", ...props }) => (
+  <Button
+    variant="outline"
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    {...props}
+  >
+    <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
+      {children}
+    </span>
+    <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+  </Button>
+);
 
 export default function EventSoundtracks() {
   const [scrollY, setScrollY] = useState(0);
@@ -190,16 +204,6 @@ export default function EventSoundtracks() {
           opacity: 0;
         }
         
-        .slide-up-2 {
-          animation: slideUp 0.8s ease-out 0.2s forwards;
-          opacity: 0;
-        }
-        
-        .slide-up-3 {
-          animation: slideUp 0.8s ease-out 0.4s forwards;
-          opacity: 0;
-        }
-        
         .slide-up-4 {
           animation: slideUp 0.8s ease-out 0.6s forwards;
           opacity: 0;
@@ -211,7 +215,7 @@ export default function EventSoundtracks() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Custom event soundtracks<br />& live DJ sets that elevate every moment
+              Custom event music:<br />Mixes & live DJ sets that elevate each moment.
             </h1>
           </div>
         </div>
@@ -254,72 +258,28 @@ export default function EventSoundtracks() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
-              Event soundtrack design for memorable guest journeys
+              Event soundtrack design<br />for fascinating guest journeys
             </h2>
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We design immersive soundtracks & DJ sets that follow your show run, so music & energy matches each phase, from arrival to finale..
+                We craft immersive themes that follow your show run, so music & energy matches each phase, from arrival to finale.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Sound quietly shapes how guests arrive, connect & remember what happened.
+                Sound smoothly shapes how guests arrive, connect & remember what happened.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who this is for */}
-      <section className="py-20" style={{ backgroundImage: "linear-gradient(to top, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Who this is for</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-xl text-black/80 mb-6">Event Soundtracks are ideal when you want sound to feel as designed as everything else:</p>
-              <ul className="space-y-6 text-lg text-black/70">
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Hotels, resorts & restaurants that host launches, weddings, or special dinners</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Event organisers & creative agencies creating immersive experiences</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Private chefs & hosts offering ceremonial or intimate dining</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Cultural venues, galleries & showrooms staging talks, previews or shows</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span>Brands that know music shapes how guests feel, share and remember</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="hidden lg:block">
-              <div className="w-[85%] mx-auto">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9f56a9904_2f602f264fc83649ea78ee45caeec916upscaled.jpg"
-                  alt="Event venue with curated soundscape"
-                  className="w-full h-auto rounded-2xl shadow-lg"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* What you get */}
+      {/* What we do */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">What you get</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">What we do</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image - kept from previous "What you get" */}
             <div className="hidden lg:block">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e56a199c4_ac423ae7b75beed60a76ecc7a719d544croppedUPSCALED.jpg"
@@ -328,54 +288,83 @@ export default function EventSoundtracks() {
               />
             </div>
 
+            {/* Right: Content */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Sound design for the show's run</h3>
-                <p className="text-lg text-black/70">Custom multi chapter soundtracks that follow your event timeline, from opening to closing track.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Follow your event timeline</h3>
+                <p className="text-lg text-black/70">Custom multi-part music themes that match your event's sequence & happenings.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Playlists, DJ sets or a hybrid</h3>
-                <p className="text-lg text-black/70">Music that fits your concept and audience, delivered as playlists, live DJ programming or both.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Playlists, DJ sets or both</h3>
+                <p className="text-lg text-black/70">Music that fits your concept and audience, delivered as you need it.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">AV direction & support</h3>
-                <p className="text-lg text-black/70">Guidance or coordination on sound checks, levels & playback, so the system works with your soundtrack.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Total sound confidence</h3>
+                <p className="text-lg text-black/70">AV direction, sound checks, and playback management so nothing is left to chance.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Optional venue sound audit</h3>
-                <p className="text-lg text-black/70">A walkthrough of your space, with a clear diagnosis of coverage, clarity & practical upgrade options when needed.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Optional venue audit</h3>
+                <p className="text-lg text-black/70">Inspection of your space for coverage & clarity issues or upgrade needs.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* How it works */}
-      <section className="py-20 bg-[#faebe3]">
+      {/* Perfect for */}
+      <section className="py-20" style={{ backgroundImage: "linear-gradient(to top, #ffffff 0%, rgba(255,255,255,0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How it works</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">Perfect for</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Discovery session</h3>
-                <p className="text-lg text-black/70">We meet with you or your creative team to understand concept, schedule, spaces and key moments.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Soundtrack and AV plan</h3>
-                <p className="text-lg text-black/70">We create a music mood board, playlists or DJ set options and a simple plan for how sound will support each phase.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Rollout and live tuning</h3>
-                <p className="text-lg text-black/70">We handle or supervise playback, scheduling and on the day adjustments so key moments land as planned.</p>
-              </div>
+            {/* Left: Content */}
+            <div>
+              <ul className="space-y-8 text-lg text-black/70">
+                <li className="block">
+                  <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold text-2xl block mb-1">Hotels & Resorts</Link>
+                  <span>hosting launches, weddings, or signature dinners.</span>
+                </li>
+                <li className="block">
+                  <Link to={createPageUrl("events-experiences")} className="underline hover:text-black font-semibold text-2xl block mb-1">Event Organisers & Agencies</Link>
+                  <span>creating immersive branded experiences.</span>
+                </li>
+                <li className="block">
+                  <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1">Private Chefs & Hosts</Link>
+                  <span>offering ceremonial or intimate dining.</span>
+                </li>
+                <li className="block">
+                  <Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold text-2xl block mb-1">Cultural Venues & Galleries</Link>
+                  <span>staging talks, previews or exhibition openings.</span>
+                </li>
+                <li className="block">
+                  <Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold text-2xl block mb-1">Brands</Link>
+                  <span>that want music to shape how guests feel, share & remember.</span>
+                </li>
+              </ul>
             </div>
 
+            {/* Right: Image - kept from previous "Who this is for" */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9f56a9904_2f602f264fc83649ea78ee45caeec916upscaled.jpg"
+                alt="Event venue with curated soundscape"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Professionally managed staging */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">Professionally managed staging</h2>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image - kept from previous "How it works" */}
             <div className="hidden lg:block">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f5882e104_IMG_20250917_225633.jpg"
@@ -383,71 +372,12 @@ export default function EventSoundtracks() {
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Why this helps */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Why this helps</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8fc129495_pxbee_2025-11-20_15-14-00.jpg"
-                alt="Professional event audio setup"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-            </div>
-
+            {/* Right: Content */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Your soundtrack stops feeling generic</h3>
-                <p className="text-lg text-black/70">Instead of one playlist running all night, you get music that follows the story of the event, with clear chapters and transitions.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">You worry less about sound on the day</h3>
-                <p className="text-lg text-black/70">Levels, cues and key tracks are decided in advance, so you can host, present or perform without thinking about what plays next.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Vendors and systems pull in one direction</h3>
-                <p className="text-lg text-black/70">Music, DJ and AV are aligned under one simple plan, which reduces back and forth between suppliers and last minute fixes.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The in between moments stay alive</h3>
-                <p className="text-lg text-black/70">Energy does not drop between talks, courses or segments. Guests keep talking, watching and sharing instead of drifting to their phones.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Proof in practice */}
-      <section className="py-20 bg-[#faebe3]">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How others use it</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-6">
-                Hotels, restaurants, galleries, and brands use our event soundtracks & live DJ sets for their events.
-              </p>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                SensEar turns launches, ceremonies & dinners into experiences guests talk about afterwards, not just dates in a calendar.
-              </p>
-            </div>
-
-            <div className="hidden lg:block">
-              <div className="w-[85%] mx-auto">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/33cedde2f_46b116cdd43bbf9f9088407090957439cropped.jpg"
-                  alt="Successful event with curated music"
-                  className="w-full h-auto rounded-2xl shadow-lg"
-                />
+                <h3 className="text-2xl font-bold text-black mb-3">Creative, but also precise</h3>
+                <p className="text-lg text-black/70">We manage or supervise scheduling, sound checks and live adjustments so key moments land as planned and you focus on hosting.</p>
               </div>
             </div>
           </div>
@@ -457,15 +387,15 @@ export default function EventSoundtracks() {
       {/* Final CTA */}
       <section className="py-20" style={{ backgroundImage: "linear-gradient(to bottom, #faebe3 0%, rgba(250, 235, 227, 0) 15%), url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ready to design your event's sonic journey?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Let us design your event's sonic journey</h2>
           <p className="text-xl text-black/70 mb-8">
-            Let us create a soundtrack that feels as curated as everything else.
+            Need a soundtrack that feels as curated as everything else?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg">
+              <AnimatedButton className="w-full sm:w-auto">
                 Book your event consultation
-              </Button>
+              </AnimatedButton>
             </Link>
           </div>
           <p className="text-black/70 mt-8">
