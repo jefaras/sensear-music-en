@@ -354,7 +354,7 @@ export default function SignaturePlaylists() {
               <ul className="space-y-8 text-lg text-black/70">
                 <li className="block">
                   <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold text-2xl block mb-1">Hotels & Resorts</Link>
-                  <span>that need smooth shifts throughout the day</span>
+                  <span>that need smooth shifts throughout the day.</span>
                 </li>
                 <li className="block">
                   <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1">Restaurants & Bars</Link>
@@ -362,15 +362,15 @@ export default function SignaturePlaylists() {
                 </li>
                 <li className="block">
                   <Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold text-2xl block mb-1">Retail stores</Link>
-                  <span>that want a soundtrack to fit their visual story</span>
+                  <span>that want a soundtrack to fit their visual story.</span>
                 </li>
                 <li className="block">
                   <Link to={createPageUrl("wellness-gyms")} className="underline hover:text-black font-semibold text-2xl block mb-1">Wellness spaces</Link>
-                  <span>to support treatments or training sessions</span>
+                  <span>to support treatments or training sessions.</span>
                 </li>
                 <li className="block">
                   <Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold text-2xl block mb-1">Art & Culture spaces</Link>
-                  <span>that need engaging but unobtrusive sound</span>
+                  <span>that need engaging but unobtrusive sound.</span>
                 </li>
               </ul>
             </div>
