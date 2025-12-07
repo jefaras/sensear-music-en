@@ -89,7 +89,7 @@ export default function AudioUpgrades() {
     const ogTags = [
     { property: 'og:title', content: 'Audio Upgrades | SensEar' },
     { property: 'og:description', content: description },
-    { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg' },
+    { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg' },
     { property: 'og:url', content: 'https://sensear.music/audio-upgrades' }];
 
     ogTags.forEach((tag) => {
@@ -108,7 +108,7 @@ export default function AudioUpgrades() {
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: 'Audio Upgrades | SensEar' },
     { name: 'twitter:description', content: description },
-    { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg' }];
+    { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg' }];
 
     twitterTags.forEach((tag) => {
       let metaTag = document.querySelector(`meta[name="${tag.name}"]`);
@@ -226,18 +226,18 @@ export default function AudioUpgrades() {
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               {/* Mobile/Tablet version - NO parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 2400w"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Professional audio equipment optimization"
                 className="absolute w-full h-full object-cover md:hidden"
               />
               {/* Desktop version - WITH parallax */}
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b6e0a3f63_tech_hifi_1979_07.jpg 2400w"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg"
+                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg 1800w,
+                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/71ebcd6fa_b6e0a3f63_tech_hifi_1979_07-Picsart-AiImageEnhancer.jpg 2400w"
                 sizes="(max-width: 1800px) 100vw, 1800px"
                 alt="Professional audio equipment optimization"
                 className="absolute w-full h-full object-cover hidden md:block"
