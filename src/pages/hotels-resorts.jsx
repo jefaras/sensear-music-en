@@ -254,13 +254,8 @@ export default function HotelsResorts() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
 
-      {/* Hear this industry in action - Moved here from Social Proof */}
-      <section className="py-16 bg-[#faebe3]">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="max-w-2xl mx-auto text-center">
+          <div className="max-w-2xl mx-auto mt-16 text-center">
             <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Hear this industry in action</h3>
             <p className="text-lg md:text-xl text-black/70 mb-6">Listen to a curated demo playlist for hotels and resorts</p>
             <Link to={createPageUrl("PlaylistsDemos")}>
