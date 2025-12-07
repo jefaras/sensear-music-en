@@ -107,12 +107,17 @@ export default function HomeTestNew() {
         .slide-up-2 { animation: slideUp 0.8s ease-out 0.2s forwards; opacity: 0; }
         .slide-up-3 { animation: slideUp 0.8s ease-out 0.4s forwards; opacity: 0; }
         .slide-up-4 { animation: slideUp 0.8s ease-out 0.6s forwards; opacity: 0; }
+        
+        @keyframes scroll-icon {
+          0% { transform: translateY(0); opacity: 1; }
+          100% { transform: translateY(15px); opacity: 0; }
+        }
       `}</style>
 
       {/* Hero Section - Redesigned */}
-      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative pt-32 pb-32 min-h-[90vh] flex flex-col justify-center overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
+        <div className="w-full px-6 md:px-12 lg:px-16">
+          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 items-center">
             {/* Left Column: H1 and CTA */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
@@ -139,6 +144,13 @@ export default function HomeTestNew() {
             <div className="w-full slide-up-4">
                <HeroCarousel />
             </div>
+          </div>
+        </div>
+
+        {/* Animated Mouse Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 slide-up-4">
+          <div className="w-[30px] h-[50px] border-2 border-black rounded-full relative flex justify-center">
+            <div className="w-[4px] h-[8px] bg-black rounded-full mt-2 animate-[scroll-icon_1.5s_infinite]"></div>
           </div>
         </div>
       </section>
