@@ -72,7 +72,7 @@ export default function HotelsResorts() {
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
               Music for Hotels & Resorts:<br />
-              Soundtracks for every hour & space that delights guests
+              Soundtracks for every hour & space
             </h1>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function HotelsResorts() {
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 Your hotel's atmosphere often registers before guests notice the design. 
-                We create soundscapes that flow from morning coffee to midnight cocktails, across lobby, pool, spa and rooms.
+                We create soundscapes that flow from morning coffee to midnight cocktails, across all hotel areas.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
                 Music is no longer background and becomes part of <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-white/80 transition-colors">guests memories</Link>.
@@ -180,26 +180,26 @@ export default function HotelsResorts() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
-              <ul className="space-y-6 text-lg text-black/70">
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold text-xl">•</span>
-                  <span><strong>Boutique Hotels</strong> that live on word of mouth and atmosphere.</span>
+              <ul className="space-y-8 text-lg text-black/70">
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Boutique Hotels</span>
+                  <span>that live on word of mouth and atmosphere.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold text-xl">•</span>
-                  <span><strong>Luxury Resorts</strong> needing coherent sound across multiple spaces.</span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Luxury Resorts</span>
+                  <span>needing coherent sound across multiple spaces.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold text-xl">•</span>
-                  <span><strong>Business Hotels</strong> switching from focused daytime to social evenings.</span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Business Hotels</span>
+                  <span>switching from focused daytime to social evenings.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold text-xl">•</span>
-                  <span><strong>Branded Groups</strong> wanting consistent audio identity across locations.</span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Branded Groups</span>
+                  <span>wanting consistent audio identity across locations.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold text-xl">•</span>
-                  <span><strong>Event Properties</strong> hosting weddings, retreats or conferences.</span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Event Properties</span>
+                  <span>hosting weddings, retreats or conferences.</span>
                 </li>
               </ul>
             </div>
