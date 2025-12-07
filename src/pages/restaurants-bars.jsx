@@ -389,7 +389,7 @@ export default function RestaurantsBars() {
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Guide pace & orders naturally</h3>
-                <p className="text-lg text-black/70">Music tempo influences how long guests stay. We calibrate sound so tables may order another round or dessert when the moment feels right.</p>
+                <p className="text-lg text-black/70">We calibrate sound so tables may order another round or dessert when the moment feels right.</p>
               </div>
 
               <div>
