@@ -113,7 +113,7 @@ export default function HotelsResorts() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
-              Methodical sound<br />for the complete guest experience
+              Hotel music for the<br />complete guest experience
             </h2>
             
             <div className="w-full">
@@ -122,7 +122,7 @@ export default function HotelsResorts() {
                 We create soundscapes that flow from morning coffee to midnight cocktails, across all hotel areas.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music is no longer background and becomes part of <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-white/80 transition-colors">guests memories</Link>.
+                Music is no longer background; it becomes part of <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-white/80 transition-colors">guests memories</Link>.
               </p>
             </div>
           </div>
