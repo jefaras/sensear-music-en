@@ -384,7 +384,7 @@ export default function RestaurantsBars() {
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Build energy on slower nights</h3>
-                <p className="text-lg text-black/70">We create an atmosphere that makes Tuesdays feel like a night out, not a stopover, even at half capacity.</p>
+                <p className="text-lg text-black/70">We create atmospheres where energy comes from sound, not just from guest count.</p>
               </div>
 
               <div>
