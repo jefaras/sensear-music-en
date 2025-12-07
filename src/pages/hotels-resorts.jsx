@@ -245,7 +245,7 @@ export default function HotelsResorts() {
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Signature themes that fit your brand</h3>
-                <p className="text-lg text-black/70">We translate your brand into melodies that match your interiors & service and feels intentionally yours.</p>
+                <p className="text-lg text-black/70">We translate your brand into melodies that match your interiors & service and feel intentionally yours.</p>
               </div>
 
               <div>
