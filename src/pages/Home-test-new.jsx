@@ -117,7 +117,7 @@ export default function HomeTestNew() {
       {/* Hero Section - Redesigned */}
       <section className="relative pt-32 pb-32 min-h-[90vh] flex flex-col justify-center overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
         <div className="w-full px-6 md:px-12 lg:px-16">
-          <div className="grid lg:grid-cols-[0.8fr_1.2fr] gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column: H1 and CTA */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
@@ -141,8 +141,10 @@ export default function HomeTestNew() {
             </div>
 
             {/* Right Column: Image Carousel */}
-            <div className="w-full slide-up-4">
-               <HeroCarousel />
+            <div className="w-full slide-up-4 flex justify-center lg:justify-end">
+               <div className="w-full lg:w-[90%] xl:w-[80%] max-w-[650px]">
+                  <HeroCarousel />
+               </div>
             </div>
           </div>
         </div>
