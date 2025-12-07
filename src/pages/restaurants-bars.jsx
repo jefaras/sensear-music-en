@@ -310,7 +310,7 @@ export default function RestaurantsBars() {
 
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Brand-aligned selections</h3>
-                <p className="text-lg text-black/70">Concept-specific playlists that support the experience you want to be known for, not generic streaming mixes.</p>
+                <p className="text-lg text-black/70">Playlists specific to your concept, that support the experience you want to be known for.</p>
               </div>
 
               <div>
