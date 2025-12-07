@@ -44,7 +44,7 @@ const HeroCarousel = () => {
     <div className="overflow-hidden rounded-2xl shadow-2xl" ref={emblaRef}>
       <div className="flex">
         {images.map((src, index) => (
-          <div className="flex-[0_0_100%] min-w-0 relative aspect-[4/3] md:aspect-[16/10]" key={index}>
+          <div className="flex-[0_0_100%] min-w-0 relative aspect-square" key={index}>
             <img 
               src={src} 
               alt={`Hero slide ${index + 1}`} 
