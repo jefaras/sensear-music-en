@@ -312,7 +312,7 @@ export default function Industries() {
                 </div>
                 <div className="mb-6">
                   <span className="font-bold text-black text-lg block mb-1">The result:</span>
-                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Members choose your studio specifically for the atmosphere you create.</p>
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Members consider the atmosphere as part of what makes their practice feel complete.</p>
                 </div>
 
                 <div className="mt-8">
@@ -394,11 +394,11 @@ export default function Industries() {
             <div className="order-1 lg:order-2">
               <div className="space-y-4 mb-8">
                 {[
-                  <span key="1">Every venue's <strong>energy needs change</strong> throughout the day</span>,
-                  <span key="2">Multiple spaces or locations that should <strong>feel connected</strong></span>,
-                  <span key="3">Teams need to <strong>focus on service</strong>, not soundtrack debates</span>,
-                  <span key="4">Creating memorable experiences that <strong>bring people back</strong></span>,
-                  <span key="5">Knowing if your <strong>music actually works</strong> for your business</span>
+                  <span key="1">Every venue's <strong>energy needs change</strong> throughout the day.</span>,
+                  <span key="2">Multiple spaces or locations that should <strong>feel connected</strong>.</span>,
+                  <span key="3">Teams need to <strong>focus on service</strong>, not soundtrack debates.</span>,
+                  <span key="4">Creating memorable experiences that <strong>bring people back</strong>.</span>,
+                  <span key="5">Knowing if your <strong>music actually works</strong> for your business.</span>
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
                     <div className="mt-1.5 w-5 h-5 rounded-full bg-black/5 flex items-center justify-center flex-shrink-0">
