@@ -339,13 +339,11 @@ export default function EventsExperiences() {
 
             {/* Right: Image */}
             <div className="hidden lg:block">
-              <div className="w-[76.5%] mx-auto">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/857dd2f02_604e3a452_2eb02f6aa00cbdc92f835b115166f9fb.jpg"
-                  alt="Event sound technical challenge"
-                  className="w-full h-auto rounded-2xl shadow-lg"
-                />
-              </div>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/857dd2f02_604e3a452_2eb02f6aa00cbdc92f835b115166f9fb.jpg"
+                alt="Event sound technical challenge"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </div>
           </div>
         </div>
