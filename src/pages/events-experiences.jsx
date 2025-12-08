@@ -316,23 +316,23 @@ export default function EventsExperiences() {
               <ul className="space-y-6 text-lg text-black/70">
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Hotels, resorts & restaurants</strong> that host live events or ambient experiences</span>
+                  <span><strong>Hotels, resorts & restaurants</strong><br />that host live events or ambient experiences</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Event organisers & creative agencies</strong> designing immersive activations</span>
+                  <span><strong>Event organisers & creative agencies</strong><br />designing immersive activations</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Private chefs, curators & professionals</strong> offering personalised or ceremonial dining</span>
+                  <span><strong>Private chefs, curators & professionals</strong><br />offering personalised or ceremonial dining</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Cultural venues, fashion shows, galleries & concept spaces</strong> seeking a sonic identity</span>
+                  <span><strong>Cultural venues, fashion shows, galleries & concept spaces</strong><br />seeking a sonic identity</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-black font-bold">•</span>
-                  <span><strong>Brands or individuals</strong> who know sound defines the experience</span>
+                  <span><strong>Brands or individuals</strong><br />who know sound defines the experience</span>
                 </li>
               </ul>
             </div>
