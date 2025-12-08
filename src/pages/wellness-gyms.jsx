@@ -452,33 +452,7 @@ export default function WellnessGyms() {
         </div>
       </section>
 
-      {/* Social Proof with Image */}
-      <section className="py-16 bg-[#faebe3]">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Social proof</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Text */}
-            <div>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed mb-6">
-                Wellness centers, studios & gyms work with <strong>SensEar</strong> to turn music into part of the healing & training ritual.
-              </p>
-              <p className="text-xl md:text-2xl text-black/70 italic leading-relaxed">
-                Their spaces now feel more intentional, clients relax faster, members stay engaged & the overall experience feels designed, not improvised.
-              </p>
-            </div>
 
-            {/* Right: Image */}
-            <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3ccc7081_24ff3eb97d703e018840f54d6030eb58.jpg"
-                alt="Luxury wellness pool interior"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
