@@ -309,7 +309,7 @@ export default function EventsExperiences() {
                 At events, sound connects the moments between arrival and finale.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We design custom soundtracks for launches, conferences and celebrations so every transition feels deliberate and energy flows naturally.
+                We design custom soundtracks, so every transition feels deliberate and energy flows naturally.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
                 Music becomes part of the event rather than background.
