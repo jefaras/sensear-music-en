@@ -297,7 +297,7 @@ export default function RetailStores() {
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fea79f153_e416ab4395ea12d490e85d406ce8fcc3.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/989688cc0_fea79f153_e416ab4395ea12d490e85d406ce8fcc3.jpg"
                 alt="Stylish man in retail fashion setting"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
@@ -363,13 +363,11 @@ export default function RetailStores() {
 
             {/* Right: Image */}
             <div className="hidden lg:block">
-              <div className="w-[85%] mx-auto">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1eae8a545_9ce5db84dcf12ffe5ccf1513e7eabca6.jpg"
-                  alt="Fashion model in stylish retail setting"
-                  className="w-full h-auto rounded-2xl shadow-lg"
-                />
-              </div>
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1eae8a545_9ce5db84dcf12ffe5ccf1513e7eabca6.jpg"
+                alt="Fashion model in stylish retail setting"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
             </div>
           </div>
         </div>
@@ -384,7 +382,7 @@ export default function RetailStores() {
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bacc2ba6c_photo-1529480993802-d8e747bb1ecb.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fb3de1cb6_bacc2ba6c_photo-1529480993802-d8e747bb1ecb.jpg"
                 alt="Modern retail interior with neon lighting"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
