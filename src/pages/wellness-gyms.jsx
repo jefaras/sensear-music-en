@@ -2,8 +2,21 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Button } from '@/components/ui/button';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, ArrowRight } from 'lucide-react';
 import Breadcrumbs from "../components/Breadcrumbs";
+
+const AnimatedButton = ({ children, className = "", ...props }) => (
+  <Button
+    variant="outline"
+    className={`group relative bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg font-semibold rounded-full transition-all duration-300 overflow-hidden ${className}`}
+    {...props}
+  >
+    <span className="transition-transform duration-300 group-hover:-translate-x-3 inline-block">
+      {children}
+    </span>
+    <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
+  </Button>
+);
 
 export default function WellnessGyms() {
   const [scrollY, setScrollY] = useState(0);
@@ -241,18 +254,17 @@ export default function WellnessGyms() {
         }
       `}</style>
 
-      {/* Hero Section - Similar to Home but smaller heading */}
+      {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Wellness & Gyms section">
-        {/* Text content */}
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Music for wellness & gyms that calms, focuses & motivates
+              Music for Wellness & Gyms:<br />
+              Sound that calms, focuses & motivates
             </h1>
           </div>
         </div>
 
-        {/* Hero Image - Larger with parallax */}
         <div className="w-full px-6 slide-up-4">
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
@@ -289,60 +301,107 @@ export default function WellnessGyms() {
       <section className="bg-black py-20">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-[1fr_auto] gap-8 items-start">
-            {/* Right: Titles - appears first on mobile, second on desktop */}
+            {/* Right: Titles */}
             <div className="lg:order-2 lg:min-w-[280px]">
               <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-8 lg:mb-0">
-                What is it
+                Fine-tuned soundscapes<br />
+                for mind & body practices
               </h2>
             </div>
             
-            {/* Left: Content - appears second on mobile, first on desktop */}
+            {/* Left: Content */}
             <div className="lg:order-1 lg:mt-[116px]">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                In wellness spaces & gyms, music isn't just ambiance but part of the session.
+                In wellness spaces & gyms, music works with the body & mind throughout every session.
+              </p>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+                We design soundscapes that support relaxation, focus & effort across treatment & training rooms.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                <strong>SensEar</strong> designs spa music & wellness center playlists that support relaxation, focus & effort, so every visit feels naturally restorative or energizing.
+                Music becomes part of the session itself.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Who this is for */}
+      {/* What we do - White Background (Replaces Industry-specific challenges slot in layout) */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">What we do</h2>
+            <p className="text-xl text-black/60 font-medium">Wellness & gym music strategy and implementation</p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left: Image (Reusing Industry-specific challenges image) */}
+            <div className="hidden lg:block">
+              <img
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9f14b26a1_f30a161922bea03d96e30ad4f356dd81.jpg"
+                alt="Spa treatment room ambiance"
+                className="w-full h-auto rounded-2xl shadow-lg"
+              />
+            </div>
+
+            {/* Right: Content */}
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Treatment room soundscapes</h3>
+                <p className="text-lg text-black/70">Ambient & therapeutic sound design help clients relax and stay present.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Class & training playlists</h3>
+                <p className="text-lg text-black/70">Energy-matched music for yoga, Pilates, strength & cardio, helps following the sessions naturally.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Schedule-aware programming</h3>
+                <p className="text-lg text-black/70">Music that follows your daily rhythm: from gentle mornings to energizing evenings, across all spaces.</p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Zone-specific calibration</h3>
+                <p className="text-lg text-black/70">Reception, treatment rooms & gym floor each get their own sound while sharing one recognizable identity.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ideal For - Bg Image (Replaces Who this is for) */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">Who this is for</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">Wellness & gym music is ideal for</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div>
-              <p className="text-xl text-black/80 mb-6">Wellness spaces & gyms that want sound to work like part of the treatment:</p>
-              <ul className="space-y-6 text-lg text-black/70">
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><strong>Spas, wellness centers & day retreats</strong></span>
+              <ul className="space-y-8 text-lg text-black/70">
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Spas & Wellness Centers</span>
+                  <span>where sound supports healing and restoration.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><strong>Yoga, Pilates & meditation studios</strong></span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Yoga, Pilates & Meditation Studios</span>
+                  <span>needing an atmosphere that deepens practice.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><strong>Boutique gyms & studios</strong> focused on member experience</span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Boutique Gyms & Training Studios</span>
+                  <span>focused on member experience and retention.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><strong>Larger gyms</strong> that want consistent sound across zones & locations</span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Multi-Location Wellness Brands</span>
+                  <span>wanting consistent sound across sites.</span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <span className="text-black font-bold">•</span>
-                  <span><strong>Hybrid spaces</strong> with both treatment rooms & training areas</span>
+                <li className="block">
+                  <span className="font-semibold text-2xl block mb-1 text-black">Hybrid Spaces</span>
+                  <span>balancing both treatment rooms and active training areas.</span>
                 </li>
               </ul>
             </div>
 
-            {/* Right: Image */}
+            {/* Right: Image (Reusing Who this is for image) */}
             <div className="hidden lg:block">
               <div className="w-[85%] mx-auto">
                 <img
@@ -356,124 +415,42 @@ export default function WellnessGyms() {
         </div>
       </section>
 
-      {/* Industry-specific challenges */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-right">Industry-specific challenges</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9f14b26a1_f30a161922bea03d96e30ad4f356dd81.jpg"
-                alt="Spa treatment room ambiance"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-            </div>
-
-            {/* Right: Content */}
-            <div className="space-y-8">
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The anxious mind</h3>
-                <p className="text-lg text-black/70">Generic spa playlists loop endlessly or sound fake. Instead of calming the nervous system, they distract clients right when they should relax.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The broken treatment flow</h3>
-                <p className="text-lg text-black/70">Sudden transitions or off mood tracks break the flow of a massage, facial or ritual. Moments that should feel deep & immersive become shallow or forgettable.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The flat class energy</h3>
-                <p className="text-lg text-black/70">Gym classes run on autopilot with the same workout playlist all day. Energy doesn't rise when it should, cool downs feel rushed & members don't feel a clear journey.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">The noise fatigue & brand split</h3>
-                <p className="text-lg text-black/70">Harsh speakers & crowd noise create constant stress on the ears. Spa, treatment rooms & gym floor sound like different brands instead of one unified getaway.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How SensEar solves this */}
+      {/* How we help - Animated Gradient (Replaces How SensEar solves this) */}
       <section className="py-20 animated-gradient">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How SensEar solves this</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How we help</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
             <div className="space-y-8">
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Therapeutic soundscapes for treatments</h3>
-                <p className="text-lg text-black/70">We blend field recordings, ambient & new-age for treatment rooms, creating relaxing and healing sound layers.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Support deeper sessions</h3>
+                <p className="text-lg text-black/70">Audio design helps clients relax and focus during treatments and practice, creating memorable sessions.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Motivating flows for training & classes</h3>
-                <p className="text-lg text-black/70">For cardio & strength work, playlists shift to clean, lyric-light electronic, modern funk & uplifting indie that match warm-up, peak & cool-down.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Match energy to activity</h3>
+                <p className="text-lg text-black/70">Music that rises and falls with effort supports members throughout classes and workouts.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Time of day & schedule curation</h3>
-                <p className="text-lg text-black/70">Music follows treatment schedules, classes & member flow, so all times and days get the right energy, not one-size-fits-all sets.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Create cohesive brand atmosphere</h3>
+                <p className="text-lg text-black/70">All your rooms & locations sound intentional, from reception to last stretch.</p>
               </div>
 
               <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Acoustic comfort & zoned consistency</h3>
-                <p className="text-lg text-black/70">We tune genre, tempo & levels to remove disruption & fatigue and give all spaces their own sound. Central curation & legal licensing keep everything easy to run.</p>
+                <h3 className="text-2xl font-bold text-black mb-3">Remove playlist management</h3>
+                <p className="text-lg text-black/70">Staff focus on clients & members while we handle music selection, updates and commercial licensing.</p>
               </div>
             </div>
 
-            {/* Right: Image */}
+            {/* Right: Image (Reusing How SensEar solves this image) */}
             <div className="hidden lg:block">
               <img
                 src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1cc711917_Physical_Photo_020101_cropped.jpg"
                 alt="Wellness treatment atmosphere"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Key benefits */}
-      <section className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-white text-right">Key benefits</h2>
-          
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Image */}
-            <div className="hidden lg:block">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/16b4501cf_80735099_10156462996866216_6190029784664244224_n_cropped.jpg"
-                alt="Relaxing wellness center pool"
-                className="w-full h-auto rounded-2xl shadow-lg"
-              />
-            </div>
-
-            {/* Right: Content */}
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-3">Deeper relaxation & better sessions</h3>
-                <p className="text-lg text-white/80">Therapeutic sound design helps clients drop into treatments faster, stay present & leave feeling truly restored.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-3">Stronger motivation & member loyalty</h3>
-                <p className="text-lg text-white/80">Classes & workouts feel supported by the right energy curve, helping members push when needed & unwind when it's time to recover.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-3">A cohesive wellness brand experience</h3>
-                <p className="text-lg text-white/80">From reception to last stretch, every space sounds intentional & on brand, whether you have one location or many.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-3">Less sound stress for teams</h3>
-                <p className="text-lg text-white/80">Staff don't need to think about playlists mid shift. They get reliable, session ready sound that just works.</p>
-              </div>
             </div>
           </div>
         </div>
@@ -504,39 +481,28 @@ export default function WellnessGyms() {
               />
             </div>
           </div>
-
-          {/* Hear this industry in action - Centered below */}
-          <div className="max-w-2xl mx-auto mt-16 text-center">
-            <h3 className="text-2xl md:text-3xl font-bold text-black mb-4">Hear this industry in action</h3>
-            <p className="text-lg md:text-xl text-black/70 mb-6">Listen to a curated demo playlist for wellness & gyms</p>
-            <Link to={createPageUrl("PlaylistsDemos")}>
-              <Button size="lg" variant="outline" className="bg-transparent border-2 border-black text-black hover:bg-black hover:text-white px-8">
-                Explore Demo Playlists
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="py-20" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Ready to design your healing & training soundscape?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">Upgrade your wellness atmosphere</h2>
           <p className="text-xl text-black/80 mb-8">
-            We review your current sound, map your sessions & member journey, then propose a tailored music approach for your wellness space or gym network.
+            Ready to design sound for healing & training? We review your current setup, your sessions & member journey and propose a tailored approach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link to={createPageUrl("ContactUs")}>
-              <Button size="lg" className="bg-black text-white hover:bg-black/80 px-8 py-6 text-lg">
+              <AnimatedButton className="w-full sm:w-auto">
                 Book a music consultation
-              </Button>
+              </AnimatedButton>
             </Link>
           </div>
           <p className="text-black/70 mt-8">
-            Explore how our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">Signature Playlists</Link> & <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black font-semibold">Sonic Strategy</Link> work for wellness & gyms.
+            Explore how our <Link to={createPageUrl("signature-playlists")} className="underline hover:text-black font-semibold">Signature Playlists</Link> and <Link to={createPageUrl("sonic-strategy")} className="underline hover:text-black font-semibold">Sonic Strategy</Link> work for wellness & gyms.
           </p>
         </div>
       </section>
-    </div>);
-
+    </div>
+  );
 }
