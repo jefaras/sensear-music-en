@@ -414,7 +414,7 @@ export default function WellnessGyms() {
       {/* How we help - Animated Gradient */}
       <section className="py-20 animated-gradient">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black">How we help</h2>
+          <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">How we help</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left: Content */}
@@ -443,8 +443,8 @@ export default function WellnessGyms() {
             {/* Right: Image (Reusing How SensEar solves this image) */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1cc711917_Physical_Photo_020101_cropped.jpg"
-                alt="Wellness treatment atmosphere"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3ccc7081_24ff3eb97d703e018840f54d6030eb58.jpg"
+                alt="Luxury wellness pool interior"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
             </div>
