@@ -240,7 +240,8 @@ export default function SignaturePlaylists() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Signature playlists:<br />Add a unique character to your space
+              Signature Playlists:<br />
+              Exceptional, custom music for your space
             </h1>
           </div>
         </div>
@@ -287,10 +288,10 @@ export default function SignaturePlaylists() {
             </h2>
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We design fresh, engaging <strong>Music Playlists</strong> that reflect your brand, guide the energy in your spaces & keep guests and teams tuned in.
+                We design fresh, engaging <strong><em>music playlists</em></strong> that reflect your <strong><em>brand</em></strong>, guide the <strong><em>energy</em></strong> in your spaces & keep guests and teams <strong><em>tuned in</em></strong>.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music <em>stops being background</em> and becomes <strong>part of the experience</strong>.
+                Music <strong><em>stops being background</em></strong> and becomes <strong><em>part of the experience</em></strong>.
               </p>
             </div>
           </div>
