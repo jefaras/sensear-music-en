@@ -266,19 +266,16 @@ export default function RetailStores() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
-              Music that guides<br />
-              the journey from browsing to buying
+              Retail music that guides<br />
+              the shopping journey
             </h2>
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                Store music can shape how long people browse, what they notice and whether they buy.
-              </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We design store music that guides the shopping journey from entrance to checkout, across all floors and zones.
+                The music in your store can affect how long people browse, what they notice & whether they buy.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music starts playing an active role and becomes part of how customers perceive your brand.
+                Our music for stores support the flow of shopping and can influence how customers perceive your brand.
               </p>
             </div>
           </div>
