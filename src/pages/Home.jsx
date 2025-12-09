@@ -334,7 +334,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Signature Playlists</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[19.125px] text-black/70 leading-relaxed">
-                                    Your daily soundtrack, from morning energy to evening atmosphere.
+                                    <span className="underline">Your daily soundtrack</span>, from morning energy to evening atmosphere.
                                 </p>
                             </div>
                             {/* Service 2 */}
@@ -343,7 +343,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Event Soundtracks</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[19.125px] text-black/70 leading-relaxed">
-                                    Custom-designed music for launches, conferences & celebrations.
+                                    <span className="underline">Custom-designed music</span> for launches, conferences & celebrations.
                                 </p>
                             </div>
                             {/* Service 3 */}
@@ -352,7 +352,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Sonic Strategy</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[17px] text-black/70 leading-relaxed">
-                                    Your audio DNA, unified across all locations & communication channels.
+                                    <span className="underline">Your audio DNA</span>, unified across all locations & communication channels.
                                 </p>
                             </div>
                             {/* Service 4 */}
@@ -361,7 +361,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Audio Upgrades</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[17px] text-black/70 leading-relaxed">
-                                    Acoustic refinement and support for crystal-clear, memorable sound.
+                                    <span className="underline">Acoustic refinement & support</span> for crystal-clear, memorable sound.
                                 </p>
                             </div>
                         </div>
@@ -490,7 +490,7 @@ export default function Home() {
                     <div>
                         <h3 className="text-[31.5px] font-bold text-black mb-2">Brand elevation</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        Improve brand perception & loyalty with a memorable ambiance.
+                        <span className="underline">Improve brand perception</span> & loyalty with a memorable ambiance.
                         </p>
                     </div>
                   </article>
@@ -499,7 +499,7 @@ export default function Home() {
                     <div>
                         <h3 className="text-[31.5px] font-bold text-black mb-2">Maximum control</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        Take full control of your venue's music style, flow & sound levels.
+                        <span className="underline">Take full control</span> of your venue's music style, flow & sound levels.
                         </p>
                     </div>
                   </article>
@@ -508,7 +508,7 @@ export default function Home() {
                     <div>
                         <h3 className="text-[31.5px] font-bold text-black mb-2">Consistent experience</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        Ensure a smooth music journey across locations & marketing channels.
+                        <span className="underline">Ensure a smooth music journey</span> across locations & marketing channels.
                         </p>
                     </div>
                   </article>
