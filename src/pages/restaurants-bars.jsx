@@ -264,18 +264,15 @@ export default function RestaurantsBars() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
-              Deliberate atmosphere<br />for every service moment
+              Atmosphere curated<br />for every service moment
             </h2>
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                The right playlist could shape dining atmosphere more than decor or lighting.
-              </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We design soundscapes that match your menu, service flow & bar energy from first drinks to last call.
+                The right playlist can <strong>shape the dining atmosphere</strong> as much as décor or lighting.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music becomes part of the experience guests return for.
+                Our music selections for restaurants & bars <strong>follow your menu & service flow</strong> from first drinks to last call, becoming <strong>part of the experience</strong> guests return for.
               </p>
             </div>
           </div>
