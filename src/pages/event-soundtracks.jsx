@@ -215,7 +215,8 @@ export default function EventSoundtracks() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Custom event music:<br />Mixes & live DJ sets that elevate each moment.
+              Event Soundtracks:<br />
+              Elevated, tailored music & DJ sets for events
             </h1>
           </div>
         </div>
@@ -258,15 +259,16 @@ export default function EventSoundtracks() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
-              Event soundtrack design<br />for fascinating guest journeys
+              Music that moves<br />
+              with your event's timeline
             </h2>
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We craft immersive themes that follow your show run, so music & energy matches each phase, from arrival to finale.
+                We design music that evolves to <strong><em>follow your show</em></strong>, ensuring the energy always <strong><em>matches</em></strong> the moment.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Sound smoothly shapes how guests arrive, connect & remember what happened.
+                From background ambiance to party anthems, we help guests <strong><em>arrive, connect & remember</em></strong>.
               </p>
             </div>
           </div>
