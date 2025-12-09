@@ -301,7 +301,7 @@ export default function AboutUs() {
       {/* Timeline */}
       <section className="py-20 bg-white" aria-labelledby="timeline-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="timeline-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center text-black mb-12">Our journey</h2>
+          <h2 id="timeline-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center text-black mb-4">Our journey</h2>
           <p className="text-xl text-black/60 font-medium text-center mb-12">From DJ collective & digital services to strategic sound design</p>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
@@ -505,7 +505,7 @@ export default function AboutUs() {
       {/* Team Section */}
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="team-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="team-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-12 animate-fade-in-up">Meet the team</h2>
+          <h2 id="team-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-4 animate-fade-in-up">Meet the team</h2>
           <p className="text-xl text-black/60 font-medium text-center mb-12 animate-fade-in-up">Music obsessed, hospitality minded</p>
 
           {/* John E. Farazoumis */}
@@ -616,7 +616,7 @@ export default function AboutUs() {
             </article>
           </div>
 
-          <p className="text-center mt-12 text-2xl md:text-3xl lg:text-4xl max-w-5xl mx-auto text-black leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
+          <p className="text-center mt-32 text-2xl md:text-3xl lg:text-4xl max-w-5xl mx-auto text-black leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
             Together, we form SensEar, a team committed to uplifting spaces through compelling, memorable music.
           </p>
           
@@ -642,7 +642,7 @@ export default function AboutUs() {
 
       <section className="bg-[#faebe3] text-black py-24" aria-labelledby="differentiators-heading">
         <div className="max-w-7xl mx-auto px-6">
-          <h2 id="differentiators-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-12 animate-fade-in-up">What sets us apart</h2>
+          <h2 id="differentiators-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-4 animate-fade-in-up">What sets us apart</h2>
           <p className="text-xl text-black/60 font-medium text-center mb-12 animate-fade-in-up">Four principles that guide everything we do</p>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
