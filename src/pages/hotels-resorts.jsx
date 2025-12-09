@@ -118,13 +118,10 @@ export default function HotelsResorts() {
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                Your hotel's atmosphere often registers before guests notice the design.
-              </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We create soundscapes that flow from morning coffee to midnight cocktails, across all hotel areas.
+                Guests feel your hotel's atmosphere before they notice the design.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music is no longer background; it becomes part of <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-white/80 transition-colors">guests memories</Link>.
+                We design hotel music that flows from morning coffee to midnight cocktails, so sound becomes part of the experience <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-white/80 transition-colors">guests remember</Link>.
               </p>
             </div>
           </div>
