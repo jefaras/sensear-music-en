@@ -257,10 +257,10 @@ export default function SonicStrategy() {
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We translate your brand vision into a clear audio blueprint that works across spaces, locations and touchpoints.
+                We translate your brand vision into a <strong><em>clear audio guide</em></strong> that works across <strong><em>spaces, locations & marketing channels</em></strong>.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music stops being random choices and becomes strategic brand expression.
+                Music stops being random choices & becomes strategic brand expression on its premises, social media & ads.
               </p>
             </div>
           </div>
