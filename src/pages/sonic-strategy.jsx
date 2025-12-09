@@ -215,7 +215,7 @@ export default function SonicStrategy() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Sonic Strategy:<br />Define your brand’s sound
+              Sonic Strategy:<br />Define your brand’s exclusive sound
             </h1>
           </div>
         </div>
