@@ -270,7 +270,7 @@ export default function Industries() {
                 </div>
                 <div className="mb-6">
                   <span className="font-bold text-black text-lg block mb-1">The result:</span>
-                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Customers explore the entire store instead of just what they came for.</p>
+                  <p className="text-lg md:text-xl text-black/60 leading-relaxed">Shoppers slow down, explore more corners & feel guided, not rushed.</p>
                 </div>
 
                 <div className="mt-8">
