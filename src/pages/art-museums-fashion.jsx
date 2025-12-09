@@ -260,7 +260,7 @@ export default function ArtMuseumsFashion() {
           <div className="w-full">
             <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
               Music for Art, Museums & Fashion:<br />
-              Sound that honours the work & shapes the moment
+              Sound that frames every work & show
             </h1>
           </div>
         </div>
