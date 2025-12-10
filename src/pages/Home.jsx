@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle, Music, Sparkles, SlidersHorizontal, BarChart } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import useEmblaCarousel from 'embla-carousel-react';
 
 const AnimatedButton = ({ children, className = "", ...props }) => (
   <Button
@@ -18,6 +19,43 @@ const AnimatedButton = ({ children, className = "", ...props }) => (
     <ArrowRight className="absolute right-6 w-5 h-5 opacity-0 translate-x-4 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0" />
   </Button>
 );
+
+const HeroCarousel = () => {
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  
+  useEffect(() => {
+    if (emblaApi) {
+      const autoplay = setInterval(() => {
+        emblaApi.scrollNext();
+      }, 4000);
+      return () => clearInterval(autoplay);
+    }
+  }, [emblaApi]);
+
+  const images = [
+    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e517a47e3_universal_upscale_0_4f88a784-7ce2-4381-8059-39738ad141ea_0.jpg",
+    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6fa9ec2a4_ace50e7b5_E_HryzeWYAUw8vR-2CROPPED1-1.jpg",
+    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc20763a7_b8b8c94c7_e0dd5f695_13e97d3def8d47a1efe25c37e0f29eb211cropped.jpg",
+    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6fcaa40a3_e56a199c4_ac423ae7b75beed60a76ecc7a719d544croppedUPSCALEDcropped.jpg",
+    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9f78baf1e_f5882e104_IMG_20250917_225633cropped.jpg"
+  ];
+
+  return (
+    <div className="overflow-hidden rounded-2xl shadow-2xl" ref={emblaRef}>
+      <div className="flex">
+        {images.map((src, index) => (
+          <div className="flex-[0_0_100%] min-w-0 relative aspect-square" key={index}>
+            <img 
+              src={src} 
+              alt={`Hero slide ${index + 1}`} 
+              className="w-full h-full object-cover" 
+            />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -234,62 +272,52 @@ export default function Home() {
           animation: slideUp 0.8s ease-out 0.6s forwards;
           opacity: 0;
         }
+        
+        @keyframes scroll-icon {
+          0% { transform: translateY(0); opacity: 1; }
+          100% { transform: translateY(15px); opacity: 0; }
+        }
       `}</style>
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="w-full">
-            <h1 className="text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">Soundtracking <br />Unique Experiences
-
-
-            </h1>
-            
-            <div className="mb-8 max-w-5xl slide-up-2">
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">Every venue has a story. Let music tell yours.
-<br />We craft sophisticated music curation for places and events that refuse to sound generic.
-
-              </p>
+      {/* Hero Section - Redesigned */}
+      <section className="relative pt-32 pb-32 min-h-[90vh] flex flex-col justify-center overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Hero section">
+        <div className="w-full px-6 md:px-12 lg:px-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column: H1 and CTA */}
+            <div className="flex flex-col justify-center text-left">
+              <h1 className="text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+                Soundtracking <br />Unique Experiences
+              </h1>
+              
+              <div className="mb-8 max-w-xl slide-up-2">
+                <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
+                  Every venue has a story. Let music tell yours.<br />
+                  We craft sophisticated music curation for places and events that refuse to sound generic.
+                </p>
+              </div>
+              
+              <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
+                <Link to={createPageUrl("Services")}>
+                  <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Explore our services">
+                    Explore our services
+                  </AnimatedButton>
+                </Link>
+              </div>
             </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
-              {/* Discover Your Sound button - COMMENTED OUT */}
-              {/* <Link to={createPageUrl("ContactUs")}>
-                    <Button className="bg-black hover:bg-black/80 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 w-full sm:w-auto h-14" aria-label="Discover Your Sound">
-                      Discover Your Sound
-                    </Button>
-                   </Link> */}
-              <Link to={createPageUrl("Services")}>
-                <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Explore our services">
-                  Explore our services
-                </AnimatedButton>
-              </Link>
+
+            {/* Right Column: Image Carousel */}
+            <div className="w-full slide-up-4 flex justify-center lg:justify-end">
+               <div className="w-full lg:w-[85%]">
+                  <HeroCarousel />
+               </div>
             </div>
           </div>
         </div>
 
-        <div className="w-full px-6 slide-up-4">
-          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
-            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3] pb-[75%] md:pb-[40%]">
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8691b0113_universal_upscale_0_81ae5e0e-e5a0-41e6-8638-8bf7a217ac9e_0.jpg"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8691b0113_universal_upscale_0_81ae5e0e-e5a0-41e6-8638-8bf7a217ac9e_0.jpg 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8691b0113_universal_upscale_0_81ae5e0e-e5a0-41e6-8638-8bf7a217ac9e_0.jpg 2400w"
-
-
-
-
-                sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Luxury rooftop bar with stunning sunset views and ambient music atmosphere"
-                className="absolute w-full h-full object-cover"
-                style={{
-                  top: '-15%',
-                  height: '130%',
-                  transform: `translateY(${scrollY * 0.15}px)`,
-                  transformOrigin: 'center top'
-                }} />
-
-            </div>
+        {/* Animated Mouse Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 slide-up-4">
+          <div className="w-[30px] h-[50px] border-2 border-black rounded-full relative flex justify-center">
+            <div className="w-[4px] h-[8px] bg-black rounded-full mt-2 animate-[scroll-icon_1.5s_infinite]"></div>
           </div>
         </div>
       </section>
