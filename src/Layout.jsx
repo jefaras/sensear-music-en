@@ -23,12 +23,14 @@ export default function Layout({ children }) {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [openDropdown, setOpenDropdown] = React.useState(null);
-  const [isScrolled, setIsScrolled] = React.useState(false); // Added isScrolled state
+  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [showBackToTop, setShowBackToTop] = React.useState(false);
 
   // Track scroll position for navigation height
   React.useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
+      setShowBackToTop(window.scrollY > 300);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -250,7 +252,7 @@ export default function Layout({ children }) {
                 : "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/a42606150_sensear-logo-avatar-color1.png"
               } 
               alt="SensEar Logo" 
-              className="w-12 h-12 object-contain group-hover:scale-110 transition-transform" 
+              className="w-16 h-16 object-contain group-hover:scale-110 transition-transform" 
             />
             <h1 className={`text-3xl font-bold tracking-wide font-syne transition-colors duration-300 ${
               isScrolled ? 'text-white' : 'text-black'
@@ -398,7 +400,7 @@ export default function Layout({ children }) {
             {/* Logo, Socials & Contact */}
             <div className="min-w-[300px] lg:w-1/3">
               <Link to={createPageUrl("Home")} className="flex items-center gap-3 group mb-6 w-fit">
-                <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdbf0fb5d_sensear-logo-avatar-white-transparent1.png" alt="SensEar Logo" className="w-12 h-12 object-contain group-hover:scale-110 transition-transform" />
+                <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bdbf0fb5d_sensear-logo-avatar-white-transparent1.png" alt="SensEar Logo" className="w-16 h-16 object-contain group-hover:scale-110 transition-transform" />
                 <div>
                   <h1 className="text-3xl font-bold text-white tracking-wide font-syne">SENSEAR</h1>
                   <p className="text-xs text-white -mt-1 font-syne">Soundtracking Unique Experiences</p>
@@ -487,7 +489,9 @@ export default function Layout({ children }) {
       {/* Back to Top Button */}
       <Button
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="fixed bottom-6 right-6 w-12 h-12 rounded-full bg-black/80 hover:bg-black text-white z-50 transition-opacity duration-300 border-2 border-white/30"
+        className={`fixed bottom-6 right-6 w-14 h-14 rounded-full bg-black/80 hover:bg-black text-white z-50 transition-all duration-300 border-2 border-white/30 ${
+          showBackToTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+        }`}
         size="icon"
         aria-label="Back to top"
       >
