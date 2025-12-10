@@ -268,7 +268,7 @@ export default function EventSoundtracks() {
                 We design music that evolves to <strong><em>follow your show</em></strong>, ensuring the energy always <strong><em>matches</em></strong> the moment.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                From background ambiance to party anthems, we help guests <strong><em>arrive, connect & remember</em></strong>.
+                Music carries the event forward, turning each moment into something guests experience & remember, not just hear.
               </p>
             </div>
           </div>
