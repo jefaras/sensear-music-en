@@ -301,7 +301,10 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
                 <Link to={createPageUrl("Services")}>
                   <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Explore our services">
-                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ae546991c_Untitleddesign.png" alt="" className="w-6 h-6 mr-2 inline-block object-contain" />
+                    <span className="relative inline-flex items-center mr-2 align-middle">
+                      <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e5fb8532d_sensear-logo-avatar-color1.png" className="w-10 h-10 object-contain group-hover:hidden" alt="" />
+                      <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7a2f42e1a_sensear-logo-avatar-white-transparent1.png" className="w-10 h-10 object-contain hidden group-hover:block" alt="" />
+                    </span>
                     Explore our services
                   </AnimatedButton>
                 </Link>
@@ -335,7 +338,7 @@ export default function Home() {
             
               <div className="w-full text-center">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                  We are a team of Athens-based <span className="text-black bg-white px-1 italic">music strategists</span> who create <span className="text-black bg-white px-1 italic">soundscapes for venues</span> through <span className="text-black bg-white px-1 italic">music</span> that is <strong>intentional</strong>, <strong>immersive</strong> and <strong>memorable</strong>.
+                  We are a team of Athens-based <strong><em>music strategists</em></strong> who create <strong><em>soundscapes for venues</em></strong> through <strong><em>music</em></strong> that is <strong><em>intentional</em></strong>, <strong><em>immersive</em></strong> and <strong><em>memorable</em></strong>.
                 </p>
                 <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                   Our core belief is that music shapes <strong>atmosphere</strong>, influences <strong>behaviour</strong> and builds lasting <strong>connections</strong> with guests.
