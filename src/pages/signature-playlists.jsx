@@ -291,7 +291,7 @@ export default function SignaturePlaylists() {
                 We design fresh, engaging <strong><em>music playlists</em></strong> that reflect your <strong><em>brand</em></strong>, guide the <strong><em>energy</em></strong> in your spaces & keep guests and teams <strong><em>tuned in</em></strong>.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music <strong><em>stops being background</em></strong> and becomes <strong><em>part of the experience</em></strong>.
+                Your soundtrack <strong><em>becomes intentional</em></strong> & <strong><em>felt</em></strong> in the atmosphere, not lost in the background.
               </p>
             </div>
           </div>
