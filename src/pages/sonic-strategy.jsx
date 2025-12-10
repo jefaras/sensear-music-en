@@ -260,7 +260,7 @@ export default function SonicStrategy() {
                 We translate your brand vision into a <strong><em>clear audio guide</em></strong> that works across <strong><em>spaces, locations & marketing channels</em></strong>.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Music stops being random choices & becomes strategic brand expression on its premises, social media & ads.
+                Your brand gains a <strong><em>clear sonic identity</em></strong>, easy to apply in your <strong><em>spaces</em></strong>, <strong><em>social media</em></strong> & <strong><em>ads</em></strong>.
               </p>
             </div>
           </div>
