@@ -266,7 +266,7 @@ export default function AudioUpgrades() {
                 We <strong><em>audit, redesign & tune</em></strong> your audio system so people hear <strong><em>clear, balanced sound</em></strong> that facilitates interactions & fits your space.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Sound now <strong><em>supports your design</em></strong> and people <strong><em>enjoy</em></strong> both the <strong><em>music</em></strong> & their <strong><em>conversations</em></strong>.
+                Optimised audio <strong><em>elevates your design</em></strong>, letting people <strong><em>enjoy</em></strong> the <strong><em>music</em></strong> & their <strong><em>conversations</em></strong> comfortably.
               </p>
             </div>
           </div>
