@@ -38,7 +38,8 @@ const HeroCarousel = () => {
     "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fc20763a7_b8b8c94c7_e0dd5f695_13e97d3def8d47a1efe25c37e0f29eb211cropped.jpg",
     "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6fcaa40a3_e56a199c4_ac423ae7b75beed60a76ecc7a719d544croppedUPSCALEDcropped.jpg",
     "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b042a0fd5_d879cafadbbf888b32b8923798fcbcf3-cropped.jpg",
-    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fa74dc9ac_skycropped1-1.png"
+    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/fa74dc9ac_skycropped1-1.png",
+    "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e2a786299_Vondom-Milos-Lovia-Mykonos-4-SQUARE.jpg"
   ];
 
   return (
