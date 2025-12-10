@@ -293,14 +293,15 @@ export default function Home() {
               
               <div className="mb-8 max-w-xl slide-up-2">
                 <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                  Every venue has a story. Let music tell yours.<br />
-                  We craft sophisticated music curation for places and events that refuse to sound generic.
+                  Every venue has a story. Let music tell yours with custom music for venues & events.<br />
+                  We craft sophisticated music curation for places & experiences that refuse to sound generic.
                 </p>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 mb-12 slide-up-3">
                 <Link to={createPageUrl("Services")}>
                   <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Explore our services">
+                    <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ae546991c_Untitleddesign.png" alt="" className="w-6 h-6 mr-2 inline-block object-contain" />
                     Explore our services
                   </AnimatedButton>
                 </Link>
