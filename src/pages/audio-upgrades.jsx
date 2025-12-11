@@ -265,7 +265,7 @@ export default function AudioUpgrades() {
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 We <strong><em>refine</em></strong> your audio system, to achieve <strong><em>clear, balanced sound</em></strong> allover your space.
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                 Optimised audio <strong><em>elevates your design</em></strong>, letting people <strong><em>enjoy</em></strong> their <strong><em>conversations</em></strong> & <strong><em>music</em></strong> comfortably.
               </p>
             </div>

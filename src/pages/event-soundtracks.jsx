@@ -267,7 +267,7 @@ export default function EventSoundtracks() {
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 We design soundtracks to <strong><em>follow your event's plan</em></strong>, so energy always <strong><em>matches</em></strong> the moment.
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                 Music <strong><em>carries the event forward</em></strong>, turning interactions into something guests <strong><em>enjoy & remember</em></strong>.
               </p>
             </div>

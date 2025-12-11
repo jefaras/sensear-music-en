@@ -259,7 +259,7 @@ export default function SonicStrategy() {
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 We translate your brand vision into a <strong><em>practical audio guide</em></strong> that works for <strong><em>every space & channel</em></strong>.
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                 Your firm gains a <strong><em>clear sonic identity</em></strong>, consistent across <strong><em>spaces</em></strong>, <strong><em>social media</em></strong> & <strong><em>ads</em></strong>.
               </p>
             </div>
