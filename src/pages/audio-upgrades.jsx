@@ -263,10 +263,10 @@ export default function AudioUpgrades() {
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We <strong><em>audit, redesign & tune</em></strong> your audio system so people hear <strong><em>clear, balanced sound</em></strong>.
+                We <strong><em>refine</em></strong> your audio system, to achieve <strong><em>clear, balanced sound</em></strong> allover your space.
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                Optimised audio <strong><em>elevates your design</em></strong>, letting people <strong><em>enjoy</em></strong> the <strong><em>music</em></strong> & their <strong><em>conversations</em></strong> comfortably.
+                Optimised audio <strong><em>elevates your design</em></strong>, letting people <strong><em>enjoy</em></strong> their <strong><em>conversations</em></strong> & <strong><em>music</em></strong> comfortably.
               </p>
             </div>
           </div>
