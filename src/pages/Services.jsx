@@ -287,35 +287,31 @@ export default function Services() {
         }
         `}</style>
 
-      {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Services section">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="w-full">
-            <h1 className="text-[2.7rem] sm:text-[3.6rem] md:text-[4.5rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-              Strategic sound,<br />
-              four proven approaches
-            </h1>
-          </div>
-        </div>
+      {/* Hero Section - Two Column Layout */}
+      <section className="relative pt-32 pb-32 min-h-[90vh] flex flex-col justify-center overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Services section">
+        <div className="w-full px-6 md:px-12 lg:px-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column: H1 */}
+            <div className="flex flex-col justify-center text-left">
+              <h1 className="text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+                Strategic sound,<br />
+                four proven approaches
+              </h1>
+            </div>
 
-        {/* Hero Image with parallax - Dimensions from Home page */}
-        <div className="w-full px-6 slide-up-4">
-          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
-            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3] pb-[75%] md:pb-[40%]">
-              {/* Mobile/Tablet version */}
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/894d9bc6d_cad97e304_cf2e236f7da151dd0dab015bf34e8252.jpg 2400w"
-                sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Professional music equipment and sound system setup"
-                className="absolute w-full h-full object-cover"
-                style={{
-                  top: '-15%',
-                  height: '130%',
-                  transform: `translateY(${scrollY * 0.15}px)`,
-                  transformOrigin: 'center top'
-                }} />
+            {/* Right Column: Square Image */}
+            <div className="w-full slide-up-4 flex justify-center lg:justify-end">
+              <div className="w-full lg:w-[93.5%]">
+                <div className="overflow-hidden rounded-2xl shadow-2xl">
+                  <div className="relative aspect-square">
+                    <img 
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/25d5bd632_gemini-25-flash-image_Upscale_this_image_carefully_adding_some_1980s_accessories_to_the_woman_s_hand_o-0.jpg" 
+                      alt="Strategic music services with disco ball and wine glasses" 
+                      className="w-full h-full object-cover" 
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
