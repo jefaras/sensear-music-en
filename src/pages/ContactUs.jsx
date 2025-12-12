@@ -341,14 +341,16 @@ This inquiry has been saved to the database and can be viewed in the admin panel
         .animated-gradient {
           background: linear-gradient(
             135deg,
-            #f5d4c1 0%,
-            #e8c3b0 15%,
-            #d4c4b0 30%,
-            #c0c0c0 45%,
-            #d3d3d3 60%,
-            #f0d5d0 75%,
-            #e8c3b0 90%,
-            #f5d4c1 100%
+            #f5dcc4 0%,
+            #fce8d8 15%,
+            #fff5ee 25%,
+            #ffe4d6 35%,
+            #ffd7c4 45%,
+            #ffffff 55%,
+            #fff0e6 65%,
+            #ffe8d9 75%,
+            #ffdcc8 85%,
+            #f5dcc4 100%
           );
           background-size: 400% 400%;
           animation: gradient-shift 10s ease infinite;
