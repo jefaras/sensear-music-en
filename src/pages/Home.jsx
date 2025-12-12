@@ -422,7 +422,7 @@ export default function Home() {
       </section>
 
       {/* Your World, Our Expertise */}
-      <section className="py-24 bg-[#faebe3]">
+      <section className="py-24 animated-gradient">
         <div className="max-w-7xl mx-auto px-6">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4 text-center">
                 Your world, our expertise
