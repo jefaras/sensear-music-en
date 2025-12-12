@@ -269,10 +269,10 @@ export default function RestaurantsBars() {
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                The right playlist can <strong><em>shape the dining atmosphere</em></strong> as much as décor or lighting.
+                Music <strong><em>shapes the dining atmosphere</em></strong> as much as décor or lighting.
               </p>
               <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
-                Our music selections for restaurants & bars <strong><em>follow your menu & service flow</em></strong> from first drinks to last call, becoming <strong><em>part of the experience</em></strong> guests return for.
+                Our music <strong><em>follows your menu & service rhythm</em></strong>, from first orders to last call, becoming <strong><em>part of the delight</em></strong> guests return for.
               </p>
             </div>
           </div>
