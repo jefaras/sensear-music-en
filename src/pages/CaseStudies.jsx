@@ -155,7 +155,7 @@ export default function CaseStudies() {
               <div className="order-2 lg:order-1">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
                   <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/b5b0e32cf_348e21092_yammm-pxbee-minitools-enhance-20251205182924.jpg"
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/2886fc06f_hyggelig-aftenstemningcropped-pxbee-minitools-enhance-20251212181718.jpg"
                     alt="Yam Beach Club"
                     className="w-full aspect-[3/4] object-cover rounded-xl shadow-lg" />
                 </div>
