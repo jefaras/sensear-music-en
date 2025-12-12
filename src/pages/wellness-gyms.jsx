@@ -310,7 +310,7 @@ export default function WellnessGyms() {
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 Music in wellness and gym spaces <strong><em>guides focus & tempo</em></strong> during each session.
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                 We design wellness & gym music that <strong><em>adapts to each space & intensity</em></strong> level, turning sound into a <strong><em>functional part</em></strong> of the experience.
               </p>
             </div>

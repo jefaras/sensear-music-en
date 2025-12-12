@@ -120,7 +120,7 @@ export default function HotelsResorts() {
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 Guests <strong><em>feel your hotel's atmosphere</em></strong> before they notice the design.
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                 We design <strong><em>hotel music that flows</em></strong> from morning coffee to midnight cocktails, so <strong><em>sound becomes part</em></strong> of the experience <Link to={createPageUrl("three-reasons-make-music-hospitality")} className="underline hover:text-white/80 transition-colors">guests remember</Link>.
               </p>
             </div>

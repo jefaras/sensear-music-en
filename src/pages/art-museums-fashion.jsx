@@ -311,10 +311,10 @@ export default function ArtMuseumsFashion() {
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 From quiet galleries to runway finales, sound should feel present without competing.
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed mb-6">
                 We design atmospheres for exhibitions, collections & presentations that respect the work while guiding how visitors experience each moment.
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                 Music becomes part of how the work is perceived.
               </p>
             </div>
