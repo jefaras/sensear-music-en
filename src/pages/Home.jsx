@@ -293,8 +293,8 @@ export default function Home() {
               
               <div className="mb-8 max-w-xl slide-up-2">
                 <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                  Every venue has a story. Let music tell yours with custom music for venues & events.<br />
-                  We craft sophisticated music curation for places & experiences that refuse to sound generic.
+                  Every venue has a story. Let music tell yours<br />
+                  We create custom music playlists for places & experiences that refuse to sound generic.
                 </p>
               </div>
               
