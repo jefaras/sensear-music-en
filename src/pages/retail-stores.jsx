@@ -266,16 +266,16 @@ export default function RetailStores() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
-              Retail music that guides<br />
+              Music that inspires<br />
               the shopping journey
             </h2>
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                The music in your store can <strong><em>affect how long people browse</em></strong>, what they notice & whether they buy.
+                Music in your store <strong><em>influences how long people browse</em></strong>, what they notice & whether they buy.
               </p>
               <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
-                Our music for stores <strong><em>support the shopping flow</em></strong> and can influence how customers <strong><em>perceive your brand</em></strong>.
+                Our tunes <strong><em>elegantly moves</em></strong> with your store's rhythm, forming how clients <strong><em>perceive your brand</em></strong>.
               </p>
             </div>
           </div>
