@@ -395,7 +395,7 @@ export default function Services() {
                 <div className="lg:order-2">
                   <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
                     <img
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/013a4722f_cyprpn9zest1wg173m2j.jpg"
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ad6308d11_402461766_1151218075859356_9152177816492568307_n.jpg"
                       alt="Bespoke music curation"
                       className="w-full h-auto object-cover rounded-xl shadow-lg"
                     />
