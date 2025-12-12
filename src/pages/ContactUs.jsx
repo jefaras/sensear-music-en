@@ -342,14 +342,17 @@ This inquiry has been saved to the database and can be viewed in the admin panel
           background: linear-gradient(
             135deg,
             #f5dcc4 0%,
-            #fce8d8 15%,
-            #fff5ee 25%,
-            #ffe4d6 35%,
-            #ffd7c4 45%,
-            #ffffff 55%,
-            #fff0e6 65%,
-            #ffe8d9 75%,
-            #ffdcc8 85%,
+            #fce8d8 12%,
+            #fff5ee 20%,
+            #ffe4d6 28%,
+            #ffd7c4 36%,
+            #e0e0e0 44%,
+            #d3d3d3 52%,
+            #ffffff 60%,
+            #fff0e6 68%,
+            #ffe8d9 76%,
+            #c0c0c0 84%,
+            #ffdcc8 92%,
             #f5dcc4 100%
           );
           background-size: 400% 400%;
