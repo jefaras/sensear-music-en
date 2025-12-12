@@ -425,7 +425,7 @@ export default function EventsExperiences() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-2xl font-bold text-white mb-3">Guide guests through the journey</h3>
-                <p className="text-lg text-white/80">Music carefully frames each moment, making events feel like experiences rather than schedules.</p>
+                <p className="text-lg text-white/80">Music carefully frames each moment, making events feel like experiences not schedules.</p>
               </div>
 
               <div>
