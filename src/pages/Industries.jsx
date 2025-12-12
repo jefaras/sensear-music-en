@@ -284,7 +284,7 @@ export default function Industries() {
               <div className="order-2">
                 <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
                   <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/8a19abe03_4ee147bf6_6fd38d8f206dc0b7749c169007cee52411.jpg"
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/edb073e85_upscalemedia-transformed.jpg"
                     alt="Retail Stores"
                     className="w-full h-auto object-cover rounded-xl shadow-lg" />
 
