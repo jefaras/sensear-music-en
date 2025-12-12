@@ -100,11 +100,11 @@ export default function Industries() {
           <div className="mx-auto" style={{ maxWidth: '1800px' }}>
             <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/3782b3569_gemini-25-flash-image_Expand_image_to_16_9_add_her_hand_holding_the_record-0.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/a10ba3fc4_gemini-25-flash-image_Move_woman_slightly_to_right_so_her_whole_face_and_record_are_exactly_in_the_cet-0.jpg"
                 alt="Industries"
                 className="absolute w-full h-full object-cover md:hidden" />
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/3782b3569_gemini-25-flash-image_Expand_image_to_16_9_add_her_hand_holding_the_record-0.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/a10ba3fc4_gemini-25-flash-image_Move_woman_slightly_to_right_so_her_whole_face_and_record_are_exactly_in_the_cet-0.jpg"
                 alt="Industries"
                 className="absolute w-full h-full object-cover hidden md:block"
                 style={{
