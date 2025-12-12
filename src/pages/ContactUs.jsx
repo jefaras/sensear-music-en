@@ -340,10 +340,10 @@ This inquiry has been saved to the database and can be viewed in the admin panel
             {/* Left Column: H1 */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                Get in Touch
+                Let's talk about your space
               </h1>
               <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2">
-                Every space is different. Let's understand yours.
+                Tell us about your space and what you'd like people to feel.
               </p>
             </div>
 
@@ -378,10 +378,10 @@ This inquiry has been saved to the database and can be viewed in the admin panel
           {/* New heading and text above the contact form */}
           <div className="text-center mb-12 max-w-4xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-6">
-              Need help with music for your business or event?
+              Exploring how music could support your space or event?
             </h2>
             <p className="text-xl text-black/60 font-medium mb-12">
-              Contact SensEar for music consultation. Together we will create the best soundtrack.
+              We'll listen, ask the right questions and see whether sound has a role to play.
             </p>
           </div>
 
@@ -391,9 +391,12 @@ This inquiry has been saved to the database and can be viewed in the admin panel
             {/* Contact Form */}
             <div className="max-w-3xl mx-auto">
               <Card className="p-8 shadow-lg bg-white">
-                <h3 className="text-2xl font-bold text-black mb-6">
-                  Send us a message
+                <h3 className="text-2xl font-bold text-black mb-2">
+                  Share a few details
                 </h3>
+                <p className="text-base text-black/60 mb-6">
+                  This is an initial conversation. No commitments, no assumptions.
+                </p>
 
                 <form onSubmit={handleSubmit} className="space-y-6" aria-label="Contact inquiry form">
                   <div className="grid md:grid-cols-2 gap-6">
