@@ -309,10 +309,10 @@ export default function ArtMuseumsFashion() {
             
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                In galleries and runways alike, sound should feel present without competing.
+                In galleries and runways alike, sound should <strong><em>feel present</em></strong> without <strong><em>competing</em></strong>.
               </p>
               <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
-                We create soundscapes that respect each piece & gently guide how visitors move & perceive the work.
+                We create soundscapes that <strong><em>respect each piece</em></strong> & <strong><em>gently guide</em></strong> how visitors <strong><em>move & perceive</em></strong> the work.
               </p>
             </div>
           </div>
