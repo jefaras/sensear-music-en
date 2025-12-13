@@ -343,7 +343,7 @@ export default function ArtMuseumsFashion() {
             {/* Right: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/faf295393_valentino20ss26.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7952e2759_seedream-40_professional_photo_of_Upscale_this_image_keeping_physical_all_natural_contexts_a-1.jpg"
                 alt="Fashion runway show"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
