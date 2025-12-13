@@ -163,7 +163,7 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-[48px] font-bold text-black mb-10">Beach House, Antiparos</h3>
                 
                 <div className="mb-8">
-                  <p className="text-lg md:text-xl text-black/60 leading-loose mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
                     Beach House features traditional island style, the high-end restaurant CoocooVaya and a bar hovering above the sea, all with endless Aegean views.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
@@ -189,7 +189,7 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-[48px] font-bold text-black mb-10">Pelicanos, Sifnos</h3>
                 
                 <div className="mb-8">
-                  <p className="text-lg md:text-xl text-black/60 leading-loose mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
                     Fine dining has taken off on Sifnos, an island known for its culinary tradition. Pelicanos is a sophisticated all-day restaurant in the fishing village of Faros, that needed music to match its ambition.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
@@ -231,7 +231,7 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-[48px] font-bold text-black mb-10">Yam, Antiparos</h3>
                 
                 <div className="mb-8">
-                  <p className="text-lg md:text-xl text-black/60 leading-loose mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
                     An iconic Antiparos venue since the late '90s, Yam sits on a beautiful scenery and an easy-going vibe.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
@@ -257,7 +257,7 @@ export default function CaseStudies() {
                 <h3 className="text-4xl md:text-[48px] font-bold text-black mb-10">Levantis, Paros</h3>
                 
                 <div className="mb-8">
-                  <p className="text-lg md:text-xl text-black/60 leading-loose mb-6">
+                  <p className="text-xl md:text-2xl text-black/60 leading-relaxed mb-6">
                     Neva Bergman assigned us to create atmospheric support for her "Quiet Testimony" exhibition opening at Levantis restaurant's gallery space in Paros.
                   </p>
                   <p className="text-xl md:text-2xl text-black/60 leading-relaxed font-medium">
