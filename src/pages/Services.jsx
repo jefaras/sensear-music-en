@@ -331,7 +331,7 @@ export default function Services() {
             
               <div className="w-full text-center">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                  Every venue <strong>has a soundtrack</strong>, whether you designed it or not. SensEar ensures it tells <span className="text-black bg-white px-1">the right story</span>.
+                  Every venue <strong>has a soundtrack</strong>, whether you designed it or not. <strong><em>SensEar</em></strong> helps ensure it tells <strong><em>the right story</em></strong>.
                 </p>
                 <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                   We shape sound for venues & events where <strong>atmosphere</strong> matters: guiding how guests <strong>feel</strong>, how long they <strong>stay</strong> and how they <strong>remember</strong> you.
