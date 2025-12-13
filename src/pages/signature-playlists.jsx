@@ -241,9 +241,12 @@ export default function SignaturePlaylists() {
             {/* Left Column: H1 */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem] font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                Signature Playlists:<br />
-                Exceptional, custom music for your space
+                Signature Playlists<br />
+                Custom music for your space
               </h1>
+              <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2">
+                Curated playlists that follow your brand, space & daily rhythm.
+              </p>
             </div>
 
             {/* Right Column: Square Image */}
