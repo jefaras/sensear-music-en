@@ -595,7 +595,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-6">
           <h2 id="clients-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-4 text-white">Now playing in venues across Greece</h2>
           <p className="text-xl text-white/70 font-medium text-center max-w-4xl mx-auto mb-12">
-            Trusted by venues like Pelicanos, Yam and The Rooster in Athens and the Aegean.
+            Trusted by venues like Pelicanos, Yam and Beach House in Athens and the Aegean.
           </p>
           
           <div className="relative">
