@@ -285,10 +285,10 @@ export default function AboutUs() {
           
             <div className="w-full text-center">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                <strong>SensEar</strong> treats music as a <span className="text-black bg-white px-1 italic">core part</span> of the <span className="text-black bg-white px-1 italic">experience</span>:
+                <strong>SensEar</strong> treats music as a <strong><em>core part</em></strong> of the <strong><em>experience</em></strong>:
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
-                <em>Music is not background</em>, but <strong>atmosphere</strong>, <strong>memory</strong> and <strong>emotion</strong> that can <span className="text-black bg-white px-1 italic">influence</span> how guests feel and behave.
+                <em>Music is not background</em>, but <strong>atmosphere</strong>, <strong>memory</strong> and <strong>emotion</strong> that can <strong><em>influence</em></strong> how guests <strong><em>feel & behave</em></strong>.
               </p>
             </div>
           </div>
