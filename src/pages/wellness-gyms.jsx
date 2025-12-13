@@ -416,7 +416,18 @@ export default function WellnessGyms() {
           <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold mb-12 text-black text-center">How we help</h2>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            {/* Left: Content */}
+            {/* Left: Image (Reusing How SensEar solves this image) */}
+            <div className="hidden lg:block">
+              <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
+                <img
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/677b8f7ca_d3ccc7081_24ff3eb97d703e018840f54d6030eb58.jpg"
+                  alt="Luxury wellness pool interior"
+                  className="w-full h-auto object-cover rounded-xl shadow-lg"
+                />
+              </div>
+            </div>
+
+            {/* Right: Content */}
             <div className="space-y-8">
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Support deeper sessions</h3>
@@ -436,17 +447,6 @@ export default function WellnessGyms() {
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Remove playlist management</h3>
                 <p className="text-lg text-black/70">Staff focus on clients & members while we handle music selection, updates and commercial licensing.</p>
-              </div>
-            </div>
-
-            {/* Right: Image (Reusing How SensEar solves this image) */}
-            <div className="hidden lg:block">
-              <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
-                <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/677b8f7ca_d3ccc7081_24ff3eb97d703e018840f54d6030eb58.jpg"
-                  alt="Luxury wellness pool interior"
-                  className="w-full h-auto object-cover rounded-xl shadow-lg"
-                />
               </div>
             </div>
           </div>
