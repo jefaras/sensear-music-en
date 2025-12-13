@@ -618,14 +618,6 @@ export default function Home() {
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
                 <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
                   <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/730cfd91d_Beach-House_final.jpg" alt="Beach House logo" className="max-w-full max-h-full object-contain" />
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Beach House</p>
@@ -662,14 +654,6 @@ export default function Home() {
                 </div>
                 <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">Blue Bamboo</p>
                 <p className="text-sm text-white/60 mt-1">Athens-Serifos</p>
-              </div>
-              
-              <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
-                <div className="w-28 h-28 mx-auto mb-4 flex items-center justify-center bg-white rounded-lg p-3 border-4 border-white shadow-md">
-                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/84145d1c2_The-Rooster_final.jpg" alt="The Rooster logo" className="max-w-full max-h-full object-contain" />
-                </div>
-                <p className="text-lg font-semibold text-white/90 tracking-widest uppercase">The Rooster</p>
-                <p className="text-sm text-white/60 mt-1">Antiparos</p>
               </div>
               
               <div className="flex-shrink-0 text-center" style={{ width: '180px' }}>
