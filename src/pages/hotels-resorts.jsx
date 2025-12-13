@@ -129,7 +129,7 @@ export default function HotelsResorts() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">What we do</h2>
-            <p className="text-xl text-black/60 font-medium">Hotel music strategy and implementation</p>
+            <p className="text-xl text-black/60 font-medium">Hotel music planning and implementation</p>
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center">
