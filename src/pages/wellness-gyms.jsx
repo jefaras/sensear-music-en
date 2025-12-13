@@ -331,8 +331,8 @@ export default function WellnessGyms() {
             <div className="hidden lg:block">
               <div className="bg-[#faebe3] rounded-2xl p-1 overflow-hidden w-full">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ae7d85c74_9f14b26a1_f30a161922bea03d96e30ad4f356dd81.jpg"
-                  alt="Spa treatment room ambiance"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f7415e860_MaxFine-Walk-On-Snow-collection-by-FMG-Fabbrica-Marmi-e-Graniti-4-4c.jpg"
+                  alt="Modern gym interior with minimalist design"
                   className="w-full h-auto object-cover rounded-xl shadow-lg"
                 />
               </div>
