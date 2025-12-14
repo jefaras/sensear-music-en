@@ -21,11 +21,11 @@ export default function MusicForHotelsAndResorts() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Music Curation for Hotels & Resorts | SensEar";
+    document.title = "Music for Hotels & Resorts | Sensear";
     
     // SEO Meta Tags
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "Elevate guest experiences with bespoke hotel music curation. Custom playlists that enhance ambiance and boost satisfaction scores.";
+    const description = "Music for Hotels & Resorts designed to build atmosphere across spaces and time of day, with tunes that guests feel & remember.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
