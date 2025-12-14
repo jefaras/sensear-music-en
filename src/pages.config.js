@@ -13,7 +13,6 @@ import backgroundMusicShapesCustomerBehavior from './pages/background-music-shap
 import brandMusicConvertsBrowsersBuyers from './pages/brand-music-converts-browsers-buyers';
 import buildingBrandPeopleCanHear from './pages/building-brand-people-can-hear';
 import eventSoundtracks from './pages/event-soundtracks';
-import eventsExperiencesPrev from './pages/events-experiences-prev';
 import eventsExperiences from './pages/events-experiences';
 import hotelsResortsPrev from './pages/hotels-resorts-prev';
 import hotelsResorts from './pages/hotels-resorts';
@@ -53,7 +52,6 @@ export const PAGES = {
     "brand-music-converts-browsers-buyers": brandMusicConvertsBrowsersBuyers,
     "building-brand-people-can-hear": buildingBrandPeopleCanHear,
     "event-soundtracks": eventSoundtracks,
-    "events-experiences-prev": eventsExperiencesPrev,
     "events-experiences": eventsExperiences,
     "hotels-resorts-prev": hotelsResortsPrev,
     "hotels-resorts": hotelsResorts,
