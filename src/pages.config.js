@@ -10,7 +10,6 @@ import Sitemap from './pages/Sitemap';
 import artMuseumsFashion from './pages/art-museums-fashion';
 import audioUpgrades from './pages/audio-upgrades';
 import backgroundMusicShapesCustomerBehavior from './pages/background-music-shapes-customer-behavior';
-import beachHouseAntiparos from './pages/beach-house-antiparos';
 import blueBamboo from './pages/blue-bamboo';
 import brandMusicConvertsBrowsersBuyers from './pages/brand-music-converts-browsers-buyers';
 import buildingBrandPeopleCanHear from './pages/building-brand-people-can-hear';
@@ -52,7 +51,6 @@ export const PAGES = {
     "art-museums-fashion": artMuseumsFashion,
     "audio-upgrades": audioUpgrades,
     "background-music-shapes-customer-behavior": backgroundMusicShapesCustomerBehavior,
-    "beach-house-antiparos": beachHouseAntiparos,
     "blue-bamboo": blueBamboo,
     "brand-music-converts-browsers-buyers": brandMusicConvertsBrowsersBuyers,
     "building-brand-people-can-hear": buildingBrandPeopleCanHear,
