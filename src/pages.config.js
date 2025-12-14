@@ -5,7 +5,6 @@ import CaseStudies from './pages/CaseStudies';
 import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
 import Industries from './pages/Industries';
-import industriesOld from './pages/Industries_old';
 import PlaylistsDemos from './pages/PlaylistsDemos';
 import servicesV2 from './pages/Services-v2';
 import Services from './pages/Services';
@@ -51,7 +50,6 @@ export const PAGES = {
     "ContactUs": ContactUs,
     "FAQ": FAQ,
     "Industries": Industries,
-    "Industries_old": industriesOld,
     "PlaylistsDemos": PlaylistsDemos,
     "Services-v2": servicesV2,
     "Services": Services,
