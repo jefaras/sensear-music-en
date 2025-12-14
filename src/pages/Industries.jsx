@@ -183,7 +183,7 @@ export default function Industries() {
                 </div>
 
                 <div className="mt-8">
-                  <Link to={createPageUrl("hotels-resorts")}>
+                  <Link to={createPageUrl("music-for-hotels-and-resorts")}>
                     <AnimatedButton className="w-full sm:w-auto">
                       Create your signature atmosphere
                     </AnimatedButton>

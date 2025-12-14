@@ -53,7 +53,7 @@ export default function Layout({ children }) {
       { name: "Audio Upgrades", path: createPageUrl("audio-upgrades") }
     ],
     industries: [
-      { name: "Hotels & Resorts", path: createPageUrl("hotels-resorts") },
+      { name: "Hotels & Resorts", path: createPageUrl("music-for-hotels-and-resorts") },
       { name: "Restaurants & Bars", path: createPageUrl("restaurants-bars") },
       { name: "Retail Stores", path: createPageUrl("retail-stores") },
       { name: "Wellness & Gyms", path: createPageUrl("wellness-gyms") },
