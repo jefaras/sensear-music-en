@@ -17,7 +17,6 @@ import eventsExperiences from './pages/events-experiences';
 import hotelsResortsPrev from './pages/hotels-resorts-prev';
 import hotelsResorts from './pages/hotels-resorts';
 import howTopHospitalityBrandsDesignSound from './pages/how-top-hospitality-brands-design-sound';
-import klouviBar from './pages/klouvi-bar';
 import musicCurationCycleVenues from './pages/music-curation-cycle-venues';
 import pelicanosSifnosRestaurant from './pages/pelicanos-sifnos-restaurant';
 import restaurantsBarsPrev from './pages/restaurants-bars-prev';
@@ -56,7 +55,6 @@ export const PAGES = {
     "hotels-resorts-prev": hotelsResortsPrev,
     "hotels-resorts": hotelsResorts,
     "how-top-hospitality-brands-design-sound": howTopHospitalityBrandsDesignSound,
-    "klouvi-bar": klouviBar,
     "music-curation-cycle-venues": musicCurationCycleVenues,
     "pelicanos-sifnos-restaurant": pelicanosSifnosRestaurant,
     "restaurants-bars-prev": restaurantsBarsPrev,
