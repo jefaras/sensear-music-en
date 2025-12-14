@@ -4,7 +4,6 @@ import Blog from './pages/Blog';
 import CaseStudies from './pages/CaseStudies';
 import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
-import industriesV2 from './pages/Industries-v2';
 import Industries from './pages/Industries';
 import industriesOld from './pages/Industries_old';
 import PlaylistsDemos from './pages/PlaylistsDemos';
@@ -51,7 +50,6 @@ export const PAGES = {
     "CaseStudies": CaseStudies,
     "ContactUs": ContactUs,
     "FAQ": FAQ,
-    "Industries-v2": industriesV2,
     "Industries": Industries,
     "Industries_old": industriesOld,
     "PlaylistsDemos": PlaylistsDemos,
