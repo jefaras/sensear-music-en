@@ -346,7 +346,7 @@ export default function SignaturePlaylists() {
                   <span>that need smooth shifts throughout the day.</span>
                 </li>
                 <li className="block">
-                  <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1">Restaurants & Bars</Link>
+                  <Link to={createPageUrl("music-for-restaurants-and-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Restaurants & Bars">Restaurants & Bars</Link>
                   <span>where atmosphere is a core part of the experience.</span>
                 </li>
                 <li className="block">

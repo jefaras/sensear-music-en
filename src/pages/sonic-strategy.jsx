@@ -325,23 +325,23 @@ export default function SonicStrategy() {
             <div>
               <ul className="space-y-8 text-lg text-black/70">
                 <li className="block">
-                  <Link to={createPageUrl("music-for-hotels-and-resorts")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Hotels & Resorts">Hotel & Resort Groups</Link>
+                  <Link to={createPageUrl("music-for-hotels-and-resorts")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Hotels & Resorts">Hotel & Resort groups</Link>
                   <span>needing one recognizable sound across properties.</span>
                 </li>
                 <li className="block">
-                  <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1">Restaurant, Bar & Retail Brands</Link>
-                  <span>growing, rebranding, or opening new locations.</span>
+                  <Link to={createPageUrl("music-for-restaurants-and-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Restaurants & Bars">Restaurant, Bar</Link> & <Link to={createPageUrl("retail-stores")} className="underline hover:text-black font-semibold text-2xl">Retail brands</Link>
+                  <span> growing, rebranding, or opening new locations.</span>
                 </li>
                 <li className="block">
-                  <Link to={createPageUrl("wellness-gyms")} className="underline hover:text-black font-semibold text-2xl block mb-1">Wellness & Cultural Spaces</Link>
+                  <Link to={createPageUrl("wellness-gyms")} className="underline hover:text-black font-semibold text-2xl block mb-1">Wellness & Cultural spaces</Link>
                   <span>wanting a defined sonic personality.</span>
                 </li>
                 <li className="block">
-                  <Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold text-2xl block mb-1">Fashion & Lifestyle Brands</Link>
+                  <Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold text-2xl block mb-1">Fashion & Lifestyle brands</Link>
                   <span>with strong visual identity but undefined sound.</span>
                 </li>
                 <li className="block">
-                  <span className="font-semibold text-2xl block mb-1 text-black">Teams</span>
+                  <span className="font-semibold text-2xl block mb-1 text-black">Marketing agencies</span>
                   <span>with brand vision but no in-house audio expertise.</span>
                 </li>
               </ul>
