@@ -21,10 +21,10 @@ export default function RestaurantsBars() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Music for Restaurants & Bars | SensEar Curation";
+    document.title = "Music for Restaurants & Bars | SensEar";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "Transform dining experiences with curated restaurant music. Increase dwell time and revenue with brand-aligned soundscapes.";
+    const description = "Music for Restaurants and Bars that blends naturally with food and service, supporting dining flow, conversation and the overall setting.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
