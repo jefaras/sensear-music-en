@@ -505,26 +505,26 @@ export default function AboutUs() {
           <h2 id="team-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-center mb-4 animate-fade-in-up">Meet the team</h2>
           <p className="text-xl text-black/60 font-medium text-center mb-12 animate-fade-in-up">Music obsessed, hospitality minded</p>
 
-          {/* John E. Farazoumis */}
+          {/* George Fameliaris */}
           <div className="mb-8" role="list">
             <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div className="grid lg:grid-cols-[1fr_1.2fr] gap-12 items-center">
                 {/* Left: Text Content */}
                 <div className="lg:order-1">
                   <h3 className="text-[2.7rem] md:text-[48px] font-bold text-black leading-tight mb-2">
-                    John E. Farazoumis
+                    George Fameliaris
                   </h3>
-                  <p className="text-xl font-semibold text-black/70 mb-10">Co-Founder, Brand Strategy, Client Service</p>
+                  <p className="text-xl font-semibold text-black/70 mb-10">Co-Founder, Chief Music Curator</p>
                   
                   <div>
                     <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
-                      From his early DJ sets to his studies in Hospitality Management, JEF has always been guided by music's magnetic pull.
+                      G's lifelong passion for music deepened with a Media & Communications BA and an MA in Popular Music in Film.
                     </p>
                     <p className="text-[19.125px] text-black/70 leading-relaxed mb-4">
-                      He is a co-founder of a successful digital agency, with 25 years of experience in web services & understanding client needs.
+                      He established himself in Athens as a DJ & music curator on radio, parties & venues residencies.
                     </p>
                     <p className="text-[19.125px] text-black/70 leading-relaxed">
-                      At SensEar, he shapes the brand's strategic direction & connects creative vision with client experience.
+                      At SensEar, he crafts each venue's musical identity with precision, rhythm and atmospheres that defines the brand's signature sound.
                     </p>
                   </div>
                 </div>
@@ -532,8 +532,8 @@ export default function AboutUs() {
                 {/* Right: Image */}
                 <div className="lg:order-2 hidden lg:block">
                   <img
-                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/98a0a7252_b24ebd26f_JEF_square_bw.png"
-                    alt="John E. Farazoumis - SensEar Co-Founder and Brand Strategy Director"
+                    src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9e1d5056f_398e0cca3_84887785_172252324195148_2160204890159185920_n1.jpg"
+                    alt="George Fameliaris - SensEar Co-Founder and Chief Music Curator"
                     className="w-full h-auto rounded-2xl shadow-lg"
                   />
                 </div>
@@ -541,7 +541,7 @@ export default function AboutUs() {
             </article>
           </div>
 
-          {/* George Fameliaris */}
+          {/* John E. Farazoumis */}
           <div className="mb-8" role="list">
             <article role="listitem" className="p-8 rounded-lg" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }}>
               <div className="grid lg:grid-cols-[1.2fr_1fr] gap-12 items-center">
