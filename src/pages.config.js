@@ -26,6 +26,7 @@ import threeReasonsMakeMusicHospitality from './pages/three-reasons-make-music-h
 import wellnessCenters from './pages/wellness-centers';
 import wellnessGyms from './pages/wellness-gyms';
 import whatExactlyDoesMusicCuratorDo from './pages/what-exactly-does-music-curator-do';
+import musicForHotelsAndResorts from './pages/music-for-hotels-and-resorts';
 import __Layout from './Layout.jsx';
 
 
@@ -58,6 +59,7 @@ export const PAGES = {
     "wellness-centers": wellnessCenters,
     "wellness-gyms": wellnessGyms,
     "what-exactly-does-music-curator-do": whatExactlyDoesMusicCuratorDo,
+    "music-for-hotels-and-resorts": musicForHotelsAndResorts,
 }
 
 export const pagesConfig = {
