@@ -315,11 +315,11 @@ export default function AudioUpgrades() {
             <div>
               <ul className="space-y-8 text-lg text-black/70">
                 <li className="block">
-                  <Link to={createPageUrl("restaurants-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1">Restaurants & Bars</Link>
+                  <Link to={createPageUrl("music-for-restaurants-and-bars")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Restaurants & Bars">Restaurants & Bars</Link>
                   <span>where guests struggle to talk over music.</span>
                 </li>
                 <li className="block">
-                  <Link to={createPageUrl("hotels-resorts")} className="underline hover:text-black font-semibold text-2xl block mb-1">Hotels & Resorts</Link>
+                  <Link to={createPageUrl("music-for-hotels-and-resorts")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Hotels & Resorts">Hotels & Resorts</Link>
                   <span>with lobbies, pools or dining areas that sound uneven.</span>
                 </li>
                 <li className="block">
