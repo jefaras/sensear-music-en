@@ -5,7 +5,6 @@ import CaseStudies from './pages/CaseStudies';
 import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
 import Industries from './pages/Industries';
-import servicesV2 from './pages/Services-v2';
 import Services from './pages/Services';
 import Sitemap from './pages/Sitemap';
 import artMuseumsFashionPrev from './pages/art-museums-fashion-prev';
@@ -49,7 +48,6 @@ export const PAGES = {
     "ContactUs": ContactUs,
     "FAQ": FAQ,
     "Industries": Industries,
-    "Services-v2": servicesV2,
     "Services": Services,
     "Sitemap": Sitemap,
     "art-museums-fashion-prev": artMuseumsFashionPrev,
