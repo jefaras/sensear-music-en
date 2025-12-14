@@ -371,7 +371,7 @@ export default function HotelsResorts() {
             {/* Left: Image */}
             <div className="hidden lg:block">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbd3df07a_0a14a9b1b3a7b95a31d45e9bb84c86e5CROPPED-pxbee-minitools-enhance-2025112017829.jpg"
+                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbaa31d7a_00fb18f4a_e0dd5f695_13e97d3def8d47a1efe25c37e0f29eb2111.jpg"
                 alt="Hotel guest experience"
                 className="w-full h-auto rounded-2xl shadow-lg"
               />
