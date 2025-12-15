@@ -10,6 +10,7 @@ import homeTest from './pages/Home_test';
 import industriesV2 from './pages/Industries-v2';
 import Industries from './pages/Industries';
 import industriesOld from './pages/Industries_old';
+import PlaylistsDemos from './pages/PlaylistsDemos';
 import servicesV2 from './pages/Services-v2';
 import Services from './pages/Services';
 import Sitemap from './pages/Sitemap';
@@ -62,6 +63,7 @@ export const PAGES = {
     "Industries-v2": industriesV2,
     "Industries": Industries,
     "Industries_old": industriesOld,
+    "PlaylistsDemos": PlaylistsDemos,
     "Services-v2": servicesV2,
     "Services": Services,
     "Sitemap": Sitemap,
