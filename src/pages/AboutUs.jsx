@@ -621,7 +621,7 @@ export default function AboutUs() {
               See how we work with clients or contact us to discuss your project.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link to={createPageUrl("CaseStudies")}>
+              <Link to={createPageUrl("case-studies")} aria-label="Music curation case studies">
                 <AnimatedButton className="w-full sm:w-auto">
                   Read case studies
                 </AnimatedButton>

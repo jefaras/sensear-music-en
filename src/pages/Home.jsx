@@ -570,7 +570,7 @@ export default function Home() {
                   </article>
                 </div>
 
-                <Link to={createPageUrl("CaseStudies")}>
+                <Link to={createPageUrl("case-studies")} aria-label="Music curation case studies">
                     <AnimatedButton>
                         View Case Studies
                     </AnimatedButton>
