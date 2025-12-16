@@ -62,7 +62,7 @@ export default function Layout({ children }) {
     ],
     company: [
       { name: "Case Studies", path: createPageUrl("case-studies"), ariaLabel: "Music curation case studies" },
-      { name: "About", path: createPageUrl("AboutUs") },
+      { name: "About", path: createPageUrl("about"), ariaLabel: "About SensEar" },
       { name: "Contact", path: createPageUrl("ContactUs") },
       { name: "Blog", path: createPageUrl("Blog") },
       { name: "FAQ", path: createPageUrl("FAQ") },
@@ -97,8 +97,8 @@ export default function Layout({ children }) {
       document.title = "Events & Experiences | SensEar";
     } else if (location.pathname === createPageUrl("art-museums-fashion")) {
       document.title = "Art, Museums & Fashion | SensEar";
-    } else if (location.pathname === createPageUrl("AboutUs")) {
-      document.title = "About Us | SensEar";
+    } else if (location.pathname === createPageUrl("about")) {
+      document.title = "About SensEar | Music curation Team & Approach";
     } else if (location.pathname === createPageUrl("ContactUs")) {
       document.title = "Contact Us | SensEar";
     } else if (location.pathname === createPageUrl("Blog")) {
@@ -454,7 +454,7 @@ export default function Layout({ children }) {
               <h3 className="text-sm font-semibold text-peach mb-4 uppercase tracking-wider font-jakarta">Company</h3>
               <div className="space-y-2">
                 {footerNavItems.company.map((item) => (
-                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta">{item.name}</Link>
+                  <Link key={item.name} to={item.path} className="block text-white/70 hover:text-peach transition-colors text-base hover:underline decoration-1 underline-offset-4 font-jakarta" aria-label={item.ariaLabel || item.name}>{item.name}</Link>
                 ))}
               </div>
             </div>

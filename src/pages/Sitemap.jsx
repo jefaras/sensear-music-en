@@ -80,7 +80,7 @@ export default function Sitemap() {
         { name: "Services", path: createPageUrl("Services") },
         { name: "Industries", path: createPageUrl("Industries") },
         { name: "Case Studies", path: createPageUrl("case-studies"), ariaLabel: "Music curation case studies" },
-        { name: "About Us", path: createPageUrl("AboutUs") },
+        { name: "About Us", path: createPageUrl("about"), ariaLabel: "About SensEar" },
         { name: "Contact Us", path: createPageUrl("ContactUs") },
         { name: "Blog", path: createPageUrl("Blog") },
         { name: "FAQ", path: createPageUrl("FAQ") }

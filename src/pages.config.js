@@ -1,4 +1,3 @@
-import AboutUs from './pages/AboutUs';
 import Blog from './pages/Blog';
 import CaseStudies from './pages/CaseStudies';
 import ContactUs from './pages/ContactUs';
@@ -32,7 +31,6 @@ import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "AboutUs": AboutUs,
     "Blog": Blog,
     "CaseStudies": CaseStudies,
     "ContactUs": ContactUs,
