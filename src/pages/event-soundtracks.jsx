@@ -319,7 +319,7 @@ export default function EventSoundtracks() {
                   <span>hosting launches, weddings, or signature dinners.</span>
                 </li>
                 <li className="block">
-                  <Link to={createPageUrl("music-for-events-and-experiences")} className="underline hover:text-black font-semibold text-2xl block mb-1">Event Organisers & Agencies</Link>
+                  <Link to={createPageUrl("music-for-events-and-experiences")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Events">Event Organisers & Agencies</Link>
                   <span>creating immersive branded experiences.</span>
                 </li>
                 <li className="block">
