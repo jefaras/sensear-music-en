@@ -3,6 +3,7 @@ import Blog from './pages/Blog';
 import CaseStudies from './pages/CaseStudies';
 import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
+import Home from './pages/Home';
 import Industries from './pages/Industries';
 import Services from './pages/Services';
 import Sitemap from './pages/Sitemap';
@@ -10,6 +11,7 @@ import audioUpgrades from './pages/audio-upgrades';
 import backgroundMusicShapesCustomerBehavior from './pages/background-music-shapes-customer-behavior';
 import brandMusicConvertsBrowsersBuyers from './pages/brand-music-converts-browsers-buyers';
 import buildingBrandPeopleCanHear from './pages/building-brand-people-can-hear';
+import caseStudies from './pages/case-studies';
 import eventSoundtracks from './pages/event-soundtracks';
 import howTopHospitalityBrandsDesignSound from './pages/how-top-hospitality-brands-design-sound';
 import musicCurationCycleVenues from './pages/music-curation-cycle-venues';
@@ -25,8 +27,6 @@ import sonicStrategy from './pages/sonic-strategy';
 import threeReasonsMakeMusicHospitality from './pages/three-reasons-make-music-hospitality';
 import wellnessCenters from './pages/wellness-centers';
 import whatExactlyDoesMusicCuratorDo from './pages/what-exactly-does-music-curator-do';
-import caseStudies from './pages/case-studies';
-import Home from './pages/Home';
 import __Layout from './Layout.jsx';
 
 
@@ -36,6 +36,7 @@ export const PAGES = {
     "CaseStudies": CaseStudies,
     "ContactUs": ContactUs,
     "FAQ": FAQ,
+    "Home": Home,
     "Industries": Industries,
     "Services": Services,
     "Sitemap": Sitemap,
@@ -43,6 +44,7 @@ export const PAGES = {
     "background-music-shapes-customer-behavior": backgroundMusicShapesCustomerBehavior,
     "brand-music-converts-browsers-buyers": brandMusicConvertsBrowsersBuyers,
     "building-brand-people-can-hear": buildingBrandPeopleCanHear,
+    "case-studies": caseStudies,
     "event-soundtracks": eventSoundtracks,
     "how-top-hospitality-brands-design-sound": howTopHospitalityBrandsDesignSound,
     "music-curation-cycle-venues": musicCurationCycleVenues,
@@ -58,8 +60,6 @@ export const PAGES = {
     "three-reasons-make-music-hospitality": threeReasonsMakeMusicHospitality,
     "wellness-centers": wellnessCenters,
     "what-exactly-does-music-curator-do": whatExactlyDoesMusicCuratorDo,
-    "case-studies": caseStudies,
-    "Home": Home,
 }
 
 export const pagesConfig = {
