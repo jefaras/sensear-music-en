@@ -190,18 +190,48 @@ export default function ServiceEnvironmentShapesWaitTime() {
 
   return (
     <div className="bg-[#faebe3]">
-      {/* Hero Section - Similar to Home but smaller heading */}
-      <section className="relative pt-24 pb-20 overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Service Environment Shapes Wait Time section">
-        {/* Text content */}
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="w-full">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[3.5rem] font-bold text-black mb-6 leading-[1.1]">
-              How your service environment<br />
-              shapes perceived wait time
-            </h1>
-            
-            <div className="mb-8 max-w-4xl">
-              <div className="flex items-center gap-6 text-sm text-black/60 mb-4">
+      <style>{`
+        @keyframes slideUp {
+          from {
+            opacity: 0;
+            transform: translateY(40px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .slide-up-1 {
+          animation: slideUp 0.8s ease-out forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-2 {
+          animation: slideUp 0.8s ease-out 0.2s forwards;
+          opacity: 0;
+        }
+        
+        .slide-up-4 {
+          animation: slideUp 0.8s ease-out 0.6s forwards;
+          opacity: 0;
+        }
+      `}</style>
+
+      {/* Hero Section - Two Column Layout */}
+      <section className="relative pt-32 pb-32 min-h-[90vh] flex flex-col justify-center overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="Service Environment Shapes Wait Time section">
+        <div className="w-full px-6 md:px-12 lg:px-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Column: H1 */}
+            <div className="flex flex-col justify-center text-left">
+              <h1 className="font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
+                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">How your service environment</span>
+                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">shapes perceived wait time</span>
+              </h1>
+              <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2 mb-6">
+                How music and environmental design can transform the waiting experience and improve satisfaction.
+              </p>
+              <div className="flex items-center gap-6 text-sm text-black/60 slide-up-2">
                 <div className="flex items-center gap-2">
                   <Calendar className="w-4 h-4" aria-hidden="true" />
                   <time dateTime="2025-03-15">March 15, 2025</time>
@@ -214,41 +244,21 @@ export default function ServiceEnvironmentShapesWaitTime() {
                   <span>7 min read</span>
                 </div>
               </div>
-              <p className="text-lg sm:text-xl md:text-2xl text-black/80 leading-relaxed">
-                How music and environmental design can transform the waiting experience and improve satisfaction.
-              </p>
             </div>
-          </div>
-        </div>
 
-        {/* Hero Image - Larger with parallax */}
-        <div className="w-full px-6">
-          <div className="mx-auto" style={{ maxWidth: '1800px' }}>
-            <div className="rounded-[2rem] overflow-hidden shadow-2xl relative bg-[#faebe3]" style={{ paddingBottom: '40%' }}>
-              {/* Mobile/Tablet version - NO parallax */}
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 2400w"
-                sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Service environment design using music to improve customer waiting experience"
-                className="absolute w-full h-full object-cover md:hidden"
-              />
-              {/* Desktop version - WITH parallax */}
-              <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg"
-                srcSet="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 1800w,
-                        https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg 2400w"
-                sizes="(max-width: 1800px) 100vw, 1800px"
-                alt="Service environment design using music to improve customer waiting experience"
-                className="absolute w-full h-full object-cover hidden md:block"
-                style={{ 
-                  top: '-15%',
-                  height: '130%',
-                  transform: `translateY(${scrollY * 0.15}px)`,
-                  transformOrigin: 'center top'
-                }}
-              />
+            {/* Right Column: Square Image */}
+            <div className="w-full slide-up-4 flex justify-center lg:justify-end">
+              <div className="w-full lg:w-[93.5%]">
+                <div className="overflow-hidden rounded-2xl shadow-2xl">
+                  <div className="relative aspect-square">
+                    <img 
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ba5124b88_gemini-25-flash-image_professional_photo_of_1-1.jpg" 
+                      alt="Service environment design using music to improve customer waiting experience" 
+                      className="w-full h-full object-cover" 
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
