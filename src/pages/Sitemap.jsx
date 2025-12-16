@@ -80,8 +80,8 @@ export default function Sitemap() {
         { name: "Services", path: createPageUrl("Services") },
         { name: "Industries", path: createPageUrl("Industries") },
         { name: "Case Studies", path: createPageUrl("case-studies"), ariaLabel: "Music curation case studies" },
-        { name: "About Us", path: createPageUrl("about"), ariaLabel: "About SensEar" },
-        { name: "Contact Us", path: createPageUrl("contact"), ariaLabel: "Contact SensEar" },
+        { name: "About", path: createPageUrl("about"), ariaLabel: "About SensEar" },
+        { name: "Contact", path: createPageUrl("contact"), ariaLabel: "Contact SensEar" },
         { name: "Blog", path: createPageUrl("Blog") },
         { name: "FAQ", path: createPageUrl("FAQ") }
       ]
@@ -225,7 +225,7 @@ export default function Sitemap() {
 
           <div className="mt-12 text-center">
             <p className="text-black/70 mb-6">
-              Can't find what you are looking for? <Link to={createPageUrl("ContactUs")} className="underline hover:text-black font-semibold">Contact us</Link> or check our <Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold">FAQ page</Link>.
+              Can't find what you are looking for? <Link to={createPageUrl("contact")} className="underline hover:text-black font-semibold" aria-label="Contact SensEar">Contact us</Link> or check our <Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold">FAQ page</Link>.
             </p>
           </div>
         </div>
