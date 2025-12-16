@@ -58,7 +58,7 @@ export default function Blog() {
       link: createPageUrl("what-exactly-does-music-curator-do")
     },
     {
-      title: "The Music Curation Cycle for Venues: Analyze, Optimize & Evolve Your Sonic Identity",
+      title: "The music curation cycle: analyze, optimize & evolve your sonic identity",
       excerpt: "Learn how continuous music curation optimization enhances venue atmosphere through data-driven refinement and expert human curation.",
       image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0fc2b036_43b114fc2a27cb08c8b377305973c588_X-Design.png",
       alt: "Music analytics and optimization process for venue soundscapes",
@@ -578,7 +578,7 @@ export default function Blog() {
 
             {/* Article 4 */}
             <article role="listitem">
-              <Link to={createPageUrl("music-curation-cycle-venues")} className="block" aria-label="Read more about: The Music Curation Cycle for Venues">
+              <Link to={createPageUrl("music-curation-cycle-venues")} className="block" aria-label="Read article about the music curation cycle for venue optimisation">
                 <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
@@ -593,7 +593,7 @@ export default function Blog() {
                       Strategy
                     </Badge>
                     <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      The Music Curation Cycle for Venues: Analyze, Optimize & Evolve Your Sonic Identity
+                      The music curation cycle: analyze, optimize & evolve your sonic identity
                     </h3>
                     <p className="text-black/70 mb-4 leading-relaxed">
                       Learn how continuous music curation optimization enhances venue atmosphere through data-driven refinement and expert human curation.

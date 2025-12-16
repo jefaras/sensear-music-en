@@ -9,9 +9,9 @@ export default function MusicCurationCycleVenues() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "The Music Curation Cycle for Venues | SensEar Guide";
+    document.title = "The music curation cycle for venues | SensEar blog";
     
-    const description = "Learn how continuous music curation optimization enhances venue atmosphere. Data-driven strategies for analyzing and evolving your sonic identity.";
+    const description = "Learn how continuous music analysis and optimisation improves atmosphere, supports guest flow, and keeps venues sounding relevant.";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
@@ -80,7 +80,7 @@ export default function MusicCurationCycleVenues() {
 
     // Open Graph tags
     const ogTags = [
-      { property: 'og:title', content: 'The Music Curation Cycle for Venues | SensEar' },
+      { property: 'og:title', content: 'The music curation cycle for venues | SensEar blog' },
       { property: 'og:description', content: description },
       { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0fc2b036_43b114fc2a27cb08c8b377305973c588_X-Design.png' },
       { property: 'og:url', content: 'https://sensear.music/music-curation-cycle-venues' },
@@ -108,7 +108,7 @@ export default function MusicCurationCycleVenues() {
     // Twitter Card tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'The Music Curation Cycle for Venues | SensEar' },
+      { name: 'twitter:title', content: 'The music curation cycle for venues | SensEar blog' },
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0fc2b036_43b114fc2a27cb08c8b377305973c588_X-Design.png' },
       { name: 'twitter:url', content: 'https://sensear.music/music-curation-cycle-venues' },
@@ -144,7 +144,7 @@ export default function MusicCurationCycleVenues() {
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "The Music Curation Cycle for Venues: Analyze, Optimize & Evolve Your Sonic Identity",
+        "headline": "The music curation cycle: analyze, optimize & evolve your sonic identity",
         "description": description,
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/e0fc2b036_43b114fc2a27cb08c8b377305973c588_X-Design.png",
         "author": {
@@ -185,7 +185,7 @@ export default function MusicCurationCycleVenues() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "The Music Curation Cycle for Venues: Analyze, Optimize & Evolve Your Sonic Identity",
+            "name": "The music curation cycle: analyze, optimize & evolve your sonic identity",
             "item": "https://sensear.music/music-curation-cycle-venues"
           }
         ]
@@ -245,8 +245,8 @@ export default function MusicCurationCycleVenues() {
             {/* Left Column: H1 */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">The Music Curation Cycle:</span>
-                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">Analyze, Optimize & Evolve</span>
+                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">The music curation cycle:</span>
+                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">analyze, optimize & evolve</span>
               </h1>
               <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2 mb-6">
                 How continuous music curation optimization enhances venue atmosphere with data-driven strategies.
