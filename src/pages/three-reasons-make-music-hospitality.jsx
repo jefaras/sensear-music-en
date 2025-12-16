@@ -8,9 +8,9 @@ export default function ThreeReasonsMakeMusicHospitality() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Three Reasons to Make Music Part of Your Luxury Hospitality Strategy | SensEar";
+    document.title = "Why Music Belongs in Luxury Hospitality Marketing";
     
-    const description = "Curated music is a practical way to shape how guests feel, what they remember, and how they spend. Learn how music design enhances luxury hospitality.";
+    const description = "Three evidence-based reasons curated music improves guest experience, brand perception, and spending in luxury hospitality venues.";
     let metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
@@ -77,7 +77,7 @@ export default function ThreeReasonsMakeMusicHospitality() {
 
     // Open Graph tags
     const ogTags = [
-      { property: 'og:title', content: 'Three Reasons to Make Music Part of Your Luxury Hospitality Strategy | SensEar' },
+      { property: 'og:title', content: 'Why Music Belongs in Luxury Hospitality Marketing' },
       { property: 'og:description', content: description },
       { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg' },
       { property: 'og:url', content: 'https://sensear.music/three-reasons-make-music-hospitality' },
@@ -102,7 +102,7 @@ export default function ThreeReasonsMakeMusicHospitality() {
     // Twitter Card tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'Three Reasons to Make Music Part of Your Luxury Hospitality Strategy | SensEar' },
+      { name: 'twitter:title', content: 'Why Music Belongs in Luxury Hospitality Marketing' },
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg' }
     ];
@@ -135,7 +135,7 @@ export default function ThreeReasonsMakeMusicHospitality() {
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy",
+        "headline": "Three reasons to make music part of your luxury hospitality strategy",
         "description": description,
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/7e961365e_e56c8a322bf8043723ba7e215cf5e636.jpg",
         "author": {
@@ -176,7 +176,7 @@ export default function ThreeReasonsMakeMusicHospitality() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Three Reasons to Make Music Part of Your Luxury Hospitality Marketing Strategy",
+            "name": "Three reasons to make music part of your luxury hospitality strategy",
             "item": "https://sensear.music/three-reasons-make-music-hospitality"
           }
         ]
@@ -236,8 +236,8 @@ export default function ThreeReasonsMakeMusicHospitality() {
               {/* Left Column: H1 */}
               <div className="flex flex-col justify-center text-left">
                 <h1 className="font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                  <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">Three Reasons to Make Music</span>
-                  <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">Part of Your Luxury Hospitality Strategy</span>
+                  <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">Three reasons to make music</span>
+                  <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">part of your luxury hospitality strategy</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2 mb-6">
                   Why curated music is a practical way to shape how guests feel, what they remember, and how they spend.
