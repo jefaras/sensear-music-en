@@ -329,11 +329,11 @@ export default function SonicStrategy() {
                   <span>needing one recognizable sound across properties.</span>
                 </li>
                 <li className="block">
-                  <span className="block mb-1"><Link to={createPageUrl("music-for-restaurants-and-bars")} className="underline hover:text-black font-semibold text-2xl" aria-label="Music for Restaurants & Bars">Restaurant, Bar</Link> & <Link to={createPageUrl("music-for-retail-stores")} className="underline hover:text-black font-semibold text-2xl" aria-label="Music for Retail Stores">Retail brands</Link></span>
+                  <span className="block mb-1"><Link to={createPageUrl("music-for-restaurants-and-bars")} className="underline hover:text-black font-semibold text-2xl" aria-label="Music for Restaurants & Bars">Restaurant, Bar</Link> <span className="text-2xl">&</span> <Link to={createPageUrl("music-for-retail-stores")} className="underline hover:text-black font-semibold text-2xl" aria-label="Music for Retail Stores">Retail brands</Link></span>
                   <span>growing, rebranding, or opening new locations.</span>
                 </li>
                 <li className="block">
-                  <Link to={createPageUrl("music-for-wellness-and-gyms")} className="underline hover:text-black font-semibold text-2xl block mb-1" aria-label="Music for Wellness & Gyms">Wellness & Cultural spaces</Link>
+                  <span className="block mb-1"><Link to={createPageUrl("music-for-wellness-and-gyms")} className="underline hover:text-black font-semibold text-2xl" aria-label="Music for Wellness & Gyms">Wellness</Link> <span className="text-2xl">&</span> <Link to={createPageUrl("art-museums-fashion")} className="underline hover:text-black font-semibold text-2xl">Cultural spaces</Link></span>
                   <span>wanting a defined sonic personality.</span>
                 </li>
                 <li className="block">
