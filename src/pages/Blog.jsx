@@ -47,7 +47,7 @@ export default function Blog() {
       link: createPageUrl("brand-music-converts-browsers-buyers")
     },
     {
-      title: "What Exactly Does a Music Curator Do?",
+      title: "What exactly does a music curator do?",
       excerpt: "Learn how professional music curators architect brand soundtracks through strategic curation and data-driven sonic branding.",
       image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png",
       alt: "Professional music curator selecting tracks for bespoke venue playlists",
@@ -537,7 +537,7 @@ export default function Blog() {
 
             {/* Article 3 */}
             <article role="listitem">
-              <Link to={createPageUrl("what-exactly-does-music-curator-do")} className="block" aria-label="Read more about: What Exactly Does a Music Curator Do?">
+              <Link to={createPageUrl("what-exactly-does-music-curator-do")} className="block" aria-label="Read article explaining the role of a professional music curator">
                 <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
@@ -552,7 +552,7 @@ export default function Blog() {
                       Education
                     </Badge>
                     <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      What Exactly Does a Music Curator Do?
+                      What exactly does a music curator do?
                     </h3>
                     <p className="text-black/70 mb-4 leading-relaxed">
                       Learn how professional music curators architect brand soundtracks through strategic curation and data-driven sonic branding.

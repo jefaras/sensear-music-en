@@ -9,9 +9,9 @@ export default function WhatExactlyDoesMusicCuratorDo() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "What Exactly Does a Music Curator Do? | SensEar Professional Guide";
+    document.title = "What a music curator does for brands | SensEar Blog";
     
-    const description = "Learn how professional music curators architect brand soundtracks through strategic curation, playlist design, and data-driven sonic branding.";
+    const description = "An in-depth look at how professional music curators design strategic sound systems that shape emotion, behaviour, and brand memory.";
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
@@ -80,7 +80,7 @@ export default function WhatExactlyDoesMusicCuratorDo() {
 
     // Open Graph tags
     const ogTags = [
-      { property: 'og:title', content: 'What Exactly Does a Music Curator Do? | SensEar Professional Guide' },
+      { property: 'og:title', content: 'What a music curator does for brands | SensEar Blog' },
       { property: 'og:description', content: description },
       { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png' },
       { property: 'og:url', content: 'https://sensear.music/what-exactly-does-music-curator-do' },
@@ -105,7 +105,7 @@ export default function WhatExactlyDoesMusicCuratorDo() {
     // Twitter Card tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'What Exactly Does a Music Curator Do? | SensEar Professional Guide' },
+      { name: 'twitter:title', content: 'What a music curator does for brands | SensEar Blog' },
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png' }
     ];
@@ -138,8 +138,8 @@ export default function WhatExactlyDoesMusicCuratorDo() {
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "What Exactly Does a Music Curator Do?",
-        "description": "Learn how professional music curators architect brand soundtracks through strategic curation, playlist design, and data-driven sonic branding.",
+        "headline": "What a music curator does for brands",
+        "description": "An in-depth look at how professional music curators design strategic sound systems that shape emotion, behaviour, and brand memory.",
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/254c849b4_Screenshot2025-05-06at52431PM.png",
         "author": {
           "@type": "Organization",
@@ -175,7 +175,7 @@ export default function WhatExactlyDoesMusicCuratorDo() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "What Exactly Does a Music Curator Do?",
+            "name": "What a music curator does for brands",
             "item": "https://sensear.music/what-exactly-does-music-curator-do"
           }
         ]
@@ -235,8 +235,8 @@ export default function WhatExactlyDoesMusicCuratorDo() {
             {/* Left Column: H1 */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">What Exactly Does</span>
-                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">a Music Curator Do?</span>
+                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">What exactly does</span>
+                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">a music curator do?</span>
               </h1>
               <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2 mb-6">
                 The SensEar approach to turning brand voice into living sound
