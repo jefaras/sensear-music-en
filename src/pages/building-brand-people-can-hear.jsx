@@ -276,19 +276,19 @@ export default function BuildingBrandPeopleCanHear() {
       <div className="max-w-4xl mx-auto px-6 py-16">
         <Card className="bg-white p-8 md:p-12 shadow-lg mb-12">
           <div className="prose prose-lg max-w-none">
-            <h2 className="text-3xl font-bold text-black mt-12 mb-6">Why Sound Is Your Most Underrated Brand Asset</h2>
+            <h2 className="text-3xl font-bold text-black mt-12 mb-6">Why sound is your most underrated brand asset</h2>
 
             <p className="text-black/80 leading-relaxed mb-6">
               Brand identity is more than visuals. It is the total set of signals that help people recognize you and trust what you deliver. That includes name, logo, typography, color, packaging, and physical spaces. But in a crowded market, consistent sound cues cut through faster, travel further, and stick longer in memory. <a href="https://www.sciencedirect.com/science/article/pii/S1057740811000830" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">Sensory marketing research</a> shows that engaging multiple senses strengthens perception, judgment, and behavior, and sound is uniquely efficient at doing this at scale.
             </p>
 
-            <h2 className="text-3xl font-bold text-black mt-12 mb-6">What A Brand Really Is</h2>
+            <h2 className="text-3xl font-bold text-black mt-12 mb-6">What a brand really is</h2>
 
             <p className="text-black/80 leading-relaxed mb-6">
               A brand is a promise people can identify instantly and rely on consistently. Customers use brand cues to infer benefits and quality before they buy. Visual consistency matters, and color is often cited as boosting recognition, though <a href="https://reviewinc.com/2024/08/14/color-increases-brand-recognition/" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">that specific 80 percent statistic is frequently misquoted</a> and context dependent, originally tied to <a href="https://www.insights4print.ceo/2019/02/color-increases-brand-recognition-by-80-the-real-contents-of-the-loyola-study-revealed/" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">document processing rather than logos alone</a>.
             </p>
 
-            <h2 className="text-3xl font-bold text-black mt-12 mb-6">The Power of Sonic Branding</h2>
+            <h2 className="text-3xl font-bold text-black mt-12 mb-6">The power of sonic branding</h2>
 
             <p className="text-black/80 leading-relaxed mb-6">
               Music and sound are immediate, emotional, and memorable. Field experiments show that background music can shape traffic flow and lift sales, especially when tempo and musical mode are intentionally selected for context, not chosen at random. For example, <a href="https://music2biz.com/wp-content/uploads/2017/04/Using-Background-Music-to-Affect-the-Behavior-of-Supermarket-Shoppers.pdf" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">research in a supermarket</a> found that slow tempo music lengthened shopping time and increased sales volume compared to fast tempo tracks. <a href="https://www.researchgate.net/profile/Klemens-Knoeferle/publication/227451750_It_is_all_in_the_mix_The_interactive_effect_of_music_tempo_and_mode_on_in-store_sales/links/0a85e530360b6bd8a7000000/It-is-all-in-the-mix-The-interactive-effect-of-music-tempo-and-mode-on-in-store-sales.pdf" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">Interaction effects of tempo and mode</a> can also influence in-store sales outcomes, suggesting playlists should be composed with both parameters in mind for the desired behavioral effect.
@@ -302,7 +302,7 @@ export default function BuildingBrandPeopleCanHear() {
               Sonic logos amplify this effect by giving your brand a short, distinctive audio signature that boosts recall and recognition. <a href="https://www.sciencedirect.com/science/article/pii/S0148296323005283" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">Recent research</a> links well designed sonic logos to stronger memory and brand personality fit, including attributes like sincerity or ruggedness when the <a href="https://idj.journals.ekb.eg/article_340785_a40c2229d0f8979f8c85180171b7e998.pdf" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">musical features align with brand strategy</a>, supported by additional <a href="https://journal.ipb.ac.id/index.php/jcs/article/view/57484" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">branding studies</a>.
             </p>
 
-            <h2 className="text-3xl font-bold text-black mt-12 mb-6">A Practical Framework For Sound-First Brand Strategy</h2>
+            <h2 className="text-3xl font-bold text-black mt-12 mb-6">A practical framework for sound-first brand strategy</h2>
 
             <p className="text-black/80 leading-relaxed mb-8">
               Use this six-step process to align sound with your brand promise and performance goals.
@@ -337,13 +337,13 @@ export default function BuildingBrandPeopleCanHear() {
               </ol>
             </div>
 
-            <h2 className="text-3xl font-bold text-black mt-12 mb-6">Brand Touchpoints To Prioritize: The Sonic Experience</h2>
+            <h2 className="text-3xl font-bold text-black mt-12 mb-6">Brand touchpoints to prioritize: the sonic experience</h2>
 
             <p className="text-black/80 leading-relaxed mb-6">
               Sound is one of the most powerful brand touchpoints because it works instantly, sets emotional temperature, and is easy to standardize across locations and channels. When thoughtfully integrated into your brand system, your music and sonic logo do more than decorate a space. They become the voice of your brand that customers recognize before they even look up. For hospitality brands, this translates into consistent quality cues that reduce uncertainty and increase loyalty over time, supported by a growing body of work in <a href="https://www.sciencedirect.com/science/article/pii/S1057740811000830" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">sensory marketing</a> and <a href="https://www.tandfonline.com/doi/pdf/10.1080/02650487.2023.2273075" target="_blank" rel="noopener noreferrer" className="text-black underline hover:text-black/70">sonic branding research</a>.
             </p>
 
-            <h2 className="text-3xl font-bold text-black mt-12 mb-6">Ready To Make Your Brand Heard?</h2>
+            <h2 className="text-3xl font-bold text-black mt-12 mb-6">Ready to make your brand heard?</h2>
 
             <p className="text-black/80 leading-relaxed">
               If you want <Link to={createPageUrl("signature-playlists")} className="text-black underline hover:text-black/70">playlists that perform</Link>, a <Link to={createPageUrl("sonic-strategy")} className="text-black underline hover:text-black/70">sound logo people remember</Link>, and <Link to={createPageUrl("Services")} className="text-black underline hover:text-black/70">audio guidelines</Link> your teams can apply everywhere, SensEar can help. <Link to={createPageUrl("contact")} className="text-black underline hover:text-black/70">Book a discovery session</Link> and we will map your <Link to={createPageUrl("Industries")} className="text-black underline hover:text-black/70">customer journey</Link>, test what your audience responds to, and build a sonic branding system that lifts recognition, improves experience, and drives <Link to={createPageUrl("case-studies")} className="text-black underline hover:text-black/70">measurable results</Link>. Let's design the sound of your brand today.
