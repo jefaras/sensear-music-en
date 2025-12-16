@@ -13,7 +13,6 @@ import backgroundMusicShapesCustomerBehavior from './pages/background-music-shap
 import brandMusicConvertsBrowsersBuyers from './pages/brand-music-converts-browsers-buyers';
 import buildingBrandPeopleCanHear from './pages/building-brand-people-can-hear';
 import eventSoundtracks from './pages/event-soundtracks';
-import eventsExperiences from './pages/events-experiences';
 import howTopHospitalityBrandsDesignSound from './pages/how-top-hospitality-brands-design-sound';
 import musicCurationCycleVenues from './pages/music-curation-cycle-venues';
 import musicForHotelsAndResorts from './pages/music-for-hotels-and-resorts';
@@ -46,7 +45,6 @@ export const PAGES = {
     "brand-music-converts-browsers-buyers": brandMusicConvertsBrowsersBuyers,
     "building-brand-people-can-hear": buildingBrandPeopleCanHear,
     "event-soundtracks": eventSoundtracks,
-    "events-experiences": eventsExperiences,
     "how-top-hospitality-brands-design-sound": howTopHospitalityBrandsDesignSound,
     "music-curation-cycle-venues": musicCurationCycleVenues,
     "music-for-hotels-and-resorts": musicForHotelsAndResorts,
