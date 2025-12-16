@@ -315,13 +315,11 @@ export default function CaseStudies() {
               </AnimatedButton>
             </Link>
             
-            <div className="flex items-center gap-6">
-              <span className="text-black/60">or</span>
-              <Link to={createPageUrl("Services")} className="inline-flex items-center text-black font-bold text-lg group">
-                <span className="transition-transform group-hover:translate-x-1 inline-block hover:underline decoration-2 underline-offset-4">Explore our services</span>
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </Link>
-            </div>
+            <Link to={createPageUrl("Services")}>
+              <AnimatedButton className="w-full sm:w-auto h-14">
+                Explore our services
+              </AnimatedButton>
+            </Link>
           </div>
         </div>
       </section>
