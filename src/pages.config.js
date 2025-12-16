@@ -14,6 +14,8 @@ import buildingBrandPeopleCanHear from './pages/building-brand-people-can-hear';
 import eventSoundtracks from './pages/event-soundtracks';
 import howTopHospitalityBrandsDesignSound from './pages/how-top-hospitality-brands-design-sound';
 import musicCurationCycleVenues from './pages/music-curation-cycle-venues';
+import musicForArtMuseumsAndFashion from './pages/music-for-art-museums-and-fashion';
+import musicForEventsAndExperiences from './pages/music-for-events-and-experiences';
 import musicForHotelsAndResorts from './pages/music-for-hotels-and-resorts';
 import musicForRestaurantsAndBars from './pages/music-for-restaurants-and-bars';
 import musicForRetailStores from './pages/music-for-retail-stores';
@@ -24,8 +26,7 @@ import sonicStrategy from './pages/sonic-strategy';
 import threeReasonsMakeMusicHospitality from './pages/three-reasons-make-music-hospitality';
 import wellnessCenters from './pages/wellness-centers';
 import whatExactlyDoesMusicCuratorDo from './pages/what-exactly-does-music-curator-do';
-import musicForEventsAndExperiences from './pages/music-for-events-and-experiences';
-import musicForArtMuseumsAndFashion from './pages/music-for-art-museums-and-fashion';
+import caseStudies from './pages/case-studies';
 import __Layout from './Layout.jsx';
 
 
@@ -46,6 +47,8 @@ export const PAGES = {
     "event-soundtracks": eventSoundtracks,
     "how-top-hospitality-brands-design-sound": howTopHospitalityBrandsDesignSound,
     "music-curation-cycle-venues": musicCurationCycleVenues,
+    "music-for-art-museums-and-fashion": musicForArtMuseumsAndFashion,
+    "music-for-events-and-experiences": musicForEventsAndExperiences,
     "music-for-hotels-and-resorts": musicForHotelsAndResorts,
     "music-for-restaurants-and-bars": musicForRestaurantsAndBars,
     "music-for-retail-stores": musicForRetailStores,
@@ -56,8 +59,7 @@ export const PAGES = {
     "three-reasons-make-music-hospitality": threeReasonsMakeMusicHospitality,
     "wellness-centers": wellnessCenters,
     "what-exactly-does-music-curator-do": whatExactlyDoesMusicCuratorDo,
-    "music-for-events-and-experiences": musicForEventsAndExperiences,
-    "music-for-art-museums-and-fashion": musicForArtMuseumsAndFashion,
+    "case-studies": caseStudies,
 }
 
 export const pagesConfig = {
