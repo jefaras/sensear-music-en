@@ -416,8 +416,8 @@ export default function RetailStores() {
             Ready to make music work for your store? We evaluate your sound, map your customer journey, and provide a brand-specific approach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto">
+            <Link to={createPageUrl("contact")}>
+              <AnimatedButton className="w-full sm:w-auto" aria-label="Book a music consultation">
                 Book a music consultation
               </AnimatedButton>
             </Link>

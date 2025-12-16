@@ -453,8 +453,8 @@ export default function WellnessGyms() {
             Ready to design sound for healing & training? We review your current setup, your sessions & member journey and propose a tailored approach.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto">
+            <Link to={createPageUrl("contact")}>
+              <AnimatedButton className="w-full sm:w-auto" aria-label="Book a music consultation">
                 Book a music consultation
               </AnimatedButton>
             </Link>

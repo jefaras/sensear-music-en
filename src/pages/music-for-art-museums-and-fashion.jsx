@@ -442,8 +442,8 @@ export default function ArtMuseumsFashion() {
             Ready to design sound for your space? We review your venue, programming & audience, then propose a tailored approach for exhibitions and events.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto">
+            <Link to={createPageUrl("contact")}>
+              <AnimatedButton className="w-full sm:w-auto" aria-label="Book a music consultation">
                 Book a music consultation
               </AnimatedButton>
             </Link>
