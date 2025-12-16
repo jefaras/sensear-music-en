@@ -61,7 +61,7 @@ export default function Layout({ children }) {
       { name: "Art, Museums & Fashion", path: createPageUrl("music-for-art-museums-and-fashion"), ariaLabel: "Music for Art, Museums & Fashion" }
     ],
     company: [
-      { name: "Case Studies", path: createPageUrl("CaseStudies") },
+      { name: "Case Studies", path: createPageUrl("case-studies"), ariaLabel: "Music curation case studies" },
       { name: "About", path: createPageUrl("AboutUs") },
       { name: "Contact", path: createPageUrl("ContactUs") },
       { name: "Blog", path: createPageUrl("Blog") },

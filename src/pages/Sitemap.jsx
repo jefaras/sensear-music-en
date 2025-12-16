@@ -79,7 +79,7 @@ export default function Sitemap() {
         { name: "Home", path: createPageUrl("Home") },
         { name: "Services", path: createPageUrl("Services") },
         { name: "Industries", path: createPageUrl("Industries") },
-        { name: "Case Studies", path: createPageUrl("CaseStudies") },
+        { name: "Case Studies", path: createPageUrl("case-studies"), ariaLabel: "Music curation case studies" },
         { name: "About Us", path: createPageUrl("AboutUs") },
         { name: "Contact Us", path: createPageUrl("ContactUs") },
         { name: "Blog", path: createPageUrl("Blog") },
