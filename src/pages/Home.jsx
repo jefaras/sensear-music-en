@@ -457,7 +457,7 @@ export default function Home() {
                 Your world, our expertise
             </h2>
             <p className="text-xl text-black/60 font-medium mb-12 text-center mx-auto max-w-5xl">
-                We understand how rhythm, energy & atmosphere shape the Greek hospitality experience.
+                We understand how rhythm, energy & atmosphere influence the hospitality experience.
             </p>
             <div className="grid md:grid-cols-[1.2fr_1fr] gap-20 items-center">
                 {/* Left: Image */}
@@ -499,27 +499,27 @@ export default function Home() {
                             </p>
                         </div>
 
-                        <div className="mb-4">
-                            <Link to={createPageUrl("music-for-retail-stores")} className="text-xl font-bold text-black block mb-1 group w-fit" aria-label="Music for Retail Stores">
+                        <div className="mb-8">
+                            <Link to={createPageUrl("music-for-retail-stores")} className="text-[31.5px] font-bold text-black block mb-2 group w-fit" aria-label="Music for Retail Stores">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Retail Stores</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
-                            <p className="text-[17px] text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Promote browsing and brand identity.
                             </p>
                         </div>
-                        <div className="mb-4">
-                            <Link to={createPageUrl("music-for-wellness-and-gyms")} className="text-xl font-bold text-black block mb-1 group w-fit" aria-label="Music for Wellness & Gyms">
+                        <div className="mb-8">
+                            <Link to={createPageUrl("music-for-wellness-and-gyms")} className="text-[31.5px] font-bold text-black block mb-2 group w-fit" aria-label="Music for Wellness & Gyms">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Wellness & Gyms</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
-                            <p className="text-[17px] text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Calibrated for relaxation, focus or motivation.
                             </p>
                         </div>
                         <div>
-                            <Link to={createPageUrl("music-for-art-museums-and-fashion")} className="text-xl font-bold text-black block mb-1 group w-fit" aria-label="Music for Art, Museums & Fashion">
+                            <Link to={createPageUrl("music-for-art-museums-and-fashion")} className="text-[31.5px] font-bold text-black block mb-2 group w-fit" aria-label="Music for Art, Museums & Fashion">
                                 <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Art, Museums & Fashion</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                             </Link>
-                            <p className="text-[17px] text-black/70 leading-relaxed">
+                            <p className="text-[19.125px] text-black/70 leading-relaxed">
                                 Smooth, precise, unobtrusive melodies.
                             </p>
                         </div>
