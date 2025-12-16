@@ -36,7 +36,7 @@ export default function Blog() {
       link: createPageUrl("three-reasons-make-music-hospitality")
     },
     {
-      title: "How Brand-Fit Music Converts Browsers into Buyers",
+      title: "How brand-fit music converts browsers into buyers",
       excerpt: "Evidence-based research showing how brand-aligned music increases sales by 9.1% in hospitality venues.",
       image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg",
       alt: "Restaurant ambiance demonstrating music's impact on customer sales and behavior",
@@ -496,7 +496,7 @@ export default function Blog() {
 
             {/* Article 2 */}
             <article role="listitem">
-              <Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="block" aria-label="Read more about: How Brand-Fit Music Converts Browsers into Buyers">
+              <Link to={createPageUrl("brand-music-converts-browsers-buyers")} className="block" aria-label="Read research article on how brand-fit music influences buying behaviour">
                 <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
@@ -511,7 +511,7 @@ export default function Blog() {
                       Research
                     </Badge>
                     <h3 className="text-xl font-bold text-black mb-3 group-hover:text-black/80 transition-colors">
-                      How Brand-Fit Music Converts Browsers into Buyers
+                      How brand-fit music converts browsers into buyers
                     </h3>
                     <p className="text-black/70 mb-4 leading-relaxed">
                       Evidence-based research showing how brand-aligned music increases sales by 9.1% in hospitality venues.

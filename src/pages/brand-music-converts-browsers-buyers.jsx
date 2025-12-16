@@ -9,10 +9,10 @@ export default function BrandMusicConvertsBrowsersBuyers() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "How Brand-Fit Music Converts Browsers into Buyers | SensEar Research";
+    document.title = "How Brand-Fit Music Converts Browsers into Buyers";
     
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "Evidence-based research on how brand-aligned music increases sales by 9.1%. Learn the science behind sonic branding and customer behavior.";
+    const description = "Research-backed insights showing how brand-aligned music increases dwell time and lifts sales in hospitality and retail spaces.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
@@ -80,7 +80,7 @@ export default function BrandMusicConvertsBrowsersBuyers() {
 
     // Open Graph tags
     const ogTags = [
-      { property: 'og:title', content: 'How Brand-Fit Music Converts Browsers into Buyers | SensEar Research' },
+      { property: 'og:title', content: 'How Brand-Fit Music Converts Browsers into Buyers' },
       { property: 'og:description', content: description },
       { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg' },
       { property: 'og:url', content: 'https://sensear.music/brand-music-converts-browsers-buyers' },
@@ -105,7 +105,7 @@ export default function BrandMusicConvertsBrowsersBuyers() {
     // Twitter Card tags
     const twitterTags = [
       { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: 'How Brand-Fit Music Converts Browsers into Buyers | SensEar Research' },
+      { name: 'twitter:title', content: 'How Brand-Fit Music Converts Browsers into Buyers' },
       { name: 'twitter:description', content: description },
       { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg' }
     ];
@@ -139,7 +139,7 @@ export default function BrandMusicConvertsBrowsersBuyers() {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "How Brand-Fit Music Converts Browsers into Buyers",
-        "description": "Research-backed insights on how music curation impacts consumer behavior and drives revenue growth in hospitality venues.",
+        "description": "Research-backed insights showing how brand-aligned music increases dwell time and lifts sales in hospitality and retail spaces.",
         "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ef99620ec_3dcbb42176ccd5762fc415dc0d74dd2d.jpg",
         "author": {
           "@type": "Person",
@@ -235,8 +235,8 @@ export default function BrandMusicConvertsBrowsersBuyers() {
             {/* Left Column: H1 */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">How Brand-Fit Music</span>
-                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">Converts Browsers into Buyers</span>
+                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">How brand-fit music</span>
+                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">converts browsers into buyers</span>
               </h1>
               <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2 mb-6">
                 Evidence-based research showing how brand-aligned music increases sales by 9.1% in hospitality venues.
