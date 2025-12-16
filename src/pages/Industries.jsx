@@ -339,7 +339,7 @@ export default function Industries() {
                 </div>
 
                 <div className="mt-8">
-                  <Link to={createPageUrl("art-museums-fashion")}>
+                  <Link to={createPageUrl("music-for-art-museums-and-fashion")}>
                     <AnimatedButton className="w-full sm:w-auto">
                       Frame your exhibitions
                     </AnimatedButton>

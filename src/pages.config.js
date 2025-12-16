@@ -7,7 +7,6 @@ import Home from './pages/Home';
 import Industries from './pages/Industries';
 import Services from './pages/Services';
 import Sitemap from './pages/Sitemap';
-import artMuseumsFashion from './pages/art-museums-fashion';
 import audioUpgrades from './pages/audio-upgrades';
 import backgroundMusicShapesCustomerBehavior from './pages/background-music-shapes-customer-behavior';
 import brandMusicConvertsBrowsersBuyers from './pages/brand-music-converts-browsers-buyers';
@@ -40,7 +39,6 @@ export const PAGES = {
     "Industries": Industries,
     "Services": Services,
     "Sitemap": Sitemap,
-    "art-museums-fashion": artMuseumsFashion,
     "audio-upgrades": audioUpgrades,
     "background-music-shapes-customer-behavior": backgroundMusicShapesCustomerBehavior,
     "brand-music-converts-browsers-buyers": brandMusicConvertsBrowsersBuyers,
