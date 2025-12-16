@@ -42,7 +42,7 @@ export default function Layout({ children }) {
     { name: "Industries", path: createPageUrl("Industries") },
     { name: "Case Studies", path: createPageUrl("case-studies") },
     { name: "Blog", path: createPageUrl("Blog") },
-    { name: "About", path: createPageUrl("AboutUs") }
+    { name: "About", path: createPageUrl("about") }
   ];
 
   const footerNavItems = {
