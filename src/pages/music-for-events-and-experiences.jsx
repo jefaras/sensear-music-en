@@ -22,10 +22,10 @@ export default function EventsExperiences() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Music for Events & Experiences | SensEar";
+    document.title = "Music for Events | SensEar";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "Custom event soundtracks and AV production. Professional DJ programming and immersive audio experiences for unforgettable events.";
+    const description = "Music for events, occasions & experiences planned to fit timing & flow, supporting transitions, pacing & atmosphere from arrival to final moment.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
