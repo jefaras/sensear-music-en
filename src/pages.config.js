@@ -26,6 +26,7 @@ import wellnessCenters from './pages/wellness-centers';
 import wellnessGyms from './pages/wellness-gyms';
 import whatExactlyDoesMusicCuratorDo from './pages/what-exactly-does-music-curator-do';
 import musicForRetailStores from './pages/music-for-retail-stores';
+import musicForWellnessAndGyms from './pages/music-for-wellness-and-gyms';
 import __Layout from './Layout.jsx';
 
 
@@ -58,6 +59,7 @@ export const PAGES = {
     "wellness-gyms": wellnessGyms,
     "what-exactly-does-music-curator-do": whatExactlyDoesMusicCuratorDo,
     "music-for-retail-stores": musicForRetailStores,
+    "music-for-wellness-and-gyms": musicForWellnessAndGyms,
 }
 
 export const pagesConfig = {
