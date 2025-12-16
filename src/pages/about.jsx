@@ -23,10 +23,10 @@ export default function AboutUs() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "About SensEar | Music Curation Experts Athens";
+    document.title = "About SensEar | Music curation Team & Approach";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "Meet the SensEar team. Music curators, DJs, and sonic branding experts crafting unforgettable soundscapes for hospitality since 2010.";
+    const description = "Learn how SensEar approaches music curation with clarity and intent, shaping how spaces are felt through sound.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
@@ -89,7 +89,7 @@ export default function AboutUs() {
     }
 
     const ogTags = [
-    { property: 'og:title', content: 'About SensEar | Music Curation Experts Athens' },
+    { property: 'og:title', content: 'About SensEar | Music curation Team & Approach' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80' },
     { property: 'og:url', content: 'https://sensear.music/about' }];
@@ -108,7 +108,7 @@ export default function AboutUs() {
 
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'About SensEar | Music Curation Experts Athens' },
+    { name: 'twitter:title', content: 'About SensEar | Music curation Team & Approach' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=1600&q=80' }];
 
