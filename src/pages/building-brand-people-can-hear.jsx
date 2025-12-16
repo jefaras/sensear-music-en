@@ -9,9 +9,9 @@ export default function BuildingBrandPeopleCanHear() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Building a Brand People Can Hear | SensEar Sonic Branding Guide";
+    document.title = "Building a Brand People Can Hear";
 
-    const description = "Learn how to create sonic brand identity through strategic music curation and audio branding. Transform your brand into a memorable sound experience.";
+    const description = "A strategic guide to sonic branding and audio identity, showing how sound strengthens brand recognition and emotional connection.";
     const pageUrl = 'https://sensear.music/building-brand-people-can-hear';
     const imageUrl = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1749ad78f_BuildingaBrandPeopleCanHear-TheSensEarGuidetoSonicBranding.png';
 
@@ -78,7 +78,7 @@ export default function BuildingBrandPeopleCanHear() {
     }
 
     const ogTags = [
-    { property: 'og:title', content: 'Building a Brand People Can Hear | SensEar' },
+    { property: 'og:title', content: 'Building a Brand People Can Hear' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: imageUrl },
     { property: 'og:url', content: pageUrl },
@@ -102,7 +102,7 @@ export default function BuildingBrandPeopleCanHear() {
 
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Building a Brand People Can Hear | SensEar' },
+    { name: 'twitter:title', content: 'Building a Brand People Can Hear' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: imageUrl }];
 
@@ -234,8 +234,8 @@ export default function BuildingBrandPeopleCanHear() {
             {/* Left Column: H1 */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">Building a Brand</span>
-                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">People Can Hear</span>
+                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">Building a brand</span>
+                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">people can hear</span>
               </h1>
               <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2 mb-6">
                 Strategic guide to sonic branding and audio identity development through music and sound design.

@@ -619,7 +619,7 @@ export default function Blog() {
 
             {/* Article 5 */}
             <article role="listitem">
-              <Link to={createPageUrl("building-brand-people-can-hear")} className="block" aria-label="Read more about: Building a Brand People Can Hear">
+              <Link to={createPageUrl("building-brand-people-can-hear")} className="block" aria-label="Read guide on building a sonic brand identity through sound">
                 <Card className="overflow-hidden hover:shadow-xl transition-all group cursor-pointer bg-white">
                   <div className="relative aspect-[4/3] overflow-hidden">
                     <img
