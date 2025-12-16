@@ -9,10 +9,10 @@ export default function ServiceEnvironmentShapesWaitTime() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const newTitle = "How your service environment shapes perceived wait time | SensEar";
+    const newTitle = "How music shapes perceived wait time | SensEar blog";
     document.title = newTitle;
     
-    const description = "How atmospheric elements like music influence perceived wait times and customer satisfaction. Research-based insights for service design.";
+    const description = "Discover how music and environmental design reduce perceived waiting time and improve customer satisfaction in service spaces.";
     const ogImage = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1472df5cb_aiease_1760708154014.jpg';
     const pageUrl = 'https://sensear.music/service-environment-shapes-wait-time';
     const publishedDate = '2025-01-15T09:00:00Z';
