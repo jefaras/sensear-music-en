@@ -323,7 +323,7 @@ export default function Home() {
                   </p>
                 </div>
                 <p className="text-lg sm:text-xl md:text-2xl text-black/65 leading-relaxed">
-                  We create custom music playlists for places & experiences that refuse to sound generic.
+                  We create custom music playlists for places & experiences that "refuse" to sound generic.
                 </p>
               </div>
               
@@ -367,7 +367,7 @@ export default function Home() {
             
               <div className="w-full text-center">
                 <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                  We are a team of Athens-based <strong><em>music experts</em></strong> who create <strong><em>soundtracks for venues</em></strong> through <strong><em>music</em></strong> that is <strong><em>intentional</em></strong>, <strong><em>immersive</em></strong> & <strong><em>memorable</em></strong>.
+                  We are a team of passionate <strong><em>music experts</em></strong> who create <strong><em>soundtracks for venues</em></strong> through <strong><em>music</em></strong> that is <strong><em>intentional</em></strong>, <strong><em>immersive</em></strong> & <strong><em>memorable</em></strong>.
                 </p>
                 <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                   Our core belief is that music shapes <strong>atmosphere</strong>, influences <strong>behaviour</strong> and builds lasting <strong>connections</strong> with guests.
@@ -381,10 +381,10 @@ export default function Home() {
       <section className="py-24" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-labelledby="services-heading">
         <div className="max-w-7xl mx-auto px-6">
             <h2 id="services-heading" className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4 text-center">
-                Four ways we transform venues
+                Four ways we reimagine venues
             </h2>
             <p className="text-xl text-black/60 font-medium mb-12 text-center max-w-5xl mx-auto">
-                Our strategic services shape behaviour, create atmosphere and build loyalty through sound.
+                Our music services shape behaviour, create atmosphere and build loyalty through sound.
             </p>
             <article role="listitem">
                 <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-center">
@@ -397,7 +397,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Signature Playlists</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[19.125px] text-black/70 leading-relaxed">
-                                    <span className="underline">Your daily soundtrack</span>, from morning energy to evening atmosphere.
+                                    Your daily soundtrack, from morning energy to evening atmosphere.
                                 </p>
                             </div>
                             {/* Service 2 */}
@@ -406,7 +406,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Event Soundtracks</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[19.125px] text-black/70 leading-relaxed">
-                                    <span className="underline">Custom-designed music</span> for launches, conferences & celebrations.
+                                    Custom-designed playlists & DJ sets for launches, conferences & celebrations.
                                 </p>
                             </div>
                             {/* Service 3 */}
@@ -415,7 +415,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Sonic Strategy</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[17px] text-black/70 leading-relaxed">
-                                    <span className="underline">Your audio DNA</span>, unified across all locations & communication channels.
+                                    Your music identity, unified across all locations & communication channels.
                                 </p>
                             </div>
                             {/* Service 4 */}
@@ -424,7 +424,7 @@ export default function Home() {
                                     <span className="group-hover:translate-x-1 group-hover:underline transition-transform inline-block decoration-1 underline-offset-4">Audio Upgrades</span> <ArrowRight className="inline ml-2 w-5 h-5 opacity-0 group-hover:opacity-100 transition-opacity" />
                                 </Link>
                                 <p className="text-[17px] text-black/70 leading-relaxed">
-                                    <span className="underline">Acoustic refinement & support</span> for crystal-clear, memorable sound.
+                                    Acoustic refinement & support for crystal-clear, memorable sound.
                                 </p>
                             </div>
                         </div>
@@ -542,7 +542,7 @@ export default function Home() {
             How we redefine your venue
           </h2>
           <p className="text-xl text-black/60 font-medium mb-12 text-center max-w-5xl mx-auto">
-            Strategic sound design that works as intentionally as every other aspect of your business.
+            Innovative sound design that works as intentionally as every other aspect of your business.
           </p>
           
           <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 items-center">
@@ -553,7 +553,7 @@ export default function Home() {
                     <div>
                         <h3 className="text-[31.5px] font-bold text-black mb-2">Brand elevation</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        <span className="underline">Improve brand perception</span> & loyalty with a memorable ambiance.
+                        Improve brand perception & loyalty with a memorable ambiance.
                         </p>
                     </div>
                   </article>
@@ -562,7 +562,7 @@ export default function Home() {
                     <div>
                         <h3 className="text-[31.5px] font-bold text-black mb-2">Maximum control</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        <span className="underline">Take full control</span> of your venue's music style, flow & sound levels.
+                        Take full control of your venue's music style, flow & sound levels.
                         </p>
                     </div>
                   </article>
@@ -571,7 +571,7 @@ export default function Home() {
                     <div>
                         <h3 className="text-[31.5px] font-bold text-black mb-2">Consistent experience</h3>
                         <p className="text-lg text-black/70 leading-relaxed">
-                        <span className="underline">Ensure a smooth music journey</span> across locations & marketing channels.
+                        Ensure a smooth music journey across locations & marketing channels.
                         </p>
                     </div>
                   </article>
