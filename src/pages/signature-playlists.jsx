@@ -276,7 +276,7 @@ export default function SignaturePlaylists() {
             </h2>
             <div className="w-full">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                We shape <strong><em>playlists</em></strong> upon your brand's <strong><em>character</em></strong> & space's <strong><em>rhythm</em></strong>, so energy is <strong><em>balanced</em></strong> for both guests & staff.
+                We create <strong><em>playlists</em></strong> in tune with your brand's <strong><em>character</em></strong> and space's <strong><em>rhythm</em></strong>, to balance <strong><em>energy</em></strong> for both guests & staff.
               </p>
               <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
                 Your sound <strong><em>becomes intentional</em></strong> & <strong><em>felt</em></strong> in the atmosphere, not lost in the background.
@@ -304,6 +304,11 @@ export default function SignaturePlaylists() {
             {/* Right: Content */}
             <div className="space-y-8">
               <div>
+                <h3 className="text-2xl font-bold text-black mb-3">Your own, unique sound</h3>
+                <p className="text-lg text-black/70">Rare tracks you won't hear on generic playlists, chosen especially for you.</p>
+              </div>
+
+              <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Amplify your brand</h3>
                 <p className="text-lg text-black/70">Music designed to echo your aesthetics & tell your brand story</p>
               </div>
@@ -321,11 +326,6 @@ export default function SignaturePlaylists() {
               <div>
                 <h3 className="text-2xl font-bold text-black mb-3">Total control & support</h3>
                 <p className="text-lg text-black/70">Clear rules, central management & direct access to us when needed.</p>
-              </div>
-
-              <div>
-                <h3 className="text-2xl font-bold text-black mb-3">Your own, unique sound</h3>
-                <p className="text-lg text-black/70">Rare tracks you won't hear on generic playlists, chosen especially for you.</p>
               </div>
             </div>
           </div>
