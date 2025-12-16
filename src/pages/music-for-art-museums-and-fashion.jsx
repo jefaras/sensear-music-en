@@ -22,10 +22,10 @@ export default function ArtMuseumsFashion() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    document.title = "Art, Museum & Fashion Music Curation | SensEar";
+    document.title = "Music for Art, Museums & Fashion | SensEar";
 
     const metaDescription = document.querySelector('meta[name="description"]');
-    const description = "Curated soundscapes for galleries, museums, fashion shows, and concept retail. Narrative playlists, runway direction, and AV tuning that elevate attention and emotion.";
+    const description = "Music for art galleries, museums & fashion spaces that respects the work, supports focus & complements exhibitions, shows & cultural settings.";
     if (metaDescription) {
       metaDescription.setAttribute('content', description);
     } else {
@@ -88,7 +88,7 @@ export default function ArtMuseumsFashion() {
     }
 
     const ogTags = [
-    { property: 'og:title', content: 'Art, Museum & Fashion Music Curation | SensEar' },
+    { property: 'og:title', content: 'Music for Art, Museums & Fashion | SensEar' },
     { property: 'og:description', content: description },
     { property: 'og:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg' },
     { property: 'og:url', content: 'https://sensear.music/music-for-art-museums-and-fashion' },
@@ -108,7 +108,7 @@ export default function ArtMuseumsFashion() {
 
     const twitterTags = [
     { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: 'Art, Museum & Fashion Music Curation | SensEar' },
+    { name: 'twitter:title', content: 'Music for Art, Museums & Fashion | SensEar' },
     { name: 'twitter:description', content: description },
     { name: 'twitter:image', content: 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d3177c205_802543-exposition-annees-80-au-mad.jpg' }];
 
@@ -138,8 +138,8 @@ export default function ArtMuseumsFashion() {
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "name": "Art, Museum & Fashion Music Curation",
-      "description": "Curated soundscapes for galleries, museums, fashion shows, and concept retail. Narrative playlists, runway direction, and AV tuning that elevate attention and emotion.",
+      "name": "Music for Art, Museums & Fashion",
+      "description": "Music for art galleries, museums & fashion spaces that respects the work, supports focus & complements exhibitions, shows & cultural settings.",
       "provider": {
         "@type": "Organization",
         "name": "SensEar",
