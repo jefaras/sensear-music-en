@@ -155,7 +155,7 @@ export default function Industries() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center max-w-4xl mx-auto">
             <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black mb-4">Your industry, our expertise</h2>
-            <p className="text-xl text-black/60 font-medium mb-12 max-w-3xl mx-auto">Strategic sound designed for the specific needs of your world.</p>
+            <p className="text-xl text-black/60 font-medium mb-12 max-w-3xl mx-auto">Potent music selected for the specific needs of your world.</p>
           </div>
 
           <div className="space-y-20">
