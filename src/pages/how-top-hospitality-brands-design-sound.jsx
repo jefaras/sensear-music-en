@@ -9,8 +9,8 @@ export default function HowTopHospitalityBrandsDesignSound() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
-    const pageTitle = "How Top Hospitality Brands Design Their Sound On Purpose | SensEar Strategy";
-    const description = "Learn how luxury hospitality brands use strategic music curation and sonic branding to create distinctive customer experiences and brand identity.";
+    const pageTitle = "How top hospitality brands design their sound on purpose | SensEar";
+    const description = "How leading hospitality brands use strategic music curation and sonic branding to shape guest experience, memory, and brand identity.";
     const pageUrl = 'https://sensear.music/how-top-hospitality-brands-design-sound';
     const imageUrl = 'https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/0109106f5_HowTopHospitalityBrandsDesignTheirSoundOnPurpose.png';
     const publishedDate = '2025-01-12';
@@ -136,7 +136,7 @@ export default function HowTopHospitalityBrandsDesignSound() {
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": "How Top Hospitality Brands Design Their Sound On Purpose",
+        "headline": "How top hospitality brands design their sound on purpose",
         "description": description,
         "image": imageUrl,
         "author": {
@@ -177,7 +177,7 @@ export default function HowTopHospitalityBrandsDesignSound() {
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "How Top Hospitality Brands Design Their Sound On Purpose",
+            "name": "How top hospitality brands design their sound on purpose",
             "item": pageUrl
           }
         ]
@@ -229,14 +229,14 @@ export default function HowTopHospitalityBrandsDesignSound() {
         }
       `}</style>
       {/* Hero Section - Two Column Layout */}
-      <section className="relative pt-32 pb-32 min-h-[90vh] flex flex-col justify-center overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="How Top Hospitality Brands Design Their Sound On Purpose">
+      <section className="relative pt-32 pb-32 min-h-[90vh] flex flex-col justify-center overflow-hidden" style={{ backgroundImage: "url('https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/178049824_warmsilverfoilsample-Picsart-AiImageEnhancer.jpg')", backgroundSize: 'cover', backgroundPosition: 'center' }} aria-label="How top hospitality brands design their sound on purpose">
         <div className="w-full px-6 md:px-12 lg:px-16">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Column: H1 */}
             <div className="flex flex-col justify-center text-left">
               <h1 className="font-extrabold text-black mb-6 leading-[1.1] slide-up-1">
-                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">How Top Hospitality Brands</span>
-                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">Design Their Sound On Purpose</span>
+                <span className="block text-[2.2rem] sm:text-[3.2rem] md:text-[4rem] lg:text-[4.8rem]">How top hospitality brands</span>
+                <span className="block text-[1.6rem] sm:text-[2.4rem] md:text-[3rem] lg:text-[3.6rem] text-black/70 italic">design their sound on purpose</span>
               </h1>
               <p className="text-xl md:text-2xl text-black/70 leading-relaxed slide-up-2 mb-6">
                 Learn how luxury hospitality brands use strategic music curation and sonic branding to create distinctive customer experiences.

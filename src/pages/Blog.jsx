@@ -14,7 +14,7 @@ export default function Blog() {
   // Define posts array here so it's available for useEffect and rendering
   const posts = [
     {
-      title: "How Top Hospitality Brands Design Their Sound On Purpose",
+      title: "How top hospitality brands design their sound on purpose",
       excerpt: "Learn how luxury hotels like W Hotels, Soho House, and The Standard use strategic music curation as part of their brand identity.",
       image: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/067aa2432_AI_Generated_Image_2025-10-21.png",
       alt: "Luxury hospitality interior showcasing strategic sound design and music curation",
@@ -406,7 +406,7 @@ export default function Blog() {
         <div className="max-w-7xl mx-auto px-6">
           <Badge className="mb-4 bg-peach text-black border border-black/20">Featured</Badge>
           <article>
-            <Link to={createPageUrl("how-top-hospitality-brands-design-sound")} className="block" aria-label="Read full article: How Top Hospitality Brands Design Their Sound On Purpose">
+            <Link to={createPageUrl("how-top-hospitality-brands-design-sound")} className="block" aria-label="Read article on how top hospitality brands design intentional sound strategies">
               <Card className="overflow-hidden hover:shadow-2xl transition-shadow bg-white group cursor-pointer">
                 <div className="grid lg:grid-cols-2 gap-0">
                   <div className="relative aspect-[4/3] lg:aspect-auto overflow-hidden">
@@ -421,7 +421,7 @@ export default function Blog() {
                       Insights
                     </Badge>
                     <h2 id="featured-heading" className="text-3xl lg:text-4xl font-bold text-black mb-4 leading-[1.25]">
-                      How Top Hospitality Brands Design Their Sound On Purpose
+                      How top hospitality brands design their sound on purpose
                     </h2>
                     <p className="text-black/70 text-lg mb-6 leading-relaxed">
                       Learn how luxury hotels like W Hotels, Soho House, and The Standard use strategic music curation as part of their brand identity.
