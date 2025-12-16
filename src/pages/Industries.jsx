@@ -425,8 +425,8 @@ export default function Industries() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto h-14">
+            <Link to={createPageUrl("contact")}>
+              <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Discover your sound strategy">
                 Discover Your Sound Strategy
               </AnimatedButton>
             </Link>

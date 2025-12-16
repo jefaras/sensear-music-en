@@ -578,7 +578,7 @@ export default function Services() {
             Which service aligns with your vision? We will assess your current atmosphere and recommend the ideal starting point.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
+            <Link to={createPageUrl("contact")}>
               <AnimatedButton className="w-full sm:w-auto h-14" aria-label="Discover your sound strategy">
                 Discover your sound strategy
               </AnimatedButton>

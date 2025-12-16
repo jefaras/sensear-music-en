@@ -410,8 +410,8 @@ export default function SignaturePlaylists() {
             Need a perfect soundscape that reflects your brand and captivates your guests?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto">
+            <Link to={createPageUrl("contact")}>
+              <AnimatedButton className="w-full sm:w-auto" aria-label="Create your signature sound">
                 Create your signature sound
               </AnimatedButton>
             </Link>

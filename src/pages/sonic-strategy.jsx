@@ -393,8 +393,8 @@ export default function SonicStrategy() {
             Require a sound strategy as considered as your design?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto">
+            <Link to={createPageUrl("contact")}>
+              <AnimatedButton className="w-full sm:w-auto" aria-label="Start your sonic strategy">
                 Start your sonic strategy
               </AnimatedButton>
             </Link>

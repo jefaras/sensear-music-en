@@ -383,8 +383,8 @@ export default function AudioUpgrades() {
             Need audio that matches your design quality?
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link to={createPageUrl("ContactUs")}>
-              <AnimatedButton className="w-full sm:w-auto">
+            <Link to={createPageUrl("contact")}>
+              <AnimatedButton className="w-full sm:w-auto" aria-label="Book your audio assessment">
                 Book your audio assessment
               </AnimatedButton>
             </Link>
