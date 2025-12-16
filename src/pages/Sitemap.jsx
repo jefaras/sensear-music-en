@@ -225,7 +225,7 @@ export default function Sitemap() {
 
           <div className="mt-12 text-center">
             <p className="text-black/70 mb-6">
-              Can't find what you are looking for? <Link to={createPageUrl("contact")} className="underline hover:text-black font-semibold" aria-label="Contact SensEar">Contact us</Link> or check our <Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold">FAQ page</Link>.
+              Can't find what you are looking for? <Link to={createPageUrl("contact")} className="underline hover:text-black font-semibold" aria-label="Contact SensEar">Contact us</Link> or check our <Link to={createPageUrl("FAQ")} className="underline hover:text-black font-semibold" aria-label="Frequently asked questions about music curation">FAQ page</Link>.
             </p>
           </div>
         </div>

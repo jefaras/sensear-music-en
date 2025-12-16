@@ -9,7 +9,18 @@ export default function FAQ() {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => { // Corrected syntax from useEffect() => { to useEffect(() => {
-    document.title = "FAQ | SensEar Music Curation Questions Answered";
+    document.title = "Questions & Answers | Music Curation FAQ | SensEar";
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    const description = "Clear answers to common questions about music curation, licensing, services and how we work.";
+    if (metaDescription) {
+      metaDescription.setAttribute('content', description);
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = description;
+      document.head.appendChild(meta);
+    }
 
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
@@ -183,7 +194,7 @@ export default function FAQ() {
           <div className="text-center mt-12 bg-white/50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-black mb-4">Still Have Questions? Let's Talk</h3>
             <p className="text-black/80 mb-6">Let's talk about how we can elevate your brand's sound.</p>
-            <Link to={createPageUrl("ContactUs")}>
+            <Link to={createPageUrl("contact")}>
               <Button size="lg" className="bg-black text-white hover:bg-black/80 group">
                 Still Have Questions? Let's Talk
                 <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
