@@ -242,19 +242,21 @@ export default function Sitemap() {
               Can't find what you are looking for?
             </p>
             
-            <Link to={createPageUrl("contact")}>
-              <AnimatedButton aria-label="Contact SensEar">
-                Contact us
-              </AnimatedButton>
-            </Link>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link to={createPageUrl("contact")}>
+                <AnimatedButton aria-label="Contact SensEar">
+                  Contact us
+                </AnimatedButton>
+              </Link>
 
-            <span className="text-black/70 font-medium">or check our</span>
+              <span className="text-black/70 font-medium">or check our</span>
 
-            <Link to={createPageUrl("FAQ")}>
-              <AnimatedButton aria-label="Frequently asked questions about music curation">
-                FAQ page
-              </AnimatedButton>
-            </Link>
+              <Link to={createPageUrl("FAQ")}>
+                <AnimatedButton aria-label="Frequently asked questions about music curation">
+                  FAQ page
+                </AnimatedButton>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
