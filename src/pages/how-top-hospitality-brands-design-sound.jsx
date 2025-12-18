@@ -290,8 +290,9 @@ export default function HowTopHospitalityBrandsDesignSound() {
       <div className="max-w-7xl mx-auto px-6 py-16">
         <Card className="bg-white p-8 md:p-12 shadow-lg mb-12">
           <div className="prose prose-lg max-w-none">
+            <h2 className="text-3xl font-bold text-black mt-0 mb-6">Luxury and lifestyle hotels are not leaving music to chance</h2>
             <p className="text-xl text-black/80 leading-relaxed mb-8">
-              Luxury and lifestyle hotels are not leaving music to chance. They treat sound as part of the brand system: researched, tested, and iterated to steer mood, memory, and spend.
+              They treat sound as part of the brand system: researched, tested, and iterated to steer mood, memory, and spend.
             </p>
 
             <h2 className="text-3xl font-bold text-black mt-12 mb-6">Eight examples to learn from</h2>
