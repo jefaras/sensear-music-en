@@ -277,7 +277,7 @@ export default function ServiceEnvironmentShapesWaitTime() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-6 py-16">
+      <div className="max-w-5xl mx-auto px-6 py-16">
         <Card className="bg-white p-8 md:p-12 shadow-lg mb-12">
           <div className="prose prose-lg max-w-none">
             <h2 className="text-3xl font-bold text-black mt-0 mb-6">Managing how customers feel about waiting can be as important as reducing the clock time itself</h2>
