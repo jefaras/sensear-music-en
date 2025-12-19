@@ -406,12 +406,12 @@ export default function Layout({ children }) {
                   <Instagram className="w-6 h-6" />
                 </a>
               </div>
-              <div className="space-y-2 mb-6">
+              <div className="space-y-3 mb-6">
                 <div>
-                  <a href="mailto:hello@sensear.music" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">hello@sensear.music</a>
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/21a008aa5_picturetopeopleorg-3dd2d76b45071cf3a83492fa044da51b0fe8ba66777df92c31.png" alt="hello@sensear.music" className="h-5 w-auto" />
                 </div>
                 <div>
-                  <a href="tel:+306976994212" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">+30 6976994212</a>
+                  <img src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/6cd5af555_picturetopeopleorg-af1f54707bfc9381612737a8cbdc641c34f5f390c625633f3b.png" alt="+30 6976994212" className="h-5 w-auto" />
                 </div>
               </div>
 
