@@ -408,7 +408,18 @@ export default function Layout({ children }) {
               </div>
               <div className="space-y-2 mb-6">
                 <div>
-                  <a href="mailto:hello@sensear.music" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">hello@sensear.music</a>
+                  <a href="mailto:hello@sensear.music" className="block relative group overflow-hidden w-fit">
+                    <img 
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/1fecf1a7e_48D0269B-15EE-4888-9AA4-B92E0096D06B.png" 
+                      alt="hello@sensear.music" 
+                      className="h-5 w-auto object-contain transition-opacity duration-300 group-hover:opacity-0" 
+                    />
+                    <img 
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/49d0af350_00CAFE6C-F77C-4421-B731-124B90A34A92.png" 
+                      alt="hello@sensear.music" 
+                      className="absolute top-0 left-0 h-5 w-auto object-contain opacity-0 transition-opacity duration-300 group-hover:opacity-100" 
+                    />
+                  </a>
                 </div>
                 <div>
                   <a href="tel:+306976994212" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">+30 6976994212</a>
