@@ -21,6 +21,13 @@ const FooterButton = ({ children, className = "", ...props }) => (
 
 export default function Layout({ children }) {
   const location = useLocation();
+
+  const _c_parts = {
+    e: ["hello", "sensear.music"],
+    p: ["+30", "6976994212"]
+  };
+  const _contact_email = _c_parts.e.join("@");
+  const _contact_phone = _c_parts.p.join("");
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [openDropdown, setOpenDropdown] = React.useState(null);
   const [isScrolled, setIsScrolled] = React.useState(false);
@@ -113,8 +120,8 @@ export default function Layout({ children }) {
       "name": "SensEar",
       "image": imageUrl,
       "url": "https://www.sensear.music",
-      "telephone": "+30" + "6976994212",
-      "email": "hello" + "@" + "sensear.music",
+      "telephone": _contact_phone,
+      "email": _contact_email,
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Athens",
@@ -408,10 +415,10 @@ export default function Layout({ children }) {
               </div>
               <div className="space-y-2 mb-6">
                 <div>
-                  <a href={"mailto:" + "hello" + "@" + "sensear.music"} className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">{"hello" + "@" + "sensear.music"}</a>
+                  <a href={`mailto:${_contact_email}`} className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">{_contact_email}</a>
                 </div>
                 <div>
-                  <a href={"tel:" + "+30" + "6976994212"} className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">{"+30" + " 6976994212"}</a>
+                  <a href={`tel:${_contact_phone}`} className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">{_contact_phone.slice(0, 3)} {_contact_phone.slice(3)}</a>
                 </div>
               </div>
 
