@@ -317,7 +317,7 @@ export default function CaseStudies() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link to={createPageUrl("ContactUs")}>
+            <Link to={createPageUrl("contact")}>
               <AnimatedButton className="w-full sm:w-auto h-14">
                 Discover Your Sound Strategy
               </AnimatedButton>

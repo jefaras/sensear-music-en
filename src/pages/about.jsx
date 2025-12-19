@@ -626,7 +626,7 @@ export default function AboutUs() {
                   Read case studies
                 </AnimatedButton>
               </Link>
-              <Link to={createPageUrl("ContactUs")}>
+              <Link to={createPageUrl("contact")}>
                 <AnimatedButton className="w-full sm:w-auto">
                   Get in touch
                 </AnimatedButton>
