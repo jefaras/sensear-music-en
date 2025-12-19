@@ -314,7 +314,7 @@ export default function Home() {
               </h1>
               
               <div className="mb-8 max-w-xl slide-up-2">
-                <div className="mb-5 italic">
+                <div className="mb-5">
                   <p className="text-xl sm:text-2xl md:text-[1.75rem] lg:text-[2.15rem] font-semibold text-black/70 mb-3">
                     Every venue has a story.
                   </p>
@@ -323,7 +323,7 @@ export default function Home() {
                   </p>
                 </div>
                 <p className="text-lg sm:text-xl md:text-2xl text-black/65 leading-relaxed">
-                  We create custom music playlists for places & experiences that "refuse" to sound generic.
+                  Sophisticated music curation services for places and experiences that "refuse" to sound generic.
                 </p>
               </div>
               
