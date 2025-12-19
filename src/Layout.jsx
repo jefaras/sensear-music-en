@@ -113,8 +113,8 @@ export default function Layout({ children }) {
       "name": "SensEar",
       "image": imageUrl,
       "url": "https://www.sensear.music",
-      "telephone": "+30" + "6976994212",
-      "email": "hello" + "@" + "sensear.music",
+      "telephone": "+306976994212",
+      "email": "hello@sensear.music",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Athens",
@@ -408,10 +408,10 @@ export default function Layout({ children }) {
               </div>
               <div className="space-y-2 mb-6">
                 <div>
-                  <a href={"mailto:" + "hello" + "@" + "sensear.music"} className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">{"hello" + "@" + "sensear.music"}</a>
+                  <a href="mailto:hello@sensear.music" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">hello@sensear.music</a>
                 </div>
                 <div>
-                  <a href={"tel:" + "+30" + "6976994212"} className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">{"+30" + " 6976994212"}</a>
+                  <a href="tel:+306976994212" className="text-white/70 hover:text-peach transition-colors hover:underline decoration-1 underline-offset-4 font-jakarta">+30 6976994212</a>
                 </div>
               </div>
 
