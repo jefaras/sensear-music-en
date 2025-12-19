@@ -314,10 +314,10 @@ export default function Home() {
               </h1>
               
               <div className="mb-8 max-w-xl slide-up-2">
-                  <p className="text-lg sm:text-xl md:text-2xl text-black/65 leading-relaxed font-bold">
+                  <p className="text-lg sm:text-xl md:text-2xl text-black/65 leading-relaxed">
                     Every venue has a story.
                   </p>
-                  <p className="text-lg sm:text-xl md:text-2xl text-black/65 leading-relaxed font-bold">
+                  <p className="text-lg sm:text-xl md:text-2xl text-black/65 leading-relaxed">
                     Let music tell yours.
                   </p>
                 <p className="text-lg sm:text-xl md:text-2xl text-black/65 leading-relaxed">
