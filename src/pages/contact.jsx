@@ -150,8 +150,6 @@ export default function ContactUs() {
       "name": "SensEar",
       "image": "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/23e1cb39d_2021ef69ab7c3df8f2f35f2532f4ec65.jpg", // Updated hero image URL
       "url": "https://www.sensear.music", // Assuming this is the main domain
-      "telephone": "+306976994212",
-      "email": "hello@sensear.music",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Athens",

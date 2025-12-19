@@ -113,8 +113,6 @@ export default function Layout({ children }) {
       "name": "SensEar",
       "image": imageUrl,
       "url": "https://www.sensear.music",
-      "telephone": "+306976994212",
-      "email": "hello@sensear.music",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Athens",
