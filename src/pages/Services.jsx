@@ -451,7 +451,7 @@ export default function Services() {
                   alt="Strategic sonic branding consultation"
                   className="w-full xl:w-[301px] xl:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0"
                 />
-                <div className="flex-1 flex flex-col">
+                <div className="flex-1 flex flex-col order-2 md:order-1">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Sonic Strategy
                   </h3>
@@ -486,7 +486,7 @@ export default function Services() {
                   alt="Professional audio equipment optimization"
                   className="w-full xl:w-[301px] xl:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0"
                 />
-                <div className="flex-1 flex flex-col">
+                <div className="flex-1 flex flex-col order-2 md:order-1">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Audio Upgrades
                   </h3>
