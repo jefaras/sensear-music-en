@@ -377,7 +377,8 @@ export default function Services() {
                       <p className="text-lg md:text-xl text-black/60 leading-relaxed">Curated playlists that evolve throughout the day, monthly updates, remote management.</p>
                     </div>
                     <div className="mb-6">
-                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">For venues ready to move beyond generic background music.</p>
+                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
+                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">Venues ready to move beyond generic background music.</p>
                     </div>
 
 
@@ -424,7 +425,8 @@ export default function Services() {
                       <p className="text-lg md:text-xl text-black/60 leading-relaxed">Precisely planned music for every moment, AV direction & support.</p>
                     </div>
                     <div className="mb-6">
-                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">For conferences, launches, weddings and special occasions.</p>
+                      <span className="font-bold text-black text-lg block mb-1">Ideal for:</span>
+                      <p className="text-lg md:text-xl text-black/60 leading-relaxed">Conferences, launches, weddings and special occasions.</p>
                     </div>
 
 
@@ -462,7 +464,8 @@ export default function Services() {
                       <p className="text-lg text-black/60 leading-relaxed">Guidelines & roadmap for consistent sound.</p>
                     </div>
                     <div className="mb-4">
-                      <p className="text-base text-black/60 leading-relaxed">For brands with multiple locations or marketing channels.</p>
+                      <span className="font-bold text-black text-base block mb-1">Ideal for:</span>
+                      <p className="text-base text-black/60 leading-relaxed">Brands with multiple locations or marketing channels.</p>
                     </div>
 
                     
@@ -497,7 +500,8 @@ export default function Services() {
                       <p className="text-lg text-black/60 leading-relaxed">Acoustic & equipment guidance with installation support.</p>
                     </div>
                     <div className="mb-4">
-                      <p className="text-base text-black/60 leading-relaxed">For venues where sound quality needs refinement.</p>
+                      <span className="font-bold text-black text-base block mb-1">Ideal for:</span>
+                      <p className="text-base text-black/60 leading-relaxed">Venues where sound quality needs refinement.</p>
                     </div>
 
 
