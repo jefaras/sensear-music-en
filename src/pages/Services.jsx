@@ -366,7 +366,7 @@ export default function Services() {
           <div className="mb-24" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="lg:order-1">
+                <div className="order-1 lg:order-1">
                   <h3 className="text-[2.7rem] md:text-[48px] font-bold text-black leading-tight mb-2">
                                             Signature Playlists
                                           </h3>
@@ -390,7 +390,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="lg:order-2">
+                <div className="order-2 lg:order-2">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ad6308d11_402461766_1151218075859356_9152177816492568307_n.jpg"
                       alt="Bespoke music curation"
@@ -405,7 +405,7 @@ export default function Services() {
           <div className="mb-24" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="lg:order-1">
+                <div className="order-2 lg:order-1">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/587b0ab41_IMG_20250801_204842.jpg"
                       alt="Event soundtracks and production"
@@ -413,7 +413,7 @@ export default function Services() {
                     />
                 </div>
 
-                <div className="lg:order-2">
+                <div className="order-1 lg:order-2">
                   <h3 className="text-[2.7rem] md:text-[48px] font-bold text-black leading-tight mb-2">
                                             Event Soundtracks
                                           </h3>
@@ -449,9 +449,9 @@ export default function Services() {
                 <img
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
                   alt="Strategic sonic branding consultation"
-                  className="w-full sm:w-[301px] sm:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0 order-1"
+                  className="w-full sm:w-[301px] sm:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0 order-2 xl:order-1"
                 />
-                <div className="flex-1 flex flex-col order-2">
+                <div className="flex-1 flex flex-col order-1 xl:order-2">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Sonic Strategy
                   </h3>
@@ -484,9 +484,9 @@ export default function Services() {
                 <img
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
                   alt="Professional audio equipment optimization"
-                  className="w-full sm:w-[301px] sm:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0 order-1"
+                  className="w-full sm:w-[301px] sm:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0 order-2 xl:order-1"
                 />
-                <div className="flex-1 flex flex-col order-2">
+                <div className="flex-1 flex flex-col order-1 xl:order-2">
                   <h3 className="text-3xl font-bold text-black leading-tight mb-2">
                     Audio Upgrades
                   </h3>
