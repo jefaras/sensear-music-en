@@ -366,7 +366,7 @@ export default function Services() {
           <div className="mb-24" role="list">
             <article role="listitem">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
-                <div className="lg:order-1">
+                <div className="order-2 lg:order-1">
                   <h3 className="text-[2.7rem] md:text-[48px] font-bold text-black leading-tight mb-2">
                                             Signature Playlists
                                           </h3>
@@ -390,7 +390,7 @@ export default function Services() {
                   </div>
                 </div>
 
-                <div className="lg:order-2">
+                <div className="order-1 lg:order-2">
                     <img
                       src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/ad6308d11_402461766_1151218075859356_9152177816492568307_n.jpg"
                       alt="Bespoke music curation"
