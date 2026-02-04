@@ -275,20 +275,20 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Vision Section */}
-      <section className="bg-black py-20">
+      {/* Intro Section - Animated Gradient */}
+      <section className="py-20 animated-gradient">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
-            <h2 className="text-[2rem] md:text-[2.8rem] lg:text-[3.45rem] font-bold text-white leading-tight mb-12">
-              Our vision
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
+              Our philosophy
             </h2>
 
             <div className="w-full text-center">
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
-                To become the <strong>leading music partner</strong> for eclectic hospitality brands & events seeking to express <strong>identity</strong>, elevate <strong>atmosphere</strong> & create lasting guest <strong>connections</strong>.
+                <strong>SensEar</strong> treats music as a <strong><em>core part</em></strong> of the <strong><em>experience</em></strong>:
               </p>
-              <p className="text-xl md:text-2xl lg:text-3xl text-white/80 leading-relaxed">
-                <span>Learn more about our </span><Link to={createPageUrl("sonic-strategy")} className="underline hover:text-peach font-semibold">sonic strategy service</Link><span>.</span>
+              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+                <em>Music is not background</em>, but <strong>atmosphere</strong>, <strong>memory</strong> and <strong>emotion</strong> that can <strong><em>influence</em></strong> how guests <strong><em>feel & behave</em></strong>.
               </p>
             </div>
           </div>
@@ -633,7 +633,7 @@ export default function AboutUs() {
           </div>
 
           <p className="text-center mt-32 text-2xl md:text-3xl lg:text-4xl max-w-5xl mx-auto text-black leading-relaxed animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
-            Together, we form SensEar, a team committed to uplifting spaces through compelling, memorable music.
+            Together, we form <strong>SensEar</strong>, a team committed to uplifting spaces through compelling, memorable music.
           </p>
           
           <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.7s' }}>
