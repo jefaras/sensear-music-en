@@ -304,7 +304,7 @@ export default function AboutUs() {
             </h2>
 
             <div className="w-full text-center">
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed mb-6">
                 <strong>SensEar</strong> treats music as a <strong><em>core part</em></strong> of the <strong><em>experience</em></strong>:
               </p>
               <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed">
