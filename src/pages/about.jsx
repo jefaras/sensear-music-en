@@ -299,7 +299,7 @@ export default function AboutUs() {
       <section className="py-20 animated-gradient">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
-            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-white leading-tight mb-12">
+            <h2 className="text-[2.7rem] md:text-[3.45rem] font-bold text-black leading-tight mb-12">
               Our philosophy
             </h2>
 
@@ -307,7 +307,7 @@ export default function AboutUs() {
               <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed mb-6">
                 <strong>SensEar</strong> treats music as a <strong><em>core part</em></strong> of the <strong><em>experience</em></strong>:
               </p>
-              <p className="text-2xl md:text-3xl lg:text-4xl text-white leading-relaxed">
+              <p className="text-2xl md:text-3xl lg:text-4xl text-black leading-relaxed">
                 <em>Music is not background</em>, but <strong>atmosphere</strong>, <strong>memory</strong> and <strong>emotion</strong> that can <strong><em>influence</em></strong> how guests <strong><em>feel & behave</em></strong>.
               </p>
             </div>
