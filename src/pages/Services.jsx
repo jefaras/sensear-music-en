@@ -441,74 +441,68 @@ export default function Services() {
           </div>
 
           {/* Combined Section: Sonic Strategy & Audio Upgrades */}
-          <div className="grid md:grid-cols-2 gap-8 lg:gap-16 items-start">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-16">
 
             {/* Sonic Strategy */}
-            <div className="flex flex-col h-full">
-              <div className="flex flex-col sm:flex-row gap-6 mb-6 sm:items-center">
+            <div className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="w-full">
                 <img
                   src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
                   alt="Strategic sonic branding consultation"
-                  className="w-full sm:w-[301px] sm:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0 order-2 xl:order-1"
+                  className="w-full h-[300px] object-cover"
                 />
-                <div className="flex-1 flex flex-col order-1 xl:order-2">
-                  <h3 className="text-3xl font-bold text-black leading-tight mb-2">
-                    Sonic Strategy
-                  </h3>
-                  <p className="text-lg font-medium text-black/60 mb-6">Your audio DNA</p>
+              </div>
+              <div className="p-8 flex flex-col flex-1">
+                <h3 className="text-3xl font-bold text-black leading-tight mb-2">
+                  Sonic Strategy
+                </h3>
+                <p className="text-lg font-medium text-black/60 mb-6">Your audio DNA</p>
 
-                  <div className="flex-1 flex flex-col">
-                    <div className="mb-4">
-                      <p className="text-lg text-black/60 leading-relaxed">Guidelines & roadmap for consistent sound.</p>
-                    </div>
-                    <div className="mb-4">
-                                                <p className="text-base text-black/60 leading-relaxed">For brands with multiple locations or marketing channels.</p>
-                                              </div>
+                <div className="mb-4">
+                  <p className="text-lg text-black/60 leading-relaxed">Guidelines & roadmap for consistent sound.</p>
+                </div>
+                <div className="mb-6">
+                  <p className="text-base text-black/60 leading-relaxed">For brands with multiple locations or marketing channels.</p>
+                </div>
 
-                    
-                    <div className="mt-6">
-                        <Link to={createPageUrl("sonic-strategy")}>
-                            <AnimatedButtonSmall className="w-full sm:w-auto">
-                            Explore Sonic Strategy
-                            </AnimatedButtonSmall>
-                        </Link>
-                    </div>
-                  </div>
+                <div className="mt-auto">
+                  <Link to={createPageUrl("sonic-strategy")}>
+                    <AnimatedButtonSmall className="w-full sm:w-auto">
+                      Explore Sonic Strategy
+                    </AnimatedButtonSmall>
+                  </Link>
                 </div>
               </div>
             </div>
 
             {/* Audio Upgrades */}
-            <div className="flex flex-col h-full">
-              <div className="flex flex-col sm:flex-row gap-6 mb-6 sm:items-center">
+            <div className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div className="w-full">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/bbe747c8e_57b86e08a_b6e0a3f63_tech_hifi_1979_07-pxbee-cropped2.jpg"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/793e3d2c0_gemini-25-flash-image_Upscale_this_image_and_fix_any_face_details_look_distorted_take_care_in_the_eyes-1.jpg"
                   alt="Professional audio equipment optimization"
-                  className="w-full sm:w-[301px] sm:h-[401px] object-cover rounded-2xl shadow-lg flex-shrink-0 order-2 xl:order-1"
+                  className="w-full h-[300px] object-cover"
                 />
-                <div className="flex-1 flex flex-col order-1 xl:order-2">
-                  <h3 className="text-3xl font-bold text-black leading-tight mb-2">
-                    Audio Upgrades
-                  </h3>
-                  <p className="text-lg font-medium text-black/60 mb-6">Acoustic excellence</p>
+              </div>
+              <div className="p-8 flex flex-col flex-1">
+                <h3 className="text-3xl font-bold text-black leading-tight mb-2">
+                  Audio Upgrades
+                </h3>
+                <p className="text-lg font-medium text-black/60 mb-6">Acoustic excellence</p>
 
-                  <div className="flex-1 flex flex-col">
-                    <div className="mb-4">
-                      <p className="text-lg text-black/60 leading-relaxed">Acoustic & equipment guidance with installation support.</p>
-                    </div>
-                    <div className="mb-4">
-                                                <p className="text-base text-black/60 leading-relaxed">For venues where sound quality needs refinement.</p>
-                                              </div>
+                <div className="mb-4">
+                  <p className="text-lg text-black/60 leading-relaxed">Acoustic & equipment guidance with installation support.</p>
+                </div>
+                <div className="mb-6">
+                  <p className="text-base text-black/60 leading-relaxed">For venues where sound quality needs refinement.</p>
+                </div>
 
-
-                    <div className="mt-6">
-                        <Link to={createPageUrl("audio-upgrades")}>
-                            <AnimatedButtonSmall className="w-full sm:w-auto">
-                            Explore audio upgrades
-                            </AnimatedButtonSmall>
-                        </Link>
-                    </div>
-                  </div>
+                <div className="mt-auto">
+                  <Link to={createPageUrl("audio-upgrades")}>
+                    <AnimatedButtonSmall className="w-full sm:w-auto">
+                      Explore audio upgrades
+                    </AnimatedButtonSmall>
+                  </Link>
                 </div>
               </div>
             </div>
