@@ -241,7 +241,7 @@ export default function SonicStrategy() {
                 <div className="overflow-hidden rounded-2xl shadow-2xl">
                   <div className="relative aspect-square">
                     <img 
-                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/726fac292_Empire_Song4-cropped1-1.jpg" 
+                      src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/9e78deacd_gemini-25-flash-image_Upscale_this_image_and_fix_anything_that_looks_distorted_or_blurred-0.jpg" 
                       alt="Sonic strategy and audio branding for brands" 
                       className="w-full h-full object-cover" 
                     />
