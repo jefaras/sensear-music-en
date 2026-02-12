@@ -447,7 +447,7 @@ export default function Services() {
             <div className="flex flex-col bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="w-full">
                 <img
-                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/d2c616905_fd3f4ff86f1dfed345baa64ee2908eda.jpg"
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/68e53c2bf0c2fbec935083b6/f787993a3_gemini-25-flash-image_Upscale_this_image_and_fix_anything_that_looks_distorted_or_blurred-0.jpg"
                   alt="Strategic sonic branding consultation"
                   className="w-full h-[300px] object-cover"
                 />
